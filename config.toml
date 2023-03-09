@@ -1,6 +1,6 @@
 # General Settings
 title = "Pensieri in Codice"
-baseURL = "https://bslthemes.com/" #YOUR SITE URL
+baseURL = "https://stalwart-dolphin-75aaae.netlify.app/" #YOUR SITE URL
 languageCode = "it-IT"
 theme = "ryancv"
 resourceDir = "resources"
