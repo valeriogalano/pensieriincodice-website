@@ -1,0 +1,43 @@
+{{ with .Site.Data.home.pricing }}
+
+{{ "<!-- Price Tables -->" | safeHTML }}
+<div class="content pricing">
+
+	{{ if .title }}
+	<div class="title">{{ .title }}</div>
+	{{ end }}
+
+	<div class="row pricing-items">
+		{{ range .items }}
+		<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+			<div class="pricing-item">
+				<div class="icon"><i class="ion {{ .icon }}"></i></div>
+				<div class="name">{{ .name }}</div>
+				<div class="amount">
+					<span class="dollar">{{ .price_pre }}</span>
+					<span class="number">{{ .price }}</span>
+					<span class="period">{{ .price_after }}</span>
+				</div>
+				<div class="feature-list">
+					<ul>
+						{{ range .list }}
+						<li{{ if eq .disable 1 }} class="disable"{{ end }}>{{ .text }}{{ if eq .new 1 }} <strong>{{ i18n "new" }}</strong>{{ end }}</li>
+						{{ end }}
+					</ul>
+				</div>
+				<div class="lnks">
+					<a href="{{ .button_url }}" class="lnk">
+						<span class="text">{{ .button_text }}</span>
+						<i class="ion {{ .icon }}"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		{{ end }}
+
+		<div class="clear"></div>
+	</div>
+
+</div>
+
+{{ end }}

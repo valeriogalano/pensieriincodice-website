@@ -1,0 +1,30 @@
+{{ with .Site.Data.home.about }}
+
+{{ "<!-- About -->" | safeHTML }}
+<div class="content about">
+
+	{{ if .title }}
+	<div class="title">{{ .title }}</div>
+	{{ end }}
+
+	<div class="row">
+		<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+			<div class="text-box">
+				{{ .text | safeHTML }}
+			</div>
+		</div>
+		<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+			<div class="info-list">
+				<ul>
+					{{ range .list }}
+					<li><strong>{{ .label }}: </strong> {{ .value }}</li>
+					{{ end }}
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+</div>
+
+{{ end }}

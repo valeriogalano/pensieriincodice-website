@@ -1,0 +1,53 @@
+{{ "<!-- Card - Started -->" | safeHTML }}
+
+{{ with .Site.Data.vcard.main }}
+
+<div class="card-started" id="home-card">
+
+  {{ "<!-- Profile-->" | safeHTML }}
+  <div class="profile{{ if not .photo }} no-photo{{ end }}">
+
+    {{ "<!-- profile image -->" | safeHTML }}
+    <div class="slide" style="background-image: url({{ .bgimage | absURL }});"></div>
+
+    {{ "<!-- profile photo -->" | safeHTML }}
+    {{ if .photo }}
+    <div class="image">
+      <img src="{{ .photo | absURL }}" alt="{{ .name }}" />
+    </div>
+    {{ end }}
+
+    {{ "<!-- profile titles -->" | safeHTML }}
+    <div class="title">{{ .name }}</div>
+    <div class="subtitle subtitle-typed">
+      <div class="typing-title">
+        {{ range .typed }}
+        <p>{{ .text | safeHTML }}</p>
+        {{ end }}
+      </div>
+    </div>
+
+    {{ "<!-- profile socials -->" | safeHTML }}
+    <div class="social">
+      {{ range .social }}
+      <a target="_blank" href="{{ .url }}" title="{{ .title }}"><span class="{{ .icon }}"></span></a>
+      {{ end }}
+    </div>
+
+    {{ "<!-- profile buttons -->" | safeHTML }}
+    <div class="lnks">
+      {{ range .buttons }}
+      <a href="{{ .url }}" target="_blank" class="lnk">
+        <span class="text">{{ .title }}</span>
+        {{ if .icon }}
+        <span class="ion {{ .icon }}"></span>
+        {{ end }}
+      </a>
+      {{ end }}
+    </div>
+
+  </div>
+
+</div>
+
+{{ end }}

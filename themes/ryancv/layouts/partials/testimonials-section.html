@@ -1,0 +1,41 @@
+{{ with .Site.Data.home.testimonials }}
+
+{{ "<!-- Testimonials -->" | safeHTML }}
+<div class="content testimonials">
+
+	{{ if .title }}
+	<div class="title">{{ .title }}</div>
+	{{ end }}
+
+	<div class="row testimonials-items">
+
+		<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+			<div class="revs-carousel default-revs">
+				<div class="owl-carousel">
+					{{ range .items }}
+					<div class="item">
+						<div class="revs-item">
+							<div class="text">
+								{{ .text | safeHTML }}
+							</div>
+							<div class="user">
+								<div class="img"><img src="{{ .image | absURL }}" alt="{{ .name }}" /></div>
+								<div class="info">
+									<div class="name">{{ .name }}</div>
+									<div class="company">{{ .subname }}</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+					{{ end }}
+				</div>
+			</div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
+</div>
+
+{{ end }}

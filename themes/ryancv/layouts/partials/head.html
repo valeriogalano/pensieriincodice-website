@@ -1,0 +1,71 @@
+<head>
+  <title>{{ .Title }}</title>
+
+  {{ "<!-- Meta -->" | safeHTML }}
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="author" content="bslthemes" />
+
+  {{ "<!-- Google Fonts -->" | safeHTML }}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" />
+
+  {{ "<!-- Main Stylesheets -->" | safeHTML }}
+  {{ $style := resources.Get "scss/style.scss" | resources.ToCSS | minify }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" />
+
+  {{ "<!-- Plugins Stylesheets -->" | safeHTML }}
+  <link rel="stylesheet" href="{{ "plugins/ionicons/ionicons.css" | absURL }}" />
+  <link rel="stylesheet" href="{{ "plugins/font-awesome/css/font-awesome.css" | absURL }}" />
+  <link rel="stylesheet" href="{{ "plugins/magnific-popup/magnific-popup.css" | absURL }}" />
+  <link rel="stylesheet" href="{{ "plugins/owl-carousel/owl.carousel.css" | absURL }}" />
+  <link rel="stylesheet" href="{{ "plugins/animate/animate.css" | absURL }}" />
+  <link rel="stylesheet" href="{{ "plugins/syntax/syntax.css" | absURL }}" />
+
+  {{ with .Site.Params.rtl }}
+  {{ "<!-- Template RTL -->" | safeHTML }}
+  <link rel="stylesheet" href="{{ "plugins/template-rtl/rtl.css" | absURL }}" />
+  {{ end }}
+
+  {{ with .Site.Params.skinColor }}
+  {{ "<!-- Template Colors -->" | safeHTML }}
+  <link rel="stylesheet" href="{{ "plugins/template-colors/" | absURL }}{{ . }}.css" />
+  {{ end }}
+
+  {{ with .Site.Params.skinDark }}
+  {{ "<!-- Template Dark -->" | safeHTML }}
+  <link rel="stylesheet" href="{{ "plugins/template-dark/dark.css" | absURL }}" />
+  {{ end }}
+
+  {{ with .Site.Params.skinMinimal }}
+  {{ "<!-- Template RTL -->" | safeHTML }}
+  <link rel="stylesheet" href="{{ "plugins/template-minimal/minimal-skin.css" | absURL }}" />
+  {{ end }}
+
+  <!--[if lt IE 9]>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  {{ "<!-- Favicon -->" | safeHTML }}
+  <link rel="shortcut icon" href="{{ "images/favicon/favicon.ico" | absURL }}" type="image/x-icon" />
+  <link rel="icon" href="{{ "images/favicon/favicon.ico" | absURL }}" type="image/x-icon" />
+
+  {{ with site.Params.googleAnalytics }}
+  {{ "<!-- Google Analytics -->" | safeHTML }}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', '{{ . }}');
+  </script>
+  {{ end }}
+
+  {{ range .AlternativeOutputFormats -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+</head>

@@ -1,0 +1,26 @@
+{{ $minimal := .Site.Params.skinMinimal }}
+
+{{ "<!-- Header -->" | safeHTML }}
+<header class="header">
+
+	<a href="#" class="menu-btn"><span></span></a>
+
+  {{ "<!-- menu -->" | safeHTML }}
+	<div class="top-menu{{ if $minimal }} menu-minimal{{ end }}">
+		<ul>
+      {{ $currentPage := . }}
+      {{ range $index, $item := .Site.Menus.main }}
+      {{ $menuURL := .URL | absLangURL }}
+      {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+      {{ $active := eq $menuURL $pageURL }}
+			<li{{ if not $index }} class="active"{{ end }}>
+				<a href="{{ $.Site.BaseURL }}{{ .URL }}">
+					<span class="icon {{ .Pre }}"></span>
+					<span class="link">{{ .Name }}</span>
+				</a>
+			</li>
+			{{ end }}
+		</ul>
+	</div>
+
+</header>

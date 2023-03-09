@@ -1,0 +1,28 @@
+{{ with .Site.Data.home.services }}
+
+<!-- Services -->
+<div class="content services">
+
+	{{ if .title }}
+	<div class="title">{{ .title }}</div>
+	{{ end }}
+
+	<div class="row service-items border-line-v">
+		{{ range .items }}
+		<div class="col col-d-6 col-t-6 col-m-12{{ if eq .h_line 1 }} border-line-h{{ end }}">
+			<div class="service-item">
+				<div class="icon"><span class="ion {{ .icon }}"></span></div>
+				<div class="name">{{ .name }}</div>
+				<p>
+					{{ .text | safeHTML }}
+				</p>
+			</div>
+		</div>
+		{{ end }}
+
+		<div class="clear"></div>
+	</div>
+
+</div>
+
+{{ end }}

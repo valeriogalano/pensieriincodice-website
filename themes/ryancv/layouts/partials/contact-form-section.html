@@ -1,0 +1,50 @@
+{{ $action := .Site.Params.formspreeURL }}
+{{ with .Site.Data.home.about }}
+
+<!-- Contact Form -->
+<div class="content contacts">
+
+	{{ if .title }}
+	<div class="title">{{ .title }}</div>
+	{{ end }}
+
+	<!-- content -->
+	<div class="row">
+		<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+			<div class="contact_form">
+				<form id="cform" action="{{ $action }}" method="POST">
+					<div class="row">
+						<div class="col col-d-6 col-t-6 col-m-12">
+							<div class="group-val">
+								<input type="text" name="name" placeholder="{{ i18n "fullName" }}" id="name" />
+							</div>
+						</div>
+						<div class="col col-d-6 col-t-6 col-m-12">
+							<div class="group-val">
+								<input type="text" name="email" placeholder="{{ i18n "emailAddress" }}" id="email" />
+							</div>
+						</div>
+						<div class="col col-d-12 col-t-12 col-m-12">
+							<div class="group-val">
+								<textarea name="message" placeholder="{{ i18n "yourMessage" }}" id="message"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="align-left">
+						<a href="#" class="button" onclick="$('#cform').submit(); return false;">
+							<span class="text">{{ i18n "sendMessage" }}</span>
+							<span class="arrow"></span>
+						</a>
+					</div>
+				</form>
+			</div>
+			<div class="alert-success" id="formAlertSuccess" style="display: none;">
+				<p>{{ i18n "successMessage" }}</p>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+</div>
+
+{{ end }}

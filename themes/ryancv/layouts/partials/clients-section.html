@@ -1,0 +1,27 @@
+{{ with .Site.Data.home.clients }}
+
+{{ "<!-- Clients -->" | safeHTML }}
+<div class="content clients">
+	{{ if .title }}
+	<div class="title">{{ .title }}</div>
+	{{ end }}
+
+	<div class="row client-items">
+		{{ range .items }}
+		<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+			<div class="client-item">
+				<div class="image">
+					<a target="_blank" href="{{ .url }}" title="{{ .title }}">
+						<img src="{{ .image | absURL }}" alt="{{ .title }}" />
+					</a>
+				</div>
+			</div>
+		</div>
+		{{ end }}
+
+		<div class="clear"></div>
+	</div>
+
+</div>
+
+{{ end }}

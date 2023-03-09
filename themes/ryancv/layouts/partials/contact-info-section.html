@@ -1,0 +1,29 @@
+{{ $gmap := .Site.Params.googleMaps }}
+{{ with .Site.Data.home.contacts_info }}
+
+<!-- Conacts Info -->
+<div class="content contacts">
+
+	{{ if .title }}
+	<div class="title">{{ .title }}</div>
+	{{ end }}
+
+	<div class="row">
+		<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+			{{ if $gmap.key }}
+			<div class="map" id="map" data-lat="{{ $gmap.lat }}" data-long="{{ $gmap.long }}" data-zoom="{{ $gmap.zoom }}"></div>
+			{{ end }}
+			<div class="info-list">
+				<ul>
+					{{ range .list }}
+					<li><strong>{{ .label }}: </strong> {{ .value }}</li>
+					{{ end }}
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+</div>
+
+{{ end }}
