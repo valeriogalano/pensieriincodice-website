@@ -5,46 +5,46 @@
 
 ### About [ about ]
 about:
-  title: "About Me"
+  title: "Pensieri in Codice"
   text: "
         <p>
-          <strong>Hello! I’m Ryan Adlard.</strong><br> Web designer from USA, California. I have rich experience in web site design and building, also I am good at wordpress. I love to talk with you about our unique.
+          <strong>“Il podcast dove si ragiona da informatici”</strong>
         </p>
         "
   list:
-    - label: "Age"
-      value: "24"
+    - label: "Ascolti"
+      value: "125.000+"
 
-    - label: "Residence"
-      value: "USA"
+    - label: "Episodi"
+      value: "120+"
 
-    - label: "Freelance"
-      value: "Available"
+    - label: "Ore di contenuti"
+      value: "30+"
 
-    - label: "Address"
-      value: "California, USA"
+    - label: "Anni"
+      value: "4+"
 
 ### Services [ services ]
 services:
-  title: "My Services"
+  title: "Ascolta su"
   items:
     - icon: "ion-code"
-      name: "Web Development"
+      name: "Spotify"
       text: "Modern and mobile-ready website that will help you reach all of your marketing."
       h_line: 1
 
     - icon: "ion-music-note"
-      name: "Music Writing"
+      name: "Apple Podcast"
       text: "Music copying, transcription, arranging and composition services."
       h_line: 1
 
     - icon: "ion-speakerphone"
-      name: "Advetising"
+      name: "Google Podcast"
       text: "Advertising services include television, radio, print, mail and web."
       h_line: 0
 
     - icon: "ion-ios-game-controller-b"
-      name: "Game Development"
+      name: "Youtube"
       text: "Developing memorable and unique mobile android, ios games."
       h_line: 0
 
