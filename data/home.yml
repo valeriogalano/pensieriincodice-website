@@ -6,11 +6,13 @@
 ### About [ about ]
 about:
   title: "Pensieri in Codice"
-  text: "
-        <p>
-          <strong>“Il podcast dove si ragiona da informatici”</strong>
+  text: '
+        <p class="align-center">
+          <strong>Il podcast dove si ragiona da informatici</strong>
         </p>
-        "
+        <p>&nbsp;</p>
+
+        '
   list:
     - label: "Ascolti"
       value: "125.000+"
