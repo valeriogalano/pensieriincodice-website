@@ -1,3 +1,7 @@
 .new-skin .col .info-list ul li strong {
     background: #ff9800;
 }
+
+.bg-bubbles li {
+    background-image: url("https://i.imgur.com/34UPXE2.jpeg");
+}
