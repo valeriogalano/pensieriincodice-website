@@ -28,8 +28,8 @@ DefaultContentLanguage = "it"
       "motto",
       "facts",
       "clients",
-      "about",
       "support",
+      "about",
       "services",
       "pricing",
       "testimonials"
