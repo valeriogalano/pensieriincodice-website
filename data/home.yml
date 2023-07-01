@@ -294,6 +294,39 @@ skills:
         - label: "Search engine marketing"
           value: "" #0-100 progress in %
 
+### Support [ support ]
+support:
+  title: "Sostieni il progetto"
+  columns:
+    - type: "list"
+      title: "Con una donazione"
+      icon: "ion-heart"
+      items:
+        - label: "Tramite Satispay"
+          link: "https://www.satispay.com/download/qrcode/S6Y-CON--EC548199-5F32-4BD6-AAF5-73A999744E56"
+
+        - label: "Tramite PayPal"
+          link: "https://www.paypal.com/donate/?hosted_button_id=HRKMD7X43R7SS"
+
+    - type: "list"
+      title: "Affiliazioni"
+      icon: "ion-android-list"
+      items:
+        - label: "Todoist"
+          link: "https://doist.grsm.io/valeriogalano5066"
+
+        - label: "ProtonMail"
+          link: "https://go.getproton.me/SHMB"
+
+        - label: "ProtonVPN"
+          link: "https://go.getproton.me/SHN0"
+
+        - label: "Satispay"
+          link: "https://bit.ly/3fQUVaU"
+
+        - label: "Amazon"
+          link: "https://amzn.to/3CPOWgC"
+
 ### Portfolio [ portfolio ]
 portfolio:
   title: "Recent Works"

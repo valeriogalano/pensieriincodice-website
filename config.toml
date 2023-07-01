@@ -28,9 +28,9 @@ DefaultContentLanguage = "it"
       "about",
       "facts",
       "clients",
+      "support",
       "services",
       "pricing",
-      "facts",
       "testimonials"
     ]
 [[menu.main]]

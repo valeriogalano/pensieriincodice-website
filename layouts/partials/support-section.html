@@ -1,0 +1,36 @@
+{{ with .Site.Data.home.support }}
+
+{{ "<!-- Support -->" | safeHTML }}
+<div class="content skills">
+
+	{{ if .title }}
+	<div class="title">{{ .title }}</div>
+	{{ end }}
+
+	<div class="row">
+		{{ range .columns }}
+		<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+			<div class="skills-list{{ if .type }} {{ .type }}{{ end }}">
+				<div class="skill-title border-line-h">
+					<div class="icon"><i class="ion {{ .icon }}"></i></div>
+					<div class="name">{{ .title }}</div>
+				</div>
+				<ul>
+					{{ if eq .type "list" }}
+					{{ range .items }}
+					<li>
+						<div class="name"><a href="{{ .value  }}" target="_blank">{{ .label }}</a></div>
+					</li>
+					{{ end }}
+					{{ end }}
+				</ul>
+			</div>
+		</div>
+		{{ end }}
+
+		<div class="clear"></div>
+	</div>
+
+</div>
+
+{{ end }}
