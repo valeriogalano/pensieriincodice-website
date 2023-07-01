@@ -127,7 +127,7 @@ pricing:
 
 ### Facts [ facts ]
 facts:
-  title: "Qualche numero"
+  title: "Numeri del podcast"
   items:
     - icon: "ion-mic-a"
       name: "120+ Episodi"
