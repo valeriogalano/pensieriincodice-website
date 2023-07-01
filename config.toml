@@ -25,9 +25,10 @@ DefaultContentLanguage = "it"
   weight = 1
   [menu.main.params]
     builder = [
-      "about",
+      "motto",
       "facts",
       "clients",
+      "about",
       "support",
       "services",
       "pricing",

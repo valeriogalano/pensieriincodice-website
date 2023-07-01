@@ -1,6 +1,6 @@
-{{ with .Site.Data.home.about }}
+{{ with .Site.Data.home.motto }}
 
-{{ "<!-- About -->" | safeHTML }}
+{{ "<!-- Motto -->" | safeHTML }}
 <div class="content about">
 
 	{{ if .title }}
@@ -8,22 +8,20 @@
 	{{ end }}
 
 	<div class="row">
-		<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+		<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 			<div class="text-box">
-				{{ .text | safeHTML }}
+				<div class="motto">{{ .text | safeHTML }}</div>
 			</div>
 		</div>
-		<!--
 		<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 			<div class="info-list">
 				<ul>
 					{{ range .list }}
-					<li><strong>{{ .label }}: </strong> {{ .value }}</li>
+					<li><strong>{{ .label }}</strong> &nbsp;</li>
 					{{ end }}
 				</ul>
 			</div>
 		</div>
-		-->
 		<div class="clear"></div>
 	</div>
 

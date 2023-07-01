@@ -26,6 +26,15 @@ about:
     - label: "Anni"
       value: "4+"
 
+### Motto [ motto ]
+motto:
+  title: "Pensieri in Codice"
+  text: 'Il podcast dove si ragiona da informatici. '
+  list:
+    - label: "Ogni due settimane"
+    - label: "Sulle principali piattaforme"
+
+
 ### Services [ services ]
 services:
   title: "Ascolta su"
