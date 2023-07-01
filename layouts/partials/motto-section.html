@@ -9,14 +9,22 @@
 
 	<div class="row">
 		<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-			<div class="text-box">
+			<!--<div class="text-box">
 				<div class="motto">{{ .text | safeHTML }}</div>
+			</div>
+			<p>&nbsp;</p>-->
+			<div class="info-list">
+				<ul>
+					{{ range .left_list }}
+					<li><strong>{{ .label }}</strong> &nbsp;</li>
+					{{ end }}
+				</ul>
 			</div>
 		</div>
 		<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 			<div class="info-list">
 				<ul>
-					{{ range .list }}
+					{{ range .right_list }}
 					<li><strong>{{ .label }}</strong> &nbsp;</li>
 					{{ end }}
 				</ul>

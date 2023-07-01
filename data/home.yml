@@ -30,10 +30,16 @@ about:
 motto:
   title: "Pensieri in Codice"
   text: 'Il podcast dove si ragiona da informatici. '
-  list:
-    - label: "Ogni due settimane"
-    - label: "Sulle principali piattaforme"
-
+  left_list:
+    - label: "Riflessioni e idee"
+    - label: "Tecnologia e cultura digitale"
+    - label: "Intelligenza artificiale"
+    - label: "Open source e software libero"
+  right_list:
+    - label: "Algoritmi e programmazione"
+    - label: "Storia dell'informatica"
+    - label: "Etica, privacy e libertà digitali"
+    - label: "Open source e software libero"
 
 ### Services [ services ]
 services:
