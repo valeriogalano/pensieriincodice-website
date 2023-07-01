@@ -12,14 +12,8 @@ main:
   photo: ""
   name: "con Valerio Galano"
   typed:
-    - text: "Un podcast di divulgazione informatica"
+    - text: "Il podcast dove si ragiona da informatici"
     - text: "Riflessioni dal mondo del software"
-    - text: "Tecnologia e cultura digitale"
-    - text: "Algoritmi e programmazione"
-    - text: "Storia dell'informatica"
-    - text: "Intelligenza artificiale e machine learning"
-    - text: "Etica, privacy e libertà digitali"
-    - text: "Open source e software libero"
   social:
     - title: "Telegram"
       icon: "fab fa-telegram"
