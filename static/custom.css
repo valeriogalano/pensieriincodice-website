@@ -2,6 +2,14 @@
     background: #ff9800;
 }
 
+.new-skin .col .info-list ul li {
+    line-height: 0.8em;
+}
+
+.new-skin .col .info-list ul li::before {
+    height: 0;
+}
+
 .bg-bubbles li {
     background-image: url("https://i.imgur.com/34UPXE2.jpeg");
 }
