@@ -26,6 +26,7 @@ DefaultContentLanguage = "it"
   [menu.main.params]
     builder = [
       "about",
+      "facts",
       "clients",
       "services",
       "pricing",

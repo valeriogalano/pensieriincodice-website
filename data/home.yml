@@ -112,19 +112,19 @@ pricing:
 
 ### Facts [ facts ]
 facts:
-  title: "Fun Fact"
+  title: "Qualche numero"
   items:
-    - icon: "ion-disc"
-      name: "80 Albumes Listened"
+    - icon: "ion-mic-a"
+      name: "120+ Episodi"
 
-    - icon: "ion-trophy"
-      name: "15 Awards Won"
+    - icon: "ion-clock"
+      name: "40+ Ore di contenuti"
 
-    - icon: "ion-coffee"
-      name: "1 000 Cups of coffee"
+    - icon: "ion-stats-bars"
+      name: "200k+ Download"
 
-    - icon: "ion-flag"
-      name: "10 Countries Visited"
+    - icon: "ion-calendar"
+      name: "Online dal 2019"
 
 ### Clients [ clients ]
 clients:
