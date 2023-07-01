@@ -26,13 +26,13 @@ DefaultContentLanguage = "it"
   [menu.main.params]
     builder = [
       "motto",
-      "facts",
       "clients",
       "support",
-      "about",
-      "services",
-      "pricing",
-      "testimonials"
+      "facts",
+#      "about",
+#      "services",
+#      "pricing",
+#      "testimonials"
     ]
 [[menu.main]]
   identifier = "resume"
