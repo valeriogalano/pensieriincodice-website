@@ -161,6 +161,18 @@ clients:
       image: "images/clients/rss.png"
       title: "Sulla tua app preferita"
 
+### Partners [ partners ]
+partners:
+  title: "Partners"
+  items:
+    - url: "https://www.grusp.org/"
+      image: "images/partners/grusp.png"
+      title: "GrUSP"
+
+    - url: "https://www.schrodinger-hat.it/"
+      image: "images/partners/schrodinger-hat.png"
+      title: "Schrödinger Hat"
+
 ### Testimonials [ testimonials ]
 testimonials:
   title: "Testimonials"
