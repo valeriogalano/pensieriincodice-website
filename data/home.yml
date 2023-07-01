@@ -128,23 +128,23 @@ facts:
 
 ### Clients [ clients ]
 clients:
-  title: "Clients"
+  title: "Ascolta su"
   items:
-    - url: "https://www.google.com"
-      image: "images/clients/client_1.png"
-      title: "Company Inc."
+    - url: "http://bit.ly/picGooglePodcast"
+      image: "images/clients/google-podcast.png"
+      title: "Google Podcast"
 
-    - url: "https://www.google.com"
-      image: "images/clients/client_2.png"
-      title: "Company Inc."
+    - url: "http://bit.ly/picItunes"
+      image: "images/clients/apple-podcast.jpg"
+      title: "Apple Podcast"
 
-    - url: "https://www.google.com"
-      image: "images/clients/client_3.png"
-      title: "Company Inc."
+    - url: "http://bit.ly/picSpotify"
+      image: "images/clients/spotify.png"
+      title: "Spotify"
 
-    - url: "https://www.google.com"
-      image: "images/clients/client_4.png"
-      title: "Company Inc."
+    - url: "https://www.spreaker.com/show/3181144/episodes/feed"
+      image: "images/clients/rss.png"
+      title: "Sulla tua app preferita"
 
 ### Testimonials [ testimonials ]
 testimonials:
