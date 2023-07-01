@@ -128,7 +128,7 @@ facts:
 
 ### Clients [ clients ]
 clients:
-  title: "Ascolta su"
+  title: "Ascolta il podcast"
   items:
     - url: "http://bit.ly/picGooglePodcast"
       image: "images/clients/google-podcast.png"
