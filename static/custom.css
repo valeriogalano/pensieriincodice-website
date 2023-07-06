@@ -13,7 +13,22 @@
 .bg-bubbles li {
     background-image: url("/images/pensieriincodice-locandina.png");
 }
-
+.container .card-started .profile .slide::before {
+    bottom: -63%;
+    transform(rotate(11deg));
+    -moz-trasform: rotate(11deg);
+    -webkit-transform: rotate(11deg);
+    -ms-transform: rotate(11deg);
+    -o-transform: rotate(11deg);
+}
+.container .card-started .profile .slide::after {
+    right: -27%;
+    transform(rotate(-11deg));
+    -moz-transform: rotate(-11deg);
+    -webkit-transform: rotate(-11deg);
+    -ms-transform: rotate(-11deg);
+    -o-transform: rotate(-11deg);
+}
 /* esiste un file orange.css , l'arancione giusto è questo: #fb6501 */
 
 /* modifiche effetto "V" logo: da capire come far funzionare senza modificare il tema direttamente */
