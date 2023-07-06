@@ -8,7 +8,7 @@
 ### param "buttons" - Buttons, icon class you can find here https://ionicons.com/v4/
 
 main:
-  bgimage: "images/bg.jpg"
+  bgimage: "images/pensieriincodice-logo-sito.png"
   photo: ""
   name: "con Valerio Galano"
   typed:
