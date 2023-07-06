@@ -457,16 +457,16 @@
 				content: '';
 				position: absolute;
 				left: -25%;
-				bottom: -62%;
+				bottom: -63%;
 				width: 100%;
 				height: 70%;
 				background: $white-color;
-				@include transform(rotate(11deg));
+				@include transform(rotate(12deg));
 			}
 			&:after {
 				left: auto;
-				right: -27%;
-				@include transform(rotate(-11deg));
+				right: -25%;
+				@include transform(rotate(-8deg));
 			}
 		}
 		.image {
