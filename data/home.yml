@@ -339,7 +339,7 @@ support:
           link: "https://www.paypal.com/donate/?hosted_button_id=HRKMD7X43R7SS"
 
     - type: "list"
-      title: "Iscrivendoti a un servizio"
+      title: "Utilizzando un servizio"
       icon: "ion-android-list"
       items:
         - label: "Todoist"

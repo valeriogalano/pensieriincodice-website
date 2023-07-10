@@ -19,8 +19,8 @@ DefaultContentLanguage = "it"
 [menu]
 [[menu.main]]
   identifier = "about"
-  name = "About"
-  pre = "ion-person"
+  name = "Home"
+  pre = "ion-home"
   url = "#about-card"
   weight = 1
   [menu.main.params]
