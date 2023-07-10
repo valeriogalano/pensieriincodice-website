@@ -332,6 +332,9 @@ support:
         - label: "Tramite Satispay"
           link: "https://www.satispay.com/download/qrcode/S6Y-CON--EC548199-5F32-4BD6-AAF5-73A999744E56"
 
+        - label: "Tramite Revolut"
+          link: "https://revolut.me/valeriogalano"
+
         - label: "Tramite PayPal"
           link: "https://www.paypal.com/donate/?hosted_button_id=HRKMD7X43R7SS"
 
