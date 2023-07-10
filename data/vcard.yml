@@ -14,7 +14,7 @@ main:
   typed:
     - text: "Il podcast dove si ragiona da informatici"
     - text: "Un informatico risolve problemi, a volte anche usando il computer"
-    - text: "Riflessioni dal mondo del software"
+    - text: "Riflessioni e idee dal mondo del software"
   social:
     - title: "Telegram"
       icon: "fab fa-telegram"
