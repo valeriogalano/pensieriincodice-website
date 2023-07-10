@@ -13,6 +13,7 @@ main:
   name: "con Valerio Galano"
   typed:
     - text: "Il podcast dove si ragiona da informatici"
+    - text: "Un informatico risolve problemi, a volte anche usando il computer"
     - text: "Riflessioni dal mondo del software"
   social:
     - title: "Telegram"
