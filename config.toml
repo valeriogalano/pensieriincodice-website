@@ -38,10 +38,10 @@ DefaultContentLanguage = "it"
     ]
 [[menu.main]]
   identifier = "resume"
-  name = "Resume"
+  name = "Storia"
   pre = "ion-android-list"
   url = "#resume-card"
-  weight = 2
+  weight = 3
   [menu.main.params]
     builder = [
       "resume",
@@ -52,7 +52,7 @@ DefaultContentLanguage = "it"
   name = "Episodi"
   pre = "ion-paintbrush"
   url = "#episodes-card"
-  weight = 3
+  weight = 2
   [menu.main.params]
     builder = [
       "episodes"

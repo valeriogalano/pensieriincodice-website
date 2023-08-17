@@ -194,37 +194,30 @@ testimonials:
 
 ### Resume [ resume ]
 resume:
-  title: "Resume"
+  title: "Stodia del podcast"
   experience:
-    title: "Experience"
+    title: "Versioni"
     icon: "ion-briefcase"
     items:
-      - year: "2013 - Present"
-        role: "Art Director"
-        company: "Facebook Inc."
-        text: "Collaborate with creative and development teams on the execution of ideas."
+      - year: "2021 - Presente"
+        role: "Versione 2"
+        company: "Il podcast dove si ragiona da informatici"
+        text: "Audio design by Alex Raccuglia. Voice over by Maria Chiara Virgili e Spad."
         active: 1
         h_line: 1
 
-      - year: "2011 - 2012"
-        role: "Front-end Developer"
-        company: "Google Inc."
-        text: "Monitored technical aspects of the front-end delivery for several projects."
+      - year: "2019 - 2021"
+        role: "Versione 1"
+        company: "Idee dal mondo del software"
+        text: "Voce over by Costanza Martina Vitale"
         active: 0
         h_line: 1
-
-      - year: "2009 - 2010"
-        role: "Senior Developer"
-        company: "Abc Inc."
-        text: "Optimize website performance using latest technology."
-        active: 0
-        h_line: 0
   education:
-    title: "Education"
+    title: "Momenti salienti"
     icon: "ion-university"
     items:
       - year: "2006 - 2008"
-        institution: "Art University"
+        institution: "150k+ Download"
         city: "New York"
         text: "Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson, Missouri"
         h_line: 1
@@ -235,10 +228,10 @@ resume:
         text: "Coursework - Git, WordPress, Javascript, iOS, Android."
         h_line: 1
 
-      - year: "2004 - 2005"
-        institution: "Web Design Course"
-        city: "London"
-        text: "Converted Photoshop layouts to web pages using HTML, CSS, and JavaScript"
+      - year: "Marzo 2019"
+        institution: "Primo episodio"
+        city: ""
+        text: "Esce l'episodio pilota del podcast dal titolo \"Ep.1 - Perché tutti dovremmo imparare a programmare?\""
         h_line: 0
 
 ### Skills [ skills ]
@@ -374,13 +367,13 @@ blog:
 
 ### Contact Info List [ contacts-info ]
 contacts_info:
-  title: "Get in Touch"
+  title: "Contattami"
   list:
     - label: "Address"
       value: "California, USA"
 
     - label: "Email"
-      value: "adlard@example.com"
+      value: "valerio@pensieriincodice.it"
 
     - label: "Phone"
       value: "+123 654 78900"
