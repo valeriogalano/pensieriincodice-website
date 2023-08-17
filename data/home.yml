@@ -364,6 +364,10 @@ support:
 portfolio:
   title: "Recent Works"
 
+### Episodes [ episodes ]
+episodes:
+  title: "Ultimi episodi"
+
 ### Blog [ blog ]
 blog:
   title: "Latest Posts"
