@@ -62,7 +62,7 @@ DefaultContentLanguage = "it"
   name = "News"
   pre = "ion-chatbox-working"
   url = "#blog-card"
-  weight = 4
+  weight = 3
   [menu.main.params]
     builder = [
       "blog"
