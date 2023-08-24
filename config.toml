@@ -1,5 +1,5 @@
 # General Settings
-title = "Pensieri in Codice"
+title = "Pensieri in codice"
 baseURL = "https://stalwart-dolphin-75aaae.netlify.app/" #YOUR SITE URL
 languageCode = "it-IT"
 theme = "ryancv"
