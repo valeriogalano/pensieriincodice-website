@@ -143,6 +143,26 @@ facts:
 
 ### Clients [ clients ]
 clients:
+  title: "Clients"
+  items:
+    - url: "https://www.google.com"
+      image: "images/clients/client_1.png"
+      title: "Company Inc."
+
+    - url: "https://www.google.com"
+      image: "images/clients/client_2.png"
+      title: "Company Inc."
+
+    - url: "https://www.google.com"
+      image: "images/clients/client_3.png"
+      title: "Company Inc."
+
+    - url: "https://www.google.com"
+      image: "images/clients/client_4.png"
+      title: "Company Inc."
+
+### Platforms [ platforms ]
+platforms:
   title: "Ascolta il podcast"
   items:
     - url: "http://bit.ly/picGooglePodcast"
