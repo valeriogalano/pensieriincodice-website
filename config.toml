@@ -37,15 +37,15 @@ DefaultContentLanguage = "it"
 #      "testimonials"
     ]
 [[menu.main]]
-  identifier = "resume"
+  identifier = "history"
   name = "Storia"
   pre = "ion-android-list"
-  url = "#resume-card"
-  weight = 3
+  url = "#history-card"
+  weight = 4
   [menu.main.params]
     builder = [
-      "resume",
-      "skills"
+      "history",
+     # "skills"
     ]
 [[menu.main]]
   identifier = "episodes"
