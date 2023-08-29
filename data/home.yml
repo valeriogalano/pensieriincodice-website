@@ -41,6 +41,40 @@ motto:
     - label: "Etica, privacy e libertà digitali"
     - label: "Crescita personale"
 
+### Supporters [ supporters ]
+supporters:
+  title: "Sostenitori"
+  text: 'Un enorme grazie a tutti quelli che hanno deciso di supportare il podcast. Grazie a loro, Pensieri in codice è un progetto sostenibile e indipendente.'
+  groups:
+    - title: "Giga sostenitori"
+      icon: "ion-ios-star"
+      items:
+        - label: "Sotenitore 1"
+        - label: "Sotenitore 2"
+        - label: "Sotenitore 3"
+        - label: "Sotenitore 4"
+    - title: "Mega sostenitori"
+      icon: "ion-ios-list"
+      items:
+        - label: "Sotenitore 1"
+        - label: "Sotenitore 2"
+        - label: "Sotenitore 3"
+        - label: "Sotenitore 4"
+    - title: "Kilo sostenitori"
+      icon: "ion-ios-star-outline"
+      items:
+        - label: "Sotenitore 1"
+        - label: "Sotenitore 2"
+        - label: "Sotenitore 3"
+        - label: "Sotenitore 4"
+    - title: "Sostenitori"
+      icon: "ion-ios-list-outline"
+      items:
+        - label: "Sotenitore 1"
+        - label: "Sotenitore 2"
+        - label: "Sotenitore 3"
+        - label: "Sotenitore 4"
+
 ### Services [ services ]
 services:
   title: "Ascolta su"
@@ -441,10 +475,6 @@ support:
 ### Portfolio [ portfolio ]
 portfolio:
   title: "Recent Works"
-
-### Episodes [ episodes ]
-episodes:
-  title: "Ultimi episodi"
 
 ### Blog [ blog ]
 blog:

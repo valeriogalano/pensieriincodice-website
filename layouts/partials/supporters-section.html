@@ -1,0 +1,41 @@
+{{ with .Site.Data.home.supporters }}
+
+{{ "<!-- Motto -->" | safeHTML }}
+<div class="content clients">
+
+	{{ if .title }}
+	<div class="title">{{ .title }}</div>
+	{{ end }}
+	<div class="row">
+		<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+			<div class="text-box">
+				<div class="motto">{{ .text | safeHTML }}</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row client-items">
+		{{ range .groups }}
+		<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+			<div class="skills-list list">
+				<div class="skill-title border-line-h">
+					<div class="icon"><i class="ion {{ .icon }}"></i></div>
+					<div class="name">{{ .title }}</div>
+				</div>
+				<ul>
+					{{ range .items }}
+					<li>
+						<strong>{{ .label }}</strong>
+					</li>
+					{{ end }}
+				</ul>
+			</div>
+		</div>
+		{{ end }}
+
+		<div class="clear"></div>
+	</div>
+
+</div>
+
+{{ end }}
