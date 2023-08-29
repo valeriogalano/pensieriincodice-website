@@ -1,0 +1,43 @@
+{{ with .Site.Data.home.rewards }}
+
+{{ "<!-- Clients -->" | safeHTML }}
+<div class="content skills">
+
+	{{ if .title }}
+	<div class="title">{{ .title }}</div>
+	{{ end }}
+
+	<div class="row">
+		<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+			<div class="skills-list circles">
+				<ul>
+					{{ range .items }}
+					<li>
+						<div class="name">{{ .label }}</div>
+						<div class="progress p{{ .percentage }}">
+							<span>€ {{ .value }}</span>
+						</div>
+					</li>
+					{{ end }}
+				</ul>
+			</div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div class="row">
+		<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+			{{ range .rows }}
+			<div class="text-box">
+				{{ .text | markdownify }}
+			</div>
+			<br/>
+			{{ end }}
+		</div>
+		<div class="clear"></div>
+	</div>
+
+</div>
+
+{{ end }}

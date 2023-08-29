@@ -161,6 +161,24 @@ clients:
       image: "images/clients/client_4.png"
       title: "Company Inc."
 
+### Rewards [ rewards ]
+rewards:
+  title: "Ricompense per le donazioni"
+  items:
+  - label: "Card laminata da sostenitore"
+    value: "25"
+    percentage: "100"
+  - label: "Segnalibro e stickers"
+    value: "10"
+    percentage: "66"
+  - label: "Titolo di sostenitore"
+    value: "1"
+    percentage: "33"
+  rows:
+    - text: "Se diventi sostenitore, a prescindere dal livello di supporto, ricevi un ringraziamento pubblico nel podcast."
+    - text: "Le soglie di donazione sono calcolate in base alla somma totale nel corso del tempo."
+    - text: "Una volta raggiunta una soglia, contattami su Telegram o via email per comunicarmi il tuo indirizzo."
+
 ### Platforms [ platforms ]
 platforms:
   title: "Ascolta il podcast"
