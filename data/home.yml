@@ -383,6 +383,7 @@ skills:
 ### Support [ support ]
 support:
   title: "Sostieni il progetto"
+  text: "Pensieri in codice è un podcast indipendente. Ciò vuol dire che vive grazie ai tuoi ascolti, alle tue condivisioni e al **tuo supporto**. Se ti piace il progetto, se lo ascolti regolarmente, insomma se ha **valore per te**, hai vari modi per dimostrare il tuo apprezzamento e il tuo sostegno."
   columns:
     - type: "list"
       title: "Con una donazione"
