@@ -1,6 +1,6 @@
 # General Settings
 title = "Pensieri in codice"
-baseURL = "https://stalwart-dolphin-75aaae.netlify.app/" #YOUR SITE URL
+baseURL = "https://pensieriincodice.it/" #YOUR SITE URL
 languageCode = "it-IT"
 theme = "ryancv"
 resourceDir = "resources"
@@ -27,7 +27,6 @@ DefaultContentLanguage = "it"
     builder = [
       "motto",
       "platforms",
-      "support",
       "facts",
       "partners",
       "netzero"
@@ -48,35 +47,40 @@ DefaultContentLanguage = "it"
      # "skills"
     ]
 [[menu.main]]
-  identifier = "episodes"
-  name = "Episodi"
-  pre = "ion-paintbrush"
-  url = "#episodes-card"
-  weight = 2
-  [menu.main.params]
-    builder = [
-      "episodes"
-    ]
-[[menu.main]]
   identifier = "blog"
-  name = "News"
+  name = "Ultime novità"
   pre = "ion-chatbox-working"
   url = "#blog-card"
-  weight = 3
+  weight = 2
   [menu.main.params]
     builder = [
       "blog"
     ]
 [[menu.main]]
-  identifier = "contact"
-  name = "Contact"
+  identifier = "support"
+  name = "Sostieni"
   pre = "ion-at"
-  url = "#contact-card"
+  url = "#support-card"
+  weight = 3
+  [menu.main.params]
+    builder = [
+      "support",
+      "rewards",
+      "supporters",
+      #"contact-info",
+      #"contact-form"
+    ]
+[[menu.main]]
+  identifier = ""
+  name = "Archivio episodi"
+  pre = "ion-at"
+  url = "episodes"
   weight = 5
   [menu.main.params]
     builder = [
-      "contact-info",
-      "contact-form"
+  #"supporters"
+  #"contact-info",
+  #"contact-form"
     ]
 
 [[menu.sidebar]]
@@ -86,7 +90,7 @@ DefaultContentLanguage = "it"
   weight = 1
 [[menu.sidebar]]
   identifier = "episodes"
-  name = "Episodi"
+  name = "Archivio episodi"
   url = "episodes"
   weight = 2
 
