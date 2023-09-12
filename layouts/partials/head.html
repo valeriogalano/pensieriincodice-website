@@ -16,9 +16,6 @@
   {{ $style := resources.Get "scss/style.scss" | resources.ToCSS | minify }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
-  {{ "<!-- Custom Stylesheets -->" | safeHTML }}
-  <link rel="stylesheet" href="{{ "custom.css" | absURL }}" />
-
   {{ "<!-- Plugins Stylesheets -->" | safeHTML }}
   <link rel="stylesheet" href="{{ "plugins/ionicons/ionicons.css" | absURL }}" />
   <link rel="stylesheet" href="{{ "plugins/font-awesome/css/font-awesome.css" | absURL }}" />
@@ -46,6 +43,9 @@
   {{ "<!-- Template RTL -->" | safeHTML }}
   <link rel="stylesheet" href="{{ "plugins/template-minimal/minimal-skin.css" | absURL }}" />
   {{ end }}
+
+  {{ "<!-- Custom Stylesheets -->" | safeHTML }}
+  <link rel="stylesheet" href="{{ "custom.css" | absURL }}" />
 
   <!--[if lt IE 9]>
   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
