@@ -36,9 +36,12 @@ main:
       url: "mailto:valerio@pensieriincodice.it"
 
   buttons:
-    - title: "Canale Telegram"
+    - title: "News"
       icon: ""
       url: "https://t.me/pensieriincodice"
-    - title: "Gruppo Telegram"
+    - title: "Community"
       icon: ""
       url: "https://t.me/pensieriincodicecommunity"
+    - title: "Email"
+      icon: ""
+      url: "mailto:valerio@pensieriincodice.it"
