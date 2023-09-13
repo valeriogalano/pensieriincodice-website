@@ -33,6 +33,11 @@
     -o-transform: rotate(-11deg);
 }
 
+.card-started .profile.no-photo .title {
+    padding-bottom: 10px;
+}
+
+
 @media (max-width: 560px) {
     .top-menu {
         position: fixed !important;
