@@ -20,7 +20,7 @@ DefaultContentLanguage = "it"
 [[menu.main]]
   identifier = "about"
   name = "Home"
-  pre = "ion-home"
+  pre = "mic"
   url = "#about-card"
   weight = 1
   [menu.main.params]
@@ -38,7 +38,7 @@ DefaultContentLanguage = "it"
 [[menu.main]]
   identifier = "history"
   name = "Storia"
-  pre = "ion-android-list"
+  pre = "book"
   url = "#history-card"
   weight = 4
   [menu.main.params]
@@ -49,7 +49,7 @@ DefaultContentLanguage = "it"
 [[menu.main]]
   identifier = "blog"
   name = "Ultime novità"
-  pre = "ion-chatbox-working"
+  pre = "alert-circle"
   url = "#blog-card"
   weight = 2
   [menu.main.params]
@@ -59,7 +59,7 @@ DefaultContentLanguage = "it"
 [[menu.main]]
   identifier = "support"
   name = "Sostieni"
-  pre = "ion-at"
+  pre = "gift"
   url = "#support-card"
   weight = 3
   [menu.main.params]
@@ -73,7 +73,7 @@ DefaultContentLanguage = "it"
 [[menu.main]]
   identifier = ""
   name = "Archivio episodi"
-  pre = "ion-play"
+  pre = "play"
   url = "episodes"
   weight = 5
   [menu.main.params]
