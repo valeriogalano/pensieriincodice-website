@@ -73,7 +73,7 @@ DefaultContentLanguage = "it"
 [[menu.main]]
   identifier = ""
   name = "Archivio episodi"
-  pre = "ion-at"
+  pre = "ion-play"
   url = "episodes"
   weight = 5
   [menu.main.params]
@@ -96,7 +96,7 @@ DefaultContentLanguage = "it"
 
 # Main Settings
 [params]
-skinColor = "orange" #TEMPLATE SKIN COLOR: [ blue, green, orange, pink, purple, red ]. If empty colors taken from thenes/ryan/assets/scss/_settings.scss
+skinColor = "orange-pic" #TEMPLATE SKIN COLOR: [ blue, green, orange, pink, purple, red ]. If empty colors taken from thenes/ryan/assets/scss/_settings.scss
 skinDark = 0 #TEMPLATE UI: [ 1 - yes, 0 - no ]
 rtl = 0 #TEMPLATE RTL MODE: [ 1 - yes, 0 - no ]
 skinMinimal = 0 #TEMPLATE MINIMAL SKIN: [ 1 - yes, 0 - no ]
