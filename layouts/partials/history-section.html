@@ -13,7 +13,7 @@
     {{ $exp := .experience }}
 		<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 			<div class="resume-title border-line-h">
-				<div class="icon"><i class="ion {{ $exp.icon }}"></i></div>
+				<ion-icon class="icon icon-history" aria-hidden="true" name="{{ $exp.icon }}"></ion-icon>
 				<div class="name">{{ $exp.title }}</div>
 			</div>
 			<div class="resume-items">
