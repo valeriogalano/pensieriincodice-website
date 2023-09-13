@@ -37,15 +37,26 @@
     padding-bottom: 10px;
 }
 
+/* Image opacity and hover animation */
+
 .client-items .client-item img {
-  opacity:0.9;
+    opacity:0.9;
 }
 
 .client-items .client-item img:hover {
-  opacity: .8;
-  transform: scale(1.2);
+    opacity: .8;
+    transform: scale(1.2);
 }
 
+.lnk:hover,
+.button:hover {
+	color: #fb6501 !important;
+}
+
+a:hover {
+    text-decoration:none;
+    color: #fb6501;
+}
 
 /* mobile fixes */
 
