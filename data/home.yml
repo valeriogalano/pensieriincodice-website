@@ -199,15 +199,15 @@ clients:
 rewards:
   title: "Ricompense per le donazioni"
   items:
-  - label: "Card laminata da sostenitore"
-    value: "25"
-    percentage: "100"
-  - label: "Segnalibro e stickers"
-    value: "10"
-    percentage: "66"
   - label: "Titolo di sostenitore"
     value: "1"
     percentage: "33"
+  - label: "Segnalibro e stickers"
+    value: "10"
+    percentage: "66"
+  - label: "Card laminata da sostenitore"
+    value: "25"
+    percentage: "100"
   rows:
     - text: "Se diventi sostenitore, a prescindere dal livello di supporto, ricevi un ringraziamento pubblico nel podcast."
     - text: "Le soglie di donazione sono calcolate in base alla somma totale nel corso del tempo."
@@ -281,7 +281,7 @@ resume:
       - year: "2019 - 2021"
         role: "Versione 1"
         company: "Idee dal mondo del software"
-        text: "Voce over by Costanza Martina Vitale"
+        text: "Voice over by Costanza Martina Vitale"
         active: 0
         h_line: 1
   education:

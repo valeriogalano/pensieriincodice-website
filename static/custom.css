@@ -32,6 +32,56 @@
     -ms-transform: rotate(-11deg);
     -o-transform: rotate(-11deg);
 }
+
+.card-started .profile.no-photo .title {
+    padding-bottom: 10px;
+}
+
+/* Image opacity and hover animation */
+
+.client-items .client-item img {
+    opacity:0.9;
+}
+
+.client-items .client-item img:hover {
+    opacity: .8;
+    transform: scale(1.2);
+}
+
+.lnk:hover,
+.button:hover {
+	color: #fb6501 !important;
+}
+
+a:hover {
+    text-decoration:none;
+    color: #fb6501;
+}
+
+/* mobile fixes */
+
+@media (max-width: 560px) {
+    .top-menu {
+        position: fixed !important;
+        bottom: 0 !important;
+        margin-top: 0px !important;
+        max-width: 100%;
+        display: flex;
+        box-shadow: 0 5px 10px rgba(0,0,0,5%);
+        -webkit-box-shadow: 0 5px 10px rgba(0,0,0,5%);
+    }
+
+    .card-started .profile {
+        height: calc(100vh - 163px) !important;
+        min-height: 560px;
+    }
+
+    .container {
+        padding: 81px 0 0 !important;
+    }
+
+}
+
 /* esiste un file orange.css , l'arancione giusto è questo: #fb6501 */
 
 /* modifiche effetto "V" logo: da capire come far funzionare senza modificare il tema direttamente */
