@@ -1,9 +1,9 @@
 {{ $dateFormat := .Site.Params.dateFormat }}
 
-{{ "<!-- Episodes -->" | safeHTML }}
+{{ "<!-- Blog -->" | safeHTML }}
 <div class="content blog">
 
-	{{ with .Site.Data.home.episodes }}
+	{{ with .Site.Data.home.blog }}
 
 	{{ if .title }}
 	<div class="title">{{ .title }}</div>
@@ -11,7 +11,7 @@
 
 	{{ end }}
 
-	{{ $paginator := .Paginate (where .Site.RegularPages "Section" "episodes") }}
+	{{ $paginator := .Paginate (where .Site.RegularPages "Type" "blog") }}
 
 	<div class="row border-line-v post-items" data-page="{{ $paginator.PageNumber }}" data-total="{{ $paginator.TotalPages }}">
 
