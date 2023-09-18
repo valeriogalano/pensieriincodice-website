@@ -112,7 +112,7 @@ type = "default" #BACKGROUND TYPE: [ default, blured ]
 
 # Google MAPS
 [params.googleMaps]
-key = "your_api_key" #YOUR GOOGLE MAPS API KEY: leave empty if you want to hide Google Maps
+key = "" #YOUR GOOGLE MAPS API KEY: leave empty if you want to hide Google Maps
 lat = "40.773328" #YOUR GOOGLE MAPS LATITUDE
 long = "-73.960088" #YOUR GOOGLE MAPS LONGITUDE
 zoom = "14" #YOUR GOOGLE MAPS ZOOM VALUE
