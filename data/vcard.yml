@@ -37,11 +37,11 @@ main:
 
   buttons:
     - title: "Telegram"
-      icon: ""
+      icon: "fab fa-telegram"
       url: "https://t.me/pensieriincodice"
     - title: "Community"
-      icon: ""
+      icon: "fab fa-telegram"
       url: "https://t.me/pensieriincodicecommunity"
     - title: "Email"
-      icon: ""
+      icon: "far fa-envelope"
       url: "mailto:valerio@pensieriincodice.it"
