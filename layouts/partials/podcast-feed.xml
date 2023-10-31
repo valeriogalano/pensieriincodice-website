@@ -79,9 +79,17 @@
       </itunes:keywords>
       {{- end -}}
       {{ with .Params.audio_duration }}<itunes:duration>{{ . }}</itunes:duration>{{ end }}
-      {{ printf "<description><![CDATA[%s]]></description>" .Content | safeHTML }}
-      {{ printf `<googleplay:description><![CDATA[%s]]></googleplay:description>` .Content | safeHTML }}
-      {{ printf "<content:encoded><![CDATA[%s]]></content:encoded>" .Content | safeHTML }}
+      {{- if strings.Contains .Content "<hr>" -}}
+      {{ $target := split .Content "<hr>" }}
+      {{ $cutted_desc := index ($target) 0 }}
+      <description>{{ print "<![CDATA[" $cutted_desc | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML }}</description>
+      <googleplay:description>{{ print "<![CDATA[" $cutted_desc | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML }}</googleplay:description>
+      <content:encoded>{{ print "<![CDATA[" $cutted_desc | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML }}</content:encoded>
+      {{- else -}}
+      <description>{{ print "<![CDATA[" .Content | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML }}</description>
+      <googleplay:description>{{ print "<![CDATA[" .Content | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML }}</googleplay:description>
+      <content:encoded>{{ print "<![CDATA[" .Content | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML }}</content:encoded>
+      {{- end -}}
       {{- with .Params.images -}}<itunes:image href="{{ index . 0 | absURL }}"/>{{- end -}}
       {{ $audio_name_arr := split .Params.audio "." }}
       {{ $audio_type := index $audio_name_arr (sub (len $audio_name_arr) 1) }}
