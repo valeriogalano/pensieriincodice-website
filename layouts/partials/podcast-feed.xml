@@ -79,8 +79,8 @@
       </itunes:keywords>
       {{- end -}}
       {{ with .Params.audio_duration }}<itunes:duration>{{ . }}</itunes:duration>{{ end }}
-      {{- if strings.Contains .Content "<hr>" -}}
-      {{ $target := split .Content "<hr>" }}
+      {{- if strings.Contains .Content "<!-- more -->" -}}
+      {{ $target := split .Content "<!-- more -->" }}
       {{ $cutted_desc := index ($target) 0 }}
       <description>{{ print "<![CDATA[" $cutted_desc | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML }}</description>
       <googleplay:description>{{ print "<![CDATA[" $cutted_desc | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML }}</googleplay:description>

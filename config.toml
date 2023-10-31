@@ -8,6 +8,9 @@ paginate = 4
 summaryLength = 20
 DefaultContentLanguage = "it"
 
+[markup.goldmark.renderer]
+unsafe= true
+
 # Menu Settings
 ##
 ### to add or remove card (or menu item)
