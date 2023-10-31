@@ -6,7 +6,12 @@ theme = "ryancv"
 resourceDir = "resources"
 paginate = 4
 summaryLength = 20
-DefaultContentLanguage = "it"
+defaultContentLanguage = "it"
+
+[languages.it]
+  contentDir = 'content/'
+  languageName = 'Italiano'
+  weight = 1
 
 # Menu Settings
 ##
