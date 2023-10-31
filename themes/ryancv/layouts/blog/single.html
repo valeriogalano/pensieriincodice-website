@@ -26,13 +26,13 @@
 							<span class="byline"> {{ i18n "by" }} <span class="author">{{ .Site.Params.authorName }}</span></span>
 						</div>
 
-						{{ with .Params.fullImage }}
-						<div class="blog-image">
-							<img src="{{ . | absURL }}" alt="{{ .Title }}" />
+						{{ with .Params.image }}
+						<div class="blog-image 1">
+							<img src="{{ .url | absURL }}" alt="{{ .alt }}" />
 						</div>
 						{{ else }}
-						<div class="blog-image">
-							<img src="{{ .Params.featureImage | absURL }}" alt="{{ .Title }}" />
+						<div class="blog-image 2">
+							<img src="{{ .Site.Params.podcast.image | absURL }}" alt="{{ .Title }}" />
 						</div>
 						{{ end }}
 
