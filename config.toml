@@ -6,7 +6,12 @@ theme = "ryancv"
 resourceDir = "resources"
 paginate = 4
 summaryLength = 20
-DefaultContentLanguage = "it"
+defaultContentLanguage = "it"
+
+[languages.it]
+  contentDir = 'content/'
+  languageName = 'Italiano'
+  weight = 1
 
 # Menu Settings
 ##
@@ -153,7 +158,7 @@ subtitle = "Subtitle"
 summary = "Summary"
 authors = [ "Author" ]
 email = "example@example.com"
-image = "/img/podcast-logo.png"
+image = "/images/podcast-logo.png"
 audio_base_url = "https://cdn.example.com/podcast/"
 copyright = "Copyright"
 category = "Category"
