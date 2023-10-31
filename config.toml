@@ -13,6 +13,9 @@ defaultContentLanguage = "it"
   languageName = 'Italiano'
   weight = 1
 
+[markup.goldmark.renderer]
+unsafe= true
+
 # Menu Settings
 ##
 ### to add or remove card (or menu item)
