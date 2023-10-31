@@ -20,7 +20,11 @@
 			<div class="box-item">
 				<div class="image">
 					<a href="{{ .Permalink }}">
-						<img src="{{ .Params.featureImage | absURL }}" alt="{{ .Title }}" />
+						{{ if .Params.image }}
+						<img src="{{ .Params.image.url | absURL }}" alt="{{ .Params.image.alt }}" />
+						{{ else }}
+						<img src="{{ .Site.Params.podcast.image | absURL }}" alt="{{ .Title }}" />
+						{{ end }}
 						<span class="info">
 							<span class="ion ion-document-text"></span>
 						</span>

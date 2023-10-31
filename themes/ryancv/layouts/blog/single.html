@@ -27,11 +27,11 @@
 						</div>
 
 						{{ with .Params.image }}
-						<div class="blog-image 1">
+						<div class="blog-image">
 							<img src="{{ .url | absURL }}" alt="{{ .alt }}" />
 						</div>
 						{{ else }}
-						<div class="blog-image 2">
+						<div class="blog-image">
 							<img src="{{ .Site.Params.podcast.image | absURL }}" alt="{{ .Title }}" />
 						</div>
 						{{ end }}
