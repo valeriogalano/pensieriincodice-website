@@ -27,7 +27,7 @@ unsafe= true
 [menu]
 [[menu.main]]
   identifier = "about"
-  name = "Home"
+  name = "Pensieri in codice"
   pre = "mic"
   url = "#about-card"
   weight = 1
