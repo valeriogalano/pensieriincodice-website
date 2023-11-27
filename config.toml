@@ -94,7 +94,7 @@ unsafe= true
 
 [[menu.sidebar]]
   identifier = "blog"
-  name = "News"
+  name = "Archivio articoli"
   url = "blog"
   weight = 1
 [[menu.sidebar]]
