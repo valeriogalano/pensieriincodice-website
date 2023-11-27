@@ -62,7 +62,8 @@ unsafe= true
   weight = 2
   [menu.main.params]
     builder = [
-      "blog"
+      "blog",
+      "viewall"
     ]
 [[menu.main]]
   identifier = "support"
