@@ -192,3 +192,9 @@ Rel = "alternate"
 
 [outputs]
 home = ["HTML", "RSS", "JSON", "podcast"]
+
+[permalinks]
+  [permalinks.page]
+    podcast = '/:filename'
+  [permalinks.section]
+    podcast = '/episodes/:filename'
