@@ -157,13 +157,13 @@ name = "Design"
 slug = "design"
 
 [params.podcast]
-title = "Hugo Podcast"
-subtitle = "Subtitle"
-summary = "Summary"
-authors = [ "Author" ]
-email = "example@example.com"
+title = "Pensieri in codice"
+subtitle = "Il podcast dove si ragiona da informatici. Con Valerio Galano"
+summary = "Il podcast dove si ragiona da informatici. Con Valerio Galano"
+authors = [ "Valerio Galano" ]
+email = "v.galano@daredevel.com"
 image = "/images/podcast-logo.png"
-audio_base_url = "https://cdn.example.com/podcast/"
+audio_base_url = "https://cdn.pensieriincodice.it/"
 copyright = "Copyright"
 category = "Category"
 sub_category = "Sub Category"
@@ -184,7 +184,7 @@ filename = "sitemap.xml"
 [outputFormats.podcast]
 MediaType = "application/rss+xml"
 BaseName = "index"
-path = "/feed/"
+path = "/podcast/"
 IsHTML = false
 IsPlainText = true
 noUgly = true

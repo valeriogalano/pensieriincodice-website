@@ -90,7 +90,11 @@
       <googleplay:description>{{ print "<![CDATA[" .Content | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML }}</googleplay:description>
       <content:encoded>{{ print "<![CDATA[" .Content | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML }}</content:encoded>
       {{- end -}}
-      {{- with .Params.images -}}<itunes:image href="{{ index . 0 | absURL }}"/>{{- end -}}
+      {{- with .Params.image -}}
+        <itunes:image href="{{ .url | absURL }}"/>
+      {{- else -}}
+        <itunes:image href="{{ .Site.Params.Podcast.image }}"/>
+      {{- end -}}
       {{ $audio_name_arr := split .Params.audio "." }}
       {{ $audio_type := index $audio_name_arr (sub (len $audio_name_arr) 1) }}
       {{ $audio_size := 1 }}
@@ -99,6 +103,7 @@
       <guid>{{ .Site.Params.Podcast.audio_base_url }}{{ .Params.audio }}</guid>
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }} </pubDate>
+      <podcast:transcript url="{{ .Site.Params.Podcast.audio_base_url }}{{ .Params.transcript }}" type="application/x-subrip" language="it" />
     </item>
     {{ end }}
   </channel>
