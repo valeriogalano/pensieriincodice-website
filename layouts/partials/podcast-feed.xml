@@ -91,7 +91,7 @@
       <content:encoded>{{ print "<![CDATA[" .Content | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML }}</content:encoded>
       {{- end -}}
       {{- with .Params.image -}}
-        <itunes:image href="{{ .url | absURL }}"/>
+        <itunes:image href="{{ . | absURL }}"/>
       {{- else -}}
         <itunes:image href="{{ .Site.Params.Podcast.image }}"/>
       {{- end -}}
