@@ -639,17 +639,18 @@ strong {
 }
 
 .button {
-	padding: 0 30px;
-	display: inline-block;
+	padding: 5px 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	float: none;
 	width: auto;
-	height: 50px;
-	line-height: 50px;
+	line-height: 25px;
 	background: #eeeeee;
 	border-radius: 4px;
 
 	.text {
-		padding-left: 14px;
+		padding-left: 5px;
 	}
 
 	&:before {
