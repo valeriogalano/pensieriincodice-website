@@ -331,6 +331,13 @@ history:
     title: "Momenti salienti"
     icon: "school"
     items:
+      - year: "Dicembre 2023"
+        institution: "Nuovo sito, grafica e feed"
+        city: ""
+        text: "Grazie al contributo di alcuni sostenitori, il podcast ha un nuovo sito con feed integrato, trascrizioni e nuove grafiche. Completamente self-hosted."
+        active: 1
+        h_line: 1
+
       - year: "Marzo 2023"
         institution: "150k+ Download"
         city: ""
