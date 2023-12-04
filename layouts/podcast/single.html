@@ -23,7 +23,10 @@
 		            {{ end }}
 							</span>
 							{{ end }}
-							<span class="byline"> {{ i18n "by" }} <span class="author">{{ .Site.Params.authorName }}</span></span>
+							<span class="byline"> {{ i18n "authors" }}
+								<span class="author">{{ range .Params.authors }} {{ . }} {{ end }}</span>
+							</span>
+
 						</div>
 
 						<div class="blog-image">
