@@ -219,12 +219,12 @@ rewards:
     value: "10"
     percentage: "66"
   - label: "Card laminata da sostenitore"
-    value: "25"
+    value: "50"
     percentage: "100"
   rows:
     - text: "Se diventi sostenitore, a prescindere dal livello di supporto, ricevi un ringraziamento pubblico nel podcast."
     - text: "Le soglie di donazione sono calcolate in base alla somma totale nel corso del tempo."
-    - text: "Una volta raggiunta una soglia, contattami su Telegram o via email per comunicarmi il tuo indirizzo."
+    - text: 'Una volta raggiunta una soglia, contattami su <a href="https://t.me/valeriogalano" target="_blank">Telegram</a> o via <a href="mailto:valerio@pensieriincodice.it">email</a> per comunicarmi il tuo indirizzo.'
 
 ### Platforms [ platforms ]
 platforms:
