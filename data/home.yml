@@ -163,16 +163,16 @@ pricing:
 facts:
   title: "Numeri del podcast"
   items:
-    - icon: "ion-mic-a"
+    - icon: "mic"
       name: "120+ Episodi"
 
-    - icon: "ion-clock"
+    - icon: "time"
       name: "40+ Ore di contenuti"
 
-    - icon: "ion-stats-bars"
+    - icon: "stats-chart"
       name: "200k+ Download"
 
-    - icon: "ion-calendar"
+    - icon: "calendar"
       name: "Online dal 2019"
 
 ### Clients [ clients ]
@@ -269,7 +269,7 @@ resume:
   title: "Stodia del podcast"
   experience:
     title: "Versioni"
-    icon: "ion-briefcase"
+    icon: "briefcase"
     items:
       - year: "2021 - Presente"
         role: "Versione 2"
@@ -286,7 +286,7 @@ resume:
         h_line: 1
   education:
     title: "Momenti salienti"
-    icon: "ion-university"
+    icon: "school"
     items:
       - year: "2006 - 2008"
         institution: "150k+ Download"
@@ -311,7 +311,7 @@ history:
   title: "Storia del podcast"
   experience:
     title: "Versioni"
-    icon: "ion-briefcase"
+    icon: "briefcase"
     items:
       - year: "2021 - Presente"
         role: "Versione 2"
@@ -329,7 +329,7 @@ history:
 
   education:
     title: "Momenti salienti"
-    icon: "ion-university"
+    icon: "school"
     items:
       - year: "Dicembre 2023"
         institution: "Nuovo sito, grafica e feed"
