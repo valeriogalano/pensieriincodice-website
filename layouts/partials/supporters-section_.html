@@ -15,19 +15,23 @@
 	</div>
 
 	<div class="row client-items">
-
-		<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+		{{ range .groups }}
+		<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 			<div class="skills-list list">
+				<div class="skill-title border-line-h">
+					<div class="icon"><i class="ion {{ .icon }}"></i></div>
+					<div class="name">{{ .title }}</div>
+				</div>
 				<ul>
-					{{ range .supporters }}
+					{{ range .items }}
 					<li>
-						<strong>{{ .name }}</strong><br />
-						{{ if .description }}{{ .description | safeHTML }}{{ end }}
+						<strong>{{ .label }}</strong>
 					</li>
 					{{ end }}
 				</ul>
 			</div>
 		</div>
+		{{ end }}
 
 		<div class="clear"></div>
 	</div>

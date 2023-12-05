@@ -45,6 +45,19 @@ motto:
 supporters:
   title: "Sostenitori"
   text: 'Un enorme grazie a tutti quelli che hanno deciso di supportare il podcast. Grazie a loro, Pensieri in codice è un progetto sostenibile e indipendente.'
+  supporters:
+    - name: "Corrado Bigliardi"
+    - name: "Guelfo Alexander Ghibellini"
+    - name: "Juri"
+    - name: "Antonio Lazazzera"
+    - name: "Giordano Mancini"
+    - name: "mario.puppo@projectstudio.eu"
+    - name: "PaolaZ"
+    - name: "Alex Raccuglia"
+      description: "Audio design"
+    - name: "Edoardo Secco"
+    - name: "Carlo Tomas"
+
   groups:
     - title: "Giga sostenitori"
       icon: "ion-ios-star"
