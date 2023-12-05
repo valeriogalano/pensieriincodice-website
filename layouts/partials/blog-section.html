@@ -11,7 +11,7 @@
 
 	{{ end }}
 
-	{{ $paginator := .Paginate (where .Site.RegularPages "Type" "blog") }}
+	{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" (slice "blog" "podcast")) }}
 
 	<div class="row border-line-v post-items" data-page="{{ $paginator.PageNumber }}" data-total="{{ $paginator.TotalPages }}">
 
@@ -21,7 +21,7 @@
 				<div class="image">
 					<a href="{{ .Permalink }}">
 						{{ if .Params.image }}
-						<img src="{{ .Params.image.url | absURL }}" alt="{{ .Params.image.alt }}" />
+						<img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" />
 						{{ else }}
 						<img src="{{ .Site.Params.podcast.image | absURL }}" alt="{{ .Title }}" />
 						{{ end }}
