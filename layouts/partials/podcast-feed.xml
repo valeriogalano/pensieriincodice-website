@@ -90,8 +90,8 @@
       <googleplay:description>{{ print "<![CDATA[" .Content | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML }}</googleplay:description>
       <content:encoded>{{ print "<![CDATA[" .Content | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML }}</content:encoded>
       {{- end -}}
-      {{- with .Params.image -}}
-        <itunes:image href="{{ . | absURL }}"/>
+      {{- if .Params.image -}}
+        <itunes:image href="{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.image }}"/>
       {{- else -}}
         <itunes:image href="{{ .Site.Params.Podcast.image }}"/>
       {{- end -}}
