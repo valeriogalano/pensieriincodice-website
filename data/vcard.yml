@@ -22,7 +22,7 @@ main:
 #    - title: "Linkedin"
 #      icon: "fab fa-linkedin"
 #      url: "https://www.linkedin.com/in/valeriogalano/"
-    - title: "Github"
+    - title: "Supporta il progetto su Github"
       icon: "fab fa-github"
       url: "https://github.com/valeriogalano/pensieriincodice-website"
 #    - title: "Instagram"
