@@ -31,7 +31,7 @@
 
 						<div class="blog-image">
 						{{ if .Params.image }}
-							<img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" />
+							<img src="{{ .Site.Params.podcast.cdn_base_url }}{{ .Params.image }}" alt="{{ .Title }}" />
 						{{ else }}
 							<img src="{{ .Site.Params.podcast.image | absURL }}" alt="{{ .Title }}" />
 						{{ end }}
