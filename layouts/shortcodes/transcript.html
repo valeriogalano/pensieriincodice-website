@@ -1,0 +1,5 @@
+{{ $episode := .Get "episode" }}
+<h2>Testo dell'episodio</h2>
+{{ with index $.Site.Data.transcripts $episode }}
+{{ replace .text "\n" "<br/><br/>" -1 | safeHTML }}<br/>
+{{ end }}
