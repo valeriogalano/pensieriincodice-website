@@ -28,7 +28,7 @@
 					{{ if eq .type "list" }}
 					{{ range .items }}
 					<li>
-						<div class="name"><a href="{{ .value  }}" target="_blank">{{ .label }}</a></div>
+						<div class="name"><a href="{{ .link  }}" target="_blank">{{ .label }}</a></div>
 					</li>
 					{{ end }}
 					{{ end }}
