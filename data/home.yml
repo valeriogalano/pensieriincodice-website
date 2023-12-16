@@ -242,7 +242,7 @@ platforms:
       image: "images/clients/spotify.png"
       title: "Spotify"
 
-    - url: "https://www.spreaker.com/show/3181144/episodes/feed"
+    - url: "/podcast/index.xml"
       image: "images/clients/rss.png"
       title: "Sulla tua app preferita"
 
