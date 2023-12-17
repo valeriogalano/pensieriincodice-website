@@ -111,7 +111,7 @@ rtl = 0 #TEMPLATE RTL MODE: [ 1 - yes, 0 - no ]
 skinMinimal = 0 #TEMPLATE MINIMAL SKIN: [ 1 - yes, 0 - no ]
 dateFormat = "January 2, 2006"
 authorName = "Daniele Galano Web & Graphic Designer"
-disqusComments = "your_disqus_shortname" #YOUR DISQUS COMMENTS SHORTNAME
+disqusComments = "" #YOUR DISQUS COMMENTS SHORTNAME
 formspreeURL = "https://formspree.io/f/your_api_key" #YOUR FORMSPREE URL
 googleAnalytics = "" #YOUR GOOGLE ANALYTICS CODE
 
