@@ -118,7 +118,7 @@
             {{- end -}}
             {{ with .Params.audio_duration }}<itunes:duration>{{ . }}</itunes:duration>{{ end }}
             {{- if .Params.image -}}
-            <itunes:image href="https://applehosted.podcasts.apple.com/hiking_treks/artwork.png"/>
+            <itunes:image href="{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.image }}"/>
             {{- else -}}
             <itunes:image href="{{ .Site.Params.Podcast.image }}"/>
             {{- end -}}
