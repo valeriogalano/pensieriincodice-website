@@ -44,11 +44,13 @@
       <itunes:email>{{ .Site.Params.Podcast.email }}</itunes:email>
     </itunes:owner>
     <itunes:image href="{{.Site.BaseURL}}{{ .Site.Params.Podcast.image }}" />
+    {{- if .Site.Params.Podcast.sub_category -}}
     <itunes:category text="{{ .Site.Params.Podcast.category }}">
-      {{- if .Site.Params.Podcast.sub_category -}}
-      <itunes:category text="{{ .Site.Params.Podcast.sub_category }}" />
-      {{- end -}}
+      <itunes:category text="{{ .Site.Params.Podcast.sub_category }}"/>
     </itunes:category>
+    {{- else -}}
+    <itunes:category text="{{ .Site.Params.Podcast.category }}" />
+    {{- end -}}
     <itunes:block>no</itunes:block>
     <itunes:explicit>{{ .Site.Params.Podcast.explicit }}</itunes:explicit>
     <podcast:funding url="{{ .Site.Params.Podcast.funding_url }}">{{ .Site.Params.Podcast.funding_text }}</podcast:funding>
