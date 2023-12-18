@@ -76,11 +76,11 @@
       {{- if .Params.season -}}
       <itunes:season>{{ .Params.season }}</itunes:season>
       {{- end -}}
-      {{- if .Params.podcast_tag -}}
+      {{- if .Params.tags -}}
       <itunes:keywords>
-        {{- range $index, $key:= .Params.podcast_tag -}}
+        {{- range $index, $key:= .Params.tags -}}
           {{- if $index }}, {{ end -}}
-          {{- if gt (len $key) 0 }}{{ $key }}{{ end -}}
+          {{ $key }}
         {{- end -}}
       </itunes:keywords>
       {{- end -}}
