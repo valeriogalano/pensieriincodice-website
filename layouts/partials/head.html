@@ -84,4 +84,11 @@
       #forkongithub a{width:273px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}
     }
   </style>
+
+  <meta property="og:title"              content="{{ .Title }}" />
+  {{ if .Params.image }}
+    <meta property="og:image"            content="{{ .Site.Params.podcast.cdn_base_url }}{{ .Params.image }}" />
+  {{ else }}
+    <meta property="og:image"            content="{{ .Site.Params.podcast.image | absURL }}" />
+  {{ end }}
 </head>
