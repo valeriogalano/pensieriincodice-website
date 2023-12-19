@@ -91,4 +91,10 @@
   {{ else }}
     <meta property="og:image"            content="{{ .Site.Params.podcast.image | absURL }}" />
   {{ end }}
+  {{ if .Params.authors }}
+    <meta name="author"                  content="{{ range .Params.authors }} {{ . }} {{ end }}">
+  {{ else }}
+    <meta name="author"                  content="Valerio Galano">
+  {{ end }}
+  <meta property="og:url"                content="{{ .Permalink }}" />
 </head>
