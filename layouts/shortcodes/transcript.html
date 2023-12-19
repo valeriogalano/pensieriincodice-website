@@ -1,5 +1,15 @@
 {{ $episode := .Get "episode" }}
-<h2>Testo dell'episodio</h2>
-{{ with index $.Site.Data.transcripts $episode }}
-{{ replace .text "\n" "<br/><br/>" -1 | safeHTML }}<br/>
-{{ end }}
+<div class="accordion">
+    <section id="show-text">
+        <h2><a href="#show-text">Mostra testo dell'episodio</a></h2>
+        <div>
+            <a href="#">Nascondi</a>
+            <p>
+                {{ with index $.Site.Data.transcripts $episode }}
+                {{ replace .text "\n" "<br/><br/>" -1 | safeHTML }}<br/>
+                {{ end }}
+            </p>
+        </div>
+    </section>
+</div>
+<br/>

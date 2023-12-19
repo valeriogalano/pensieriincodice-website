@@ -116,3 +116,36 @@ a:hover {
 
 
 */
+
+/* Hide/show episodes text */
+section {
+    display: block;
+}
+
+.accordion h2,
+.accordion p {
+    margin: 0;
+}
+
+.accordion h2 a {
+    display: block;
+    position: relative;
+}
+
+.accordion h2 + div {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+.accordion :target h2 a:after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -3px;
+}
+
+.accordion :target h2 + div {
+    height: auto;
+}
