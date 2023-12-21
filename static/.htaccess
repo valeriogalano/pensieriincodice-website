@@ -1,3 +1,5 @@
+Redirect 301 /feed /podcast
+
 Redirect 301 /telegram       https://t.me/PensieriInCodice
 Redirect 301 /canaletelegram https://t.me/PensieriInCodice
 Redirect 301 /telegramgroup  https://t.me/PensieriInCodiceCommunity
