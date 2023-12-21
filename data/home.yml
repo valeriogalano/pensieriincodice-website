@@ -230,21 +230,21 @@ rewards:
 platforms:
   title: "Ascolta il podcast"
   items:
-    - url: "http://bit.ly/picGooglePodcast"
-      image: "images/clients/google-podcast.png"
-      title: "Google Podcast"
-
-    - url: "http://bit.ly/picItunes"
-      image: "images/clients/apple-podcast.jpg"
-      title: "Apple Podcast"
-
-    - url: "http://bit.ly/picSpotify"
-      image: "images/clients/spotify.png"
-      title: "Spotify"
-
     - url: "/podcast/index.xml"
       image: "images/clients/rss.png"
       title: "Sulla tua app preferita"
+
+    - url: "http://bit.ly/picGooglePodcast"
+      image: "images/clients/google-podcast.png"
+      title: "Su Google Podcast"
+
+    - url: "http://bit.ly/picItunes"
+      image: "images/clients/apple-podcast.jpg"
+      title: "Su Apple Podcast"
+
+    - url: "http://bit.ly/picSpotify"
+      image: "images/clients/spotify.png"
+      title: "Su Spotify"
 
 ### Partners [ partners ]
 partners:
