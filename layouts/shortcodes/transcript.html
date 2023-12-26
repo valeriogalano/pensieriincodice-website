@@ -6,7 +6,7 @@
             <a href="#">Nascondi</a>
             <p>
                 {{ with index $.Site.Data.transcripts $episode }}
-                {{ replace .text "\n" "<br/><br/>" -1 | safeHTML }}<br/>
+                {{ replace .text "\n" "<br/><br/>" -1 | markdownify }}<br/>
                 {{ end }}
             </p>
         </div>
