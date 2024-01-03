@@ -1,0 +1,256 @@
+text: "
+## Intro
+
+Sono mesi ormai che il mondo intero è rimasto a bocca aperta dopo aver visto le potenzialità di ChatGPT e le migliaia di applicazioni che ne stanno fiorendo al ritmo di decine al giorno. Anche noi ne abbiamo parlato nello scorso episodio.
+
+Ma il machine learning non è solo fatto di Large Language Model che replicano il comportamento umano: esistono altri tipi di Intelligenza Artificiale basati su approcci differenti e che possono generare risultati e ricadute anche più importanti.
+
+Oggi, approfittando di una notizia che forse non ha avuto il giusto risalto,
+cogliamo l'occasione per parlare di una differente forma di machine learning chiamata *deep reinforcement learning*.
+
+Sigla.
+
+## La notizia: AlphaDev di DeepMind ha scoperto un nuovo algoritmo di ordinamento
+
+Cominciamo dalla notizia: il 7 giugno di quest'anno, quindi circa un mese e mezzo fa, DeepMind, una sussidiaria di Google che fa ricerca nel campo dell'intelligenza artificiale, ha annunciato che uno dei suoi sistemi, in particolare quello chiamato AlphaDev, ha sviluppato un nuovo algoritmo di ordinamento utilizzando il linguaggio Assembly.
+
+Detta così, potrebbe sembrare qualcosa di banale, ma la realtà è che si tratta di un passo in avanti molto importante.
+
+Questo nuovo algoritmo, infatti, ha la caratteristica di essere più efficiente di tutti i suoi predecessori implementati fino ad ora da intelligenze umane.
+
+I ricercatori lavorano continuamente nel tentativo di migliorare le performance degli algoritmi di base e, nello specifico, per quelli di ordinamento erano anni che non veniva realizzato qualcosa che risultasse più veloce di quelli già conosciuti.
+
+Con l'impiego di AlphaDev, invece, questo limite è stato superato ed è una cosa emblematica che colpisce sotto tanti punti di vista.
+
+Innanzitutto perché, parlando pragmaticamente, un migliore algoritmo di ordinamento ha ricadute positive enormi sul mondo reale. A breve ne parleremo in modo più approfondito.
+
+Ma inoltre, da un punto di vista più generale, questo avvenimento ci da anche un'idea di quali siano le potenzialità di un sistema di machine learning quando viene utilizzato effettivamente per superare quelli che sono i limiti dell'inventiva umana.
+
+Ma procediamo con ordine e facciamo un passo indietro perché, per capire bene gli aspetti più interessanti di questa vicenda, è necessario conoscere un paio di concetti.
+
+Quindi, innanzitutto ripassiamo brevemente cos'è un algoritmo di ordinamento, cos'è il linguaggio Assembly e poi parliamo di come funziona AlphaDev e di cosa è stato in grado di produrre.
+
+## Cosa sono gli algoritmi di ordinamento
+
+Senza entrare nel tecnico, un algoritmo di ordinamento, lo dice il nome stesso, è un algoritmo che serve ad ordinare qualcosa.
+
+Nella sua forma più semplice, solitamente questo qualcosa sono numeri, perché i computer lavorano essenzialmente con i numeri.
+
+Quindi, banalmente: se avessi una lista come 7, 1, e 499, potrei utilizzare uno dei tanti algoritmi di ordinamento già esistenti per trasformarla in 1, 7 e 499.
+
+Ovviamente la mia lista potrebbe essere di 3 numeri ma anche 2, di 1 o di 1 miliardo, poco importa: alla fine dell'esecuzione, l'algoritmo me la dovrebbe restituire ordinata.
+
+Bene. Ma a cosa serve ordinare dei numeri? Beh diciamo che in campo informatico serve praticamente per qualsiasi cosa.
+
+Se ti stai immaginando una colonna di numeri in Excel che si può ordinare con un click, beh sappi che la storia è moooolto più complicata di così.
+
+Nel software, in generale, infatti, operare su dati ordinati è più conveniente che farlo su dati organizzati in modo casuale. Pertanto qualsiasi programma, procedura, sistema, esegue ordinamenti ogni volta che ciò è conveniente dal punto di vista computazionale.
+
+Ovviamente non lo fa di sua spontanea volontà, ma sono i programmatori che, ogni qual volta devono implementare un algoritmo,possono decidere se ordinarne i dati sia un atto migliorativo o meno per lo scopo che si sono prefissi.
+
+Questo tipo di operazioni è presente a tutti i livelli: può ordinare l'utente quando ad esempio filtra una lista o, come dicevamo poco fa, ordina una colonna Excel. Può ordinare un software prima di lavorare su dei dati. Può ordinare un componente hardware, prima di eseguire certe operazioni.
+
+E il discorso può essere poi complicato a piacere se pensi che, in informatica, tutto è espresso per mezzo di numeri. I caratteri, i simboli, i dati, gli oggetti: alla fine sono tutti dei numeri e quindi tutti possono essere in qualche modo ordinati.
+
+È grazie a questo fatto che il nostro computer può ricercare all'interno dei nostri hard disk, file, archivi cloud, ecc.
+
+Ed è sempre grazie all'ordinamento delle informazioni, se può restituirci i risultati in tempi brevi. Immagina il tuo hard disk come un elenco telefonico o un dizionario: se non fosse ordinato in qualche modo, quando ci vorrebbe per trovare un numero o una parola?
+
+Oltre che per l'efficienza, poi, l'ordinamento è importante anche a livello funzionale, per l'esperienza dell'utente: immagina di ricevere i risultati da un motore di ricerca non ordinati per attinenza. Sarebbero praticamente inutili, dovresti spulciare decine e decine di pagine ogni volta.
+
+Insomma, l'ordinamento è fondamentale praticamente in ogni aspetto della gestione dell'informazione sia digitale che analogica. E oggi come oggi significa praticamente qualsiasi cosa.
+
+E quindi riesci a immaginare quante volte al giorno, nel mondo, viene invocato un algoritmo di ordinamento? Il conteggio va fatto in trilioni...
+
+Oggi è difficile che qualcuno scriva il proprio algoritmo di ordinamento: avviene, ma solo in casi particolari. E per questo motivo, le migliori implementazioni di tali algoritmi sono già presenti, sotto forma di funzioni invocabili, all'interno degli strumenti software che i programmatori solitamente utilizzano.
+
+L'idea di fondo della ricerca, quindi, è che se si riescono a migliorare le performance di tali funzioni sostituendole poi all'interno dei linguaggi, dei compilatori e dei chip, il beneficio che ne deriva è enorme e viene propagato in maniera relativamente facile e trasparente al software realizzato tramite tali strumenti.
+
+I ricercatori lavorano sempre a nuovi algoritmi di base: migliorare le performance di questi, infatti, porta chiaramente ricadute positive a tutti i livelli.
+
+Ora, ci sarebbe tanto da dire sul concetto di efficienza, sulle caratteristiche degli algoritmo, ecc. ma per quello che ci interessa oggi, accontentiamoci di tenere a mente questo fatto: un algoritmo più performante, consuma meno risorse, quindi può essere eseguito su processori meno potenti, spreca meno energia e fa il suo lavoro in meno tempo; da questo derivano tutta una serie di vantaggi tecnici.
+
+In pratica, migliorare gli algoritmi di base, incrementa di molto la qualità del software sovrastante, rendendolo più veloce e leggero.
+
+## Cos'è il linguaggio Assembly
+
+La seconda nozione da tenere a mente, poi, riguarda invece il linguaggio Assembly.
+
+Anche qui, senza essere tecnici, che non ci serve: Assembly è un linguaggio molto simile alle istruzioni che su utilizzano normalmente per istruire i processori; diciamo che è quasi la lingua nella quale si può dialogare direttamente con una CPU.
+
+Questo linguaggio, come tutti i linguaggi, è un astrazione, cioè ha lo scopo di permettere ai programmatori di ignorare le peculiarità dei singoli processori che possono differire a seconda di tipo, modello, marca.
+
+Ma siccome si tratta di un set di istruzioni molto complesse da combinare insieme per ottenere ciò che si desidera, la programmazione, in pratica, si svolge utilizzando altri linguaggi, definiti comunemente ad alto livello, che sono a loro volta astrazioni di Assembly e sono più semplici da utilizzare per noi umani.
+
+Tali linguaggi, poi, vengono comunque tradotti in codice Assembly e questo codice poi viene a sua volta tradotto nelle istruzioni proprie dello specifico processore, prima di dargliele in pasto.
+
+Sembra complicato ma non lo è.
+
+Se hai mai visto un esempio di codice sorgente di un software avrai notato, a prescindere dal linguaggio in cui era scritto, che la sintassi, pur non essendo una lingua corrente, ha un qualcosa di simile all'inglese.
+
+Magari una funzione inizia con la parola *function*, o una variabile è definita con *var* o una condizione con *if*: ecco, questo è un linguaggio ad alto livello.
+
+Quando poi il programma scritto in questo modo deve essere eseguito, lo si fa elaborare ad un altro programma chiamato compilatore che prendere tutte le istruzioni scritte in questa specie di inglese e le trasforma in istruzioni Assembly che risultano molto più complesse.
+
+Tramite poi un secondo programma chiamato Assembler, il codice Assembly viene trasformato nelle vere e proprie istruzioni per il processore, ancora più complesse, e finalmente quest'ultimo può eseguire i comandi che gli sono stati impartiti.
+
+Se questi passaggi ti sono chiari, direi che, per quello che dobbiamo affrontare oggi, non ci serve altro.
+
+## Reinforcement learning
+
+Torniamo quindi all'argomento principale.
+
+Abbiamo detto che un certo motore di machine learning ha inventato un nuovo algoritmo; ma come è possibile che un software inventi un altro software?
+
+Beh, in questo particolare caso, tutto è iniziato dal concetto di gioco.
+
+AlphaDev non è il primo sistema messo a punto dal team di DeepMind: prima di esso, infatti, sono stati realizzati altri software di machine learning e anche alcuni di questi hanno fatto notizia.
+
+C'è stato ad esempio AlphaGo che ha battuto il campione mondiale del gioco GO e che poi si è evoluto in AlphaZero che è in grado di giocare a Go, a Scacchi e persino a Shogi (quel gioco che a volte è chiamato anche scacchi giapponesi).
+
+Poi c'è stato AlphaStar che ha sconfitto i migliori giocatori mondiali del famoso videogame Starcraft II della Blizzard.
+
+Insomma AlphaDev ha, a tutti gli effetti, degli antenati illustri, ma questi sembrano essere specializzati nell'ambito del gioco. E ciò, in realtà, non è un caso.
+
+I giochi che presentano tante possibili scelte per ogni mossa, infatti, come ad esempio gli scacchi o i videogame di strategia in tempo reale, si prestano molto bene all'impiego di una particolare tecnica di machine learning chiamata reinforcement learning.
+
+Il reinforcement learning funziona più o meno in questo modo: si istruisce una Intelligenza Artificiale per farle tentare di conseguire un dato obiettivo e la si premia se riesce nell'intento oppure la si penalizza se fallisce.
+
+Nel nostro caso specifico, rapportando il tutto alla dimensione del gioco, si fa giocare la IA al gioco designato e, ad ogni mossa, la si premia se la mossa scelta la avvicina alla vittoria o la si penalizza in caso contrario.
+
+Ad ogni operazione, in questo modo, l'algoritmo memorizza se la sua scelta è stata buona o meno e, giocando miliardi di partite, impara come comportarsi nelle più varie situazioni del gioco.
+
+Anche se all'apparenza potrebbe sembrare un compito semplice per una IA, si tratta in realtà di qualcosa di molto complesso perché una stessa mossa può avere un valore diverso a seconda di tantissime altre condizioni.
+
+Se pensiamo agli scacchi, muovere il re può avere senso se, ad esempio, è sotto scatto, ma ne ha molto meno se nel muoverlo lo esponiamo ad essere mangiato da un pezzo avversario.
+
+Si tratta di un sviluppare una notevole capacità decisionale che, fino ad un certo livello di complessità, per gli umani è abbastanza naturale ma non lo è affatto per le macchine.
+
+Immagina che il tuo obiettivo sia andare a Roma. Puoi prendere l'auto o comprare un biglietto aereo, ad esempio, ma la scelta giusta cambia in base dove ti trovi, a quanto traffico c'è, a quanto puoi spendere, e mille altri fattori. Senza contare gli imprevisti: uno sciopero, un incidente, e via così.
+
+Da umano te la caveresti facilmente, ma insegnare ad un software come comportarsi efficientemente in una molteplicità di casi del genere, più diventare estremamente complesso.
+
+I giochi sono un ambiente perfetto per questo tipo di machine learning perché, seppur presentino un alto grado di incertezza, hanno comunque un set di regole limitato, è relativamente facile capire chi vince e chi perde e, di norma, non si verificano eventi imprevisti.
+
+Ovviamente, in quest'ottica, l'obiettivo della IA è vincere la partita e, per far sì che essa possa elaborare le informazioni, sia le ricompense che le penalità che le probabilità di vittoria vengono espresse tramite una serie di complesse funzioni matematiche.
+
+## Assembly game
+
+Come abbiamo detto prima, però, AlphaDev, non ha avuto a che fare con un classico gioco umano, né con un videogame: esso ha dovuto lavorare su altri algoritmi, che in linea di principio sono qualcosa di abbastanza diverso da un gioco.
+
+Per questo motivo, per raggiungere il loro obiettivo, i programmatori del team di DeepMind hanno trasformato la ricerca di un algoritmo di ordinamento più veloce in una sorta di gioco progettato a posta per AlphaDev.
+
+La vittoria in questo gioco consisteva appunto nello sviluppare un algoritmo che, prima di tutto, funzionasse correttamente, ovviamente, è che poi fosse anche più veloce dei predecessori.
+
+Ad ogni mossa, AlphaDev selezionava e utilizzava una nuova istruzione dal set Assembly che aveva a disposizione e veniva premiato se si avvicinava maggiormente all'obiettivo.
+
+Stabilite queste regole, l'IA ha giocato un numero enorme di partite gareggiando contro se stessa e cercando di stabilire ogni volta il record di punteggio, attuando così una modalità di apprendimento che prende il nome di deep reinforcement learning.
+
+Secondo gli sviluppatori di DeepMind *Il numero di possibili combinazioni di istruzioni è simile al numero di particelle dell'universo o al numero di possibili combinazioni di mosse nei giochi degli scacchi (10120 partite) e del Go (10700 partite) messi insieme. E una singola mossa sbagliata invalidava l'intero algoritmo.*
+
+Ad ogni iterazione, quindi, dopo aver aggiunto l'istruzione scelta, AlphaDev valutava la correttezza dell'algoritmo confrontando il risultato ottenuto con quello atteso. La ricompensa scattava sia per la correttezza sia per la maggiore velocità.
+
+Così facendo, alla fine, AlphaDev ha scoperto un nuovo algoritmo di ordinamento che ha portato a miglioramenti fino al 70% per le sequenze più brevi e circa l'1,7% per le sequenze che superano i 250.000 elementi.
+
+Un dettaglio molto interessante è che, differentemente da come avviene nel caso dei Large Language Model, non è stato necessario basarsi su esempi precedentemente creati da umani, ma il sistema ha scoperto da solo la propria strada verso la risoluzione del problema.
+
+È una differenza che va ben colta perché l'approccio del deep reinforcement learning è molto più utile, rispetto all'LLM, quando si cerca di produrre qualcosa di nuovo e migliore rispetto a quanto già fatto da menti umane.
+
+Non parliamo più, infatti, di una collezione enorme di esempi a cui attingere per creare una sequenza di parole sensate, ma qui il concetto è risolvere un problema esplorando nuovi approcci e nuove combinazioni mai sperimentate prima.
+
+## Un approccio totalmente diverso
+
+Al di là dei dettagli tecnici, per i quali ti lascio il paper originale in descrizione, la cosa secondo me più interessante di questa storia è che l'algoritmo di ordinamento è stato sviluppato utilizzando un approccio totalmente diverso dai precedenti sotto vari aspetti.
+
+Innanzitutto, per anni i ricercatori hanno progettato e realizzato algoritmi di base utilizzando il ragionamento e l'intuito, mentre questo nuovo risultato è stato ottenuto letteralmente effettuando milioni di tentativi fino a *scoprire* la giusta combinazione di elementi.
+
+So che, a prima vista, è un qualcosa che potrebbe ricordare il concetto di forza bruta, che di solito non è la migliore delle soluzioni auspicabile, ma la realtà è che il reinforcement learning è molto di più di un algoritmo di forza bruta e, risultati alla mano, la scelta di utilizzarlo ha portato a superare un limite che sembrava ormai definitivo.
+
+Poi, un'altra peculiarità è che l'intera lavorazione è stata eseguita utilizzando Assembly e non un linguaggio di alto livello. E questo ha rappresentato un ulteriore differenza nella approccio, perché gli umani, in generale, non lavorano sugli algoritmi Assembly.
+
+Questa scelta aveva un duplice scopo: innanzitutto restringeva il ventaglio di possibili combinazioni di istruzioni, perché Assembly è meno articolato di un qualsiasi linguaggio a livello superiore; e poi eliminava un livello di complessità che poteva nascondere delle inefficienze.
+
+Se infatti pensiamo che una istruzione di un linguaggio ad alto livello viene trasformata solitamente in una serie di istruzioni Assembly, possiamo anche supporre che una lunga sequenza di operazioni ad alto livello possa generare una combinazione in Assembly non ottimale.
+
+In teoria i compilatori dovrebbero evitare queste condizioni ma non sempre è possibile farlo. Prevedere tutte le possibili combinazioni che un programmatore potrebbe decidere di utilizzare è praticamente impossibile.
+
+Quindi, in pratica, Assembly rappresenta un ambiente più flessibile in cui operare e utilizzandolo direttamente, AlphaDev ha potuto eliminare completamente tutto lo strato di incertezza dovuto all'astrazione causata da un qualsiasi linguaggio, lasciando poi ai programmatori umani il compito di ricostruire il nuovo algoritmo a livello superiore.
+
+Nello specifico, in DeepMind hanno riportato tutto il lavoro fatto da AlphaDev in linguaggio C++ e poi lo hanno reso open e, altra nota positiva, l'hanno inserito in una delle librerie più utilizzate al mondo.
+
+Ciò significa che questo codice migliorato verrà ora utilizzato da centinaia di migliaia di programmatori e di software e tutto ciò non può che essere un'ottima notizia per la società.
+
+## AlphaDev swap and copy moves
+
+Per via del suo approccio totalmente diverso da quello abitualmente utilizzato fino ad ora, AlphaDev, nello svolgere il suo compito, ha anche prodotto alcuni risultati molto singolari e interessanti.
+
+Un esempio di ciò è rappresentato da una serie di strane sequenze di istruzioni che i ricercatori di DeepMind hanno chiamato le *AlphaDev swap and copy moves*.
+
+A livello concettuale, infatti, si tratta di qualcosa di molto simile alla mossa 37 di AlphaGo che la IA mise in campo contro il campione mondiale di Go.
+
+Durante la leggendaria partita, la IA aveva eseguito una mossa totalmente contro intuitiva che aveva stupito tutti gli esperti, campione compreso, ma che l'aveva portata a vincere il match.
+
+Con le sue swap and copy moves, AlphaDev, a suo modo, ha fatto qualcosa di simile, implementando alcune operazioni abbastanza banali in modo del tutto singolare e fuori da ciò che i ricercatori erano abituati a vedere.
+
+In pratica, nel proprio algoritmo, in alcuni casi, la IA ha deciso di saltare a piè pari alcune istruzioni nel flusso del codice. Istruzioni che fino ad ora erano considerate indispensabili per il corretto funzionamento del processo.
+
+Nello specifico, il fenomeno si è manifestato nel caso in cui venga calcolato l'ordinamento per 8 numeri dove alcune istruzioni di confronto semplicemente mancano nell'algoritmo.
+
+A prima vista questo comportamento è apparso come un errore, ma poi, verificando meglio il codice si è scoperto che per via di come era strutturato il processo, per quel particolare caso, semplicemente quei confronti non servivano.
+
+Se essi fossero stati implementati, infatti, avrebbero restituito un unico valore: lo stesso, sempre, ad ogni esecuzione con qualsiasi sequenza in input. Quindi banalmente erano superflui.
+
+Questo fatto mostra come un intelligenza di reinforcement learning sia in grado letteralmente di **scoprire** soluzioni più efficienti, anche quando queste, apparendo contrarie a ogni logica, sono invece molto difficili da individuare con l'intuito e l'inventiva.
+
+## VarSort4
+
+In DeepMind, poi, si sono concentrati particolarmente sul miglioramento degli algoritmi di ordinamento per sequenze brevi, fatte di tre-cinque elementi.
+
+Tali algoritmi sono, infatti, tra i più utilizzati perché vengono spesso impiegati più volte come parte di funzioni di ordinamento di sequenze più ampie e quindi il loro miglioramento può portare ad una velocizzazione complessiva per qualsiasi numero di elementi.
+
+Questa focalizzazione, ha portato quindi ad un altro risultato particolarmente interessante, che è venuto fuori per la funzione chiama VarSort4, ciò la funzione di ordinamento di liste di 4 elementi sviluppata da AlphaDev.
+
+Come accennavamo poco fa, nei moderni linguaggi di programmazione, la funzione normalmente invocata per l'ordinamento, che di solito si chiama *sort* o qualcosa del genere, nasconde in realtà una serie di funzioni diverse al proprio interno che vengono impiegate a seconda del numero di elementi da ordinare.
+
+In pratica ciò vuol dire che se io, da programmatore utilizzo la funzione *sort*, questa a sua volta conta gli elementi da ordinare e se sono 2 invoca *sort2*, se sono 3 invoca *sort3*, se sono 4 *sort4*, e via così fino ad un certo numero che varia a seconda dell'implementazione.
+
+Poi, superato tale numero, vengono utilizzate combinazioni di tutte queste funzioni per sequenze più piccole.
+
+Bene, AlphaDev ha scoperto che, per una lista di 4 elementi, questo non è il modo più efficiente di procedere, almeno in Assembly.
+
+Al contrario, ha utilizzato il seguente approccio: come già noto, se gli elementi sono 2, chiama la funzione VarSort2, se gli elementi sono 3, chiama VarSort3, ma se gli elementi sono più di 3 chiama comunque VarSort3 sui primi 3 elementi, e poi invoca una versione semplificata di VarSort4 che lavora sul risultato parzialmente ordinato da VarSort3.
+
+Ok, so che è un processo po' complicato da descrivere a parole e a immaginare, ma se vuoi trovi un semplice schema nel paper alla figura 4.
+
+Ad ogni modo, cambiando questa strategia che prima era considerata basilare e ovvia, scontata quasi, si è scoperto che si ottiene un notevole incremento in termini di velocità complessiva e quindi di efficienza dell'algoritmo.
+
+## Algoritmi in grado di creare
+
+Insomma, migliorando uno degli algoritmi più utilizzati dagli sviluppatori di tutto il mondo, AlphaDev ha mostrato come un'Intelligenza Artificiale può essere utilizzata in modo da avere un impatto positivo e reale sulle nostre vite.
+
+Utilizzandolo in questo modo, questo motore di machine learning può rappresentare un'arma potentissima nello sviluppo di strumenti che contribuiscano a migliorare l'intero panorama informatico e a risolvere problemi a vantaggio dell'intera società.
+
+Migliorando questo AlphaDev o addirittura sviluppando dei competitor più potenti, si potrebbero ottimizzare algoritmi direttamente nei vari linguaggi ad alto livello e ciò potrebbe risultare ancora più utile per il mondo dello sviluppo software.
+
+Ma anche così, le creazioni di AlphaDev, come le swap and copy moves o la VarSort4, non solo dimostrano che esso può migliorare un algoritmo esistente, ma addirittura che è in grado di trovare nuove soluzioni del tutto innovative a problemi di complessità enorme.
+
+E questa cosa è possibile perché, a differenza dei Large Language Model come ChatGPT, gli algoritmi di deep reinforcement learning come AlphaDev sono in grado di creare realmente qualcosa di nuovo, di inventare soluzioni, e non solo di riprodurre il comportamento umano.
+
+## Conclusione
+
+Bene, finisce qui l'episodio di oggi. Per tutti i dettagli riguardanti la notizia, l'algoritmo, ecc. ti rimando ovviamente ai link in descrizione.
+
+Ringrazio come sempre Edoardo e a Carlo per la loro donazione mensile e, poi Corrado che fatto la sua donazione ben 2 mesi fa ma io sono super ingolfato e ci ho messo una vita a far uscire questo episodio.
+
+A proposito, in queste settimane ho preparato una roba interessantissima, ma che per ora è top secret. Se riesco, spero di pubblicarla già dal prossimo episodio.
+
+Tu, intanto, se apprezzi il mio lavoro, fai come Carlo, Edoardo e Corrado e dimostrarlo concretamente. Sul sito pensieriincodice.it trovi tutti i link utili per: donazioni, affiliazioni, gruppo e canale telegram, ecc.
+
+E, in più, da oggi, se doni più di 10 euro, anche cumulando più donazioni e conteggiando le donazioni passate, ricevi a casa i gli adesivi e il segnalibro con le nuove grafiche. Basta che mi scrivi il tuo indirizzo per email o su Telegram.
+
+A proposto di Telegram, ti ricordo che l'accesso al gruppo di Pensieri in codice è su autorizzazione per via dei bot che infestano la piattaforma, quindi ti consiglio di scrivermi per velocizzare le procedure di verifica: ti basta cercare @valeriogalano direttamente nella casella di ricerca di Telegram.
+
+Infine, non dimenticare di condividere l'episodio con amici, parenti, gruppi, ecc. Come al solito, io cerco di farti fare bella figura e a te spargere la voce non costa nulla!
+
+Grazie quindi per aver ascoltato, noi ci sentiamo al prossimo episodio e non dimenticare mai che *un informatico risolve problemi, a volte anche usando il computer*.
+"

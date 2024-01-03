@@ -1,0 +1,69 @@
+text: "
+Dopo l'ultimo episodio snippet, quello sul Problema del Commesso Viaggiatore, sono stato contattato da un ascoltatore del podcast, Elia, che mi ha fatto notare che ho dato un paio di informazioni sbagliate o incomplete.
+
+La mia conoscenza del problema, infatti, era un po' datata e le mie ricerche per scrivere l'episodio non hanno aiutato a colmare queste lacune.
+
+Elia, invece ha scritto un paper su di una variante molto più complessa del TSP ed ha anche ideato una euristica, cioè una procedura che esplora un numero limitato di possibili di soluzioni per trovarne una il più possibile vicina a quella ottima in modo molto rapido. In poche parole: è molto più ferrato di me sull'argomento.
+
+Per questo motivo, l'ho incastrato e gli ho chiesto di scrivere il testo per questo episodio in modo da approfondire il concetto di ottimizzazione e chiarire e correggere un po' di cose dette l'ultima volta.
+
+Lui ha gentilmente accettato ed il risultato di questa collaborazione è lo snippet che stai per ascoltare.
+
+[Sigla snippet]
+
+Un problema di ottimizzazione è un tipo di problema matematico in cui si cerca di trovare il valore migliore (anche detto ottimo) di una funzione denominata obiettivo.
+
+Problemi di ottimizzazione sono, ad esempio: 
+1. scegliere i prodotti con cui fare la spesa per la settimana andando a riempire il nostro carrello spendendo il meno possibile;
+2. cercare di montare i pezzi di un macchinario industriale parallelizzando il più possibile i vari step di assemblaggio;
+3. cercare la più corta sequenza di istruzioni per scrivere un programma che effettui un calcolo;
+4. ed anche trovare il percorso più breve per attraversare un certo numero di città. Ebbene sì: il Problema del Commesso Viaggiatore, di cui abbiamo parlato nell'episodio precedente è proprio un problema di ottimizzazione.
+
+La branca dell'informatica che si occupa di catalogare e affrontare sistematicamente questo tipo di problemi è nota con il nome di Ricerca Operativa.
+
+Tale nome ha origine nel contesto delle operazioni militari durante la seconda guerra mondiale.
+
+In quel periodo, infatti, matematici e ingegneri furono incaricati di sviluppare modelli matematici e metodi per aiutare a prendere decisioni operative complesse e migliorare così l'efficienza delle azioni militari.
+
+Dopo la guerra, poi, questi strumenti matematici e modelli di calcolo furono applicati con successo a molte altre aree dello sviluppo civile, come la produzione industriale, la logistica, la pianificazione dei trasporti, la gestione delle risorse, la finanza, ecc.
+
+I primi passi per descrivere correttamente un problema di ottimizzazione consistono nello scrivere una formula per decidere quanto *buona* o *cattiva* sia una possibile soluzione. Questa formula è chiamata funzione obbiettivo.
+
+Nell'esempio del Commesso Viaggiatore, la funzione obbiettivo quantifica, data una particolare soluzione, la distanza totale percorsa per visitare una lista ordinata di città.
+
+Tale funzione è quindi una sorta di bussola che permette, a chi calcola le varie ottimizzazioni, di capire se sta migliorando o peggiorando la soluzione individuata, in quanto lo scopo dell'ottimizzazione è proprio quello di massimizzare o minimizzare la funzione obbiettivo.
+
+In riferimento all'esempio specifico del TSP, il nostro Problema del Commesso Viaggiatore, lo scopo è quello di minimizzare la distanza per attraversare le varie città; mentre nel caso, ad esempio, del montaggio del macchinario l'obiettivo sarebbe massimizzare il numero di linee produttive che possono lavorare in parallelo.
+
+In tutto in questo discorso sono poi presenti anche degli elementi chiamati vincoli, cioè delle regole che descrivono determinate condizioni da rispettare per considerare valida una soluzione.
+
+Sempre nel problema del TSP una soluzione è valida solo se visita tutte le città nella lista. Oppure, nell'esempio del carrello della spesa da riempire, un vincolo potrebbe essere quello di totalizzare almeno un certo quantitativo di calorie da consumare al giorno.
+
+Insomma, i vincoli sono delle direttive da rispettare per non imbrogliare nell'elaborazione e, sopratutto, per trovare una soluzione che sia sensata e utile allo scopo reale prefissato.
+
+Infine l'ultimo elemento del problema è rappresentato dalle variabili, ovvero le varie scelte che è possibile compiere per trovare una soluzione. Nel TSP le variabili potrebbero, ad esempio, essere un numero per ogni città che rappresenta l'ordine di visita.
+
+Tutti questi sono i vari elementi di base per la modellazione, che permettono a matematici e informatici di rappresentare in maniera precisa e sintetica un problema di ottimizzazione.
+
+E partendo da tale modellazione si può notare un fatto interessante e probabilmente controintuitivo: esistono problemi per i quali è molto complesso calcolare una soluzione ma, paradossalmente, è molto semplice verificare se una data soluzione è corretta.
+
+Prendiamo ad esempio un insieme di numeri: occorrono molti tentativi per trovarne 3 che sommati diano come risultato un certo valore K, però, una volta ottenuta una tripletta è invece molto semplice verificare se essa rappresenti una soluzione corretta o meno.
+
+Questa tipo di asimmetrie tra la semplicità di verificare di una soluzione e la complessità di calcolarla, tra le altre cose, è anche un elemento fondante della disciplina, alla base della sicurezza informatica, nota come crittografia.
+
+Ma tornando al nostro TSP, nello scorso episodio io ho erroneamente detto che non saremmo in grado di verificare la soluzione adottata dalle api per spostarsi di fiore in fiore perché per noi è impossibile calcolare l'ottimo quando il numero di nodi è troppo elevato.
+
+In realtà, questo non è vero.
+
+Tramite un complesso e geniale metodo matematico chiamato Algoritmo del Simplesso, infatti, è possibile trasformare il TSP in uno dei problemi appena descritti, per i quali verificare se si è ottenuta la risposta corretta è un'operazione attuabile ed anche in un tempo relativamente contenuto.
+
+In secondo luogo, sempre nello scorso episodio, avevo detto che per trovare la soluzione del TSP è necessario elencare tutti i possibili cammini.
+
+Anche questa affermazione si è rivelata imprecisa, infatti la realtà è che alcuni cammini possono essere scartati grazie a dei ragionamenti per assurdo e ciò vuol dire che non è necessario esplorare ogni volta tutte le possibilità.
+
+Il nocciolo di questo ragionamento è essenzialmente nella definizione: un cammino ottimo è composto da sottocammini ottimi.
+
+Nel concreto, se sappiamo che, ad esempio, il cammino migliore per andare da Torino a Bari è partire dal Piemonte e attraversare l'Emilia Romagna, le Marche, L'Abruzzo, il Molise per poi raggiungere la Puglia, se dovessimo aggiungere una tappa che attraversa l'Umbria non dovremmo provare ogni combinazione possibile di percorsi, perché sapremmo che ad esempio il sottopercorso migliore per andare dalle Marche alla Puglia rimarrebbe sempre attraversare L'Abruzzo e il Molise.
+
+Questa tecnica prende il nome di Programmazione Dinamica e consiste sostanzialmente nel riutilizzare i sottopercorsi ottimi di una soluzione che avevamo calcolato in precedenza.
+"
