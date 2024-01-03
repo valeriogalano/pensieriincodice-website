@@ -137,8 +137,6 @@ Continua così per un po', e alla fine arriva a formulare la frase “The head a
 
 La frase in sé non ha tantissimo senso, sono d'accordo, ma l'algoritmo messo a punto è un'ottima base da cui possiamo partire noi per realizzare il nostro semplice LLM casalingo.
 
----
-
 Per migliorare la logica del testo generato possiamo usare un semplice trucco che, pur rendendo un po' più complicata la ricerca, ha però il vantaggio di aumentare la probabilità di prelevare parole maggiormente sensate: possiamo, invece di ricercare una singola parola ad ogni iterazione, cercarne gruppi di due, tre o anche di più.
 
 Quindi, se il testo che vogliamo generare, deve parlare, ad esempio, della razza di cane pastore tedesco, potremmo scrivere sul nostro foglietto le parole di partenza *il pastore tedesco è* e poi scorrere le pagine del libro finché non troviamo esattamente le tre parole *pastore tedesco è* per poi, come prima, prelevare la successiva e aggiungerla al nostro testo.
@@ -147,15 +145,11 @@ Applichiamo il nuovo algoritmo e, a scopo esemplificativo, facciamo finta che la
 
 Procediamo così, prendendo libri e pagine a caso, per tre, quattro, cinque, dieci o cento volte, dipende da quanto vogliamo che il nostro testo sia lungo.
 
----
-
 Con quest'altra modifica applicata all'algoritmo, l'attinenza delle parole fra loro è dunque aumentata ma scommetto già che stai iniziando ad intuire che per ottenere dei risultati decenti, serve una quantità di libri, quindi una base dati, molto grande.
 
 Se avessimo, infatti, pochi libri, considerando la complessità delle nuove chiavi di ricerca, finiremmo per capitare sempre sulle stesse pagine e quindi, automaticamente, ci troveremmo ricopiare più o meno pedissequamente il testo del libro. Oppure, nella peggiore delle ipotesi, potremmo non trovare nessun gruppo di parole che soddisfi la ricerca, e in tal caso dovremmo semplicemente rinunciare.
 
 Ma anche con molti moltissimi libri a disposizione, resta un problema di fondo: certi gruppi di parole possono portare a ricercare nell'intero database senza dare risultati, quindi, per produrre un algoritmo robusto, ci serve di inventarci una strategia che ci eviti di andare a comporre delle chiavi di ricerca troppo insolite o impossibili da trovare.
-
----
 
 Per ampliare il ventaglio di possibili risultati, allora, cambiamo leggermente approccio: innanzitutto, passiamo dal cercare esattamente un gruppo di parole al cercare quelle stesse parole in ordine sparso all'interno di gruppetti poco più grandi.
 
@@ -169,8 +163,6 @@ Alla fine, ovviamente, otterremo non più una sola parola ma una lista di candid
 
 Il voto può essere calcolato in base ai fattori che riteniamo più appropriati, come ad esempio il numero di volte in cui la parola appare nella lista, o la quantità di parole che la precedono o la seguono fino al punto, il numero di pagina in cui è stata trovata, il numero di recensioni positive che il libro ha su Amazon, qualsiasi criterio o insieme di criteri che vogliamo, insomma.
 
----
-
 Una volta trasformata la ricerca diretta in un sistema di votazione, otteniamo ben due vantaggi rispetto all'algoritmo precedente.
 
 Il primo consiste nell'eliminare le ricerche che non diano risultati, appunto il problema da cui siamo partiti: il bacino di scelta, infatti, riduce la componente di casualità, permettendoci di evitare di selezionare parole poco adatte, utilizzate in modi inconsueti o poco comuni.
@@ -178,8 +170,6 @@ Il primo consiste nell'eliminare le ricerche che non diano risultati, appunto il
 In più, però, otteniamo anche un secondo vantaggio che ci apre un nuovo orizzonte di possibilità: le regole di votazione che abbiamo aggiunto, ci permettono, infatti, di applicare le più disparate regolazioni al nostro motore di ricerca!
 
 Cambiare le regole ci permetterà di cambiare il risultato di poco o tanto a seconda delle necessità. Se ad esempio prediligeremo regole che si basano su un criterio di autorevolezza dei testi in cui cerchiamo, il risultato sarà di maggiore attendibilità; mentre se prediligeremo testi più antichi, il linguaggio sarà più arcaico, e così via.
-
----
 
 Siamo giunti dunque a saper generare dei testi in linguaggio naturale partendo da un gruppo di parole e attenendoci ad una serie di indicazioni o regole, ma quello che vogliamo creare non è solo un software in grado ci ciarlare all'infinito; il nostro scopo è programmare un bot che dialoghi con il proprio utente seguendo il classico approccio botta e risposta.
 
@@ -192,8 +182,6 @@ Per effettuare questa scrematura esistono vari metodi. Tanto per capire il conce
 Il processo consiste nell'utilizzare un dizionario che cataloga le parole di una lingua in base all'utilità: le parole meno utili, come ad esempio gli articoli, vengono scartate una dopo l'altra fino a raggiungere una frase (spesso sgrammaticata, ma questo non importa) che soddisfi un certo livello di importanza.
 
 Una volta effettuata questa operazione, possiamo considerare il risultato come input di partenza per la generazione del testo. È contro intuitivo ma funziona.
-
----
 
 Il nostro bot sembrerebbe a questo punto completo, almeno dal punto i vista teorico ma se hai provato ad utilizzare ChatGPT o hai letto un po' di esperimenti fatti da altri, saprai certamente che esso è in grado di fare molto di più che rispondere con un testo sensato ad una domanda.
 
@@ -224,8 +212,6 @@ A questo punto, essendo in fase di auto apprendimento, l'algoritmo confronterà 
 Andrà avanti a riprovare per centinaia di volte finché la parola che viene fuori dalla ricerca non sarà effettivamente *vita*.
 
 Ripetendo questa operazione per un numero sufficiente di volte, su un numero sufficiente di esempi (dove sufficiente vuol dire milioni o miliardi), il catalogo delle regole diverrà sempre più grande e accurato e nel momento in cui noi chiederemo al nostro bot di scrivere la ricetta della carbonara in terzine dantesche, lui sarà in grado di selezionare una serie di parole che si adattino a rispondere alla nostra domanda.
-
----
 
 Infine (è l'ultimo passaggio, giuro) dobbiamo mettere ora tutto insieme e ricapitolare il processo.
 
