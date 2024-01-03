@@ -1,0 +1,357 @@
+text: "
+## Intro
+
+La Crittografia e l'Informatica sono due attività umane che, prese insieme, hanno sempre esercitato un certo fascino su di me. Esse procedono a braccetto, si completano a vicenda, si migliorano a vicenda, e oggi come oggi sono indispensabili l'una all'altra.
+
+In questo episodio, ho pensato di parlarti di una moderna storia di criptoanalisi e di approfondirne poi gli aspetti informatici. Insomma un po' di storia e un po' di riflessioni, come al solito, in stile Pensieri in codice.
+
+Sigla.
+
+## Informatica e crittografia
+
+Finalmente riesco a registrare un nuovo episodio, ormai il tempo è davvero poco, purtroppo quest'anno è andato così. Spero nel mese Novembre che dovrebbe essere il mio mese di *ferie* (si sentono le virgolette?).
+
+Ad ogni modo ho quasi pronta una miniserie che mi piace tantissimo. Almeno mi è piaciuto scriverla, organizzare le collaborazioni, ecc. Spero piacerà anche a te.
+
+Sarà composta da 3 episodi, che saranno uno più interessante dell'altro.
+
+E lo so che te la prometto praticamente da Febbraio ma ormai ci siamo. Promesso. Di nuovo.
+
+Ma ora veniamo a noi.
+
+Di Informatica e di Crittografia abbiamo già parlato in passato qui su Pensieri in codice. Si tratta di due scienze da sempre molto legate; due aspetti dell'ingegno umano che si muovo di pari passo e che si alimentano l'un l'altro.
+
+Da un punto di vista meramente storico, la Crittografia è un po' più antica dell'Informatica. Probabilmente fin da quando ha iniziato a comunicare, l'essere umano ha sentito il bisogno di condividere informazioni con qualcuno e contemporaneamente nasconderle a qualcun altro.
+
+Le prime testimonianze di questo atteggiamento e di prime rudimentali tecniche risalgono infatti già a più di 5.000 anni fa e, se ti piace l'idea di saperne un po' di più su questo argomento, ti consiglio dare un'occhiata al libro De/Cifrare, di cui ti lascio in descrizione il link e che offre una bella carrellata dei vari metodi utilizzati nel corso della storia.
+
+È un libro che ho già consigliato su questo podcast, ma che mi è piaciuto molto soprattutto per la sua scorrevolezza, e quindi te lo consiglio di nuovo. Ovviamente, essendo una sorta di catalogo, è piuttosto generico e non approfondisce gli argomenti, però fornisce una bella serie di spunti da cui iniziare.
+
+D'altronde è il senso di Pensieri in codice, no? Parlarti di qualcosa e fare in modo che tu ti appassioni ad un argomento per poi approfondirlo in autonomia.
+
+Ma tornando al nostro argomento, l'Informatica è invece una scienza relativamente più recente: soprattutto per come la intendiamo noi e cioè come *gestione meccanizzata dell'informazione*, possiamo, infatti, trovare testimonianze a partire dal X secolo a.C., quindi qualche millennio dopo la Crittografia.
+
+Ma parlando pragmaticamente, ciò che a noi amanti della tecnologia interessa realmente è tutto più o meno concentrato nell'ultimo secolo: la nascita e lo sviluppo dei computer, infatti, ha costituito quella spinta enorme al miglioramento dei metodi crittografici e ha reso queste pratiche più semplici e, a poco a poco, alla portata di sempre più persone.
+
+Allo stesso tempo, poi, la medesima spinta innovativa ha anche aumentato le possibilità di attuare metodologie per la crittoanalisi, quelle cioè utili per la rottura dei codici; il che ha innescato, a sua volta, la necessità di nuovi sistemi crittografici più complessi e sicuri; il che a portato a nuovi metodi di rottura, e così via.
+
+Tutto ciò si è quindi concretizzato in un susseguirsi di invenzioni, di avanzamenti tecnologici, una corsa del gatto e del topo, una sorta di spirale esponenziale: crittografia più avanzata, codebreaking più potente, tecnologia ancora più avanzata, crittoanalisi ancora più spinta e così via.
+
+Oggi dunque, quello che mi interessa e di cui ti voglio parlare è appunto un episodio di crittoanalisi, l'applicazione di una tecnica per rompere una cifratura di cui le chiavi originali erano andate perdute nel tempo; un qualcosa che ha permesso a dei ricercatori di recuperare proprio un piccolo pezzo di storia creduto perduto.
+
+## Ritrovate 55 lettere cifrate di Mary Stuart
+
+Oggi la crittografia è veramente alla portata di tutti (è perfino nei nostri computer e smartphone, protegge i nostri messaggi, gli acquisti e tanto altro senza che noi dobbiamo fare nulla per metterla in funzione), ma non è sempre stato così.
+
+Per secoli è stato difficile ricorrere a un tale metodo di protezione delle informazioni: bisognava conoscere le tecniche, avere tempo e capacità di metterle in atto, corrispondere con chi fosse in grado di fare altrettanto e di invertire il processo per decifrare i testi.
+
+Per questi motivi, erano sopratutto personaggi di spicco a poterne fare uso:politici, nobili, regnanti e figure importanti in generale, potevano scegliere di impiegare risorse per applicare la crittografia a documenti o lettere per impedire che le informazioni in esse contenute finissero nelle mani di nemici o concorrenti.
+
+A volte, nascondere il contenuto di un testo poteva servire per proteggere segreti di stato, altre volte a coprire le proprie tracce, altre ancora a difendere i propri interessi economici.
+
+La crittografia poteva salvare vite come insabbiare misfatti, ma quali che fossero gli scopi, sta di fatto che l'applicazione di questa pratica nel tempo ha prodotto una notevole quantità di materiale che è pervenuto ai giorni nostri a volte ancora in forma non leggibile e pertanto non correttamente catalogato e attribuito ai giusti autori.
+
+In pratica, ancora oggi abbiamo, conservati in biblioteche e archivi, tanti documenti non decifrati che non possono e non vengono studiati e che potrebbero essere di grande interesse storico o potrebbero andare a completare parti mancanti all'interno di importanti collezioni.
+
+L'unico modo per assegnare loro il giusto posto nella storia è decifrarli.
+
+Ma data la loro natura segreta spesso le chiavi di cifratura venivano tenute ben nascoste e, di conseguenza, sono andate perdute nel tempo o intenzionalmente distrutte.
+
+Ed è qui che ci vengono in aiuto i computer e gli algoritmi moderni: essi permettono, ai ricercatori che ne fanno uso, di decifrare in tempi ragionevoli codici che fino a pochi anni fa avrebbero richiesto anni di lavoro.
+
+I metodi di crittografia sono infatti pensati per rendere la decrittazione impossibile o almeno molto molto complicata e pensare di affrontare un lavoro del genere senza l'aiuto di un moderno calcolatore implicherebbe armarsi di notevole pazienza e dover effettuare migliaia di tentativi a mano.
+
+Oggi invece, un computer che esegue un buon algoritmo è in grado di sopperire a buona parte di questo lavoro, o almeno di tutta la parte più noiosa e ripetitiva.
+
+La storia che ti sto per raccontare parla proprio di come 3 ricercatori, hanno ritrovato (nella Bibliothèque nationale de France) e decifrato, a colpi di algoritmi e ragionamenti, ben 55 lettere scritte dalla famosa regina di Scozia, Mary Stuart.
+
+Queste lettere, credute perdute, fanno parte, per la quasi totalità, della corrispondenza tra Maria Stuart e Michel de Castelnau, ambasciatore di Francia, e furono inviate negli anni che vanno dal 1578 al 1584.
+
+Potrebbe non sembrare, ma si tratta di un ritrovamento che ha un'importanza storica notevole: esso, infatti, innanzitutto getta nuova luce su un preciso periodo della vita di Mary Stuart, e poi, come vedremo a breve, ci da molte informazioni riguardo il metodo crittografico utilizzato all'epoca, sulle scelte per incrementare la sicurezza e persino la strana tipologia di errori commessi dai responsabili della codifica.
+
+Senza contare che si è poi scoperto che negli Archivi Britannici erano già presenti copie in chiaro di 7 delle 55 lettere e ciò rappresenta la prova che esse furono in qualche modo intercettate e decifrate già al tempo, probabilmente per opera di una talpa.
+
+E se ti stai chiedendo perché non ci si sia dedicati prima alla decrittazione di queste lettere così importanti, beh, la risposta è semplice: esse non contenevano alcuna parte scritta in chiaro e pertanto, come ti dicevo poco fa, erano impossibili da riconoscere come appartenenti a Mary Stuart ed erano finite nel posto sbagliato in mezzo a tanti altri documenti che non c'entravano nulla.
+
+## Mary Stuart e le comunicazioni segrete 
+
+Mary Stuart nacque nel 1542 e salì al trono di Scozia quando aveva solo sei giorni di vita, a seguito della prematura morte del padre Giacomo V.
+
+Inviata in Francia all'età di sei anni per essere educata alla corte francese, a sedici sposò l'uomo che l'anno successivo divenne re di Francia e che poi morì l'anno successivo ancora.
+
+Nel 1561 poi, a diciannove anni, Maria tornò in Scozia e dopo altri quattro anni sposò Enrico Stuart, dando alla luce un figlio che sarebbe in futuro divenuto Giacomo VI.
+
+Tuttavia, anche questo secondo marito non ebbe vita lunga e poco dopo la sua morte, Maria si sposò nuovamente, questa volta con il Conte di Bothwell.
+
+Questo terzo matrimonio, però, fu giudicato troppo prematuro dagli ambienti dell'alta società, anche perché il conte era sospettato di essere coinvolto nell'omicidio del precedente marito di lei e quindi Maria si inimicò gran parte della nobiltà protestante dell'epoca, la quale la fece imprigionare a Loch Leven, un castello su un'isola al centro di un lago, dove lei fu costretta ad abdicare in favore del figlio neonato nel 1567.
+
+L'anno successivo riuscì anche a fuggire e a rifugiarsi in Inghilterra cercando protezione da parte della regina Elisabetta ma quest'ultima, considerandola una minaccia, preferì lasciare Giacomo come re di Scozia, i cui reggenti erano a favore dei regnanti inglesi, e imprigionare di nuovo Maria.
+
+La Stuart trascorse così il resto della sua vita in Inghilterra, sotto la custodia del conte di Shrewsbury, vivendo in vari castelli e tenute di proprietà di quest'ultimo.
+
+Nonostante la prigionia, però, Maria riuscì a mantenere una discreta corrispondenza con i suoi contatti in Inghilterra e Francia, come appuntol'ambasciatore francese a Londra, Castelnau, l'altro protagonista di questa storia, o anche l'arcivescovo di Glasgow, James Beaton.
+
+Fu proprio per questa sua condizione di prigioniera politica e la necessità di comunicare con i suoi collaboratori che Maria dovette ricorrere all'impiego, appunto, della crittografia.
+
+Una serie di canali di comunicazione segreti mantenuti attivi grazie ad un manipolo di persone fidate, infatti, le permettevano di spedire e ricevere lettere il cui contenuto andava ben oltre i normali affari di una nobildonna e amministratrice di proprietà.
+
+Non era però raro che alcune di queste missive venissero intercettate o non recapitate a causa di vari problemi, impedimenti o persino trappole. E pertanto, per evitare che occhi indiscreti ne leggessero il contenuto, molte delle lettere scritte da Maria in quel periodo venivano criptate e le 55 di cui parliamo oggi, ne sono proprio un esempio.
+
+## Anatomia delle lettere cifrate
+
+Come già accennato, fatta eccezione per una di esse, tutte le lettere trattate nel corso dello studio di cui parliamo, erano interamente cifrate, quindi non vi era alcun testo in chiaro che permettesse di identificare i soggetti coinvolti, il periodo o la zona geografica.
+
+Date, mittente, destinatario, tutto risultata totalmente illeggibile e indecifrabile e inoltre le 55 lettere erano state mischiate in un archivio che conteneva vari altri documenti di cui molti in chiaro in italiano, dando così l'impressione che si trattasse di un unica collezione.
+
+Probabilmente chi le aveva catalogate in quel modo aveva ricostruito in qualche modo il periodo storico, infatti sono tutti documenti del XVI secolo, ma aveva erroneamente dedotto che si trattasse di versioni cifrate e in chiaro degli stessi testi.
+
+## Il processo di crittoanalisi seguito dai ricercatori
+
+A breve approfondiremo vari aspetti più in dettaglio ma per ora diciamo che, a grandi linee, il processo di decifrazione attuato dagli studiosi è stato un misto di deduzione umana e applicazione di un algoritmo di ottimizzazione, e si è svolto più o meno in questo modo.
+
+I ricercatori hanno dovuto innanzitutto eseguire una prima sessione di analisi per identificare la lingua originale del testo. E per farlo hanno utilizzato l'algoritmo che tra un po' esamineremo più in dettaglio.
+
+Una volta scoperta la lingua, hanno poi potuto individuare quali fossero gli omofoni (cioè i simboli che rappresentano singole lettere dell'alfabeto), i caratteri speciali(ad esempio, un simbolo che duplica l'ultimo simbolo) e la struttura di base del cifrario (il cifrario è la chiave che permette di criptare e quindi decrittare un testo).
+
+Poi sono passati ad identificare i simboli dei prefissi, dei suffissi, delle preposizioni e quelli che rappresentavano alcune parole intere.
+
+Sulla base di questa decifrazione parziale, gli è stato possibile attribuire i testi a Mary Stuart, Regina di Scozia, e capire che erano lettere indirizzate all'ambasciatore francese Castelnau.
+
+A questo punto, esaminando altre lettere precedentemente già conosciute della corrispondenza tra la Stuart e Castelnau, i ricercatori hanno scovato anche le versioni in chiaro di cui abbiamo parlato poco fa e così hanno potuto determinare e verificare il significato di vari altri elementi.
+
+Infine, hanno dovuto identificare i simboli che rappresentano nomi, luoghi e i mesi dell'anno e, finalmente, hanno potuto completare la trascrizione e la decifrazione definitiva di tutti i documenti.
+
+Un aspetto che ho trovato molto interessante di tutto ciò è che, nel corso di questo processo, sono venuti fuori numerosi passaggi oscuri e incomprensibili poiché contenevano un gran numero di errori ortografici.
+
+Ad un esame più attento, poi, sono persino emersi dei modelli ricorrenti che difficilmente possono essere spiegati con i classici errori sporadici che ci si aspetta di commettere quando si cifrano lunghi testi a mano.
+
+Solo una volta chiarito anche quest'ultimo mistero, e a breve vedremo come, l'indagine si è potuta veramente considerare completa.
+
+## Il cifrario omofonico (come erano cifrate le lettere)
+
+Per capire come sono state decifrate le 55 lettere di Mary Stuart dobbiamo innanzitutto capire come esse erano state originariamente cifrate.
+
+A dire il vero, il principio di base dei cifrari è rimasto invariato per secoli: ad ogni lettera dell'alfabeto viene sostituito un simbolo che la rappresenti.
+
+Questa pratica prende il nome di crittografia tramite *cifrario a sostituzione* e la sua forma più semplice è rappresentata dal cifrario a sostituzione *monoalfabetico*, cioè quello in cui ad ogni lettera corrisponde un unico simbolo.
+
+Per esempio, possiamo banalmente costruire uno di questi cifrari facendo corrispondere delle forme geometriche alle lettere dell'alfabeto: un quadrato per la A, un triangolo per la B, un cerchio per la C e così via, magari inventandoci qualche figura irregolare perché ce ne servono ovviamente 26 in totale.
+
+Già nel X secolo, però, gli studiosi arabi avevano sviluppato una tecnica, chiamata *analisi della frequenza*, molto efficace per la decifrazione di questo genere di codici crittografici.
+
+Tale tecnica si basa sul fatto che alcune lettere dell'alfabeto sono usate molto più frequentemente di altre e i simboli che le rappresentano sono probabilmente presenti più volte nei testi cifrati e dunque sono più facili da identificare.
+
+Questa regola vale per qualsiasi lingua: ad esempio, in inglese la *e* o la *t* sono particolarmente frequenti in qualsiasi testo; in italiano vale lo stesso per la *e*, la *a* e la *i*.
+
+Pertanto, in un testo cifrato monoalfabeticamente assegnando un simbolo ad una lettera, noteremmo immediatamente il ripetersi con maggiore frequenza di alcuni simboli e potremmo usare questa informazione come ottima base di partenza per decriptare il testo.
+
+Nel XV secolo, quindi, proprio per ostacolare l'analisi delle frequenze, sono stati introdotti i cosiddetti *cifrari omofonici* in cui le lettere più comuni sono rappresentate da più di un simbolo.
+
+Utilizzando un cifrario omofonico, quando si effettua la codifica e si deve trasformare una lettere come la *e* si può dunque scegliere tra un gruppo di simboli anziché essere costretti ad usare sempre lo stesso.
+
+In questo modo, l'analisi delle frequenze viene fortemente disturbata introducendo maggiore variabilità sugli elementi più frequenti.
+
+Ripercorrendo, però, lo stesso ragionamento anche per le parole o le sillabe più comuni, si intuisce immediatamente che anch'esse possono rivelare schemi ricorrenti utili ai decifratori di codici, e quindi possono essere a loro volta oggetto di analisi di frequenza.
+
+Articoli, avverbi e proposizioni ne sono un esempio. Ma anche i nomi propri, nel caso in cui si stia lavorando su grandi archivi monotematici.
+
+Per questo motivo, col passare del tempo ai cifrari omofonici è stata aggiunta anche la pratica della *nomenclatura*, che consiste nell'usare uno specifico gruppo di simboli per indicare una parola, un nome o una sillaba di uso più frequente.
+
+In tal modo, nel corso degli anni hanno iniziato a fare la loro comparsa testi cifrati contenenti simboli misti: alcuni a sostituire le lettere dell'alfabeto, altri per i nomi, altri ancora per le parole di uso comune e così via.
+
+Infine, sempre per aggiungere maggiore complessità per disturbare l'analisi delle frequenze, è stato introdotto anche l'utilizzo di *simboli nulli*, che devono semplicemente essere ignorati durante la decifrazione, e di *simboli speciali* che indicano necessità particolari come, ad esempio, ripetere il simbolo precedente o cancellarlo.
+
+Dato il loro buon livello di sicurezza, dunque, i cifrari a sostituzione omofonica, corredati di nomenclatura e simboli speciali, sono stati utilizzati per secoli.
+
+## L'algoritmo Hill climbing e la decrittazione
+
+Inizialmente, quindi, i ricercatori si aspettavano già che le 55 lettere fossero cifrate tramite un cifrario omofonico con una nomenclatura e simboli speciali, tuttavia, non avevano idea, a priori, di quale fosse la lingua in cui erano state originariamente scritte.
+
+Come già detto, infatti, non era presente alcuna parola in chiaro e inoltre, sommando tutti i documenti, si ottenevano ben 219 simboli grafici distinti: quasi 10 volte quelli di un normale alfabeto.
+
+L'unico modo per decifrare un testo del genere è ricostruire il cifrario, cioè la mappatura tra i simboli e i loro rispettivi significati e dunque, per iniziare a capirci qualcosa, era essenziale cominciare ad individuare almeno quali fossero i corrispondenti delle lettere alfabetiche.
+
+E per risolvere questo problema i ricercatori avevano un arma molto potente e versatile a loro disposizione: un cosiddetto algoritmo di ottimizzazione.
+
+Di ottimizzazione abbiamo già parlato qui su Pensieri in codice, negli episodi, ad esempio, sul problema del commesso viaggiatore, quindi se non hai proprio idea di cosa io stia parlando, ti consiglio di recuperarli per avere un quadro più generale.
+
+Riassumendo brevemente, però: il problema di recuperare la chiave di un cifrario a partire solamente dal testo cifrato è perfettamente riconducibile ad un problema di ottimizzazione.
+
+A tale scopo, si esegue l'algoritmo per calcolare una serie di possibili soluzioni ed individuare fra esse quella definita ottima, ossia quella con che totalizza un punteggio maggiore in base ai criteri specificati dall'utente.
+
+Una volta individuata, tale soluzione probabilmente corrisponderà a quella corretta, che nel nostro caso è la chiave originaria utilizzata per cifrare il testo.
+
+I ricercatori si sono quindi affidati alla ricerca stocastica, una famiglia di tecniche ampiamente utilizzate per la ricerca di soluzioni ottime, e nello specifico hanno fatto uso della cosiddetta *Hill Climbing*, che è una tecnica relativamente semplice e comunemente utilizzata.
+
+Per assegnare il punteggio ad una soluzione candidata, hanno stabilito il criterio di valutare la qualità del testo decifrato ottenuto utilizzandola. Quindi, in pratica, hanno deciso che, migliore era il risultato di una decifrazione, migliore era la chiave utilizzata per ottenerla. Abbastanza logico.
+
+So che detta in questo modo, potrebbe sembrare un'affermazione banale, ma tieni sempre a mente che ad un algoritmo vanno date istruzioni precise ed esaustive perché possa lavorare correttamente.
+
+E come hanno fatto, quindi, i ricercatori a calcolare praticamente questo valore di qualità?
+
+Beh, matematicamente è un po' complicato da spiegare in un podcast: ci sono formule, logaritmi e sommatorie, quindi, se ti interessano i dettagli, ti ricordo sempre che in descrizioni trovi i link alle fonti di tutto quello che dico, ma possiamo provare a descrivere il tutto a grandi linee.
+
+Punto I: prima di applicare l'algoritmo, i ricercatori hanno provato a indovinare quale fosse la lingua originale dei documenti e per essa hanno calcolato con che frequenza appaiono normalmente le sequenze di cinque lettere.
+
+Per farlo hanno utilizzato un corpus di testi selezionati nella lingua scelta e hanno contato le frequenze dopo aver rimosso spazi e punteggiatura.
+
+Quindi, per capirci, immaginiamo ad esempio di fare quest'operazione per l'italiano: sceglieremmo un corposo elenco di testi, elimineremmo completamente spazi e punteggiatura, e poi andremmo a calcolare con che frequenza compaiono tutti i quintetti di lettere.
+
+In una frase tipo *Il mio cane si chiama Cane* (come quello del Tenente Colombo), andremmo a estrapolare sequenze tipo *ilmio*, *lmioc*, *mioca* è così via. So che così non sembra avere molto senso, ma pensa a una sequenza come *zione*, ti renderai subito conto che questa sarà molto più usata di altre in un testo in italiano.
+
+Ad ogni modo, di tutte queste sequenze, dovremmo poi stilare una classifica: più volte le abbiamo incontrate, più in alto saranno nell'elenco. E il risultato di tutto ciò, sarà la nostra statistica di riferimento.
+
+Durante l'esecuzione dell'algoritmo, quindi, per valutare una decifrazione provvisoria realizzata tramite una chiave candidata, i ricercatori hanno contato le occorrenze delle sequenze da 5 lettere nel testo decifrato e le hanno messe in rapporto con la loro classifica di riferimento.
+
+In pratica, tenendo conto della differenza di lunghezza dei testi, più le frequenze relative tra decifrato e riferimento si avvicinavano, più la chiave usata veniva considerata di qualità.
+
+Tornando, quindi, al nostro esempio per la lingua italiana, dicevamo che c'è da immaginare che la sequenza *zione* sia molto più presente di altre come *otare* o *edere* e pertanto, una chiave è da considerare migliore di un'altra se produce un testo che rispetta maggiormente tali proporzioni.
+
+Spero di essere riuscito a spiegarmi o in caso contrario possiamo continuare il discorso nel gruppo Telegram di Pensieri in codice. Lo trovi sul sito pensieriincodice.it o semplicemente cercando su Telegram.
+
+E comunque, ad essere onesti, anche il paper originale non mi è sembrato esaustivo su questo punto.
+
+Ho provato a cercare informazioni ad esempio sul perché scegliere proprio sequenze di 5 lettere, ma non ho trovato granché e credo che sia un argomento più legato alla linguistica.
+
+Se quindi tu che ascolti hai maggiori conoscenze in merito, magari contattami che potremmo parlane in un prossimo episodio.
+
+Ma tornando agli aspetti più informatici della questione, dicevamo che applicando l'algoritmo di Hill climbing al problema di individuare una chiave crittografica, si ottiene un procedimento di ricerca della soluzione ottima.
+
+Ad ogni iterazione l'algoritmo genera una mappatura in modo semi-casuale, la utilizza per decifrare il testo e calcola un punteggio per il risultato ottenuto.
+
+Se tale punteggio è migliore del precedente, la nuova mappatura viene utilizzata come base per la prossima iterazione, altrimenti viene scartata e l'algoritmo continua a usare come soluzione di partenza la chiave attuale (ricorda sempre che le parole chiave, soluzione e mappatura in questo contesto sono sinonimi).
+
+Il processo, quindi, prosegue in questo modo finché, giro dopo giro, non arriva ad un punto nel quale non riesce più a migliorare la chiave.
+
+Il trucco sta nella generazione della mappatura che, di volta in volta, viene fatto eseguendo solo un piccolo cambiamento rispetto alla versione precedente.
+
+Nel nostro caso specifico, sono stati utilizzati due tipi di modifiche della soluzione candidata: lo scambio di due simboli qualsiasi e la riassegnazione di uno qualsiasi dei simboli.
+
+Cioè in pratica, l'algoritmo, ad ogni modifica della chiave, poteva provare una tra due strade: o scambiava due lettere corrispondenti a due simboli (quindi se primail quadrato corrispondeva ad A e il triangolo a B, poteva provare a invertirli); oppure, assegnava una differente associazione tra una lettera e un simbolo (quindi se prima la A corrispondeva al triangolo, poteva provare a farla corrispondere al cerchio).
+
+Il nome Hill climbing sta ad indicare che l'algoritmo progressivamente scala verso soluzioni sempre migliori come un individuo che passo dopo passo scala una collina fino alla vetta.
+
+Ma questa affermazione appare molto più chiara se vai a consultare il paper originale che alla figura A20 dell'appendice A che evidenzia la rappresentazione grafica dell'algoritmo.
+
+Quello che però è molto interessante è che, in generale, nella maggior parte dei problemi di ottimizzazione, potrebbero esistere più colline, più massimali, quindi più soluzioni che matematicamente sembrano corretta, ma di cui solo una lo è veramente e viene chiamata massimo globale.
+
+E benché ultimamente tantissimi facciano di tutto per farci credere il contrario, i computer non hanno ancora sviluppato una vera intelligenza, perciò esiste sempre il rischio che un algoritmo rimanga matematicamente bloccato in uno di questi massimali locali.
+
+Se li immaginiamo, infatti, proprio come una serie di collinette, di cui solo una è la più alta di tutte, possiamo intuire facilmente che ci sia la possibilità concreta che l'algoritmo si incammini lungo il pendio sbagliato e, una volta in cima, potendo attuare solo minime modifiche alla chiave, resti intrappolato in quella che crede essere la soluzione migliore.
+
+Un po' come un uomo che ad ogni passo controlla ottusamente l'altitudine a cui si trova e non vuole mai che essa diminuisca, no? La vetta più alta è in realtà un'altra rispetto a dove si trova, ma qualsiasi passo egli faccia in qualsiasi direzione, provoca una diminuzione di altitudine prima che questa aumenti di nuovo.
+
+Per superare problemi del genere con l'Hill climbing, dunque, si è soliti eseguire più volte l'intero processo, partendo sempre da una diversa soluzione iniziale generate in modo casuale.
+
+Ma nel nostro caso specifico, l'algoritmo impiegato dai ricercatori è stato una variante dell'Hill climbing, chiamata *Simulated annealing*, che risolve il problema dei massimi locali consentendo alcuni cambiamenti di pendenza che comportano un punteggio peggiore nel percorso intermedio.
+
+## Le parti mancanti
+
+Le difficoltà incontrate durante questo studio, comunque, non sono state solo di tipo informatico o matematico.
+
+Come anticipato, l'algoritmo di ottimizzazione ha permesso, infatti, di recuperare la mappatura dei simboli omofonici tramite un processo quasi totalmente automatico, ma tutti i simboli della nomenclatura che rappresentavano parole comuni, parti di parole, nomi o luoghi sono stati hanno richiesto molto altro lavoro.
+
+All'inizio i ricercatori, non avendo modo di sapere quali simboli fossero omofoni e quali invece rappresentassero altre entità linguistiche, hanno applicato l'algoritmo Hill climbing ipotizzando che ogni simbolo potesse rappresentare una qualsiasi lettera dell'alfabeto.
+
+Il primo tentativo è stato fatto supponendo che la lingua originaria dei testi fosse l'italiano, dato che essi erano stati rinvenuti in una collezione contenente quasi solo materiale nella nostra lingua, ma ciò non ha portato a nulla di concreto.
+
+Solo quando, dopo vari tentativi, i ricercatori hanno provato con il francese, hanno finalmente ottenuto una prima decrittazione sensata, e di conseguenza una prima mappatura valida.
+
+Seguendo questa linea, il processo è dunque andato avanti come un susseguirsi di esperimenti: i ricercatori hanno lavorato formulando un'ipotesi e sfruttando poi l'algoritmo di ottimizzazione e la relativa decifrazione per verificarne la bontà.
+
+Ad esempio hanno ipotizzato che un certo simbolo potesse servire a duplicare l'ultima lettera e con tali presupporti hanno eseguito una versione riconfigurata dell'algoritmo di ottimizzazione.
+
+Poi hanno ipotizzato che il tal simbolo servisse a cancellare l'ultima lettera e di nuovo hanno eseguito la decifrazione.
+
+Hanno provato a considerare i simboli diacritici come rappresentati di parole o, in generale, qualcosa di differente rispetto alle singole lettere, sulla base del fatto che i cifrari di quel periodo utilizzavano questo tipo di approccio. Quindi li hanno esclusi per affinare i risultati dell'esecuzione dell'algoritmo.
+
+Ogni nuova ipotesi era seguita da una o più verifiche automatizzate tramite l'esecuzione di ottimizzazione, decrittazione e la valutazione della bontà del risultato.
+
+Se l'ipotesi veniva confermata, si fissava un nuovo tassello del puzzle e si passava al successivo.
+
+Insomma si è trattato di un vero e proprio processo di risoluzione di un enigma, ad eccezione del fatto che l'algoritmo di ottimizzazione gli ha fornito un enorme aiuto occupandosi della parte più pesante e noiosa.
+
+Solo dopo molti tentativi è stato finalmente raggiunto un grado di decrittazione tale da poter leggere i documenti abbastanza chiaramente da permettere di identificare anche i simboli che rappresentavano persone e luoghi.
+
+Sì perché, senza il dizionario della nomenclatura a disposizione, è stato indispensabile poter leggere la maggior parte del testo, per poi ricostruire e indovinare i soggetti, luoghi ed eventi sulla base di altre fonti.
+
+Come in un racconto in cui nel testo mancano solo alcune parole: si sa dove mancavano, si sa che sono nomi e, si sa anche quando due spazi corrispondevano allo stesso nome. Per indovinarli è necessario riuscire a leggere abbastanza da poter capire i fatti e il contesto.
+
+Alla fine, i ricercatori sono arrivati a stabilire che l'autrice delle lettere fosse Maria Stuart, Regina di Scozia, e hanno preso quindi in considerazione nomi di personaggi e luoghi che potevano in qualche modo essere legati a lei (amici, conoscenti, congiunti, proprietà, sedi nobiliari, ecc.), finchéfinalmente non li hanno individuati.
+
+Non ci vengono raccontati i dettagli ma diciamo che non deve essere stato affatto semplice se consideriamo che, ad aumentare ancora di più il livello di sicurezza della crittografia, nelle lettere segrete di Mary Stuart, non solo era stato criptato il testo ed era stata utilizzata la nomenclatura per codificare i nomi, ma questi erano persino stati sostituiti utilizzando pseudonimi e nomi in codice.
+
+## Gli errori di cifratura 
+
+Tra gli aspetti che ho trovato più interessanti di questo studio c'è poi sicuramente l'importanza che hanno ricoperto agli errori di cifratura.
+
+In qualsiasi testo cifrato storico è probabile trovare errori di cifratura casuali, come l'omissione di un simbolo, l'aggiunta di uno in troppo o l'uso di un segno sbagliato.
+
+Ci si aspetta di trovare errori sporadici nei documenti perché la cifratura manuale è un processo complicato e una distrazione o un po' di confusione sono più che comprensibili.
+
+Tuttavia, in alcuni documenti di questo studio la percentuale di errori si è rivelata essere piuttosto alta, rendendo, tra l'altro, anche più complessa la decifrazione e l'interpretazione.
+
+Inoltre, un esame più approfondito ha mostrato anche che molti di questi errori erano sistematici, cioè accadeva spesso che alla stessa lettera corrispondesse lo stesso simbolo errato. Una cosa tutt'altro che normale.
+
+E poi, alcuni si sono verificati decine di volte, spesso all'interno dello stesso documento, non potevano essere casuali.
+
+Inizialmente i ricercatori hanno pensato che si trattasse di errori dovuti alla somiglianza grafica, come ad esempio l'uso di un simbolo senza punto al posto di uno con il punto o viceversa, tuttavia, questo tipo di sbaglio rappresentava solo una piccola percentuale del totale.
+
+Esaminando quindi altri cifrari utilizzati da Maria, hanno invece notato che il cifrario ricostruito in questo studio (che hanno chiamato cifrario Maria-Castelnau) condivide diverse caratteristiche come i diacritici, i simboli omofoni e la maggior parte del vocabolario con un altro, chiamato cifrario di Maria-Beaton e utilizzato da sempre dalla Stuart per comunicare con James Beaton, arcivescovo di Glasgow e suo ambasciatore in Francia.
+
+L'ipotesi, dunque, è diventata quella che si siano verificati errori sistematici quando un segretario ha dovuto codificare molte lettere utilizzando contemporaneamente cifrari diversi.
+
+Poteva capitare, infatti, che Maria inviasse nello stesso giorno tante comunicazioni a vari soggetti, ognuna da proteggere con uno specifico cifrario, ed è altrettanto probabile che il lavoro di cifratura fosse affidato ad un'unica persona.
+
+E molti di questi sbagli possono proprio essere spiegati dal fatto che il segretario abbia erroneamente utilizzato il simbolo un grafico preso da un cifrario piuttosto che da un altro.
+
+Quando un addetto alla cifratura, infatti, iniziava a usare un nuovo cifrario con cui non aveva ancora familiarità, è probabile che cercasse nelle tabella ogni singolo simbolo grafico con estrema attenzione.
+
+Dopo un po' di tempo, però, è altresì probabile che egli iniziasse a memorizzare i simboli corrispondenti alle lettere più frequenti e non sentisse più il bisogno di dover sempre consultare la tabella ad ogni singolo passaggio.
+
+Tuttavia, un comportamento del genere tendeva evidentemente a generare confusione e far sì che, a volte, la persona sbagliasse e utilizzasse erroneamente un simbolo preso dal cifrario sbagliato, dando vita così ad un fenomeno, che i ricercatori hanno definito *contaminazione incrociata* dei cifrari.
+
+Solo dopo aver compreso questo fatto è stato possibile finalmente decifrare e interpretare correttamente tutti i vari passaggi che ancora risultavano oscuri nei documenti del gruppo Mary-Castelnau. E lo si è fatto appunto esaminandoli anche alla luce dell'altro cifrario, quello Mary-Beaton.
+
+Infine, è anche interessante notare che in molti punti il segretario è stato in grado di rilevare da solo gli errori di contaminazione già durante la cifratura e li ha perfino corretti immediatamente utilizzando il simbolo della cancellazione, sbarrando il simbolo sbagliato o addirittura sovrascrivendolo.
+
+## L'importanza della crittografia
+
+In tutta questa storia a me piace pensare a quanto fosse robusto e avanzato il sistema di comunicazione segreto messo in piedi da Mary Stuart. Già a partire dalla chiave di crittografia che presentava ad esempio l'uso dei diacritici, niente affatto comune nei cifrari diplomatici francesi dell'epoca.
+
+Durante la prigionia, Maria poteva scrivere e ricevere lettere tramite la posta ufficiale sotto la supervisione di Walsingham e utilizzava questo canale per le comunicazioni con la regina Elisabetta o i membri del Consiglio o le sue proprietà in Francia. Per questioni non troppo delicate, insomma.
+
+Ma oltre ai canali ufficiali, la donna riuscì a mantenere contatti segreti attraverso una serie di canali confidenziali, e uno di questi era proprio quello supportato da Castelnau che inoltrava lettere confidenziali tra Maria e i suoi collaboratori nell'Europa continentale.
+
+I canali segreti, però, non erano immuni da intercettazioni o da eventuali occhi indiscreti e Maria dovette, quindi, affrontare una grossa sfida per mantenere la comunicazione sicura e privata.
+
+La crittografia le ha permesso, per lungo tempo di proteggere i suoi interessi e la sua vita. In fin dei conti un po' come accade per noi al giorno d'oggi, anche se in scala diversa.
+
+Noi facciamo ampio e disinvolto uso della crittografia. Spesso senza nemmeno rendercene conto. Eppure per la Regina di Scozia, all'epoca, era una necessità che richiedeva tanto impegno e lavoro.
+
+Il fatto di utilizzare più cifrari a seconda del destinatario, ci fa capire quanta attenzione venisse posta in queste misure di sicurezza e può farci solo immaginare quante lettere e documenti siano stati distrutti dopo la lettura e magari quanti cifrari siano andati perduti perché non più utilizzabili.
+
+Alla fine, Walsingham e i suoi agenti riuscirono ad infiltrarsi nell'ambasciata di Castelnau a metà del 1583 e a compromettere il canale di comunicazione con Maria: le 7 lettere ritrovate in chiaro in un'altra collezione ne sono la prova lampante.
+
+Una lettera, che dimostrava il suo coinvolgimento nel complotto ordito ai danni della regina Elisabetta, fu infine intercetta e decifrata nel 1586. A seguito di questo evento Maria fu condannata a morte e la condanna fu poi eseguita nel febbraio del 1587.
+
+## Conclusione 
+
+Anche oggi, siamo arrivati alla conclusione dell'episodio. Come al solito, spero di averti raccontato un storia interessante.
+
+Devo dire che gli aspetti storici dell'Informatica mi stanno intrigando molto in questo periodo e anche Pensieri in codice ne sta risentendo. L'episodio è venuto molto più lungo di quanto pensassi ma spero ne sia valsa la pena.
+
+Come sempre ringrazio Edoardo e a Carlo per la loro donazione mensile, ai quali oggi si unisce anche Paola con la sua seconda donazione. Il ringraziamento è doppio perché continuate a mantenere fiducia nel progetto anche se le pubblicazioni si sono molto diradate.
+
+La buona notizia è che hanno tutti e tre superato la soglia prefissata di 10 euro e quindi in queste settimane, hanno ricevuto a casa i nuovi gadget di Pensieri in codice: cioè il segnalibro e gli stickers.
+
+Se anche tu vuoi supportare il progetto, e ricevere i gadget, trovi tutto sul sito pensieriincodice.it (con 2 i), che tra l'altro tra qualche settimana verrà aggiornato con un po' di cose nuove e interessanti. Si spera. Resta sintonizzato.
+
+Altra notizia importante, come sai Pensieri in codice è partner del GrUSP che in queste settimane organizza molte conferenze: le prossime sono il containerday il 12 Ottobre, il reactjsday il 27 Ottobre e il laravelday il 9 novembre. Poi ce ne sono altre ma è inutile che ti faccio tutto l'elenco fino al 2024.
+
+In descrizione, trovi il codice sconto del 10% sull'acquisto dei biglietti e il link all'elenco degli eventi. Mi raccomando: dacci un'occhiata e fammi sapere a quali parteciperai che magari ci vediamo lì.
+
+Per il resto, tagliamo corto che sono stufo anche io di ripetere sempre le stesse cose che tanto già sai: fai ascoltare l'episodio, condividilo sui social, visita il sito, fa una donazione, ecc.
+
+Noi ci sentiamo al prossimo episodio, grazie per aver ascoltato fino in fondo e non dimenticare mai che *un informatico risolve problemi, a volte anche usando il computer*.
+"

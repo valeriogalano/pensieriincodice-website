@@ -6,9 +6,15 @@
             <a href="#">Nascondi</a>
             <p>
                 {{ with index $.Site.Data.transcripts $episode }}
-                {{ replace .text "\n" "<br/><br/>" -1 | markdownify }}<br/>
+                {{- if .segments }}
+                <p>Quella che segue è una trascrizione automatica dell'episodio.</p>
+                {{ else }}
+                <p>Quello che segue è lo script originale dell'episodio.</p>
+                {{ end }}
+                {{ replace .text "\n" "\n\n" | markdownify }}<br/>
                 {{ end }}
             </p>
+            <a href="#">Nascondi</a>
         </div>
     </section>
 </div>

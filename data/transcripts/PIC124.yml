@@ -1,369 +1,369 @@
 text: "
 ## Intro
-  
+
 Dopo due episodi nei quali abbiamo raccontato la vita della contessa Augusta Ada Byron di Lovelace, in questa terza e ultima parte del nostro viaggio, parliamo della sua opera e di quanto straordinaria sia ancora oggi.
-  
+
 Se infatti la Lovelace è da molti ritenuta la prima programmatrice della storia è proprio grazie a quanto da lei illustrato nel suo Memoir dal titolo Sketch of Analytical Engine invented by Charles Babbage.
-  
+
 Ma, a differenza di quanto si creda comunemente, un tale titolo non è dovuto solo al fatto che lei abbia inserito nell'articolo un algoritmo per la risoluzione dei numeri di Bernulli, ma anche, e sopratutto, alla mentalità che traspare chiaramente dalle sue parole.
-  
+
 Una mentalità che anticipava tante delle caratteristiche che sono quelle del moderno sviluppo del software.
-  
+
 Mettiamoci dunque comodi e buon ascolto.
-  
+
 ## Un arduo lavoro
-  
+
 Il lavoro svolto da Ada non fu affatto semplice.
-  
+
 Il suo compito, che inizialmente era di mera traduzione, si trasformò ben presto in qualcosa di molto più complesso e la responsabilità che ne derivò fu notevole.
 
 La pubblicazione, il Memoir, come erano soliti chiamarla, una volta completata, comprendeva la traduzione dell'articolo di Menabrea e le note originali di Ada e il suo scopo era di comunicare al governo inglese e alla comunità scientifica britannica il valore della rivoluzionaria invenzione di Babbage: la Macchina Analitica.
-  
-  Per fare ciò, Lady Lovelace dovette sintetizzare una mole di progetti enorme e, a partire da essi, immaginare una serie di applicazioni pratiche che, da una parte, fossero realmente realizzabili e, dall'altra, che facessero colpo sui suoi lettori.
-  
-  Il suo compito era impressionare ed interessare il più vasto pubblico possibile facendo sempre però attenzione a non ingannare o illudere nessuno; intenzionalmente o meno.
+
+Per fare ciò, Lady Lovelace dovette sintetizzare una mole di progetti enorme e, a partire da essi, immaginare una serie di applicazioni pratiche che, da una parte, fossero realmente realizzabili e, dall'altra, che facessero colpo sui suoi lettori.
+
+Il suo compito era impressionare ed interessare il più vasto pubblico possibile facendo sempre però attenzione a non ingannare o illudere nessuno; intenzionalmente o meno.
 
 Possiamo solo immaginare quanto sia stato complicato, dato che alla sua morte, Babbage aveva riempito ben 30 volumi di progetti e Ada non aveva nemmeno un modello in scala ridotta sul quale provare le proprie intuizioni, come accadeva invece per la Macchina Differenziale: doveva ragionare totalmente in astratto.
-  
-  Ci furono poi una serie di problemi pratici nella stesura delle Note.
+
+Ci furono poi una serie di problemi pratici nella stesura delle Note.
 
 In primis la difficoltà oggettiva di lavorare a distanza: la Lovelace e Babbage erano entrambi molto impegnati e non potevano incontrarsi facilmente, quindi si spedivano l'un l'altra le bozze dei testi corredate da lunghe descrizioni o richieste di spiegazioni di determinati aspetti.
-  
-  Per noi che oggi utilizziamo editor condivisi e archivi cloud si tratterebbe di un problema banale ma all'epoca era una parte importante della lavorazione.
+
+Per noi che oggi utilizziamo editor condivisi e archivi cloud si tratterebbe di un problema banale ma all'epoca era una parte importante della lavorazione.
 
 Sono varie le lettere in cui lei lo rimprovera per averle mandato una vecchia versione del documento o per aver dimenticato di includere qualche pagina: l'immagine di Babbage che appare dalla corrispondenza di questo periodo è, in effetti, di una persona piuttosto caotica e disordinata.
-  
-  E poi ancora ci fu il litigio riguardo la problematica prefazione che Babbage voleva includere all'ultimo momento, di cui abbiamo già parlato in precedenza.
-  
-  Si trattò di una controversia non da poco, che quasi fece saltare l'intero lavoro e che, come abbiamo già discusso, cambio per sempre il rapporto fra i due.
-  
-  E, infine, altra cosa non banale, si presentò la questione di decidere come firmare l'opera.
-  
-  Sappiamo infatti, dagli scambi epistolari con la madre ed il marito, che Ada era molto preoccupata di come sarebbe stato percepito il suo lavoro se si fosse intuito che era stato scritto da una donna invece che da un uomo.
-  
-  Lei sapeva bene, date le sue esperienze personali e quelle della sua amica Mary Somerville, che questo era un aspetto da ponderare con molta attenzione per raggiungere gli obiettivi di divulgazione che si era posta.
-  
-  Per quanto potesse essere abile nel descrivere le potenzialità della Macchina Analitica, nel fornire informazioni, analisi o esempi, sapeva ben che un'opera scritta da una donna non avrebbe mai raggiunto i lettori più prevenuti.
-  
-  Così, alla fine, dopo essersi consultata con William decise di sacrificare l'orgoglio e di firmare il Memoir con le sole sue iniziali quindi come A. A. L.
-  
-  ## Le capacità di Ada
-  
-  Nello scrivere il Memoir, Ada dimostrò di avere delle abilità di pensiero del tutto fuori dal comune per il suo tempo.
-  
-  Il suo genio consisteva nella capacità di sintetizzare le idee astratte, di fondere ragionamento e immaginazione in un nuovo tipo di idea. È per questo motivo che capiva le potenzialità della Macchina Analitica anche meglio del suo stesso inventore.
+
+E poi ancora ci fu il litigio riguardo la problematica prefazione che Babbage voleva includere all'ultimo momento, di cui abbiamo già parlato in precedenza.
+
+Si trattò di una controversia non da poco, che quasi fece saltare l'intero lavoro e che, come abbiamo già discusso, cambio per sempre il rapporto fra i due.
+
+E, infine, altra cosa non banale, si presentò la questione di decidere come firmare l'opera.
+
+Sappiamo infatti, dagli scambi epistolari con la madre ed il marito, che Ada era molto preoccupata di come sarebbe stato percepito il suo lavoro se si fosse intuito che era stato scritto da una donna invece che da un uomo.
+
+Lei sapeva bene, date le sue esperienze personali e quelle della sua amica Mary Somerville, che questo era un aspetto da ponderare con molta attenzione per raggiungere gli obiettivi di divulgazione che si era posta.
+
+Per quanto potesse essere abile nel descrivere le potenzialità della Macchina Analitica, nel fornire informazioni, analisi o esempi, sapeva ben che un'opera scritta da una donna non avrebbe mai raggiunto i lettori più prevenuti.
+
+Così, alla fine, dopo essersi consultata con William decise di sacrificare l'orgoglio e di firmare il Memoir con le sole sue iniziali quindi come A. A. L.
+
+## Le capacità di Ada
+
+Nello scrivere il Memoir, Ada dimostrò di avere delle abilità di pensiero del tutto fuori dal comune per il suo tempo.
+
+Il suo genio consisteva nella capacità di sintetizzare le idee astratte, di fondere ragionamento e immaginazione in un nuovo tipo di idea. È per questo motivo che capiva le potenzialità della Macchina Analitica anche meglio del suo stesso inventore.
 
 Come vedremo a breve, in pratica la Lovelace possedeva molte delle competenze che oggi si richiedono ai moderni programmatori: astrazione, progettazione, sinteticità, obiettività, problem solving, immaginazione e creatività.
-  
-  E non v'è dubbio che gli eventi vissuti (sia positivi che negativi) abbiano contribuito enormemente allo sviluppo di tali capacità.
-  
-  Gli anni passati a studiare per corrispondenza la spinsero a speculare sui problemi, ad individuare in autonomia le soluzioni, a mettere in dubbio gli assunti di base e a progettare estensioni delle conoscenze acquisite.
-  
-  L'utilizzo quotidiano delle metafore in tutti i campi, personali o di studio che fossero, favorì certamente in lei l'astrazione dei concetti e l'applicazione delle
-  conoscenze in diversi contesti.
-  
-  L'interesse sviluppato per i giochi matematici e la musica la portò a valutare la loro possibile elaborazione tramite la Macchina Analitica che, concettualmente, è qualcosa di molto simile alla progettazione di algoritmi.
 
-Augustus De Morgan, che, essendo stato l'insegnante di Ada, forse conosceva le sue capacità meglio di chiunque altro, affermò \"[...] la capacità di pensiero di Ada, fin dall'inizio della mia corrispondenza con lei, è stata assolutamente fuori dal comune per qualsiasi principiante, uomo o donna. La mente di Mrs Somerville non l'ha mai condotta oltre i dettagli del lavoro matematico: Lady L prenderà una strada completamente diversa[...]\".[[#^28cb56]]
+E non v'è dubbio che gli eventi vissuti (sia positivi che negativi) abbiano contribuito enormemente allo sviluppo di tali capacità.
+
+Gli anni passati a studiare per corrispondenza la spinsero a speculare sui problemi, ad individuare in autonomia le soluzioni, a mettere in dubbio gli assunti di base e a progettare estensioni delle conoscenze acquisite.
+
+L'utilizzo quotidiano delle metafore in tutti i campi, personali o di studio che fossero, favorì certamente in lei l'astrazione dei concetti e l'applicazione delle
+conoscenze in diversi contesti.
+
+L'interesse sviluppato per i giochi matematici e la musica la portò a valutare la loro possibile elaborazione tramite la Macchina Analitica che, concettualmente, è qualcosa di molto simile alla progettazione di algoritmi.
+
+Augustus De Morgan, che, essendo stato l'insegnante di Ada, forse conosceva le sue capacità meglio di chiunque altro, affermò *[...] la capacità di pensiero di Ada, fin dall'inizio della mia corrispondenza con lei, è stata assolutamente fuori dal comune per qualsiasi principiante, uomo o donna. La mente di Mrs Somerville non l'ha mai condotta oltre i dettagli del lavoro matematico: Lady L prenderà una strada completamente diversa[...]*.[[#^28cb56]]
 
 ## L'attribuzione delle Note
-  
-  Alcuni biografi di Ada Lovelace e Charles Babbage hanno messo in dubbio il contributo della contessa alle Note, quasi come se lui le avesse scritte e lei fosse stata solo la sua segretaria.
-  
-  Non è chiaro da dove sia sorta questa particolare di obiezione. Babbage, nella sua autobiografia, afferma chiaramente che Ada scrisse le Note basandosi sul materiale che lui le aveva fornito.
-  
-  Si trattò di uno sforzo collaborativo, certo, ma, poiché i progetti e le descrizioni erano state realizzate da lui, è ovvio che egli fosse l'unico a poter dare chiarimenti in merito.
+
+Alcuni biografi di Ada Lovelace e Charles Babbage hanno messo in dubbio il contributo della contessa alle Note, quasi come se lui le avesse scritte e lei fosse stata solo la sua segretaria.
+
+Non è chiaro da dove sia sorta questa particolare di obiezione. Babbage, nella sua autobiografia, afferma chiaramente che Ada scrisse le Note basandosi sul materiale che lui le aveva fornito.
+
+Si trattò di uno sforzo collaborativo, certo, ma, poiché i progetti e le descrizioni erano state realizzate da lui, è ovvio che egli fosse l'unico a poter dare chiarimenti in merito.
 
 Anche in questa fase, Lady Lovelace si distinse ponendo domande pertinenti e scegliendo personalmente un modello matematico: il famoso calcolo dei numeri di Bernulli, utilizzato per evidenziare la differenza tra le due macchine, fu una sua idea e lo realizzò quasi totalmente da sola.
-  
-  Secondo Babbage, Ada corresse persino un errore di calcolo che lui aveva commesso e quando cercò di modificare le sue Note, lei ebbe da ridire sulle sue capacità di editor.
-  
-  L'unico aiuto che Babbage diede effettivamente ad Ada, a detta dello stesso inventore, fu quello di completare la tabella dei numeri di Bernoulli, ma semplicemente perché lei all'epoca era molto malata.
 
-Alla fine, fu lui stesso a riassumere l'alta considerazione per ciò che lei aveva fatto, sempre nella sua autobiografia: \"Discutemmo insieme delle varie illustrazioni che potevano essere introdotte: Io ne suggerii diverse, ma la scelta fu interamente sua. Così come l'elaborazione algebrica dei vari problemi, tranne quello relativo ai numeri di Bernoulli, che mi ero offerto di fare per risparmiare a Lady Lovelace la fatica. Lei me lo rimandò indietro per una modifica, avendo individuato un grave errore che avevo commesso nel processo... Questa Memoria fornisce, a coloro che sono in grado di comprendere il ragionamento, una dimostrazione completa del fatto che l'insieme degli sviluppi e delle operazioni dell'analisi sono ora in grado di essere eseguiti da macchine\".[[#^f41ca4]]
+Secondo Babbage, Ada corresse persino un errore di calcolo che lui aveva commesso e quando cercò di modificare le sue Note, lei ebbe da ridire sulle sue capacità di editor.
+
+L'unico aiuto che Babbage diede effettivamente ad Ada, a detta dello stesso inventore, fu quello di completare la tabella dei numeri di Bernoulli, ma semplicemente perché lei all'epoca era molto malata.
+
+Alla fine, fu lui stesso a riassumere l'alta considerazione per ciò che lei aveva fatto, sempre nella sua autobiografia: *Discutemmo insieme delle varie illustrazioni che potevano essere introdotte: Io ne suggerii diverse, ma la scelta fu interamente sua. Così come l'elaborazione algebrica dei vari problemi, tranne quello relativo ai numeri di Bernoulli, che mi ero offerto di fare per risparmiare a Lady Lovelace la fatica. Lei me lo rimandò indietro per una modifica, avendo individuato un grave errore che avevo commesso nel processo... Questa Memoria fornisce, a coloro che sono in grado di comprendere il ragionamento, una dimostrazione completa del fatto che l'insieme degli sviluppi e delle operazioni dell'analisi sono ora in grado di essere eseguiti da macchine*.[[#^f41ca4]]
 
 ## Il primo programma della storia
-  
-  Uno degli obiettivi più importanti che si prefisse Ada fu, dunque, di rendere edotti i lettori delle grandi potenzialità della Macchina Analitica e per fare ciò fu fondamentale evidenziare un aspetto dello strumento molto difficile da comprendere.
-  
-  La Macchina, una volta finalmente realizzata, infatti, avrebbe avuto la capacità di eseguire operazioni in sequenza. Ad esempio avrebbe potuto calcolare una somma o una divisione e poi utilizzare il risultato per un calcolo successivo e così via potenzialmente all'infinito.
+
+Uno degli obiettivi più importanti che si prefisse Ada fu, dunque, di rendere edotti i lettori delle grandi potenzialità della Macchina Analitica e per fare ciò fu fondamentale evidenziare un aspetto dello strumento molto difficile da comprendere.
+
+La Macchina, una volta finalmente realizzata, infatti, avrebbe avuto la capacità di eseguire operazioni in sequenza. Ad esempio avrebbe potuto calcolare una somma o una divisione e poi utilizzare il risultato per un calcolo successivo e così via potenzialmente all'infinito.
 
 Ciò significa che lo strumento sarebbe stato in grado di immagazzinare e riutilizzare le informazioni: nessuna altra macchina calcolatrice ideata fino a quel momento era capace di un tale automatismo (nemmeno la Macchina Differenziale, cioè il precedente progetto di Babbage); per questo motivo risultava così complicato immaginarne le applicazioni.
 
 La scelta di Lady Lovelace di utilizzare come esempio nelle sue Note il calcolo dei numeri di Bernoulli fu perfetta per evidenziare tale aspetto: per calcolare la sequenza, infatti, è necessario eseguire molte operazioni, quindi prenderne i risultati e utilizzarli per altre operazioni successive.
-  
-  Solo la Macchina Analitica avrebbe potuto farlo grazie proprio all'utilizzo delle schede perforate, che lei aveva raccomandato di includere nel progetto, ed al suo meccanismo di archiviazione interna.
-  
-  Questa scelta dimostra che Ada non vedeva solo i dettagli tecnici, ma anche il quadro generale, il concetto di ciò che la Macchina Analitica avrebbe potuto o non potuto fare e di cosa avrebbe potuto fare in più rispetto a tutti i suoi predecessori.
+
+Solo la Macchina Analitica avrebbe potuto farlo grazie proprio all'utilizzo delle schede perforate, che lei aveva raccomandato di includere nel progetto, ed al suo meccanismo di archiviazione interna.
+
+Questa scelta dimostra che Ada non vedeva solo i dettagli tecnici, ma anche il quadro generale, il concetto di ciò che la Macchina Analitica avrebbe potuto o non potuto fare e di cosa avrebbe potuto fare in più rispetto a tutti i suoi predecessori.
 
 Non si trattò di una decisione facile: Babbage aveva a disposizione volumi di progetti e molti esempi di iterazioni di quelli che oggi potremmo definire primordiali programmi per computer.
-  
-  Tuttavia la contessa, parlandone e discutendone con l'inventore e distillando le informazioni che lui le forniva, al pari di come un moderno sviluppatore distilla le richieste dei propri committenti, riuscì a mettere nella giusta prospettiva un'idea straordinaria.
-  
-  E, cosa bellissima, nel bel mezzo di questa impresa molto seria lei scrisse a lui lettere deliziose e stravaganti, piene di discussioni sui numeri di Bernoulli, certo, ma anche di fatti e avvenimenti personali, e di metafore di lei nella veste di fata, enigmista e generale.
-  
-  Babbage divenne, così, il suo confidente e lei la divulgatrice delle sue idee.
 
-Alla fine Ada implementò un algoritmo che la Macchina Analitica avrebbe potuto utilizzare per generare questa sequenza di numeri facilmente, velocemente e senza errori: un  algoritmo efficiente, diremmo oggi.
-  
-  Lei era certa che questo avrebbe fatto colpo sui suoi lettori esperti di scienza più di qualunque altro possibile esempio.
-  
-  Tale progetto avrebbe dimostrato che la Macchina Analitica era un'idea superiore e unica.
-  
-  Oggi, questo algoritmo viene da molti considerato il primo programma per computer della storia.
+Tuttavia la contessa, parlandone e discutendone con l'inventore e distillando le informazioni che lui le forniva, al pari di come un moderno sviluppatore distilla le richieste dei propri committenti, riuscì a mettere nella giusta prospettiva un'idea straordinaria.
 
-## La Macchina  Analitica
+E, cosa bellissima, nel bel mezzo di questa impresa molto seria lei scrisse a lui lettere deliziose e stravaganti, piene di discussioni sui numeri di Bernoulli, certo, ma anche di fatti e avvenimenti personali, e di metafore di lei nella veste di fata, enigmista e generale.
+
+Babbage divenne, così, il suo confidente e lei la divulgatrice delle sue idee.
+
+Alla fine Ada implementò un algoritmo che la Macchina Analitica avrebbe potuto utilizzare per generare questa sequenza di numeri facilmente, velocemente e senza errori: unalgoritmo efficiente, diremmo oggi.
+
+Lei era certa che questo avrebbe fatto colpo sui suoi lettori esperti di scienza più di qualunque altro possibile esempio.
+
+Tale progetto avrebbe dimostrato che la Macchina Analitica era un'idea superiore e unica.
+
+Oggi, questo algoritmo viene da molti considerato il primo programma per computer della storia.
+
+## La MacchinaAnalitica
 
 Il progetto di Charles Babbage della Macchina Analitica può essere definito come la formulazione teorica del primo calcolatore informatico: l'idea che segna un po' la nascita della moderna gestione automatizzata del calcolo, almeno sulla carta.
 
 Questo incredibile strumento fu progettato come una serie di meccanismi: un sistema di input, un sistema di elaborazione chiamato Mill (perché realizzato tramite una sorta di mulino) e un sistema di output. In effetti, lo stesso schema di componenti che fu poi utilizzato per la creazione dei primi computer.
-  
-  L'input, come abbiamo già detto, fu ideato per la lettura di schede perforate simili a quelle quelle del telaio Jaquard. Tale meccanismo fu poi effettivamente impiegato per programmare i cosiddetti mainframe e restò in utilizzo fino alla fine degli anni '70 del 900.
-  
-  Anche se non si può parlare di programmazione nel senso strettamente moderno del termine, disponendo le schede nel modo corretto si sarebbe potuta istruire la Macchina per eseguire un calcolo, un ciclo o una serie processi in sequenza, prendendo e depositando numeri dal Mill.
-  
-  A sua volta, il Mill sarebbe poi stato in grado di eseguire le operazioni di base (somma, sottrazione, moltiplicazione e divisione) e di contenere oltre 1000 numeri a 50 cifre in virgola fissa.
+
+L'input, come abbiamo già detto, fu ideato per la lettura di schede perforate simili a quelle quelle del telaio Jaquard. Tale meccanismo fu poi effettivamente impiegato per programmare i cosiddetti mainframe e restò in utilizzo fino alla fine degli anni '70 del 900.
+
+Anche se non si può parlare di programmazione nel senso strettamente moderno del termine, disponendo le schede nel modo corretto si sarebbe potuta istruire la Macchina per eseguire un calcolo, un ciclo o una serie processi in sequenza, prendendo e depositando numeri dal Mill.
+
+A sua volta, il Mill sarebbe poi stato in grado di eseguire le operazioni di base (somma, sottrazione, moltiplicazione e divisione) e di contenere oltre 1000 numeri a 50 cifre in virgola fissa.
 
 Infine, nell'autobiografia, nei Passages, Babbage afferma di aver ideato tre tipi di output: un apparecchio per la stampa su carta, un mezzo per produrre una stampa standardizzata delle tabelle o dei risultati calcolati e un meccanismo per punzonare su schede di cartone o su piastre metalliche i risultati di qualsiasi calcolo, in modo da poterli riutilizzare successivamente come input.
-  
-  Tutto il macchinario, sarebbe stato poi alimentato da un motore a vapore, il che, come abbiamo già detto, in totale lo avrebbe reso grande quasi quanto una locomotiva.
-  
-  Oggi per noi, questi concetti sono abbastanza semplici e comprensibili, ma all'epoca, si trattava, di fatto, solo di migliaia e migliaia di pagine di diagrammi e schemi perché, come sappiamo, il progetto non venne mai realizzato.
-  
-  In una condizione del genere era difficile persino costruire un prototipo in scala ridotta, figuriamoci comprendere e descrivere a pieno il funzionamento e le possibilità di una tale tecnologia.
+
+Tutto il macchinario, sarebbe stato poi alimentato da un motore a vapore, il che, come abbiamo già detto, in totale lo avrebbe reso grande quasi quanto una locomotiva.
+
+Oggi per noi, questi concetti sono abbastanza semplici e comprensibili, ma all'epoca, si trattava, di fatto, solo di migliaia e migliaia di pagine di diagrammi e schemi perché, come sappiamo, il progetto non venne mai realizzato.
+
+In una condizione del genere era difficile persino costruire un prototipo in scala ridotta, figuriamoci comprendere e descrivere a pieno il funzionamento e le possibilità di una tale tecnologia.
 
 Eppure, questo è proprio l'arduo compito che si prefisse Ada Lovelace quando decise di scrivere le sue Note all'articolo di Menabrea: descrivere il funzionamento della Macchina Analitica e, sopratutto, il suo valore, le potenziali applicazioni e perfino i potenziali abusi.
-  
-  E possiamo dire che ci riuscì pienamente. È per questo motivo che le Note stupiscono ancora oggi, a distanza di 180 anni.
-  
-  Babbage fornì l'idea ed il progetto, ma fu Ada, che con il doppio cappello di analista e metafisica, inserì quell'idea e quel progetto nel contesto appropriato, sia a livello di dettaglio che di visione generale.
+
+E possiamo dire che ci riuscì pienamente. È per questo motivo che le Note stupiscono ancora oggi, a distanza di 180 anni.
+
+Babbage fornì l'idea ed il progetto, ma fu Ada, che con il doppio cappello di analista e metafisica, inserì quell'idea e quel progetto nel contesto appropriato, sia a livello di dettaglio che di visione generale.
 
 ## Il contenuto delle Note
-  
-  \"Sono riluttante a restituire la vostra ammirevole e filosofica Nota A. Vi prego di non modificarla... È incredibile che voi sappiate tutto questo per intuizione e più leggo le vostre note più ne sono sorpreso e mi rammarico di non aver esplorato prima una vena così ricca del metallo più nobile\".[[#^f41ca4]]
-  
-  Come abbiamo già detto, oggi molti conoscono Ada Lovelace per il merito di aver scritto il primo programma per computer della storia, l'algoritmo per calcolare la successione dei numeri di Bernulli utilizzando la Macchina Analitica.
-  
-  Ma questa è solo una parte della sua opera.
-  
-  Il vero fascino delle Note, secondo me, deriva principalmente dal fatto che Lady Lovelace previde, già nel 1842, alcune delle caratteristiche che appartengo al moderno computer, nonché l'impatto che tale tecnologia avrebbe avuto sui suoi utilizzatori e sulla scienza in generale.
-  
-  Di fatto, nel suo testo, lei arrivò a descrivere i concetti di base di quello che noi oggi chiamiamo sviluppo del software.
-  
-  In un primo momento, Ada aggiunse una sola nota alla traduzione, quella che credeva sarebbe stato il suo unico contributo originale, e lo fece semplicemente per chiarire alcuni concetti che, secondo lei, Menabrea aveva trascurato.
-  
-  Ma quando le venne poi richiesto di integrare l'articolo con le proprie conoscenze, lei aggiunse varie altre note producendo una quantità di materiale che superò in lunghezza dell'articolo originale.
-  
-  ### Nota A
-  Nella prima, la \"Nota filosofica A\", quella che piacque tanto a Babbage, la contessa iniziò col definire i confini della Macchina Analitica e i dettagli di come essa avrebbe svolto i suoi compiti.
-  
-  La Macchina Differenziale, il primo motore di calcolo di Babbage, era stata progettata principalmente per calcolare e stampare specifiche tabelle, ma il progetto della nuova Macchina Analitica rappresentava un salto meccanico e concettuale enorme.
-  
-  \"La Macchina Analitica, al contrario, non è semplicemente adatta a tabulare i risultati di una funzione particolare e di nessun'altra, ma a sviluppare e tabulare qualsiasi funzione. In effetti, la Macchina può essere descritta come l'espressione materiale di qualsiasi funzione indefinita di qualsiasi grado di generalità e complessità... \"[[#^aa99cd]]
-  
-  La nuova Macchina Analitica avrebbe posseduto una capacità del tutto innovativa: sarebbe stata in grado di memorizzare, oltre ai dati, anche un programma, sotto forma di una sequenza di operazioni o istruzioni.
-    
-    Ada iniziò anche a riconoscere e ad enfatizzare la responsabilità che questa nuova capacità avrebbe posto nelle mani dell'utilizzatore della macchina, il quale avrebbe dovuto specificare il programma in modo preciso e completamente conforme alle proprie necessità.
-    
-    Oggi noi chiamiamo questo tipo di lavoro *sviluppo del software*, ma per un'epoca in cui non esisteva ancora il concetto di computer ne un qualcosa di tangibile e reale su cui sperimentare, si trattò di un'intuizione notevole.
-    
-    Come notevole è anche la definizione che Ada diede di *operazione*.
-  
-  \"Può essere auspicabile spiegare che con la parola operazione intendiamo qualsiasi processo che altera la relazione reciproca di due o più cose, sia questa relazione di qualsiasi tipo. Questa è la definizione più generale e include tutti gli argomenti dell'universo.\" [[#^aa99cd]]
-    
-    Non si può negare che sembri la descrizione di quella che noi oggi chiamiamo una funzione: un generico processo che altera un qualsiasi tipo di relazione o valore.
-    
-    Un altro passaggio singolarmente profetico di questa Nota A è quello in cui la Lovelace anticipò quella che sarebbe poi stata una delle prime difficoltà per la rappresentazione dell'informazione nei futuri linguaggi di programmazione: cioè il fatto che i simboli debbano essere utilizzati diversamente a seconda del significato che hanno all'interno del programma.
-    
-    La Macchina Analitica, differentemente da un computer, sarebbe stata totalmente meccanica, quindi quando i numeri avrebbero indicato delle operazioni e non delle quantità sarebbero stati inseriti in una parte del meccanismo anziché un'altra, ma a ben guardare, quello che Ada mise in evidenza è la tipica difficoltà del compito dello sviluppo di software, cioè la difficoltà di comunicare alla macchina ciò che ci si aspetta che essa faccia.
-      
-      In effetti, leggendo le note, si rimane colpiti dall'apprezzamento di Ada per il principio secondo cui il potere deriva dalla creatività disciplinata.
-      
-      Le due personalità che questa donna ha manifestato in tutto il corso della sua vita, quella più analitica e scientifica e quella più metafisica e creativa, risultano nella sua opera essere in perfetto equilibrio, dando vita a delle abilità dal potenziale sorprendente.
-    
-    Lo stesso tipo di abilità che sono richieste oggi per un bravo sviluppatore: la capacità di inventare soluzioni e descriverle in modo preciso, strutturato e ripetibile.
-      
-      Una delle grandi passioni di Ada, poi, era la musica e ovviamente le bastò poco, una volta definiti i concetti di base, per arrivare ad ipotizzare che il Macchina avrebbe potuto trattare tale arte, se ricondotta alla giusta codifica.
-    
-    \"Inoltre, la Macchina Analitica potrebbe agire su altre cose oltre al numero, se si trovassero oggetti le cui relazioni fondamentali reciproche potessero essere espresse da quelle della scienza astratta delle operazioni, e che fossero anche suscettibili di adattamenti all'azione della notazione operativa e del meccanismo del motore... Supponendo, per esempio, che le relazioni fondamentali dei suoni acuti nella scienza dell'armonia e della composizione musicale siano suscettibili di tali espressioni e adattamenti, il motore potrebbe comporre brani musicali elaborati e scientifici di qualsiasi grado di complessità o estensione...\"[[#^aa99cd]]
-      
-      Una volta fatta la distinzione tra i numeri e le operazioni da eseguire, non fu difficile fare poi il passo successivo e immaginare come la Macchina Analitica sarebbe stata in grado di fornire due tipi di risultati: numerici e simbolici (ad esempio, algebrici).
-        
-        In effetti, la Macchina Analitica avrebbe potuto generare nuovi programmi oltre che numeri, poiché sarebbe stata capace anche di perforare le schede. E questo avrebbe aperto un nuovo e vasto territorio per l'analisi delle informazioni.
-        
-        Quello che descrisse Lady Lovelace sembra essere una versione primordiale del concetto di sottoprocesso o di funzione moderna, in cui l'output di un programma diventa l'input di un altro programma.
-        
-        Un concetto che, se esteso, può tranquillamente essere visto come un progenitore del software che noi tutti conosciamo, nel quale tutta una serie di componenti vengono concatenati per dare vita alla risoluzione di problemi complessi.
-        
-        Per tutta la Nota A, dunque, lei continuò ad insistere sull'enorme superiorità della seconda macchina sulla prima, dell'Analitica sulla Differenziale.
-        
-        Primo perché, in fin dei conti, l'obiettivo era quello di far interessare i lettori e di trovare potenziali finanziatori e, per ottenere ciò, era fondamentale spiegare perché Babbage avesse abbandonato il suo primo progetto in favore del secondo senza neanche portalo a compimento.
-      
-      Ma anche perché lei riusciva già a vedere questo strumento come il mezzo per raggiungere una sorta di \"verità superiore\": la sua descrizione spazia continuamente dal metafisico al pragmatico ma sempre sottolineando l'enorme impulso che quest'invenzione avrebbe dato alla scienza.
-      
-      \"Coloro che pensano alla verità matematica come allo strumento attraverso il quale la debole mente dell'uomo può leggere nel modo più efficace le opere del suo Creatore, considereranno con particolare interesse tutto ciò che può tendere a facilitare la traduzione dei suoi principi in forme pratiche esplicite.\"[[#^aa99cd]]
-        
-        E la Macchina Analitica avrebbe facilitato e come il lavoro dello scienziato.
-          
-          La dimostrazione sta nel fatto che, ad esempio, il sistema a schede perforate di cui sarebbe stata dotata, come abbiamo già detto, venne effettivamente utilizzato.
-          
-          O nel fatto che, secondo il progetto di Babbage, la Macchina poteva memorizzare un numero di cifre pari a quello dei computer della metà degli anni '60 del secolo successivo.
-          
-          O ancora nel fatto che il \"mulino\" dove venivano elaborate le informazioni, era l'equivalente meccanico di una CPU, di un processore matematico.
-          
-          Infine, la Macchina Analitica avrebbe avuto anche diversi metodi per stampare le informazioni, persino sotto forma di grafici, proprio come i computer, oggi, hanno diverse periferiche.
-        
-        È vero: non sarebbe stata programmabile nel senso moderno del termine; tutto sarebbe avvenuto tramite il posizionamento delle schede perforate e la ripetizione dei cicli, più come un telaio, ma Ada sottolineò anche questo. E nel farlo utilizzò una metafora, come forse avrebbe fatto suo padre.
-        
-        \"Possiamo dire che il Motore Analitico tesse modelli algebrici come il telaio Jacquard tesse fiori e foglie\".[[#^aa99cd]]
-          
-          Un'altra caratteristica fondamentale della Macchina sarebbe stata la capacità di gestire operazioni condizionali, quelle che noi oggi chiamiamo, ad esempio, \"if\", senza la necessità di intervento da parte di un operatore.
-            
-            In effetti, il macchinario avrebbe potuto calcolare la soluzione ad un problema e metterla in una sorta di \"archivio\", per poi recuperarla ed utilizzarla per un altro problema se e quando ciò si fosse rivelato necessario.
-            
-            Si sarebbe trattato di un salto di qualità che, ovviamente, Ada non si lasciò sfuggire.
-          
-          \"Consentendo al meccanismo di combinare insieme simboli generali, in successioni di varietà ed estensione illimitate, si stabilisce un legame unitario tra le operazioni della materia e i processi mentali astratti della branca più astratta della scienza matematica. Viene sviluppato un nuovo, vasto e potente linguaggio per l'uso futuro dell'analisi, in cui maneggiare le sue verità in modo che queste possano diventare di più rapida e accurata applicazione pratica per gli scopi dell'umanità di quanto i mezzi finora in nostro possesso abbiano reso possibile.\"[[#^aa99cd]]
-            
-            ### Nota B
-            
-            Un altro passaggio molto interessante, si trova poi nella nota B.
-              
-              Non è eccessivo, secondo me, intravedere in questo punto una versione primordiale di una serie di idee basilari nel moderno sviluppo software: astrazione, modularità, separazione delle responsabilità, offuscamento, quasi un'antenato della progettazione orientata agli oggetti.
-            
-            \"Più analizziamo il modo in cui un tale motore esegue i suoi processi e raggiunge i suoi risultati, più ci rendiamo conto di come esso ponga in una luce vera e giusta le relazioni e le connessioni reciproche dei vari passaggi dell'analisi matematica, di come separi chiaramente le cose che sono in realtà distinte e indipendenti, e unisca quelle che sono reciprocamente dipendenti\".[[#^aa99cd]]
-              
-              La componente essenziale di questa idea è la separazione tra le caratteristiche di un'operazione e la sua implementazione; cioè tra cosa un'operazione fa e come lo fa.
-                
-                In effetti, praticamente in tutti i moderni linguaggi di programmazione esiste il concetto di definizione, che descrive il modo in cui una funzione si collega agli altri elementi software, e di corpo, che specifica in dettaglio le azioni che tale funzione va ad eseguire sui dati passati al momento della chiamata.
-                
-                I vantaggi di questa idea di separazione sono palesi a chiunque conosca la programmazione.
-                
-                In fase di progettazione, permette di conoscere in anticipo il funzionamento di una porzione di codice.
-                
-                In fase di implementazione, permette di utilizzare le funzioni anche se non se ne conoscono i dettagli implementativi.
-                
-                In fase di manutenzione permette di sostituire, se necessario, una funzione con un'altra senza impattare in alcun modo sul resto del software, a patto che le due  condividano una uguale definizione.
-                
-                Estremizzando poi il concetto, si ottiene il lascia passare per realizzare non solo  semplici funzioni ma strutture più complesse come librerie e packages. In pratica si arriva al moderno concetto di interfaccia.
-                
-                Oggi i veri problemi del software sono di complessità, di scala e la capacità di separare \"le cose che sono in realtà distinte e indipendenti, e unire quelle che sono reciprocamente dipendenti\", tanto per usare le parole di Ada, è assolutamente fondamentale.
-                
-                ### Nota C
-                
-                Nell'adattare il concetto di scheda perforata alla Macchina Analitica, Babbage aveva apportato un miglioramento al modo in cui le schede potevano essere utilizzate per dare istruzioni.
-                
-                Nella nota C, Ada mette in evidenza proprio questa modifica e addirittura la ripropone come miglioramento del progetto originale per aumentare le prestazioni del telaio Jacquard.
-              
-              \"È stato ideato un metodo tecnicamente chiamato \"backing\" delle carte in determinati gruppi secondo determinate leggi. L'obiettivo di questa estensione è garantire la possibilità di utilizzare una particolare carta o un gruppo di carte per un numero qualsiasi di volte successive nella soluzione di un problema...
-              [...]
-              Con l'introduzione del sistema di supporto nel telaio Jacquard stesso, i modelli che dovrebbero avere una simmetria e seguire leggi regolari di qualsiasi portata potrebbero essere tessuti per mezzo di un numero relativamente basso di carte.\"[[#^aa99cd]]
-                
-                In effetti un codice accuratamente progettato e implementato è perfettamente in grado di essere riutilizzato in punti diversi da quelli originariamente previsti.
-                
-                Riutilizzare il software è ormai la prassi più comune ed è un mezzo per risparmiare tempo e risorse: non solo riduce il costo della rielaborazione di codice simile, ma permette anche di impiegare qualcosa di già testato, diminuendo lo sforzo impiegato nell'individuazione e correzione degli errori.
-                  
-                  ### Nota D
-                  
-                  Nella nota D, abbiamo altre due intuizioni sorprendentemente attuali.
-                  
-                  Innanzitutto, in questa nota Ada raccomanda l'uso degli indici per fare riferimento ai dati all'interno della Macchina e fornisce altresì una tabella d'esempio per spiegare il concetto.
-                  
-                  Oggi questa è una tecnica basilare per gestire oggetti software complessi come liste, array, strutture e praticamente tutti i linguaggi ne fanno uso e forniscono istruzioni ad hoc per l'iterazione indicizzata.
-                  
-                  Ma oltre a ciò, grazie proprio al concetto di indicizzazione, Ada potè, allora, introdurre una seconda idea che oggi è alla base del moderno software.
-                  
-                  Con l'indicizzazione, il presupposto che la Macchina Analitica venisse controllata da un singolo flusso di istruzioni in sequenza, diventava più che altro una convenzione e lei mostrò una notevole intuizione immaginando la possibilità di creare flussi multipli di istruzioni eseguite in parallelo.
-                  
-                  Oggi noi definiamo questo concetto come \"processi paralleli\" o multithreading o in tanti altri modi a seconda del linguaggio o dell'hardware di riferimento, ma è comunque un qualcosa di complesso da concepire e realizzare già con le moderne tecniche; figuriamoci allora, senza nulla di concreto e solo analizzando pile e pile di progetti.
-                
-                \"Deve essere evidente quanto siano molteplici e reciprocamente complicate le considerazioni che il funzionamento di un tale sistema comporta. Spesso si verificano contemporaneamente diverse serie di effetti distinti, tutti indipendenti l'uno dall'altro, ma che esercitano in misur a maggiore o minore un'influenza reciproca. Regolare gli uni e gli altri, e persino percepirli e tracciarli con perfetta correttezza e successo, comporta difficoltà la cui natura è in certa misura simile a quella di ogni questione in cui le condizioni sono molto numerose e complicate;\"[[#^aa99cd]]
-                  
-                  L'analogia tra il funzionamento dei processi paralleli nella Macchina e quelli del mondo reale, anch'essi per natura paralleli, traspare evidente dalle parole di Ada; e partendo da queste considerazioni, il passo ad immaginare più Macchine Analitiche che funzionino in parallelo è piuttosto breve.
-                  
-                  ### Nota E
-                  
-                  \"Ovunque esista un termine generale, ci sarà un gruppo ricorrente di operazioni, come nell'esempio precedente. Sia per brevità, sia per disgiunzione, il gruppo ricorrente è chiamato ciclo. Per ciclo di operazioni si intende quindi qualsiasi insieme di operazioni che si ripete più di una volta.\"[[#^aa99cd]]
-                    
-                    In quest'altro passaggio che si trova nella nota E (e che, ricordiamolo: fu scritta nel 1843), La contessa di Lovelace, definì di fatto quello che è il moderno concetto di ciclo.
-                      
-                      Aggiunse anche che non importa che si ripeta due volte o più ma è il fatto stesso che un gruppo di operazioni si ripeta identico a renderlo un ciclo. E se una di queste operazione fosse a sua volta un ciclo? Allora si potrebbero realizzare cicli di cicli potenzialmente all'infinito.
-                      
-                      E ancora una volta l'accento fu posto sulle enormi possibilità di calcolo, di riutilizzo del lavoro fatto e di potenziamento delle capacità umane in favore della scienza che la Macchina sarebbe stata in grado di attuare.
-                    
-                    ### Nota F
-                    
-                    \"Esiste un bellissimo ritratto tessuto di Jacquard, per la cui realizzazione sono state necessarie 24.000 carte. Il potere di ripetere le carte [...] riduce in misura immensa il numero di carte necessarie. È ovvio che questo miglioramento meccanico è particolarmente applicabile ovunque si verifichino cicli...\"[[#^aa99cd]]
-                      
-                      Una volta acquisito il concetto di ciclo e le sue enormi potenzialità, come avrebbe potuto Ada non rendersi conto dell'arretratezza dei meccanismi fino ad allora realizzati?
-                        
-                        Nella nota F, la contessa di Lovelace introdusse, infatti, il concetto di ottimizzazione dei processi prendendo ad esempio il telaio Jacquard, ma generalizzando poi anche il discorso.
-                        
-                        Come era possibile che dei disegni sostanzialmente simmetrici necessitassero di essere descritti interamente? Se il disegno si ripeteva, allora si sarebbe potuta riutilizzare la stessa scheda perforata ad ogni ripetizione!
-                        
-                        E se questo valeva per un disegno, allora perché non per qualsiasi tipo di operazione che si ripetesse uguale a se stessa? Ecco che di nuovo i cicli risultano un'innovazione essenziale.
-                        
-                        ### Nota G
-                        
-                        In conclusione, dopo aver magnificato le potenzialità della Macchina Analitica, dopo aver provato ad immaginarne le applicazioni concrete e dopo aver tentato di catturare l'attenzione e solleticare l'immaginazione del proprio lettore, dopo aver scritto il primo esempio di programmazione dello strumento, nella nota G Ada stupisce infine con un'estrema dimostrazione di onestà.
-                      
-                      \"È auspicabile prevenire la possibilità di idee esagerate che potrebbero sorgere in merito ai poteri della Macchina Analitica. Quando si prende in considerazione un nuovo argomento, si tende spesso, in primo luogo, a sopravvalutare ciò che si ritiene già interessante o notevole; e, in secondo luogo, per una sorta di reazione naturale, a sottovalutare il vero stato del caso, quando si scopre che le nostre nozioni hanno superato quelle che erano realmente sostenibili.
-La Macchina Analitica non ha alcuna pretesa di creare qualcosa. Può fare tutto ciò che sappiamo ordinarle di fare. Può eseguire un'analisi, ma non ha la capacità di anticipare alcuna relazione o verità analitica. Il suo compito è quello di assisterci nel rendere disponibile ciò che già conosciamo.\"[[#^aa99cd]]
-                        
-                        Come imparato da Babbage, l'onestà in questi casi è sempre la strada migliore.
-                          
-                          Che senso avrebbe avuto illudere il proprio pubblico con racconti di cose in realtà impossibili?
-                          
-                          Così come Babbage spiegò sempre ai propri ospiti che inserendo i numeri sbagliati si ottengono risultati sbagliati, così Ada volle assicurarsi che nessuno pensasse che la Macchina fosse in grado di fare più di quanto il suo programmatore riuscisse a istruirla per fare.
-                          
-                          La Macchina Analitica non avrebbe avuto la capacità di pensare, ma sarebbe stata uno strumento potentissimo e innovativo per supportare l'essere umano nel suo percorso verso la conoscenza.
-                          
-                          ## Il mondo non era ancora pronto
-                          
-                          Anche se gli sforzi di Ada non portarono poi ai risultati attesi da lei e da Babbage, la sua opera resta comunque oggi un qualcosa di straordinario.
-                          
-                          Non solo perché descrive concetti moderni con più di 100 anni di anticipo, ma anche perché ci mostra quanto singolare ed interessante fosse la sua autrice.
-                          
-                          Ada Lovelace dovette lottare per ottenere il suo posto nella storia.
-                          
-                          Quando provò a seguire il punto di vista di sua madre o di suo padre, fallì. Ma, quando si decise ad abbracciare e bilanciare sia la poesia che la scienza, sia la metafisica che l'analisi, sia la forma che la sostanza, riuscì ad immaginare un'innovazione tecnologica che ha superato la prova del tempo.
-                          
-                          Il suo merito più grande è forse quello di aver descritto la nascita di una nuova idea e poi fatto un passo indietro e guardato a quell'idea in modo creativo e critico. E così facendo, per un breve momento, l'Incantatrice di Numeri vide qualcosa per quello che era stato, che era e che sarebbe potuto essere.
-                          
-                          Pochi a suo tempo, capirono questi meriti.
-                          
-                          Uno di questi fu certamente Babbage che vide una donna in grado di percepire il valore del suo progetto, di descriverlo in modo chiaro e conciso e di avere le capacità per mettere l'innovazione tecnologica nella giusta prospettiva.
-                          
-                          Questa qualità viene spesso minimizzata perché non può essere quantificata, eppure è il cuore della questione: non si può negare che Ada avesse una visione delle possibilità delle macchine calcolatrici che superava di gran lunga quella dei suoi contemporanei, Babbage incluso.
-                          
-                          Per tanto tempo, in quanto donna, non ha avuto la considerazione che merita, ma per fortuna molti oggi riconoscono l’algoritmo descritto da Ada nelle Note per generare i numeri di Bernoulli come il primo programma per computer e quindi lei è considerata la prima programmatrice di computer.
-                          
-                          Esiste persino il giorno di Ada Lovelace, che cade il secondo Martedì di Ottobre, che è stato istituito nel 2009 per celebrare i contributi delle donne nel campo delle materie STEM.
-                          
-                          Ada non fu quindi solo una donna speciale del XIX secolo, ma è anche un simbolo e un mito moderno.
-                          
-                          Più conosciuta per la sua associazione con la nascita della moderna informatica che come figlia di Byron, il fatto di essere la figlia del grande poeta conferisce, tuttavia, a lei e alla sua opera una passione ed una forza fuori dal comune.
-                          
-                          È una perdita incommensurabile per la matematica, l’informatica e la poesia che Ada Byron King, contessa di Lovelace, non abbia mai avuto l’opportunità di scoprire l’entità di quell’energia e di quel potere che portava in sé.
-                          
-                          ## Conclusione
-                          
-                          Si conclude così il nostro viaggio nella vita e l'opera di Ada Lovelace. Spero tanto che questa miniserie ti sia piaciuta almeno quanto è piaciuto a me realizzarla.
-                          
-                          Mi raccomando, ti chiedo sinceramente il favore di farla girare il più possibile: è un progetto di cui vado fiero e vorrei tanto che lo ascoltassero più persone possibile.
-                        
-                        Anche oggi ringrazio tantissimo gli amici che hanno prestato la loro voce, sempre in ordine di apparizione:
-                                                                                                     - Walter Vannini del podcast Dataknightmare nella parte di Augustus De Morgan
-                                                                                                     - e Chiara Virgili del podcast Dannati Architetti nella parte di Ada Lovelace ^aa99cd
-                                                                                                     - Alex Raccuglia del podcast TechnoPillz nella parte di Charles Babbage
-                        
-                        Tutte le citazioni di questo episodio sono state tratte dal bellissimo libro Ada, the enchantress of numbers. Ovviamente tutti i link sono in descrizione.
-                          
-                          Ringrazio poi Edoardo e Carlo che ormai sono sostenitori fissi da più di un anno, cosa che mi fa capire che apprezzano veramente quello che faccio, a cui per questo episodio si unisce anche Antonio Lazazzera.
-                          
-                          Ti ricordo infatti che Pensieri in codice è un podcast indipendente che si sostiene solo grazie al mio impegno ed al supporto dei donatori. Ultimamente ho persino eliminato le pubblicità per evitarti scocciature e sopratutto per minimizzare il tracciamento degli ascoltatori.
-                          
-                          Quindi se vuoi contribuire anche tu, trovi tutti i dettagli sul sito pensieriincodice.it e se doni almeno 10 euro, hai diritto a ricevere stickers e segnalibro, basta che mi fai avere un indirizzo a cui spedirli.
-                          
-Detto questo, credo non ci sia altro. Io ti auguro quindi buone feste e ti appuntamento al prossimo episodio,  con la raccomandazione di trascorrere un sereno Natale senza dimenticare mai che \"un informatico risolve problemi, a volte anche usando il computer\".
+
+*Sono riluttante a restituire la vostra ammirevole e filosofica Nota A. Vi prego di non modificarla... È incredibile che voi sappiate tutto questo per intuizione e più leggo le vostre note più ne sono sorpreso e mi rammarico di non aver esplorato prima una vena così ricca del metallo più nobile*.[[#^f41ca4]]
+
+Come abbiamo già detto, oggi molti conoscono Ada Lovelace per il merito di aver scritto il primo programma per computer della storia, l'algoritmo per calcolare la successione dei numeri di Bernulli utilizzando la Macchina Analitica.
+
+Ma questa è solo una parte della sua opera.
+
+Il vero fascino delle Note, secondo me, deriva principalmente dal fatto che Lady Lovelace previde, già nel 1842, alcune delle caratteristiche che appartengo al moderno computer, nonché l'impatto che tale tecnologia avrebbe avuto sui suoi utilizzatori e sulla scienza in generale.
+
+Di fatto, nel suo testo, lei arrivò a descrivere i concetti di base di quello che noi oggi chiamiamo sviluppo del software.
+
+In un primo momento, Ada aggiunse una sola nota alla traduzione, quella che credeva sarebbe stato il suo unico contributo originale, e lo fece semplicemente per chiarire alcuni concetti che, secondo lei, Menabrea aveva trascurato.
+
+Ma quando le venne poi richiesto di integrare l'articolo con le proprie conoscenze, lei aggiunse varie altre note producendo una quantità di materiale che superò in lunghezza dell'articolo originale.
+
+### Nota A
+Nella prima, la *Nota filosofica A*, quella che piacque tanto a Babbage, la contessa iniziò col definire i confini della Macchina Analitica e i dettagli di come essa avrebbe svolto i suoi compiti.
+
+La Macchina Differenziale, il primo motore di calcolo di Babbage, era stata progettata principalmente per calcolare e stampare specifiche tabelle, ma il progetto della nuova Macchina Analitica rappresentava un salto meccanico e concettuale enorme.
+
+*La Macchina Analitica, al contrario, non è semplicemente adatta a tabulare i risultati di una funzione particolare e di nessun'altra, ma a sviluppare e tabulare qualsiasi funzione. In effetti, la Macchina può essere descritta come l'espressione materiale di qualsiasi funzione indefinita di qualsiasi grado di generalità e complessità... *[[#^aa99cd]]
+
+La nuova Macchina Analitica avrebbe posseduto una capacità del tutto innovativa: sarebbe stata in grado di memorizzare, oltre ai dati, anche un programma, sotto forma di una sequenza di operazioni o istruzioni.
+
+Ada iniziò anche a riconoscere e ad enfatizzare la responsabilità che questa nuova capacità avrebbe posto nelle mani dell'utilizzatore della macchina, il quale avrebbe dovuto specificare il programma in modo preciso e completamente conforme alle proprie necessità.
+
+Oggi noi chiamiamo questo tipo di lavoro *sviluppo del software*, ma per un'epoca in cui non esisteva ancora il concetto di computer ne un qualcosa di tangibile e reale su cui sperimentare, si trattò di un'intuizione notevole.
+
+Come notevole è anche la definizione che Ada diede di *operazione*.
+
+*Può essere auspicabile spiegare che con la parola operazione intendiamo qualsiasi processo che altera la relazione reciproca di due o più cose, sia questa relazione di qualsiasi tipo. Questa è la definizione più generale e include tutti gli argomenti dell'universo.* [[#^aa99cd]]
+
+Non si può negare che sembri la descrizione di quella che noi oggi chiamiamo una funzione: un generico processo che altera un qualsiasi tipo di relazione o valore.
+
+Un altro passaggio singolarmente profetico di questa Nota A è quello in cui la Lovelace anticipò quella che sarebbe poi stata una delle prime difficoltà per la rappresentazione dell'informazione nei futuri linguaggi di programmazione: cioè il fatto che i simboli debbano essere utilizzati diversamente a seconda del significato che hanno all'interno del programma.
+
+La Macchina Analitica, differentemente da un computer, sarebbe stata totalmente meccanica, quindi quando i numeri avrebbero indicato delle operazioni e non delle quantità sarebbero stati inseriti in una parte del meccanismo anziché un'altra, ma a ben guardare, quello che Ada mise in evidenza è la tipica difficoltà del compito dello sviluppo di software, cioè la difficoltà di comunicare alla macchina ciò che ci si aspetta che essa faccia.
+
+In effetti, leggendo le note, si rimane colpiti dall'apprezzamento di Ada per il principio secondo cui il potere deriva dalla creatività disciplinata.
+
+Le due personalità che questa donna ha manifestato in tutto il corso della sua vita, quella più analitica e scientifica e quella più metafisica e creativa, risultano nella sua opera essere in perfetto equilibrio, dando vita a delle abilità dal potenziale sorprendente.
+
+Lo stesso tipo di abilità che sono richieste oggi per un bravo sviluppatore: la capacità di inventare soluzioni e descriverle in modo preciso, strutturato e ripetibile.
+
+Una delle grandi passioni di Ada, poi, era la musica e ovviamente le bastò poco, una volta definiti i concetti di base, per arrivare ad ipotizzare che il Macchina avrebbe potuto trattare tale arte, se ricondotta alla giusta codifica.
+
+*Inoltre, la Macchina Analitica potrebbe agire su altre cose oltre al numero, se si trovassero oggetti le cui relazioni fondamentali reciproche potessero essere espresse da quelle della scienza astratta delle operazioni, e che fossero anche suscettibili di adattamenti all'azione della notazione operativa e del meccanismo del motore... Supponendo, per esempio, che le relazioni fondamentali dei suoni acuti nella scienza dell'armonia e della composizione musicale siano suscettibili di tali espressioni e adattamenti, il motore potrebbe comporre brani musicali elaborati e scientifici di qualsiasi grado di complessità o estensione...*[[#^aa99cd]]
+
+Una volta fatta la distinzione tra i numeri e le operazioni da eseguire, non fu difficile fare poi il passo successivo e immaginare come la Macchina Analitica sarebbe stata in grado di fornire due tipi di risultati: numerici e simbolici (ad esempio, algebrici).
+
+In effetti, la Macchina Analitica avrebbe potuto generare nuovi programmi oltre che numeri, poiché sarebbe stata capace anche di perforare le schede. E questo avrebbe aperto un nuovo e vasto territorio per l'analisi delle informazioni.
+
+Quello che descrisse Lady Lovelace sembra essere una versione primordiale del concetto di sottoprocesso o di funzione moderna, in cui l'output di un programma diventa l'input di un altro programma.
+
+Un concetto che, se esteso, può tranquillamente essere visto come un progenitore del software che noi tutti conosciamo, nel quale tutta una serie di componenti vengono concatenati per dare vita alla risoluzione di problemi complessi.
+
+Per tutta la Nota A, dunque, lei continuò ad insistere sull'enorme superiorità della seconda macchina sulla prima, dell'Analitica sulla Differenziale.
+
+Primo perché, in fin dei conti, l'obiettivo era quello di far interessare i lettori e di trovare potenziali finanziatori e, per ottenere ciò, era fondamentale spiegare perché Babbage avesse abbandonato il suo primo progetto in favore del secondo senza neanche portalo a compimento.
+
+Ma anche perché lei riusciva già a vedere questo strumento come il mezzo per raggiungere una sorta di *verità superiore*: la sua descrizione spazia continuamente dal metafisico al pragmatico ma sempre sottolineando l'enorme impulso che quest'invenzione avrebbe dato alla scienza.
+
+*Coloro che pensano alla verità matematica come allo strumento attraverso il quale la debole mente dell'uomo può leggere nel modo più efficace le opere del suo Creatore, considereranno con particolare interesse tutto ciò che può tendere a facilitare la traduzione dei suoi principi in forme pratiche esplicite.*[[#^aa99cd]]
+
+E la Macchina Analitica avrebbe facilitato e come il lavoro dello scienziato.
+
+La dimostrazione sta nel fatto che, ad esempio, il sistema a schede perforate di cui sarebbe stata dotata, come abbiamo già detto, venne effettivamente utilizzato.
+
+O nel fatto che, secondo il progetto di Babbage, la Macchina poteva memorizzare un numero di cifre pari a quello dei computer della metà degli anni '60 del secolo successivo.
+
+O ancora nel fatto che il *mulino* dove venivano elaborate le informazioni, era l'equivalente meccanico di una CPU, di un processore matematico.
+
+Infine, la Macchina Analitica avrebbe avuto anche diversi metodi per stampare le informazioni, persino sotto forma di grafici, proprio come i computer, oggi, hanno diverse periferiche.
+
+È vero: non sarebbe stata programmabile nel senso moderno del termine; tutto sarebbe avvenuto tramite il posizionamento delle schede perforate e la ripetizione dei cicli, più come un telaio, ma Ada sottolineò anche questo. E nel farlo utilizzò una metafora, come forse avrebbe fatto suo padre.
+
+*Possiamo dire che il Motore Analitico tesse modelli algebrici come il telaio Jacquard tesse fiori e foglie*.[[#^aa99cd]]
+
+Un'altra caratteristica fondamentale della Macchina sarebbe stata la capacità di gestire operazioni condizionali, quelle che noi oggi chiamiamo, ad esempio, *if*, senza la necessità di intervento da parte di un operatore.
+
+In effetti, il macchinario avrebbe potuto calcolare la soluzione ad un problema e metterla in una sorta di *archivio*, per poi recuperarla ed utilizzarla per un altro problema se e quando ciò si fosse rivelato necessario.
+
+Si sarebbe trattato di un salto di qualità che, ovviamente, Ada non si lasciò sfuggire.
+
+*Consentendo al meccanismo di combinare insieme simboli generali, in successioni di varietà ed estensione illimitate, si stabilisce un legame unitario tra le operazioni della materia e i processi mentali astratti della branca più astratta della scienza matematica. Viene sviluppato un nuovo, vasto e potente linguaggio per l'uso futuro dell'analisi, in cui maneggiare le sue verità in modo che queste possano diventare di più rapida e accurata applicazione pratica per gli scopi dell'umanità di quanto i mezzi finora in nostro possesso abbiano reso possibile.*[[#^aa99cd]]
+
+### Nota B
+
+Un altro passaggio molto interessante, si trova poi nella nota B.
+
+Non è eccessivo, secondo me, intravedere in questo punto una versione primordiale di una serie di idee basilari nel moderno sviluppo software: astrazione, modularità, separazione delle responsabilità, offuscamento, quasi un'antenato della progettazione orientata agli oggetti.
+
+*Più analizziamo il modo in cui un tale motore esegue i suoi processi e raggiunge i suoi risultati, più ci rendiamo conto di come esso ponga in una luce vera e giusta le relazioni e le connessioni reciproche dei vari passaggi dell'analisi matematica, di come separi chiaramente le cose che sono in realtà distinte e indipendenti, e unisca quelle che sono reciprocamente dipendenti*.[[#^aa99cd]]
+
+La componente essenziale di questa idea è la separazione tra le caratteristiche di un'operazione e la sua implementazione; cioè tra cosa un'operazione fa e come lo fa.
+
+In effetti, praticamente in tutti i moderni linguaggi di programmazione esiste il concetto di definizione, che descrive il modo in cui una funzione si collega agli altri elementi software, e di corpo, che specifica in dettaglio le azioni che tale funzione va ad eseguire sui dati passati al momento della chiamata.
+
+I vantaggi di questa idea di separazione sono palesi a chiunque conosca la programmazione.
+
+In fase di progettazione, permette di conoscere in anticipo il funzionamento di una porzione di codice.
+
+In fase di implementazione, permette di utilizzare le funzioni anche se non se ne conoscono i dettagli implementativi.
+
+In fase di manutenzione permette di sostituire, se necessario, una funzione con un'altra senza impattare in alcun modo sul resto del software, a patto che le duecondividano una uguale definizione.
+
+Estremizzando poi il concetto, si ottiene il lascia passare per realizzare non solosemplici funzioni ma strutture più complesse come librerie e packages. In pratica si arriva al moderno concetto di interfaccia.
+
+Oggi i veri problemi del software sono di complessità, di scala e la capacità di separare *le cose che sono in realtà distinte e indipendenti, e unire quelle che sono reciprocamente dipendenti*, tanto per usare le parole di Ada, è assolutamente fondamentale.
+
+### Nota C
+
+Nell'adattare il concetto di scheda perforata alla Macchina Analitica, Babbage aveva apportato un miglioramento al modo in cui le schede potevano essere utilizzate per dare istruzioni.
+
+Nella nota C, Ada mette in evidenza proprio questa modifica e addirittura la ripropone come miglioramento del progetto originale per aumentare le prestazioni del telaio Jacquard.
+
+*È stato ideato un metodo tecnicamente chiamato *backing* delle carte in determinati gruppi secondo determinate leggi. L'obiettivo di questa estensione è garantire la possibilità di utilizzare una particolare carta o un gruppo di carte per un numero qualsiasi di volte successive nella soluzione di un problema...
+[...]
+Con l'introduzione del sistema di supporto nel telaio Jacquard stesso, i modelli che dovrebbero avere una simmetria e seguire leggi regolari di qualsiasi portata potrebbero essere tessuti per mezzo di un numero relativamente basso di carte.*[[#^aa99cd]]
+
+In effetti un codice accuratamente progettato e implementato è perfettamente in grado di essere riutilizzato in punti diversi da quelli originariamente previsti.
+
+Riutilizzare il software è ormai la prassi più comune ed è un mezzo per risparmiare tempo e risorse: non solo riduce il costo della rielaborazione di codice simile, ma permette anche di impiegare qualcosa di già testato, diminuendo lo sforzo impiegato nell'individuazione e correzione degli errori.
+
+### Nota D
+
+Nella nota D, abbiamo altre due intuizioni sorprendentemente attuali.
+
+Innanzitutto, in questa nota Ada raccomanda l'uso degli indici per fare riferimento ai dati all'interno della Macchina e fornisce altresì una tabella d'esempio per spiegare il concetto.
+
+Oggi questa è una tecnica basilare per gestire oggetti software complessi come liste, array, strutture e praticamente tutti i linguaggi ne fanno uso e forniscono istruzioni ad hoc per l'iterazione indicizzata.
+
+Ma oltre a ciò, grazie proprio al concetto di indicizzazione, Ada potè, allora, introdurre una seconda idea che oggi è alla base del moderno software.
+
+Con l'indicizzazione, il presupposto che la Macchina Analitica venisse controllata da un singolo flusso di istruzioni in sequenza, diventava più che altro una convenzione e lei mostrò una notevole intuizione immaginando la possibilità di creare flussi multipli di istruzioni eseguite in parallelo.
+
+Oggi noi definiamo questo concetto come *processi paralleli* o multithreading o in tanti altri modi a seconda del linguaggio o dell'hardware di riferimento, ma è comunque un qualcosa di complesso da concepire e realizzare già con le moderne tecniche; figuriamoci allora, senza nulla di concreto e solo analizzando pile e pile di progetti.
+
+*Deve essere evidente quanto siano molteplici e reciprocamente complicate le considerazioni che il funzionamento di un tale sistema comporta. Spesso si verificano contemporaneamente diverse serie di effetti distinti, tutti indipendenti l'uno dall'altro, ma che esercitano in misur a maggiore o minore un'influenza reciproca. Regolare gli uni e gli altri, e persino percepirli e tracciarli con perfetta correttezza e successo, comporta difficoltà la cui natura è in certa misura simile a quella di ogni questione in cui le condizioni sono molto numerose e complicate;*[[#^aa99cd]]
+
+L'analogia tra il funzionamento dei processi paralleli nella Macchina e quelli del mondo reale, anch'essi per natura paralleli, traspare evidente dalle parole di Ada; e partendo da queste considerazioni, il passo ad immaginare più Macchine Analitiche che funzionino in parallelo è piuttosto breve.
+
+### Nota E
+
+*Ovunque esista un termine generale, ci sarà un gruppo ricorrente di operazioni, come nell'esempio precedente. Sia per brevità, sia per disgiunzione, il gruppo ricorrente è chiamato ciclo. Per ciclo di operazioni si intende quindi qualsiasi insieme di operazioni che si ripete più di una volta.*[[#^aa99cd]]
+
+In quest'altro passaggio che si trova nella nota E (e che, ricordiamolo: fu scritta nel 1843), La contessa di Lovelace, definì di fatto quello che è il moderno concetto di ciclo.
+
+Aggiunse anche che non importa che si ripeta due volte o più ma è il fatto stesso che un gruppo di operazioni si ripeta identico a renderlo un ciclo. E se una di queste operazione fosse a sua volta un ciclo? Allora si potrebbero realizzare cicli di cicli potenzialmente all'infinito.
+
+E ancora una volta l'accento fu posto sulle enormi possibilità di calcolo, di riutilizzo del lavoro fatto e di potenziamento delle capacità umane in favore della scienza che la Macchina sarebbe stata in grado di attuare.
+
+### Nota F
+
+*Esiste un bellissimo ritratto tessuto di Jacquard, per la cui realizzazione sono state necessarie 24.000 carte. Il potere di ripetere le carte [...] riduce in misura immensa il numero di carte necessarie. È ovvio che questo miglioramento meccanico è particolarmente applicabile ovunque si verifichino cicli...*[[#^aa99cd]]
+
+Una volta acquisito il concetto di ciclo e le sue enormi potenzialità, come avrebbe potuto Ada non rendersi conto dell'arretratezza dei meccanismi fino ad allora realizzati?
+
+Nella nota F, la contessa di Lovelace introdusse, infatti, il concetto di ottimizzazione dei processi prendendo ad esempio il telaio Jacquard, ma generalizzando poi anche il discorso.
+
+Come era possibile che dei disegni sostanzialmente simmetrici necessitassero di essere descritti interamente? Se il disegno si ripeteva, allora si sarebbe potuta riutilizzare la stessa scheda perforata ad ogni ripetizione!
+
+E se questo valeva per un disegno, allora perché non per qualsiasi tipo di operazione che si ripetesse uguale a se stessa? Ecco che di nuovo i cicli risultano un'innovazione essenziale.
+
+### Nota G
+
+In conclusione, dopo aver magnificato le potenzialità della Macchina Analitica, dopo aver provato ad immaginarne le applicazioni concrete e dopo aver tentato di catturare l'attenzione e solleticare l'immaginazione del proprio lettore, dopo aver scritto il primo esempio di programmazione dello strumento, nella nota G Ada stupisce infine con un'estrema dimostrazione di onestà.
+
+*È auspicabile prevenire la possibilità di idee esagerate che potrebbero sorgere in merito ai poteri della Macchina Analitica. Quando si prende in considerazione un nuovo argomento, si tende spesso, in primo luogo, a sopravvalutare ciò che si ritiene già interessante o notevole; e, in secondo luogo, per una sorta di reazione naturale, a sottovalutare il vero stato del caso, quando si scopre che le nostre nozioni hanno superato quelle che erano realmente sostenibili.
+La Macchina Analitica non ha alcuna pretesa di creare qualcosa. Può fare tutto ciò che sappiamo ordinarle di fare. Può eseguire un'analisi, ma non ha la capacità di anticipare alcuna relazione o verità analitica. Il suo compito è quello di assisterci nel rendere disponibile ciò che già conosciamo.*[[#^aa99cd]]
+
+Come imparato da Babbage, l'onestà in questi casi è sempre la strada migliore.
+
+Che senso avrebbe avuto illudere il proprio pubblico con racconti di cose in realtà impossibili?
+
+Così come Babbage spiegò sempre ai propri ospiti che inserendo i numeri sbagliati si ottengono risultati sbagliati, così Ada volle assicurarsi che nessuno pensasse che la Macchina fosse in grado di fare più di quanto il suo programmatore riuscisse a istruirla per fare.
+
+La Macchina Analitica non avrebbe avuto la capacità di pensare, ma sarebbe stata uno strumento potentissimo e innovativo per supportare l'essere umano nel suo percorso verso la conoscenza.
+
+## Il mondo non era ancora pronto
+
+Anche se gli sforzi di Ada non portarono poi ai risultati attesi da lei e da Babbage, la sua opera resta comunque oggi un qualcosa di straordinario.
+
+Non solo perché descrive concetti moderni con più di 100 anni di anticipo, ma anche perché ci mostra quanto singolare ed interessante fosse la sua autrice.
+
+Ada Lovelace dovette lottare per ottenere il suo posto nella storia.
+
+Quando provò a seguire il punto di vista di sua madre o di suo padre, fallì. Ma, quando si decise ad abbracciare e bilanciare sia la poesia che la scienza, sia la metafisica che l'analisi, sia la forma che la sostanza, riuscì ad immaginare un'innovazione tecnologica che ha superato la prova del tempo.
+
+Il suo merito più grande è forse quello di aver descritto la nascita di una nuova idea e poi fatto un passo indietro e guardato a quell'idea in modo creativo e critico. E così facendo, per un breve momento, l'Incantatrice di Numeri vide qualcosa per quello che era stato, che era e che sarebbe potuto essere.
+
+Pochi a suo tempo, capirono questi meriti.
+
+Uno di questi fu certamente Babbage che vide una donna in grado di percepire il valore del suo progetto, di descriverlo in modo chiaro e conciso e di avere le capacità per mettere l'innovazione tecnologica nella giusta prospettiva.
+
+Questa qualità viene spesso minimizzata perché non può essere quantificata, eppure è il cuore della questione: non si può negare che Ada avesse una visione delle possibilità delle macchine calcolatrici che superava di gran lunga quella dei suoi contemporanei, Babbage incluso.
+
+Per tanto tempo, in quanto donna, non ha avuto la considerazione che merita, ma per fortuna molti oggi riconoscono l’algoritmo descritto da Ada nelle Note per generare i numeri di Bernoulli come il primo programma per computer e quindi lei è considerata la prima programmatrice di computer.
+
+Esiste persino il giorno di Ada Lovelace, che cade il secondo Martedì di Ottobre, che è stato istituito nel 2009 per celebrare i contributi delle donne nel campo delle materie STEM.
+
+Ada non fu quindi solo una donna speciale del XIX secolo, ma è anche un simbolo e un mito moderno.
+
+Più conosciuta per la sua associazione con la nascita della moderna informatica che come figlia di Byron, il fatto di essere la figlia del grande poeta conferisce, tuttavia, a lei e alla sua opera una passione ed una forza fuori dal comune.
+
+È una perdita incommensurabile per la matematica, l’informatica e la poesia che Ada Byron King, contessa di Lovelace, non abbia mai avuto l’opportunità di scoprire l’entità di quell’energia e di quel potere che portava in sé.
+
+## Conclusione
+
+Si conclude così il nostro viaggio nella vita e l'opera di Ada Lovelace. Spero tanto che questa miniserie ti sia piaciuta almeno quanto è piaciuto a me realizzarla.
+
+Mi raccomando, ti chiedo sinceramente il favore di farla girare il più possibile: è un progetto di cui vado fiero e vorrei tanto che lo ascoltassero più persone possibile.
+
+Anche oggi ringrazio tantissimo gli amici che hanno prestato la loro voce, sempre in ordine di apparizione:
+ - Walter Vannini del podcast Dataknightmare nella parte di Augustus De Morgan
+ - e Chiara Virgili del podcast Dannati Architetti nella parte di Ada Lovelace ^aa99cd
+ - Alex Raccuglia del podcast TechnoPillz nella parte di Charles Babbage
+
+Tutte le citazioni di questo episodio sono state tratte dal bellissimo libro Ada, the enchantress of numbers. Ovviamente tutti i link sono in descrizione.
+
+Ringrazio poi Edoardo e Carlo che ormai sono sostenitori fissi da più di un anno, cosa che mi fa capire che apprezzano veramente quello che faccio, a cui per questo episodio si unisce anche Antonio Lazazzera.
+
+Ti ricordo infatti che Pensieri in codice è un podcast indipendente che si sostiene solo grazie al mio impegno ed al supporto dei donatori. Ultimamente ho persino eliminato le pubblicità per evitarti scocciature e sopratutto per minimizzare il tracciamento degli ascoltatori.
+
+Quindi se vuoi contribuire anche tu, trovi tutti i dettagli sul sito pensieriincodice.it e se doni almeno 10 euro, hai diritto a ricevere stickers e segnalibro, basta che mi fai avere un indirizzo a cui spedirli.
+
+Detto questo, credo non ci sia altro. Io ti auguro quindi buone feste e ti appuntamento al prossimo episodio,con la raccomandazione di trascorrere un sereno Natale senza dimenticare mai che *un informatico risolve problemi, a volte anche usando il computer*.
 "
