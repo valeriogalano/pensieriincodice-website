@@ -40,7 +40,7 @@
 						<div class="blog-content">
 							{{ if .Params.audio }}
 							<audio controls>
-								<source src="{{ .Site.Params.podcast.cdn_base_url }}{{ .Params.audio }}" type="audio/mpeg">
+								<source src="{{ .Site.Params.podcast.cdn_tracked_base_url }}{{ .Params.audio }}" type="audio/mpeg">
 								{{ i18n "audioNotSupported" }}
 							</audio>
 							{{ end }}

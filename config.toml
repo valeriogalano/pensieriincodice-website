@@ -164,6 +164,7 @@ authors = [ "Valerio Galano" ]
 email = "v.galano@daredevel.com"
 image = "images/pensieriincodice-locandina.png"
 cdn_base_url = "https://cdn.pensieriincodice.it/"
+cdn_tracked_base_url = "https://op3.dev/e/cdn.pensieriincodice.it/"
 copyright = "Copyright"
 category = "Technology"
 sub_category = ""
