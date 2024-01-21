@@ -1,0 +1,224 @@
+text: "
+## Introduzione
+
+A volte esistono strumenti che utilizziamo ogni giorno, per abitudine o per lavoro, dei quali però conosciamo poco, sia dal punto di vista tecnico ma anche solo della loro storia.
+
+E a volte, così facendo, ci perdiamo qualcosa di interessante.
+
+Nell'episodio di oggi, con l'aiuto di un amico che, sono sicuro, già conoscerai, facciamo un bel viaggio nella storia e nel funzionamento di quella che comunemente tutti noi chiamiamo PEC.
+
+Nell'ultimo periodo, questo servizio ha fatto da punto di partenza per una versione più avanzata, estesa all'intera Europa con il nome di REM ed è quindi bene, secondo me, conoscerne caratteristiche e differenze rispetto alla normale posta elettronica.
+
+Senza indugiare oltre, quindi, passo la parola a Francesco Tucci del podcast Pillole di bit, ma non prima di aver lanciato la sigla!
+
+## La storia (di Francesco Tucci di Pilloledib.it)
+
+Tanto tempo fa, per inviare una comunicazione ufficiale era necessario andare in posta, fare la coda, sopportare il blaterare della gente, compilare il modulo della raccomandata con ricevuta di ritorno, pagare, spedirla, aspettare che questa venisse consegnata e poi aspettare che il cartoncino firmato dal destinatario tornasse fino nella vostra buca delle lettere.
+
+Dopo tutto questo giro c’era la certezza che questa comunicazione aveva ufficialità di consegna e sarebbe potuta essere usata anche in caso di un contenzioso legale. I puristi dicevano di non imbustare, ma di spedirla piegata in modo che il timbro postale risultasse direttamente sulla lettera.
+
+I problemi della raccomandata in posta sono, oltre al tempo di spedizione e di attesa della consegna, anche altri.
+
+La corrispondenza potrebbe andare persa.
+
+Il destinatario potrebbe rifiutare di riceverla e allungare ancora di più i tempi. Oppure potrebbe non essere in casa, allungando i tempi e diventando un disagio per lui che dovrà andare a ritirarla in un ufficio postale
+
+Non c’è identificazione ufficiale di mittente e destinatario. Quando spedisco e quando ricevo, nessuno verifica il mio documento.
+
+Con i tempi moderni e tecnologici era necessario creare qualcosa di adatto a rimpiazzare la raccomandata.
+
+Ed ecco che nel 2005, con Presidente della Repubblica Ciampi e Presidente del Consiglio Berlusconi, nasce la PEC. Acronimo che sta per Posta Elettronica Certificata.
+
+La PEC è nata per sostituire il giro di carta della raccomandata in digitale.
+
+Per il dettaglio tecnico aspettate la seconda parte di questa puntata, Valerio approfondirà ogni singolo aspetto di certificati, firme e buste. 
+
+Per poter fornire il servizio PEC, i fornitori devono accreditarsi ed essere validati da un ente pubblico, per questo non ci sono tanti fornitori PEC quanti fornitori di posta elettronica.
+
+Per essere ritenuta valida a fini legali, una PEC deve partire da un server PEC e deve arrivare a un server PEC, ma non basta.
+
+È necessario che sia validata tutta la catena di creazione e consegna di cui fanno parte anche i log dei sistemi di invio e ricezione, che per legge devono essere mantenuti 30 mesi. Oltre questo periodo, è vostra cura Archiviare la PEC, contenuto, hash, certificato, firme e marche temporali in quella che viene chiamata archiviazione sostitutiva.
+
+Modalità di archiviazione che non sono valide ai fini legali sono le seguenti e so che in un modo o nell’altro voi credevate di sì:
+
+- Scaricare la PEC su un client di posta. 
+
+- Stamparla e metterla in un faldone, anche se stampate sia il contenuto che il certificato.
+
+
+Vale solo se è sui server del gestore e solo per i primi 30 mesi, pari a 2 anni e mezzo.
+
+Un’altra nota interessante della PEC a cui molti non fanno caso è la ricevuta di consegna, che, attenzione non è di lettura, ma è valida ai fini del definire “l’hai ricevuta e non puoi ignorare di averlo fatto”.
+
+Se la raccomandata si poteva in qualche modo rifiutare, la PEC non può essere respinta e la ricevuta di consegna arriva quando la comunicazione atterra sui server del ricevente, indipendentemente dal fatto che il ricevente controlli la casella di posta.
+
+Facciamo un esempio banale.
+
+Mi arriva via PEC una notifica di un pagamento da fare entro 30 giorni.
+
+Io non guardo la PEC per più di 30 giorni
+
+Al 40° giorno la guardo e vedo il pagamento, sarà già scaduto, perché i 30 giorni sono passati da quando la PEC è arrivata sul server e non da quando io l’ho scaricata.
+
+Se avete una PEC dovete controllarla in modo regolare, mi raccomando.
+
+Normalmente con la Raccomandata non arriva pubblicità come potrebbe arrivare nella buca normale.
+
+La teoria è che con la PEC dovrebbero arrivare solo messaggi legittimi, niente pubblicità o altre schifezze.
+
+In realtà la PEC è funestata da pubblicità, SPAM ed è un veicolo di ransomware pazzesco, la gente si fida di quello che arriva via PEC e clicca su ogni cosa.
+
+I gestori PEC che noi conosciamo sono prevalentemente italiani, ma, già dall’inizio, non c’era alcun vincolo al fatto che potessero essere europei, anche se il sistema di comunicazione è valido ai fini legali solo in Italia.
+
+Poi, le cose si sono evolute e anche la PEC ha fatto qualche passo in avanti. 
+
+È arrivata la REM, che sta per Registered Electronic Mail.
+
+Primo segnale, l’acronimo è in Inglese, questo vuol dire che il sistema passa da avere valore legale solo in Italia ad averlo in tutta Europa. Già interessante.
+
+Poi passa da essere SERC, Servizio Elettronico di Recapito Certificato a SERQ, Servizio Elettronico di Recapito Certificato Qualificato, vuol dire che finalmente è garantito chi è l’intestatario della casella di posta.
+
+Questa cosa va fatta obbligatoriamente su ogni casella PEC entro il primo trimestre 2024.
+
+Per fare questo è necessario abilitare l’identificazione della propria casella PEC con SPID, CIE o altro sistema, in modo che si sia certi chi sia il vero proprietario della casella.
+
+Con questa cosa diventa obbligatorio anche attivare l’autenticazione a due fattori, con il mio gestore non si può fare con app standard TOTP, ma con app proprietaria, questo ha creato un po’ di malumori tra i puristi, che vorrebbero usare app open source, cosa attualmente impossibile.
+
+Con la questione dell’autenticazione a due fattori diventa anche scomodo scaricare la posta sui client standard, in quanto va generata una password che scade regolarmente e che va cambiata, sui sistemi del provider e poi sul client di posta, una seccatura in più, per avere un sistema più sicuro e certificato.
+
+A questo punto, per i dettagli tecnici, ma proprio scavando nel profondo, passo la palla a Valerio.
+
+## Come funziona
+
+Francesco ci ha appena spiegato che uno strumento come la PEC, e la cosa varrà ancor più per la futura REM, nasce per avere il cosiddetto valore probatorio legale, al pari della posta raccomandata tradizionale.
+
+Ciò vuol dire che le comunicazioni inviate tramite questi strumenti, al contrario di quelle spedite con una normale email, possono essere utilizzate per sostenere eventuali dispute in tribunale, certificano l'effettiva consegna di documenti o avvisi nonché la data in cui il messaggio è stato inviato e recapitato.
+
+Ma cosa differenzia PEC o REM dalla comune posta elettronica, al punto di poter garantire un tale grado di affidabilità?
+
+Da un punto di vista legale, il fattore dirimente risiede nel fatto che la Posta Certificata permette di stabilire (con approssimazione buona almeno quanto la tradizionale posta raccomanda) l'identità del mittente e del destinatario di una missiva, nonché il fatto che il destinatario l'abbia ricevuta o meno.
+
+Da un punto di vista informatico, invece, la chiave è nell'utilizzo di una serie di concetti, per la verità abbastanza basilari e ampiamente diffusi, ma che assicurano innanzitutto l'inalterabilità della comunicazione e poi permettono un controllo automatico della corrispondenza tra mittente, destinatario e i vari messaggi scambiati (siano essi, il messaggio originale o le varie notifiche).
+
+Questi concetti in particolare sono: l'incapsulamento, l'hashing e la firma digitale.
+
+Prima di scendere subito nel dettaglio, però, ci conviene ripassare il processo di scambio di messaggi tra caselle di posta certificate perché, seppur molto simile a quello tra normali caselle email, presenta alcune fondamentali differenze.
+
+Chiariamo innanzitutto che i soggetti coinvolti in tale processo sono teoricamente gli stessi, cioè il mittente, il destinatario, il gestore del mittente ed il gestore del destinatario.
+
+A differenza di come accade per una qualsiasi email, però, nel caso della PEC, quando si parla di gestori non si fa genericamente riferimento ai soliti noti, come Gmail o Microsoft o chiunque altro fornisca caselle email, ma ad un particolare elenco di soggetti registrati ed approvati dall'AgID, l'Agenzia per l'Italia Digitale.
+
+Esempio di gestori certificati sono Aruba, TIM, Poste, Register e vari altri: l'elenco completo è disponibile sotto la voce *Elenco gestori PEC* sul sito dell'AgID. In descrizione troverai il link. 
+
+Tornando a noi, però, il processo di trasmissione si svolge dunque in questo modo.
+
+Quando un utente invia una email certificata, questi la compone tramite il software desktop o la webmail che ha a disposizione e la affida al proprio gestore affinché la recapiti al destinatario.
+
+Qui c'è già la prima differenza rispetto ad una normale email, perché il gestore certificato inserisce il messaggio scritto dall'utente all'interno di un altro messaggio che prende il nome di *busta di trasporto*.
+
+Questa operazione, definita *incapsulamento*, permette di allegare tutta una serie di informazioni utili aggiuntive rispetto a quelle del messaggio originale.
+
+Subito dopo il gestore genera una stringa di testo di tale busta, chiamata *codice hash* ed utilizza la propria firma digitale per firmare entrambi gli artefatti: busta e hash.
+
+Come vedremo a breve, ciò permetterà in seguito di verificare e garantire la veridicità di una serie di fattori come la provenienza, la marca temporale e l'integrità del messaggio.
+
+Una volta ultimate queste prime operazioni, il gestore invia indietro al mittente la notifica di presa in carico del messaggio, che altro non è che la prima delle due ricevute che il mittente riceve ogni volta che invia una PEC.
+
+Se fino ad ora tutto è andato per il verso giusto, nella ricevuta comparirà un messaggio di successo, altrimenti sarà presente una descrizione del problema verificatosi.
+
+Nel frattempo il gestore del mittente invia la busta e l'hash firmati al gestore del destinatario il quale avvia i propri protocolli di verifica per accertarsi che tutto sia in ordine prima di procedere al recapito.
+
+Affinché il messaggio superi le verifiche, la firma deve essere innanzitutto valida e poi deve appartenere ad uno dei gestori PEC autorizzati dall'AgID. Dopodiché, se la busta corrisponde correttamente all'hash, allora si può concludere che il suo contenuto sia arrivato inalterato.
+
+Una volta effettuate tutte le verifiche con successo, il gestore del destinatario può aprire la busta, estrarne il messaggio email e consegnarlo nella casella del soggetto destinatario.
+
+Solo a questo punto, il gestore del destinatario invia una notifica al mittente iniziale per avvisarlo che il messaggio è stato recapitato al destinatario (bada bene: recapitato, non letto).
+
+Questa notifica è detta *ricevuta di consegna* ed è il secondo messaggio che normalmente il mittente riceve automaticamente quando invia una PEC ed è sufficiente, anche agli occhi della legge, per confermare che il processo è andato a buon fine.
+
+Da protocollo esistono anche delle notifiche riguardanti la lettura dei messaggi da parte degli utenti ma non sono obbligatorie e non molti gestori le implementano: legalmente parlando, è responsabilità del destinatario presidiare regolarmente la propria casella e leggere le comunicazioni ricevute.
+
+Ad ogni modo, già da queste poche informazioni, possiamo trarre alcune conclusioni importanti sul funzionamento della PEC, che valgono in parte anche per la REM.
+
+Innanzitutto, possiamo tranquillamente affermare che, grazie alla tecnologia impiegata di hashing e firma digitale, il contenuto di un messaggio non può essere in alcun modo alterato, a differenza ad esempio di come accade con la raccomandata, servizio al quale spesso la PEC viene paragonata.
+
+In secondo luogo, il processo di trasmissione è reso sicuro in modo automatico dal protocollo tecnologico, ma la verifica della vera identità di mittente e destinatario, cioè proprio delle persone che acquistano le caselle, viene demandata al gestore.
+
+Questo fattore è importante se pensiamo che il nuovo standard europeo che è nato come estensione della PEC, cioè appunto la REM, risolve proprio questo problema imponendo il riconoscimento dell'utente tramite sistema sicuro come lo SPID, la CIE, la firma digitale o il riconoscimento in video.
+
+Fatte queste prime osservazioni, proviamo ad approfondire un po' quelli che sono gli aspetti più tecnici della questione andando ad osservare il funzionamento dei concetti su cui si basano le peculiari caratteristiche della Posta Certificata.
+
+Abbiamo innanzitutto detto che il messaggio inviato, nel primo passaggio viene incapsulato in un secondo messaggio chiamato busta di trasporto.
+
+L'incapsulamento è una pratica molto diffusa nel mondo del software: un paradigma potente quanto in realtà semplice che consiste nell'inglobare un oggetto software all'interno di un altro oggetto software.
+
+A seconda dell'ambito a cui viene applicato, l'incapsulamento può avere forme diverse.
+
+Ad esempio, se si parla protocolli di trasmissione dei dati, come quelli che sono alla base delle reti e dei servizi Internet, incapsulare vuol dire inserire pacchetti di dati all'interno di altri pacchetti leggermente più grandi che possono trasportare, oltre al pacchetto originale, anche altre informazioni aggiuntive.
+
+Se, invece, parliamo di programmazione basata sugli oggetti, l'incapsulamento si manifesta nello sfruttare delle classi per sviluppare altre classi che implementino funzionalità più complesse ma basate su quelle della classe originale.
+
+Nel nostro caso, invece, l'incapsulamento nella busta di trasporto consiste nel far diventare il messaggio originale una parte di un nuovo messaggio il quale contiene anche altre informazioni aggiuntive come l'hash, il nominativo dell'ente certificante e la sua chiave pubblica.
+
+Un altro concetto ampiamente diffuso e utilizzato anche dalla PEC poi è dunque quello di hashing. Lo abbiamo ripetuto tante volte ma in effetti non abbiamo ancora spiegato cosa sia.
+
+In pratica l'hash è una stringa alfanumerica, di lunghezza ben definita, che può essere calcolata tramite una funzione matematica, e quindi un algoritmo, detta appunto funzione di hashing.
+
+L'algoritmo di hashing è implementato in modo che se si calcola più volte l'hash di un testo si ottiene come risultato sempre la stessa identica stringa, a patto che il testo sia sempre esattamente identico.
+
+Se il testo originale cambia anche solo una virgola o uno spazio, l'hash calcolato risulta completamente differente. 
+
+Inoltre, sempre a causa delle caratteristiche della funzione di hashing, da un qualsiasi codice hash è impossibile risalire al testo originale utilizzato per generarlo.
+
+Algoritmi di questo tipo sono largamente utilizzati in crittografia, ad esempio per memorizzare le credenziali o i dati biometrici perché conservare nei database l'hash di una password, dell'impronta digitale o del viso è molto più economico e sicuro che memorizzare il dato originale per intero.
+
+Nel caso in cui qualcuno dovesse sottrarre il database, a partire dagli hash non sarebbe in grado di calcolare i dati originali e, al tempo stesso, quando è necessario utilizzare tali dati, basta ricalcolare l'hash a partire dal nuovo input fornito dall'utente.
+
+Quando l'utente inserisce una password o fa scansionare il proprio volto, ad esempio, il sistema genera nuovamente l'hash e lo confronta con quello memorizzato nel proprio database. Se coincide, allora l'utente è verificato, altrimenti no: facile, veloce e funziona nonostante l'impossibilità di ricostruire il dato originale.
+
+E proprio sfruttando un principio del genere, i gestori della PEC possono verificare che i messaggi non siano stati alterati durante il percorso, volontariamente o meno.
+
+Al momento dell'invio, infatti, il gestore del mittente crea la busta e vi inserisce, oltre al messaggio, alcune informazioni aggiuntive, come ad esempio la marca temporale e altri dati che possono risultare utili. Poi calcola l'hash e inserisce anche quello nella busta.
+
+Quando il messaggio arriva al gestore del destinatario, il sistema estrae l'hash e poi calcola a sua volta l'hash della busta che ha ricevuto. Se i due hash coincidono ne può dedurre che il messaggio è arrivato inalterato.
+
+Ora ti starai chiedendo: ma se io intercetto un messaggio, lo altero, calcolo il nuovo hash e lo sostituisco al vecchio nella busta? In tal modo posso tranquillamente far credere al sistema che la mia modifica fosse parte dell'invio originale.
+
+Beh in realtà questo non si può fare, grazie all'ultimo concetto chiave menzionato prima, quello che assicura che tutta la trasmissione avvenga in modo sicuro e al sicuro da occhi indiscreti: cioè la firma digitale.
+
+Prima di inviare la busta, infatti, il gestore del mittente la firma con la propria chiave privata e la cifra con quella pubblica del gestore del destinatario.
+
+Ora, la crittografia tramite chiave pubblico-privata è un sistema semplice quanto geniale per assicurare la sicurezza delle comunicazioni in generale: viene utilizzata in moltissimi ambiti come ad esempio per il protocollo https.
+
+In questo momento non abbiamo tempo per spiegarne il funzionamento in dettaglio (per questo ti consiglio di ascoltare l'episodio di Pensieri in codice numero 20 intitolato L'algoritmo della crittografia a chiave pubblica) ma quel che ci interessa oggi è il seguente concetto.
+
+Quando si codifica un informazione utilizzando una chiave privata, la si può decodificare utilizzando la relativa chiave pubblica e viceversa.
+
+La busta della PEC quindi, che è stata crittografata utilizzando la chiave pubblica del gestore del destinatario, può essere decriptata solo da quest'ultimo, in quanto unico detentore della propria chiave privata.
+
+Questa caratteristica assicura il fatto che il messaggio, una volta spedito, non possa essere aperto ne tantomeno modificato da altri se non il gestore del legittimo destinatario.
+
+Al tempo stesso, poi, la firma applicata utilizzando la chiave privata del gestore mittente potrà essere verificata con la relativa chiave pubblica, liberamente distribuita, che assicurerà che il messaggio arriva effettivamente dal gestore in questione.
+
+Essendo infatti la chiave privata in possesso solo e unicamente del gestore del mittente, nessun altro soggetto potrà utilizzarla per criptare un messaggio allo stesso modo.
+
+Se utilizzando la giusta chiave pubblica il messaggio potrà essere decriptato, allora il gestore destinatario avrà la conferma che esso arriva dal gestore mittente. Altrimenti il messaggio verrà considerato illegittimo e verrà scartato.
+
+Utilizzando questi meccanismi di codifica e decodifica in combinazione viene preservata sia l'autenticità che la segretezza dell'intera comunicazione.
+
+## Conclusione
+
+Bene, anche oggi siamo giunti al termine dell'episodio.
+
+Ringrazio Francesco per aver accettato la collaborazione. Era già da un po' che volevo farne una con lui e finalmente sono riuscito ad organizzarla. In descrizione trovi il link a Pillole di bit che, se già non conosci, ovviamente devi andare a recuperare.
+
+Per inciso, ho in mente altri argomenti che potremmo trattare insieme, quindi se l'episodio di è piaciuto, faccelo sapere su telegram o scrivendo una mail a valerio@pensieriincodice.it
+
+A questo proposito, sul sito pensieriincodice.it trovi tutti i modi per contattarmi ed entrare a far parte della community del podcast.
+
+Detto questo, poi, ringrazio i solidi Carlo ed Edoardo per la loro donazione ricorrente e ti ricordo che se vuoi unirti a loro trovi sempre tutte le info sul sito alla sezione *Sostieni*.
+
+Ah quasi dimenticavo: sul nuovo sito c'è anche il nuovo feed del podcast, senza pubblicità e senza tracciamento lesivo della privacy. Quindi, ti consiglio di andarlo a recuperare per aggiungerlo alla tua App.
+
+E direi che non c'è altro da dire per il momento. Ti do semplicemente appuntamento al prossimo episodio e ti ricordo sempre che *un informatico risolve problemi, a volte anche usando il computer*.
+"

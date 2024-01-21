@@ -1,0 +1,163 @@
+text: "
+Ohhh finalmente! È un po' che non ci sentiamo, vero?
+
+Purtroppo in queste ultime settimane sono stato davvero sommerso dal lavoro e non ho avuto modo di seguire questo progetto quanto avrei voluto, però ora sono di nuovo qui.
+
+E oggi ricominciamo alla grande tornando a parlare di uno di quei tanti algoritmi che utilizziamo ogni giorno, magari senza nemmeno saperlo.
+
+Argomenti di questo episodio, infatti, sono: algoritmo Tit-for-tat e protocollo BitTorrent!
+
+### Dilemma del prigioniero
+
+Iniziamo con un po' di storia: negli anni '50 del secolo scorso il matematico canadese Albert Tucker formulò un problema nell'ambito della teoria dei giochi che sarebbe presto divenuto famoso anche fra i non addetti ai lavori.
+
+Spesso definito come un paradosso, il *dilemma del prigioniero*, questo è il nome del gioco, consiste nel prendere due ipotetici soggetti, due prigionieri appunto, e metterli di fronte ad una scelta che determinerà i vantaggi che otterranno e le conseguenze che dovranno poi subire.
+
+Nello specifico, nella sua formulazione più classica, il dilemma suona più o meno in questo modo: due malviventi vengono arrestati e accusati di un crimine.
+
+I due vengono tenuti in celle separate: non possono comunicare ma ciascuno è a conoscenza del fatto che è stata arrestata anche l'altra persona per il suddetto crimine.
+
+A questo punto gli investigatori danno ad entrambi la possibilità di confessare e accusare il complice per avere in cambio maggiore clemenza. Ciò vuol dire, in pratica, che ciascuno può facilitare le indagini scaricando la colpa del crimine sull'altro, con lo scopo di vedere ridotta la propria pena.
+
+Siccome parliamo di un gioco matematico, a questo punto si vengono a configurare 3 possibili scenari ben distinti:
+
+- Numero 1: entrambi i soggetti decidono di non confessare, attenendosi ad una sorta di codice morale del criminale e non accusandosi l'altro. In questo scenario, gli inquirenti non sono in grado di dimostrare la loro colpevolezza per il crimine in questione ed entrambi vengono condannati ad 1 anno di reclusione per un crimine minore.
+- Nel secondo scenario, invece, uno dei due decide di tradire l'altro. In questo caso, il primo (il traditore) se la cava senza scontare un giorno di galera, mentre il secondo ci rimarrà per ben 6 anni.
+- Infine, nel terzo scenario, entrambi i criminali decidono di tradirsi l'un l'altro. In pratica, accusandosi vicendevolmente di crimini gravi, entrambi otterranno uno sconto e verranno condannati a 3 anni ciascuno.
+
+Ora, puoi mettere pausa e fermati a riflettere sul problema, o magari su cosa faresti tu o qualcuna delle tue conoscenze, ma, conti alla mano e visto che quelle che ti ho dato sono le uniche e sole informazioni disponibili per la scelta, dovrebbe apparire subito chiaro che la migliore strategia da attuare per entrambi, sia quella di tradirsi a vicenda e beccarsi 3 anni a testa.[](https://www.andreaminini.it/teoriadeigiochi/dilemma-del-prigioniero)
+
+Certo c'è l'opzione in cui entrambi non collaborano, in cui prendono 1 anno di galera ciascuno, ma senza informazioni su come l'altro si potrebbe comportare, si conviene maggiormente dare per scontato che questi cercherà di prendere la decisione migliore per se stesso, puntando quindi a collaborare per ridurre la pena.
+
+In questa condizione, la cosa più saggia che uno dei due possa fare è comunque collaborare con gli investigatori e tradire il proprio compagno: nel migliore dei casi, l'altro non avrà collaborato e quindi il traditore se la caverà senza pena. Nel peggiore, anche l'altro avrà collaborato e il traditore prenderà comunque 3 anni invece di 6.
+
+Questa decisione da prendere è definita appunto *dilemma del prigioniero*.
+
+Descritto in questo modo, un problema del genere può apparire un bel giochino da raccontare al bar davanti ad una birra ma niente di più e invece il dilemma del prigioniero rappresenta la logica di fondo di molti comportamenti umani.
+
+Un esempio che tutti conosciamo è ciò che hanno fatto Stati Uniti e Unione Sovietica durante la cosiddetta Guerra Fredda. Se ci pensi la situazione è la stessa. Le scelte non sono più *collaborare o meno con la polizia* ma diventano *se competere o meno nella corsa agli armamenti nucleari*. E, di conseguenza, gli scenari diventano:
+
+- 1.Entrambe le potenze decidono di non investire in armamenti e risparmiare così enormi risorse da destinare ad usi ben più meritevoli
+
+2.Una delle due potenze decide di armarsi e l'altra no, la prima sprecherà tantissimi soldi in spese militari ma la seconda rischierà la cancellazione dalla faccia della terra da parte dell'avversario.
+
+3.Entrambe le potenze decidono di armarsi e spendere miliardi di dollari per mantenere l'equilibrio strategico
+
+
+Come ben sappiamo, la scelta è stata quella dell'escalation agli armamenti. Lo scenario numero 3. Svantaggiosa per entrambi ma la scelta migliore nell'ottica dell'impossibilità di sapere realmente cosa avrebbe deciso di fare l'altro.
+
+Come dicevo, questo, però, è solo un esempio fra i tanti possibili: schemi del genere si possono ritrovare continuamente nel comportamento di persone, comunità, aziende e persino Stati.
+
+In questi scenari, la strategia più vantaggiosa, viene definita Equilibrio di Nash ed è, in pratica, quella scelta in cui, ciascun soggetto non ha modo di migliorare ulteriormente la propria situazione facendo ricorso alle proprie sole forze.
+
+Tieni ben presente, infatti, che, se è pur vero che gli scenari possibili sono 3, in realtà le scelte disponibili per ciascun prigioniero sono soltanto 2.Questo è un passaggio fondamentale da capire.
+
+I due soggetti possono infatti scegliere se confessare o negare, se collaborare o non collaborare, se investire in armamenti nucleari o non farlo. Ma gli scenari risultano essere il frutto della somma delle scelte effettuate da entrambi. Nessuno dei due può determinare la propria situazione in maniera totalmente autonoma, ma deve in qualche modo subire anche la scelta dell'avversario.
+
+### Strategia tit-for-tat
+
+Ok, tutto bellissimo, spero di essermi spiegato in maniera sufficientemente chiara. Ma ora sono certo che ti starai chiedendo, perché tutto questo parlare di teoria dei giochi?
+
+Beh per capirlo, dobbiamo fare un ultimo piccolo sforzo, un piccolo passo in più. Un passo che può sembrare banale ma che rende tutto il nostro discorso molto più interessante.
+
+In pratica, per come te l'ho appena descritto, il dilemma del prigioniero è un evento singolo: due attori vengono messi di fronte ad una scelta e per ciascuno, le due opzioni disponibili risultano essere più o meno vantaggiose in relazione alla scelta dell'altro. Questi due scelgono, ottengono un qualche risultato, e l'equilibrio di Nash ci dice qual è il risultato ottimale ottenibile in autonomia. Fine.
+
+Ma se invece considerassimo una serie di dilemmi del prigioniero che si susseguono nel tempo?
+
+Mi spiego: se invece di un unica occasione di scelta, gli attori in gioco avessero tante possibilità e potessero decidere sulla base non solo delle opzioni disponibili in ogni singolo momento ma anche delle scelte fatte in precedenza? Così sembra più interessante, non credi?
+
+Certo non possiamo pensare che ci sia una Guerra Fredda ogni settimana. Né, spero per te, che tu possa pensare di essere arrestato o arrestata ogni mese. Ma quello che possiamo invece fare è inventarci una nostra situazione, ad esempio, un piccolo semplice gioco.
+
+E proviamo a immaginarlo questo gioco.
+
+Ci sono due giocatori. Questi due giocatori passeggiano, seguendo percorsi casuali, in un parco relativamente piccolo, quindi si incontrano con una certa frequenza. Quando le loro strade si incontrano, ciascuno hanno due possibilità: può salutare l'avversario oppure può tirargli uno schiaffo.
+
+- Salutandosi entrambi, i due giocatori totalizzano 2 punti ciascuno.
+- Se, invece, uno saluta e l'altro schiaffeggia, allora l'equilibrio viene meno e chi ha schiaffeggiato guadagna 3 punti mentre chi ha salutato ed ha preso la sberla non fa punti.
+- Infine, prendendosi a schiaffi, i due totalizzano mezzo punto (0,5) ciascuno.
+
+E' una situazione simile a quelle precedenti, e l'unica differenza sta nel fatto che si ripete nel tempo permettendo ai giocatori di effettuare più scelte in sequenza e di cumulare i relativi punti.
+
+Come starai già immaginando la scelta ora diventa molto più interessante.
+
+Finché i due scelgono sempre di salutarsi, mantengono un buon punteggio globale, ma per nessuno dei due singoli si tratta del punteggio ottimale.
+
+Al primo incontro, 2 punti, poi 4, poi 6... dopo 5 saluti siamo a 10 punti ciascuno, cioè 20 punti globali.
+
+Però, uno dei due potrebbe pensare che mollare schiaffoni sia una scelta migliore. D'altronde se l'altro fosse un pacifista e continuasse sempre a salutare, la situazione sarebbe più meno questa:
+
+Primo incontro: pacifista 0, violento 3 punti, secondo incontro, pacifista 0 , violento 6 punti. Dopo 5 incontri, il violento avrebbe ben 15 punti mentre il pacifista 0. La situazione del violento sarebbe molto migliore di prima e quella del pacifista molto peggiore.
+
+Ma se, in fondo, il pacifista non fosse poi tanto pacifista? Magari, dopo primo schiaffo potrebbe iniziare a menare anche lui le mani. E quindi avremmo: primo incontro, 3 a 0 per il violento, ma poi schiaffi a non finire. Secondo incontro, 3,5 a 0,5 (ti ricordo che picchiarsi entrambi fa totalizzare solo mezzo punto ciascuno), poi 4 a 1, 4,5 a 1,5 e così via fino a un risultato dopo 5 incontri di 5 a 2.
+
+Certo quello che ha iniziato a picchiare per primo avrebbe un punteggio più alto dell'altro giocatore, ma comunque un punteggio molto più basso di quelli totalizzati con le strategie precedenti. In definitiva, la strategia collaborativa (quella di salutarsi) sarebbe la scelta globalmente più vantaggiosa, quindi quella che darebbe il maggior numero di punti ad entrambi.
+
+E quindi? Capito dove voglio arrivare? Ora la situazione non è più semplice come lo era con il dilemma del prigioniero preso come evento singolo. Gli arrestati, infatti, avevano come miglior opzione quella di accusarsi vicendevolmente perché senza avere altre informazioni, ciascuno sceglieva razionalmente la soluzione meno brutta per se stesso.
+
+Ma qui, nel nostro gioco del parco, ci sono altre informazioni e sono quelle sul comportamento passato dell'avversario. Come si è comportato durante l'incontro precedente? E in quello prima ancora? E se gli incontri fossero 10, 100 o 1000?
+
+Ecco che si crea lo spazio per immaginare una strategia di comportamento più interessante e complessa, e ovviamente, da buoni informatici, noi sappiamo che il termine *Strategia* può essere sinonimo di *Algoritmo*.
+
+Questa particolare strategia prende il nome di Tit-for-tat. Alla fine non si tratta di niente di nuovo o rivoluzionario, in italiano noi la chiamiamo semplicemente Occhio per occhio. E consiste, proprio, nel *rispondere con lo stesso comportamento* che si riceve da un altro giocatore.
+
+In altre parole, se l'altro si comporta in modo cooperativo, allora noi ci comporteremo in modo cooperativo; se invece l'altro si comporta in modo egoistico, allora anche noi ci comporteremo in modo simile, almeno finché l'altro non mostra una maggiore disponibilità a migliorare il proprio atteggiamento.
+
+Nel nostro gioco di prima vuol dire che, di base ogni giocatore inizia col salutare l'altro quando lo incontra. Ma se in un qualsiasi momento riceve uno schiaffo, al turno successivo restituirà a sua volta uno schiaffo.
+
+La strategia tit-for-tat è molto efficace in molti contesti, poiché incoraggia i giocatori a comportarsi in modo cooperativo e ad evitare comportamenti egoistici che si approfittano degli altri senza contribuire a propria volta.
+
+### BitTorrent
+
+Guarda caso, questo particolare algoritmo volto ad incoraggiare il comportamento cooperativo, in informatica è largamente utilizzato, in particolare, per le applicazioni basate su operazioni dirette fra singoli soggetti, come nel caso di BitTorrent.
+
+Ora, sono sicuro che tutti abbiamo utilizzato BitTorrent almeno una volta nella vita, ma è sempre meglio fare un ripasso.
+
+BitTorrent è un protocollo di condivisione di file peer-to-peer (anche detto P2P) studiato per consente agli utenti di condividere file di grandi dimensioni in modo efficiente.
+
+Per fare ciò, i file vengono suddivisi in piccoli pacchetti di dati che possono essere scaricati e condivisi indipendentemente l'uno dall'altro. Ciò significa che ogni utente può scaricare una parte del file e iniziare immediatamente a ricondividerla anche se il download del file intero non è ancora stato completato. Ed inoltre, è possibile ricevere diversi pacchetti di dati da più fonti contemporaneamente e in questo modo velocizzarne il download.
+
+Quando un utente vuole scaricare un file sfruttando BitTorrent, utilizza il proprio client per connettersi a un sistema chiamato *tracker* che è adibito a gestire la rete di condivisione del file. Il tracker fornisce al client l'elenco di altri client che condividono il file richiesto e, di conseguenza, questo può iniziare a scaricare uno o più pacchetti di dati da più sorgenti.
+
+Ciascun client BitTorrent, oltre ad effettuare il download dei file richiesti, lavora contemporaneamente per ridistribuire i pacchetti di dati di cui è già in possesso. Di fatto, quindi, ciascun utente, mentre scarica un file, ricarica anche automaticamente le porzioni di tale file di cui dispone.
+
+Questo meccanismo di ridistribuzione è alla base del funzionamento del protocollo BitTorrent ed è il motivo principale della sua estrema efficienza e della sua grande diffusione. Ed è dunque fondamentale che il comportamento di tutti i client mantenga un certo livello correttezza e cooperazione, senza il quale tutto il sistema verrebbe meno.
+
+Se, infatti, ci fossero in giro applicazioni implementate per mantenere un atteggiamento parassitario, scaricando solamente da chiunque si trovi a tiro, senza mai ricondividere quanto ottenuto, la velocità e l'efficienza del protocollo ne verrebbero danneggiate a scapito degli utilizzatori onesti.
+
+### BitTorrent e Tit-for-tat
+
+Come avrai quindi certamente già capito, l'algoritmo Tit-for-tat risulta essere una base di partenza molto adatta in questo tipo di situazioni per determinare come un client BitTorrent dovrebbe comportarsi nei confronti degli altri client.
+
+L'idea alla base è semplice: ogni client dovrebbe essere disposto a condividere file con gli altri, ma solo se anche questi sono disposti a farlo a loro volta.
+
+Proprio come accadeva per la strategia ottimale dei nostri giocatori nel parco, finché ciascuno dei due manteneva un rapporto cordiale salutando e non aggredendo l'altro, anche l'altro continuava ad essere cooperativo. Appena una dei due veniva meno al tacito patto di collaborazione, anche l'altro reagiva allo stesso modo.
+
+In altre parole, nel protocollo BitTorrent un client risponde con lo stesso comportamento che riceve dagli altri client: se l'altro è disposto a condividere file, allora lui è disposto a fare lo stesso; se invece un altro non è disposto a condividere file, allora lui risponde non condividendo file con quel client.
+
+Infine, come starai certamente intuendo, c'è da considerare che la strategia tit-for-tat può anche essere soggetta ad un fenomeno chiamato *punizioni a catena*, nel quale i soggetti decidono di non cooperare a oltranza. Se, ad esempio, due client iniziano a rifiutare la condivisione l'un l'altro, si rischia di entrare in un circolo che può portare a un risultato peggiore per entrambi.
+
+Quindi, per tenere conto di ciò, nell'implementazione reale all'interno del protocollo BitTorrent la versione dell'algoritmo tit-for-tat utilizzata è ovviamente più avanzata della sua formulazione base.
+
+Esistono, infatti, degli accorgimenti che puntano mantenere un minimo di apertura verso qualsiasi nodo. E questo proprio per evitare situazioni di stallo in cui dei nodi si ritrovino ignorati da tutti gli altri.
+
+Innanzitutto, ogni client prova a riaprire la condivisione con cadenza periodica alla ricerca di una reazione positiva anche dai nodi più avari.
+
+In secondo luogo, un nodo battezzato come *parassita* non viene effettivamente disconnesso, ma gli viene lasciato l'accesso ad una connessione con un minimo di banda per dargli la possibilità di migliorare il proprio upload e quindi riguadagnare uno status accettabile agli occhi degli altri.
+
+Infine, due nodi che sono in fase di scambio, tendono a massimizzare i vantaggi reciproci cercando l'uno nell'altro i pacchetti dati di cui hanno bisogno. E per fare questo, estremizzano il concetto di collaborazione tra i client, al punto da rendere possibile per uno condividere verso l'altro anche più di quanto l'altro possa ricambiare.
+
+Insomma, grazie all'implementazione di questa strategia tit-for-tat avanzata, il protocollo BitTorrent è in grado di mantenere un proprio equilibrio e fornire un servizio funzionale ed efficiente.
+
+Tra i vari nodi della rete, presi a due a due, si raggiunge, quindi, quella che viene definita Efficienza di Pareto, cioè uno stato di equilibrio in cui non ci sono ulteriori opportunità di scambio che porterebbero ad una situazione migliore di quella corrente.
+
+### Conclusione
+
+Bene, grazie per aver ascoltato questo episodio di Pensieri in codice. Io, come al solito, spero sia stata di tuo interesse.
+
+Oggi un grazie speciale va ad Edoardo e a Carlo che hanno continuato a credere nel progetto nonostante lo stop improvviso degli ultimi 2 mesi e me l'hanno dimostrato, con le loro donazioni ricorrenti.
+
+Sul sito pensieriincodice.it trovi tutti i link:
+gruppo telegram, donazioni, affiliazioni, ecc. Mi raccomando: fai ascoltare questo episodio qualcun altro, un amico, un parente, un conoscente, un estraneo che se ognuno di noi porta un ascoltatore in più, tra una settimana siamo il doppio!
+
+In ultimo, ti do appuntamento al prossimo episodio e non dimenticare mai che *un informatico risolve problemi, a volte anche usando il computer*.
+"
