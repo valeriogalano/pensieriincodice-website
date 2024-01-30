@@ -50,7 +50,7 @@ title: "{$title}"
 layout: episode
 episode_type: full
 series: [{$series}]
-categories: [podcast]
+categories: [Podcast]
 tags: [{$keywords}]
 seasons: {$season}
 number: {$count}
