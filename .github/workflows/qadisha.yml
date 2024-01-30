@@ -9,9 +9,9 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-  # Runs every day at 06:00 UTC
+  # Runs every day at 06:05 UTC
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '5 6 * * *'
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
