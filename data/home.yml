@@ -223,8 +223,7 @@ rewards:
     percentage: "100"
   rows:
     - text: "Se diventi sostenitore, a prescindere dal livello di supporto, ricevi un ringraziamento pubblico nel podcast."
-    - text: "Le soglie di donazione sono calcolate in base alla somma totale nel corso del tempo."
-    - text: 'Una volta raggiunta una soglia, contattami su <a href="https://t.me/valeriogalano" target="_blank">Telegram</a> o via <a href="mailto:valerio@pensieriincodice.it">email</a> per comunicarmi il tuo indirizzo.'
+    - text: "Inoltre, <strong><a href=\"/blog/nuovi-gadget-di-pensieri-in-codice/\">clicca qui.</a></strong> per scoprire come ricevere i gadget destinati ai sostenitori."
 
 ### Platforms [ platforms ]
 platforms:
