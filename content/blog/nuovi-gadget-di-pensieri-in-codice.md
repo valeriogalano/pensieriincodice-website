@@ -1,6 +1,6 @@
 ---
 title: "I nuovi gadget di Pensieri in codice"
-date: 2024-01-18T10:00:00+02:00
+date: 2024-02-05T19:00:00+02:00
 featureImage: http://cdn.pensieriincodice.it/images/nuovi-gadget-di-pensieri-in-codice-feature.jpeg
 image: images/nuovi-gadget-di-pensieri-in-codice-thumbnail.jpeg
 tags:
