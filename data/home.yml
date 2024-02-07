@@ -233,7 +233,7 @@ platforms:
       image: "images/clients/rss.png"
       title: "Sulla tua app preferita"
 
-    - url: "http://bit.ly/picGooglePodcast"
+    - url: "/episodes/"
       image: "images/clients/archivio.png"
       title: "Dall'archivio Web"
 
