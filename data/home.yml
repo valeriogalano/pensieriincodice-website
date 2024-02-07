@@ -238,7 +238,7 @@ platforms:
       title: "Dall'archivio Web"
 
     - url: "http://bit.ly/picItunes"
-      image: "images/clients/apple-podcast.jpg"
+      image: "images/clients/apple-podcast.png"
       title: "Su Apple Podcast"
 
     - url: "http://bit.ly/picSpotify"
