@@ -229,13 +229,13 @@ rewards:
 platforms:
   title: "Ascolta il podcast"
   items:
-    - url: "/podcast/index.xml"
+    - url: "/blog/feed-senza-tracciamento/"
       image: "images/clients/rss.png"
       title: "Sulla tua app preferita"
 
     - url: "http://bit.ly/picGooglePodcast"
-      image: "images/clients/google-podcast.png"
-      title: "Su Google Podcast"
+      image: "images/clients/archivio.png"
+      title: "Dall'archivio Web"
 
     - url: "http://bit.ly/picItunes"
       image: "images/clients/apple-podcast.jpg"
