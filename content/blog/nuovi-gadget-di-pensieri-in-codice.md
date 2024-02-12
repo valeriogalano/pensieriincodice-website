@@ -23,3 +23,5 @@ Questi gadget sono un piccolo riconoscimento per coloro che decidono di dimostra
 (Le soglie per ricevere i premi sono calcolate in base alla somma totale donata nel corso del tempo, non necessariamente in un'unica donazione.)
 
 Una volta raggiunta una soglia, non devi fare altro che [scrivermi](mailto:valerio@pensieriincodice.it) e indicarmi a quale indirizzo spedirteli!
+
+A prescindere dalla cifra donata, sarai comunque inserito nella lista dei sostenitori che ringrazio alla fine dell'episodio successivo e nella pagina [Sostieni](/#support-card) del sito.
