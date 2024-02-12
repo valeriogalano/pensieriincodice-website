@@ -1,0 +1,71 @@
+[all]
+other = "Tutti"
+
+[menu]
+other = "Menu"
+
+[archive]
+other = "Archivio"
+
+[blogPost]
+other = "Articolo"
+
+[by]
+other = "Di"
+
+[share]
+other = "Condividi"
+
+[shareOn]
+other = "Condividi su"
+
+[tags]
+other = "Tags"
+
+[prev]
+other = "Prec"
+
+[next]
+other = "Succ"
+
+[comments]
+other = "Commenti"
+
+[fullName]
+other = "Nome e Cognome"
+
+[emailAddress]
+other = "Indirizzo Email"
+
+[yourMessage]
+other = "Il tuo Messaggio"
+
+[sendMessage]
+other = "Invia Messaggio"
+
+[viewProject]
+other = "Vedi Progetto"
+
+[new]
+other = "Nuovo"
+
+[search]
+other = "Cerca"
+
+[latestPosts]
+other = "Ultimi Post"
+
+[categories]
+other = "Categorie"
+
+[successMessage]
+other = "Grazie per avermi contattato! Ti risponderò al più presto."
+
+[errorNum]
+other = "404"
+
+[errorTitle]
+other = "Pagina non trovata!"
+
+[errorText]
+other = "La pagina che stai cercando non esiste o è stata spostata."

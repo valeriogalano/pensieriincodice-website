@@ -15,7 +15,7 @@
 
 						<h1>{{ .Title }}</h1>
 						<div class="blog-detail">
-							<span class="date">{{ .PublishDate.Format $dateFormat }}</span>
+							<span class="date">{{ .PublishDate | time.Format $dateFormat }}</span>
 							{{ if .Params.categories }}
 							<span class="cat-links">
 		            {{ range (.GetTerms "categories") }}
