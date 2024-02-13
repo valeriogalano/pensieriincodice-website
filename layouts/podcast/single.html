@@ -18,10 +18,13 @@
 							<span class="date">{{ .PublishDate | time.Format $dateFormat }}</span>
 							{{ if .Params.categories }}
 							<span class="cat-links">
-		            {{ range (.GetTerms "categories") }}
-		            <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-		            {{ end }}
+		            			{{ range (.GetTerms "categories") }}
+								<a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+		            			{{ end }}
 							</span>
+							{{ end }}
+							{{ if .Params.number }}
+							<span class="number">Episodio {{ .Params.number }}</span>
 							{{ end }}
 							<span class="byline">
 								<span class="author">{{ range .Params.authors }} {{ . }} {{ end }}</span>
