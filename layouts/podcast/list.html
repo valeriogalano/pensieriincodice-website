@@ -28,7 +28,10 @@
 						<div class="desc">
 							<a href="{{ .Permalink }}"><span class="date">{{ .PublishDate | time.Format $dateFormat }}</span></a>
 							<a href="{{ .Permalink }}" class="name">{{ .Title }}</a>
-							<div class="category">{{ with .Params.categories }}{{ delimit . ", "}}{{ end }}</div>
+							<!--<div class="category">{{ with .Params.categories }}{{ delimit . ", "}}{{ end }}</div>-->
+							<div class="category">
+								{{ if .Params.number }}Episodio {{ .Params.number }}{{ end }}
+							</div>
 						</div>
 					</div>
 				</div>

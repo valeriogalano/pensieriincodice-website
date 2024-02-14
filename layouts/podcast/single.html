@@ -26,6 +26,9 @@
 							{{ if .Params.number }}
 							<span class="number">Episodio {{ .Params.number }}</span>
 							{{ end }}
+							{{ if .Params.season }}
+							<span class="number">Stagione {{ .Params.season }}</span>
+							{{ end }}
 							<span class="byline">
 								<span class="author">{{ range .Params.authors }} {{ . }} {{ end }}</span>
 							</span>
