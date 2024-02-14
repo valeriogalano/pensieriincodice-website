@@ -1,0 +1,151 @@
+text: "
+Tra i tanti aspetti della vita che sono stati stravolti dall'informatica negli ultimi due o tre decenni, ce n'è uno che forse tendiamo tutti un po' a dimenticare.
+
+Un po' perché fra noi, alcuni saranno così giovani da non aver mai visto o toccato un atlante geografico o una cartina stradale.
+
+Un po' perché l'uso del GPS, delle mappe digitali o dei mappamondi digitali è diventato *la normalità* in un tempo impressionantemente breve, l'idea che esistesse una cartografia anche prima di Google Maps è qualcosa che ai più non passa nemmeno per la mente.
+
+Ma la cartografia esisteva e come, e non era un semplice insieme di disegni su carta, era una modo di rappresentare il mondo in un certo modo e da un certo punto di vista.
+
+Nell'episodio di oggi, quindi, parliamo di come la spinta dell'informatica ha cambiato la cartografia e, con essa, il nostro modo di vedere il mondo.
+
+Sigla
+
+La cartografia è una disciplina molto antica che risale ai tempi dell'antica Grecia e che ha avuto un'importanza fondamentale nella storia umana.
+
+La rappresentazione su carta (o ovviamente materiali meno lavorati, dipende dal periodo storico) delle informazioni geografiche, ma non solo, anche statistiche o demografiche o politiche, risulta di supporto per l'organizzazione di moltissime attività. Itinerari, politiche territoriali, urbanistica, strategia militare, l'elenco è infinito.
+
+E per questo motivo, la rappresentazione di un territorio ad opera di un cartografo, è un lavoro molto complesso che va svolto, oltre che in base alle informazioni possedute, anche in base alle finalità desiderate.
+
+La scala, i dati da inserire o omettere, i simboli e tutte le altre caratteristiche della mappa, sono fattori che devono essere scelti in base alla visione del territorio che si vuole trasmettere, alle informazioni che si vuole mettere in evidenza e veicolare verso il fruitore.
+
+  E questo, oltre probabilmente ad essere uno dei fattori più interessanti di questa disciplina, è anche il maggiore limite di cui ha sofferto da sempre: da una parte, abbiamo una quantità enorme di dati che possono essere combinati in infiniti modi e, dall'altra, uno spazio relativamente limitati nel quale rappresentarli.
+
+Ora, io non sono certo un esperto in materia e non penso di saperne chissà quanto, quindi mi scuso in anticipo con chi magari sta ascoltando ed è appassionato o addirittura un professionista del settore, ma come al solito, qui su Pensieri in codice, cerco di veicolare un concetto in modo semplice per costruire un ragionamento e dunque proverò a spiegare questa cosa in modo estremamente semplice che potrebbe risultare piuttosto banale ad orecchie esperte.
+
+Quindi siete avvisati. Non mi potete fare causa se ora vi sanguinano le orecchie...
+
+Quando si realizza una carta geografica, lo si fa in scala.
+
+Questo vuol dire che i territori rappresentati sono, nella realtà, più grandi di come appaiono nel disegno.
+
+E minore è la scala, maggiore è il divario di dimensione tra la realtà e la sua rappresentazione cartacea.
+
+  Ovviamente, a causa di questo fenomeno, non è materialmente possibile rappresentare ogni singolo dettaglio della realtà sulla carta: qualcosa deve essere necessariamente omesso. E per qualcosa, intendo tantissimi dati.
+
+Se poi aggiungiamo il fatto, che per i territori esistono anche altre informazioni oltre a quelle geografiche, che ,come dicevamo prima potrebbero essere politiche, culturali, demografiche e così via, allora è chiaro che la quantità di dati da escludere è ancora maggiora di quanto si possa immaginare al primo sguardo.
+
+  E qui la domanda: come scegliere quali informazioni includere e quali no?
+
+  Beh, lo abbiamo detto prima: in base alla finalità della mappa.
+
+Ma... nella realtà, anche in base alle credenze e convinzioni dell'autore, che potrebbe voler dare più enfasi alle proprie idee personali.
+
+O in base al committente, quello che paga per far realizzare quella particolare mappa, che vorrebbe mettere in luce le sue di idee.
+
+Quello che sto cercando di dire, è che, almeno in linea teorica, la persona che consulta una carta, il fruitore, ha accesso ad una serie di informazioni scelte e filtrate dall'autore. Tutte le altre, vengono escluse.
+
+So che questo è banalmente valido per forse qualsiasi opera umana, ma è fondamentale tenerlo a mente per capire l'impatto che ha avuto l'informatica sulla cartografia...
+
+Per fare un brevissimo escursus storico, diciamo che la seconda metà del 1900, come ben saprai, è stato poi il primo periodo di diffusione dell'informatica.
+
+Primi calcolatori elettronici, applicazioni geospaziali, computer grafica, cominciavano a fare capolino sulla scena, almeno per i grandi attori che potevano permettersi tecnologie all'epoca costosissime, come gli enti militari o i grandi istituti di ricerca finanziati dai governi.
+
+Per lo specifico campo della cartografia, si tratta del periodo in cui nasceva la versione primordiale di quello che oggi si chiama **Geographic Information System** (**GIS**) e che è quel sistema informativo che permette l'archiviazione di informazioni georeferenziate.
+
+In pratica, si tratta di un sistema informativo che contiene una enorme mole di dati e la loro associazione alla posizione geografica sulla superficie terrestere.
+
+Il GIS introduce un nuovo modo di fruire di tutte queste informazioni perché permette di recuperarle in tempo reale (o quasi) in vari formati, in varie scale, prediligendo certe categorie di dati rispetto ad altre e così via.
+
+Inizialmente, anche questa è una tecnologia elitaria per via dei costi proibitivi dell'hardware necessario a farla funzionare ed in particolare a costruire e visualizzare le mappe, ma poi, sul finire degli anni 90, nasce il primo algoritmo software di clipping.
+
+Semplificando al massimo, questo algoritmo è in grado di mostrare una porzione di mappa a partire da una mappa più grande senza dover rielaborare l'intera immagine da zero. E tutto questo non più su un hardware dedicato, ma su un semplice computer casalingo.
+
+Per noi oggi, il concetto di clipping è qualcosa di ovvio e banale. Lo vediamo applicato tutti i giorni nei videogame, sui nostri PC quando zoomiamo sulle immagini, ma per l'epoca, si tratta di una rivoluzione che porta in brevissimo tempo alla nascita di vari software commerciali che con meno di 100 dollari permettono a chiunque di visualizzare mappe e immagini di tutto il mondo alla scala che preferiscono.
+
+Sono mappe ancora poco dettagliate e imprecise sopratutto fuori dagli stati uniti? Sì
+
+Le scale sono relativamente limitate e con scale molto grandi, il risultato a volte e pessimo? Sì
+
+Ma è comunque qualcosa che, fino a quel momento, un privato cittadino poteva solo sognare.
+
+Poi, nel 2004, arriva Google, che compra un paio di società negli stati uniti e in australia che si occupano di applicazioni geografiche e geospaziali e nell'arco di due anni annuncia Google Maps e Google Earth.
+
+  Google non ha grande esperienza di cartografia ma ha un vantaggio competitivo enorme sulle società specializzate di quel periodo: sa come sfruttare al meglio enormi moli di dati.
+
+Con l'esperienza acquisita con i suoi prodotti di punta (il motore di ricerca e gli spazi pubblicitari) possiede una serie di conoscenze che possono essere applicate anche alle applicazioni cartografiche e geospaziali.
+
+  Per prima cosa, i responsabili dell'azienda hanno fiutato il fatto che il problema dei dati georeferenziati è esattamente uguale al problema del World Wide Web: esiste una quantità sterminata di informazioni ed è molto difficile per un qualsiasi fruitore individuare ed estrarre quelle più adatte alle proprio necessità.
+
+E guarda caso, loro sono leader mondiali nella risoluzione di questo tipo di problema.
+
+E inoltre, proprio il possesso degli enormi archivi del motore di ricerca, rappresenta un'ulteriore possibilità di crescita sulla concorrenza perché permette alle applicazioni di Google di integrare, ai dati georeferenziati, ulteriori informazioni estratte dal Web.
+
+In secondo luogo, poi, il modello di business preesistente in questo settore, come ti accennavo poco fa, consiste essenzialmente nella vendita, per pochi dollari, di software che danno all'utente la possibilità di consultare un certo sottoinsieme di mappe o immagini.
+
+Google utilizza invece già meccaniche di guadagno molto diverse. L'azienda lavora sul concetto di sfruttare i dati, sia per generare profitto che per generare altri dati.
+
+  Innanzitutto, viene adattati gli ormai celebri meccanismi pubblicitari come AdWords (che oggi si chiama Google Ads) alla prima legge della geografia di Tobler: ogni cosa è in relazione con ogni altra cosa, ma le cose vicine sono in relazione più stretta delle cose lontane.
+
+In pratica, il concetto è quello di dare la possibilità a chi vuole di pagare per avere posizioni in risalto nelle ricerche o una maggiore evidenza nelle rappresentazioni. Vendendo di fatto gli spazi pubblicitari in base, oltre che alle caratteristiche degli utenti, anche alla loro posizione o ai luoghi geografici di loro interesse.
+
+  Oltre a questo, gli strumenti di Google sono studiati anche per dare la possibilità agli utenti di personalizzare i contenuti: le API mettono infatti a disposizione tantissimi modi per integrare le mappe in altri siti o software, modificarle, aggiungere o rimuovere elementi e dettagli.
+
+Il risultato di tutte queste interazioni, sia pubblicitarie che di personalizzazione, rappresenta per Google una infinita miniera di altri dati che si origina dai gusti e le preferenze dei propri utenti. Un modello di business questo, totalmente al di fuori della portata di qualsiasi concorrente dell'epoca.
+
+Il resto lo conosciamo un po' tutti. Chi di noi nel 2022 non utilizza Google Maps e Google Earth, o almeno uno dei servizi equivalenti di altre società?
+
+Per non parlare del sistema GPS moderno che è indispensabile per quasi ogni tipo di spostamento.
+
+Ed è proprio questa enorme diffusione che rappresenta la vera rivoluzione nel campo della cartografia.
+
+Nel momento in cui l'uomo comune è passato dalle mappe cartacee a quelle digitali, anche senza rendersene conto, la sia visione del mondo è radicalmente cambiata.
+
+Non mi riferisco solo alla quantità di informazioni accessibili, che pure è aumentata enormemente, quanto piuttosto alle modalità di accesso.
+
+La moderna rappresentazione geografica è molto più flessibile rispetto a soli 30 anni fa.
+
+  Una mappa digitale ha tantissimi livelli di informazione che possono essere sovrapposti, attivati o disattivati: conformazione del territorio, trasporti, traffico, informazioni politiche, e così via. E ciò permette a ciascuno di scegliere cosa è di suo interesse ed escludere tutto il resto.
+
+Una mappa digitale non ha una scala fissa e quindi l'utente più scegliere di prediligere i dettagli, le distanze o qualsiasi posizione intermedia.
+
+Addirittura, se parliamo di applicazioni 3D come Google Earth, la rappresentazione del territorio può avere diverse angolazioni e inclinazioni.
+
+Quello che voglio dire è che per la prima volta nella storia, ciascun utente utente può generare la propria rappresentazione o almeno quella che è più congeniale alle proprie necessità.
+
+Mentre prima il mondo veniva essenzialmente rappresentato attraverso il filtro di qualcun altro, i suoi obiettivi, le sue convinzioni, oggi ogniuno si può costruire la propria visione di un territorio.
+
+Fai attenzione però, con questo non è certo mia intenzione dire che il risultato delle nostre ricerche su Maps sia scevro da qualsiasi tipo di forzatura o ideologia.
+
+Ricordiamoci sempre che, mentre i dati rappresentati in questi software sono essenzialmente disponibili al pubblico, tutto il codice sorgente e gli algoritmi commerciali non lo sono affatto. E questo non ci permette di affermare con assoluta certezza che in ogni singola rappresentazione non possa essere presente un certo livello di manipolazione.
+
+L'azienda potrebbe decidere di nascondere o evidenziare informazioni specifiche per qualsiasi motivo, economico, politico, ideologico.
+
+Mentre infatti, nella storia della cartografia, prima o poi qualsiasi autore ha rivelato le tecniche e fonti utilizzate per la realizzazione delle proprie carte, è piuttosto ingenuo aspettarsi che aziende che basano la propria prosperità sul segreto industriale facciano lo stesso con strumenti che generano profitti multi milionari.
+
+Nel fattempo lo sviluppo tecnologico non accenna a fermarsi e le immagini satellitari, aeree e terrestri diventano sempre più numerose e precise, conferendo a questi software sempre più dati per produrre risultati sempre migliori.
+
+La cosa certa però, che vale oggi come valeva al tempo di Tolomeo, è che per quanto la tecnologia possa progredire, non esisterà mai una rappresentazione definita ed accurata del nostro pianeta.
+
+E questo, semplicemente perché, come spero di essere riuscito a trasmetterti, ogni cultura della storia ha il proprio modo di vedere e rappresentare il mondo con le carte geografiche. Vale per le mappe digitali come per le carte e  mappamondi dell'antichità.
+
+Ci saranno sempre nuove tecnologie e nuove visioni dei territori. E queste visioni influenzeranno per forza la rappresentazione geografica favorendo alcuni aspetti a discapito di altri.
+
+Ma di sicuro, nessuna mai, mostrerà il mondo così com'è nella realtà. Semplicemente perché esso non può essere rappresentato.
+
+Il paradosso, in questo caso, è che non si può conoscere il mondo senza una mappa, ma non si può neanche rappresentarlo definitivamente con una mappa!
+
+Bene, spero di averti condiviso una riflessione interessante.
+
+Spero inoltre che l'episodio di oggi ti sia piaciuto e ti ricordo che se posso produrre questi contenuti, è solo grazie a te che ascolti ed alla community di pensieri in codice che sostiene il progetto.
+
+Oggi in particolare, voglio ringraziare Mario per la donazione di 5 euro e mia moglie Silvia per avermi consigliato la lettura di La storia del mondo in dodici mappe, dal cui ultimo capitolo ho tratto molte delle informazioni di questo episodio. Se ti interessa l'argomento, trovi il link in descrizione.
+
+Scopri come dare una mano anche tu, collegandoti al sito pensieriincodice.it (mi raccomando con 2 i).
+
+Puoi ascoltare tutti gli episodi sulle maggiori piattaforme e app di podcast o riceverli direttamente sullo smartphone iscrivendoti al canale Telegram.
+
+Se Pensieri in codice ti piace, e se sei arrivato fin qui immagino ti piaccia, puoi condividerlo con un amico per farglielo conoscere: farai un favore ad entrambi.
+
+Per oggi è tutto, ti do appuntamento al prossimo episodio e ti ricordo che *un informatico risolve problemi, a volte anche usando il computer*.
+"

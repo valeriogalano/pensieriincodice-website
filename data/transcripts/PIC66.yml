@@ -1,0 +1,152 @@
+text: "
+
+Negli ultimi anni, complice in parta la pandemia ed in parte il naturale aumento della diffusione dei servizi digitali, il numero di crimini informatici è notevolmente cresciuto e questo ha portato il fenomeno cyber criminalità ad apparire sempre più spesso sui media mainstreem, quelli non specializzati nel settore informatico.
+
+Per tutta risposta, questi ultimi hanno iniziato ad utilizzare impropriamente certe terminologie tecniche e tre le tante, hanno preso l'abitudine di definire *Hackers* i vari criminali informatici.
+
+Tale associazione, però, non solo è palesemente errata, se si conosce il vero significato della parola *Hacking*, ma è anche pericolosa perché tende a allontanare l'opinione pubblica da una figura molto importante per l'intero ecosistema digitale.
+
+In questo episodio proveremo dunque a fare un po' di chiarezza sul termine *Hacker* e a spiegare perché gli Hackers non sono criminali.
+
+Sigla!
+
+* * *
+
+Nel 1961 uno studente della Caltech di Pasadena si finse giornalista sportivo per intervistare la persona responsabile delle coreografie della squadra di football dell'Università di Washington.
+
+Come probabilmente saprai, gli americani seguono con passione i tornei sportivi universitari e le tifoserie organizzano coreografie anche molto complesse, con cartelloni colorati che posizionati nel modo corretto permettono di comporre enormi scritte, e immagini.
+
+Grazie a questa finta intervista, lo studente apprese il modo in cui l'Università di Washington organizzava queste coreografie, dove venivano conservate le istruzioni per realizzarle e perfino che il regista sarebbe uscito a cena poco più tardi.
+
+Forti di queste informazioni, alcuni studenti forzarono la serratura dell'ufficio del direttore e sostituirono le istruzioni per le coreografie con altre appositamente modificate. Non si trattò di un lavoro semplice, richiese infatti più giorni e più intrusioni, ma al momento questo è un dettaglio che non ci interessa.
+
+Risultato di questa operazione fu che, il giorno della partita, tre delle immagini composte dai tifosi della squadra di Washington furono realizzato in modo totalmente diverso.
+
+In una coreografia, invece della parola *WASHINGTON*, apparve la parola *CALTECH*.
+
+Un'altra la parola *HUSKIES*, il soprannome di Washington, fu scritta al contrario.
+
+E quella che doveva essere l'immagine di un husky mostrava invece un castoro. (Caltech che MIT usano il castoro - l'ingegnere della natura - come mascotte.)
+
+Dopo la partita, il rappresentante atletico della facoltà di Washington dichiarò: “Alcuni l'hanno trovata geniale; altri erano indignati”. Il presidente del corpo studentesco di Washington, successivamente, ha osservato: “Nessun rancore, ma all'epoca era incredibile. Siamo rimasti sbalorditi*.
+
+Questo episodio che ti ho raccontato, viene considerato uno dei primi esempi di *Hack*.
+
+La sua descrizione è persino riportata, assieme ad altri, nel Jargon File che è sostanzialmente un dizionario di termini utilizzati dagli hacker e dai professionisti dell'informatica.
+
+E da una storia del genere si possono evincere due importanti informazioni.
+
+La prima è che il termine Hack o Hacking non è necessariamente collegata all'informatica, quanto piuttosto alla tecnologia in generale.
+
+E la seconda, è che non sottintende intenzioni malvagie o criminali. Nel caso descritto, infatti, si è trattato di uno scherzo; una goliardata tipica delle rivalità sportive, qualcosa di piuttosto comune nel mondo universitario americano.
+
+Il termine Hack può infatti essere inteso più o meno come *applicazione non convenzionale o non ortodossa di una tecnologia* e stato utilizzato a partire dagli anni '50, quando appunto uno studente del MIT produsse la prima versione del un dizionario che si è poi evoluto nel Jargon File.
+
+E anche allora, il termine *hacker* non denotava alcuna accezione criminale o dolosa.
+
+Un hacker quindi è semplicemente qualcuno che, ovviamente dotato di grandi capacità e conoscenze specifiche, è in grado di utilizzare una tecnologia in modo creativo, differente da come è stato pensato che debba funzionare.
+
+E in questo modo, piegando lo strumento al proprio volere, è spesso alla ricerca di un modo per migliorare la vita a se stesso e agli altri.
+
+Sì, perché un Hacker, propriamente detto, è anche una persona mossa da ideali positivi e da una certa etica e che sfrutta queste sue capacità tecniche per impiegarle nel mondo del lavoro e della filantropia.
+
+Sono tante le storie infatti di Hacker che, di mestiere, partecipano a campagne di Bug Bounty, cercando e segnalando le falle di sicurezza alle aziende, le quali sono ben felici di ricompensarli per i loro servigi.
+
+Anche qui su Pensieri in codice, abbiamo parlato di uno di questi specialisti qualche episodio fa. Nell'episidio n.59 che ti consiglio vivamente di recuperare perché è davvero interessante.
+
+Addirittura ci sono Hacker che si impegnano a scovare computer infetti e ripulirli, a sviluppare software per apparecchiature mediche le cui aziende sono fallite lasciando i pazienti senza poter decriptare i dati e perfino a individuare e correggere problemi di sicurezza in pacemaker e altri dispositivi simili.
+
+Attualmente, forse hai sentito parlare di queste persone sotto la definizione di White Hat. Ti lascio dei link a queste storie in descrizione.
+
+E invece, ultimamente la figura dell'Hacker viene associata quasi unicamente a quella del criminale, ed è spesso corredata di immagini di gente incappucciata al buio davanti ad uno schermo con lettere verdi su fondo nero che si muovono dall'alto verso il basso come in Matrix.
+
+* * *
+
+Ma allora quale nome dovrebbero utilizzare i giornalisti, ma anche noi tutti, quando parliamo di criminali informatici?
+
+Beh una definizione specifica esiste ed è Cracker.[](https://www.educba.com/hackers-vs-crackers/)
+
+Il cracking è rimasto nell'immaginario collettivo legato quasi esclusivamente alla pirateria del software.
+
+Quando qualcuno vuole utilizzare un programma o un gioco commerciale e non lo vuole pagare, ecco che si mette alla ricerca un qualche kit software che permette di aggirare le protezioni implementate dalla casa produttrice e che prende appunto il nome di crack.
+
+La definizione di cracking, però è in realtà molto più ampia e il cracker può essere considerato una sorta di figura duale rispetto a quella dell'Hacker.
+
+Come nel caso di un Hacker, infatti il Cracker è un individuo dotato di conoscenze tecnologiche e capacità fuori dal comune, ma in contrapposizione all'Hacker, le utilizza in modo doloso, unicamente per il proprio tornaconto, e per danneggiare la comunità e favorire se stesso o il proprio gruppo.
+
+Un cracker è colui che piega le regole di un sistema per danneggiarlo, renderlo inutilizzabile o per lucrare, come ad esempio chiedendo riscatti per ripristinare le funzionalità e i dati o compiendo attacchi su commissione o con la pirateria.
+
+Sui giornali si possono trovare tante storie di cracking, anche se, è più difficile individuarle (anche appunto per via dell'eccessivo utilizzo della parola *hacker*).
+
+Ma, come regola generale, quando leggi di complessi e ingegnosi attacchi a strutture nevralgiche di uno stato o di una grande azienda, è probabile che si stia parlando di cracking.
+
+Anche quando un giornalista scrive *Hacking di stato*, spesso andrebbe letto come *cracking*. Anche se qui la distinzione diventa sottile: non dimentichiamo mai che in molti casi, quelli che alcuni chiamano terroristi per altri sono eroi.
+
+* * *
+
+A questo punto, però, è doverosa un'ulteriore distinzione.
+
+Abbiamo assodato che un Hacker non è un criminale. E questo è chiaro.
+
+Tuttavia, mentre possiamo tranquillamente affermare che un Cracker è un criminale che utilizza la tecnologia in modo creativo, perché è proprio questo suo comportamento illegale a trasformarlo da Hacker a Cracker, non possiamo dire lo stesso del contrario.
+
+Cioè non si può affermare l'equivalenza tra criminale informatico (o cyber criminale) e Cracker.
+
+E questa è una distinzione importante da fare, perché al giorno d'oggi, i metodi per delinquere sul Web sono alla portata di tutti.
+
+Pensa al phishing, che è quella pratica di inviare email o sms a qualcuno cercando di imbrogliarlo e spingerlo a rivelare informazioni sensibili come l'accesso ai conti o ad altri servizi.
+
+O pensa ai ramsonware, quei virus che criptano i dati delle povere vittime, alle quali poi viene chiesto un riscatto per avere indietro la chiave di decriptazione.
+
+Sono entrambi meccanismi criminali che si possono mettere su tranquillamente con un computer ed una carta di credito: non è necessaria alcuna capacità particolare, non serve sfruttare una tecnologia in modi particolari, non servono competenze fuori dal comune.
+
+Basta acquistare dei kit online e si è pronti per delinquere. Facile e veloce.
+
+Questo tipo di criminali non sono Cracker, sono semplici criminali che utilizzano Internet e il Web per le loro sporche attività e, per come la vedo io, non meritano una definizione specifica.
+
+D'altronde, un ladro che scippa una persona a bordo di uno scooter non prende il nome di pilota, ma è semplicemente un farabutto a bordo di uno scooter.
+
+Un assassino che spara alla sua vittima con un fucile, no prende il nome di cecchino o cacciatore. Resta un'assassino con fucile.
+
+Allora perché un criminale che opera sul Web dovrebbe essere considerato un Hacker o perfino un Cracker, quando in realtà non dimostra nessuna conoscenza specifica del mezzo?
+
+Resta semplicemente un truffatore, un ladro o un ricattatore che, semplicemente utilizza un mezzo diverso, e cioè Internet, per compiere i propri crimini.
+
+* * *
+
+Ad ogni modo, divagazioni a parte, il riconoscimento del valore sociale degli Hacker è molto importante.
+
+Gli Hacker sono figure positive, colonne portanti dello sviluppo informatico e tecnologico.
+
+A costo di ripetermi, la loro attività in campo di sicurezza informatica è fondamentale per migliorare il mondo digitale in cui viviamo e vivremo sempre più con il passare del tempo.
+
+Consentire ai media generalisti o ai meno informati, di ritrarre gli hacker come equivalenti agli attori criminali rende più difficile il lavoro che questi abilissimi professionisti svolgono ogni giorno.
+
+Nell'aprile del 2019, YouTube ha vietato i video educativi di *Instructional hacking e phishing* marcandoli come contenuti illegali. E demonetizzando i canali, disincentivando di fatto i creatori di contenuti a produrre questo tipo di materiale.
+
+Ma questo tipo di video sono a scopo educativo, servono per formare professionisti e preparare gli utenti su come difendersi da pratiche criminali che diventano giorno dopo giorno sempre più comuni.
+
+In pratica sono state sottratte importanti risorse per lo sviluppo di abili difensori contro i criminali informatici.
+
+È importante che questa tendenza venga invertita. E che i media partecipino attivamente alla rappresentazione accurata della differenza tra hacking e attività criminale.
+
+Usare un linguaggio inesatto e influenzare negativamente la percezione della società serve solo a creare un distanza e avversione tra coloro che contano sulla tecnologia per supportare il loro stile di vita digitale e quelli meglio attrezzati per difenderlo.
+
+* * *
+
+Bene, spero di essere riuscito a spiegarti la mia idea sui concetti di Hacker, Cracker e semplice criminale informatico.
+
+In descrizione, come al solito trovo fonti e approfondimenti sui concetti che ho espresso fin qui.
+
+E a proposito, hai ascoltato la nuova rubrica Snippet, settimana scorsa? È una di quelle novità che ti avevo promesso per questa nuova stagione e che uscirà con cadenza abbastanza regolare fra gli episodi classici.
+
+Quindi, mi auguro che ti sia piaciuta, così come mi auguro che l'episodio di oggi ti sia piaciuto e ti ricordo che se posso produrre questi contenuti, è solo grazie a te che ascolti ed alla community di pensieri in codice che sostiene il progetto.
+
+Scopri come dare una mano anche tu, collegandoti al sito pensieriincodice.it (mi raccomando con 2 i).
+
+Puoi ascoltare gli episodi sulle maggiori piattaforme e app di podcast o riceverli direttamente sullo smartphone iscrivendoti al canale Telegram.
+
+Se Pensieri in codice ti piace, e se sei arrivato fin qui immagino ti piaccia, puoi condividerlo con un amico per farglielo conoscere: farai un favore ad entrambi.
+
+Per oggi è tutto, ti do appuntamento al prossimo episodio e ti ricordo che *un informatico risolve problemi, a volte anche usando il computer*.
+"

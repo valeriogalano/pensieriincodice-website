@@ -1,0 +1,244 @@
+text: "
+Se ci penso mi sento terribilmente vecchio. Ricordo quando non c'era una sola
+auto al mondo capace di tornarsene a casa da sé. Guidavo macchine ottuse e
+senza vita: la mano dell'uomo doveva manovrare continuamente i comandi. E ogni
+anno quelle auto uccidevano migliaia di persone.
+Le automatiche misero fine a quel macello. Il cervello positronico reagiva
+assai più rapidamente di quello umano e si poteva benissimo fare a meno di
+toccare i comandi. Si entrava, si selezionava la destinazione voluta e si
+lasciava fare alla macchina.
+Ora tutto questo ci sembrava naturale, ma ricordo quando uscì la prima legge
+che proibiva alle vecchie auto di correre sulle autostrade e permetteva il
+transito alle sole automatiche. Dio mio, che pieno! Si parlò di comunismo, di
+fascismo... ma le autostrade si liberarono e il massacro cessò.
+Naturalmente le automobili erano cento volte più costose di quelle ordinarie,
+e non molti potevano permettersele. Così l'industria si specializzò nella
+costruzione di omnibus automatici. Si poteva telefonare a una compagnia e
+farsene mandare uno alla porta in pochi minuti. Generalmente bisognava
+viaggiare con altre persone dirette nel medesimo luogo; ma che importava?Tuttavia Samson Harridge si era comprato un'auto personale. Quell'auto non era
+ancora *Matthew* per me allora. Non sapevo che sarebbe poi diventata l'anziana
+della fattoria; sapevo soltanto che stava soffiandomi il posto e la odiavo.
+
+- Ora non avrete certamente più bisogno di me, signor Harridge - dissi quando
+vidi la vettura.
+Lui era già piuttosto vecchio e aveva i capelli bianchi; ma le guance rosse,
+ben rasate, gli davano l'aria di un ragazzino. Ed era uno degli uomini più
+ricchi del Nord America.
+- Cosa diavolo vi mettete in mente, Jake? - disse. - Non credete mica che io
+mi affidi ciecamente a un congegno strano come quello? Voi rimarrete ai
+comandi, come al solito.
+- Ma funziona da sé - dissi io. - Esplora la strada, reagisce agli ostacoli,
+uomini o auto che siano, e ricorda il percorso che deve seguire!
+- Son cose che si dicono... Comunque non mi fido. Voi ve ne starete seduto al
+volante, nel caso che qualcosa non funzioni.
+
+### Asimov aveva predetto
+
+Il brano che ti ho letto nell'introduzione è tratto dal racconto Sally, scritto nel 1953 da Isac Asimov.
+
+Nel racconto, vi è una descrizione di un tipo di guida autonoma che va ben oltre quella a cui possiamo aspirare noi oggi, ma che forse è quel tipo di IA che tanti sognano e si augurano di poter vedere un giorno.
+
+Il cervello positronico descritto da Asimov è molto di più del machine learning, del deep learning o di qualsiasi forma di Intelligenza Artificiale sulla quale si stia lavorando al momento (almeno per quanto ne so io), ma il risultato descritto nel brano non sembra poi così diverso dall'obiettivo degli attuali sviluppi della cosiddetta Guida Autonoma: auto che si guidano da sole, in cui il passeggero deve solo salire, indicare la direzione e, senza svolgere alcun compito specifico, lasciarsi trasportare dal veicolo.
+
+Allo stesso tempo però, anche i sospetti del signor Harridge, sembrano piuttosto attuali, soprattutto per questi anni in cui la Guida Autonoma sta progredendo sì, ma è ben lontana dal raggiungere il livello descritto da Asimov.
+
+Ad ogni modo, se non hai mai letto Sally, ti consiglio di recuperarlo perché può essere molto interessante agli occhi di del lettore contemporaneo, anche alla luce del finale, che per ovvi motivi non ti spoilero. Se ti va, potresti anche ascoltarlo, ti lascio nelle note il link alla versione letta da Rosanna Lia, che mi piace molto come lettrice e sul suo canale, puoi trovare tanti altri racconti interessanti.
+
+### I livelli della guida autonoma
+
+Ma tornando alla nostra realtà contemporanea, come siamo messi con la Guida Autonoma?
+
+Innanzitutto partiamo col dire che la Guida Autonoma è ben suddivisa in 6 livelli di automazione crescente.
+
+Livello 0: nessuna automazione
+
+Livelli 1 e 2: cruise control (accelerazione/frenata, sterzata)
+
+Livelli 3 e 4: traffic jam assist, guida autonoma in condizioni controllate
+
+Livello 5: guida autonoma
+
+1Senza piedi, 2senza mani, 3senza guardare, 4senza pensare, 5senza comandi
+
+E' chiaro che il livello 5 è quello a cui la moderna industria automobilistica aspira e i vantaggi dovrebbero essere ben chiari: un ecosistema di veicoli autonomi collegati fra loro diminuirebbe drasticamente gli incidenti, il consumo di carburante, le code. Concederebbe ai passeggeri tempo per altre attività che non siano la guida: dal lavoro, allo svago.
+
+### Siamo ancora lontani
+
+Purtroppo, però, la strada verso questo traguardo è ancora lunga e non priva di ostacoli.
+
+E a differenza di quanto si potrebbe immaginare, tali ostacoli non sono solo di tipo tecnologico.
+
+Come dico sempre, qui su Pensieri in codice, noi proviamo a capire a grandi linee come funzionano le tecnologie che ci circondano, in particolare al software, ma poi ci interroghiamo spesso anche sul rapporto che queste instaurano con le nostre vite, i nostri comportamenti e le nostre abitudini.
+
+Oggi non parliamo di qualcosa di esattamente attuale o ampiamente diffuso, probabilmente lo sarà in futuro, ma dalle riflessioni che vorrei provare a fare, sono sicuro che tanti fra noi scopriranno che i problemi nel campo della guida autonoma sono tanto tecnologici, quanto anche banalmente umani.
+
+### Guidare non è come giocare a scacchi (Moravec, Kahneman)
+
+Senza dubbio gli ostacoli tecnologici lungo la strada della guida autonoma, ci sono, e uno fra tutti (uno che colpisce inoltre di tutte le IA, in generale) è rappresentato dal paradosso di Moravec.
+
+Magari affronteremo il tema in maniera più approfondita in un altro episodio, ma in due parole, Hans Moravec formulò questo paradosso quando si rese conto che, se paragonate, per l'intelligenza artificiale, le attività di alto livello come giocare a scacchi, identificare oggetti in immagini, e cose simili che associamo ad un certo livello di intelligenza umana, richiedono molta meno potenza di calcolo rispetto a processi di apprendimento elementari come quelli che potrebbe mette in campo un bambino di un anno.
+
+Ora mi rendo conto che, a seconda probabilmente del tuo background, questo paradosso potrà sembrarti piuttosto banale o controintuitivo. Probabilmente la sua spiegazione va ricercata nei milioni di anni di evoluzione del cervello umano che hanno permesso lo sviluppo di una serie di capacità e automatismi, per intenderci quelli meravigliosamente descritti da Daniel Kahneman nel suo best seller Pensieri lenti e veloci, ma in ogni caso, sta di fatto che al momento è molto più complicato per una IA imparare a far camminare un robot umanoide come farebbe un bambino piccolo, piuttosto che imparare a giocare ad un qualsiasi videogame meglio di un qualsiasi campione umano.
+
+Questo paradosso si manifesta largamente in un attività come la guida: per un umano basta qualche giorno di pratica, al massimo qualche settimana, e riesce bene o male ad imparare a guidare un veicolo in modo soddisfacente; la tecnologia della guida autonoma invece, ha cominciato a muovere qualche passo significativo in avanti verso il 2005 e dopo 20 anni quasi, ci sono alcuni casi virtuosi che riescono a muovere veicoli in ambienti controllati o a complessità ridotta e comunque con supervisione umana.
+
+~~Come mai? Perché i ricercatori non sono abb~~
+
+Se proviamo infatti a scomporre l'attività della guida in sotto-attività più semplice. Quindi applichiamo il classico divide-et-impera, proprio come se stessimo progettando un software per risolvere questo problema, ci rendiamo conto che, a differenza di come potrebbe apparire intuitivamente, guidare non è affatto semplice.
+
+Ad ogni istante, infatti, è necessario conoscere informazioni come la destinazione, la strada che porta a tale destinazione, la posizione del nostro veicolo su tale strada, il suo stato di movimento (quindi direzione, velocità, efficienza), lo stato di tutto l'ambiente circostante (compresi ostacoli fissi o mobili, veicoli che vanno nella stessa e in altre direzioni, persone o animali nelle vicinanze) e, basandosi su questi e tanti altri input, decidere se e come cambiare lo stato di movimento: accelerare, decelerare, curvare, lasciare tutto invariato.
+
+Ad un umano, per fare tutto questo, bastano i propri sensi, un minimo di raziocinio e un po' di pratica. Ad una macchina, ovviamente no.
+
+Per ottenere tutte queste informazioni, un algoritmo deve fare affidamento su una lunga schiera di sensori.
+
+Un'auto a guida autonomia, infatti, deve essere equipaggiata con vari radar, GPS, telecamere, accelerometri, lidar (che sono praticamente dei radar che però funzionano con la luce invece che con le onde radio) e, grazie a tutti questi apparecchi è in grado di raccogliere informazioni sulla propria posizione, l'ambiente circostante, la posizione e direzione dei vari oggetti in movimento, la segnaletica, ecc.
+
+Possiamo immaginare che si tratti di terabyte di dati prodotti in brevissimi lassi di tempo che il *cervello* dell'auto (tanto per usare le parole di Asimov) deve costantemente elaborare, scartare, e utilizzare per prendere decisioni. A volte anche a più di 100 chilometri orari.
+
+### Un'insieme di input (Bayes, Cingolani)
+
+Gestire tutti questi volumi e tipologie di input, poi, non è semplice nemmeno dal punto teorico.
+
+Nessuna di queste apparecchiature, da sola è in grado di fornire tutte le informazioni necessarie, quindi i loro flussi di dati vanno, in qualche modo combinati e interpretati perché abbiano un effettivo valore ai fini dei processi di guida.
+
+E cosa accade se un sensore è temporaneamente indisponibile? O è guasto? O invia informazioni non valide?
+
+E cosa fare se due o più sistemi restituiscono informazioni contrastanti fra loro?
+
+La base per gestire tutte queste informazioni e le varie casistiche risiede nel teorema di Bayes.
+
+Si tratta di un teorema matematico fondamentale per tutte le applicazioni di machine learning ma che potremmo riassumere in poche frasi che potrebbero apparire addirittura scontate.
+
+Immagina che un tuo amico ti dica che in una piazza a pochi chilometri da dove vi trovate, c'è un famoso cantante, di cui sei grande fan, che sta tenendo un concerto.
+
+Immediatamente, a seconda di quanta fiducia riponi in questa persona, assegnerai un certo valore di verità alla sua affermazione.
+
+Subito dopo, però, il tuo cervello farà probabilmente una veloce ricerca fra i tuoi ricordi, per verificare, se c'è traccia di un concerto che si sarebbe dovuto svolgere in zona in quei giorni. Se ricordi qualcosa in merito, il valore di verità dell'affermazione, probabilmente aumenterà di molto; in caso contrario diminuirà.
+
+Ma in ogni caso, potresti decidere di recarti sul posto per controllare e allora, nell'avvicinarti alla piazza in questione, inizierai a fare caso al numero di persone in circolazione, all'intensità del traffico, ai suoni che riesci a captare.
+
+Molte persone che vanno tutte nella tua stessa direzione, potrebbero avvalorare la presenza del cantante.
+
+Non sentire musica man mano che ti avvicini alla metà, potrebbe invece indebolire la tua convinzione.
+
+Infine, ad un certo punto arriverai a destinazione e potrai constatare con i tuoi occhi e le tue orecchie la situazione.
+
+Tutte queste informazioni che a poco a poco, mentre le ricevi, fanno variare la probabilità secondo cui il cantante sia veramente lì per un concerto, sono un buon esempio di come è possibile applicare il teorema di Bayes.
+
+A mano a mano che tutti i sensori trasmettono i loro dati, questi vanno a costituire aumenti e diminuzioni di tutta una serie di valori di probabilità, i quali a loro volta determinano posizione, del veicolo, ambiente circostante, ecc.
+
+Beyes stesso inventò un piccolo gioco per descrivere il funzionamento dei suoi studi.
+
+Immagina di essere seduto su una sedia con una lavagna quadrata di fronte e un tavolo quadrato alle spalle.
+
+Ti viene chiesto di lanciare una sfera blu sul tavolo, senza voltarti, e poi provare a marcare una X sulla lavagna per indicare il punto in cui la palla si è fermata.
+
+E' ovvio che sia quasi impossibile indovinare, ma successivamente, potrai lanciare altre palline di colore rosso e, ad ogni lancio, ti verrà comunicato se la pallina iniziale si trova a destra o sinistra o in alto o in basso rispetto alla rossa. A questo punto potrai correggere la posizione della X sulla lavagna.
+
+Continuando a lanciare palline rosse e ricevendo per ciascuna di esse, la posizione relativa della pallina blu, a lungo andare, la posizione della X sulla lavagna diverrà sempre più simile alla posizione reale della pallina blu.
+
+Ecco, spero di essermi spiegato a dovere, ma il concetto che voglio esprimere è che, grazie al teorema di Bayes, dati come la posizione dell'auto, vengono calcolati esattamente in questo modo: come riassunto delle approssimazioni successive di informazioni che arrivano continuamente da tutti i sensori coinvolti.
+
+Messa così, forse non sembra più così strano che serva una enorme potenza di calcolo, non credi?
+
+~~A questo proposito, ho trovato anche illuminante un piccolo libro di Roberto Cingolani dal titolo L'Altra Specie. All'epoca della pubblicazione, nel 2015, Cingolani era direttore dell'Istituto Italiano di Tecnologia di Genova (non so sinceramente se ricopra ancora quel ruolo) e in questo volume, risponde ad una serie di quesiti di robotica e intelligenza artificiale.~~
+
+~~Il fisico descrive il processo con il quale vengono progettati i robot presenti all'istituto ed espone~~
+
+~~Il cervello umano, si è evoluto per funzionare in acqua (raffreddamento)~~
+
+~~L'altra specie e ia impossibile~~
+
+### Casi eccezionali e comportamenti eccezionali
+
+Ora però, fingiamo che i problemi tecnologici siano stati superati e che diventi disponibile la guida autonoma di livello 5. Come dovrebbero comportarsi delle auto senza comandi nel mondo reale? Nel rapporto con l'ambiente circostante, le persone, gli animali?
+
+Sono sicuro che ti sarà già venuto in mente il dilemma del tram, o del carrello, o del treno, l'ho sentito enunciare in vari modi, quell'esperimento mentale che si chiede se, in caso di incidente inevitabile da parte di un tram sia meglio salvare i passeggeri o i pedoni o un pedone che a sua volta è un medico e salva altre vite, ecc.
+
+E no, non mi riferisco a questo. Sinceramente trovo questo tipo di domande non fondamentali in questo momento. Poi, onestamente, si tratta di un dilemma a cui non si è in grado di trovare una risposta per un tram, e quindi non credo sia compito di chi sviluppa un software trovale sa soluzione a questo problema. Sono sicuro che, una volta scelto cosa è più giusto, ci saranno programmatori ben lieti di implementarne una versione algoritmica.
+
+Su questo argomento, mi è piaciuta moltissimo la puntata del disinformatico Story intitolataI *dilemmi delle auto autonome *. Quindi te la lascio in descrizione e chiudo qui la questione.
+
+No, quindi, dicevo, io mi riferisco proprio a comportamenti che vediamo tutti i giorni.
+
+Sappiamo già che le auto attuali anche di livelli 3 o 4, sono in grado, da sole, di non investire persone o di evitare ostacoli, ma il problema, forse, è più su ciò che non si può prevedere e per cui può diventare difficile lasciare sufficienti margini di manovra al sistema automatico.
+
+In generale, un qualsiasi software, anche implementato tramite machine learning, rispetta in modo ferreo tutte le regole che gli vengono imposte.
+
+Ammettiamo anche che, in un mondo come quello descritto da Asimov, tutti i veicoli siano a guida autonoma, quindi stiamo già escludendo casi in cui l'auto che arriva in senso contrario ci venga addosso o faccia manovre pericolose o insensate, ma se, ad esempio, semplicemente ci fosse un auto in panne nella nostra corsia?
+
+Il nostro codice della strada, dice che non si può sconfinare se le corsie sono separate da due strisce continue. Quindi? L'auto autonoma resterà per ora in fila dietro a un veicolo in panne?
+
+Oppure, in casi ancora più particolari: magari c'è un semaforo rosso, ma l'auto si deve spostare per far passare un mezzo di soccorso, per far spostare una persona ferita.
+
+O ancora, ci potrebbe essere un pericolo imminente molto vicino, magari un incendio del mezzo avanti a noi. Cosa deve fare il pilota autonomo? A marcia indietro sulla corsia non si può andare e di certo non sarebbe una manovra facilmente comprensibile alle altre vetture.
+
+Certo, si potrebbe pensare di risolvere tutto interconnettendo tutte le vetture, ma se il problema fosse umano o animale, insomma un problema non direttamente connesso alla guida ma al comportamento di un soggetto esterno?
+
+Come si dovrebbe comportare l'IA se al centro della corsia c'è un ciclista che va a 10 chilometri orari? O peggio, un pazzo che è seduto sull'asfalto?
+
+Si potrebbero vietare queste attività, ma sappiamo bene che *divieto di fare una cosa* non vuol dire veramente che *nessuno la farà mai*.
+
+Se arrivasse qualcuno a chiedere alle auto di spostarsi per un emergenza *analogica*, diciamo così?
+
+Queste, secondo me, sono il tipo di domande che rappresentano ancora un altro tipo di limite, un limite a cavallo tra il campo della tecnologia e quello del comportamento umano.
+
+Teoricamente, se potessimo applicare il concetto di guida autonoma ad un ambiente chiuso, senza interventi esterni, non avremmo problemi di questo tipo, ma purtroppo così non è.
+
+Le auto devono circolare nel mondo reale e nel mondo reale possono accadere cose difficili da prevedere.
+
+### Guida autonoma vs Guida tradizionale
+
+Personalmente, non ho dubbi che prima o poi si arriverà alla guida autonoma totale è completa. Il problema non è SE, il QUANDO probabilmente è relativo, ma la cosa veramente interessante è il COME.
+
+Gli attuali esempi di guida autonoma, sono autonomi solo grazie ai vincoli imposti all'ambiente circostante. Si muovo all'interno di aree specifiche, in orari prestabiliti e sotto supervisione umana.
+
+Il livello 4 è stato raggiunto e il livello 5, quello completo, non è esattamente vicino, e ottenerlo sembrerebbe solo questione di tempo.
+
+Ma, nel mezzo, io ci vedo alcuni limiti dell'essere umano che vive questa transizione.
+
+Prova a pensarci, tutti gli sforzi della ricerca e dell'industria, sembrano volti a inserire la guida autonoma all'interno del nostro attuale status quo.
+
+La retorica, quella del marketing, degli annunci roboanti e delle ricerche di capitali, sembra essere quella di portare per gradi le auto autonome all'interno del traffico ordinario, di trasformare pian piano un mezzo di trasporto in manuale in qualcosa che non ha più bisogno nemmeno dei comandi.
+
+Ma gli umani che le guideranno nel frattempo, quelli che guideranno nell'altra corsia, quelli che dovranno supervisionare, saranno in grado di adattarsi alla velocità necessaria?
+
+Da qualche parte, una volta, ho letto che è più probabile fare un incidente alla guida se si è vicino casa rispetto a quando si è lontano dalle zone conosciute.
+
+Non so se sia una statistica vera, però almeno per la mia esperienza, sembra più che sensata. Io stesso mi accordo di essere molto più attento e concentrato nella guida, quando sono in una zona che non conosco, mentre quando sono dalle mie parti, mi permetto il lusso di non fare troppa attenzione ai segnali, che conosco a memoria, o di distogliere per qualche attimo lo sguardo dalla strada quando so che da una certa traversa difficilmente uscirà qualcuno.
+
+Non è esattamente distrazione, è più una questione di eccessiva sicurezza che mi fa pensare di potermi distrarre.
+
+Ora, immagina di essere alla giuda di un auto che può percorrere 400 km di autostrada senza che tu debba mai toccare il volante o i pedali. Alla velocità di 100 km orari, sono 4 ore di viaggio nelle quali non ti viene richiesto di fare nulla se non sorvegliare l'auto. Pensi davvero che riusciresti a mantenere un'attenzione alta e costante?
+
+E se dopo quei 400km si verificasse un'emergenza? Pensi che saresti pronto a prendere i comandi e sterzare per evitare qualcosa che l'auto non ritiene di dover evitare? Io sinceramente no. Credo che dopo 4 ore starei dormendo.
+
+So che le auto realmente in commercio hanno una serie di sistemi per evitare distrazioni, ma come dicevo, è difficile prevedere tutte le eventualità. E quindi, se vai su Youtube puoi trovare video di persone che spiegano come *imbrogliare* il controllo che la Tesla fa sullo stato del conducente, ad esempio.
+
+E il discorso potrebbe essere ancora esteso: se fossi chiamato a gestire un'emergenza dopo 4000km di marcia autonoma? O dopo 40000?
+
+Magari hai percorso 400k km con le mani sul volante e hai comprato un'ottima auto che non ha mai richiesto il tuo intervento per, chessò, 1 anno.
+
+Dopo un anno senza guidare, c'è un problema. Sarai in grado di gestire un'emergenza all'improvviso?
+
+E i neopatentati? Avranno mai l'esperienza necessaria per arrivare a gestire un caso particolare?
+
+### Conclusione
+
+Nonostante tutto, l'ho già detto, io sono convinto che la guida autonoma prima o poi diverrà realtà e i suoi lati positivi saranno notevoli, senza dubbio varranno anche la pena di affrontare tutti i problemi che ti ho descritto finora e molti altri che non mi sono venuti in mente e nemmeno immagino.
+
+Non dobbiamo, però, cadere nella retorica sensazionalista dei media e delle aziende. Quella disponibile al momento non è vera guida autonoma, più che altro si può definire guida assistita e non permette di distrarsi, se non in alcuni rari casi.
+
+Senza dubbio avere grandi aspettative è giusto e importante, ma valutare le cose che ci circondano e, perché no, quelle che ci vogliono vendere, secondo me, dobbiamo sempre usare la testa il più possibile.
+
+Bene, spero di averti dato qualche spunto interessante. Ti ricordo che non sono un esperto di guida autonoma, ho solo messo insieme qualche riflessione in base a informazioni, lette, ascoltate o viste negli ultimi tempi.
+
+Per il resto, oggi niente discorsetto: so che sei una persona intelligente sai già che bisogna condividere come seguire e tutto il resto.
+
+Voglio soltanto dire una cosa: ovviamente anche io so e sto seguendo quello che sta accadendo in questi giorni ho scelto volutamente di non parlarne e di non fare nessun tipo di riferimento.
+
+Tuttavia c’è gente che sta facendo un gran lavoro secondo me di informazione, come ad esempio liberi oltre, per cui ne parlo solo per lasciarti in descrizione il link ai loro canali youtube e twitch e penso che almeno nel breve periodo non farò più alcun tipo di riferimento alla questione.
+
+Quindi come al solito ti ringrazio per aver ascoltato fin qui ti do appuntamento al prossimo episodio e ti ricordo che *un informatico risolve problemi a volte anche usando il computer*.
+"

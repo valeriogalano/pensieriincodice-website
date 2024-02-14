@@ -1,0 +1,165 @@
+text: "
+# Inizio seconda parte
+
+Ci siamo lasciati l'ultima volta, dopo esserci raccontati la prima parte della vita della diva del cinema degli anni '30 e '40, Hedy Lamarr, nonché gli eventi e gli incontri che, a mio giudizio, di più hanno contribuito alla maturazione delle sue idee in campo tecnologico.
+
+Come vedremo fra poco, la Lamarr è stata, sì, un personaggio molto conosciuto nel mondo del cinema, ma è stata fondamentale anche per la nascita di quella stessa tecnologia wireless che noi ogni giorno utilizziamo all'interno di moltissimi dei nostri dispositivi elettronico. E ciò non sarebbe di certo stato possibile se lei non avesse vissuto la vita che ha vissuto, se non avesse potuto vantare quella sua intelligenza e quelle sue particolari attitudini e se non avesse incontrato tutta una serie di singolari personaggi.
+
+Pertanto, se non hai già ascoltato la prima parte di questo podcast, ti consiglio assolutamente di recuperarla perché contiene molti passaggi indispensabili per capire quando ti racconterò a breve. Trovi il link in descrizione.
+
+Se invece siamo pronti per iniziare, e so che lo sei perché in tanti mi hanno scritto chiedendomi quando sarebbe uscita questa seconda parte, beh... non ci resta che... lanciare la sigla!
+
+# Il brevetto Lamarr-Antheil
+
+Tornando alla nostra storia, siamo a cavallo tra gli anni '30 e '40 del secolo scorso, e dunque in un periodo di profonda instabilità internazionale. La guerra imperversa sulla terraferma, in cielo, ma anche e soprattutto in mare, dove la pericolosità dei sommergibili tedeschi appare più che evidente.
+
+Un episodio emblematico è quello della nave olandese Volendam diretta a New York, carica di quasi novecento persone tra cui trecentoventi bambini, che viene attaccata da un U-Boot tedesco. Anche senza causare in realtà gravi conseguenze, ci sarà un'unica vittima, il fatto stesso scuote enormemente l'opinione pubblica americana.
+
+Per ciò che riguarda la guerra in mare, poi, dal punto di vista tecnologico, tra le armi più utilizzate, più costose e paradossalmente più inefficienti del momento ci sono, proprio i siluri. Questi, infatti, costano svariati milioni di dollari, e al tempo stesso sono molto imprecisi, anche perché l'attuale sistema di guida via radio è molto rudimentale e facile da disturbare.
+
+Pertanto appare chiaro a tutti che un notevole vantaggio tattico in questa guerra potrebbe derivare proprio da un sistema di guida più robusto, a prova di intercettazione. E il Secret Communication System, questo il nome con cui verrà battezzato nel brevetto, ideato da Hedy Lamarr e poi ingegnerizzato da George Antheil è proprio quel che servirebbe per influenzare pesantemente le sorti del conflitto.
+
+Come abbiamo già accennato, non sappiamo se l'attrice abbia mai sentito discutere di un sistema di guida del genere negli incontri che il marito austriaco, mercante d'armi, teneva con i propri clienti, o se abbia sottratto dei documenti tecnici e progetti durante la fuga, o se abbia preso appunti di suo pugno, o se semplicemente avesse una buona memoria. Fatto sta che la sua invenzione riguarda proprio un sistema di comunicazione avanzato per la guida dei siluri.
+
+La geniale idea alla base del Secret Communication System è quella di servirsi di un concetto denominato frequency hopping.
+
+Questa tecnica, strategia, o algoritmo, che dir si voglia, a livello concettuale, in fin dei conti è piuttosto semplice e consiste nell'inviare un segnale radio saltando velocemente da una frequenza all'altra. In tal modo il segnale viene spezzettato in varie trasmissioni su più canali rendendo di fatto impossibile disturbarlo. Affinché tutto ciò possa funzionare, chiaramente sia il trasmettitore che il ricevitore si muovono tra le frequenze rispettando i medesimi tempi ed il medesimo ordine di salto.
+
+In pratica, se questo sistema fosse stato applicato alle dotazioni militari, sarebbe stato possibile pilotare un siluro trasmettendo dalla nave un segnale che avrebbe cambiato frequenza ogni pochi istanti. Il siluro avrebbe ricevuto i comandi su una lista di frequenze ben definite e ordinate secondo una certa logica, in una sequenza pseudo-casuale utilizzata contemporaneamente sia dalla trasmittente che dal ricevitore.
+
+Da un punto di vista concettuale, quello che Hedy e George hanno ideato è, di fatto, un precursore dello Spread Spectrum, il sistema che tutt'oggi è alla base delle comunicazioni wireless più diffuse: smartphone, schede Wi-Fi, ricetrasmittenti. Il nome Spread Spectrum sta proprio ad indicare che l'informazione trasmessa viene spalmata (spreaded) sull'intero spettro delle frequenze disponibili.
+
+Ma come si poteva, negli anni 40, senza microchip o transistor, realizzare un meccanismo del genere e montarlo a bordo di un siluro? Beh questa seconda parte del progetto del Secret Communication System è sicuramente da accreditare a George Antheil.
+
+Il musicista infatti, come abbiamo già detto, era anche un abilissimo inventore di strumenti musicali automatici, qualcosa che ricordava molto, ad esempio, ai pianoforti dei saloon che suonavano da soli senza bisogno di chi pigiassero realmente i tasti. E per far funzionare queste sue creazioni e premettergli di eseguire tutta una serie di melodie diverse, George utilizzava un sistema semplice quanto ingegnoso: una serie di carte forate.
+
+In pratica, gli strumenti erano dotati di rulli che facevano scorrere delle strisce di carta forata. In questi fogli, i vari fori rappresentavano le varie note da suonare. Qualcosa di molto simile ai rulli dentati dei carillon, in cui ogni dentino fa suonare una certa nota. Cambiando il rullo di carta forata si istruiva lo strumento a suonare una diversa melodia.
+
+L'idea per l'applicazione militare, era appunto quella di dotare sia i siluri, sia le navi di un meccanismo simile a quello del pianoforte automatico, solo che i fogli forati, invece di indicare le note, avrebbero indicato le frequenze da utilizzare per la trasmissione dei comandi di guida. Se trasmittente e ricevente fossero stati dotati di fogli con gli stessi fori e li avessero fatti scorrere contemporaneamente, allora si sarebbero sintonizzati automaticamente all'unisono sulle stesse frequenze.
+
+I due motori a velocità costante che avrebbero mosso i rulli, sarebbero stati attivati contemporaneamente grazie ad un meccanismo a strappo che sarebbe entrato in funzione sempre automaticamente nel momento in cui il siluro si fosse separato dalla nave.
+
+In un primo momento tutto sembra andare per il meglio e l'idea sembra viaggiare a gonfie vele verso una vera applicazione. Nel dicembre del 1940, Hedy e George inviano persino una descrizione delle loro idee al National Inventors Council e il direttore dell'ufficio li incoraggia a proseguire il loro lavoro in vista del brevetto che viene poi effettivamente approvato nell'agosto del '42. Tuttavia, quando il progetto viene finalmente sottoposto al vaglio della Marina degli Stati Uniti, la risposta ottenuta risulta assolutamente deludente: il sistema risulta essere inutilizzabile perché troppo ingombrante.
+
+Le motivazioni ufficiali del rifiuto sono quindi piuttosto esplicite, ma gli stessi protagonisti della storia e i poi successivi studiosi della vicenda, nutrono vari sospetti sul fatto che le regioni effettive siano ben diverse.
+
+Secondo lo stesso George Antheil, il fatto che loro abbiano parlato, nella descrizione del meccanismo di *pianoforte automatico* e che i due siano molto conosciuti per lo più come un musicista ed un'attrice, piuttosto che come ingegneri, abbia determinato un moto di stizza nell'impiegato che si è trovato a valutare il brevetto.
+
+Secondo Edoardo Segantini, invece, autore della biografia Hedy Lamarr, la donna gatto, il brevetto era così avanti, dal punto di vista tecnologico, rispetto ai tempi da far si che le potenzialità superassero il limite della comprensione dell'impiegato di turno.
+
+Secondo lo scienziato Robert Price, ancora, il motivo reale del rifiuto è invece da ricercare nello status della Lamarr. Da alcuni documenti collegati al brevetto, infatti, emerge che l'attrice è stata classificata dal governo degli Stati Uniti come Enemy Alien, cioè come un soggetto poco affidabile e da tenere lontano da tutte le questioni strategiche e militari, per via delle sue origini austriache.
+
+In ogni caso, quale che sia il motivo reale, con questo rifiuto, l'invenzione di Hedy e George, il Secret Communication System, sembra proprio essere finita per sempre.
+
+# Sylvania e Cuba
+
+Intanto gli anni passano e la carriera dell'attrice procede per la sua strada, arriva al suo apice ed inizia a volgere al declino, ma nel 1957 accade un evento che riporta in auge l'idea del frequency hopping, cioè proprio quel concetto che è alla base del brevetto Lamarr-Antheil.
+
+La divisione ingegneristica della Sylvania Electronics Systems di Buffalo, infatti, progetta e realizza una versione più avanzata della soluzione descritta dai due artisti, rimpiazzando il sistema meccanico dei rotoli forati con un modernissimo ritrovato della tecnologia (il cui primo prototipo era stato prodotto solo nel '47, cioè 5 anni dopo l'approvazione del brevetto). Questa avanzatissima tecnologia è il transistor.
+
+Il risultato di questo aggiornamento è un sistema molto più compatto e versatile di quello descritto nel brevetto, molto più utilizzabile, ma che in fin dei conti si basa esattamente sulle stesse idee e sugli stessi principi.
+
+Purtroppo per loro, però, sembra che né Hedy né George, che morirà 2 anni dopo, siano stati messi a conoscenza di queste evoluzioni. Almeno non fino al 1962, anno nel quale il sistema di guida viene rivelato al grande pubblico, 3 anni dopo la scadenza del brevetto originale.
+
+In realtà, esistono documenti che attestano che il lavoro dei due, quello definito inutilizzabile dalla Marina Militare, sia stato impiegato già prima del '57, ad esempio per la giuda di droni. Ma in ogni caso, riconosciuta o meno, già allora appare chiaro che l'idea del frequency hopping avrà effetti inimmaginabili sulle sorti del Mondo.
+
+Il 1962, infatti, è l'anno della crisi dei missili di Cuba. Due settimane tristemente famose durante le quali la situazione diventa davvero tesa, un contesto in cui la capacità di rendere le proprie comunicazioni non intercettabili e non disturbabili, torna ad essere un argomento fondamentale.
+
+E il sistema di trasmissione della Sylvania, basato, come dicevamo, sul brevetto Lamarr-Antheil e denominato Blades, implementa proprio questa importante funzionalità, incorporando appunto il meccanismo del salto su un ampio numero di frequenze (lo Spread Sprectrum frequency hopping).
+
+Altra nota importante, questa versione aggiornata del sistema di controllo implementa anche un modernissimo algoritmo di ridondanza del dato, fondamentale per la correzione dell'errore.
+
+Tale algoritmo trasmette dei dati aggiuntivi rispetto alle sole informazioni inviate e, così facendo, in caso di malfunzionamenti, questi dati ridondanti possono essere utilizzati per ricostruire eventuali parti di messaggio danneggiate o non pervenute. L'efficienza dell'algoritmo di Blades, tra l'altro, è altissima per il periodo: si parla della capacità di ricostruire fino al 33% di informazione persa.
+
+Grazie a questa evoluzione del Secret Communication System, comunque, le comunicazioni delle forze degli Stati Uniti risultano sia impossibili da intercettare, sia resistenti a disturbi e malfunzionamenti.
+
+Ma non finisce qui: successivamente lo Spread Spectrum viene impiegato anche per le comunicazioni con sommergibili armati con testate nucleari, per un sistema di boe di intercettazione in mare chiamato Sonobuoy e per la comunicazione con aerei spia militari della Aerojet. E siamo appena agli anni '60.
+
+# Il declino della diva e la riscoperta dell'inventrice (e dell'invenzione)
+
+Mentre, però, le forze armate traggono vantaggio dall'applicazione in vari campi dello Spread Specrtum, George è scomparso e la carriera d'attrice di Hedy è in caduta libera.
+
+La televisione inizia a diffondersi nelle case degli americani e l'attrice tenta, un po' come tutti all'epoca, un passaggio dal grande al piccolo schermo. Senza riscuotere, però, eccessive fortune. Poi attraversa vari altri matrimoni, praticamente tutti fallimentari: alla fine arriverà a totalizzarne ben 6 con altrettanti divorzi. Iniziano anche a manifestarsi i problemi mentali, sotto forma di stati di confusione e cleptomania. A ciò si aggiunge la semi-cecità causata da una crescente cataratta. E come se non bastasse, Hedy resta coinvolta in un buon numero di cause legali, molte da lei stessa intentate, di cui ben poche si riveleranno in qualche modo fruttuose.
+
+Ma mentre la Lamarr diva si incammina ormai verso il tramonto, per la Lamarr inventrice il Fato ha ancora qualche soddisfazione nascosta dietro l'angolo.
+
+Il 12 marzo del 1997, infatti, a ben 55 anni dalla registrazione del brevetto, la Electronic Frontier Foundation (Eff) conferisce, quasi a sorpresa, ad Hedy e George il premio Pioneer Award per l'invenzione del Frequency Hopper Spread Spectrum. E, tanto per confermare del carattere intramontabile della diva, alla ricezione della notizia del premio, la ormai ottantatreenne Hedy risponde con un simpatico: *era ora*.
+
+In effetti, però, è vero: nel corso degli anni, l'idea del Frequency Hopper Spread Spectrum è stata impiegata per innumerevoli applicazioni tecnologiche. Di alcune abbiamo già accennato, di altre parleremo più approfonditamente a breve. E, per inciso, è un vero peccato che Hedy e George non abbiano rinnovato la licenza del brevetto. Anche pochi anni, infatti, gli avrebbero fruttato cifre impensabili. Secondo l'autore della biografia ufficiale di Hedy, negli anni della moderna telefonia, i diritti avrebbero avuto un valore di circa 166 miliardi di dollari l'anno e parliamo di una stima fatta più di 10 anni fa.
+
+Ma, ad ogni modo, così non è stato e dopo gli impieghi militari negli anni '60 e '70, a partire dagli anni '80 prende il via anche un altro movimento tecnologico che fonda le proprie basi sull'idea del Frequency Hopper.
+
+Il colonnello David Hughes, una figura che tutt'oggi è leggendaria nel panorama statunitense, sfrutta, infatti, questo algoritmo per portare avanti un'opera di spinta tecnologica senza precedenti, per l'epoca.
+
+Siamo appunto nei primi anni '80: Internet inizia appena a diffondersi al di fuori degli ambienti militari e della ricerca scientifica ed il colonnello Hughes, che una volta andato in pensione dall'esercito ha fondato una sua azienda di consulenza in ambito informatico e di telecomunicazione, si lancia nel promettente ramo dei collegamenti wireless.
+
+Il merito di quest'uomo è sicuramente quello di aver capito quasi da subito che il collegamento senza filo, data la sua maggiore semplicità e i costi più contenuti, è la tecnologia che diventerà la più diffusa nell'ambito delle comunicazioni e della trasmissione dei dati.
+
+Hughes inizia quindi a offrire servizi per la connessione wireless ad Internet nelle scuole, negli uffici pubblici e nelle aziende. E, al tempo stesso, inizia una battaglia ideologica e logistica per portare il collegamento anche nelle zone meno popolose del Colorado quelle in cui, per questioni di costi e scarsità di utenti, le grandi aziende non hanno alcun interesse a portare i collegamenti via cavo alle piccole comunità.
+
+Tutta la tecnologia wireless venduta e installata da Hughes si basa appunto su una versione di Frequency Hopper Spread Spectrum molto simile a quella ideata da Hedy e George.
+
+È dunque per questo motivo che, quando nel 1997 la Electronic Frontier Foundation avvia la ricerca per i candidati al premio Pioneer Award, Hughes, considerato appunto un paladino della libertà di Internet, che ha fatto tanto per ridurre il digital divide all'interno della popolazione del Colorado, vuole proporre proprio Hedy Lamarr e George Antheil, riportando così alla ribalta le loro anime da inventori.
+
+A questo primo, inaspettato, riconoscimento ne seguiranno poi molti altri, tra cui il più prestigioso e forse più apprezzato dalla stessa inventrice: la medaglia Viktor Kaplan, massimo riconoscimento della sua nazione d'origine, assegnato dall'Accademia Austriaca delle Scienze.
+
+# Il Frequency Hopper spread spectrum
+
+Come abbiamo detto già più volte, tra le più importanti e famose applicazioni del Frequency Hopper spread spectrum, ci sono dunque la telefonia mobile e i collegamenti wireless più diffusi. Ma in che modo questo semplice quanto geniale algoritmo contribuisce far funzionare le nostre moderne comunicazioni? E quali sono i vantaggi dati dal suo utilizzo?
+
+Beh, innanzitutto diciamo che il Frequency Hopping è, in realtà, una delle varianti della tecnica spread spectrum. E, in particolare, quella variante che rende possibile la coesistenza di più reti wireless e più device ad esse collegate all'interno di una stessa area geografica.
+
+Il meccanismo dello spread spectrum, lo abbiamo già detto, consiste essenzialmente nel suddividere una trasmissione radio su un ampio raggio dello spettro delle frequenze disponibili. E nella sua versione Frequency Hopper in particolare, ciascuna porzione di messaggio viene inviata *saltando*, appunto, tra una frequenza e l'altra secondo un preciso ordine e durante precisi lassi di tempo, le cui caratteristiche sono state precedentemente condivise tra il dispositivo che trasmette e quello che riceve.
+
+Volendo fare un semplicissimo esempio, possiamo immaginare di dover comunicare con un'altra persona tramite una ricetrasmittente CB, una di quelle radio che sono montate comunemente sulle motrici dei camion che vediamo in autostrada, per intenderci.
+
+Quando sintonizziamo un CB su uno specifico canale e poi premiamo il pulsante e parliamo, le nostre parole vengono ricevute e riprodotte da tutti i dispositivi, dello stesso tipo, sintonizzati sullo stesso canale nel raggio di qualche chilometro. Si tratta di quella che normalmente viene definita una trasmissione broadcast in chiaro.
+
+Ma se volessimo sfruttare questa stessa tecnologia per comunicare senza però farci ascoltare e comprendere da altre persone in possesso della stessa tipologia di radio, potremmo accordarci preventivamente con il nostro interlocutore su di una lista di canali da utilizzare. Un algoritmo semplicissimo che potremmo utilizzare è ad esempio questo: dopo ogni parola pronunciata da uno dei due, entrambi ci sintonizziamo sul canale successivo della lista.
+
+Ad esempio: io trasmetterei *ciao* sul canale 7 e poi entrambi passeremmo al 12. Tu risponderesti *ciao* a tua volta e entrambi passeremmo al canale 16 e così via. All'esaurimento dei canali nella lista potremmo banalmente ripartire da capo. In questo modo, avremmo implementato un semplicissimo esempio di Frequency Hopper spread spectrum.
+
+Tornando, quindi, al funzionamento di Wi-Fi, poiché una banda di frequenza può essere suddivisa in sottobande, in un'implementazione reale del Frequency Hopper, i dispositivi, mentre comunicano, cambiano rapidamente le loro frequenze in modo sincronizzato (parliamo di salti misurabili in millisecondi) restando così sempre connessi e subendo minime perdite di informazioni. Naturalmente, grazie agli algoritmi di correzione degli errori, a cui abbiamo già accennato prima e di cui abbiamo già parlato in modo più approfondito nell'episodio intitolato proprio *Algoritmi di correzione degli errori*, queste perdite di informazioni vengono ridotte drasticamente o addirittura azzerate aggiungendo dei dati ridondanti che possono ricostruire eventuali parti del messaggio danneggiate.
+
+Il Frequency Hopping offre quindi tutta una serie di vantaggi rispetto alle trasmissioni a frequenza fissa: innanzitutto, come già detto, le trasmissioni spread spectrum sono resistenti alle interferenze, sia quelle esterne dovute ad altre trasmissioni presenti nella stessa area, sia quelle generate dagli stessi dispositivi durante le fasi intense di comunicazione.
+
+In secondo luogo, i dati trasmessi sono molto difficili da intercettare se non si conosce già il pattern dei salti concordati tra i due dispositivi connessi.
+
+Rifacendoci sempre al nostro esempio di poco fa, chiunque sarebbe in grado di ascoltare casualmente una delle parole che ci scambiamo, ma se questa stessa persona non è a conoscenza della nostra lista completa dei canali che utilizzeremo, non riuscirà mai a seguirci nei vari salti e ad ascoltare l'intero discorso.
+
+Per lo stesso motivo, poi, è anche molto difficile interferire con una trasmissione che utilizza il Frequency Hopping. Per ottenere un qualche risultato, sarebbe infatti necessario disturbare in sequenza le frequenze utilizzate o al più disturbarle tutte contemporaneamente per un certo lasso di tempo. Certo si può interferire a tappeto con ogni trasmissione radio in una data area, ma questo è un altro tipo di discorso.
+
+E infine, un altro enorme vantaggio è che con un segnale trasmesso utilizzando il FHSS è possibile condividere bande di frequenza fra più trasmissioni da parte di dispositivi diversi senza generare interferenze significative fra le stesse.
+
+Questa può sembrare un'affermazione banale ma, in realtà, è il motivo principale per cui noi oggi siamo in grado di utilizzare la telefonia mobile e il Wi-Fi in zone con alta densità di dispositivi connessi. Se tutti questi dispositivi non fossero in grado di spartirsi automaticamente ed efficientemente le frequenze per comunicare con le antenne telefoniche o con i router Wi-Fi, si genererebbe una tale mole di interferenze che renderebbe praticamente impossibile qualsiasi invio o ricezione.
+
+Ogni trasmissione da parte di un telefono cellulare o una scheda di rete wireless contiene un codice pseudo-casuale e il dispositivo ricevente, dall'altra parte, sa come decifrare questo codice per capire quali bit sono destinati a quello specifico telefono e quali ad altri; e così usa proprio quelle specifiche posizioni per ricevere e inviare i dati. E la cosa più sorprendente è che ogni messaggio spedito viene spostato rapidamente lungo questo canale di trasmissione per migliaia di volte al secondo.
+
+# La riscoperta dell'inventrice
+
+E questa è dunque la storia di come un'attrice austriaca, divenuta famosa negli Stati Uniti per le sue doti artistiche, abbia, nel frattempo, anche contribuito con un'idea geniale alla nascita di una tecnologia che, di fatto, muove il mondo così come noi oggi lo conosciamo.
+
+Una bambina che declamava poesie in piedi sulla scrivania del padre, così come era in grado di smontare e rimontare un carillon alla tenera età di 5 anni.
+
+Una ragazza che fin da piccola sognava di fare la storia del cinema, ma che era dotata anche di una mente brillante e curiosa.
+
+La donna che ha recitato in alcuni film che sono rimasti nella storia, così come ha ispirato personaggi iconici come la Biancaneve di Disney e la Catwoman di Hathaway.
+
+Il successo nel mondo del cinema non ha soffocato una fervida inventiva che, oltre al Frequency Hopper, ha portato alla luce anche tante altre invenzioni: un modello evoluto di semaforo, una pastiglia effervescente per rendere le bevande gassate, un supporto per i disabili per l'accesso al bagno, un modello di ali per aeroplani che permettessero di raggiungere velocità superiori di quelle ad esso contemporanee.
+
+Insomma, Hedy Lamarr è stata sicuramente un personaggio piuttosto singolare del panorama informatico, probabilmente unica nel suo genere. Eppure, fino a pochi anni fa, era considerata *solo* (si fa per dire) una diva di Hollywood.
+
+# Conclusione
+
+Ovviamente la vita di Hedy Lamarr è stata molto più piena e sfaccettata di quanto io ti possa raccontare in un podcast. Ho tentato di concentrarmi su tutti quei passaggi che ritenevo fossero collegati alla nascita del Wi-Fi, ma nel farlo ho, per forza di cose, tralasciato tanti altri eventi interessanti riguardanti il cinema, la carriera e la vita di questa stupefacente inventrice.
+
+In descrizione troverai tutte le fonti che ho utilizzato per mettere insieme queste informazioni, compresa la biografia di Segantini, che personalmente ho trovato interessantissima e che ti consiglio assolutamente di leggere. Sono certo che ti farà anche venir voglia di vedere (o rivedere, magari) qualche vecchio film.
+
+Prima di lasciarti voglio ricordarti che Pensieri in codice è un podcast indipendente e come tale si basa sul tuo sostegno per crescere e migliorare. E a questo proposito, ringrazio la persona che questa settimana ha donato 10 euro, che è alla sua seconda donazione ma preferisce rimanere anonima.
+
+Per contribuire anche tu a mantenere in piedi questo progetto, collegati al sito pensieriincodice.it e consulta la sezione Sostieni. Ah e poi condividi gli episodi: sui tuoi social, certo, ma soprattutto falli ascoltare a qualcuno a cui pensi che possano piacere. Ogni nuovo ascoltatore è una spinta per me ad impegnarmi sempre di più.
+
+E con questo dire che per oggi è tutto. Spero come al solito di averti portato dei contenuti interessanti e ti invito sempre a fare un giro sul sito (lo ripeto) pensieriincodice.it per ascoltare gli altri episodi, per saperne di più sul progetto, per i link alla community e tutto il resto.
+
+Noi ci sentiamo la prossima settimana con un nuovo episodio e tu non dimenticare mai che *un informatico risolve problemi, a volte anche usando il computer*.
+"

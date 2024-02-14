@@ -1,0 +1,175 @@
+text: "
+### Introduzione
+
+La crittografia è uno strumento essenziale per far funzionare il mondo, soprattutto, quello digitale, così come lo conosciamo.
+
+Archivi, comunicazioni, pagamenti: tutto si basa su robusti meccanismi che hanno essenzialmente lo scopo di proteggere le informazioni di valore ad occhi indiscreti, ma il tutto l'attuale ecosistema, pur assicurando un certo livello di sicurezza è ben lungi dall'essere perfetto.
+
+Nell'episodio di oggi, parliamo di una interessante evoluzione nel campo della crittografia, che forse potrebbe diventare una realtà di ampia diffusione già nei prossimi anni e che potrebbe aumentare enormemente il livello di sicurezza dei dati: la crittografia omomorfica.
+
+Sigla.
+
+### Informatica e crittografia
+
+Informatica e crittografia sono discipline profondamente collegate.
+
+La crittografia deve tantissime delle proprie possibilità alla potenza di calcolo garantita dall'informatica e, al tempo stesso, tantissime delle moderne applicazioni informatiche sarebbero letteralmente impossibili senza la crittografia.
+
+I primi esempi di crittografia, infatti, risalgono addirittura a più di 5000 anni fa, ma è solo negli ultimi anni, poco più di mezzo secolo, che questa disciplina ha visto esplodere i propri ambiti e possibilità di applicazione, seguendo ovviamente il trend crescente della diffusione prima dei computer, poi degli smartphone, il cloud, e tutto ciò che ne abbiamo visto conseguire.
+
+Ma contemporaneamente, gli informatici hanno attinto a piene mani dalle teorie e dagli algoritmi crittografici per implementare e proteggere tutte le tecnologie che sono alla base del mondo digitale. Dall'hardware al software, dal wi-fi al cloud, tutto funziona anche grazie ad una molteplicità di algoritmi che criptano e decriptano dati in continuazione.
+
+### Crittografia (esempi positivi e negativi)
+
+Il concetto base di crittografia, ormai, lo conosciamo un po' tutti. O sicuramente ne abbiamo almeno sentito parlare.
+
+Abbiamo trattato l'argomento anche qui su pensieri in codice in vari episodi.
+
+In termini molto generali, la crittografia è un meccanismo per conservare o scambiare informazioni nascondendole ad occhi indiscreti e facendo in modo che sia consultabili e utilizzabili solo da chi dispone dei corretti strumenti.
+
+Nel mondo moderno, anche se magari non intenzionalmente, ne facciamo uso quotidianamente. Ad esempio quando navighiamo sul Web, quando ci scambiamo messaggi, quando inseriamo informazioni in un'app.
+
+In realtà quasi in ogni nostra operazione sul Web o via Internet, è in qualche modo coinvolto un processo di crittografia.
+
+Ma non solo, anche quando utilizziamo sistemi di pagamento, quando colleghiamo il PC e la stampante al WiFi di casa, quando apriamo il cancello automatico del garage. Tutti questi sistemi, esclusi quelli proprio obsoleti o mal configurati, basano comunicazione ed autenticazione su un qualche meccanismo di crittografia.
+
+Negli ultimi anni, poi, la crittografia è anche utilizzata per scopi meno nobili e legali: basta pensare a tutti gli attacchi ransomware che, crescono di giorno in giorno, e che spesso fanno uso di algoritmo crittografici per impedire l'accesso ai dati da parte dei legittimi proprietari. Anche di questo abbiamo parlato qualche episodio fa.
+
+Ma, qualsiasi sia lo scopo, il concetto di base alla fine è abbastanza semplice: si prende un'informazione, la si elabora con un qualche algoritmo matematico e la si sostituisce con il prodotto dell'elaborazione. Fatto questo, l'informazione è criptata.
+
+Sempre mantenendoci molto sul generico, questi algoritmi crittografici possono essere suddivisi in due tipologie. In realtà, esistono molte catalogazioni e suddivisioni, ma per quello di cui mi interessa parlarti oggi, è più che sufficiente la distinzione tra algoritmi di crittografia unidirezionali e bidirezionali.
+
+Un algoritmo di crittografia unidirezionale è sostanzialmente un algoritmo il cui risultato non può essere riportato allo stato originale pre elaborazione.
+
+In pratica, a partire dall'informazione che è necessario nascondere, con questo tipo di algoritmo è possibile calcolarne una versione criptata. Ma se si è in possesso della sola versione criptata non esiste un meccanismo vero e proprio per ricostruire l'informazione iniziale.
+
+Ad un primo sguardo superficiale, questo potrebbe sembrare un algoritmo abbastanza inutile. A cosa serve convertire un dato in modo che poi sia illeggibile i impossibile da ripristinare?
+
+Beh in realtà si tratta di un algoritmo ampiamente utilizzato. L'esempio più classico riguarda l'archiviazione delle password, per esempio le password degli utenti di un sito Web.
+
+Quando l'utente imposta la sua password, infatti, la si elabora con un algoritmo unidirezionale e si archivia nel database la password crittografata.
+
+Quando poi, in un secondo momento, l'utente reinserisce la password per autenticarsi presso il sito, l'operazione da fare non è altro che crittografare nuovamente la password inserita dall'utente, confrontare il risultato con la versione archiviata in database, e se le due informazioni crittografate coincidono, allora l'utente ha inserito la password corretta.
+
+Un algoritmo bidirezionale, invece, lo starai già immaginando, è quel tipo di algoritmo in cui risultato è perfettamente reversibile. E' sufficiente conoscere i passaggi necessari e i dati aggiuntivi (che di solito prendono il nome di chiave) e utilizzarli per ripristinare l'informazioni originale a partire da quella crittata
+
+L'applicazione di questo tipo di algoritmo, ovviamente, è molto più intuitiva: si usa per memorizzare qualcosa che in futuro dovrà essere ripristinata per essere utilizzata, ma nel frattempo che si trova su un archivio o viene spedita lungo un canale di comunicazione, deve essere protetta da accessi o addirittura modifiche indesiderati.
+
+La crittografia, quindi, serve a proteggere i dati, ma per come funziona attualmente, dalle poche caratteristiche che ti ho appena descritto, appare chiaro che, in certi casi, essa vada momentaneamente rimossa per permette l'utilizzo di tali dati. Altrimenti, in forma criptata, risultano essenzialmente inutili.
+
+Ed è proprio a questo punto che si inizia a parlare di Crittografia omomorfica.
+
+### Crittografia omomorfica
+
+La crittografia omomorfica permette di utilizzare ed elaborare dati in forma criptata.
+
+Ciò vuol dire proprio che non è necessario decriptarli, ma al tempo stesso, vi si possono applicare delle trasformazioni o li si può utilizzare a fini statistici o per inferire altri tipi di informazioni.
+
+L'aggettivo *omomorfica* deriva proprio dal concetto di omomorfismo algebrico, che, in parole matematiche è un'applicazione tra due strutture algebriche dello stesso tipo che ne conserva la operazioni definite, ma in parole molto molto semplici vuol dire che se, applicando una trasformazione omomorfica a qualcosa, le operazioni che davano un certo risultato su quel qualcosa, daranno lo stesso risultato anche sul prodotto della trasformazione.
+
+Parlando di crittografia, il concetto è che se applico la crittografia omomorfica ad un dato (o un insieme di dati), successivamente sarà possibile compiere delle operazioni su questi dati criptati e ottenere gli stessi risultati che otterrei applicando le stesse operazioni ai dati originali.
+
+La crittografia omomorfica è essenzialmente un tipo di crittografia a chiave pubblica (e se non sai cosa vuol dire, ti consiglio di recuperare gli episodi in cui ne abbiamo parlato e in cui abbiamo anche spiegato come funziona), quindi solo chi possiede la chiave privata è in grado di decriptare le informazioni e la cosa impressionante in tutto questo è che l'elaborazione dei dati, i calcoli su di essi, l'ordinamento, la catalogazione e, in certi casi, perfino la modifica, possono essere effettuati senza bisogno di tale chiave, quindi in pratica senza mai decriptare l'informazione.
+
+Se vogliamo fare un esempio (sempre tenendo presente che in casi di processi fortemente matematici, qualsiasi esempio nel mondo reale fisico non calzerà mai al 100%) possiamo immaginare di essere, non so, in ufficio e aver bisogno di scaldare il pranzo.
+
+Magari nei nostri uffici c'è una piccola mensa con un cuoco e un forno.
+
+E magari vorremmo chiedere al cuoco di scaldare il nostro pranzo, ma non ci fa piacere che lui sappia che oggi mangeremo curry, perché anche lui oggi ha cucinato curry e potrebbe offendersi.
+
+Allora, potremmo semplicemente mettere il nostro curry dentro un contenitore chiuso e non trasparente e bloccare il coperchio in qualche modo: diciamo con un lucchetto (passeremo per psicopatici, ma tanto è un esempio).
+
+Il cuoco quindi potrà scaldare il nostro contenitore in forno per qualche minuto e poi restituircelo.
+
+Ecco, in questo modo, il nostro pranzo (cioè i nostri dati)sarà stato scaldato (cioè avranno subito una trasformazione) da un soggetto terzo (cioè il cuoco) senza che questi abbia potuto vederlo (cioè leggere i dati).
+
+In più, però, il cuoco, sapendo solamente che ciò che ha scaldato (cioè elaborato) era un generico pranzo potrà segnare sul registro della cucina che oggi un pranzo non è stato servito ma portato da casa. In pratica, anche senza accedervi, potrà usare l'informazione per fini statistici.
+
+Ecco, si come ti dicevo poco fa, in questi casi si tratte sempre di esempi un po' stiracchiati, ma spero che abbia resto l'idea. Ah e poi una cosa importante: io odio il curry.
+
+### Modelli
+
+La crittografia omomorfica, al momento si incarna essenzialmente in tre livelli:
+
+Partially Homomorphic Encryption (PHE)
+
+Somewhat Homomorphic Encryption (SHE)
+
+Fully Homomorphic Encryption (FHE)
+
+Nella crittografia omomorfica parziale è possibile applicare solo un numero limitato di operazioni matematiche al dato crittato.
+
+In quella somewhat, invece, è possibile applicare un maggior numero di operazioni ma solo per un numero limitato di volte.
+
+Mentre grazie alla fully homomorfic encryption, è possibili superare i limiti delle due crittografie precedenti ed applicate un gran numero di operazioni per un numero illimitato di volte.
+
+E qui già vedo la domanda apparire nei tuoi occhi: se è esiste una versione completa di questa crittografia, perché stiamo parlando delle versioni intermedie?
+
+Beh è presto detto, perché, purtroppo, per il momento, la Fully homomorfic encryption richiede così tanta potenza di calcolo che il suo utilizzo resta confinato ad applicazioni di altissimo livello e/o sperimentali. Le uniche uniche crittografie realmente utilizzabili in modo proficuo, per ora, restano la partially e la somewhat.
+
+Ciò non toglie, però, che il futuro sembri andare a tutti gli effetti verso una crittografia omomorfica completa e le applicazioni saranno molteplici.
+
+### Applicazioni
+
+Come anticipavo qualche minuto fa, nel mondo moderno così informatizzato e interconnesso, quasi ogni nostra informazione, personale o meno, generata intenzionalmente o meno, nel mondo moderno, in qualche modo viene spedita, elaborata e archiviata da e presso un qualche soggetto esterno.
+
+Posso fare qualche esempio, ma la crittografia è letteralmente tutta intorno a noi.
+
+Le nostre informazioni sono archiviate e viaggiano tra decine di server in giro per il mondo: pensa solo ai dati sanitari o a quelli fiscali o a qualsiasi informazione detenuta da istituzioni e governi, per non parlare poi di tutti gli account su social e su siti vari, su app che apriamo di nostra iniziativa e che infarciamo di nostri dati, oppure ancora alle informazioni necessarie per il commercio elettronico, quindi per pagamenti e spedizioni.
+
+E a tutta questa lista di dati archiviati presso terzi, va aggiunta quella dei dati che facciamo elaborare a terzi: l'interpretazione dei nostri comandi agli assistenti vocali, nella maggior parte dei casi sono elaborati in cloud, ad esempio. L'elaborazione dei percorsi verso le destinazioni che vogliamo raggiungere, sono elaborati in cloud. Le nostre preferenze che determinano i contenuti che ci vengono suggeriti dagli algoritmi, sono elaborati in cloud.
+
+Insomma, come ti dicevo, la lista è sterminata e non ha senso continuare ad elencare per le prossimo ore. Però, la cosa in realtà più interessante è capire che tutti questi casi descritti e come anche quelli tralasciati hanno una costante in comune: e cioè la fiducia.
+
+In tutti questi casi, in un certo qual modo, consciamente o inconsciamente, noi ci fidiamo che la persona, l'azienda, l'ente o il governo che riceve, elabora o detiene tali informazioni sia in qualche modo affidabile.
+
+E questo proprio perché, nella maggior parte delle situazioni, i dati che noi gli permettiamo o chiediamo di elaborare, devono necessariamente essere in chiaro (cioè in forma non criptata).
+
+Questo è un punto che dovrebbe essere ben chiaro: benché i dati nella cosiddetta condizione di riposo (cioè quando non vengono utilizzati) sono solitamente conservati in forma criptata, attualmente, quasi sempre, nel momento in cui devono essere utilizzati vanno per forza decriptati.
+
+E questo vuol dire essenzialmente due cose:
+
+1.Quando sono nel cloud, i nostri dati, in alcuni momenti e per certi lassi di tempo, devono per forza trovarsi in chiaro, devono essere consultabili, da umani o algoritmi che siano. Altrimenti sarebbero totalmente inutili.
+
+2.Chi detiene ed elabora i nostri dati, in molti casi deve, ovviamente, possedere meccanismi e chiavi per decriptarli. Altrimenti torniamo al punto di prima: senza poterli decriptare sono inutili.
+
+Ed ecco il punto: in questo ecosistema noi *ci fidiamo* del fatto che i nostri dati vengano tenuti al sicuro. Ci fidiamo che il responsabile non ne faccia uso improprio, che i dipendenti di un azienda o una pubblica amministrazione non ne facciano uso improprio, che un cracker non riesca a forzare i sistemi informatici, e così
+
+Certo esistono leggi a riguardo. Noi siamo particolarmente fortunati ad avere il GDPR, lo dico sempre. Ma bisogna essere realisti e tenere presente che nella vita reale, la presenza di una legge non esclude automaticamente la possibilità che tale legge venga infranta.
+
+La crittografia omomorfica completa, se mai dovesse raggiungere un livello di efficienza tale da permettere applicazioni diffuse, permetterebbe appunto di superare in vari ambiti tutto questo ragionamento sulla fiducia.
+
+I molti i casi dati non avrebbero più bisogno di essere decriptati per essere utilizzati e pertanto, la loro sicurezza non si baserebbe più su un meccanismo di fiducia ma su una serie di complesse formule matematiche che ne renderebbero molto più complessa la forzatura.
+
+Certo non si andrebbero a coprire tutti i casi possibili, ricordiamoci sempre che la perfezione non esiste in nessun campo, ma le applicazioni sarebbero molte e soprattutto in ambiti importanti.
+
+Uno fra tutti, sarebbe la sanità.
+
+Al momento, il bilanciamento tra protezione dei dati e ampliamento delle possibilità informatiche in campo sanitario è un problema di ben difficile soluzione. La FHE permetterebbe di superare di colpo gran parte delle limitazioni.
+
+Inoltre, qualsiasi tipo di elaborazione in cloud, potrebbe beneficiane. Pensa a tutti quegli algoritmi di machine learning che vengono applicati in cloud ad esempio per il miglioramento delle immagini, dei video, delle registrazioni audio.
+
+Ad esempio, ricordo che qualche tempo fa andava molto di moda un'app che, se caricata la foto di una persona, ne restituiva una versione invecchiata di molti anni. Te la ricordi?
+
+Beh quel tipo di app funzionava banalmente inviando l'immagine ad un server in cloud (tra l'altro mi pare in Russia, quindi visto direi che non sia stata una bella idea usarla). Questo server poi applicava la trasformazione e rispediva indietro l'immagine modificata.
+
+Ecco, con la crittografia omomorfica, un meccanismo del genere potrebbe essere utilizzato con la certezza matematica (è proprio il caso di dirlo) che i dati siano al sicuro.
+
+E poi c'è il campo del marketing, in cui oggi le grandi aziende usano le informazioni degli utenti per inferire quali pubblicità siano più adatte da inserire nei siti o nei social. Un domani potranno fare lo stesso senza effettivamente alle informazioni in chiaro ma utilizzando solo la loro versione criptata.
+
+Insomma i campi di applicazione sono davvero molteplici, ma la cosa a mio parere più importante sarà la spinta in termini di privacy che questa crittografia potrà dare alle nostre vite digitali che, ormai dovrebbe essere chiaro, influiscono sempre di più sulla nostre vite materiali.
+
+### Conclusione
+
+Bene, spero come al solito di averti portato qualche informazione e riflessione interessante.
+
+Ti ricordo che se posso produrre questi contenuti, è solo grazie a te che ascolti ed alla community di pensieri in codice che sostiene il progetto. Scopri come dare una mano anche tu, collegandoti al sito pensieriincodice.it (mi raccomando con 2 i).
+
+Puoi ascoltare tutti gli episodi sulle maggiori piattaforme e app di podcast o riceverli direttamente sullo smartphone iscrivendoti al canale Telegram.
+
+Se Pensieri in codice ti piace, e se sei arrivato fin qui immagino ti piaccia, potresti sostenerlo lasciando una recensione nell'app con cui ascolti il podcast. Inoltre potresti condividerlo con un amico per farglielo conoscere. Così facendo mi aiuterai a far crescere il progetto, migliorarne la qualità, e farai scoprire a lui un qualcosa di interessante.
+
+In somma, ne guadagneremmo tutti!
+
+Per oggi, dunque, è tutto, ti do appuntamento al prossimo episodio e ti ricordo che *un informatico risolve problemi, a volte anche usando il computer*.
+"

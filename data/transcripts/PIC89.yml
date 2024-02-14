@@ -1,0 +1,23 @@
+text: "
+Breve storia algoritmi
+
+Abu ja'far Muḥammad ibn Mūsā al-Khwārizmī nasce nel 780 d.C. in quella che è oggi la regione dell'Uzbekistan.
+
+Riconosciuto come abile studioso dal Califfo dell'epoca, viene presto messo a capo di un famoso polo culturale arabo dell'epoca che aveva il nome di Casa della Saggezza e in questo periodo, sotto la sua  supervisione, vengono tradotti in arabo un gran numero di testi matematici del periodo greco-ellenistico, indiani, babilonesi e persiani.
+
+Presumibilmente intorno all'anno 825 d.C., lo stesso al-Khwārizmī, scrive inoltre un proprio testo dal titolo per me assolutamente impronunciabile in lingua originale ma che in italiano suona più o meno come *Compendio sul calcolo per completamento e bilanciamento*, e del quale purtroppo non è sopravvissuta alcuna copia in lingua araba ma solo successive traduzioni latine.
+
+Tale opera, infatti, diverrà di grande diffusione in Europa nei secoli successivi e nel periodo medievale e verrà ripresa, studiata e ampliata da studiosi la cui fama è più che viva anche oggi: uno fra tutti, forse, è proprio Fibonacci, di cui abbiamo già parlato qui su Snippet.
+
+In questo testo, viene illustrato un sistema di numerazione indiano sconosciuto all'epoca in Europa, che presentava un simbolo speciale rispetto al sistema romano. Questo simbolo rappresentava lo zero.
+
+E proprio il fatto che le cifre che noi utilizziamo ogni giorno, e che in realtà sono di origine indiana, siano giunte in Europa tramite un autore arabo, è il motivo per cui noi ci riferiamo spesso ad esse come *numeri arabi* e non *numeri indiani*.
+
+Oltre a ciò, nel libro venivano anche descritte delle regole da applicare per calcolare meccanicamente le quattro operazioni principali (somma, sottrazione, moltiplicazione e divisione) e le frazioni.
+
+Queste regole erano composte di passaggi ben definiti, semplici da applicare e in numero finito vengono tutt'ora insegnate agli studenti di scuola elementare. Anche se all'epoca la parola non esisteva ancora, esse rappresentano i primi algoritmi matematici formalizzati.
+
+Dalla latinizzazione del nome al-Khwārizmī, infatti, ebbe origine la parola algoritmo.
+
+Allo stesso modo, dalla versione abbreviata del titolo del suo libro tradotta in latino, nasce invece la nostra moderna parola: algebra.
+"

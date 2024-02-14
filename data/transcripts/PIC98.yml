@@ -1,0 +1,40 @@
+text: "
+
+In generale nel campo dei media, esiste una pratica più o meno diffusa che consiste nell'inserire piccoli elementi come messaggi, immagini o funzionalità nascosti all'interno di film, videogame o software.
+
+Tali elementi, prendono il nome di Easter Eggs, a voler rimarcare il concetto di sorpresa che suscitano nei fruitori, nel trovare qualcosa che non si aspettavano o che risulta fuori contesto o, ancora, che si ricollega ad un altro prodotto.
+
+Il nome Easter Eggs fu coniato nel 1979 da Steve Wright, che sarebbe poi diventato direttore del reparto di sviluppo software della Atari, per descrivere un messaggio nascosto appunto in un videogame della Atari dal titolo Adventure.
+
+E proprio il campo dell'informatica, persino da prima che nascesse il termine stesso, è sempre stato terreno fertile per questo tipo iniziative. Da sempre i programmatori si sono divertiti ad inserire vari tipi di scherzi e di elementi segreti nei software o addirittura nell'hardware.
+
+Il primo Easter Egg software risale infatti addirittura al 1973 nel famosissimo videogame moonlander, nel quale, l'obiettivo del giocatore è quello di atterrare con un modulo spaziale sulla luna, ma, se si viaggia abbastanza a lungo prima di toccare la superficie lunare si incontra un McDonald.
+
+Ma ne esistono moltissimi, più o meno conosciuti.
+
+Il famigerato konami code, è solo un esempio. Presente nei più disparati software o device. Se hai Alexa, ad esempio, prova a dirle SU SU GIU GIU SINISTRA DESTRA SINISTRA DESTRA B A e scopri cosa ti risponde.
+
+Ma la cosa vale anche per contesti più seri: ad esempio nelle distribuzioni Linux basate su Debian, se si lancia da terminale il comando apt-get moo, appare un toro che chiede se oggi abbiamo muggito.
+
+Anche strumenti di largo uso sono pieni di Easter Eggs. Google stesso ne inlcude tantissimi, si possono trovare con delle particolari ricerche, e ha persino un sito dedicato che ti lascio in descrizione per andare a curiosare.
+
+E poi prova ad andare sul sito di amazon, cliccare tasto destro e poi mostra codice sorgente, scrollare fino in fondo. Poi fammi sapere cosa trovi.
+
+Inizialmente si trattava veramente di codice nascosto o dimenticato, come nel caso del konami code, ma poi la tendenza è cambiata e si è iniziato a documentarlo, come nel caso di Microsoft o addirittura a vietarli come in quello di Apple. Questo soprattutto per motivi di sicurezza.
+
+Quello degli easter egg è un mondo tutto da esplorare. Quasi sempre scopriremo che c'è qualcosa di simpatico e divertente che riguarda un software o un device che utilizziamo o abbiamo in casa.
+
+Ma tra i tanti, c'è un particolare Easter Egg che mi è sempre risultato piuttosto interessante e che forse è troppo poco conosciuto: sto parlando del Book of Mozilla.
+
+Scrivendo about:mozilla nella barra dell'indirizzo di un browser Firefox, infatti, appare una frase che sembra tratta da una sorta di versetto biblico che parla di una Bestia e delle sue opere e dei suoi seguaci.
+
+A seconda delle varie versioni di Firefox, il versetto riportato può cambiare. Nel corso della storia del browser, infatti, ne sono apparsi ben otto, che, pur diversi fra loro, mantengono tutti questo tono un po' misterioso. In descrizione, trovi il link ufficiale al sito per leggerli tutti.
+
+Nonostante l'apparente solennità, però, in realtà questi versetti sono associati alla storia dell'evoluzione del browser nel tempo, dal primissimo Netscape Navigator fino al nuovissimo Firefox Focus.
+
+Per capirlo basta visualizzare il codice sorgente del sito ufficiale del Book of Mozilla e leggere i commenti nascosti nel codice HTML che spiegano l'avvenimento a cui ciascun versetto fa riferimento (di fatto un Easter Egg nell'Easter Egg).
+
+E un'altra cosa interessante è questo Easter Eggs è presente persino in altri browser, tra i quali il più famoso è sicuramente Internet Explorer, il quale all'indirizzo about:mozilla mostra il blue screen of death.
+
+Insomma, il Book of Mozilla è un classico esempio di Easter Egg al quale tutti abbiamo accesso. Un piccolo scherzo che dei goliardici programmatori hanno inserito nelle loro creazioni e che per noi possono rappresentare un momento di scoperta divertente e curioso.
+"

@@ -1,0 +1,42 @@
+text: "
+
+Solitamente, quando parliamo di linguaggi di programmazione, ci vengono in mente una cerchia più o meno ampia di opzioni: PHP, Java, Python, Javascript, sono solo alcuni, e se ti fermi un attimo a riflettere ne troverai tanti altri con diverse caratteristiche e diverse applicazioni.
+
+Ma c'è una particolare categoria di linguaggi di programmazione che risulta in effetti ben poco conosciuta e che raramente rientra negli elenchi più istituzionali: mi riferisco a quelli che vengono chiamati linguaggi di programmazione esoterici.
+
+Il termine esoterico sta ad indicare il fatto che questa tipologia di linguaggi viene impiegata non tanto per produrre un vero e proprio software di largo utilizzo, quanto piuttosto per portare all'estremo il concetto stesso di programmazione.
+
+I linguaggi esoterici, infatti, sono progettati per scopi un po' particolari, come ad esempio produrre arte con il software, oppure provare la fattibilità di qualcosa, oppure ancora semplicemente per gioco.
+
+Tra i non pochi, a dir la verità, linguaggi esoterici, c'è appunto l'INTERCAL creato come una sorta di parodia volta a prendere in giro proprio il concetto di linguaggio programmazione.
+
+Rilasciato nel 1972 da due studenti di Princeton, infatti, aveva come chiaro scopo quello di trattare in modo satirico alcune delle principali caratteristiche dei linguaggi dell'epoca, e quindi nei sorgenti scritti in tale linguaggio, si possono trovare istruzioni come PLEASE DO invece del più imperativo DO dei linguaggi concorrenti. Oppure un PLEASE GIVE UP al posto di un return 0.
+
+Al tempo stesso, la valorizzazione di una variabile in INTERCAL è notevolmente ed inutilmente complicata, senza contare che non permette l'utilizzo delle stringhe. E ciò rende il tutto talmente macchinoso da necessitare, ad esempio, 16 righe di codice per un Hello World, che in altri linguaggi ne richiederebbe massimo 5 o 6.
+
+Ma la stramberia di INTERCAL non si ferma certo alla sintassi del codice.
+
+Nel manuale si possono trovare frasi del tipo:
+
+Il nome completo del compilatore è *Compiler Language With No Pronounceable Acronym*, che per ovvie ragioni viene abbreviato in... *INTERCAL*.
+
+Oppure:
+
+Attenzione! In nessun caso confondere l'operatore mesh con l'operatore interleave, tranne in circostanze confuse!
+
+E sembra siano presenti anche delle funzionalità diciamo particolari, del compilatore.
+
+Ad esempio il fatto che se il codice non contiene abbastanza PLEASE, la compilazione viene rigettata.
+
+Oppure che, quando incontra un errore, il compilatore semplicemente lo ignora e va avanti. Cosa che chiaramente rendere il debugging un vero Inferno.
+
+Quando fu inizialmente distribuito da Don Woods e Jim Lyon, INTERCAL funzionava utilizzando addirittura le schede perforate, metodo di programmazione ancora piuttosto comune nel 1972, tuttavia, col passare degli anni, anche questo strano linguaggio si è evoluto grazie al supporto di una serie di appassionati.
+
+Sono state aggiunte funzionalità più avanzate, sono stati sviluppati compilatori per i computer più moderni e sono nate alcune varianti come la C-INTERCAL nel 1990 e la CLC-INTERCAL a cura di Claudio Calvelli, ed entrambi questi dialetti sono attualmente disponibili nell'archivio dei software di Debian. Se li vuoi provare.
+
+Anche se potrebbe risultare complicato capire in quale versione visto che secondo il file README di CLC-INTERCAL, per correttezza, la parola *versione* è stata sostituita con *perversione* e i numeri di perversione sono in virgola mobile, e la parte intera e quella frazionaria possono avere segni diversi, e la parte intera può a sua volta essere un intero o frazionario.
+
+Quindi, la perversione 1.-94 si riferisce a 94 escape prima della 1.00. Oppure basta sommare 1 e -94 e ottenendo la escape 0.06 che è però una coincidenza dato che la 0.06 non è ma stata realizzata.
+
+Come? Ti stai chiedendo cos'è un'escape? Ovvio, devi sapere che una volta, il compilatore di CLC-INTERCAL fu lasciato senza sorveglianza su un server FTP e pare che da lì sia riuscito a scappare. Quindi, chiaramente, gli sviluppatori non parlano di release quando si riferiscono ad esso, quanto piuttosto di escape.
+"

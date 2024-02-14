@@ -1,0 +1,192 @@
+text: "
+
+Che ne siamo consapevoli o meno, ogni giorno, quando acquistiamo prodotti, guardiamo film, serie TV e video, ascoltiamo musica, visitiamo i social network, cerchiamo qualcosa sui motori di ricerca, stiamo sia utilizzando, sia contribuendo al miglioramento dei cosiddetti sistemi di raccomandazione.
+
+Quegli stessi algoritmi di intelligenza artificiale che sono alla base del funzionamento di compagnie come Amazon, Google, Facebook; e che guidano letteralmente molte delle nostre scelte quotidiane.
+
+Nell'episodio di oggi proviamo a capire come funzionano questi algoritmi e perché in certi casi sembrano comportarsi in modo strano, mentre in altri sembra quasi che ci leggano nel pensiero.
+
+Sigla
+
+* * *
+
+Fino a qualche anno fa, se volevamo un consiglio su cosa leggere, comprare o guardare, ci rivolgevamo a qualche persona di fiducia, un amico, un parente, o nel migliore dei casi un esperto.
+
+Oggi non è più così, siamo continuamente bombardati da consigli più o meno velati.
+
+I video correlati di Youtube o i suggerimenti di Amazon, ad esempio, sono piuttosto evidenti.
+
+I risultati selezionati da Google o i post nello stream di Instagram, facebook o Twitter, invece, lo sono si meno, ma non per questo sfuggono all'elaborazione da parte di un sistema di raccomandazione che li filtra per noi.
+
+Paradossalmente, sembra che questi consigli automatizzati siano anche molto aderenti ai nostri gusti e ci attirino e ci tengano incollati più del consiglio di un amico o un conoscente.
+
+A volte, sono così inquietantemente precisi che non è raro che si verifichino casi strani e sospetti che hanno portato chi non conosce il funzionamento di questi sistemi, a convincersi di idee un po' particolari.
+
+Sicuramente ti sarà capitato di parlare con qualcuno che abbia il sospetto di essere spiato perché dopo una serata con gli amici in cui si è parlato di, non lo so, posate pieghevoli in legno di faggio, si è trovato poi un post sponsorizzato su Instagram o Facebook che cercava di vendergli posate pieghevoli.
+
+Oppure, un altro classico, è quello convinto che Youtube voglia convincerlo a cambiare schieramento politico perché nelle pubblicità infila video di 20 minuti su un argomento del tutto contrario alle sue idee.
+
+Ecco, io posso capire che questi e tanti altri casi casi siano abbastanza inquietanti, però in verità essi hanno spiegazioni che diventano anche abbastanza banali se si conoscono i sistemi di raccomandazione.
+
+La conoscenza rende le cose più tristi, lo so....
+
+Iniziamo col dire che palesi o no, la scelta di tutti gli elementi che ci vengono suggeriti mentre navighiamo sul Web, si possono ricondurre ricondurre ad un pugno di strategie di base.
+
+Come al solito, quello che mi interessa oggi, non è catalogare tutti questi algoritmi, quanto piuttosto arrivare semplicemente ad un livello di comprensione sufficiente per fare qualche riflessione insieme e capire le basi del loro comportamento.
+
+Tieni presente quindi che, ti basterà una semplice ricerca sul Web per trovare informazioni molto più dettagliate di quelle che sto per darti. Come ben sai, qui su Pensieri in codice, ci interessa capire i concetti informatici che influiscono più o meno direttamente sulla nostra vita.
+
+Quindi, tornando ai nostri algoritmi di raccomandazione, mi interessa esaminare giusto un paio di approcci:
+
+1. Approccio basato sull'oggetto
+
+L'approccio basato sull'oggetto è abbastanza banale e infatti è adatto per applicazioni abbastanza semplici e con un numero di attori limitato.
+
+Per *oggetto* si intende una qualsiasi cosa che si intende suggerire: un tweet, un prodotto, un'immagine, un utente da seguire, qualsiasi cosa.
+
+Questo approccio consiste in pratica nello stabilire delle caratteristiche comuni tra gli oggetti: canzoni dello stesso autore, libri dello stesso genere, video nella stessa lingua; e utilizzare tali caratteristiche per scegliere il prossimo oggetto da suggerire ad un utente.
+
+Stai ascoltando un episodio di pensieri in codice, allora l'algoritmo ti propone altri episodi di pensieri in codice. Guardato un film horror? L'app ti suggerisce altri film horror Semplice.
+
+Va da sé, però che questo approccio è molto limitato. Funziona per piccoli gruppo di oggetti e consumatori, e rischia di lasciare completamente fuori dai giochi molti oggetti che non verranno mai raccomandati.
+
+Se lo si utilizza in modo assoluto, al nostro utente verranno proposti sempre gli stessi podcast e gli stessi film. E questo non va affatto bene per cataloghi grandi e siti sui quali si acquista con una certa frequenza.
+
+2. Approccio collaborativo sugli oggetti
+
+Il secondo approccio, invece, si basa, potremmo dire sul concetto di gradimento.
+
+L'approccio collaborativo sugli oggetti, infatti, prima raggruppa gli utenti in gruppo (che in gergo vengono chiamati cluster) in base all'apprezzamento espresso per un determinati oggetti.
+
+Poi, una volta capito il cluster o i cluster di appartenenza dell'utente, cerca gli oggetti più graditi tra gli altri consumatori degli stessi cluster e poi lo raccomanda al soggetto esaminato.
+
+Ad esempio, ti piacciono i film della marvel e odi quella DC, quando deve suggeriti il prossimo film, l'algoritmo cerca tutti quelli che come te odiano DC e amano Marvel, e fra le loro preferenze cerca il film più apprezzato.
+
+Questo approccio, come potrai immaginare, molte più informazioni. Innanzitutto un sistema per indicare il gradimento, lo storico degli acquisti, un archivio di utenti e di cluster, ma ovviamente risulta molto più funzionale e potente dei precedenti.
+
+Il concetto di fondo è che, man mano che cresce la precisione di questi algoritmi, deve crescere anche la quantità di dati necessari a farli funzionare.
+
+Infatti, il primo approccio che ti ho descritto, funziona solo per realtà piccole e va degradando nelle prestazioni al crescere del numero di consumatori, mentre il secondo funziona bene quando sono presenti molti utenti e oggetti, faticando molto invece ad essere preciso in contesti ristretti.
+
+Ora, noi non sappiamo ESATTAMENTE come funzionano gli algoritmi di raccomandazione dei giganti di BigTech. Sono segreti, non lo vengono certo a dire a noi, però possiamo essere certi che servano approcci in grado di funzionare in contesti enormi.
+
+Possiamo fare supposizioni e deduzioni a partire dal comportamento di questi sistemi, dalle spiegazioni sui blog, dalle privacy policy
+
+Per Amazon, Youtube, Spotify e compagnia, avere un sistema di raccomandazione efficace, preciso e performante è fondamentale e contribuisce enormemente ad incrementare la popolarità e le entrate economiche delle loro piattaforme.
+
+Proviamo quindi a fare un piccolo sforzo in più e cerchiamo di capire come funziona il sistema di raccomandazione di Yt, IG o FB e così facendo capiremo anche perché qualche volta sembra spiarci o qualche altra voler influire sulle nostre idee.
+
+I'approccio sul gradimento che ti ho descritto prima, potrebbe essere sufficiente già a spiegare il comportamento ad esempio di Amazon.
+
+Gli utenti, comprano, lasciano recensioni, gli oggetti hanno tante caratteristiche codificate, ci sono le informazioni sufficienti per applicare il metodo descritto senza troppe difficoltà e con buoni risultati.
+
+Ma la verità è che questi sistemi fanno molto di più. Le informazioni da loro utilizzate per definire i cluster arrivano ad un livello di complessità che non tutti immaginano.
+
+Quando FB consiglia un post o Youtube un video o IG una foto, l'oggetto consigliato è sostanzialmente il frutto dell'elaborazione di categorie di dati: le informazioni di contesto e le informazioni sull'utente.
+
+Il contesto riguarda appunto la situazione in cui l'utente si trova al momento: cosa ha appena finito di guardare, cosa guarda in questo periodo, ma anche banalmente che giorno è, che ore sono, se per quell'utente è un giorno di festa o feriale, in quale luogo del Mondo si trova (continente, nazione, comune, via).
+
+E se questo ti suona strano, aspetta perché non ti ho ancora detto niente.
+
+Le informazioni che ricadono nella categoria utente, infatti, sono quelle più, diciamo, creepy.
+
+Sicuramente, fra queste, ci sono i dati espressi volontariamente: i like, i dislake, o l'inserimento in una certa lista o la condivisione di un contenuto.
+
+È chiaro che queste informazioni finiscano nel calderone e il social le utilizzi, ma poi ci sono i dati estrapolati dal comportamento.
+
+E già perché il nostro modo di muoverci sulla piattaforma è fonte di dati molto interessanti: per quanto tempo ascoltiamo o guardiamo qualcosa, se saltiamo parti di un video, quanto velocemente scorriamo le pagine, se accediamo ad una playlist, per quanto tempo la guardiamo, se clicchiamo su un contenuto o torniamo indietro.
+
+Tutti questi comportamenti vengono registrati ed utilizzati per cercare di capire cosa ci piace e cosa non ci piace. In pratica vanno ad integrare le nostre preferenze espresse esplicitamente per formare una sorta di recensioni ibride in parte volontarie e in parte no dei contenuto che ci capita di incontrare sulla piattaforma.
+
+E già questo potrebbe sembrare abbastanza inquietante, ma la storia non finisce qui.
+
+C'è ancora un ulteriore tipo di dati riguardanti l'utente utilizzati dal sistema di raccomandazione che però, anche se, a ben dire, sono di fatto pura invenzione.
+
+Si tratta delle cosiddette informazioni inferite.
+
+Sì, perché grazie ai loro sistemi di machine learning, coloro che possiedono tutte questi dati che ci riguardano, sono poi in grado di fare delle assunzioni su di noi, sulle nostre caratteristiche e preferenze.
+
+E sono assunzioni non da poco.
+
+Si parla infatti di algoritmi in gradi di indovinare età, genere, livello di educazione, status economico, etnia, preferenze sessuali, politiche, religiose.
+
+Sì, hai capito bene, Google, Amazon e compagnia riescono a capire per quale schieramento politico simpatizza un proprio utente, qual è il suo credo religioso, quanto ha studiato e quanto guadagna.
+
+Tutto questo a partire da come si muove sulla piatta forma, cosa guarda, cosa scarta, ecc.
+
+Non si tratta di informazioni attendibili al 100%, ma si parla comunque di un buon grado di affidabilità, visto che su di esse si basa la vendita di spazi pubblicitari e comunque, te ne sarai reso conto, alla fine i contenuti suggeriti non sono poi così campati in aria.
+
+Se il, chiamiamolo fascicolo, che un social network ha messo insieme su di te fosse poco accurato, anche i suggerimenti sarebbero tendenzialmente sbagliati o al massimo casuali.
+
+Il fatto invece che siano precisi e spesso anche interessanti o sorprendenti per l'utente che li riceve, perché no, significa che tutto sommato la strategia funziona.
+
+E quindi tornando al concetto espresso all'inizio: perché sembra che i sistemi di reccomandation ci conoscano così bene? Beh la risposta ora è chiara: perché è così. Ci conoscono.
+
+A volte conoscono i nostri gusti e i nostri interessi meglio delle persone con cui viviamo e interagiamo tutti i giorni.
+
+E questo perché interpretano dei comportamenti e dei segnali che magari nemmeno ci rendiamo conto di produrre.
+
+Questa precisione impressionante, unita al fatto che, più ci si allontana dal sapere comune più questi meccanismi assumono una connotazione magica, contribuisce ad alimentare alcune delle leggende metropolitane di cui parlavamo prima.
+
+Le persone arrivano a credere di essere spiate da FB o IG perché se parlano con qualcuno di un argomento, durante la giornata o nei giorni successivi vedono comparire sui social offerte riguardanti quegli argomenti.
+
+La realtà però è che questo fenomeno si piega facilmente con la combinazione di alcuni fattori.
+
+Innanzitutto, la tendenza umana da dare spiegazioni complesse anche a fenomeni casuali: ogni giorno noi parliamo di un sacco di cose e vediamo un sacco di cose.
+
+Ecco che, se casualmente, alcune di queste combaciano, gridiamo subito al complotto trascurando le centinaia di altre combinazioni che non hanno combaciato.
+
+E in secondo luogo, ora lo sappiamo, dobbiamo tenere conto delle informazioni di contesto.
+
+Se parliamo con persone che conosciamo con persone che conosciamo e che ci sono vicine sia geograficamente che per interessi, conoscenze, ecc. dobbiamo supporre che i loro contesti siano simili ai nostri, e anche le informazioni inferite dai sistemi di raccomandazione saranno simili.
+
+Questo probabilmente ci colloca negli stessi gruppi di utenti (o cluster, per usare il termine tecnico) o comunque ci suddivide in modo affine.
+
+E cosa potrebbe mai succedere se alcuni elementi di un gruppo manifestano interesse per un nuovo argomento? Magari cercando sui motori o sui social quell'argomento?
+
+Beh il sistema di reccomendation ha una nuova freccia al proprio arco da usare e inizia a proporla agli altri appartenenti al gruppo.
+
+Così quando ci capiterà un video sui giocattoli gommosi per cani, potremmo casualmente decidere di dirlo ai nostri amici e uno di loro si sorprenderà per aver cercato giocattoli per il proprio cane il giorno prima.
+
+Oppure, che fa un sistema di reccomandation se dalle posizioni degli smartphone evince che i loro proprietari si sono incontrati e hanno trascorso del tempo insieme?
+
+Perché non provare a proporre agli uni gli interessi degli altri? Magari, con un po' di fortuna avranno parlato degli interessi di qualcuno di loro, facendo venire agli altri la voglia di acquistare qualcosa. 
+
+E quindi ecco che una sera si parla di orologi da polso fra amici, i nostri telefoni risultano molto vicini per un certo periodo di tempo, nei giorni successivi qualcuno vede una pubblicità o riceve una mail di orologi in super offerta.
+
+L'ho già detto che i sistemi di raccomandazione, spesso e volentieri, scelgono anche quali email mandare a chi?
+
+Devi capire che ormai queste scelte sono quasi totalmente guidate dal machine learning, l'intervento umano serve solo a dare una direzione di massima, poi il resto è tutto automatizzato.
+
+E quando invece i contenuti proposti sono totalmente contrari ai nostri interessi? Se il sistema è così preciso perché Youtube, mi è capitato da poco, mi piazza uno spot o mi consiglia un video di destra quando io guardo solo contenuti di sinistra?
+
+Beh per capire questi fenomeni qui, in realtà, la domanda da porsi è diversa.
+
+Abbiamo detto che i sistemi di raccomandazione sono molto efficienti a proporre i contenuti migliori, ok. Ma dobbiamo anche capire i contenuti migliori per chi?
+
+La cosa importante da capire è che per piattaforme come YT o IG o simili, la risorsa da massimizzare è il tempo che gli utenti trascorrono guardando i contenuti. Quello che in gergo si chiama engagement. E questo per loro stessa ammissione. Esiste un paper che risale credo al 2019 che spiega questa cosa.
+
+E, a pensarci bene, la verità è che non sono solo i contenuti che ci piacciono a tenerci sui social. Succede anche con quelli che ci infastidiscono e ci fanno innervosire.
+
+O ci sorprendono come le teorie di cospirazione, terrorismo, contenuti divisivi di vario genere.
+
+Magari non ci piacciono, li riteniamo stupidi, sbagliati, ma tendiamo comunque a guardarli, magari per criticarli o perché vogliamo vedere quante sciocchezze riescono a dire, ma comunque gli concediamo parti anche molto grandi del nostro tempo.
+
+In fin dei conti pare che questa tecnica funzioni e non ha niente a che fare con il tentativo dei social di sovvertire nazioni o ordinamenti politici o spargere teorie complottiste. È un mero espediente per incrementare l'egagement.
+
+E' semplicemente un modo diverso per ottenere lo stesso scopo.
+
+* * *
+
+Bene, spero di aver fatto un po' di chiarezza in questo ambito dei sistemi di suggerimento dei contenuti che mi rendo conto essere abbastanza complicato, ma che io personalmente trovo molto interessante.
+
+Mi auguro che l'episodio di oggi ti sia piaciuto e ti ricordo che se posso produrre questi contenuti, è solo grazie a te che ascolti ed alla community di pensieri in codice che sostiene il progetto.
+
+Scopri come dare una mano anche tu, collegandoti al sito pensieriincodice.it (mi raccomando con 2 i).
+
+Puoi ascoltare gli episodi sulle maggiori piattaforme e app di podcast o riceverli direttamente sullo smartphone iscrivendoti al canale Telegram.
+
+Se Pensieri in codice ti piace, e se sei arrivato fin qui immagino ti piaccia, puoi condividerlo con un amico per farglielo conoscere: farai un favore ad entrambi.
+
+Per oggi è tutto, ti do appuntamento al prossimo episodio e ti ricordo che *un informatico risolve problemi, a volte anche usando il computer*.
+"

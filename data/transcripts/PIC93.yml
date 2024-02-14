@@ -1,0 +1,166 @@
+text: "
+
+Ormai è un fatto noto che la nostra sempre più ampia presenza nel mondo digitale, oltre a tutta una serie di indubbi vantaggi, porta però anche con sé un aumento dei potenziali pericoli che è necessario imparare a conoscere ai quali è sempre più importante porre grande attenzione.
+
+Dai virus ai malware, dal phishing alle fake news, una conoscenza di quali sono e come funzionano i meccanismi, in questo caso malevoli, del Web e di Internet è diventata, secondo me, parte fondamentale di una buona consapevolezza digitale.
+
+Quindi, oggi ti voglio parlare di un tipo di attacco informatico molto interessante e forse poco conosciuto e un po' sottovalutato.
+
+Un tecnica che sfrutta degli strumenti di cui bene o male tendiamo a fidarci abbastanza, di cui, in pratica, non possiamo fare a meno e che spesso utilizziamo in modo quasi automatico.
+
+In questo episodio, dunque, parliamo di cos'è, come funziona e perché funziona il SEO Poisoning.
+
+Sigla.
+
+### Cos'è la SEO
+
+In due parole, SEO Poisoning (che potremo tradurre come avvelenamento della SEO) è una tecnica che permette di attirare le vittime in trappola sfruttando i motori di ricerca come Google, Bing, DuckDuckGo e simili.
+
+Di per sé, utilizzata singolarmente non è poi così pericolosa, ma nella stragrande maggioranza dei casì, viene impiegata in congiunzione con qualche altro tipo di attacco più dannoso o pericoloso. Un po' come accade con le email di phishing: riceverle di solito non è un grosso problema; seguirne i link e le istruzioni, invece, potrebbe portare a ben più tristi conseguenze.
+
+In pratica, con questa tecnica, l'utente viene spinto con l'inganno a compiere delle azioni che lo porteranno successivamente a cadere vittima di un cyber crimine che, a seconda dei casi, potrebbe riguardare la sottrazione di credenziali, un infezione con trojan o ransomware o un qualsiasi altro comune attacco di tipo informatico.
+
+Il SEO Poisoning, però, è già in se una tecnica molto interessante più complessa, per dire, del phishing e da qui l'idea per questo episiodio.
+
+Per provare a carpirne un po' più affondo, però, le caratteristiche di questo attacco, è necessario avere ben presente un po' di concetti. Quindi, non corriamo troppo e proviamo a fare una panoramica.
+
+Innanzitutto facciamo un passo indietro e proviamo a capire come si possa sfruttare per i propri scopi qualcosa di potente e complesso come un motore di ricerca.
+
+Dopotutto, se pensiamo ad esempio a Google, immaginiamo un colosso internazionale con risorse infinite. Come è possibile che un cyber criminale, ma anche una banda ben organizzata, possa competere con un gigante di tale portata?
+
+Beh tutto inizia appunto dal concetto di SEO.
+
+Se prendiamo proprio la definizione della stessa Google, leggiamo che la SEO è, cito testualmente, *l'Ottimizzazione per i motori di ricerca: la procedura che massimizza l'efficacia del tuo sito per i motori di ricerca*.
+
+SEO è, infatti, l'acronimo di Search Engine Optimization ed, all'atto pratico, è rappresentata da tutto un insieme di azioni, processi, configurazioni che vengono applicate ad un sito da un professionista al fine di plasmare i contenuti, l'aspetto e i metadati delle pagine nel modo più congeniale alle richieste dei motori di ricerca.
+
+In questo modo, il sito dovrebbe dunque risultare di maggior valore agli occhi degli algoritmi di ranking dei motori e, di conseguenza, questi dovrebbero avvantaggiarlo nei risultati delle ricerche rispetto ai siti meno ottimizzati.
+
+Se non hai idea di cosa sia il ranking delle pagine Web, delle basi dell'algoritmo di PageRank abbiamo già parlato su qui su Pensieri in codice, puoi facilmente trovare l'episodio nel feed del podcast.
+
+### Cosa vuol dire SEO Poisoning
+
+In linea generale, chi crea e pubblica un sito Web, desidera che questo sito venga visitato e, come ben sappiamo, i motori di ricerca veicolano una enorme fetta degli utenti del Web verso i loro siti di destinazione.
+
+Quindi ogni creatore di siti cerca (o almeno dovrebbe cercare) di potenziare al massimo la SEO delle proprie creazioni in modo tale da provare ad avvantaggiarle rispetto ai concorrenti.
+
+Se ho, ad esempio, un sito che vende prodotti di ferramenta, avrò probabilmente molti concorrenti. Apparire prima di loro nei risultati delle ricerche potrebbe darmi un enorme vantaggio e quindi potrei voler investire molto nella SEO del mio sito.
+
+Ma proprio questo stesso meccanismo, che di per sé è fondamentale per restituire agli utenti dei risultati il più possibile utili alle loro ricerca, può essere anche sfruttato per scopi criminali.
+
+L'idea, in realtà, è abbastanza semplice.
+
+Sceglie un obiettivo, che può essere un servizio, un prodotto, in generale un sito che già si sa che registra un forte traffico di utenti che lo utilizzano per un qualche scopo rilevante.
+
+Solitamente gli obiettivi scelti sono siti di home banking, siti che offrono servizi come caselle email, password manager, file sharing, oppure siti che raccolgono pacchetti software da scaricare e installare. L'importante è scegliere siti di un certo interesse, quindi che cubano un certo traffico di utenti, ma che al tempo stesso non siano troppo grandi o troppo  famosi; e a breve capiremo il perché.
+
+Una volta scelto l'obiettivo, quindi, ne si sviluppa e pubblica una copia. La copia non deve essere completa, basta una o anche poche pagine che all'apparenza risultano identiche a quelle del sito originale, ma che in realtà sono ospitate su un server di proprietà del cyber criminale e di conseguenza sono completamente sotto il suo controllo.
+
+A questo punto, si potenzia il più possibile la SEO di queste pagine finte e, se l'attacco va a buon fine, dopo un certo lasso di tempo, queste iniziano ad apparire nei risultati delle ricerche effettuate degli utenti mescolate tra le pagine autentiche del sito originale.
+
+La scelta dell'obiettivo, dunque, come dicevo poco fa, è fondamentale. Scegliere un sito troppo ben posizionato, come potrebbe essere PayPal o Amazon renderebbe impossibile batterlo su campo della SEO. Mentre scegliere un sito che visitano solo in pochi, sarebbe magari facile da superare nelle ricerche ma porterebbe volumi di traffico ben magri e dato che gli attacchi di questo tipo si basano sulla quantità, tutto il lavoro potrebbe risultare inutile.
+
+Ad ogni modo, per pompare la SEO di queste pagine finte, si usano essenzialmente due tecniche. Che poi altro non sono che le normali metodi di ottimizzazione della SEO ma forzati e stressati in modo artificiale.
+
+Innanzitutto si utilizzano parole chiave e metadati nascosti all'interno del codice delle varie pagine. Si aggiungono enormi liste di parole che riguardano l'argomento trattato, ma anche parole studiate sulla base della tipologia di utenti che si intende attirare.
+
+Ad esempio si potrebbe giocare sugli errori tipici degli utenti un po' più sprovveduti e mettere tra le parole chiave anche versioni sbagliate delle parole comunemente usate. Non so, nel caso di un home banking su potrebbe aggiungere *bancking* scritto con la ck, o *file scharing* con la c invece che l'h.
+
+Molti obietteranno che questi sistemi con le parole chiave sono poco efficaci ormai nel 2022, ma dobbiamo contestualizzare la situazione e ricordarci gli obiettivi.
+
+Siamo in presenza di due pagine totalmente identiche: una reale, l'altra falsa. Differenziare anche una sola parola chiave può essere la discriminante tra quale delle due pagine viene scelta come risultato da un motore di ricerca. E siccome i cyber criminali sono sempre in cerca di utenti meno smaliziati, scartare chi scrive home banking in modo corretto rispetto a chi lo scrive male, potrebbe essere un vantaggio per lo scopo in questione.
+
+E poi c'è la seconda tecnica, quella di generare traffico sulle pagine false. Sempre nell'episodio sul PageRank abbiamo già parlato del fatto che il traffico è un indicatore importante della qualità di una pagina agli occhi di un motore di ricerca.
+
+Se gli utenti fanno ricerche e cliccano su un risultato, questo guadagna valore dal punto di vista dell'indicizzazione. Quindi, generare un forte traffico, in modo ovviamente artificiale sfruttando sistemi automatici, bot, ecc. è la seconda parte della strategia e contribuisce, assieme alle parole chiave, a infiltrare le pagine finte in mezzo o addirittura in posizione più alta rispetto a quelle vere.
+
+### A cosa serve il SEO Poisoning
+
+Ma a cosa serve tutto questo sforzo? Dopotutto piazzare pagine false nei motori di ricerca, come già ti accennavo prima, di per se non ha questa grande utilità.
+
+A meno ché, queste pagine non siano state modificate per veicolare un secondo attacco.
+
+Nell'esempio dell'home banking che facevamo prima, ad esempio, una falsa pagina di login o richiesta di assistenza, potrebbe essere un ottimo modo per fare incetta di password di ignari utenti.
+
+Oppure una falsa pagina di download di un software, sarebbe perfetta per far scaricare ed installate all'utente un trojan o un ransomware, al posto o addirittura assieme al software che stava cercando.
+
+Gli utilizzi in realtà potrebbero essere tanti, sta alla scaltrezza del criminale, trovare quello più adatto ed efficiente, ma in generale il meccanismo è semplice.
+
+Un utente è in cerca di qualcosa sul motore di ricerca. Tramite il SEO poisoning lo si attira in una pagina trappola e gli si propone una soluzione al suo problema che in realtà nasconde un furto di dati o un virus di qualche tipo.
+
+Spesso, queste trappole sono anche fatte in modo da permettere all'utente di risolvere il problema da cui era partito, quindi in molti casi, questi nemmeno si rende conto di essere stato imbrogliato o infettato.
+
+Le false pagine di download, ad esempio, oltre a iniettare un malware, effettuano anche il download del vero software in questione, quindi l'utente crede che tutto sia andato per il meglio, lascia il sito, continua le sue attività e nemmeno sospetta di avere il PC infetto.
+
+Come anticipavo nell'introduzione il SEO Poisoning è qualcosa che si tende a sottovalutare, ma il fenomeno esiste da tempo ed anche è in crescita. Ad esempio, risale al mese scorso la notizia dell'identificazione di una batteria di domini malevoli che infettavano utenti alla ricerca di software come Zoom, Visual Studio, TeamViewer e altri. Il link è in descrizione.
+
+E il motivo di questa crescita è presto detto: il SEO Poisoning funziona ed è anche relativamente economico da mettere in campo. Una sorta di pesca a strascico per utenti del Web, ed è per questo che il parallelismo con il phishing viene in mente quasi in modo automatico.
+
+### Perché funziona
+
+Ma, proprio al pari del phishing fatto di messaggi che sembrano provenire dalla banca o di quei banner pubblicitari che ti mostrano scritte lampeggianti del tipo *hai vinto un premio. clicca qui per incassare* oppure *il disco è pieno. Clicca qui per liberare spazio* e che quindi cercano di instillarti un senso di ansia, anche il SEO Poisoning gioca su una serie di fattori psicologici.
+
+Nel libro Pensieri lenti e veloci di Daniel Kahneman (e so che lo cito spesso, ma è un libro che mi ha molto colpito e ha influito proprio sul mio modo di interpretare le persone e il mondo che mi circonda). In questo libro, dicevo è riportato un esperimento riguardante i motori di ricerca.
+
+Ora non ricordo i dettagli ma il concetto era che a vari gruppi di persone veniva dato accesso ad un motore di ricerca costruito ad hoc nel quale la posizione dei risultati delle ricerche era leggermente alterata in base al gruppo di appartenenza
+
+Nello specifico, i soggetti dovevano informarsi su alcuni candidati ad una carica istituzionale, per i quali poi avrebbero dovuto esprimere un voto.
+
+Ai soggetti venivano dati solo i nomi dei candidati e gli veniva chiesto di usare questo speciale motore di ricerca per informarsi. Ovviamente loro non erano a conoscenza del fatto che, a seconda dei gruppi nei quali erano stati collocati, per la stessa ricerca, il motore avrebbe prodotto risultati ordinati diversamente.
+
+Questo esperimento ha dimostrato che, pur essendo le informazioni consultabili nel complesso perfettamente identiche, il fatto che per alcuni candidati, le pagine visitabili apparissero concentrate nella parte alta della lista dei risultati, ne ha chiaramente favorito la vittoria.
+
+Insomma, pur potendo leggere tutti le stesse pagine Web, gli utenti tendevano a votare il candidato le cui pagine apparivano per prime nei risultati delle ricerche.
+
+Questo vuol dire che, chiaramente, le nostre scelte vengono influenzate dal modo in cui ci vengono presentati i risultati delle nostre ricerche. E soprattutto che, consciamente o inconsciamente, noi riponiamo una grande fiducia nei motori di ricerca che utilizziamo.
+
+In parole semplici, almeno di primo acchito, il nostro cervello fa, in automatico, un ragionamento del genere: se il risultato è mostrato per primo, allora è sicuramente il più attinente alla mia ricerca, il più valido e il più valevole di attenzione.
+
+Come esseri umani, poi, se siamo stanchi o un po' di fretta, un vero è proprio controllo, quindi con il bisogno di porre bene attenzione a quello che stiamo facendo, scatta solo nel momento in cui ci accorgiamo che qualcosa non va. Ma se non sospettiamo di nulla, può capitare che completiamo l'operazione quasi in automatico. Questo è un fatto sempre confermato dagli studi di Kahneman.
+
+Quindi, se stiamo cercando un software che dobbiamo installare perché ci serve per un lavoro che dobbiamo consegnare o per provare un'idea che abbiamo in mente o per una call a cui dobbiamo partecipare tra 5 minuti, le nostre difese mentali saranno pressoché nulle e il rischio di cadere in una trappola di SEO Poisoning è concreto.
+
+Pensaci. Quante volte capita anche a te di muoverti in automatico sul motore di ricerca? A me capita.
+
+Mi serve una cosa. Click su Firefox. Scrivo due parole nella barra. Invio. Click sul primo risultato non sponsorizzato.
+
+Se il primo risultato fosse un sito falso, a questo punto ancora non me ne sarei accorto.
+
+### Contromisure
+
+In tutto questo discorso, i motori di ricerca hanno dei meccanismi con i quali cercano di mitigare il problema del SEO Poinsoning, ma chiaramente, se siamo qui a parlare, in qualche modo questi non sono sufficienti. Senza contare che nel mondo della cyber sicurezza, il gioco è sempre una rincorsa tra chi individua nuovi modi per commettere crimini e chi studia soluzioni per evitarli. Questo è ovvio.
+
+Quindi, noi dobbiamo metterci un po' del nostro per evitare di finire nella rete di qualche cyber criminale. Anche perché poi le conseguenze possono essere ben poco piacevoli. Dalla necessità di reinstallare PC, server e sistemi vari, fino al rischio di dover bloccare carte di credito o addirittura conti in banca. Senza contare che, se non ci rendiamo conto di essere caduti in trappola, beh rischiamo anche di perdere dati o addirittura soldi.
+
+Innanzitutto, è sempre buona norma (ma questo in generale), avere sempre antivirus attivo e aggiornare tutti i software con la maggior frequenza possibile. E non parlo solo del sistema operativo, ma anche dei browser, ad esempio.
+
+Poi, dobbiamo entrare nell'ottica di non fidarci cecamente dei motori di ricerca. E questo non perché siano malvagi (questo è un altro discorso), ma perché semplicemente non sono sicuri al 100%. Niente è sicuro al 100%.
+
+Quindi, quando facciamo una ricerca, prendiamo un bel respiro e ci fermiamo un attimo a guardare la pagina dei risultati. Leggiamo quello che c'è scritto, invece di associare vagamente una forma all'informazione che stiamo cercando e, soprattutto, facciamo attenzione all'indirizzo del sito sul quale stiamo per cliccare.
+
+Bene o male qualsiasi motore, infatti, nei risultati, sopra al titolo di ogni pagina mostra in piccolo l'indirizzo di destinazione, cioè quello a cui ci si collegherà se si decide di cliccare sul risultato.
+
+Questo indirizzo è molto d'aiuto per individuare un possibile SEO Poisoning e questo perché mentre è possibile copiare delle pagine o un intero sito, è invece molto più difficile impossessarsi di un dominio o anche solo trovare domini che siano sufficientemente simili a quello originale.
+
+Per fare un esempio reale che trovi nell'articolo in descrizione, se cerchiamo il software di videoconferenza Zoom perché abbiamo bisogno di installarlo per un meeting e sul risultato vediamo che l'indirizzo punta a zoomvideo-s.com dobbiamo insospettirci perché se il software si chiama Zoom, la prima cosa che dobbiamo aspettarci è che il sito abbia lo stesso identico nome. Magari in questo modo avremo dei falsi positivi, ma sempre meglio un po' più di prudenza che rischiare problemi, no?
+
+Poi ci sono sistemi più avanzati come utilizzare filewall, proxy, sandbox, ma direi che non è questa la sede giusta per parlarne. Sono queste soluzioni che richiedono una certa dimestichezza e, se non sei già in grado di configurarle in autonomia, credo sia meglio rivolgersi ad un esperto. Nel caso in cui tu ne abbia bisogno magari per il tuo ufficio o la tua azienda, puoi contattarmi sul sito pensieriicodice.it. Non me ne occupo personalmente ma posso metterti in contatto con qualcuno dei miei collaboratori.
+
+Ad ogni modo, io penso sempre che il miglior sistema per tenersi fuori dai guai quando si naviga sul Web, sia quello di porre attenzione a quello che si sta facendo. Non visitare siti sconosciuti, fare attenzione agli indirizzi, come detto poco fa, tenere al sicuro le password in un password manager criptato, non utilizzare reti wi-fi aperte o reti delle quali non ci fidiamo e, se si è costretti, allora farlo tramite una vpn come potrebbe essere quella di Proton di cui ti ho parlato nello scorso episodio di Espresso.
+
+Insomma, i pericoli online, ci sono, questo è vero, però alla fine, per stare ragionevolmente al sicuro, quello che basta è un po' di conoscenza e usare la testa. Sempre.
+
+### Conclusione
+
+Bene, l'episodio di oggi, dunque, termina qui. Spero come al solito di averti portato qualche informazione e riflessione interessante.
+
+Ti ricordo che se posso produrre questi contenuti, è solo grazie a te che ascolti ed alla community di pensieri in codice che sostiene il progetto. Scopri come dare una mano anche tu, sul sito pensieriincodice.it (mi raccomando con 2 i).
+
+Puoi ascoltare tutti gli episodi sulle maggiori piattaforme e app di podcast o riceverli direttamente sullo smartphone iscrivendoti al canale Telegram che trovi sempre sul sito.
+
+Se Pensieri in codice ti piace, e se sei arrivato fin qui immagino ti piaccia, potresti sostenerlo anche lasciando una recensione nell'app con cui ascolti il podcast e potresti poi condividerlo con un amico per farglielo conoscere. Così facendo mi aiuterai a far crescere il progetto, a migliorarne la qualità, e farai scoprire a lui un qualcosa di interessante.
+
+In somma, ne guadagneremmo tutti!
+
+Per oggi, dunque, è proprio tutto, io ti ringrazio per aver ascoltato fin qui, ti do appuntamento al prossimo episodio e ti ricordo che *un informatico risolve problemi, a volte anche usando il computer*.
+"

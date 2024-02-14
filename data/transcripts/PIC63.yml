@@ -1,0 +1,218 @@
+text: "
+
+Quanto siete disposti a fidarvi di un algoritmo?
+
+Nel marzo del 2009, il signor Robert Jones su trovava alla guida della sua BMW quando si accorse che il serbatoio era ormai vuoto.
+
+Senza perdersi d'animo, fece semplicemente quello che molti di noi avrebbero fatto al suo posto: cercò la più vicina stazione di servizio sul proprio navigatore TomTom.
+
+Impostò il percorso ed iniziò a seguire le indicazioni della voce computerizzata.
+
+Tuttavia, più seguiva il percorso prestabilito, più la situazione iniziava a diventare strana.
+
+Prima una strada secondaria, poi una salita che costeggiava una vallata, poi l'asfalto che diventava sterrato e lo sterrato che diventava praticamente una mulattiera.
+
+Mr. Jones non pensò di doversi preoccupare chissà quanto. Per lavoro percorreva 8000km a settimana, non sarebbe stata certo una strada di campagna a metterlo in difficoltà.
+
+Solo che, ad un certo punto, la strada diventava così stretta che la BMW quasi non sembrava in grado di proseguire e, infatti, se in quel momento avessimo potuto osservare la scena dalla vallata, avremmo visto il muso dell'auto del signor Jones spuntare dal dirupo e affacciarsi nel vuoto.
+
+Lo scherzetto richiese 4 quad e un trattore per salvare la BMW in bilico e costò al signor Jones una bella accusa per guida pericolosa.
+
+Più tardi, davanti al giudice, Mr Jones affermerà che non gli era nemmeno venuto in mente che il GPS potesse sbagliarsi ed era certo che, prima o poi, dietro una svolta, sarebbe apparsa la stazione di rifornimento.
+
+* * *
+
+Ok, so benissimo cosa state pensando: Mr Jones è un'idiota (e non in accezione Duferiana del termine).
+
+Con il senno di poi è ovvio che nessuno di noi avrebbe seguito il TomTom letteralmente fino in capo al mondo.
+
+Però... se vi dicessi che non sempre la questione è così semplice?
+
+Sapete chi è Garry Kasparov?
+
+Garry Kimovich Kasparov è stato campione mondiale di scacchi per più di 20 anni dal 1984 al 2005.
+
+Ma, nel campo dell'informatica, è probabilmente più conosciuto per il fatto di essere stato più volte sfidato dalle maggiori aziende produttrici di Intelligenze Artificiali.
+
+All'epoca, nell'immaginario comune, il gioco degli scacchi rappresentava una delle maggiori espressioni di intelligenza umana e, fin dall'inizio della sua carriera, Kasparov ha affrontato e sconfitto IA e software appositamente creati per il gioco degli scacchi, fino al 1997, anno nel quale è stato per la priva volta sconfitto da una macchina, un supercomputer della IBM chiamato Deep Blue.
+
+Successivamente, Deep Blue si è evoluto (soprattutto grazie alla pubblicità ottenuta da questo evento) per diventare la moderna IA che tutt'oggi IBM utilizza per i propri scopi commerciali, ma questa è un'altra storia.
+
+Ciò che, invece, mi ha colpito particolarmente è stato scoprire che questa storica sconfitta che ha causato al campione tutta una serie di problemi reputazionali, nonché una perdita economica di quasi un milione di dollari (che nel 1997 non erano bruscolini), è stata dovuta malriposta fiducia nell'efficienza dell'algoritmo.
+
+Nel suo libro Deep Thinking, infatti, Kasparov, oltre all'esporre tutta una serie di riflessioni sull'intelligenza umana e artificiale, sul loro rapporto e sulle applicazioni future, racconta anche l'evento della sconfitta contro Deep Blue, spiegano minuziosamente gli avvenimenti dal suo punto di vista e lo stato d'animo con il quale ha vissuto quei momenti.
+
+Si tratta di una lettura che ho trovato davvero interessantissima e che mi ha preso tantissimo. Probabilmente ne parlerò ancora in futuro, ma se siete curiosi, vi lascio il link affiliato in descrizione e vi ricordo sempre che utilizzarlo per acquistare su Amazon è un ottimo modo per sostenere Pensieri in codice senza spendere un centesimo in più di tasca vostra.
+
+Ad ogni modo, come vi stavo dicendo, il racconto della sconfitta è sorprendente
+
+Il match, che si componeva di sei partite divise su altrettanti giorni, ebbe il seguente risultato: prima partita vinta da Kasparov, seconda da Deep blue,  pareggio, pareggio, pareggio e ultima vinta da Deep Blue. Quindi punteggio finale: 3,5 per la macchina e 2,5 per l'umano.
+
+Ma la cosa sorprendente è che, secondo Kasparov, e secondo anche moltissimi esperti del campo, il campione ha perso il match alla seconda partita, quando, a causa di un errore gravissimo, scoperto da lui poi solo il giorno successivo, lo ha portato ad un calo di morale e fiducia un se stesso che ha pregiudicato tutte le partite successive.
+
+C'è da capire che la pressione psicologica su quel match era enorme, se leggerete Deep Thinking  ve ne renderete conto.
+
+Da un lato, Kasparov rappresentava il paladino umano contro le macchine per tutto il mondo non ancora informatizzato. Dall'altro la IBM aveva investo somme folli e aveva fatto di tutto per aumentare la pressione psicologica, elemento che andava ovviamente a discapito del solo contendente umano, visto che la macchina non soffriva di questi problemi.
+
+Ad ogni modo, quale fu questo tremendo errore?
+
+Beh proprio come per il signor Jones, anche Kasparov si fido in maniera eccessiva di un algoritmo (in questo caso di una IA) che non si rivelò poi cosi meritevole di fiducia.
+
+Se non siete esperti di scacchi, dovete sapere che in questo gioco esiste una particolare regola che, detto in soldoni, dice che se la posizione in cui i pezzi si trovano porta obbligatoriamente a ripetere un certo numero di mosse uguali, allora la partita viene dichiarata patta, cioè in pareggio.
+
+Dalle verifiche di esperti di tutto il mondo, quella famigerata seconda partita era palesemente una patta, tuttavia, Kasparov non se ne accorse e, credendo di essere in svantaggio, si arrese.
+
+Ora, parliamoci chiaro: che un campione di quel livello si facesse sfuggire una posizione del genere è evento molto raro.
+
+Stiamo parlando di qualcuno che è arrivato a giocare contemporaneamente 35 partite contro altrettanti software e terminare la giornata con un risultato di 35 a 0.
+
+Parliamo di qualcuno che, a colpo d'occhio, è in grado di prevedere quale dei due contendenti di una partita è in vantaggio, chi vincerà e in quante mosse.
+
+L'unico caso in cui Kasparov si sarebbe potuto fare sfuggire una cosiddetta *patta obbligata* era quello in cui, stesse completamente ignorando la questione.
+
+E, in realtà, stando alle sue parole, è proprio quello che accadde.
+
+Il campione, reduce da centinaia di partite nel corso di anni contro i più disparati software scacchistici, e la stessa Deep Blue che aveva già affrontato e battuto pochi mesi prima, era assolutamente certo di una cosa: i programmi per il gioco degli scacchi erano fortissimi nel valutare migliaia di posizioni al secondo. E una patta obbligata, o qualsiasi altro evento forzato dal regolamento, sarebbe stato IMMEDIATAMENTE individuato e segnalato dalla macchina.
+
+Quindi lui, non se ne doveva preoccupare. Cosa che invece avrebbe certamente fatto contro un avversario umano.
+
+Kasparov, sapeva benissimo come funzionavano quei software, aveva contribuito a realizzarli e allenarli. Sapeva bene, ad esempio, che un Gran Maestro era in grado di valutare 2 posizioni al secondo, mentre Deep Blue poteva analizzarne 200 milioni al secondo.
+
+Che senso avrebbe avuto sprecare tempo e risorse mentali a cercare un evento che per regolamento andava segnalato dal primo giocatore che se ne rendeva conto?
+
+E questo fu il suo errore. Deep Blue, per via probabilmente di un bug, non si sa, non segnalò la patta obbligata e Kasparov, credendo che la partita fosse persa, si arrese per risparmiare le energie per la partita successiva.
+
+Come per Mr. Jones, anche Garry Kasparov si è fidato di un algoritmo e la sua fiducia si è tradotta in un disastro per lui.
+
+Solo che, a differenza di come dicevamo prima per Mr. Jones, voi avete abbastanza autostima da dare dell'idiota al più grande campione di scacchi di sempre?
+
+* * *
+
+Anche noi commettiamo ogni giorno errori di quelli del tipo che hanno commesso Robert Jones e Garry Kasparov.
+
+Ogni giorno noi seguiamo le indicazioni del navigatore GPS dando per scontato che la strada che ha calcolato sia la migliore
+
+Ogni giorno visitiamo siti Web a partire dai primi mostrati risultati di Google dando per scontato che siano quelli migliori per la ricerca che abbiamo fatto
+
+Ogni giorno compriamo prodotti su Amazon, guardiamo film su Netflix, ascoltiamo brani su Spotify, presupponendo che siano quelli che ci piaceranno di più
+
+Per non parlare dei social network che ci selezionano i nostri contenuti sulla base di criteri di cui sappiamo ben poco. Qualcuno va mai a controllare se la scelta dei contenuti mostrati nel nostro feed corrisponde davvero a quello che è meglio per noi?
+
+Certo l'entità di questi comportamenti non è paragonabile a quelli delle storie che vi ho raccontato, ma hanno cmq un certo effetto sulle nostre vite.
+
+Ci sono studi che hanno dimostrato che modificare la quantità di post positivi e negativi nei feed dei nostri social, influisce attivamente sul nostro umore.
+
+Ci sono studi che dimostrano che ordinare diversamente i risultati di un motore di ricerca influisce sulla nostra percezione della validità e importanza degli argomenti contenuti nelle pagine collegate a quei risultati.
+
+E questo discorso vale al livello del singolo utente. Se valutiamo la cosa come società, i risvolti si fanno ben più pesanti.
+
+Al giorno d'oggi, ci sono algoritmi a noi invisibili che prendono parte a decisioni come: se possiamo avere un prestito, o aprire un conto in banca, o quanto costerà la nostra assicurazione.
+
+Nel Stati Uniti, ci sono algoritmi che concorrono alla decisione di quali cure fornire ad un paziente o come giudicare un imputato.
+
+È di poche settimane fa la notizia di un drone che ha autonomamente deciso di attaccare e uccidere un soldato in Libia.
+
+A volte si parla in modo altisonante di potenti intelligenze artificiali, altre volte di algoritmi, altre volte semplicemente di fogli excel, ma il concetto resta lo stesso: esiste un qualche software che prende o almeno suggerisce una decisione sulla base di alcuni criteri.
+
+E noi, intesi sia come singoli che come società, possiamo fidarci ad occhi chiusi? Ovviamente no.
+
+O meglio, possiamo seguire le indicazioni degli algoritmi responsabilmente, per parafrasare un noto slogan.
+
+Sicuramente possiamo fermarci a riflettere su quali algoritmi pervadono e governano ora la nostra vita.
+
+Possiamo provare a capire quali ci sono d'aiuto e quali invece ci stanno sfruttando o pilotando in qualche modo.
+
+Possiamo provare a conoscerne il più possibile il funzionamento, i criteri.
+
+E, soprattutto, possiamo impegnarci nel tentativo di rifiutare quelli che ci sono oscuri, quelli che si rifiutano di lasciarci capire cosa fanno delle nostre informazioni, dei nostri dati.
+
+Noi, come europei siamo più fortunati di altri, abbiamo il GDPR che ci da più garanzie, ma ci tocca comunque fare la nostra parte. Informarci, capire, valutare, segnalare al garante, se necessario.
+
+Si tratta di un nuovo modo di pensare che dobbiamo pian piano acquisire. Un impegno che dobbiamo prendere per migliorare il nostro presente e il nostro futuro.
+
+* * *
+
+Per concludere l'episodio, però voglio raccontarvi un'altra storia, questa volta un po' di versa da quelle di prima.
+
+Nel 1983, Stanislav Petrov era un ufficiale dell'esercito russo che aveva il compito di monitorare il sistema di allarme nucleare dello spazio aereo russo.
+
+In pratica il suo lavoro consisteva nel controllare il supercomputer del sistema e, in caso di allarmi o segnalazioni da parte di quest'ultimo, allertare i suoi superiori per dar modo alla catena di comando di reagire alla minaccia nel minor tempo possibile.
+
+Il 26 settembre di quell'anno, poco dopo mezzanotte, durante il turno di Petrov, all'improvviso l'allarme iniziò a suonare.
+
+Ora, provate solo ad immaginare la situazione.
+
+Piena guerra fredda.
+
+I sistemi russi segnalano missili nucleare in avvicinamento diretti sul territorio nazionale.
+
+Pochissimo tempo per reagire.
+
+Sono ingredienti perfetti per l'inizio della Terza Guerra Mondiale.
+
+Tuttavia, Petrov non era convintissimo.
+
+L'algoritmo del supercomputer aveva lanciato l'allarme ma al tempo stesso segnalava solo 5 missili in avvicinamento.
+
+All'ufficiale qualcosa non tornava: 5 missili erano un numero decisamente strano per un attacco sensato.
+
+Pochi per mettere fuori gioco una nazione come la Russia.
+
+Sufficienti appena a dare il via ad una rappresaglia che, qualsiasi fosse la nazione attaccante, doveva sapere perfettamente che la Russia sarebbe stata in grado di scatenare.
+
+Le alternative per Petrov erano due: segnalare il tutto ai suoi superiori, dando praticamente il via alla terza guerra mondiale; o attendere e cercare di capire meglio cosa stesse succedendo sottraendo potenzialmente minuti preziosi alla propria patria per mettere in atto qualsiasi tipo di contromisura.
+
+Se vi è mai capitato di dover intervenire in emergenza su un servizio o un server di produzione di un cliente che è andato KO per qualche motivo, potete provare ad immaginare cosa abbia provato l'ufficiale russo in quei 23 minuti spesi a verificare i calcoli del supercomputer.
+
+Alla fine, l'intuizione di Petrov si rivelò fortunatamente corretta e la storia è andata poi avanti come sappiamo.
+
+Se il russo non avesse sentito la responsabilità di mettere in dubbio le affermazioni della macchina, oggi il mondo sarebbe diverso da come lo conosciamo.
+
+* * *
+
+Bene, anche oggi siamo giunti alla fine dell'episodio e, come al solito vi ringrazio per aver ascoltato fin qui e spero che sia stato di vostro gradimento.
+
+Prima di lasciarvi però, devo fare un annuncio.
+
+Siamo all'episodio numero 62, dopo circa due anni e mezzo di uscite più o meno regolari, di esperimenti, di tentativi andati più o meno bene, direi che è giunto il momento di prendersi un po' di tempo per fermarsi, tirare un po' di somme e cercare di capire cosa fare di questo progetto.
+
+Credo sia ora che Pensieri in codice provi a capire cosa vuol fare da grande, diciamo così...
+
+Dunque, per ora, il podcast si ferma qui.
+
+Voglio quindi approfittare di questo momento per ringraziare un po' tutti quelli che hanno reso possibile questo progetto.
+
+Quelli che mi hanno incoraggiato, supportato più o meno attivamente, consigliato e criticato.
+
+Siete stati per me un aiuto, uno sprono e un sostegno. Spero di poter ricambiare in futuro se ne avrete bisogno.
+
+Ringrazio infine tutti voi che mi state ascoltando e che mi avete ascoltato, episodio dopo episodio, per un totale di oltre 70.000 download.
+
+Insomma grazie a tutti, a presto, e non dimenticate mai che *un informatico risolve problemi, a volte anche usando il computer*.
+
+* * *
+
+ti abbozzo una versione *rovesciata* e in versione *tu* (pare che funzioni meglio del *voi* plurale*):
+
+Bene, anche oggi siamo giunti alla fine dell'episodio e, come al solito ti ringrazio per aver ascoltato fin qui e spero che sia stato di tuo gradimento.
+
+Prima di lasciarti però, vorrei farti una confidenza:
+
+Se non ho sbagliato i conti, siamo arrivati all'episodio numero 62, e dopo circa due anni e mezzo di uscite più o meno regolari, di esperimenti, di tentativi andati più o meno bene, credo sia arrivato il momento per tirare un po' di somme e cercare di capire come fare crescere più velocemente questo progetto.
+
+Da diverso tempo sto ragionando se e come mettermi ancora più in gioco, e a settembre saremo alla resa dei conti!
+
+E per fare questo ho bisogno di te. Sì, proprio di te che mi hai ascoltato fino ad ora.
+
+Per settembre ho in serbo importanti novità al palinsesto. Non posso ancora svelarti nulla, ma la tua partecipazione sarà essenziale per la riuscita della mia - ma che dico! della nostra! missione! Dico nostra! perché ormai fai parte del progetto! Io mi sento spronato da te che mi ascolti, a fare sempre meglio, e tu che mi ascolti, sei la linfa della mia divulgazione. Per questo ti sto coinvolgendo attivamente nel mio progetto. No, non ti chiedo soldi, o meglio - se vorrai donare qualcosa usando Paypal.me/valeriogalano, te ne sarò grato - ma quello che più sarà importante da settembre, è che tu ci sia nuovamente ad ascoltarmi, e ancora più importante sarà che tu coinvolga qualche amico. Ci conto. Dovremo essere in tanti, per potere fare grandi cose.
+
+Per prepararmi meglio a questo grande passo, le puntate di Pensieri in Codice saranno sospese, in attesa della grande novità a settembre. Io non mi fermerò con lo sviluppo del progetto, anche se ad agosto mi prenderò qualche giorno di ferie, ti posso assicurare che sono necessarie e spero concorderai con me, che sono meritate.
+
+Voglio quindi approfittare di questo momento per ringraziare un po' tutti quelli che hanno reso possibile questo progetto, in particolare te che stai ascoltando.
+
+Anche tu sei tra quelli che mi hanno incoraggiato, supportato più o meno attivamente, consigliato e magari tra quelli che mi hanno criticato. Ad ognuno di voi, a partire da te che mi stai ascoltando, dico che siete tutti quanti un aiuto costante, uno sprono ed un sostegno. E che al più presto voglio poter ricambiare il vostro contributo, e proprio per questo ho in mente di cambiare molte cose di questo progetto rispetto a come lo conoscete ora.
+
+I numeri mi dicono che fai parte di un nutrito pubblico: mi avete ascoltato, episodio dopo episodio, per un totale di oltre 70.000 download. E di questo ne sono grato ad ognuno di voi, a partire da te.
+
+Insomma grazie a tutti, a presto, e non dimenticare mai che *un informatico risolve problemi, a volte anche usando il computer*.
+"

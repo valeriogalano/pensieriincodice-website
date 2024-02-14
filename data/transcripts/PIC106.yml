@@ -1,0 +1,37 @@
+text: "
+È il giorno 30 aprile 1986, siamo a Pisa, alla sede del Centro universitario per il calcolo elettronico del CNR. Il Cnuce.
+
+Un comando *ping* parte da un calcolatore situato nella *sala macchine*, attraversa prima un modernissimo Butterfly Gateway, poi sorvola l'Oceano Atlantico sfruttando la rete satellitare del Telespazio di Fucino, e infine raggiunge Roaring Creek, in Pennsylvania.
+
+Nel giro di pochi istanti, un *Ok* inviato da un operatore americano arriva in risposta a Pisa. È appena nato il primo nodo Internet italiano.
+
+Si tratta di un avvenimento epocale, frutto di 5 anni di lavoro da parte del Cnuce che in questo periodo sta sperimentando appunto i diversi standard di collegamento tra computer.
+
+I ricercatori non possono ancora sapere che Arpanet porterà fra pochi anni alla nascita del moderno Internet, ma già intravedono le maggiori potenzialità del protocollo TCP/IP rispetto ai concorrenti. Tante, infatti, sono le università e centri di ricerca nel Mondo, già collegati a questa rete.
+
+In effetti, anche se Internet sembra ancora uno dei tanti progetti di ricerca sperimentale, a Pisa sono all'avanguardia e la richiesta di connettere il centro di ricerca alla rete, che di fatto è gestita dagli Stati Uniti, viene accettata con entusiasmo.
+
+In pochi ancora si rendono conto che questo avvenimento è parte di un processo che in meno di mezzo secolo trasformerà il Mondo e la civiltà umana, tant'è vero che, complice anche il disastro di Chernobyl avvenuto qualche giorno prima, praticamente nessuno dei media riporta la notizia. Tutto passa in sordina.
+
+Nel giro di solo un anno, però, il Cnr registrerà il primo dominio .it, quindi il primo ufficialmente appartenente all'Internet italiano. E poi nascerà il Registro dei domini .it, che ancora oggi è gestito a Pisa.
+
+A distanza di poco più di 35 anni, noi oggi facciamo transitare tranquillamente centinaia di GB di dati in giro per il Globo, ma quel primo collegamento, unico nodo di scambio fra due Nazioni, implementava una velocità massima di 64KB al secondo. Qualcosa di assolutamente ridicolo per le necessità odierne, ma più che sufficiente per gli studi dell'epoca, come affermerà in un intervista, 20 anni dopo, Stefano Trumpy, uno dei membri del team di ricerca che oggi è Presidente Onorario della Internet Society italiana nonché Digital Champion per la città di Livorno.
+
+L'Italia, è quindi la quarta nazione europea, dopo Norvegia, Regno Unito e Germania, ad entrare a far parte della rete Internet.
+
+Tutto è nato dall'idea di Luciano Lenzini, informatico e ricercatore, di includere il Cnuce in un progetto sperimentale avviato dalla DARPA, al quale partecipano già alcune altre nazioni europee. Lenzini è stato da poco a Boston e ha visto gli albori e le potenzialità della rete, così, una volta tornato in Italia, ha convinto i suoi superiori che fare richiesta anche per l'istituto di Pisa, è la cosa da fare.
+
+La risposta affermativa dagli Stati Uniti non tarda ad arrivare. Lo stesso Dr. Robert Khan, direttore del progetto, viene in Italia per partecipare alla progettazione del nodo, la scelta dell'hardware e la configurazione che si dovrà mettere poi in piedi.
+
+Gli anni passano e tutto sembra andare per il meglio, fino a che, a pochi metri dal traguardo, non arriva un messaggio da parte della DARPA, in cui si comunica che è necessario che tutti i nodi europei si dotino nel nuovissimo Butterfly, un gateway composto da 256 processori collegati secondo un schema a farfalla. Da cui il nome.
+
+È la fine. Questo apparecchio costa più di quanto il Cnuce possa investire per il progetto e una richiesta di fondi necessiterebbe di troppo tempo per via delle lungaggini burocratiche. Non c'è altro da fare che ritirarsi.
+
+Lenzini, quindi, prende l'aereo per Washington D.C., partecipa alla riunione di tutti i partner e, quando è il suo turno di parlare, comunica la decisione di ritirarsi.
+
+Ma è in quel momento che succede qualcosa che lo stesso ricercatore non si sarebbe mai aspettato. Il Dr. Robert Khan prende la parola e dice a Lenzini che loro vogliono lui, il Cnuce e l'Italia nel progetto. Il Batterfly Gateway lo finanzierà il dipartimento della difesa americano.
+
+In altre parole, è stato per merito della fiducia nelle capacità del team dell'istituto di Pisa, e dell'orgoglio e lo spessore di una figura come Lenzini, se il 30 aprile 1986 l'Italia è stata fra i primi paesi europei a collegarsi alla rete Internet.
+
+Se vuoi sentire la storia raccontata dalla viva voce del suo protagonista, ti consiglio di cercare, su Youtube, il documentario *Login - Il giorno in cui l'Italia scoprì Internet*.
+"

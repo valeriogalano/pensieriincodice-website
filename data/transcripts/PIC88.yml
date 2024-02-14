@@ -1,0 +1,140 @@
+text: "
+
+Di Intelligenza Artificiale parliamo spesso qui su Pensieri in codice. Come funzionano Machine e Deep Learning. Quali effetti più o meno evidenti ha questa tecnologia sulla nostra vita quotidiana e sui nostri comportamenti.
+
+E dato che, se mi capita l'occasione di sperimentare qualcosa di interessante in prima persona, la colgo al volo, appena mi è stato possibile, ho integrato il nuovo algoritmo di intelligenza artificiale di Microsoft nelle mie attività di scrittura del codice.
+
+L'ho utilizzato attivamente, ho provato a studiarlo e negli utlimi giorni ho provato a fare una piccola valutazione del risultato.
+
+Oggi, quindi, ti racconto la mia esperienza e le mie impressioni dopo 4 mesi di utilizzo quotidiano di Github Copilot.
+
+Non prima però di aver ascoltato la sigla!
+
+Se non ne hai mai sentito parlare, devi sapere che Github Copilot è un'intelligenza artificiale creata per programmare, per scrivere codice.
+
+Sul sito ufficiale, Microsoft la definisce *Your AI pair programmer* proprio a voler sottolineare il fatto che è si tratta di un servizio progettato per *sviluppare insieme al programmatore*, per seguirlo, aiutarlo e consigliarlo durante la fase di scrittura del codice.
+
+In pratica, si tratta di un motore di machine learning basato su Codex OpenAI ed allenato utilizzando la ormai enorme mole di codice presente su Github.
+
+La promessa di questo servizio è quella di alleggerire il programmatore nello svolgere le operazioni meccaniche e/o ripetitive, che notoriamente o portano via ingenti quantità di tempo o conducono a massicci copia-incolla.
+
+Diciamo sempre che programmare significa risolvere problemi, che lo sviluppo è un'attività creativa, però poi finiamo spesso a scrivere, riscrivere o importare codice per l'esecuzione di operazioni comuni, o che abbiamo già risolto altrove.
+
+Copilot è stato pensato proprio per semplificare queste operazioni e permettere a chi lo utilizza di dedicarsi alla vera parte importante del lavoro: il ragionamento, la progettazione e la risoluzione dei problemi. E per farlo, implementa tutta una serie di funzionalità che, almeno sulla carta, risultano veramente interessanti se non addirittura stupefacenti.
+
+Tra le tante, ad esempio, poiché è un discendente diretto della ormai celebre GPT-3, Copilot è in grado di convertire direttamente i commenti in codice funzionante. Basta infatti descrivere in un commento il modo in cui un metodo o una funzione debba funzionare, iniziare a scrivere la firma e, come per magia, l'algoritmo proporrà il codice che ritiene più adatto per svolgere le operazioni descritte.
+
+A quel punto, il programmatore potrà accettare il codice proposto ed eventualmente modificarlo e correggerlo se necessario, oppure rifiutare ed iniziare a scrivere il proprio codice e, in tal caso, l'algoritmo continuerà ad autocorreggersi e a proporre soluzioni che si adattino alle richieste ed a quanto già scritto.
+
+Un'altra funzione molto interessante è quella che serve a completare porzioni di codice ripetitivo.
+
+A volte serve compilare un oggetto o un array  con tanti elementi o una serie di proprietà o costanti secondo una certa logica. Chessò, magari un array che contiene una serie di tag html da convertire in qualcos'altro, o una serie di costanti che rappresentano i nomi dei mesi dell'anno o la traduzione in varie lingue della stessa. Capitano spesso queste piccole e macchinose scocciature.
+
+E Copilot è in grado, almeno secondo le promesse, di capire e completare queste liste per conto del programmatore. Dagli esempi, infatti, sembra che sia sufficiente scrivere un paio di righe e l'algoritmo farà il resto, intuendo quali altri elementi aggiungere, a quali valori associarli e così via.
+
+Ovviamente poi, l'algoritmo è di grande aiuto anche nella generazione di unit test, e non solo perché crea le classi e i metodi di testing, come fanno i moderni editor, ma anche perché cerca di predisporre specifici casi con valori che potrebbero essere significativi ai fini del test: casi standard, casi limite, ecc.
+
+Infine, sono addirittura presenti numerose integrazioni con vari servizi online. In pratica, il programmatore scrive il la firma di una funzione come fetch tweets from user e copilot scrive tutto il resto della funzione: chiamata alle API di twitter, parsing della risposta e restituzione dei dati.
+
+Descritto così, sembra qualcosa di impressionante, quasi magia, un algoritmo che scrive codice. Praticamente un sogno. Quale programmatore non vorrebbe usarlo?
+
+Prima di procedere, però, mi fermo un attimo per precisare una cosa, perché già so, tu ascoltatore abituale di Pensieri in codice, a cosa starai pensando: tutto bellissimo, ma quale codice viene utilizzato per allenare questa intelligenza artificiale? Con quali autorizzazioni viene dato in pasto a un algoritmo, il lavoro di qualcun altro? E il risultato è praticamente codice copiato da altri progetti?
+
+Beh, diciamo che Microsoft parla di utilizzo responsabile dell'intelligenza artificiale, che l'algoritmo non copia ma rielabora e offre soluzioni ottimizzate e che, per quanto io ricordi, chi utilizza Github concede a Microsoft la possibilità di esaminare il proprio codice tramite strumenti di parsing, quindi, in teoria, qualsiasi codice presente sulla piattaforma potrebbe finire in pasto al copilot.
+
+Tutte queste affermazioni, però, non sono semplicissime da verificare e, ognuna delle domande di poco fa meriterebbe un'analisi e una discussione a sé. E, onestamente, tutto ciò non è l'argomento centrale di questo episodio ed io non sono certamente qualificato ad esaminare questo tipo di aspetti, per oggi quindi eviterò volutamente di approfondire questi aspetti, ma, magari potremmo confrontarci insieme a riguardo sul gruppo Telegram, che ne pensi? Se ti va, in descrizione trovi il link per unirti a gruppo e canale.
+
+Chiusa questa piccola parentesi, dunque, torniamo all'argomento principale.
+
+Parlavamo delle fantastiche funzionalità di Copilot, quindi immagina il mio entusiasmo quando, verso la fine di ottobre dell'anno scorso, ho scoperto che il mio ambiente di sviluppo preferito, io utilizzo principalmente PhpStorm, aveva aggiunto il supporto per questo servizio tramite un piccolo plugin.
+
+Immediatamente l'ho installato e configurato su tutti i progetti personali e professionali. Ovviamente quelli per i quali posso sottoporre il codice a parsing automatizzato, s'intende.
+
+E poi ho iniziato ad esplorare le funzionalità.
+
+Ora, se hai mai utilizzato un editor un po' più evoluto, dovresti avere familiarità con il concetto di auto completamento. Se non sei un programmatore, pensa persino a Google Search che implementa l'autocomplete sulla casella di ricerca cercando di indovinare la prossima lettera o parola o frase che scriverai sulla base di un suo algoritmo, o la tastiera virtuale dello smartphone che più o meno fa lo stesso.
+
+Un ambiente di sviluppo avanzato, come PhpStorm o Visual Studio Code e simili, implementa già nativamente questo tipo di funzione: tu inizi a scrivere il nome di una variabile o di una funzione e lui inizia a suggerirti una lista di possibili opzioni di completamento. Spesso tra questi c'è il suggerimento corretto, qualche volta no, ma, in generale, il motore che muove questa funzionalità è un algoritmo basato sulle regole del linguaggio, del framework (se presente) e del progetto su cui stai lavorando.
+
+Github copilot, invece, è molto più complesso di così. A differenza dell'autocomplete, l'AI di microsoft prova ad indovinare non solo una variabile, ma intere funzioni, blocchi di commento, a volte ha provato a suggerirmi intere classi basandosi chiaramente sul nome e sul percorso del file che avevo appena creato.
+
+Dal punto di vista meramente operativo, in un progetto configurato con Copilot, al momento mi basta posizionare il cursore in mezzo al codice e lui parte con i suggerimenti. A volte anche se non ho ancora iniziato a scrivere alcunché. Semplicemente, credo si basi su ciò che è scritto prima e dopo e così facendo provi a dare la risposta alla domanda *perché ha posizionato il cursore in quel punto?*.
+
+A scopo sperimentale, ho provato un po' tutte le funzioni che ti ho descritto poco fa e ricordo si aver subito pensato che funzionavano in modo impressionante.
+
+Finiti i test sperimentali, però, ho lasciato attiva l'integrazione al servizio per utilizzarla attivamente durante il lavoro di tutti i giorni e nello sviluppo dei miei side projects.
+
+Onestamente i primi giorni non sapevo bene cosa aspettarmi. Cioè immaginavo che avrei avuto a che fare con un super auto completamento molto molto potente, ma col fatto che il PHP non è ufficialmente ancora supportato, o meglio sul sito ufficiale di parla di *dozzine di linguaggi* ma esplicitamente vengono nominati solo javascript, python, java, Go e pochi altri, non pensavo che mi avrebbe dato chissà quanti suggerimenti reali.
+
+Poi però ho dovuto ricredermi. L'algoritmo si attiva praticamente sempre. Basta posizionare il cursore e parte con il suggerimento più probabile, inserendolo direttamente come testo dal colore meno marcato, senza contare che solitamente ne presenta almeno altri 3 o 4 come alternative in un'apposita area. Questo particolare comportamento credo dipenda dal plugin di jetbrains, non so come funzioni in ambienti di sviluppo di famiglie diverse.
+
+Mentre lavoro sul codice, Copilot cerca di completare nomi di variabili, istruzioni, funzioni, persino i commenti e lo fa persino in italiano, quando mi capita di scriverne o modificarne.
+
+Se il cursore si trova all'interno di un classe ma fuori da un qualsiasi metodo, appaiono suggerimenti su proprietà o interi metodi da implementare.
+
+La quantità di output prodotta è notevole, ma, almeno per me, qui arriva il primo punto dolente della questione.
+
+Quanto sono accurati i suggerimenti dell'algoritmo? O per dirla in modo più corretto: quanto sono accurati, per me? Quanto hanno effettivamente migliorato la mia velocità di sviluppo e diminuito il lavoro necessario per implementare una modifica, una funzionalità, un intero software?
+
+Online esistono varie statistiche riguardo l'accuratezza di Copilot. Puoi cercare tu stesso, troverai chi parla di percentuali: accuratezza, sicurezza e cose simili, ma io posso solo raccontarti la mia personale esperienza, la quale, purtroppo, non è molto positiva.
+
+Nonostante la notevole mole di suggerimenti, infatti, per me, per il mio modo di lavorare, forse, o per i miei specifici progetti, quasi tutti gli sforzi dell'algoritmo si sono rivelati inutili e ben pochi sono effettivamente entrati a far parte delle mie implementazioni. Per contro, invece, il fatto di dover scartare tanti suggerimenti, mi ha causato una certa perdita di tempo.
+
+Negli ultimi tempi, quindi, una volta resomi conto di questo problema, ho provato ad analizzarne i motivi ed ho individuato alcune casistiche nel comportamento dell'algoritmo.
+
+A volte capita che il suggerimento sia chiaramente frutto di un qualche strano loop: appare un codice che si ripete in modo sospetto fino a sforare oltre il limite destro della finestra di modifica. Ma casi del genere sono molto semplici da scartare: saltano subito all'occhio e basta ignorarli e continuare a scrivere.
+
+Altre volte, invece, capita che io mi stai semplicemente muovendo tra una riga e l'altra, magari cercando di comprenderne il funzionamento o cercando un bug, e l'algoritmo inizia a suggerire di aggiungere funzionalità, cicli e altri blocchi che semplicemente non servono o non c'entrano nulla con lo scopo del metodo in cui mi trovo.
+
+Ancora capita che suggerisca blocchi di codice così lunghi che spostano il codice già scritto fuori dallo schermo e muovendoti magari con le frecce direzionali di riga in riga, questi mega suggerimenti che appaiono e scompaiono fanno espandere e contrarre il codice rendendo frustrante la lettura. Per la verità, questo particolare comportamento sembra diminuito nell'ultimo periodo, forse a causa di qualche aggiornamento.
+
+Quando poi un suggerimento appare a prima vista sensato, è comunque necessario leggerne tutto il codice, spesso modificarlo e adattarlo (almeno per me, non riesco a immaginare come si possa accettarlo ed andare avanti e basta) e, alla fine, se sai usare discretamente l'editor spesso si fa prima a scriverlo e basta.
+
+Paradossalmente, l'unica applicazione che ho trovato veramente utile è quella della scrittura dei commenti. Ma attenzione, non parlo dei blocchi di commento che descrivono i parametri delle funzioni, output, ecc. Quelli li genera PhpStorm egregiamente. Intendo proprio delle frasi descrittive.
+
+Quando descrivo a parole il funzionamento di una porzione di codice, ho la sensazione che il Copilot mi stia leggendo nel pensiero e questo mi è spesso d'aiuto e mi permette di essere più veloce. Ovviamente non sempre, ma accade molto più spesso che in tutti gli altri casi.
+
+-Conclusioni
+
+In conclusione, per quella che è la mia personalissima esperienza, Github Copilot, purtroppo, non è un grande aiuto per la scrittura del codice.
+
+La quantità di suggerimenti che non si rivelano essere utili, per me, è tale che mi ha portato a sviluppare un automatismo e reagire sostanzialmente in due modi: o scartando immediatamente qualsiasi suggerimento (questo di solito accade quando sono più stanco, verso fine giornata) oppure a leggere dettagliatamente il suggerimento per capire se va bene per quello che ho intenzione di fare (magari con qualche modifica).
+
+All'inizio non faceva altro che rallentarmi per via di tutti quei piccoli problemi di cui ti parlavo prima. Ma, con il tempo, diciamo che mi sono abituato ad ignorarlo in determinate situazioni e prendere solo quello che di positivo ha da offrire, anche se per ora non è molto.
+
+Sicuramente, però, continuerò ad utilizzarlo; primo, perché spero in un futuro miglioramento, sia per quanto riguarda l'algoritmo in sé che per l'integrazione all'interno di PhpStorm che credo sia complice di alcuni comportamenti strani.
+
+E inoltre, perché sono sicuro che molte delle difficoltà incontrate dipendano dal mio stile di utilizzo e credo che riuscendo ad affinare il mio modo di rapportarmi ad esso, col tempo potrà diventare un valido strumento di supporto.
+
+In definitiva, trovo che questa tecnologia sia ancora acerba e allo stato attuale possa essere più deleteria che d'aiuto, se non si è in grado di gestirla ed utilizzarla con raziocinio.
+
+Il comportamento che assume, infatti, potrebbe portare uno sviluppatore poco esperto o anche solo pigro, ad accettare pedissequamente dei suggerimenti senza porre la giusta attenzione a quale codice si va ad integrare all'interno della propria codebase. Potenzialmente introtucendo, in tal modo, bug o problemi di sicurezza.
+
+Le implicazioni psicologiche di un uno strumento del genere, infatti, possono essere molte e, secondo me, non vanno trascurate.
+
+Sul sito ufficiale di Copilot, Microsoft ha inserito esplicitamente la frase *you are the pilot*, per affermare che è sempre il programmatore a decidere in fin dei conti, ma siamo proprio sicuri che sia così?
+
+Lo abbiamo già visto in tanti casi e situazioni: l'utilizzo dell'IA spesso porta ad una eccessiva fiducia da parte dell'utilizzatore.
+
+Ad esempio, per qualcuno, magari non molto esperto o non molto sicuro di sé, potrebbe diventare pian piano sempre più semplice dare troppo peso al codice prodotto da un'IA. Prendendo così l'abitudine di favorire la soluzione dell'algoritmo a discapito della propria in maniera acritica.
+
+E una volta che la percezione di responsabilità passa dall'umano alla macchina, già mi immagino commenti ai ticket che recitano *il metodo X, generato da Copilot, ha introdotto il tale bug o la tale vulnerabilità o non ha considerato che il nostro software poteva produrre questo particolare caso limite*.
+
+Senza contare poi che, almeno per gli umani, la capacità vanno allenate e l'abilità di problem solving non fa eccezione.
+
+Se si utilizza Copilot per risolvere problemi banali e ci si concentra su quelli più complicati, allora potrebbe essere un bene. Ma se lo facciamo pian piano diventare il nostro sostituto, allora noi diventeremo pian piano sempre meno abili.
+
+Attenzione, con tutto questo non sto certo dicendo che Copilot sia un pericolo o che l'Intelligenza Artificiale non vada utilizzata.
+
+Qualsiasi strumento sia d'aiuto per migliorare la vita, il lavoro, la società, per me è sempre bene accetto. L'importante è valutarne l'applicazione e poi utilizzarlo in maniera critica. Usando il cervello.
+
+Spero spero come al solito che l'episodio di oggi ti sia piaciuto e ti ricordo che se posso produrre questi contenuti, è solo grazie a te che ascolti ed alla community di pensieri in codice che sostiene il progetto.
+
+Scopri come dare una mano anche tu, collegandoti al sito pensieriincodice.it (mi raccomando con 2 i).
+
+Puoi ascoltare tutti gli episodi sulle maggiori piattaforme e app di podcast o riceverli direttamente sullo smartphone iscrivendoti al canale Telegram.
+
+Se Pensieri in codice ti piace, e se sei arrivato fin qui immagino ti piaccia, puoi condividerlo con un amico per farglielo conoscere: farai un favore ad entrambi.
+
+Per oggi è tutto, ti do appuntamento al prossimo episodio e ti ricordo che *un informatico risolve problemi, a volte anche usando il computer*.
+"

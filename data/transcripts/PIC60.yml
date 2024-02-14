@@ -1,0 +1,134 @@
+text: "
+
+Salve a tutti e bentornati su Pensieri in codice.
+
+Non capita spesso di poter definire *avvincente* una storia di informatica o di informatici, tuttavia, qualche settimana fa mi è capitato di leggere un interessante articolo su Medium in cui l'autore, Alex Birsan, descriveva il modo in cui ha hackerato oltre 35 aziende grazie ad un particolare tipo di attacco informatico.
+
+Questo attacco si basa su una tecnica di uso estremamente comune nella moderna programmazione e leggerne la descrizione e il tasso di successo, mi ha fatto riflettere su alcuni aspetti del modo in cui si sviluppa software oggigiorno.
+
+Come vedremo fra poco l'attacco in sé è stato eseguito sfruttando specifici linguaggi di programmazione, ma il concetto alla base è molto ampio e può facilmente essere esteso ad altri liguaggi e ad altri livelli dello sviluppo software.
+
+Nell'episodio di oggi, dunque, parleremo di come è avvenuto questo attacco, del perché è stato eseguito, di cosa lo ha reso possibile e, infine, di come questa storia debba servire da lezione per tutti noi sviluppatori.
+
+---------------------------------------------------------
+
+Alex Birsan è un cacciatore di bug.
+
+Ciò vuol dire che il suo lavoro, o parte di esso, consiste nel cercare bug nei software e nelle piattaforme online.
+
+Molte aziende, infatti, premiano i ricercatori che scovano falle nei loro sistemi. Grosse realtà come Google, Apple e altri, hanno proprio dei programmi di bug hounting ai quali è possibile partecipare e che elargiscono compensi sulla base dell'entità dei bug individuati.
+
+Nella sua ennesima esperienza alla ricerca di bug, quindi, Alex ha ben pensato di provare a sfruttare un concetto che nella programmazione moderna è ampiamente diffuso e cioè il concetto di dipendenza.
+
+Quando in informatica, si parla di dipendenza, solitamente si intende il fatto che un componente o un software sfrutta le funzionalità di un altro componente o software per svolgere le proprie attività.
+
+In pratica, per fare un esempio semplice e pratico, è molto comune che un programma o sito Web utilizzi porzioni di codice create in precedenza da altre persone.
+
+Tali codici vengono comunemente definiti *librerie* e i loro autori le creano tendenzialmente per soddisfare necessità abbastabza comuni o per condividere funzionalità fra più software.
+
+Quando in genereale un programma o una piattaforma, includono una o più librerie all'interno del proprio codice per funzionare, si dice che esse rappresentano delle *dipendenze* per il programma.
+
+Inizialmente, e con inizialmente intendo dieci o forse quindici anni fa, le dipendenze consistevano nel copiare materialmente il codice delle librerie necessarie all'interno del codice del proprio programma.
+
+Se, ad esempio, quindi il nostro software aveva tra le varie funzioni, quella di creare file PDF, invece di scriverci l'intero codice per generare i file in quel formato, avremmo scaricato un'apposita libreria, possibilmente opensource e possibilmente nella versione più recente disponibile, e l'avremmo *collegata* (passatemi il termine) al resto del nostro codice.
+
+Il nostro programma avrebbe contenuto quindi il nostro codice più una parte di codice scritto da qualcun altro.
+
+Il vantaggio di una scelta del genere è banale: ci avrebbe fatto risparmiare tempo e fatica, evitandoci di riscrivere qualcosa già scritto da altri e messo a nostra disposizione.
+
+E allo stesso modo, anche lo svantaggio è piuttosto chiaro: essendo codice scritto da altri, avrebbe potuto contenere bug o, addirittura, in casi estremi, codice malevolo di qualche tipo.
+
+Non che se il programma fosse scritto interamente da noi non conterrebbe bug, ma è ovviamente diverso individuare e risolvere i nostri bug rispetto a quelli presenti in codice scritto da altri. In linea teorica, quando si inlcude una libreria, si da per scontato che questa funzioni già correttamente e non ci si ferma a testarla in dettaglio, altrimenti si andrebbero a vanificiare i vantaggi.
+
+Negli ultimi anni, invece, il concetto di dipendenza è stato *istituzionalizzato* all'interno di parecchi linguaggi di programmazione o di componenti che sono diventati standard de facto.
+
+Python, PHP, Ruby, Node, Deno, la lista è lunghissima ed elenca tutta una serie di linguaggi di programmazione corredati di un meccanismo per includere in modo automatizzato librerie (e quindi dipendenze) nei propri progetti.
+
+Questo meccanismo è in realtà a sua volta un altro componente software che in linea generale prende il nome di gestore di pacchetti o, in inglese, package manager.
+
+Per me che sviluppo principalmente in PHP, ad esempio, esiste il gestore chiamato composer che mi permette di includere libreria di ogni genere che risiedono su un enorme archivio online.
+
+Quando si lancia il comando composer require, seguito dal nome di un pacchetto, l'operazione eseguita in modo totalmente automatico è simile al modo in cui si includevano le dipendenza una volta, ma, ovviamente, è anche molto più sofisticata.
+
+In pratica, il package manager ricerca e identifica il pacchetto che abbiamo richiesto sul repository pubblico di tutti i pacchetti o, se vi abbiamo accesso, sul nostro repository privato o quello della nostra azienda.
+
+Una volta individuato il pacchetto, scarica in un apposito percorso del nostro progetto, il codice corrispondente alla versione da noi richiesta, o, se non abbiamo specificato alcuna versione, quello corrispondente alla versione considerata la più stabile al momento.
+
+Contemporaneamente, però, il package manager ha anche un altro compito (in realtà ne ha molti, ma a noi interessa questo) e cioè quello di creare e mantenere aggiornata una lista di tutte le dipendenze del progetto.
+
+Questa lista è composta dagli identificativi e le rispettive versioni di tutte le librerie che abbiamo installato tramite il package manager e, solitamente, è conservata in un file all'interno del progetto.
+
+Il vantaggio di un approccio del genere è presto detto: dal momento che esiste una precisa lista delle dipendenze e che queste sono in qualche modo disponibili online (poco importa se sono pubbliche o provengono da server privati ai quali lo sviluppatore ha accesso), allora è possibile evitare di includere materialmente tutti i file che le compongono all'interno dell'archivio del progetto.
+
+Ciò porta ad una notevole riduzione della dimensione del codice e lo rende più facile da maneggiare, da archiviare e installare. Non scenderò in dettaglio, ma i vantaggi dal punto di vista dello sviluppo e della distribuzione del software, rendono sicuramente questo approccio molto migliore di quello descritto in precedenza.
+
+Ma, come per qualsiasi altra cosa cosa, non è tutto rese e fiori. E infatti è proprio su questo meccanismo che Alex Birsan ha basato il suo attacco.
+
+In pratica ha pensato di sfruttare i package manager di alcuni linguaggi molto diffusi per provare ad installare un proprio codice all'interno di progetti di grandi aziende.
+
+In particolare, il nostro hacker si è concentrato su 3 linguaggi molto diffusi: pyhton, node e ruby.
+
+Cercando su repository pubblici, sui motori di ricerca, all'interno di progetti e siti Web, si è procurato tutta una serie di file contenenti liste di dipendenze di software utilizzati o sviluppati nelle aziende prese di mira.
+
+Ovviamente ciò è stato possibile perché spesso accade che questi file finiscano per sbaglio all'interno di progetti resi pubblici o in altri progetti o pubblicati online.
+
+Ad ogni modo, una volta reperita questa serie di file, Alex ha potuto filtrare al loro interno tutte le dipendenze che si trovavano pubblicamente disponibili online.
+
+Eliminando quindi, tutte le librerie pubbliche dalla lista, gli sono per forza di cose rimaste le dipendenze private, quelle che evidentemente le varie aziende rendevano disponibili ai propri sviluppatori tramite server privati.
+
+E a questo punto ha potuto sferrare il proprio attacco semplicemente creando sui repository pubblici dei vari linguaggi, una serie di pacchetti contenenti tutti lo stesso codice ma aventi ciascuno il nome di uno dei pacchetti privati della lista.
+
+ESEMPIO
+
+La speranza era, dunque, che gli sviluppatori o i sistemi automatizzati adibiti all'installazione dei vari progetti, scegliessero di scaricare i pacchetti falsi pubblici di Alex invece di quelli privati dell'azienda.
+
+E in effetti così è stato. L'autore ha battezzato questo tipo di attacco Dependecy Confusion.
+
+Nell'articolo, che vi lascio in descrizione per maggiori dettagli e vi consiglio di leggere perché davvero interessante, Alex racconta di oltre 35 compagnie colpite tra cui Shopify, Apple e PayPal, ciascuna delle quali ha riconosciuto al giovane cacciatore una taglia di 30k dollari per il bug individuato.
+
+---------------------------------------------------------
+
+Se vi venisse voglia di provare a fare come Alex o diventare bug hunters, tenete bene a mente che le aziende che attaccate devono essere informate prima e dovete anche stipulare un contratto o iscrivervi al programma di bug hunting. Altrimenti è illegale e richiate grosso.
+
+Inoltre, i tentativi di hacking non devono essere mirati al danneggiamento dei sistemi o all'esfiltrazione di dati, altrimenti anche in questo caso potrebbero esserci ripercussioni legali.
+
+Il codice contenuto nei pacchetti falsi di Alex Birsan, ad esempio, conteneva solo dei meccanismi di notifica per avvisare dell'avvenuta installazione e identificare l'azienda colpita. Anche questa parte è molto interessante e la trovate sempre nell'articolo.
+
+Ma a parte questo, cosa possiamo imparare noi programmatori (professionisti o meno) da questa storia?
+
+Beh sarei felice di sapere voi cosa ne pensate, magari sul canale o il gruppo telegram o anche tramite messaggio o commento: trovate tutti i riferimenti in descrizione.
+
+Nel frattempo però una cosa mi sento di dirla perché è un pensiero che già mi girava in testa da molto tempo e questa storia non fa altro che avallarlo.
+
+In informatica si dice sempre che non bisogna reinventare la ruota, se una cosa è già disponibile non è necessario ricrearla e sono tutti ragionamenti corretti.
+
+Io credo però che, come tutte le cose, anche queste affermazioni vadano ragionate e contestualizzate: è vero che in linea generale conviene sfruttare componenti già esistenti, ma non in modo cieco e ottuso.
+
+Una dipendenza aggiunta al progetto ci risparmia tempo di sviluppo, a volte anche molto, ma al tempo stesso aumenta la possibilità che si verifichino dei problemi. Allarga il perimetro della sicurezza.
+
+E non parlo solo della Dependecy Confusion scoperta da Birsan: esistono molti altri rischi.
+
+La libreria installata, ad esempio, potrebbe contenere dei bug di sicurezza ancora non scoperti e questo implica un potenziale pericolo ma anche la necessità di rimanere al passo con gli aggiornamenti.
+
+Oppure potremmo sbagliare ad installare dipendenza: basta sbagliare una lettera e qualche furbone avrebbe potuto creare un pacchetto con il nome appositamente sbagliato e delle backdoor all'interno.
+
+O ancora, qualcuno potrebbe riuscire ad inserire del codice malevolo in un pacchetto pubblico molto conosciuto ed utilizzato. Poco tempo fa c'è stato un tentativo di inserire delle backdoor nel codice del linguaggio PHP, fortunatamente individuato immediatamente e fermato.
+
+E attenzione, non è un discorso che si ferma semplicemente al codice e alle librerie.
+
+Giusto per fare un esempio nel quale si potrebbe rivedere anche chi non sviluppa codice: pensate, ad esempio, a quanti siti realizzati con Wordpress o altri Content Management System esistono e a quanti plugin essi utilizzano.
+
+Per molto di questi plugin vengono scoperti e risolti bug in continuazione.
+
+E se un giorno, un plugin magari molto utilizzato, sparisse dal repository pubblico e un malintenzionato lo rimpiazzasse immediatamente con una versione modificata? Quanti utenti lo installerebbero per sbalgio? Quanti siti lo aggiornerebbero automaticamente?
+
+Certo poi magari verrebbe scoperto, anche abbastanza velocemente, ma nel frattempo quanti siti sarebbersto stati infettati? Quanti lo saprebbero? Quanti si renderebbero conto che è necessario eliminare o sostituire il plugin?
+
+Si tratta solo di esempi, e alcuni anche abbastanza estremi, ma secondo me, fermarsi un attimo a chiedersi se quel nuovo componente serve effettivamente, se la sua aggiunta ci risparmia abbastanza tempo di sviluppo per giustificare l'apliamento della superficie di attacco del nostro software e lo sforzo di manutenzione, secondo me è sempre una buona idea.
+
+---------------------------------------------------------
+
+Saluti
+
+Non mi resta quindi che salutarvi e ricordarvi che *un informatico risolve problemi, a volte anche usando il computer*.
+"

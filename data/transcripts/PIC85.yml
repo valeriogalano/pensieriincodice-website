@@ -1,0 +1,39 @@
+text: "
+Sul finire degli anni 40 alcuni matematici ed ingegneri statunitensi iniziarono a dedicarsi allo studio dei cosiddetti processi stocastici.
+
+In due parole, i processi stocastici sono eventi che sembrano casuali e indipendenti, ma se studiati su un certo lasso di tempo, possono essere matematicamente sia descritti che previsti con una certa accuratezza.
+
+Per intenderci, un semplice esempio di questo tipo di eventi, potrebbe essere, che so, il numero di errori nella catena di montaggio di una fabbrica.
+
+Su tutti i pezzi prodotti, è naturale che alcuni presentino dei difetti, ma la distribuzione nel tempo di questi pezzi difettati non sarà certamente regolare: un giorno magari non capiterà nessun difetto, un altro giorno solo qualche pezzo sarà da buttare, e in un giorno sfortunato, gli scarti saranno in quantità notevole.
+
+Altri esempi di processi stocastici sono il decadimento degli atomi, il numero di auto che transitano per un casello autostradale, il numero di chiamate in arrivo ad un centralino telefonico e, fondamentale per il nostro discorso, gli atti di comunicazione (sia essa tra umani, animali o macchine).
+
+Scienziati come Cloude Shannon e Norbert Wiener, che durante la guerra erano stati impegnati nello studio di processi stocastici come i sistemi di puntamento degli armamenti o la crittografia utilizzata per mascherare le comunicazioni, iniziarono a proporre i primi sistemi matematici in grado di analizzare e, addirittura prevedere, atti che fino a quel momento venivano considerati fondamentalmente arbitrari e casuali.
+
+Nel 1948, il primo scriveva: Abbiamo deciso di chiamare l'intero campo della teoria del controllo e della comunicazione sia nelle macchine che negli animali, con il nome di Cibernetica.
+
+Questa parola, derivava da una parola greca che non sono in grado di pronunciare kybernetés che indica appunto il timoniere di una nave, più nello specifico dell'azione, il controllare o il governare.
+
+Secondo Wiener, la comunicazione nelle macchine e negli esseri viventi aveva tantissimo in comune, e questo perché erano proprio il calcolatore ed il cervello ad avere tanto in comune.
+
+Sempre nel 48, nel ormai celebre saggio Una teoria matematica della comunicazione, Shannon faceva un ulteriore passo avanti e teorizzava che in qualsiasi comunicazione, non importa di quale natura, convivono essenzialmente due elementi: il messaggio vero e proprio e quello che veniva definito rumore, cioè una sorta di interferenza che disturba la trasmissione del messaggio.
+
+Un fattore molto interessante è che, nella teoria esposta da Shannon, il contenuto del messaggio è fondamentalmente irrilevante. Tutta l'analisi si basa sul modo in cui funziona una trasmissione.
+
+In pratica, il messaggio viene generato da una sorgente, entra in un dispositivo di trasmissione, attraversa un mezzo fisico specifico, raggiunge una destinazione e, infine, viene interpretato dal ricevente.
+
+Nel momento in cui attraversa il mezzo fisico, il messaggio incontra il rumore, cioè tutta una serie di interferenze non pertinenti che si aggiungono ad esso, andando a creare disturbo al momento della ricezione.
+
+Una descrizione del genere è chiaramente adattabile a qualsiasi trasmissione di informazioni, dalla comunicazione verbale fra persone, fino alle onde radio o alle reti informatiche.
+
+E shannon, nel suo articolo, mostrava che tutti questi messaggi potevano essere sia misurati che trasmessi in maniera digitale, cioè tramite impulsi elettrici che rappresentassero le cifre 0 e 1.
+
+Lo stesso Shannon scriveva: Se si usa la base 2, le unità risultanti possono essere chiamate cifre binarie, [lui in inglese in effetti scrisse Digital bits] o più brevemente bit.
+
+Questa relativamente semplice frase introduceva di fatto il concetto ed il termine che oggi tutti noi utilizziamo per indicare l'unità di misura dell'informazione.
+
+Nel suo saggio, Shannon continuava sviluppando una teoria della probabilità che tramite una serie di complessi algoritmi mostrava come fare per massimizzare le prestazioni del segnale e, al tempo stesso, minimizzare il rumore, riducendone quindi gli effetti.
+
+Ad oggi, la teoria di Shannon è alla base delle operazioni di memorizzazione e di trasmissione delle informazioni digitali, permette la conversione dei dati da un formato all'altro e ne consente la quantificazione ed il conteggio.
+"
