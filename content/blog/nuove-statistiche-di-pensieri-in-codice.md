@@ -18,4 +18,7 @@ Basata sull'interessantissimo servizio [Open Podcast Prefix Project](https://op3
 
 Per accedere alla pagina delle statistiche basta cliccare sul link [https://op3.dev/show/7b5d2ff7-d9f8-572a-8ec5-e872cc46ba4c](https://op3.dev/show/7b5d2ff7-d9f8-572a-8ec5-e872cc46ba4c).
 
-Purtroppo non è stato possibile importare le precedenti statistiche accumulate tramite il servizio Spreaker quindi, una volta inserito il nuovo feed self-hosted in tutte le piattaforme podcast, in questa pagina riporterò i valori registrati a futura memoria.
+Purtroppo non è stato possibile importare le precedenti statistiche accumulate tramite il servizio Spreaker quindi, una volta inserito il nuovo feed self-hosted in tutte le piattaforme podcast, di seguito riporto i valori registrati a futura memoria:
+
+![https://cdn.pensieriincodice.it/images/nuove-statistiche-di-pensieri-in-codice-image-1.png](https://cdn.pensieriincodice.it/images/nuove-statistiche-di-pensieri-in-codice-image-1.png)
+
