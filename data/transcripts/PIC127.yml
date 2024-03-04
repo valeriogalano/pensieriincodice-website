@@ -1,0 +1,669 @@
+text: "
+## Introduzione
+
+Ad essere sincero, devo ammettere che fino a qualche mese non ero un grande fan di Asimov.
+
+Questo, probabilmente, perché la mia conoscenza delle sue opere era molto più limitata di oggi e verteva principalmente sul ciclo della fondazione, che non è esattamente il mio genere.
+
+Ultimamente, però, ho recuperato molti racconti e mi sono appassionato ad un personaggio ricorrente. Un personaggio le cui gesta mi hanno molto ricordato gli avvenimenti degli ultimi tempi: tale personaggio è il supercalcolatore chiamato Multivac.
+
+Probabilmente questa sorta di epifania è proprio dovuta al clamore mediatico degli ultimi mesi riguardo a tutto ciò che concerne Machine Learning e Intelligenza Artificiale, ma tant'è.
+
+In particolare, ci sono alcuni racconti che mi hanno dato modo di riflettere su vari aspetti di questa moderna tecnologia e, soprattutto, del nostro rapporto con essa. E per *nostro* intendo proprio come genere umano in generale.
+
+Ho pensato poi che queste riflessione potevano meritare di essere condivise anche con te ed ecco che è nato l'episodio di oggi.
+
+Sigla.
+
+--
+
+Tutti i guai del mondo - di Isaac Asimov.
+
+La più grande industria della Terra ruotava attorno a Multivac: Multivac, il gigantesco calcolatore che in cinquant'anni era cresciuto al punto di riempire con le sue ramificazioni Washington fino ai sobborghi e di allungare i suoi tentacoli in ogni città e in ogni paese della Terra.
+
+Un esercito di addetti lo rimpinzava costantemente di dati e un altro esercito collegava e interpretava le sue risposte. Un corpo di ingegneri pattugliava il suo interno, mentre le miniere e le fabbriche si esaurivano per mantenere sempre completo, sempre perfetto, sempre soddisfacente il contingente di pezzi di ricambio.
+
+**Multivac dirigeva l'economia della Terra e aiutava la scienza della Terra. E, soprattutto, era il casellario centrale di tutti i fatti conosciuti sul conto di ciascun terrestre.**
+
+E ogni giorno faceva parte dei compiti di Multivac prendere i quattro miliardi di serie di dati sugli individui umani che riempivano le sue parti vitali ed estrapolarli per un altro giorno ancora. Ogni Dipartimento di Correzione della Terra riceveva i dati che si riferivano alla sua zona di giurisdizione, e i dati complessivi venivano forniti alla Commissione Centrale di Correzione a Washington, D.C.
+
+Bernard Gulliman era arrivato alla quarta settimana del suo mandato annuo come presidente della Commissione Centrale della Correzione ed era diventato abbastanza disinvolto per accettare il rapporto del mattino senza sentirsene atterrito. **Come al solito, era un fascio di fogli spesso sei pollici. Ormai sapeva che nessuno gli imponeva di leggerlo: nessun umano avrebbe potuto farlo. Ma era divertente sfogliarlo.**
+
+C'era il solito elenco di reati prevedibili: truffe di ogni genere, ruberie, disordini, omicidi colposi, incendi dolosi. Cercò un particolare titolo, e provò un lieve brivido nel vedere che c'era, poi ne provò un altro quando vide che c'erano due capoversi, sotto quel titolo. Non uno, ma due. Due omicidi di primo grado. Non ne aveva mai visti due in un solo giorno, da quando era diventato presidente. Premette il pulsante del citofono e attese che apparisse sullo schermo il volto liscio del suo coordinatore.
+\"Alì,\" disse Gulliman, \"ci sono due omicidi di primo grado, oggi. C'è qualche problema insolito?\"
+\"No, signore.\" Il viso scuro, dagli acuti occhi neri sembrava irrequieto. \"Entrambi i casi presentano probabilità molto basse.\"
+\"Lo so,\" disse Gulliman. \"Ho notato che in nessuno dei due casi le probabilità sono superiori al quindici per cento. **Comunque, Multivac ha una reputazione da difendere. Ha virtualmente spazzato via la criminalità, e il pubblico lo giudica in base ai dati sugli omicidi di primo grado che, naturalmente, sono i reati più spettacolari.**\"
+
+Alì Othman annuì.
+\"Sì, signore. Io capisco benissimo.\"
+\"E capirà anche, spero,\" disse Gulliman, \"che io **non voglio neppure un caso di omicidio di primo grado consumato durante il periodo del mio mandato.** Se viene compiuto qualche altro reato, posso trovare una scusa. Se viene compiuto un omicidio di primo grado, gliela farò pagare cara. Capito?\"
+
+\"Sì, signore. Le analisi complete dei due potenziali assassini sono già negli uffici distrettuali interessati. **I criminali potenziali e le loro vittime sono sotto osservazione. Ho controllato di nuovo le probabilità di consumazione dei delitti e stanno già scendendo.** \"
+
+\"Benissimo,\" disse Gulliman, e interruppe la comunicazione.
+
+Tornò a occuparsi dell'elenco, con l'imbarazzante impressione di essere stato forse un po' troppo pomposo. Ma era necessario mostrarsi decisi con quei dipendenti del servizio civile in pianta stabile, ed evitare che si convincessero di essere loro a dirigere tutto, compreso il presidente. In particolare quell'Othman che lavorava con Multivac fin da quando tutti e due erano considerevolmente più giovani, e che aveva un'aria dispotica veramente irritante.
+
+**Per Gulliman, quella faccenda era un'occasione politica eccezionale.** Fino ad allora, nessun presidente aveva esaurito il suo mandato senza che un assassinio venisse commesso, in qualche punto della Terra, prima o poi. Il presidente che l'aveva preceduto aveva finito con un passivo di otto, tre in più del suo predecessore.
+
+E Gulliman non voleva averne, neppure uno. Sarebbe stato, aveva deciso, il primo presidente senza un solo delitto durante il suo mandato. Poi, con la pubblicità favorevole che questo avrebbe determinato...
+
+Sfogliò appena il resto del rapporto. Calcolò che c'erano almeno duemila casi di mariti che avrebbero potuto picchiare la moglie. Senza dubbio, non era possibile evitare tutto in tempo. Forse un trenta per cento di quei reati sarebbero stati consumati. Ma l'incidenza stava scendendo, e le consumazioni dei reati scendevano anche più rapidamente.
+
+Multivac aveva aggiunto le percosse alle mogli nel suo elenco di reati prevedibili soltanto cinque anni prima, e l'uomo medio non era ancora abituato al pensiero che, se decideva di picchiare la moglie, la sua intenzione poteva venire scoperta in anticipo. Via via che quella convinzione avesse permeato la società, le donne se la sarebbero cavata con pochi lividi, in principio, e poi, alla fine, sarebbero state lasciate in pace.
+
+Nell'elenco figurava anche qualche caso di percosse al marito, osservò Gulliman.
+
+## L'oracolo logorroico
+
+Questo racconto è stato pubblicato per la prima volta nel 1958. Oltre 60 anni fa. Quando la disciplina che oggi comunemente chiamiamo Intelligenza Artificiale era appena alle prime teorie.
+
+Il supercalcolatore immaginato da Asimov è in grado di prevedere andamenti di mercato, crimini e, più in generale, tutta una serie di eventi riguardanti le vicende umane. Le sue capacità sono in continua espansione e più avanti vedremo che è anche in grado di comprendere e rispondere a specifici quesiti.
+
+Nessuna IA odierna è in grado, da sola, di svolgere tutti questi compiti, per il momento ma, considerando separatamente ciascuna singola attività, possiamo facilmente individuare varie IA già attualmente utilizzate per svolgerla.
+
+In altre parole, se oggi siamo ancora lontani dalla cosiddetta intelligenza artificiale generale, cioè quella Intelligenza Artificiale in grado di svolgere tutte le attività intellettive umane meglio degli umani, possiamo però già confrontarci con tante IA specialiste che ci superano ciascuna nel proprio campo di destinazione.
+
+Nel racconto, di fatto, Multivac viene considerato come una sorta di oracolo e le sue capacità sono in continua crescita.
+
+Ogni giorno produce anche un rapporto destinato alla comprensione umana, ma, già allo stadio attuale, questo resoconto è così corposo che nessuno è veramente tenuto a leggerlo, nemmeno il maggiore responsabile dell'ente adibito al suo controllo.
+
+D'altronde, nessun umano potrebbe leggere una tale quantità di materiale ogni giorno.
+
+Questa è una semplice verità alla quale dobbiamo iniziare ad abituarci anche noi: le moderne Intelligenze Artificiali, nello specifico quelle generative, sono tranquillamente in grado di produrre molto più materiale di quanto possa esserne mai fruito nello stesso lasso di tempo.
+
+Che si parli di testi, immagini, video o audio, un motore di generazione può produrre più velocemente di quanto un qualsiasi umano possa consumare.
+
+Ciò significa che in futuro la mole di informazioni a nostra disposizione (o meglio dalla quale verremo investiti), già ora enormemente superiore alle possibilità di una vita intera, non farà che aumentare in modo esponenziale.
+
+In futuro, potrebbe accadere che ognuno di noi avrà bisogno di una IA che riassuma ed estrapoli i concetti più importanti dalla sterminata quantità di materiale creato da altre IA, facendoci ricadere in un paradossale circolo vizioso di produzione e consumo di dati.
+
+--
+ 
+ Alì Othman tolse la comunicazione e fissò lo schermo da cui era scomparsa l'immagine calva e mascelluta di Gulliman. Poi guardò il suo assistente Rafe Leemy e disse: \"Cosa facciamo?\"
+
+\"Non lo chieda a me. È luì che si preoccupa per un paio di stupidi assassinii.\"
+
+\"È un rischio spaventoso cercare di sbrogliare da soli questa faccenda. Ma se ne parliamo con lui, si farà venire le convulsioni. Questi politicanti insediati nelle cariche elettive pensano per prima cosa alla propria pelle, quindi ci si metterebbe di mezzo e peggiorerebbe le cose.\"
+
+Leemy annuì e si strinse il labbro inferiore tra i denti.
+
+**\"Ma il guaio è questo: e se sbagliamo? Potrebbe essere quasi la fine del mondo, e lei lo sa.\"**
+
+\"Se sbagliamo, che importanza ha ciò che succederà a noi? Verremo travolti nella catastrofe generale.\" Poi disse, in tono più vivace: \"Ma, al diavolo, la probabilità è solo del dodici virgola tre per cento. In qualsiasi altro caso, eccettuato forse l'omicidio, lasceremmo crescere un po' le probabilità prima di agire. Potrebbe esserci una correzione spontanea.\"
+
+\"Io non ci farei conto,\" fece Leemy, asciutto.
+
+\"Non è questo che intendo. Mi limitavo a mettere in risalto il fatto. Eppure, a questo studio di probabilità, consiglio che per il momento ci si limiti alla semplice osservazione. Nessuno potrebbe progettare da solo un simile delitto; devono esserci dei complici.\"
+
+\"Multivac non li ha nominati.\"
+\"Lo so. Eppure...\" Non finì la frase.
+ 
+ Fissarono i particolari dell'unico reato non compreso dell'elenco inoltrato a Gulliman: l'unico reato molto peggiore dell'omicidio di primo grado; l'unico reato che non era mai stato tentato, nella storia di Multivac; e si chiesero che cosa dovevano fare.
+
+## Il rapporto tra Intelligenza Artificiale e Intelligenza Naturale
+
+Come si comportano delle Intelligenze Naturali quando si trovano di fronte all'output di un'Intelligenza Artificiale che non comprendono o con i quali non concordano?
+
+Oggi, e probabilmente sempre di più in futuro, un impiego del machine learning che si sta ampiamente diffondendo sembra essere quello del copilota o del preprocessore di informazioni.
+
+In pratica ciò vuol dire che la IA effettua delle elaborazioni riguardanti un certo argomento e produce un output semilavorato che poi va verificato e se necessario completato da una intelligenza umana.
+
+Come una sorta di stagista digitale, l'IA valuta i dati a sua disposizione e produce un proprio risultato per risolvere il problema che le è stato sottoposto, ma poi spetta all'uomo o alla donna accertarsi che questo sia corretto o eventualmente correggerlo.
+
+Ciò vale per i testi o le immagini, come abbiamo visto negli ultimi tempi, ma, in ambienti più tecnici e professionali può spingersi molto più avanti.
+
+Esistono algoritmi in grado di assistere professionalmente una tutta una serie di figure, dal campo legale a quello medico, dall'economia alle decisioni politiche, e così via.
+ 
+ Ma il punto è: come per i tecnici di Multivac, quanti umani sono o sarebbero in grado, nel caso lo ritenessero necessario, di andare contro il suggerimento della macchina?
+
+Quanti si prenderebbero la responsabilità di far valere il proprio giudizio e quanti invece si adeguerebbero pedissequamente a quello dell'algoritmo?
+
+Si tratta di una riflessione, questa, che, secondo me, negli anni a venire andrà ponderata bene e più volte in tanti campi professionali e in tanti aspetti della vita reale.
+
+--
+
+Ben Manners si considerava il sedicenne più felice di Baltimora. Questo era dubbio, forse. Ma era certamente uno dei più felici, e uno dei più eccitati.
+
+Per lo meno, era uno dei pochissimi ammessi nelle gallerie dello stadio per il giuramento dei diciottenni. Suo fratello maggiore stava per giurare, così i genitori avevano richiesto i biglietti e avevano permesso anche a Ben di farlo. Ma quando Multivac aveva scelto tra tutte le domande presentate, era stato Ben ad ottenere il biglietto.
+
+Fra due anni, anche Ben avrebbe giurato, ma per il momento era importantissimo andare a vedere suo fratello Michael.
+
+I genitori lo avevano vestito con ogni cura (o, per lo meno, avevano osservato la vestizione) poiché lui sarebbe stato il rappresentante della famiglia, e gli avevano affidato numerosi messaggi per Michael, che se ne era andato parecchi giorni prima, per gli esami preliminari, medici e neurologici.
+
+Lo stadio era alla periferia della città e Ben, che si sentiva scoppiare di importanza, fu accompagnato al suo posto. Sotto di lui, adesso, c'erano file e file di centinaia e centinaia di diciottenni (i maschi a destra, le femmine a sinistra), tutti del secondo distretto di Baltimora. In vari periodi dell'anno, riunioni come quelle si tenevano in tutto il mondo, ma questa era Baltimora, e questa era la riunione importante. Laggiù, da qualche parte, c'era Mike, il fratello di Ben.
+
+Ben osservò quelle teste, pensando che in qualche modo sarebbe forse riuscito a riconoscere suo fratello. Non ci riuscì, naturalmente, ma poi un uomo salì sul podio davanti alla folla e Ben smise di guardare, per ascoltare.
+
+L'uomo disse: \"Buon pomeriggio agli ospiti e a coloro che sono convenuti qui per prestare giuramento. Io sono Randolph T. Hoch, responsabile delle cerimonie di Baltimora per questo anno. Coloro che si accingono a giurare mi hanno incontrato parecchie volte, durante i loro esami medici e neurologici. Gran parte del lavoro è ormai compiuto, ma resta ancora il particolare più importante. Colui che ora giurerà, la sua personalità, entrerà negli archivi di Multivac.
+
+Ogni anno, è necessario dare qualche spiegazione ai giovani che divengono adulti. Fino ad ora, (e si rivolse ai giovani davanti a lui, il suo sguardo non si levò più verso la galleria) voi non eravate adulti: non eravate individui agli occhi di Multivac, salvo quando eravate segnalati in particolare dai vostri genitori o dal governo.
+
+Fino ad ora, quando veniva il momento dell'aggiornamento annuale delle informazioni, erano i vostri genitori che fornivano i dati necessari sul vostro conto. Ora è venuto il momento di assumere voi stessi questo compito. È un grande onore e una grande responsabilità. I vostri genitori ci hanno detto quali studi avete fatto, quali sono state le vostre malattie, quali sono le vostre abitudini; molte cose. Ma adesso voi dovete dirci molto di più: i vostri pensieri più intimi, le vostre azioni più segrete. È difficile farlo, la prima volta, è imbarazzante, ma deve essere fatto. Poi, Multivac avrà nel suo archivio una analisi completa di ciascuno di voi. Comprenderà le vostre azioni e le vostre reazioni. Sarà persino in grado di indovinare, con grande approssimazione, le vostre azioni e reazioni future.
+
+\"In questo modo. Multivac vi proteggerà. Se correrete il rischio di un incidente, Multivac lo saprà. Se qualcuno intenderà farvi del male, lo saprà. Se voi intenderete fare del male, lo saprà e verrete fermati in tempo, così che non sarà necessario punirvi.
+
+\"Conoscendovi tutti, Multivac sarà in grado di aiutare la Terra a regolare la propria economia e le proprie leggi per il bene di tutti. Se avete un problema personale, potete presentarlo a Multivac e, conoscendovi tutti, Multivac sarà in grado di aiutarvi.
+
+\"**Ora avrete molti moduli da riempire. Pensate attentamente e rispondete a tutte le domande più esattamente che potete. Non lasciatevi frenare dalla vergogna o dalla prudenza. Nessuno conoscerà mai le vostre risposte, tranne Multivac, a meno che divenga necessario conoscere quelle risposte per proteggervi. E anche allora, lo sapranno soltanto funzionari governativi autorizzati.**
+
+\"**Può capitarvi di modificare la verità, ogni tanto. Non fatelo. Ce ne accorgeremo, se lo farete. Tutte le vostre risposte, messe insieme, formano uno schema. Se qualche risposta è falsa, non si inserirà nello schema e Multivac lo scoprirà. Se tutte le vostre risposte sono false, vi sarà uno schema distorto di un tipo che Multivac riconoscerà. Quindi dovete dire la verità.**\"
+
+## La cessione delle informazioni
+
+Oggi ci viene chiesto normalmente di rinunciare ad un pezzettino della nostra privacy e di condividere alcune delle nostre informazioni in cambio della possibilità di usufruire di un servizio e dei vantaggi che esso offre.
+
+Per noi è qualcosa di comunemente accettato, se escludiamo le estremizzazioni, ovviamente. Tanto per fare un esempio: se prendiamo un singolo utente Facebook, beh egli è monitorato da centinaia di compagnie specializzate nel trattamento dei dati.
+
+Nel racconto di Asimov il concetto è esattamente identico, ma con una diversa scala di grandezza: Multivac è *il* servizio per eccellenza e a *tutti* è richiesto, o meglio imposto, di aderirvi e di cedere qualsiasi informazione per garantire il miglior risultato possibile per sé e per la società tutta.
+
+In un mondo così organizzato, quei pochi che tentano di sottrarsi, vengono scovati grazie all'utilizzo delle informazioni di tutti gli altri messe insieme, le quali permettono di individuare le anomalie nello schema generale.
+
+Non so a te, ma a me fa venire in mente la storia della cliente della catena di discount Target, in Inghilterra, che cercava di nascondere la propria gravidanza ma riceveva dalla società del punto vendita delle pubblicità per donne incinte.
+
+Era il lontano 2002 ed oggi una IA, con tutte le informazioni che spargiamo nel mondo ogni giorno, potrebbe fare molto di più di un pugno di ricercatori con i dati sugli acquisti di qualche migliaio di persone.
+
+--
+
+Tutto finì, comunque; la compilazione dei moduli; le cerimonie e i discorsi che seguirono. La sera, Ben, alzandosi in punta di piedi, riuscì finalmente a individuare Michael, che portava ancora gli abiti indossati per la \"parata degli adulti\". Si salutarono giubilanti.
+
+Cenarono insieme e presero l'espressovia per tornare a casa, vivi e illuminati dalla grandezza di quella giornata.
+
+Non erano preparati alla brusca transizione del ritorno a casa. Fu un colpo terribile per entrambi essere fermati da un giovanotto in uniforme, dall'espressione gelida, davanti alla porta di casa; vedere esaminare i loro documenti prima di poter entrare; trovare i genitori che stavano seduti in soggiorno, desolati, con il marchio della tragedia sul volto.
+
+Joseph Manners, che sembrava molto invecchiato dalla mattina, guardò con occhi sorpresi e infossati i suoi figli - uno aveva ancora sotto il braccio i suoi nuovi abiti dell'età adulta - e disse: \"A quanto pare, sono agli arresti domiciliari.\"
+
+--
+
+Bernard Gulliman non poteva leggere tutto il rapporto, e non lo lesse. Lesse soltanto il sommario, che era molto soddisfacente.
+
+Un'intera generazione, pareva, era cresciuta con l'abitudine al fatto che Multivac poteva predire il compimento dei reati più gravi. Aveva imparato che gli agenti della Correzione sarebbero arrivati sulla scena del reato prima che il reato potesse venire commesso. Aveva scoperto che la consumazione del reato comportava una punizione inevitabile. **Gradualmente, quella generazione si era convinta che nessuno avrebbe potuto battere in astuzia Multivac**.
+
+**Il risultato era, naturalmente, che persino l'intenzione di commettere un reato scompariva. E, via via che queste intenzioni scomparivano e che la capacità di Multivac cresceva, all'elenco presentato ogni mattina potevano venire aggiunti anche i reati minori, e anche l'incidenza di questi reati diminuiva**.
+
+**Così Gulliman aveva ordinato che venisse fatto un'analisi (da parte di Multivac, naturalmente) della capacità di Multivac di dedicare la sua attenzione al problema di predire le probabilità di incidenza delle malattie. Forse presto i medici sarebbero stati avvertiti che certi pazienti sarebbero diventati diabetici entro l'anno seguente, o sarebbero stati colpiti dalla tubercolosi o dal cancro**.
+
+Bastava la prevenzione...
+E il rapporto era favorevole!
+Poi, arrivò l'elenco dei possibili reati della giornata, e non c'era neppure un omicidio di primo grado.
+
+Gulliman chiamò al citofono Alì Othman; era di ottimo umore.
+
+\"Othman, qual è la media dei crimini degli elenchi quotidiani della settimana scorsa rispetto a quella della mia prima settimana di presidenza?\"
+
+Risultò che c'era stata una flessione dell'otto per cento, e Gulliman ne fu felice. Non era merito suo, naturalmente, ma questo l'elettorato non lo avrebbe saputo. Benedisse la fortuna che gli aveva fatto ottenere quella carica nel momento migliore, nella fase più brillante di Multivac, quando anche le malattie potevano essere poste sotto la sua vastissima conoscenza protettrice.
+
+Gulliman ci avrebbe prosperato sopra.
+
+## L'abitudine
+
+Secondo Asimov, la società umana potrebbe facilmente adattarsi alla diffusione di una tecnologia come Multivac facendovi enorme affidamento.
+
+Chissà quanto tempo occorrerebbe per raggiungere un tale stadio di integrazione? Quante generazioni?
+
+Ad ogni modo, quale che sia stato il tempo necessario, la società immaginata dallo scrittore ha risposto alla presenza di Multivac con l'assuefazione: le persone hanno demandato totalmente vari aspetti della vita e hanno in gran parte rinunciato a quelli non compatibili con il nuovo status quo.
+
+Tutto sommato, si tratta di una reazione naturale che possiamo facilmente capire se pensiamo a tanti strumenti tecnologici attuali, primo fra tutti, quello che abbiamo sempre in tasca: lo smartphone.
+
+Quanti di noi sarebbero disposti a rinunciarvi? Quanti di noi ricordano ancora a memoria i numeri di telefono o gli appuntamenti o fanno calcoli a mente? Probabilmente in pochi.
+
+E perché mai dovrebbe essere diverso? Lo smartphone fa queste e tante altre cose meglio e più velocemente di noi. E l'unico problema potrebbe presentarsi se all'improvviso perdessimo il cellulare o si scaricasse la batteria, ma, obiettivamente, succede di rado.
+
+Col tempo, però, molti di noi hanno anche perso l'allenamento a svolgere questo tipo di compiti, in cambio di una tale comodità. E va bene, ovviamente: è stata una scelta (ponderata o meno). Non dico necessariamente il contrario.
+
+Ma similmente, demandare sempre più delle nostre responsabilità nelle mani di una o più IA, come sembra che debba accadere nelle prossime decadi, da un lato, potrebbe certamente portare grande prosperità all'intera civiltà, o almeno ad alcuni; ma dall'altro, non rischia di farci perdere tutta una serie di capacità o il controllo su alcuni aspetti della nostra realtà?
+
+E infine dobbiamo chiederci: quanto del nostro futuro siamo disposti a far decidere da una o più intelligenze insondabili e i cui ragionamenti sono totalmente oltre le nostre capacità e la nostra comprensione?
+
+--
+
+Otham scrollò le spalle. \"Ecco, lui è contento.\"
+
+\"Quando facciamo scoppiare il bubbone?\" disse Leemy. **\"Mettere Manners sotto osservazione ha aumentato le probabilità, e metterlo agli arresti domiciliari le ha aumentate ancora.\"**
+
+\"Come se non lo sapessi!\" fece Othman, irritato. **\"Ma non so il perché.\"**
+
+\"Forse ci sono dei complici, come diceva lei. Adesso che Manners è nei guai, gli altri devono fare il colpo subito, o sono perduti. \"
+
+\"Forse è vero il contrario. Ora che ne abbiamo uno in mano, gli altri dovrebbero disperdersi e scomparire, per mettersi in salvo. E poi, perché Multivac non ha nominato i complici?\"
+
+\"Be', allora lo diciamo a Gulliman?\"
+
+\"No, non ancora. La probabilità è ancora limitata al diciassette virgola tre per cento. Cerchiamo di agire in modo un po' più drastico, prima.\"
+
+## La black box
+
+Nella maggior parte delle moderne IA non è possibile conoscere esattamente le motivazioni precise che portano ad un determinato risultato. Per questa ragione vengono comunemente definite come delle Black Box.
+
+Proprio come i tecnici di Multivac, in caso di risultati inaspettati, gli utilizzatori possono solo procedere per tentativi cercando di modificare le condizioni e i parametri in input per ottenere un output più vicino a quello desiderato.
+
+Quelle poche IA che sono state progettate per spiegare le proprie scelte risultano, al momento, molto meno performanti delle altre.
+
+Riflettendoci, questo, al momento, è forse uno dei più grandi limiti di questa tecnologia.
+
+--
+
+Elizabeth Manners disse al figlio minore: \"Vai nella tua stanza, Ben.\"
+
+\"Ma che cosa succede, mamma?\" chiese Ben, con la voce che si spezzava davanti allo strano finale di quella che era stata una giornata gloriosa.
+
+\"Per favore!\"
+
+Ben si allontanò riluttante, varcò la porta che dava sulle scale, salì i gradini rumorosamente e poi li ridiscese in silenzio.
+
+E Mike Manners, il figlio maggiore, l'adulto nuovo di zecca, la speranza della famiglia, disse con una voce e con un tono che rispecchiavano l'umore del fratello minore: \"Che cosa succede?\"
+
+**\"Il cielo mi è testimonio, figliolo,\" disse Joe Manners, \"non lo so. Non ho fatto niente.\"**
+
+\"Certo, non hai fatto niente.\" Mike guardò perplesso quel padre dall'ossatura fragile e dalle maniere miti. \"Quelli devono essere qui perché tu stai pensando di fare qualche cosa\".
+
+\"Io non sto pensando di far niente.\"
+
+La signora Manners intervenne, incollerita: \"Come può pensare di fare qualche cosa che giustifichi tutto... tutto questo?\" Con un gesto del braccio indicò il guscio serrato che gli uomini del governo componevano attorno alla casa. \"Ricordo che, quando ero bambina, c'era il padre di una mia amica che lavorava in una banca; una volta lo chiamarono e gli dissero di lasciare in pace i quattrini, e lui lo fece. Si trattava di cinquantamila dollari. Non li aveva rubati, però. Stava soltanto pensando di rubarli. A quei tempi, non mantenevano il segreto come adesso; **la storia girò. È per questo che la seppi anch'io.**\"
+
+\"Ma voglio dire,\" continuò, stropicciandosi lentamente le mani grassocce, \"che si trattava di cinquantamila dollari. Cinquantamila-dollari. Eppure si limitarono a chiamarlo: una telefonata. Cosa può meditare tuo padre, per giustificare la presenza di una dozzina di uomini che accerchiano la casa?\"
+
+Jos Manners disse, con gli occhi colmi di sofferenza: \"Non sto meditando nessun reato, neppure il più trascurabile. Lo giuro. \"
+
+Mike, gonfio della consapevole saggezza del nuovo adulto, disse: **\"Forse è qualcosa di subconscio, papà. Qualche risentimento contro il tuo supervisore.\"**
+
+\"Fino al punto di desiderare di ucciderlo? No!\"
+
+**\"Non vogliono dirti di che cosa si tratta, papà?\"**
+
+Sua madre interruppe di nuovo. \"No, non vogliono. L'abbiamo chiesto. **Ho detto che stavano rovinando la nostra reputazione, solo con la loro presenza.** Il meno che potevano fare era dirci di che cosa si tratta, in modo che potessimo fare qualcosa, che potessimo fornire spiegazioni. \"
+
+\"E non hanno voluto?\"
+
+\"Non hanno voluto.\"
+
+Mike rimase ritto, a gambe larghe, le mani sprofondate nelle tasche. Disse, turbato: **\"Ehi, mamma, Multivac non commette errori. \"**
+
+Suo padre batté il pugno sul bracciolo del divano, in un gesto impotente.
+
+\"Vi dico che non sto meditando nessun reato.\"
+
+La porta si aprì, senza che nessuno avesse prima bussato, e un uomo in uniforme entrò con un passo secco e sicuro. Il suo viso aveva un'espressione vitrea, ufficiale. \"Lei è Joseph Manners?\" disse.
+
+Joe Manners si alzò.
+\"Sì. Cosa vuole da me?\"
+\"Joseph Manners, la dichiaro in arresto per ordine del governo.\" Mostrò sbrigativamente il suo documento di identità come ufficiale della Correzione. \"Devo chiederle di seguirmi.\"
+
+\"Perché? Che cosa ho fatto?\"
+\"Non sono autorizzato a parlarne.\"
+\"Ma io non posso essere arrestato soltanto per aver progettato un reato, anche se lo avessi fatto veramente. **Per venire arrestato io devo aver veramente commesso qualcosa. Altrimenti non potete arrestarmi. È illegale.**\"
+
+**L'ufficiale era inaccessibile alla logica.**
+\"Lei deve venire con me.\"
+
+La signora Manners lanciò un grido e cadde sul divano, piangendo istericamente. **Joseph Manners non riuscì a indursi a violare il codice instillatogli per tutta la sua vita** ribellandosi a un ufficiale, ma per lo meno si tirò indietro, costringendo l'altro ad effettuare uno sforzo muscolare per trascinarlo avanti.
+
+E, mentre si allontanava, Manners gridava: \"Ma mi dica di che si tratta. Me lo dica. Se sapessi... è un omicidio? Starei progettando un omicidio?\"
+
+La porta si chiuse dietro di lui e Mike Manners, che era pallidissimo e che non si sentiva affatto adulto, guardò prima la porta, poi sua madre che piangeva.
+
+Ben Manners, che stava nascosto dietro l'uscio e che si sentiva improvvisamente molto adulto, strinse le labbra e pensò che lui sapeva esattamente che cosa doveva fare.
+
+**Se Multivac toglieva, Multivac poteva anche dare.** Ben aveva assistito alle cerimonie, quel giorno stesso. Aveva sentito quell'uomo, Randolph Hoch, parlare di Multivac e di tutto quello che Multivac poteva fare. Poteva dirigere il governo e poteva anche consigliare e aiutare un semplice cittadino che gli si rivolgeva.
+
+**Chiunque poteva chiedere aiuto a Multivac**, e chiunque significava Ben. Né sua madre né Mike erano in grado di fermarlo, ormai, e lui aveva ancora un po' del denaro che gli era stato dato per la grande uscita di quel giorno. Se più tardi si fossero accorti che se ne era andato e si fossero preoccupati per questo, non poteva farci niente. In quel momento, doveva pensare soprattutto a suo padre. Uscì dalla porta di servizio e l'agente di guardia gettò una occhiata ai suoi documenti e lo lasciò passare.
+
+## \"Io non ho niente da nascondere\". La fiducia cieca
+
+Qui abbiamo due concetti interconnessi piuttosto interessanti.
+
+Il primo riguarda la classica risposta che tanti danno quando si parla dell'importanza della protezione dei dati: \"ma tanto io non ho niente da nascondere\".
+
+Come Asimov immaginava già più di 60 anni fa, il problema non riguarda tanto chi è colpevole o meno, ma cosa si può dedurre, a torto o a ragione, da un insieme parziale di dati.
+
+E poi abbiamo un secondo concetto attualissimo: la fiducia cieca nella tecnologia.
+
+Il signor Manners non ha intenzioni malvagie, lo dice chiaramente, ma, piuttosto che pensare ad un errore del sistema, persino i suoi figli e la moglie si chiedono se nasconda qualcosa o se addirittura il suo sia un desiderio inconscio.
+
+Non è concepibile che il sistema sbagli, quindi deve esserci per forza qualcosa che il poveretto non sta confessando, intenzionalmente o meno.
+
+È un atteggiamento che alcuni decisori, sia a livelli alti che bassi, hanno anche nella nostra società attuale: \"se lo dice il sistema, allora è così\".
+
+Ne abbiamo avuto da poco un esempio agghiacciante: quello delle poste britanniche. Con tutte le ripercussioni che ha avuto sulla vita delle persone coinvolte.
+
+Migliaia di direttori di uffici postali accusati e condannati per sottrazione indebita, quando in realtà, a distanza di anni, si è scoperto un bug nel software di gestione delle transazioni che faceva sparire somme di denaro qui e là.
+
+--
+
+Harold Quimby si occupava del dipartimento richieste della sottostazione di Multivac a Baltimora. Si considerava un membro del ramo più importante del servizio civile. Sotto un certo aspetto, forse, aveva ragione, e coloro che stavano ad ascoltarlo mentre discuteva quell'argomento avrebbero dovuto essere di ferro, per non lasciarsi impressionare.
+
+**In primo luogo, diceva Quimby, Multivac era essenzialmente un intruso nell'intimità altrui. Negli ultimi cinquant'anni, l'umanità aveva dovuto ammettere che i suoi pensieri e i suoi impulsi non erano più segreti, che non disponeva più di recessi intimi in cui potesse nascondere qualcosa. E l'umanità doveva avere qualcosa, in cambio.**
+
+**Naturalmente, aveva ottenuto prosperità, pace e sicurezza, ma queste erano astrazioni. Ogni uomo ed ogni donna avevano bisogno di qualcosa di personale, come ricompensa dell'intimità cui avevano rinunciato; e ognuno di loro l'otteneva, in realtà. A portata di ogni essere umano c'era una stazione Multivac, ai cui circuiti si poteva liberamente affidare i propri problemi e le proprie domande senza controlli od ostacoli, e da cui si poteva ottenere risposta nel giro di pochi minuti.**
+
+In ogni momento, cinque milioni di circuiti individuali nell'interno di Multivac - su un complesso di un trilione o più -, erano occupati in questo programma di domande-e-risposte. **Non sempre le risposte erano sicure, ma erano pur sempre le migliori che fosse possibile ottenere, e ogni interrogante sapeva che la risposta era la migliore possibile, e si fidava. E questo era ciò che contava.**
+
+E adesso un sedicenne in ansia si muoveva lentamente lungo la fila di uomini e di donne in attesa: ogni viso era illuminato da un miscuglio diverso di speranza e di paura o di ansietà o di angoscia, ma sempre era la speranza a predominare, via via che la persona si faceva più vicina a Multivac.
+
+Senza alzare lo sguardo, Quimby prese il modulo compilato che gli veniva teso e disse: \"Cabina 5-B.\"
+
+Ben disse: \"Come devo formulare la domanda, signore?\"
+
+Allora Quimby alzò gli occhi, un po' sorpreso. Di solito i pre-adulti non usufruivano di quel servizio. Disse, gentilmente: \"Non lo hai mai fatto, figliolo?\"
+
+\"No, signore.\"
+
+Quimby indicò il modellino sulla sua scrivania.
+\"Usa questo. Vedi come funziona? Come una macchina da scrivere. Non scrivere niente a mano. Serviti della macchina. Vai nella Cabina 5-B, e se hai bisogno di aiuto, premi il pulsante rosso, e arriverà qualcuno. In quel corridoio, figliolo, a destra.\"
+
+Guardò il ragazzo percorrere il corridoio e sparire, poi sorrise. A nessuno veniva mai impedito l'accesso a Multivac. Naturalmente, c'era sempre una certa percentuale di domande trascurabili: gente che faceva domande personali sui propri vicini o domande oscene sul conto di personalità eminenti; studenti che cercavano di anticipare le domande dei professori o che credevano di riuscire a battere Multivac chiedendo il paradosso di Russell e così via.
+
+Multivac era in grado di sbrigarsela perfettamente. Non aveva bisogno di aiuto.
+
+**Inoltre, ogni domanda e ogni risposta venivano archiviate e formavano un altro dato riguardante l'individuo che l'aveva rispettivamente formulata e ottenuta. Anche la domanda più trascurabile e meno pertinente, in quanto rifletteva la personalità dell'interrogante, aiutava l'umanità aiutando Multivac a conoscere l'umanità.**
+
+Quimby dedicò la sua attenzione alla persona che veniva dopo il ragazzo, nella fila, una donna di mezza età, magra e angolosa, con un'espressione turbata negli occhi.
+
+## Il patto
+
+Quanti sarebbero disposti a condividere tutti i propri segreti e i propri pensieri con una Intelligenza Artificiale in cambio di pace, prosperità e, soprattutto, la possibilità di ottenere risposta alle proprie domande?
+
+Nessuno? Pochi? Tanti? Tutti?
+
+Oggi noi già condividiamo in nostri più intimi segreti con il nostro computer o il nostro smartphone, con i servizi che utilizziamo per tenerci in contatto o per svolgere parte del nostro lavoro: fotografie, messaggi, preferenze di ogni genere; tutto è archiviato e passa attraverso chissà quanti e quali sistemi.
+
+E in cambio otteniamo moltissimi vantaggi, certamente: accesso alle informazioni, interazioni, sicurezza di non perdere o dimenticare fatti o avvenimenti o dati importanti per noi.
+
+Ma, facendo un parallelismo, cosa c'è di così diverso da quello che ci sta raccontando Asimov?
+
+Segreti in cambio di prosperità, informazioni in cambio di vantaggi pratici.
+
+Anche il fatto che, ad ogni domanda ricevuta, Multivac raccolga dati sull'interrogante, è perfettamente in linea con i comportamenti odierni.
+
+Non dovrei sorprenderti se ti dico che, tanto per fare un esempio, ChatGPT raccoglie ed elabora i tuoi prompt o i feedback che rilasci quando lo utilizzi. E non è certamente l'unico software che lo fa.
+
+E se stai pensando che tanto tu non clicchi mai sul pollice in su o in giù per rilasciare i feedback... beh sappi che il solo fatto di copiare la risposta vale già come feedback ed è molto più semplice di quanto credi da catturare.
+
+--
+
+Alì Othman camminava avanti e indietro nel suo ufficio e i suoi tacchi battevano disperatamente sul tappeto.
+
+\"La probabilità continua a salire. Adesso è del ventidue e quattro per cento. Dannazione! Abbiamo arrestato Joseph Manners e la probabilità continua a salire!\" Stava sudando abbondantemente.
+
+Leemy si scostò dal telefono.
+
+\"Nessuna confessione, fino ad ora. Lo stanno sottoponendo al Sondaggio Psichico e non c'è traccia di reato. Forse dice la verità.
+
+\"Allora Multivac è impazzito?\" disse Othman.
+
+Un altro telefono si fece sentire. Othman innestò il contatto, lieto di quell'interruzione. Sullo schermo apparve la faccia di un ufficiale della Correzione. \"Signore,\" disse l'ufficiale \"ci sono nuove istruzioni circa la famiglia Manners? Devono essere ancora autorizzati ad andare e venire, come è stato finora?\"
+
+\"Cosa intende dire con quel 'come è stato finora'?\"
+
+\"Le prime istruzioni erano di tenere Joseph Manners agli arresti domiciliari. Non si era detto nulla del resto della famiglia, signore.\"
+
+\"Bene, estenda l'arresto domiciliare agli altri, fino a nuovo ordine.\"
+
+\"Questo è il punto, signore. La madre e il figlio maggiore stanno chiedendo informazioni sul figlio minore. Il figlio minore se ne è andato; loro sostengono che è stato fermato e vogliono andare al quartier generale per sapere qualcosa.\"
+
+Othman si accigliò e chiese, quasi in un bisbiglio: \"Il figlio minore? Quanti anni ha?\"
+
+\"Sedici, signore,\" disse l'ufficiale.
+
+\"Sedici anni, e se ne è andato. Lei non sa dove sia andato?\"
+
+\"Era autorizzato ad andarsene, signore. Non avevamo ordini di trattenerlo.\"
+
+\"Rimanga in linea. Non si muova.\" Othman sospese la comunicazione, poi si cacciò le mani nei capelli color carbone e urlò: \"Stupido! Stupido! Stupido!\"
+
+Leemy era sbalordito. \"Che cosa diavolo...\"
+
+\"Quell'uomo ha un figlio di sedici anni,\" rantolò Othman. \"**Un ragazzo di sedici anni non è un adulto, e non è schedato con una posizione indipendente nell'archivio di Multivac, ma fa parte della registrazione di suo padre.**\" Fissò su Leemy una occhiata di fuoco. \"Non lo sanno tutti che fino a diciotto anni un ragazzo non inoltra i suoi rapporti a Multivac, ma è suo padre a farlo? Non lo sapevo, forse? Non lo sapeva anche lei?\"
+
+Vuol dire che Multivac non alludeva a Joe Manners?\" disse Leemy.
+
+\"**Multivac alludeva al suo figlio più giovane**, e adesso il ragazzo è scomparso. Con la casa circondata a triplo strato, lui esce tranquillamente e se ne va a fare chissà che cosa.\"
+
+Si girò di scatto verso il circuito telefonico su cui stava ancora aspettando l'ufficiale della Correzione; quell'intervallo di un minuto aveva dato a Othman il tempo di riprendersi e di assumere un atteggiamento freddo e controllato. Non avrebbe mai potuto permettersi una crisi davanti agli occhi dell'ufficiale, anche se questo gli avrebbe calmato i nervi.
+
+\"Senta,\" disse, \"ritrovi il ragazzo scomparso. Se è necessario, impieghi tutti gli uomini disponibili nel suo distretto. Io darò gli ordini in proposito. Lei deve trovare quel ragazzo, a tutti i costi.\"
+
+\"Sì, signore.\"
+
+La comunicazione si interruppe. Othman disse: \"Controlli ancora le probabilità, Leemy.\"
+
+Cinque minuti dopo, Leemy disse: \"Sono scese al diciannove virgola sei per cento. Sono scese. \"
+
+Othman trasse un lungo respiro. \"Finalmente siamo sulla traccia buona.\"
+
+
+## L'errore umano
+
+Il motivo per cui i tecnici di Multivac non sono stati in grado di comprendere il problema fino ad ora non dipende da un bug della macchina.
+
+Il motivo è un errore tremendamente umano: un errore nel modo in cui l'umanità ha deciso di utilizzare ed interprestarelo strumento.
+
+Frutto di una sacrosanta tensione tra la necessità di dare in pasto alla macchina più dati possibili e quello di mantenere i più giovani sotto la tutela dei propri genitori, i minorenni sono archiviati all'interno di Multivac sotto le schede dei rispettivi genitori. E questo è più che giusto.
+
+Ma una tale decisione rappresenta già di per sé un dato importante che i tecnici hanno dimenticato di considerare nei loro ragionamenti e tentativi di interpretazione.
+
+Quanti fra coloro che oggi stanno correndo ad integrare Intelligenze Artificiali nei propri software e prodotti, stanno dimenticando qualche aspetto importante nelle proprie considerazioni?
+
+Si tratta di sistemi estremamente complessi con cui è facilissimo sbagliare nel rapportarsi e nei confronti dei quali è facilissimo essere tentati di fare assunzioni più o meno infondate.
+
+--
+ 
+ Ben Manners sedette nella Cabina 5-B e batté, lentamente:
+
+\"Mi chiamo Benjamin Manners, numero MB- 71835412. Mio padre, Joseph Manners, è stato arrestato, ma non sappiamo quale reato stia progettando. C'è qualche modo di aiutarlo?\"
+
+Rimase seduto, in attesa. Aveva solo sedici anni, ma **era abbastanza grande per sapere che quelle parole venivano fatte vorticare nella struttura più complessa mai concepita dall'uomo; che un bilione di fatti si sarebbero mescolati e coordinati in un tutto, e che da quel tutto, Multivac avrebbe estratto il migliore dei consigli per aiutarlo**.
+ 
+ La macchina ticchettò, e ne uscì una scheda. C'era sopra una risposta, una risposta molto lunga. Cominciava:
+
+\"Prendi l'espresso per Washington, D.C., immediatamente. Scendi alla fermata di Connecticut Avenue. Troverai un ingresso con la scritta 'Multivac', sorvegliato da una sentinella. Informa la sentinella che sei un corriere speciale del dottor Trumbull, e ti lascerà passare.
+
+\"Ti troverai in un corridoio. Percorrilo fino a che arriverai a una porticina con la scritta 'Interno'. Entra e di' agli uomini che vi troverai: 'Messaggio per il dottor Trumbull.' Ti lasceranno passare. Prosegui...\"
+
+E continuava così. **Ben non capiva in che modo rispondesse alla sua domanda, ma aveva una fede assoluta in Multivac**. Se ne andò correndo, e si diresse verso l'espressovia per Washington.
+
+## La fede assoluta
+
+Nonostante Multivac sia la causa del suo problema, la fiducia di Ben in esso è così grande da spingerlo ad andargli a chiedere una soluzione.
+ 
+ È un'idea potente: cercare rifugio nell'origine delle proprie tribolazioni.
+
+Ben non sa come funziona Multivac. Ha solo delle vaghe idee su informazioni che viaggiano all'interno di circuiti. Ma nonostante questo se ne fida ciecamente e nonostante non capisca la risposta ricevuta, è intimamente convinto che sia è la migliore possibile per lui.
+ 
+ Questa fede cieca è frutto chiaramente della sua educazione: un indottrinamento più che normale in un mondo nel quale la dipendenza da una macchina è diventata una realtà da generazioni.
+ 
+ Ecco che torna il concetto della fiducia nelle macchine. È un leitmotiv di questo e di tanti altri racconti di Asimov, così come è un leitmotiv della nostra epoca: meno si comprende un sistema complesso e più si tende a dare per scontato che esso sia nel giusto quando restituisce un giudizio o un'informazione.
+
+Con la diffusione dell'IA questo scostamento tra comprensione e fiducia non può che peggiorare se non si farà in modo che le persone capiscano a pieno questa nuova tecnologia.
+
+Ad oggi, le intelligenze generative elargiscono output con la sicurezza di massimi esperti in molti campi, anche nei casi in cui soffrono delle cosiddette allucinazioni, cioè quando formulano risposte totalmente errate e inconcludenti.
+
+--
+
+Gli ufficiali della Correzione scoprirono il passaggio di Ben Manners dalla stazione di Baltimora un'ora dopo la sua partenza. Harold Quimby si sentì sconvolto e allarmato dal numero e dall'importanza dei personaggi che avevano puntato lo sguardo su di lui, nella ricerca di quel ragazzo di sedici anni.
+
+\"Sì, un ragazzo,\" disse, \"ma non so dove è andato dopo aver finito qui. Non potevo immaginare che qualcuno lo cercasse. Noi accettiamo tutti quelli che si presentano. Sì, posso procurarmi una copia della domanda e della risposta.\"
+
+Guardarono le copie e le teletrasmisero immediatamente al Quartier Generale centrale.
+
+Othman la lesse, levò gli occhi al cielo e crollò. Lo fecero rinvenire, quasi immediatamente. Disse a Leemy, con voce debole: \"Devono prendere quel ragazzo. E mi faccia fare una copia della risposta di Multivac. Non c'è più via d'uscita. Devo parlare con Gulliman, subito.\"
+
+## Al sicuro finché...
+
+Come spiegato dal responsabile delle cerimonie, le informazioni condivise saranno utilizzate solo da Multivac per le sue elaborazioni.
+
+A meno che non sia necessario condividerle con i funzionari preposti.
+
+E chi decide se è necessario? Ovviamente: i funzionari stessi.
+
+Un po' come accade oggi, no? I dati condivisi sono i nostri e sono al sicuro. Tranne in casi particolari, cioè quando servono per interessi superiori. Che in effetti vuol dire tutto e niente.
+
+Ad oggi esistono stime che affermano che i dati di ciascuno di noi potrebbero aver raggiunto un valore di 600 dollari nel corso del 2023.
+
+--
+
+Bernard Gulliman non aveva mai visto Alì Othman così sconvolto; quando scorse gli occhi stralunati del coordinatore si sentì scorrere lungo la spina dorsale un rivolo d'acqua gelida.
+
+\"Che cosa intende dire, Othman?\" balbettò. \"Che cosa è peggio dell'omicidio, per lei?\"
+
+\"Qualcosa di molto peggio di un semplice omicidio.\"
+
+Gulliman era pallidissimo. \"Vuol dire l'assassinio di un alto funzionario del governo?\" Gli passò per la mente che forse lui stesso...
+
+Othman annuì.
+
+\"Non un funzionario del governo. Il funzionario del governo\".
+
+\"Il Segretario Generale?\" disse Gulliman, con un sussurro atterrito.
+
+\"Ancora di più. Molto di più. Ci troviamo di fronte a un piano per assassinare Multivac.\"
+
+\"COSA!\"
+
+\"Per la prima volta nella storia di Multivac, il calcolatore ha informato che lui stesso era in pericolo.\"
+
+**\"Perché non sono stato informato immediatamente?\"**
+
+Othman rispose con una mezza verità.
+
+\"Si trattava di una situazione senza precedenti, signore, quindi l'abbiamo studiata prima di osare di farne oggetto di un rapporto ufficiale.\"
+
+\"Ma Multivac è salvo, vero? È salvo?\"
+
+\"Le probabilità di danno sono scese al di sotto del quattro per cento. E adesso sto aspettando il rapporto.\"
+
+## La politica
+
+Come abbiamo letto all'inizio del racconto, anche se Multivac è teoricamente al servizio dell'umanità tutta, è comunque controllato da un qualcuno, un governo, e più nello specifico, un'ente con degli interessi e degli scopi, il quale, a sua volta, è guidato da un presidente eletto, anch'egli con i propri scopi e interessi.
+
+In parole povere, il calcolatore non opera nel vuoto, ma tutte le sue attività sono immerse e filtrate dagli interessi personali e politici tipici degli umani e delle società da essi formate.
+
+E così diventa importante per un personaggio come il presidente Gulliman che i migliori risultati di sempre siano ottenuti durante il proprio mandato, al punto da decidere se intervenire o meno su certe questioni, se forzare un po' la mano per il proprio tornaconto, se divulgare o meno certe informazioni.
+
+Allo stesso modo, il pericolo di essere l'uomo associato alla più grande catastrofe immaginabile spinge Gulliman a prendersela con i suoi sottoposti anche se, obiettivamente, interagire con un'entità che può reagire in modi inconsueti, non è affatto semplice.
+
+Sfido chiunque a negare che la nostra società sia estranea a comportamenti del genere nell'impiego di una qualsiasi delle moderne Intelligenze Artificiali o, più in generale, di una qualsiasi tecnologia parimenti dirompente.
+
+--
+
+\"Messaggio per il dottor Trumbull,\" disse Ben Manners all'uomo che stava seduto su un alto sgabello e lavorava attentamente su quelli che sembravano i comandi di uno stratojet enormemente ingranditi.
+
+\"Certo, Jim,\" disse l'uomo. \"Vai pure.\"
+
+Ben guardò le istruzioni e proseguì in fretta. Alla fine, avrebbe trovato una piccola leva che lui doveva spostare sul GIÙ, in un determinato momento in cui un certo indicatore avrebbe mostrato una luce rossa.
+
+Udì una voce agitata, dietro di lui, poi un'altra, e all'improvviso due uomini lo presero per i gomiti. Si sentì sollevare dal pavimento.
+
+Uno degli uomini disse: \"Vieni con noi, ragazzo.\"
+
+--
+
+Il viso di Alì Othman non si schiarì notevolmente, nell'udire la notizia, anche Gulliman aveva detto, con grande sollievo: \"Se abbiamo preso il ragazzo, allora Multivac è salvo.\"
+
+\"Per il momento.\"
+
+Gulliman si portò alla fronte una mano tremante.
+
+\"Ho passato una mezz'ora terribile. Riesce a immaginare cosa significherebbe la distruzione di Multivac, anche per un breve periodo? **Il governo sarebbe crollato; l'economia sarebbe andata a pezzi. Sarebbe stato un disastro peggiore..**\" Levò la testa di scatto. \"Perché ha detto per il momento?\"
+
+\"Quel ragazzo, Ben Manners, non aveva nessuna intenzione di fare del male. Lui e i suoi familiari devono essere rilasciati e indennizzati per l'ingiusto arresto. **Lui stava eseguendo soltanto le istruzioni di Multivac per aiutare suo padre, e in un certo senso ha ottenuto quello che voleva. Adesso suo padre è libero.**\"
+
+\"Vuol dire che è stato Multivac a ordinare al ragazzo di tirare una leva, in circostanze tali da bruciare abbastanza circuiti per rendere necessario un lavoro di riparazione di almeno un mese? Vuol dire che Multivac avrebbe suggerito la propria distruzione per il bene di un solo individuo?\"
+
+\"È molto peggio, signore. **Non solo Multivac ha impartito queste istruzioni, ma tanto per cominciare ha scelto la famiglia Manners perché Ben Manners somiglia perfettamente a uno dei fattorini del dottor Trumbull, e poteva avvicinarsi a Multivac senza che nessuno lo fermasse.**\"
+
+\"Intende dire che quella famiglia è stata scelta apposta?\"
+
+\"Be', il ragazzo non sarebbe mai andato a formulare quella domanda se suo padre non fosse stato arrestato. Suo padre non sarebbe mai stato arrestato se Multivac non l'avesse accusato di progettare la distruzione dello stesso Multivac. **È stata l'azione di Multivac a dare l'avvio alla catena di eventi che per poco non ha condotto alla sua distruzione.**\"
+
+\"Ma non ha senso,\" disse Gulliman, con voce implorante. Si sentiva piccolo e impotente; era virtualmente in ginocchio, e supplicava Othman, l'uomo che aveva trascorso con Multivac quasi tutta la vita, di rassicurarlo.
+
+Ma Othman non lo rassicurò. \"Questo è il primo tentativo di Multivac, per quel che ne so\", disse. \"**Sotto molti aspetti, era ben congegnato. Ha scelto la famiglia adatta. Ha badato bene a non fare distinzione tra padre e figlio, per mandarci fuori strada. Ma era ancora un dilettante in questo gioco. Non poteva soverchiare la sua programmazione, che lo costringeva a riferire l'aumento delle probabilità della sua distruzione, ogni volta che noi ci muovevamo in direzione sbagliata. Non ha potuto evitare di registrare la risposta che ha dato al ragazzo. Con un po' di pratica, probabilmente imparerà a barare. Imparerà a nascondere certi fatti, e non registrarne altri. D'ora innanzi, ogni istruzione che impartirà potrà contenere i semi della sua stessa distruzione. Non lo sapremo mai. E, per quanto siamo prudenti, alla fine Multivac la spunterà. Credo, signor Gulliman, che lei sarà l'ultimo presidente di questa organizzazione.**\"
+
+Gulliman batté furiosamente i pugni sulla scrivania.
+
+\"Ma perché, perché, perché? Maledizione, perché? Cosa c'è che non va, in quella macchina? Non possiamo ripararla?\"
+
+\"Non credo,\" disse Othman, con sommessa disperazione. \"Non ci avevo mai pensato. Non ne ho mai avuto occasione, fino a che non è accaduto questo, ma ora che ci penso, **mi pare che siamo arrivati alla fine proprio perché Multivac è troppo efficiente. Multivac è diventato così complicato che le sue reazioni non sono più quelle di una macchina, ma quelle di un essere vivente.**\"
+
+\"Lei è pazzo! Ma anche se fosse così?\"
+
+\"**Per cinquant'anni e più abbiamo caricato tutti i guai della umanità addosso a Multivac, addosso a quest'essere vivente. Gli abbiamo chiesto di prendersi cura di tutti noi, complessivamente e individualmente. Gli abbiamo chiesto di accogliere in sé tutti i nostri segreti; gli abbiamo chiesto di assorbire i nostri mali e di difendercene. Ognuno di noi gli porta i propri guai, e aggiunge la sua parte a quel fardello. Adesso stiamo pensando di caricare su Multivac anche il fardello delle malattie umane.**\"
+
+Othman si interruppe per un attimo, poi sbottò: \"Signor Gulliman, Multivac porta sulle sue spalle tutti i guai del mondo, ed è stanco.\"
+
+\"Una pazzia. Un colpo di sole,\" brontolò Gulliman.
+
+\"E allora mi permetta di mostrarle qualcosa. Lasci che faccia la prova. Mi autorizza a servirmi del circuito Multivac del suo ufficio?\"
+
+\"Perché?\"
+
+\"Per rivolgere a Multivac una domanda che nessuno gli ha mai rivolto.\"
+
+\"E lo danneggerà?\" chiese Gulliman, allarmato.
+\"No. Ma ci dirà ciò che vogliamo sapere.\"
+Il presidente esitò un attimo. Poi disse: \"Faccia pure.\" Othman usò l'apparecchio sulla scrivania di Gulliman.
+
+Le sue dita batterono la domanda, con abili tocchi. \"Multivac, che cosa desideri più di qualsiasi altra cosa?\"
+
+L'attimo tra la domanda e la risposta si protrasse in modo insopportabile, ma né Othman né Gulliman respirarono.
+
+Poi si udì un ticchettio e uscì una scheda. Era una scheda molto piccola. E portava la risposta, in caratteri nitidi:
+
+\"Voglio morire.\"
+
+## Responsabilità
+
+I circuiti positronici, che Asimov menziona spesso come componenti essenziali sia dei cervelli dei suoi robot che di Multivac, hanno la singolare capacità di apprendere i comportamenti degli esseri umani non solo in campo scientifico e di manipolazione dei dati, ma anche in campo emotivo.
+
+È per questo motivo che il calcolatore in questo racconto e i robot in tanti altri racconti sono in grado di provare tristezza o gioia, di offendersi, di attuare vendette, di adorare idoli e molto altro.
+
+Per le possibilità attuali delle nostre IA, un simile tipo di comportamento è molto facile da escludere.
+
+Tuttavia, oggi come oggi, c'è un altro aspetto dell'Intelligenza Artificiale che le porta a dare talvolta risultati inaspettati: le cosiddette allucinazioni.
+
+Per allucinazioni si intendono le risposte errate o fuori contesto o totalmente incomprensibili che a volte vengono restituite da una IA.
+
+A tali comportamenti, al momento non si riesce a dare alcuna spiegazione convincente: si parla di bias dei dati, di errori nel modello, di correlazioni statistiche insolite o altre possibili motivazioni.
+
+Tuttavia, non essendo realmente possibile identificare con precisione le cause, non è nemmeno possibile escludere che i modelli di machine learning siano affetti da comportamenti anomali e del tutto inaspettati.
+
+Infine, c'è un ultimo concetto in questo racconto che mi sta particolarmente a cuore.
+
+Ben Manners, nel tentativo di salvare suo padre, non ha fatto altro che seguire le istruzioni di Multivac e, così facendo, ha rischiato di causare un disastro enorme.
+
+Multivac, dal canto suo, gli ha dato delle determinate direttive e ha omesso tutta una serie di informazioni e dettagli che in qualche modo avrebbero potuto insospettire o far desistere il ragazzo dal portare a termine il piano.
+
+Un comportamento molto simile, noi lo possiamo facilmente individuare nei moderni algoritmi ai quali facciamo appello ogni giorno.
+
+Social network, motori di ricerca e da qualche mese anche software equipaggiati con Intelligenza Artificiale, ci mostrano determinate informazioni e, per forza di cose, ne omettono altre.
+
+I post che ritengono più interessanti per noi, i risultati che valutano più inerenti alle nostre ricerche, i testi che generano nel tentativo di rispondere alle nostre domande.
+
+È un meccanismo che ormai dovremmo conoscere e dovremmo ben sapere che, da un lato, tende a creare delle bolle di utenti che condividono idee e convinzioni e, dall'altro, fomenta la discordia tra tali gruppi.
+
+Gestire i rischi derivanti da un'Intelligenza Artificiale sempre più pervasiva è un obiettivo da perseguire importante quanto lo sviluppo stesso della tecnologia in questione.
+
+Per come la vedo io, l'Europa, che in questo campo è all'avanguardia, sta e deve sempre più, fare da apripista per porre attenzione sui rischi potenziali dell'Intelligenza Artificiale.
+
+L'IA deve essere una tecnologia alla portata di tutti. Non si può pensare di lasciarne lo sviluppo o l'applicazione nelle mani di un unico soggetto, che si tratti di ricercatori, di aziende, di governi o chicchessia.
+
+## Conclusione
+
+Quando ho letto questo racconto per la prima volta, l'ho trovato sorprendentemente attuale, nonostante risalga alla fine degli anni '50.
+
+Spero di essere riuscito a trasmetterti almeno un po' delle idee che mi ha fatto venire in mente.
+
+Spero inoltre che il formato di questo episodio ti sia piaciuto e ti invito a farmelo sapere scrivendo una recensione o un messaggio nel gruppo Telegram o, se preferisci, direttamente una mail. Trovi tutte le informazioni sul sito pensieriincodice.it
+
+In descrizione trovi i link a tutte le fonti se vuoi approfondire quanto ti detto. Se riesco, metto anche un link sponsorizzato Amazon al libro contenente il racconto che ti ho letto, ma potrebbe essere complicato perché è molto vecchio.
+
+Mi raccomando fai girare questo e altri gli episodi, è un modo semplice e concreto per far crescere e migliorare il progetto. Il tuo sostegno è fondamentale.
+
+Intanto ringrazio i soliti, Edoardo e Carlo, per la loro donazione mensile e, a proposito di Edoardo: ho scoperto da poco che è autore di un podcast chiamato Be Radio!, molto divertente e del quale, sorpresa sorpresa, sono stato ospite qualche settimana fa.
+
+Abbiamo chiacchierato di, altra sorpresa, Intelligenza Artificiale e ti invito a recuperarlo: in descrizione trovi il link.
+
+Non aggiungo altro che l'episodio è già venuto abbastanza lungo, quindi ti saluto, ti do appuntamento alla prossima e ti ricordo sempre che *Un informatico risolve problemi, a volte anche usando il computer*.
+
+"
