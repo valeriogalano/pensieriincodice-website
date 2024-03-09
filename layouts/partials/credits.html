@@ -1,0 +1,8 @@
+{{ $season := .Page.Params.seasons | printf "season%d" }}
+{{ with index $.Site.Data.credits $season }}
+{{ range . }}
+{{ . | safeHTML }}<br/>
+{{ end }}
+<br/>
+{{ else }}
+{{ end }}

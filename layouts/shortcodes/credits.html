@@ -1,8 +1,1 @@
-{{ $season := .Get "season" }}
-{{ with index $.Site.Data.credits $season }}
-{{ range . }}
-{{ . | safeHTML }}<br/>
-{{ end }}
-<br/>
-{{ else }}
-{{ end }}
+{{ partial "credits.html" . }}

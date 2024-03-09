@@ -45,12 +45,15 @@
 
 						<div class="blog-content">
 							{{ if .Params.audio }}
+							<h3>Ascolta l'episodio</h3>
 							<audio controls>
 								<source src="{{ .Site.Params.podcast.cdn_tracked_base_url }}{{ .Params.audio }}" type="audio/mpeg">
 								{{ i18n "audioNotSupported" }}
 							</audio>
 							{{ end }}
 							{{ .Content }}
+							{{ $noop := .Content }} {{/* You must do this before calling the partial */}}
+							{{ partial "transcript.html" . }}
 						</div>
 
 						<div class="post-text-bottom">
