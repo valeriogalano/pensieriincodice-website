@@ -80,6 +80,7 @@
             <description>
                 {{ print "<![CDATA[" | safeHTML }}
                 {{ print .Content | safeHTML }}
+                {{ partial "partners.html" . }}
                 {{ partial "sources.html" . }}
                 {{ partial "credits.html" . }}
                 {{ print "]]>" | safeHTML }}
@@ -87,6 +88,7 @@
             <googleplay:description>
                 {{ print "<![CDATA[" | safeHTML }}
                 {{ print .Content | safeHTML }}
+                {{ partial "partners.html" . }}
                 {{ partial "sources.html" . }}
                 {{ partial "credits.html" . }}
                 {{ print "]]>" | safeHTML }}
@@ -94,6 +96,7 @@
             <content:encoded>
                 {{ print "<![CDATA[" | safeHTML }}
                 {{ print .Content | safeHTML }}
+                {{ partial "partners.html" . }}
                 {{ partial "sources.html" . }}
                 {{ partial "credits.html" . }}
                 {{ print "]]>" | safeHTML }}
