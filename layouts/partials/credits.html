@@ -1,3 +1,4 @@
+<h2>Crediti</h2>
 {{ $season := .Page.Params.seasons | printf "season%d" }}
 {{ with index $.Site.Data.credits $season }}
 {{ range . }}
