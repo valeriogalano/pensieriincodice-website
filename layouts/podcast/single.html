@@ -53,6 +53,7 @@
 							{{ end }}
 							{{ .Content }}
 							{{ $noop := .Content }} {{/* You must do this before calling the partial */}}
+							{{ partial "credits.html" . }}
 							{{ partial "transcript.html" . }}
 						</div>
 

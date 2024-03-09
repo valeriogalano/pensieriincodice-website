@@ -76,26 +76,25 @@
             <guid>{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.audio }}</guid>
             <link>{{ .Permalink }}</link>
             <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-            {{- if strings.Contains .Content "<!-- more -->" -}}
-            {{ $target := split .Content "<!-- more -->" }}
-            {{ $cutted_desc := index ($target) 0 }}
-            <description>{{ print "<![CDATA[" $cutted_desc | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML }}
+            {{ $noop := .Content }} {{/* You must do this before calling the partial */}}
+            <description>
+                {{ print "<![CDATA[" | safeHTML }}
+                {{ print .Content | safeHTML }}
+                {{ partial "credits.html" . }}
+                {{ print "]]>" | safeHTML }}
             </description>
-            <googleplay:description>{{ print "<![CDATA[" $cutted_desc | safeHTML | truncate 3000 }}{{ print "]]>" |
-                safeHTML }}
+            <googleplay:description>
+                {{ print "<![CDATA[" | safeHTML }}
+                {{ print .Content | safeHTML }}
+                {{ partial "credits.html" . }}
+                {{ print "]]>" | safeHTML }}
             </googleplay:description>
-            <content:encoded>{{ print "<![CDATA[" $cutted_desc | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML
-                }}
+            <content:encoded>
+                {{ print "<![CDATA[" | safeHTML }}
+                {{ print .Content | safeHTML }}
+                {{ partial "credits.html" . }}
+                {{ print "]]>" | safeHTML }}
             </content:encoded>
-            {{- else -}}
-            <description>{{ print "<![CDATA[" .Content | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML }}
-            </description>
-            <googleplay:description>{{ print "<![CDATA[" .Content | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML
-                }}
-            </googleplay:description>
-            <content:encoded>{{ print "<![CDATA[" .Content | safeHTML | truncate 3000 }}{{ print "]]>" | safeHTML }}
-            </content:encoded>
-            {{- end -}}
             <itunes:author>
                 {{- range $index, $key:= .Params.authors -}}
                 {{- if $index }}, {{ end -}}
