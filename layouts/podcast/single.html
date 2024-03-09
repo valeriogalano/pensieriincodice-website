@@ -53,6 +53,7 @@
 							<h2>Descrizione</h2>
 							{{ .Content }}
 							{{ $noop := .Content }} {{/* You must do this before calling the partial */}}
+							{{ partial "support.html" . }}
 							{{ partial "partners.html" . }}
 							{{ partial "sources.html" . }}
 							{{ partial "credits.html" . }}
