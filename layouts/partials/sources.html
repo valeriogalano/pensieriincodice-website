@@ -1,0 +1,13 @@
+{{/* If sources list empty, print no links message */}}
+{{ if .Page.Params.sources }}
+<h2>Fonti dell'episodio</h2>
+<ul>
+{{ range .Page.Params.sources }}
+{{ if .title }}
+    <li><a href="{{ .url }}">{{ .title }}</a></li>
+{{ else }}
+    <li><a href="{{ .url }}">{{ .url }}</a></li>
+{{ end }}
+{{ end }}
+</ul>
+{{ end }}

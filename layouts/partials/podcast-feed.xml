@@ -80,18 +80,21 @@
             <description>
                 {{ print "<![CDATA[" | safeHTML }}
                 {{ print .Content | safeHTML }}
+                {{ partial "sources.html" . }}
                 {{ partial "credits.html" . }}
                 {{ print "]]>" | safeHTML }}
             </description>
             <googleplay:description>
                 {{ print "<![CDATA[" | safeHTML }}
                 {{ print .Content | safeHTML }}
+                {{ partial "sources.html" . }}
                 {{ partial "credits.html" . }}
                 {{ print "]]>" | safeHTML }}
             </googleplay:description>
             <content:encoded>
                 {{ print "<![CDATA[" | safeHTML }}
                 {{ print .Content | safeHTML }}
+                {{ partial "sources.html" . }}
                 {{ partial "credits.html" . }}
                 {{ print "]]>" | safeHTML }}
             </content:encoded>
