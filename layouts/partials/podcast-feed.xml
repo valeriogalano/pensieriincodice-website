@@ -65,6 +65,9 @@
                                     address="030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3"
                                     customKey="696969" customValue="lxH8HcyLSi5uNgx7Jx9Z" split="100"/>
         </podcast:value>
+        <podcast:guid>
+            7b5d2ff7-d9f8-572a-8ec5-e872cc46ba4c
+        </podcast:guid>
         <item>
             <title>{{ title .Params.title }}{{ with .Params.subtitle }} ({{ . }}){{ end }}</title>
             {{ $audio_name_arr := split .Params.audio "." }}
