@@ -114,6 +114,7 @@ authorName = "Daniele Galano Web & Graphic Designer"
 disqusComments = "" #YOUR DISQUS COMMENTS SHORTNAME
 formspreeURL = "https://formspree.io/f/your_api_key" #YOUR FORMSPREE URL
 googleAnalytics = "" #YOUR GOOGLE ANALYTICS CODE
+taxonomiesExcludedFromSitemap = ["tags"]
 
 # Background
 [params.background]
