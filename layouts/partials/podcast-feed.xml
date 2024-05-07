@@ -74,7 +74,8 @@
             {{ $audio_type := index $audio_name_arr (sub (len $audio_name_arr) 1) }}
             {{ $audio_size := 1 }}
             {{- if .Params.audio_size }}{{ $audio_size = int .Params.audio_size }} {{ end -}}
-            <enclosure url="{{ .Site.Params.Podcast.cdn_tracked_base_url }}{{ .Params.audio }}" length="{{ $audio_size }}"
+            <enclosure url="{{ .Site.Params.Podcast.cdn_tracked_base_url }}{{ .Params.audio }}"
+                       length="{{ $audio_size }}"
                        type="audio/{{ $audio_type }}"/>
             <guid>{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.audio }}</guid>
             <link>{{ .Permalink }}</link>
@@ -135,6 +136,8 @@
             {{- end -}}
             <podcast:transcript url="{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.transcript }}"
                                 type="application/x-subrip" language="it"/>
+            <podcast:chapters url="{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.chapters }}"
+                              type="application/json+chapters"/>
         </item>
         {{ end }}
     </channel>
