@@ -1,14 +1,9 @@
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <rss version="2.0"
-     xmlns:content="http://purl.org/rss/1.0/modules/content/"
-     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:atom="http://www.w3.org/2005/Atom"
-     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-     xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
-     xmlns:podcast="https://podcastindex.org/namespace/1.0">
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">
     <channel>
         <atom:link href="{{ .Site.BaseURL }}podcast/index.xml" rel="self" type="application/rss+xml"/>
         <sy:updatePeriod>{{ .Site.Params.Podcast.updatePeriod }}</sy:updatePeriod>
@@ -135,7 +130,7 @@
             <itunes:image href="{{ .Site.Params.Podcast.image }}"/>
             {{- end -}}
             <podcast:transcript url="{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.transcript }}"
-                                type="application/x-subrip" language="it" rel="captions"/>
+                                type="application/srt" language="it" rel="captions"/>
             <podcast:chapters url="{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.chapters }}"
                               type="application/json+chapters"/>
         </item>
