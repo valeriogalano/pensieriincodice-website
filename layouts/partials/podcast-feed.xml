@@ -135,7 +135,7 @@
             <itunes:image href="{{ .Site.Params.Podcast.image }}"/>
             {{- end -}}
             <podcast:transcript url="{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.transcript }}"
-                                type="application/x-subrip" language="it"/>
+                                type="application/x-subrip" language="it" rel="captions"/>
             <podcast:chapters url="{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.chapters }}"
                               type="application/json+chapters"/>
         </item>
