@@ -1,0 +1,209 @@
+text: "
+## Introduzione
+
+Probabilmente anche tu, come me, all'inizio di quest'anno avrai sentito parlare del ragazzo di 13 anni che per primo ha completato il mitico videogioco chiamato Tetris: la notizia era un po' dovunque sul Web ed è stata data perfino al telegiornale.
+
+Quando ne ho letto ho deciso - così, per curiosità - di andarmi a guardare il momento della vittoria, recuperando la registrazione della diretta streaming su YouTube. E saltando un po' lungo la timeline del video, ho notato che in sottofondo si può sentire un suono che si ripete di continuo, una sorta di un tamburellio.
+
+Mi sono immediatamente chiesto cosa fosse quel rumore e, indagando un po', ho scoperto una quantità di informazioni interessanti di cui, onestamente, non avevo idea.
+
+Questo episodio è un po' il riassunto di tutto ciò che ho imparato quel giorno su Tetris.
+
+Sigla.
+
+## Finire un gioco che non ha una fine
+
+Willis Gibson di 13 anni, anche conosciuto come Blue Scuti, è stato ufficialmente riconosciuto come il primo essere umano ad aver completato il celeberrimo gioco Tetris per Nintendo, dopo ben 34 anni dalla sua pubblicazione.
+
+Il termine *essere umano* qui è d'obbligo perché, prima d'ora, l'impresa era già stata realizzata da alcune intelligenze artificiali sviluppate ad hoc, ma Willis è stato il primo a riuscirci con le proprie sole forze - almeno fra i casi documentati.
+
+Si tratta di un risultato a dir poco fenomenale e non solo per gli ostacoli implementati dagli sviluppatori come parte del gioco ma anche per le tantissime anomalie che si presentano a poco a poco mentre si procede con una partita che si protrae a lungo nel tempo. 
+
+Solo guardando il filmato di Willis, infatti, già si notano immediatamente tutta una serie di problemi: il contatore del punteggio, ad esempio, raggiunge il massimo (cioè circa 1 milione) al livello 27, quando il video è a meno di un quarto del totale. E poco dopo, a partire dal livello 29, va in tilt anche il contatore dei livelli stessi, che inizia a mostrare numeri e lettere non più sequenziali.
+
+Ma al di là di tutti questi dettagli - seppur interessanti - la domanda forse più ovvia, la prima che dovrebbe sorgere quasi immediatamente quando si pensa a come finire Tetris è *che cosa si intende per fine di Tetris?*
+
+Se mai hai giocato una partita a questo gioco in vita tua, infatti, dovresti sapere che in effetti esso non ha una storia e non ha nemmeno una vera e propria fine definita dagli sviluppatori come un particolare livello o punteggio o l'atto di svuotare completamente il quadro.
+
+Probabilmente, quando fu progettato e realizzato, almeno nella versione per console NES - che sta per Nintendo Entertainment System - nessuno si preoccupò o immaginò che qualcuno potesse raggiungere livelli tali di abilità da dover considerare la necessità di stabilire una fine.
+
+I tetramini (cioè i pezzi di varie forme da incastrare nel gioco) semplicemente continuano a cadere all'infinito e, per un giocatore inesperto, la fine arriva quando non è più in grado di piazzarli correttamente: lo schermo si riempie e la partita termina. Game over.
+
+Tuttavia, per un giocatore molto esperto, come Willis, la questione è completamente diversa.
+
+## Il Kill screen
+
+Il giovane Willis è dunque arrivato alla fine di Tetris. Ma come ha fatto?
+
+Beh, devi sapere che, per alcuni videogame pensati per procedere all'infinito, può esistere quello che viene definito il *kill screen* (in italiano potremmo dire la *schermata di morte*).
+
+Fondamentalmente si tratta di un punto del gioco in cui diventa letteralmente impossibile proseguire per via del fatto che si presenta un qualche tipo di problema o di bug che inficia il funzionamento del gioco stesso.
+
+Un esempio molto famoso di kill screen è il livello 256 di Pac-Man che, una volta raggiunto, causa l'apparizione di caratteri e simboli casuali che riempiono metà dello schermo e rendono di fatto impossibile giocare oltre.
+
+Ma ad ogni modo, quale che sia il kill screen o il videogioco in questione, la fine è causata da un problema sistematico: un momento nel quale, cioè, il gioco diventa ingiocabile e che si verifica anche più o meno sempre allo stesso punto del game play.
+
+Non è sufficiente, quindi, che il gioco vada in crash una tantum, ma è necessario che il blocco avvenga in modo più o meno deterministico ogni volta che si raggiungono precisi punti di avanzamento della partita.
+
+Solitamente, infatti, la causa di questi eventi è dovuta ad un errore di programmazione o un limite tecnico dell'hardware su cui gira il software, e ciò fa si che il problema si verifichi quando vengono soddisfatte determinate condizioni, come il raggiungimento di un certo livello o un certo punteggio o tempo di gioco.
+
+Nel caso specifico di Tetris, il kill screen è considerato il momento in cui il gioco va totalmente in crash, con audio e video che si bloccano, rendendo - ovviamente - impossibile proseguire la partita.
+
+Tale evento è causato dal fatto che, arrivati ad un certo punto, il calcolo del punteggio richiede così tanto tempo che il sistema non riesce a mantenere il passo con l'avanzamento del gioco e il software va in tilt.
+
+## Il crash spiegato
+
+Per capire il motivo per il quale il gioco va in crash, dobbiamo ragionare un po' su come funzionano la Nintendo e Tetris e, in particolare, dobbiamo partire dallo studiare come funziona l'assegnazione del punteggio.
+
+Il gioco assegna dei punti ad ogni *clear*, cioè ogni volta che si fanno sparire una o più linee. Hai presente, no? Si fa in modo che i pezzi vadano a comporre delle linee orizzontali complete e queste immediatamente vengono distrutte.
+
+Una clear singola, cioè di una sola linea, vale di base 40 punti; una doppia 100, una tripla 300; e una Tetris, cioè una quadrupla, 1200. Il punteggio di base della clear, viene poi moltiplicato per il numero del livello a cui si sta giocando + 1.
+
+Quindi se, ad esempio, effettuiamo una clear tripla a livello 10, otteniamo 3300 punti, cioè 300 di base moltiplicato per 11 - il livello +1 -. Se, invece effettuiamo una singola a livello 99, otteniamo 4000 punti, cioè 40 moltiplicato 100.
+
+Questa semplice informazione è molto importante per noi perché ci fa capire che, ad ogni assegnazione di punteggio, la NES deve effettuare tutta una serie di calcoli e, sopratutto, che questi aumentano di complessità a mano a mano che il gioco va avanti.
+
+Poiché infatti il processore della console esegue le operazioni di moltiplicazione in forma di somme, maggiori sono i numeri da moltiplicare maggiore sarà anche il numero di operazioni da effettuare.
+
+In altre parole, quando è necessario calcolare il risultato di 40 moltiplicato 100, quello che in effetti il processore va ad effettuare è la somma 40 + 40 + 40 + 40 e così via per 100 volte.
+
+In pratica, ciò significa che con l'aumentare del livello di gioco, aumenta anche il tempo necessario per calcolare il punteggio ed è questo fatto che risulta essere poi il fulcro del problema che conduce al kill screen.
+
+Nella Nintendo, infatti, lavorano in collaborazione due processori: uno serve per i calcoli matematici, la gestione degli eventi, degli input, ecc. e l'altro è adibito alla sola visualizzazione dei frame sullo schermo.
+
+Un po' come le moderne schede video, la Picture Processor Unit - questo il nome del secondo processore -  ha una sua ram nella quale compone le immagini e successivamente le invia sullo schermo.
+
+Per fare il suo lavoro, però, la PPU ha bisogno che il primo processore le produca le informazioni che deve rendere in forma grafica: ad esempio il valore del punteggio, la posizione del tetramino che sta cadendo, l'elenco dei prossimi tetramini, e così via.
+
+Ciò significa che ad ogni frame il processore principale deve necessariamente produrre tutti i dati utili alla PPU per disegnare il frame successivo e poco importa se sta svolgendo altre mansioni: in ogni caso è programmato per mettere in pausa qualsiasi altra operazione e dedicarsi al compito più urgente.
+
+Capiamoci: si tratta di una strategia, questa, piuttosto condivisibile e, in linea generale, conveniente per sfruttare al meglio l'hardware della console. Tuttavia, in determinate condizioni, risulta essere fatale per Tetris.
+
+Il problema sta nel fatto che, a partire dal livello 155, il calcolo del punteggio di una singola clear, per come lo abbiamo descritto prima, necessita di ben 156 somme. Una quantità di operazioni tale da richiedere più tempo di quello a disposizione tra un frame e l'altro.
+
+In questa situazione, al processore matematico non resta che mettere in pausa i calcoli per riprenderli al successivo intervallo fra frame ed è qui che viene aperta la strada ad un possibile crash.
+
+Prima di interrompere i calcoli, infatti, è necessario archiviare nella memoria RAM i dati utili a riprendere il processo in un secondo momento.
+
+Così facendo il processore potrà sospendere il proprio lavoro attuale e dedicarsi al calcolo delle informazioni per il frame, avendo la certezza che, una volta finito, potrà riprendere esattamente da dove si era interrotto.
+
+Il problema è che, a volte, in questo processo può capitare che le operazioni necessarie a produrre i dati per il nuovo frame, accidentalmente, causino la sovrascrittura nei dati sul punteggio in fase di calcolo archiviati nella RAM.
+
+In parole semplici, al momento dell'interruzione, il processore prende una sorta di appunti sui calcoli in corso per il punteggio. Tuttavia, l'area di memoria in cui questi sono salvati non è in alcun modo protetta ed è quindi esposta a qualsiasi potenziale modifica.
+
+Potrebbe capitare dunque che, per sbaglio, il processore stesso vi scriva all'interno delle nuove informazioni perché nel progettare il frame, casualmente finisce per utilizzare le stesse aree di memoria.
+
+Quando un evento del genere si verifica, esso porta con buona probabilità al *kill screen*.
+
+Devi sapere, infatti, che la console è ottimizzata per sfruttare al massimo il proprio hardware e, tra le varie strategie di ottimizzazione, implementa anche l'accesso diretto ai byte della RAM sia per scrivere che leggere i dati in essa archiviati.
+
+Quindi, ciò significa che quando, una volta inviato il frame al TV, il processore va a recuperare le informazioni che gli servono per completare i calcoli sul punteggio, le legge direttamente dalla RAM senza effettuare alcun controllo sulla loro coerenza.
+
+Così facendo, però, non può in alcun modo rendersi conto del fatto, che accidentalmente potrebbero essere stati sovrascritti. Semplicemente li prende e li usa. Non è contemplata in alcun modo la possibilità che le informazioni in quei byte possano essere corrotte. 
+
+Ed è qui che si può verificare il kill screen. Se i dati sono cambiati, possono non essere più coerenti o addirittura possono essere diventati uno dei vari comandi di chiusura, che in gergo si chiamano *stop opcode*.
+
+Non esiste un modo per capire che qualcosa è andato storto perché in quella porzione di memoria è lecito trovare uno *stop opcode*, ad esempio nel momento in cui l'utente decide di uscire dal gioco.
+
+E così semplicemente il gioco non fa altro che rispettare i comandi che ha letto dalla RAM e ferma sia audio che video. Bloccandosi completamente e dando origine al kill screen.
+
+In tutto questo, la beffa è che chiaramente chi ha sviluppato il software ha commesso un grossolano errore di programmazione e non tanto perché il gioco crasha, quello può capitare. L'errore è molto più banale.
+
+Il punteggio massimo mostrato dall'interfaccia di Tetris, infatti, è di 1 milione di punti, anzi per la precisione 999999, che tra l'altro si raggiunge abbastanza velocemente nella prima trentina di livelli. Il software non può mostrare un valore più alto a schermo perché semplicemente non c'è lo spazio nella cornice.
+
+A livello computazionale, però, questo limite è stato implementato in modo un po' ingenuo, effettuando prima i calcoli e poi riportando il valore al massimo 999999 in caso il risultato sia maggiore di tale numero.
+
+In pratica, ciò che accade è che, arrivato a punteggio massimo, quando il giocatore ottiene altri punti da una clear, questi vengono calcolati, sommati al totale e poi la cifra viene riportata al valore massimo perché in ogni caso non lo si può superare.
+
+Con il senno di poi, aggiungere un semplice controllo che evitasse di calcolare nuovi punti in caso di punteggio massimo già raggiunto, probabilmente avrebbe evitato il kill screen o magari lo avrebbe spostato molto più avanti nel gioco.
+
+Ma ad ogni modo, le cose stanno come stanno e dunque a partire dal livello 155 le condizioni per il kill screen vengono soddisfatte. Da quel momento in poi è solo questione di tempo perché appaia uno *stop opcode* nel byte giusto.
+
+Nel caso di Willis, ad esempio, il gioco si è bloccato al livello 157.
+
+## Hypertapping e Rolling
+
+Capito quindi a che punto si trova la fine di Tetris, potresti ora pensare che semplicemente basti accendere la Nintendo, prendere il controller e giocare finché non si raggiunge il kill screen, ma ... non è proprio così.
+
+Devi sapere che per molti anni si è pensato che l'ultimo livello giocabile di Tetris fosse il 29.
+
+La velocità di caduta dei tetramini, infatti, aumenta con l'aumentare dei livelli ed in particolare al livello 29 essi raggiungono la velocità massima che corrisponde a ben una linea per frame. 
+
+E dato che il gioco originale in versione NTSC funziona a 60 frame per secondo, ciò vuol dire che ogni tetramino si sposta alla velocità di 60 linee per secondo e, poiché l'intera schermata è composta da sole 20 linee, di fatto ogni pezzo arriva sul fondo in 1/3 di secondo.
+
+Chiaramente, questa è una velocità notevolmente difficile da gestire, perché in effetti bisogna che il giocatore sappia già dove piazzare il pezzo prima ancora che esso inizi la propria discesa, perché altrimenti un tempo di reazione umano non sarebbe sufficiente a prendere tale decisione.
+
+Ma al di là di questo, per molto tempo si è pensato che il problema fosse proprio un limite tecnico dei joypad Nintendo perché in 1/3 di secondo non c'è tempo per tenere premuto il tasto desto o sinistro a sufficienza per portare il tetramino all'estremità del quadro.
+
+Per questo motivo si pensava che giocare a tale velocità fosse impossibile e che il 29 fosse, quindi, il livello corrispondente al kill screen. Tant'è vero che quello del livello 155 viene anche chiamato il *true kill screen* - il vero kills screen - proprio per indicare la differenza tra i due.
+
+Solo da pochi anni, invece, i giocatori professioni di Tetris hanno iniziato ad utilizzare la tecnica dell'*hypertapping* per superare il limite tecnico dei joypad.
+
+A parole, l'hypertapping consiste semplicemente nel premere ripetutamente il tasto del controller per spostare il tetramino più rapidamente, ma nella pratica non si tratta affatto di una tecnica banale.
+
+Può essere definito hypertapping, infatti, solo un movimento che permette di premere il tasto almeno 10 volte al secondo e per riuscirci i giocatori sono costretti ad effettuare gesti velocissimi e spesso posizionare il controller nei modi più disparati come ad esempio sul petto o sulle gambe.
+
+Ma nonostante questa tecnica abbia permesso di superare il livello 29, l'unico modo di arrivare al 155 è utilizzare la sua evoluzione, denominata *rolling*, inventata nel 2022 e, da allora, diventata praticamente lo standard fra i professionisti.
+
+Il rolling consiste nel tenere il dito fermo poggiato sul pulsante invece di usarlo per premere, e sfruttare poi le dita dell'altra mano per colpire ripetutamente il retro del controller come se si stesse tamburellando con le dita su un tavolo.
+
+In questo modo, la vibrazione prodotta dalle quattro dita che lo colpiscono dal di sotto spinge il controller - e quindi il tasto - contro il dito del giocatore e gli permette di eseguire spostamenti in una sequenza rapidissima e controllata senza sforzi eccessivi.
+
+Il rumore che si sente nel video di Willis e di cui ti ho parlato all'inizio di questo episodio è proprio causato dalle sue dita che urtano il controller mentre utilizza la tecnica del rollling.
+
+## Il glitch dei colori
+
+Come se le difficoltà fino ad ora illustrate non bastassero, poi, arrivati al livello 138 si presenta un ulteriore problema: il glitch dei colori.
+
+In Tetris, i colori dei tetramini cambiano di livello in livello seguendo un schema ben definito composto da 10 palette che si ripetono.
+
+A livello software, il gioco mantiene in memoria una tabella contenente le 10 palette di colori in un vettore di 10 posizioni i cui indici vanno da 0 a 9.
+
+Ad ogni cambio di livello poi un algoritmo effettua un semplice calcolo sottraendo ripetutamente il valore 10 al numero del livello finché non ottiene un risultato compreso tra 0 e 9. Quello è il numero della palette da usare.
+
+Per capire quando ha sottratto abbastanza volte 10, l'algoritmo controlla se il risultato dell'operazione è negativo. In caso affermativo decide che il predente valore è quello da scegliere.
+
+Quindi se stiamo giocando al livello 29, ad esempio, il sistema sottrae 10 e ottiene 19, poi sottrae 10 e ottiene 9, poi sottrae ancora 10 e ottiene -1. -1 è negativo, quindi il valore precedente, cioè 9 è quello da scegliere nella tabella dei colori.
+
+Il problema qui sta nel fatto che il risultato di questo calcolo viene archiviato in memoria in un singolo byte. E siccome parliamo di un numero che può essere sia positivo che negativo, tale byte può contenere al massimo i valori che vanno da -128 a +127.
+
+Questo intervallo di numeri è determinato dal fatto che un byte è composto da 8 bit e, per rappresentare un numero intero dotato di segno, il primo bit viene utilizzato per rappresentare appunto il segno - cioè il più o il meno - e gli altri 7 per le cifre.
+
+In tale condizione, arrivati nel gioco al livello 138, il valore risultante dalla differenza di 138 - 10 è uguale a 128, ma in un byte singolo, la rappresentazione in bit di 128 è esattamente identica a quella di -127. 
+
+Per questo motivo, la console, crede che la sottrazione 138 - 10 produca un risultato negativo pari a -127 e dunque, secondo l'algoritmo per la scelta della posizione in tabella descritto prima, è giusto scegliere come indice l'ultimo intero positivo precedente, cioè 138.
+
+Ma in una tabella che va da 0 a 9, la posizione 138 ovviamente non esiste. Ciò che accade, quindi è che viene selezionata, per la scelta dei colori, un'area di memoria adibita a tutt'altro compito e la conseguenza è che i valori utilizzati per i colori sono totalmente sbagliati: sono dati che servono ad altro.
+
+Per via di questo errore, quindi, a partire dal livello 138 i tetramini diventano di colori inusuali, che non sarebbe neanche un problema se non fosse che in alcuni casi essi sono così scuri da essere quasi invisibili a schermo.
+
+In particolare, il livello più problematico in assoluto, in questo senso, è il 148, che è stato soprannominato *Carbone* proprio per via del fatto che i tetramini sono così scuri da essere quasi neri come lo sfondo della schermata di gioco.
+
+## Conclusione
+
+Bene, spero di averti raccontato anche oggi qualcosa di interessante. Quando ho scoperto tutti questi dettagli su Tetris, io sono rimasto particolarmente colpito.
+
+Prima di chiudere, un paio di avvisi importanti.
+
+Innanzitutto, Google Podcast chiude. Se lo utilizzi, dovresti già saperlo, ma ripeterlo non fa mai male. In caso ti consiglio di passare ad un'app di podcast più moderna e completa e che magari supporti le funzionalità del podcasting 2.0.
+
+A proposito di podcasting 2.0, poi ti ricordo che Pensieri in codice aderisce alla filosofia Value4Value. 
+
+Il che vuol dire che io mi impegno a produrre episodi interessanti, gratuiti e liberi da pubblicità e in cambio tu, ascoltatore o ascoltatrice, restituisci un po' del valore che ricevi attraverso una delle 3 T: Time, Talent o Treasure.
+
+In parole povere, valuta quanto vale per te questo progetto. Quando ti dispiacerebbe se non esistesse e poi scegli se restituire questo valore nella forma che preferisci.
+
+Impiegando il tuo tempo, condividendo gli episodi, portando nuovi ascoltatori o lasciando una recensione su apple podcast.
+
+Impiegando il tuo talento: ci sono tante cose che potrebbero servire, dalla gestione dei social allo sviluppo di qualche parte del sito o dei servizi di automatizzazione, alla scrittura degli episodi, o qualsiasi cosa che puoi proporre direttamente tu.
+
+O infine, ma veramente come ultima spiaggia, impiegando il tuo tesoro, cioè i tuoi soldi, quindi facendo una piccola donazione.
+
+In tutti i casi, io ti ringrazio e trovi informazioni sul sito pensieriincodice.it o nel gruppo Telegram.
+
+Oggi un ringraziamento speciale va a Guelfo Alexander per la sua super donazione, Edoardo e Carlo per la loro donazione mensile e Antonio per aver realizzato e migliorato lo script di condivisione delle news nel gruppo e Francesco per la locandina dell'episodio.
+
+A proposito, da qualche tempo nel gruppo Telegram sto anche condividendo un bel po' di articoli interessanti che leggo ogni giorno che è un altro buon motivo per unirsi, no?
+
+E basta così. Io spero di non dimenticare niente e nessuno. Noi ci sentiamo al prossimo episodio ricordando sempre che *un informatico risolve problemi, a volte anche usando il computer*.
+"
