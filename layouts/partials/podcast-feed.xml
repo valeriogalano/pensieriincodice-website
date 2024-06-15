@@ -65,7 +65,7 @@
             7b5d2ff7-d9f8-572a-8ec5-e872cc46ba4c
         </podcast:guid>
         <item>
-            <title>{{ title .Params.title }}{{ with .Params.subtitle }} ({{ . }}){{ end }}</title>
+            <title>{{ .Params.title }}{{ with .Params.subtitle }} ({{ . }}){{ end }}</title>
             {{ $audio_name_arr := split .Params.audio "." }}
             {{ $audio_type := index $audio_name_arr (sub (len $audio_name_arr) 1) }}
             {{ $audio_size := 1 }}
