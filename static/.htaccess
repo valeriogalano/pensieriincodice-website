@@ -1,5 +1,6 @@
 Redirect 301 /feed /podcast
 Redirect 301 /stats https://op3.dev/show/7b5d2ff7-d9f8-572a-8ec5-e872cc46ba4c
+Redirect 301 /sostieni /#support-card
 
 Redirect 301 /telegram       https://t.me/PensieriInCodice
 Redirect 301 /canaletelegram https://t.me/PensieriInCodice
