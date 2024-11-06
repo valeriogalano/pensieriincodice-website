@@ -1,0 +1,293 @@
+text: "
+## Breve storia triste
+
+Prima di iniziare con l'episodio di oggi, ti devo raccontare una breve storia triste.
+
+Lo script che stai per ascoltare è pronto ormai da più di due settimane e, secondo le mie previsioni, avrei dovuto registrarlo sabato 19.
+
+Tuttavia, al piano sopra casa nostra, che è anche l'ultimo, stanno facendo tutta una serie di lavori di ripristino.
+
+E fin qui, tutto ok. Starai pensando che il problema sia al massimo il rumore, ma in realtà, ovviamente, di sabato e domenica non si lavora. Da questo anche la mia scelta di registrare nel weekend.
+
+Il problema, però, è stato che i geni dell'edilizia che stanno \"lavorando\" (si sentono le virgolette?) al cantiere, hanno ben pensato di rimuovere il tetto di una parte dell'appartamento prima di impermeabilizzare la parte sottostante.
+
+Ora, se stai pensando che questa sia una mossa degna del criceto più stupido della cucciolata, non posso che darti ragione. Anzi posso solo aggiungere che si tratta ancor più di una cazzata se nei giorni successivi è prevista un'allerta meteo gialla per temporali.
+
+Risultato di tutta questa genialità all'opera?
+
+Beh, semplicemente hanno allagato metà del nostro appartamento. Camera da letto, studio e, soprattutto, la cabina armadio, cioè il posto dove io normalmente registro Pensieri in codice perché c'è l'acustica migliore di tutta la casa.
+
+Ora, senza volerla portare troppo per le lunghe, la questione è che la risoluzione del problema è ben lungi dall'essere in vista, quindi mi sono detto che, se aspetto che tutto sia sistemato, prima di pubblicare altri episodi passeranno mesi.
+
+Quindi ho deciso di provare a registrare in un'altra stanza. Qui purtroppo l'acustica è peggiore e arrivano i rumori dalla strada ma io davvero non ho trovato altro modo...
+
+Detto questo, non ci resta che ringraziare questa gente e la loro inettitudine e goderci l'episodio di oggi di Pensieri in codice.
+
+## Introduzione
+
+Raramente ci pensiamo, ma i numeri casuali sono una componente fondamentale della nostra vita quotidiana, sia digitale che non.
+
+Sono utilizzati, ad esempio, in campo scientifico, in informatica, nei giochi d'azzardo e persino nella letteratura o nella musica. Sicurezza, Machine Learning, simulazione, videogame, le applicazioni sono infinte.
+
+Per questo motivo, la generazione di numeri casuali è impiegata in una enorme varietà di software ed è disponibile pressoché in qualsiasi linguaggio di programmazione e per qualsiasi piattaforma.
+
+Ma, in pratica, come vengono generati dei numeri casuali? Beh, il discorso è, in realtà, più articolato di quanto possa sembrare e, di conseguenza, è molto interessante.
+
+Quindi oggi ne parliamo insieme e proviamo, come al solito, a mettere in fila un po' di ragionamenti e curiosità. Ovviamente, però, dopo la sigla!
+
+## Cosa si intende per numeri casuali
+
+Facciamo così, proviamo a fare un gioco: pensa ad un numero a caso tra 1 e 10. Quello che preferisci, con 1 e 10 compresi.
+
+Non c'è bisogno che fermi la riproduzione: ti lascio io qualche secondo per decidere ma non troppi, mi raccomando. Fai veloce.
+
+Giusto qualche attimo... un numero a tua scelta tra 1 e 10... ancora un istante... ci siamo quasi... STOP. Deciso? Bene.
+
+Ora, secondo me, ci sono buone probabilità che tu abbia scelto il numero... 7. Ho indovinato?
+
+Se ho indovinato, sicuramente ti starai chiedendo come io abbia fatto. Sappi che né sono un mago né spio i tuoi dispositivi.
+
+Se invece ho sbagliato ti starai chiedendo \"ma perché ha detto proprio 7?\".
+
+Beh, in entrambi i casi, la risposta è semplice: la realtà è che la maggior parte delle persone, messe di fronte alla scelta di un numero casuale tra 1 e 10, scelgono il 7.
+
+È una cosa assolutamente naturale e dietro tale scelta c'è un ragionamento inconscio, del tutto arbitrario, ma che risulta tutto sommato piuttosto verosimile e che pertanto influenza realmente la decisione.
+
+Possono cambiare i dettagli, ma il ragionamento è più o meno il seguente: i numeri da 1 a 10 sono la sequenza 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, giusto?
+
+Ora, 1 e 10 sono gli estremi e quindi non hanno proprio l'aria di essere una scelta casuale, no? Quindi li scartiamo.
+
+I numeri pari, poi, sono numeri più amichevoli dei dispari nella vita reale: più facili da dividere per 2, più rotondi e morbidi, in generale sembrano la scelta più facile, non quella casuale. Quindi eliminiamo anche loro.
+
+Ci restano allora 3, 5, 7, e 9, ma 5 è esattamente nel mezzo, è pari a 10 diviso 2. Nemmeno questo ha l'aspetto di un numero scelto a caso, giusto? E lo stesso discorso vale per 9 che è uguale a 3 per 3, poi non è primo, insomma non ci piace.
+
+E dunque la scelta resta tra il 3 e il 7, ma il 3 è così evocativo, quante volte usiamo 3 nella vita rispetto a 7: la trinità, i 3 moschettieri, le trilogie dei film, le 3 grazie; potremmo andare avanti all'infinito. È una scelta troppo facile, non ci stiamo proprio impegnando se scegliamo 3... e quindi? Quindi, alla fine, resta solo 7.
+
+È la scelta che nella nostra testa risulta meno ovvia e di conseguenza quella che sembra la più casuale. Ed ecco perché, pur non eseguendo consciamente questo ragionamento o uno simile, la maggior parte delle persone alla fine sceglie proprio il numero 7.
+
+Se pensi che io stia delirando ti lascio un paio di link in descrizione. Poi puoi approfondire per conto tuo e magari condividere anche le tue scoperte sul gruppo Telegram di Pensieri in codice che trovi sul sito pensieriincodice.it, se ti va.
+
+Ad ogni modo, la cosa interessante di tutto questo discorso è che potrebbe sembrare che in qualche modo il numero 7 tra quelli compresi tra 1 e 10 abbia una sorta di caratteristica casualità intrinseca.
+
+Se lo scelgono in tanti, avrà un qualche livello di casualità maggiore degli altri, no?
+
+Beh in realtà no. Assolutamente no. Una cosa del genere non vale per nessun numero.
+
+La prima cosa da capire quando si parla di numeri casuali è che la casualità risiede nella sequenza delle scelte e non nel singolo numero scelto.
+
+Quando poco fa ti ho chiesto di scegliere un numero, tu potresti aver scelto 7 o 3 o 5 o qualsiasi altro, ma in ogni caso, come posso io sapere che la tua è stata effettivamente una scelta casuale? Non posso.
+
+Per farlo avrei bisogno di altre informazioni. Dovrei chiederti di scegliere di nuovo e di nuovo e di nuovo ancora per un bel po' di volte e solo allora potrei iniziare a capire se le tue scelte sono veramente casuali.
+
+Se ad ogni richiesta tu mi rispondessi sempre 3, 3, 3, e via così, ad esempio, saprei che in realtà non c'è proprio nulla di casuale nelle tue scelte.
+
+La caratteristica di un numero di essere casuale, infatti, risiede non nel numero stesso ma nella sequenza di numeri casuali di cui esso fa parte.
+
+Diciamolo anche in un altro modo: un numero singolo non è mai casuale di per sé. Quello che individua la casualità è la sequenza, o se vogliamo, più genericamente, il contesto in cui è inserito.
+
+In pratica 3 o 7 o qualsiasi altro numero non sono casuali di natura ma lo diventano, ad esempio, nella sequenza 5, 3, 6, 9, 7, 2, 1, 10, 4, 8.
+
+Almeno se intendiamo la questione nei limiti entro i quali la mente umana - o per lo meno la mia - è in grado di generare la casualità.
+
+Questa sequenza, infatti, l'ho creata a tavolino scegliendo io stesso ogni volta un numero tra 1 e 10 e, se la valuti attentamente, ti accorgerai che non è nemmeno particolarmente casuale. Io me ne sono accorto solo dopo.
+
+Ad esempio, la prima cosa che si può notare è che nessun numero si ripete e già questo, di per sé, non è un comportamento realmente casuale.
+
+Se fosse una sequenza veramente casuale, le probabilità che su 10 scelte tra 10 numeri nessuno di essi si ripeta sarebbero *veramente* basse, in realtà.
+
+In natura, come vedremo fra un po', la casualità è un qualcosa di abbastanza strano...
+
+Ma allora, noi che siamo informatici o appassionati di informatica o smanettoni di ogni genere, potremmo pensare che, visti i limiti umani, basti sviluppare un software per essere in grado di generare una sequenza casuale, ma in realtà neanche questo è vero.
+
+O almeno non è così semplice.
+
+Di software del genere ce ne sono in giro parecchi. Ad esempio ce n'è almeno uno pressoché in ogni linguaggio di programmazione ma, in effetti, nessuno di questi, da solo, è in grado di generare sequenze di numeri realmente casuali.
+
+Il massimo che può fare un software, infatti, è generare sequenze che *sembrino* casuali.
+
+## Sequenze pseudo casuali
+
+A differenza di quanto si potrebbe intuitivamente pensare, utilizzando solo degli strumenti software è impossibile scegliere un numero veramente casuale o tantomeno generare una sequenza di numeri veramente casuali.
+
+Il software, infatti, per sua natura, opera in modo deterministico. Cioè ogni operazione eseguita da un programma è una conseguenza diretta di istruzioni e regole definite dal suo programmatore.
+
+Basta pensare alla definizione di algoritmo per capirlo: una sequenza finita di istruzioni o operazioni ben definite e ordinate, dove ogni passo deve essere chiaro e non ambiguo.
+
+Non è previsto in alcun modo che un algoritmo si comporti secondo dinamiche casuali. Allo stesso input deve corrispondere sempre lo stesso output.
+
+Pertanto non c'è modo che un algoritmo da solo generi un numero casuale. Se lo fa è un algoritmo con dei problemi.
+
+Un software che deve generare numeri casuali, quindi, in realtà utilizza un algoritmo deterministico che produce una sequenza di numeri che *sembrano casuali ma non lo sono realmente*.
+
+Algoritmi del genere sono principalmente basati su una qualche formula o proprietà matematica e possono essere anche molto differenti fra loro. Ciascuno di essi produce un risultato simile ma con le proprie caratteristiche e peculiarità.
+
+Uno dei più semplici, tanto per fare un esempio, abbastanza semplice da poter essere descritto in un podcast solo audio come Pensieri in codice è il generatore lineare congruenziale o LCG (Linear Congruential Generator).
+
+((a*x0+b)%m)
+
+In pratica si tratta di una formula matematica che, preso un numero in input x0 (che viene definito *seme*) lo moltiplica per un secondo numero prefissato, gli somma un terzo, sempre prefissato, e infine divide tutto per un quarto numero - ovviamente anche quest'ultimo prefissato.
+
+Il resto dell'operazione di divisione diventa x1, cioè uno dei numeri della sequenza casuale.
+
+Poi, l'algoritmo prosegue a rieseguire l'intero calcolo utilizzando x1 come numero di partenza al fine di ottenere il valore di x2, e poi di nuovo parte da x2 per ottenere x3 e prosegue così.
+
+Il risultato di questa elaborazione è una lista di numeri - x0, x1, x2, x3, ecc. - che non sono realmente casuali, ma lo sembrano perché seguono una distribuzione statistica che *imita la casualità naturale*.
+
+I numeri appartenenti a questo tipo di sequenze vengono chiamati *numeri pseudo-casuali*.
+
+Il nome pseudo-casuali deriva appunto dal fatto che sembrano casuali ma in realtà non lo sono perché la sequenza è perfettamente e completamente prevedibile se se ne conosce il numero iniziale - cioè il seme -, l'algoritmo utilizzato e i numeri prefissati.
+
+Questa particolare caratteristica della sequenza numerica - che prende il nome di *deterministicità* - è molto importante nel campo dello sviluppo software perché permette di riprodurre specifiche situazioni agevolando enormemente i processi di test e di debug.
+
+Se infatti avessimo necessità di verificare più volte il corretto funzionamento di un nostro algoritmo che sfrutta una sequenza pseudo-casuale, non dovremmo fare altro che eseguirlo ogni volta a partire da un certo valore del seme per essere sicuri che i numeri generati siano sempre uguali, non andando così a disturbare la nostra analisi sul resto del codice.
+
+La deterministicità però non è l'unica caratteristica interessante delle sequenze pseudo-casuali.
+
+Come abbiamo già detto, infatti, nonostante non dovrebbero esserci pattern evidenti o correlazioni significative tra i numeri generati, in realtà una sequenza pseudo-casuale è sempre e solo *apparentemente* casuale.
+
+In primo luogo, perché è in realtà una sequenza ciclica.
+
+Proseguendo, infatti, a sufficienza a generare numeri, prima o poi si ottiene che i valori si ripetono in modo ciclico.
+
+In pratica, scorrendo l'elenco abbastanza a lungo esso risulta come una o più concatenazioni della stessa serie numerica.
+
+Questo fenomeno è dovuto al fatto che gli algoritmi che generano sequenze pseudo-casuali lavorano su un insieme finito di stati. E quindi una volta che si ripete uno stato precedente, l'intera sequenza si ripete di conseguenza.
+
+La lunghezza della sequenza prima della ripetizione è chiamata *periodo*. Un buon algoritmo dovrebbe avere un periodo molto lungo per evitare che la ripetizione dei numeri sia evidente o che generi problemi nell'utilizzo.
+
+In secondo luogo, poi, una terza caratteristica interessante è che una buona sequenza pseudo-casuale distribuisce i numeri in modo *uniforme* sull'intervallo predefinito.
+
+Ciò vuol dire che ogni valore nell'intervallo dovrebbe avere la stessa probabilità di essere scelto, almeno in media, lungo una sequenza sufficientemente lunga.
+
+In altre parole, se ho 10 numeri tra cui scegliere e genero una sequenza pseudo-casuale di 1000 elementi, ciascuno dei numeri a mia disposizione dovrebbe comparire circa 100 volte. L'1 dovrebbe essere presente 100 volte, il 2 anche, stessa cosa per il 3 e così via.
+
+Possiamo fare anche un esempio pratico pensando di utilizzare un dado.
+
+Se il dado non è truccato, ad ogni lancio ci saranno sempre le stesse probabilità che esca una qualsiasi delle 6 facce.
+
+Se quindi eseguo un gran numero di lanci, il numero di volte in cui apparirà ciascuna faccia tenderà ad essere circa pari a 1/6 dei lanci.
+
+Se appunto faccio 1000 tentativi, ciascuna faccia dovrebbe comparire intorno alle 166 volte. Ovviamente non si parla di numeri esatti, ma di cifre che si avvicinano alla media con l'aumentare delle iterazioni.
+
+Infine, le ultime caratteristiche degne di nota sono che un buon algoritmo che genera sequenze pseudo-casuali dovrebbe essere *computazionalmente efficiente* ed estremamente *sensibile al seme*.
+
+In altre parole, la generazione di un nuovo numero pseudo-casuale deve avvenire rapidamente e con un basso impiego di risorse, specialmente in contesti come simulazioni o crittografia, dove sono richiesti milioni di numeri pseudo-casuali.
+
+E infine piccole variazioni nel seme devono produrre sequenze completamente diverse: una proprietà fondamentale per garantire che, in seguito a esecuzioni diverse del codice, sia rispettata la variabilità nei risultati.
+
+## Sequenze realmente casuali
+
+Abbiamo quindi detto che il software, da solo, è in grado di generare unicamente delle sequenze di numeri pseudo-casuali e abbiamo descritto sommariamente come esse sono caratterizzate, ma per molte applicazioni reali questo tipo di approccio può non essere sufficiente. Anzi spesso non lo è.
+
+Esistono molti casi d'uso in cui sequenze pseudo-casuali non bastano a soddisfare le necessità degli utilizzatori e sono invece necessarie sequenze di numeri che siano *veramente casuali*.
+
+Una sequenza *veramente casuale* è tale quando ciascun numero viene generato in modo completamente imprevedibile, senza alcuna regola deterministica sottostante.
+
+Questo significa che ogni numero nella sequenza è scelto senza alcun legame con i precedenti o i futuri, e nessuna conoscenza dei valori già generati permette a nessuno - uomo o macchina che sia - di prevedere quelli successivi.
+
+Una cosa, questa, che, come abbiamo appena detto nel blocco precedente, *nessun software è in grado di realizzare autonomamente*.
+
+Le sequenze di numeri realmente casuali, dunque, - a differenza di quelle pseudo-casuali - non sono cicliche, non sono replicabili in alcun modo e non sono nemmeno equamente distribuite.
+
+Se disegnassimo un diagramma cartesiano per rappresentare la tipica distribuzione dei valori di una sequenza realmente casuale, in cui l'asse orizzontale contiene la scala dei possibili numeri risultanti e quello verticale la frequenza con cui essi appaiono, otterremmo una classica forma a campana - detta anche *gaussiana* o *normale*.
+
+Il nome *normale* deriva appunto dal fatto che, in natura, molte variabili legate al ripetersi di eventi casuali si comportano secondo tale modello: cioè la maggior parte dei risultati si concentra attorno al valore medio, mentre i valori estremi si verificano più raramente.
+
+Per capirci, riprendiamo l'esempio di prima del dado.
+
+Abbiamo detto che se ne lanciamo uno, le probabilità di ottenere valori da 1 a 6 sono equivalenti ed equamente distribuite. Ma se ne lanciamo due contemporaneamente, allora le cose cambiano.
+
+Con due dadi, infatti, Il numero 2 o il 12 avranno una sola possibilità ciascuno di venir fuori come risultato, mentre il 6 ne avrà ben 5 di possibilità.
+
+Basta fare i calcoli: per totalizzare 2 dovremmo ottenere un 1 su entrambi i dadi, e per totalizzare 12 dovremmo avere due 6.
+
+Al contrario, però, per totalizzare un 6 potremmo avere un 1 e un 5; o un 2 e un 4; o due 3; o un 4 e un 2; o infine un 5 e un 1. Cinque possibilità di totalizzare 6 contro 1 di totalizzare 2 o 12.
+
+Più aumentiamo il numero di dadi lanciati contemporaneamente e più aumenta questo fenomeno che favorisce l'uscita di numeri intorno alla media dell'intervallo.
+
+In natura, questo è il comportamento più comune.
+
+A questo punto, insomma, dovrebbe essere chiaro che per scegliere un numero veramente casuale è necessaria una *fonte fisica di casualità*, qualcosa che non risieda in un software ma nel mondo materiale.
+
+Un *numero veramente casuale*, infatti, può essere ottenuto solo sfruttando fenomeni fisici imprevedibili e non deterministici.
+
+A differenza dei numeri pseudo-casuali generati da algoritmi, i numeri veramente casuali derivano quindi da processi naturali che non possono essere predetti o controllati da un modello matematico.
+
+Esempi di tali processi sono: il rumore termico, il decadimento radioattivo, le fluttuazioni quantistiche o, in generale, tutto ciò che è caotico e imprevedibile.
+
+Non c'è limite ai fenomeni che possono essere utilizzati per perseguire l'obiettivo: esistono casi in cui vengono misurate le attività atmosferiche o le particelle provenienti dallo spazio o le onde radio.
+
+Un metodo veramente ingegnoso, ad esempio, è quello di inquadrare tramite una telecamera uno scaffale pieno di lampade lava - quelle lampade con l'acqua e la sostanza colorata che si muove in continuazione - e utilizzarne le immagini come sorgente di casualità.
+
+## Un approccio ibrido
+
+Ricapitolando il discorso, quindi: un software, da solo, può generare solo sequenze di numeri pseudo-casuali mentre i fenomeni naturali sono gli unici realmente casuali.
+
+E quindi? Come funzionano i programmi nei nostri computer che generano i numeri casuali? Come si fa ad assicurare la varietà e l'imprevedibilità negli algoritmi in cui essa è necessaria?
+
+Semplice: si utilizza un approccio ibrido.
+
+Da circa una decina di anni a questa parte, i processori integrano al proprio interno dei componenti chiamati Generatori di Numeri Casuali Hardware o HRNG (Hardware Random Number Generator).
+
+Questi sistemi si basano su vari metodi come la misurazione del rumore termico o di quello elettrico prodotti dai vari componenti hardware per effettuare la scelta di un valore casuale.
+
+Il numero così generato dall'HRNG è, di fatto, *veramente* casuale e, nell'ambito di questa strategia ibrida, viene poi utilizzato come *seme* per avviare un algoritmo pseudo-casuale.
+
+Un approccio del genere permette di sfruttare contemporaneamente i punti di forza di entrambi i metodi e, di conseguenza, di mitigare i punti deboli di ciascuno.
+
+Quello che si ottiene è quindi una combinazione dei vantaggi di casualità reale dati dall'entropia con quelli di efficienza e praticità degli algoritmi pseudo-casuali.
+
+Tre dei principali svantaggi legati al dover osservare fenomeni fisici per generare numeri casuali sono, infatti, il tempo necessario, la non riproducibilità degli eventi e la distribuzione non omogenea dei risultati - che, come abbiamo detto, si distribuiscono a campana.
+
+Invocando un HRNG per generare solo il primo numero casuale, quindi, si risparmia tempo e poi basta annotarlo da qualche parte per poterlo riutilizzare eventualmente in caso di necessità.
+
+Al tempo stesso, però, utilizzando tale numero come seme per un algoritmo pseudo-casuale, si ottiene una sequenza che gode delle caratteristiche di riproducibilità e di equa distribuzione nei risultati, e che viene generata in tempi molto più brevi di quelli necessari se si dovessero osservare fenomeni fisici.
+
+Infine, utilizzando un seme veramente casuale per avviare un qualsiasi algoritmo pseudo-casuale, si migliora anche la casualità risultante dall'elaborazione e la lunghezza del periodo della serie.
+
+Insomma, in definitiva, l'approccio ibrido offre un risultato equilibrato tra casualità, efficienza e riproducibilità.
+
+Esso, infatti, garantisce che la sequenza generata sia sufficientemente imprevedibile e sicura, mantenendo però al tempo stesso la velocità e la praticità degli algoritmi deterministici senza dipendere costantemente da sorgenti fisiche di casualità.
+
+Infine, prima di chiudere, provo ad anticipare una domanda che potresti porti dopo aver ascoltato questo episodio.
+
+Tale domanda è *può un Large Language Model generare numeri casuali?*. D'altronde sembra quasi che ormai essi possano fare qualunque cosa, secondo alcuni.
+
+Beh la risposta è semplice: un LLM *non* può generare numeri veramente casuali e, in realtà, neanche pseudo-casuali.
+
+Come abbiamo già detto più volte, la vera casualità deriva solo da processi fisici che sono intrinsecamente imprevedibili e gli algoritmi di Machine Learning, eseguiti su macchine essenzialmente deterministiche, non hanno accesso a tali processi fisici.
+
+Inoltre il funzionamento delle Intelligenze Artificiali si basa su modelli matematici e statistici che vengono prodotti esaminando dei set di dati in fase di addestramento.
+
+I modelli generativi che - lo dice il nome - sono quelli in grado di generare qualcosa, non possono comunque discostarsi completamente dalle strutture e dai pattern presenti nei dati di addestramento, e questo limita fortemente anche la loro capacità di generare numeri pseudo-casuali.
+
+## Conclusione
+
+E così siamo giunti alla fine di questo episodio. È stato interessante? Io onestamente ero un po' stufo di parlare sempre di Intelligenza Artificiale; anche se, almeno per il momento, sembra sempre il tema più gettonato.
+
+Prima di lasciarti ti ricordo che Pensieri in codice è un progetto indipendente che realizzo nel mio tempo libero e con le mie risorse personali.
+
+A questo proposito, come ormai di consueto da varie puntate a questa parte, ti ricordo anche che si basa interamente sulla filosofia Value4Value.
+
+Ciò significa che è completamente gratuito e disponibile per chiunque senza pubblicità ma, se lo ascolti spesso, vuol dire che per te un po' di valore, tutto sommato, lo ha e quindi ti chiedo di restituirne un po’ in qualche modo, secondo le tue modalità preferite.
+
+Puoi spenderci un po' di tempo, diffondendolo, parlandone e condividendo gli episodi.
+
+Puoi dare una mano: ci sono un sacco di cose da fare. Per esempio aprire degli account social o aiutarmi con la stesura degli episodi o risolvere issue sui progetti GitHub.
+
+O, infine, puoi mettere mano al portafoglio e fare una piccola donazione o acquistare un libro dalla mia lista desideri Amazon (dai libri viene spesso buona parte delle mie idee).
+
+A tal proposito, oggi ringrazio, come sempre Edoardo e Carlo per la donazione mensile, e poi Antonio che ha messo su uno script in python per semplificarmi la condivisione delle notizie interessanti su Linkedin.
+
+È a questo che mi riferisco quando parlo di progetti su GitHub.
+
+Se non lo sapessi, infatti, nel gruppo Telegram, su Mastodon e da qualche settimana anche su Linkedin, condivido un flusso più o meno costante di articoli che leggo ogni giorno e che trovo più interessanti.
+
+Quindi, se la cosa ti interessa, trovi il link al gruppo telegram e le info su come contribuire sul sito pensieriincodice.it, mentre trovi me come valeriogalano su Linkedin o @valeriogalano@mastodon.uno su Mastodon, appunto.
+
+Bene, detto questo direi che per oggi possiamo chiudere qui. Io ti ringrazio, come sempre, per aver ascoltato. Oggi a maggior ragione.
+
+Spero che la qualità audio non verrà fuori troppo terribile, anche perché per evitare i rumori di fondo ho provato ad impostare il gain al minimo possibile e parlare molto vicino al microfono.
+
+E niente, magari sarai tu a farmelo sapere. Io ti do appuntamento al prossimo episodio e ti ricordo sempre che *Un informatico risolve problemi, a volte anche usando il computer*.
+"
