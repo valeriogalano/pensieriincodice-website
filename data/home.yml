@@ -237,11 +237,11 @@ platforms:
       image: "images/clients/archivio.png"
       title: "Dall'archivio Web"
 
-    - url: "http://bit.ly/picItunes"
+    - url: "https://podcasts.apple.com/it/podcast/pensieri-in-codice/id1454106438"
       image: "images/clients/apple-podcast.png"
       title: "Su Apple Podcast"
 
-    - url: "http://bit.ly/picSpotify"
+    - url: "https://open.spotify.com/show/5YEceJXlDE8st36dtgcjJJ"
       image: "images/clients/spotify.png"
       title: "Su Spotify"
 
@@ -483,7 +483,7 @@ support:
           link: "https://readwise.io/i/valerio61"
 
         - label: "Satispay"
-          link: "https://bit.ly/3fQUVaU"
+          link: "https://web.satispay.com/promocode/VALERIOGALAN"
 
         - label: "Amazon"
           link: "https://amzn.to/3CPOWgC"
