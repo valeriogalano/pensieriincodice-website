@@ -466,9 +466,6 @@ support:
         - label: "Tramite Revolut"
           link: "https://revolut.me/valeriogalano"
 
-        - label: "Tramite Alby (lightning network)"
-          link: "https://getalby.com/p/pensieriincodice"
-
         - label: "Tramite PayPal"
           link: "https://www.paypal.com/donate/?hosted_button_id=HRKMD7X43R7SS"
 
