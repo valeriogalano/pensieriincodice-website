@@ -30,7 +30,7 @@
             {{- end -}}
         </itunes:author>
         <itunes:type>{{ .Site.Params.Podcast.itunes_type }}</itunes:type>
-        <itunes:summary>{{ .Site.Params.Podcast.summary | plainify }}</itunes:summary>
+        <itunes:summary>{{ .Site.Params.Podcast.summary | htmlEscape }}</itunes:summary>
         <itunes:owner>
             <itunes:name>
                 {{- range $index, $key:= .Site.Params.Podcast.authors -}}
@@ -96,7 +96,7 @@
                 {{- if gt (len $key) 0 }}{{ $key }}{{ end -}}
                 {{- end -}}
             </itunes:author>
-            <itunes:summary>{{ .Summary | plainify }}</itunes:summary>
+            <itunes:summary>{{ .Summary | htmlEscape }}</itunes:summary>
             <itunes:explicit>{{ .Params.explicit }}</itunes:explicit>
             <itunes:episodeType>{{ .Params.episode_type | default "full" }}</itunes:episodeType>
             {{- if .Params.season -}}
