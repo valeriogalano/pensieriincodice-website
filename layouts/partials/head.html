@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" />
 
   {{ "<!-- Main Stylesheets -->" | safeHTML }}
-  {{ $style := resources.Get "scss/style.scss" | resources.ToCSS | minify }}
+  {{ $style := resources.Get "scss/style.scss" | css.Sass | minify }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
   {{ "<!-- Plugins Stylesheets -->" | safeHTML }}
