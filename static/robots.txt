@@ -3,3 +3,5 @@ Disallow: /
 
 User-agent: *
 Disallow: /*.xml$
+Disallow: /*.srt$
+Disallow: /*.cgi$
