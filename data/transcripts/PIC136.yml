@@ -1,0 +1,256 @@
+text: "## Introduzione
+
+Sono più di 20 anni che lavoro come sviluppatore di software. Ho iniziato con lo scrivere semplice codice, fino ad arrivare oggi alla progettazione e realizzazione di interi software basati su Web e cloud.
+
+Negli ultimi anni, poi, - credo come un po' tutti - ho incluso nei miei processi di lavoro tutta una serie di strumenti basati su Large Language Model e devo dire che sono piuttosto contento dei risultati.
+
+Da un paio di mesi a questa parte, però, mi sono piovuti addosso decine di articoli e post - tanti mi sono stati perfino condivisi in privato - che parlano della nuova frontiera dello sviluppo software: il *Vibe coding*.
+
+Ora, siccome di sviluppo software ho la presunzione di capirne un pochino, sono rimasto piuttosto inorridito da alcune delle cose che ho letto e sentito.
+
+Quindi, ho deciso di prendere parte anche io al discorso e di raccontarti un po' la mia opinione in merito.
+
+Sigla.
+
+## Fraintendimenti
+
+Ormai è un paradigma piuttosto consolidato: ogni volta che salta fuori una novità tecnologica di un certo rilievo, partono subito gli schieramenti: da un lato c'è chi demonizza - non funzionerà mai, ci toglierà il lavoro, sarà una bolla, ecc. - e dall'altro c'è invece chi osanna - è la nuova frontiera, ci cambierà la vita, renderà obsoleto tutto il resto e via così.
+
+Nel mezzo, poi, di solito restano quelli come me - e, immagino, anche come te - che, per quanto possibile, cercano di ignorare entrambe le tifoserie e di farsi la propria idea, che solitamente risulta essere un po' più moderata.
+
+Ora, non so se perché si parla di un argomento che conosco molto bene, ma nel caso del *Vibe coding* - molto più che in altri, perlomeno - ho notato la forte presenza di un ulteriore gruppo di soggetti che si esprimono sulla questione: quelli che non ci hanno capito niente.
+
+È da qualche settimana, ormai, che si parla tanto sul Web di questa nuova tecnica di sviluppo del software basata su Intelligenza Artificiale - tanto per cambiare -, ma in molti - sopratutto tra quelli che ne decantano i pregi - dimostrano, a mio parere, di non avere le idee chiare su cosa essa sia effettivamente.
+
+Mi sono passati davanti vari articoli e post sul Vibe coding e ho letto cose che - onestamente - non stanno né in cielo né in terra: *col Vibe coding passi dall'essere programmatore a product engineer* oppure *il Vibe coding consente alle persone di altre discipline di diventare rapidamente programmatori*.
+
+Ma no. Col cavolo. Mi spiace ma queste affermazioni semplicemente non sono vere. Chi le ha formulate, o non ha capito di cosa stava parlando o, peggio ancora, cerca di far passare un concetto falso - un po' di fuffa.
+
+Il Vibe coding ha una suo perché e - forse - una sua utilità, ma il discorso è - come al solito - molto più complesso di quanto sembri. Quindi, facciamo un bel respiro, cominciamo dal principio e proviamo a procedere con ordine.
+## Definizione
+
+Innanzitutto, iniziamo col capire esattamente il significato della locuzione Vibe coding.
+
+La definizione è stata formulata per la prima volta da *Andrej Karpathy* - spero si pronunci così -, che ha un dottorato alla Stanford University in deep learning, oggi lavora presso Eureka Labs AI e in passato è stato direttore AI in Tesla e fondatore di OpenAI.
+
+Insomma uno che di Intelligenza Artificiale, da un lato ne capisce, ma dall'altro ha anche tutto l'interesse a fare notizia.
+
+La storia inizia da un suo Tweet del 3 febbraio in cui racconta di questo suo nuovo modo di approcciarsi allo sviluppo del codice.
+
+[Davide]
+==*C'è un nuovo tipo di programmazione che io chiamo vibe coding, in cui ci si abbandona completamente alle vibrazioni, si abbracciano gli esponenziali e si dimentica che il codice esiste.*==
+
+Karpathy - con queste sue parole un po' zen - si riferisce al fatto che ormai alcuni ambienti di sviluppo integrano dei Large Language Model in modo sufficientemente avanzato da permettere all'utente di chiedere di scrivere direttamente codice basandosi sull'intera code base di un progetto.
+
+In particolare, lui menziona l'editor Cursor - i cui modelli generativi possono modificare autonomamente il codice - e aggiunge perfino che utilizza SuperWhisper che gli permette di dialogare con il computer tramite la voce e non toccare quasi più la tastiera.
+
+Insomma fa subodorare un po' quel qualcosa di estremamente avvenieristico che abbiamo visto in tanti film di fantascienza in cui l'operatore chiede al computer di fare cose e quello esegue.
+
+[Davide]
+==*Chiedo le cose più stupide come *diminuisci il padding della barra laterale della metà* perché sono troppo pigro per trovarlo. Accetto sempre tutto, non leggo più le differenze. Quando ricevo messaggi di errore li copio e li incollo senza commenti, di solito questo risolve il problema. [...] A volte i Large Language Model non riescono a risolvere un bug, quindi mi limito ad aggirarlo o a chiedere modifiche casuali finché non scompare.*==
+
+Queste frasi rappresentano il vero cuore della definizione di Vibe coding: chiedere una modifica all'IA e accettare l'output risultante acriticamente, senza nemmeno leggere il codice prodotto, ma integrandolo direttamente in quello esistente.
+
+Come afferma lo stesso Karpathy, questo approccio, il più delle volte funziona e, in caso di problemi, lui si limita a sottoporre gli errori allo stesso Large Language Model e integrare direttamente l'eventuale soluzione proposta.
+
+Tali operazioni vengono poi ripetute finché il problema in questione non viene risolto - ed è questo che intende con *abbracciare gli esponenziali*.
+
+Se poi, dopo un certo numero di iterazioni, diventa chiaro che non ci si sta avvicinando all'obiettivo, Karpathy afferma che la soluzione può essere comunque trovata aggirando il bug o chiedendo modifiche casuali a oltranza.
+
+[Davide]
+==*Non è male per i progetti da buttare giù nel fine settimana, ma è comunque abbastanza divertente. Sto costruendo un progetto o una webapp, ma non si tratta di vera e propria codifica: vedo solo cose, dico cose, eseguo cose e copio e incollo cose, e per lo più funziona.*==
+
+Lo sviluppo di software con l'assistenza dell'Intelligenza Artificiale esiste ormai da qualche anno, e sappiamo da varie statistiche che è anche molto diffuso, ma con il Vibe coding si ascende ad un livello successivo.
+
+Con questo nuovo paradigma, il codice di fatto non viene più considerato. Continua ad esistere perché è un componente essenziale di qualsiasi software, ma lo sviluppatore - sempre se vogliamo continuare a chiamarlo così - non vi accedere più in alcun modo.
+
+Al di là del sensazionalismo, però, frasi come *non è male per progetti del fine settimana* e *per lo più funziona* dovrebbero già far capire che il Vibe coding non è la nuova frontiera dello sviluppo software, quanto piuttosto un metodo accessibile per fare qualche esperimento o poco più.
+
+Tuttavia, sembra che tanti là fuori, nella foga di gridare al nuovo miracolo - che ormai se non ne vediamo uno a settimana non siamo contenti - non siano neanche arrivati a leggere il Tweet fino in fondo - o non l'abbiano capito, chissà?
+## Caratteristiche e limiti
+
+Il Vibe coding non è una nuova funzionalità degli ambienti di sviluppo o degli llm, non è un nuovo strumento e insomma non è un'innovazione. È semplicemente un modo diverso di utilizzare una serie di tool che già esistevano e già utilizziamo in tanti.
+
+Probabilmente, tra l'altro, c'è in giro tanta gente che già faceva Vibe coding senza che ancora a tale modus operandi fosse dato un nome proprio da Karpathy.
+
+Negli ultimi anni, infatti, sempre più sviluppatori hanno iniziato ad utilizzare l'Intelligenza Artificiale per farsi assistere nella scrittura del codice.
+
+Scovare bug, ottimizzare le funzioni, implementare modifiche e nuove feature, o anche solo farsi suggerire strategie e idee... L'IA, forse di più che in ogni altro campo, è diventata davvero il copilota di quasi ogni sviluppatore.
+
+Nel corso di quest'ultimo paio d'anni l'approccio si è anche notevolmente evoluto: si è partiti da una fase iniziale nella quale si chiedeva semplicemente a chatbot come ChatGPT di scrivere o modificare uno snippet di codice.
+
+Successivamente, gli LLM sono stati integrati direttamente negli ambienti di sviluppo, in modo da dare la possibilità agli sviluppatori di dialogare con essi senza dover spostare l'attenzione su siti o strumenti esterni.
+
+Poi sono giunte funzionalità avanzate che permettono ai modelli AI integrati di manipolare direttamente il codice, su ordine dello sviluppatore, scrivendo e modificando i file all'interno dei progetti.
+
+A tale livello, l'LLM di turno analizza la richiesta del programmatore e il codice disponibile e propone la sua soluzione mostrando le differenze tra l'implementazione attuale e quella suggerita, lasciando all'umano la possibilità di accettarla, rifiutarla o, volendo, modificarla.
+
+All'interno di questo percorso di evoluzione, il Vibe coding è semplicemente un approccio nel quale lo sviluppatore sceglie di accettare acriticamente il codice proposto dalla macchina: l'umano, quindi, non fa revisione e non tenta di raffinare l'output della macchina, anzi non lo legge nemmeno.
+
+In pratica, viene chiesto al modello di effettuare uno sviluppo o una modifica e si prende subito il risultato per buono, passando direttamente a testare il funzionamento.
+
+Se vengono fuori dei problemi o degli errori, li si riporta direttamente al Large Language Model e gli si chiede di correggerli e, di nuovo, si accetta la correzione ad occhi chiusi.
+
+Quando il problema è risolto, si procede con la richiesta successiva e così via. Il processo di sviluppo, continua in questo modo finché non si è arrivati al risultato desiderato.
+
+Ora, sorvolando su alcuni aspetti pratici dei quali parleremo più avanti, un tale approccio, visto sopratutto dall'esterno, sembra avere una diretta implicazione: se il processo di sviluppo di un software non concerne più il controllare il codice, allora diventa alla portata di chiunque. Tradotto: non serve più essere programmatori o informatici per scrivere codice.
+
+Questo collegamento logico ha fatto scaldare enormemente gli animi perché sembrerebbe spazzar via la necessità di un'intera categoria di professionisti. C'è chi è arrivato a dire che il business potrebbe sviluppare direttamente i software in autonomia.
+
+Beh non è esattamente così.
+
+Cominciamo a spiegare il perché dai motivi oggettivi e poi passiamo, nel prossimo blocco, ad alzare un po' l'asticella perché, come dire: *fatti non foste a viver come bruti, ma per seguir virtute e canoscenza*.
+
+Innanzitutto, il solo fatto di pensare che si possa realizzare un software senza coinvolgere un soggetto che abbia conoscenze di coding, implica che esista un qualcun altro che abbia almeno un'idea da implementare.
+
+Magari parliamo di un'azienda che vuole realizzare un servizio, di un manager che ha ideato un nuovo strumento o una nuova feature, o magari semplicemente di una persona qualunque che ha un problema da risolvere.
+
+In ogni caso, dovrebbe esserci un qualcuno che vuole avviare un business o un progetto basandosi su di una codebase interamente realizzata da una IA senza conoscere in alcun modo il codice da essa sviluppato.
+
+Riformulo: stiamo parlando di andare in produzione con un software di cui *nessuno* ha esaminato e validato il codice. I test effettuati nel Vibe coding, infatti, saranno di tipo funzionale a salire - cioè riguarderanno l'utilizzo dell'applicazione e non il codice come accadrebbe con Unit o Integration test.
+
+E non venirmi a dire che l'IA potrebbe scrivere anche i test perché se comunque nessuno li esamina e li valida siamo punto e a capo. Tanto vale chiedere all'oste se il vino è buono.
+
+Ora, ad essere onesti, là fuori c'è tanto codice che è tutt'oggi in funzione e che viene manutenuto da persone non lo hanno mai letto prima - in generale perché è stato sviluppato da altri che poi hanno cambiato azienda o progetto - ma almeno una volta è passato al vaglio di un umano.
+
+Utilizzare invece un codice mai verificato da *nessuno* è un qualcosa di nuovo che, onestamente, da professionista non consiglierei a nessuno dei miei clienti.
+
+Secondo un recentissimo studio - che trovi in descrizione - infatti, gli stessi LLM così ampiamente utilizzati sia per lo sviluppo assistito che per il Vibe coding, sono particolarmente propensi a generare codice con bug.
+
+Nello specifico, le ricerche hanno dimostrato che nelle operazioni di creazione - quindi non parliamo di completare una o più righe iniziate dallo sviluppatore ma di scrivere blocchi interi ex novo - il tasso di generazione di codice buggato è circa uguale a quello di generazione di codice corretto.
+
+In parole semplici: ci azzeccano la metà delle volte.
+
+A questo fatto aggiungiamo poi che gli stessi LLM risultano essere - da un altro studio, sempre recentissimo, questa volta di Microsoft - notevolmente carenti nella capacità di eseguire il debug del codice.
+
+Secondo gli autori della ricerca, le IA raramente riescono a completare anche solo metà del processo di debugging. E questo perché, secondo loro, nei dati di addestramento dei modelli attuali non sono presenti abbastanza informazioni che rappresentino i “processi decisionali sequenziali”, cioè il modo in cui gli umani fanno debug.
+
+Quanto detto finora, quindi dovrebbe essere sufficiente a far decadere l'idea che, sottoponendo all'infinito i bug al modello e cercando di aggirare i problemi, con il Vibe coding si possa mai arrivare ad un codice stabile e senza bug.
+
+Passiamo quindi al secondo motivo.
+
+Da quanto si legge in tanti articoli sul Vibe coding, sembrerebbe - qualcuno l'ha proprio scritto - che esso permetta alle figure che ideano un prodotto software di realizzarne un prototipo senza alcuna necessità di coinvolgere il team di sviluppo.
+
+Questo prototipo verrebbe generato in tempi brevi e modificato e convalidato interagendo direttamente col cliente, per poi, una volta accettato, essere passato agli sviluppatori per la vera e propria realizzazione.
+
+Ok, questa è una cosa che potrebbe pensare solo chi non ha mai sviluppato un software per professione.
+
+Nel mondo reale, non ha alcun senso che un commerciale e un cliente si accordino sull'acquisto di un software se prima non c'è stato fatto almeno uno studio di fattibilità da parte dello sviluppatore.
+
+Escludere chi sviluppa dal processo di prototipazione è semplicemente la ricetta per il disastro.
+
+Se, infatti, il cliente dovesse accettare, nessuno garantisce che quanto gli sia stato promesso sia effettivamente realizzabile e con quanto sforzo. C'è il rischio che le risorse necessarie per la realizzazione siano tali da rendere il prodotto eccessivamente costoso o lungo da realizzare.
+
+E anche qui: se c'è qualche folle che pensa di poter chiedere sempre all'IA uno studio di fattibilità o una stima su tempi e costi, beh, in descrizione trovi un po' di esempi di allucinazioni a causa delle quali, vari modelli, anche specializzati, hanno inventato la qualunque: da parole irlandesi a precedenti legali, passando per anamnesi mediche.
+
+Pensa un po' se non potrebbero inventarsi tempi e costi di un progetto totalmente a caso.
+
+Ancora, un problema a cui nessuno pensa tranne gli sviluppatori è che negli ultimi anni il volume del codice sta crescendo un maniera esponenziale. Sempre più codice da archiviare, da versionare, da tenere al sicuro da furto o da backdoor o da attacchi alla catena delle dipendenze, ecc. E questo ha un costo.
+
+L'utilizzo delle AI ha già mostrato un incremento nel volume del codice rispetto a quello prodotto da umani e se ci aggiungiamo anche che nel Vibe coding nessuno si occupa o nemmeno si interessa di andare a controllare cosa è stato generato, il problema non può che peggiorare.
+
+E infine - ma non meno importante - c'è la questione della qualità del codice. Sì perché, magari non tutti lo sanno, ma un codice che risolve un qualche problema può essere sviluppato in tanti diversi modi e a diversi livelli qualitativi.
+
+Normalmente la qualità, la sicurezza, l'affidabilità vengono verificate dagli sviluppatori tramite test, code review, e altre operazioni manuali o costruite ad hoc per le varie funzioni.
+
+Ora la mia domanda è: quanto può saperne un umano della qualità e della sicurezza del software prodotto da un modello AI se si limita solamente a dialogare con quest'ultimo senza mai visionarne il codice?
+## Sviluppo assistito vs Vibe coding
+
+Come detto già in precedenza, la mia impressione è che il Vibe coding non sia stato affatto diffuso nel più chiaro dei modi da alcuni e che, per questo motivo, sia poi stato frainteso a catena da molti altri.
+
+C’è , infatti, chi sembra applicare la definizione *Vibe coding* a qualsiasi forma di scrittura di codice supportata dall'Intelligenza Artificiale e questo crea, da un lato confusione, e dall'altro difficoltà nel valutare correttamente la situazione.
+
+In realtà, ciò che Karpathy cerca di esprimere nel famoso tweet è che il Vibe coding consiste specificamente nell’accettare incondizionatamente il codice prodotto dall’llm; e questo senza neanche visionarlo.
+
+Ciò rende il Vibe coding una strategia molto diversa dallo sviluppare software avvalendosi del supporto di una IA in modo responsabile, che è invece un processo che richiede un notevole controllo sul codice da parte dello sviluppatore.
+
+In un flusso di questo tipo, infatti, l'umano descrive comunque la propria richiesta e riceve una risposta dalla macchina; ma poi deve valutarla approfonditamente prima di integrarla all'interno della propria code base.
+
+L'idea alla base dello sviluppo assistito, in effetti, è che Il codice prodotto da una macchina potrebbe potenzialmente avere mille difetti e cose che non vanno. Ed è per questo che io considero *responsabilità* dello sviluppatore verificarlo prima di accettarlo.
+
+Nell'output dell'LLM potrebbero esserci degli errori o la soluzione proposta potrebbe non risolvere correttamente il problema; l'impostazione del codice potrebbe non essere in linea con le convenzioni del progetto; potrebbero venire introdotti dei bug; perfino: il codice potrebbe non essere sufficientemente chiaro - e questo introdurrebbe una serie di problemi per la futura manutenzione.
+
+Assumendo poi una visione un po’ più ampia, la risposta di un LLM potrebbe non essere compatibile con future implementazioni che sono state già progettate e pianificate, cosa che il modello non può sapere e considerare.
+
+Insomma la questione alla fine è semplice: l'intervento umano nella scrittura del codice è ancora indispensabile se si vuole produrre del software di qualità. Ma nemmeno, anche solo se si vuole produrre codice che funziona tutte le volte e non solo la maggior parte di esse.
+
+La verità - che in tanti ancora non capiscono o che si ostinano a non voler considerare - è che il lavoro di uno sviluppatore di software non è solo quello di sfornare codice e funzionalità.
+
+Noi sviluppatori scriviamo il codice per far sì che funzioni in modo definito e dimostrabile, e che possa essere compreso non solo dalle macchine ma anche da altri esseri umani perché esso deve essere ispezionabile e deve supportare sviluppi futuri in maniera continuativa.
+
+Noi consideriamo cose come le prestazioni, l'accessibilità, la sicurezza, la manutenibilità, l'efficienza dei costi, i progetti futuri, le risorse attuali...
+
+L'ingegneria del software è tutta una questione di comprensione, risoluzione e, sopratutto, compromessi: il compito di uno sviluppatore è quello di scegliere tra decine di potenziali soluzioni, bilanciando una molteplicità di requisiti, che possono essere sia espliciti ma anche e sopratutto impliciti.
+
+E poi, permettimi di essere anche un po' poetico: programmare, per me, è esplorare di continuo nuovi mondi e creare qualcosa di nuovo all'interno di ciascuno di essi. Spesso un qualcosa che nessuno mai prima di me ha realizzato in quel modo.
+
+Programmare è indagare problemi e risolverli utilizzando il proprio ingegno. E nel farlo, non solo si produce qualcosa, ma si cresce anche, imparando cose, comprendendo fatti, unendo i fili e scoprendo connessioni nascoste.
+
+Spesso si torna a casa - anche se io lavoro solo in smart working quindi da casa difficilmente mi sposto - con un'ampia comprensione del problema e della soluzione realizzata, una comprensione più ampia e più profonda di chiunque altro.
+## Non è tutto da buttare
+
+Chiarita un po' la situazione, però, mi sento anche di non voler demonizzare al 100% il Vibe coding.
+
+Io ho sempre pensato che l'accesso agli strumenti informatici dovesse essere possibile per tutti - Pensieri in codice è un po' il mio contributo a questa idea - e forse il Vibe coding potrebbe rappresentare una possibilità in questo senso.
+
+Ci sono persone là fuori che svolgo ogni giorno compiti estremamente noiosi e, sopratutto, ripetitivi. Uno strumento che dia loro la possibilità di automatizzarli, anche se non in modo perfetto, non potrebbe che farmi piacere.
+
+Il problema maggiore nel mondo dello sviluppo software, lo sappiamo tutti, è la curva di apprendimento.
+
+Prendiamo il Pinco Pallino qualsiasi che ha il suo noiosissimo flusso di dati manuale: se volesse automatizzarlo dovrebbe o spendere una cifra notevole facendosi seguire da un professionista, oppure impiegare tanto del proprio tempo ad imparare un linguaggio di programmazione o un qualche altro strumento.
+
+Io probabilmente mi metterei a studiare perché mi piace, ma non è detto che tanti altri debbano pensarla per forza allo stesso modo. Allora perché dovrebbe essere un male che queste persone abbiano a disposizione un metodo per creare i propri semplici e personali automatismi?
+
+Occhio però che qui la parola fondamentale è *personali* perché il Vibe coding può andar bene al massimo per fare esperimenti o sviluppare un *progettino della domenica* che non coinvolga in alcun modo aspetti importanti. Ma se si rispettano questi limiti, perché no?
+
+Basta che non si parli di dati degli altri, di soldi, di privacy, di sicurezza, o in generale di software che potrebbero essere usati da altri al di fuori di chi li ha creati. Insomma per progetti personali, totalmente innocui e a bassissimo impatto, allora un po' di Vibe coding ci potrebbe anche stare.
+
+A parte questa, però, onestamente non vedo altre applicazioni pratiche reale.
+
+Ho letto di tanti che hanno scritto che il Vibe coding potrebbe portare vantaggi ai programmatori esperti che hanno l'istinto di individuare i problemi nei test anche senza leggere il codice, ma non mi sembra una teoria che possa reggere.
+
+Dopo 20 anni di sviluppo io ho imparato a giudicare il codice quasi a colpo d'occhio - infatti sfrutto abitualmente e proficuamente il supporto di vari LLM - ma anche se vedessi dei possibili problemi in un test, come li risolverei senza andare a mettere le mani nel codice? Dovrei farlo per forza.
+
+E siccome l'unica differenza tra Vibe coding e sviluppo assistito da IA è proprio andare a guardare il codice, in tal caso non starei più facendo Vibe coding e quindi la testi iniziale di tutto il discorso è facilmente smentita.
+
+Stessa identica cosa vale per tutte quelle affermazioni tipo *il Vibe coding ha il potenziale per aumentare significativamente la produttività*, oppure *il Vibe coding permette alle aziende di essere più competitive*. No. Assolutamente no.
+
+Ma ce lo vedi un team di sviluppo aziendale a fare Vibe coding? Che accadrebbe se al momento di fare merge del codice dei vari membri venissero fuori dei conflitti? Chi li risolverebbe se nessuno sa come funziona il codice scritto?
+
+C'è perfino chi si è spinto a dire che il Vibe coding potrebbe essere usato per *affinare l'istinto degli sviluppatori a riconoscere gli errori prodotti dall'IA e a fargli capire cosa un LLM può o non può fare bene*.
+
+Ora, a parte il fatto che gli sviluppatori senior, in generale, già si allenano abbondantemente con le code review dei junior e non credo abbiano bisogno di ulteriore palestra in merito, ma poi per sviluppare l'istinto, loro hanno affrontato anni di sviluppo lambiccandosi il cervello sul codice.
+
+Se veramente pensassimo di include il Vibe coding nel processo professionale, come cambierebbe il metodo di apprendimento? Col passare del tempo, chi sarebbe più veramente in grado di verificarlo questo codice?
+
+La verità è che, come professionisti, abbiamo *bisogno* di leggere il codice. Per una programmazione di qualità non va inserito alcun codice nei nostri repository se noi stessi non siamo in grado, come minimo, di spiegare a qualcun altro esattamente cosa fa.
+
+In più, l'ottimo sarebbe che la code base non necessitasse di essere spiegata ad un altro sviluppatore ma che fosse sufficientemente chiara da permettere a questi di interpretarla autonomamente.
+
+Il codice dovrebbe essere sempre sistemato e pulito. E questo processo, ormai lo abbiamo capito, non è Vibe coding.
+
+Il Vibe coding è un possibilità e come tale non va esclusa a priori ma messa in pratica solo dopo averne valutato attentamente i pro e i contro. Non è un boost di produttività, non è un moltiplicatore di qualità, è solo un accesso estremamente semplificato alla realizzazione cose estremamente semplici.
+
+Può essere un buon metodo per produrre qualcosa di temporaneo o poco importante se usata bene, ma se usata male diventa subito un generatore di problemi e di debito tecnico.
+## Conclusione
+Bene, ti ho raccontato la mia sul Vibe coding. Sono sicuro che ci sarà, la fuori chi avrà opinioni diverse dalle mie e mi piacerebbe conoscerle, quindi non esitare a scrivermi a valerio@pensieriincodice.it, a lasciare un commento ove possibile - tipo su YouTube o Spotify - o a unirti al gruppo Telegram del podcast, dove troverai tante altre persone interessanti.
+
+Intanto, io ringrazio l'amico *Davide Fasoli* di *INSiDER - Dentro la Tecnologia* per averci prestato la voce per leggere il tweet di Karpathy. Se non conosci INSiDER, beh sappi che è uno dei podcast fissi del mio feed.
+
+Ogni settimana propone un excursus su di un argomento tecnologico attualissimo, spaziando dall'Intelligenza artificiale all'aeronautica militare. Mi raccomando: lo trovi su tutte le principali piattaforme podcast e, in più, ti lascio il link al sito ufficiale in descrizione.
+
+Come sempre, poi, ringrazio coloro che ormai sono di diritto i produttori esecutivi di Pensieri in codice: Edoardo e Carlo. Loro due, ogni mese, con la loro donazione, incarnano di fatto lo spirito *treasure* del Value4value.
+
+Value4value, ti ricordo, vuol dire che, se stai ascoltando Pensieri in codice, se magari hai ascoltato tutte le puntate, se addirittura sei lì a chiederti quando uscirà il prossimo episodio, beh, allora non puoi negare che questo progetto ha un valore per te.
+
+Quanto vale? Non lo so. Questo lo decidi tu. E poi, una volta che avrai una risposta, mi sembra giusto che tu restituisca una minima parte di questo valore. Al progetto, non a me. *Time, Talent and Treasure*.
+
+Magari decidi che vale un po' del tuo tempo, e allora parliamo della risorsa *time* della filosofia Value4value. In tal caso, restituisci valore condividendo gli episodi, parlandone ad amici, parenti, colleghi, al macellaio appassionato di informatica, insomma a chi pensi che possa piacere.
+
+Oppure, magari puoi decidere che Pensieri in codice valga un po' del tuo *Talent*. Talento nel fare cosa? Non lo so, proponiti. A me, lo ripeto almeno da qualche episodio, piacerebbe tanto aprire degli account social e iniziare a condividere spezzoni, news, ecc.
+
+Purtroppo, però, non ho le competenze o il tempo per mettere su tutto. Ti andrebbe di darmi una mano? Non serve essere il guru dei social: già aprire e fare un po' di attività sarebbe un enorme passo avanti.
+
+Dai che per quanto mi impegni da solo difficilmente riuscirò a far crescere il progetto. Dai, lo so che sei lì ma fino ad ora non ti sei ancora fatto avanti. Scrivimi. Io sono qui.
+
+Detto questo, io ti saluto e ti ricordo sempre che *Un informatico risolve problemi, a volte anche usando il computer*."
