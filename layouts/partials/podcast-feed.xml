@@ -126,8 +126,10 @@
             {{- else -}}
             <itunes:image href="{{ .Site.Params.Podcast.image }}"/>
             {{- end -}}
+            {{ $transcript_name_arr := split .Params.transcript "." }}
+            {{ $transcript_type := index $transcript_name_arr (sub (len $transcript_name_arr) 1) }}
             <podcast:transcript url="{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.transcript }}"
-                                type="application/srt" language="it" rel="captions"/>
+                                type="application/{{ $transcript_type }}" language="it" rel="captions"/>
             <podcast:chapters url="{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.chapters }}"
                               type="application/json+chapters"/>
         </item>
