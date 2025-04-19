@@ -106,7 +106,7 @@
                 {{- if gt (len $key) 0 }}{{ $key }}{{ end -}}
                 {{- end -}}
             </itunes:author>
-            <itunes:summary>{{ .Summary | htmlEscape }}</itunes:summary>
+            <itunes:summary>{{ .Summary | htmlEscape | plainify }}</itunes:summary>
             <itunes:explicit>{{ .Params.explicit }}</itunes:explicit>
             <itunes:episodeType>{{ .Params.episode_type | default "full" }}</itunes:episodeType>
             {{- if .Params.season -}}
