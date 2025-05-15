@@ -1,0 +1,184 @@
+text: "
+## Introduzione
+
+Oggi parliamo di una delle più importanti e al tempo stesso meno conosciute leggi dell'Informatica. Un vero e proprio pilastro del Web così come lo conosciamo, ma che probabilmente non hai mai sentito nominare: sto parlando della legge di Postel.
+
+Per l'occasione ho deciso di avviare il discorso partendo da un altro pilastro del Web, uno molto più conosciuto, che ti sarà invece sicuramente capitato di vedere se frequenti i social network: e cioè i Chuck Norris Facts.
+
+Quindi, mettiti comodo o comoda e lascia che io ti guidi in questo viaggio un po' surreale attraverso il funzionamento e la filosofia del linguaggio HTML e quindi del Web.
+
+Sigla.
+## Chuck Norris Facts
+Non so se realmente sia necessario spiegare cosa sono i *Chuck Norris Facts*, ma, nel caso in cui tu non li conosca, in questo blocco ti farò qualche esempio e ti racconterò un po' la presunta storia della nascita di questo fenomeno.
+
+Se la cosa non ti interessa perché magari sei già il massimo esperto di Chuck Norris, allora ti consiglio di skippare questo capitolo e di passare direttamente a quello successivo: non preoccuparti perché il resto dell'episodio sarà tranquillamente comprensibile anche saltando questa parte.
+
+I *Chuck Norris Facts* sono un insieme di affermazioni ironiche ed esagerate, che attribuiscono al famoso attore e artista marziale Chuck Norris qualità sovrumane, imprese straordinarie o capacità impossibili.
+
+Si tratta di battute surreali e paradossali che giocano con l'immagine iconica dell'attore, noto per i suoi molteplici ruoli interpretati nei film d'azione e nelle serie TV, e soprattutto nella celebre serie _Walker Texas Ranger_.
+
+Questi *fatti* - fra virgolette - non riflettono ovviamente la realtà, e sono invece costruiti per divertire e creare *meme*, esagerando i toni fino ai limiti dell'assurdo e oltre.
+
+Tra le innumerevoli, quindi, troviamo battute del tipo *Chuck Norris può sbattere una porta girevole* oppure *Lo spazio profondo esiste perché ha paura di stare sullo stesso pianeta con Chuck Norris*.
+
+La nascita di questo fenomeno non è esattamente individuabile ma da molti viene fatta risalire all'anno 2004 e ad un programma televisivo statunitense intitolato Late Night di Conan O'Brien.
+
+Prova ad immaginare: siamo agli inizi degli anni 2000; Internet si sta ancora diffondendo e ha appena iniziato a riempirsi di contenuti virali e di meme.
+
+Nel 2004 la NBC, che produce il Late Night, acquista la Universal la quale, tra gli altri, detiene anche i diritti di tutti gli episodi di Walker Texas Ranger.
+
+Conan O'Brien, che per una decina d'anni è stato un pilastro della programmazione a tarda notte negli Stati Uniti, ha quindi improvvisamente accesso completo e gratuito a tutta una nuova serie di contenuti.
+
+Il conduttore ovviamente non si lascia sfuggire l'occasione di sfruttare la situazione e aggiunge al proprio repertorio comico numerosi commenti sarcastici sulla serie interpretata da Chuck Norris, della quale manda in onda anche innumerevoli estratti.
+
+In breve tempo, però, quella che è nata come una presa in giro, si trasforma in un susseguirsi di sketch divertenti, entusiasmanti e soprattutto esagerati, nei quali l'attore appare alla stregua di un supereroe.
+
+Nel giro di un anno, nasce il sito chucknorrisfacts.com, un progetto ironico creato da parte di alcuni fan e la ciu idea è quella di cavalcare l'onda di O'Brien e celebrare in modo scherzoso l'immagine di Chuck Norris, trasformandolo in una sorta di supereroe invincibile e onnipotente.
+
+Ora il sito non è più accessibile ma può essere comunque visionato su archive.org. Ti lascio il link in descrizione.
+
+Ad ogni modo, frasi del tipo *Non c'è nessun mento dietro la barba di Chuck Norris. C'è solo un altro pugno* oppure *Quando Chuck Norris fa flessioni, non alza se stesso ma spinge il mondo giù* sono solo alcune delle simpatiche esagerazioni che diventeranno poi centinaia.
+
+Il successo dei Chuck Norris Facts è subito immediato e travolgente. Presto queste battute diventano un fenomeno globale, diffuso su forum, social media e persino nei programmi televisivi.
+
+Chuck Norris stesso, inizialmente sorpreso, accoglie poi con simpatia il fenomeno, raccontando in diverse interviste che i *fatti* rappresentano una dimostrazione di affetto e ironia da parte dei suoi fan.
+
+Oggi, possiamo tranquillamente affermare che i *Chuck Norris Facts* sono uno dei primi esempi di contenuti virali capaci di unire milioni di persone attorno a un’idea leggera e giocosa, trasformando una star del cinema in un'icona culturale anche nel mondo digitale.
+## Il colore Chuck Norris
+Ma ora ti starai chiedendo: che cosa c'entra Chuck Norris con l'HTML o la legge di Postel?
+
+Beh, devi sapere che Chuck Norris, oltre ad *aver contato fino a infinito, due volte* e a *poter dividere per zero*, è persino... un colore HTML.
+
+Sì, hai capito bene: non *ha* un colore, nel senso che è il suo preferito o quello che lo contraddistingue. Lui *è* un colore.
+
+Se infatti si scrive all'interno del codice di una pagina HTML qualcosa del tipo: *font color = \"chucknorris\"* - tutto attaccato, fra virgolette -, beh si ottiene che il testo incluso nel tag diventa di un bel colore rosso.
+
+*Rosso* come il Mar Rosso, quello le cui acque Mosè ha diviso, ma che *Chuck Norris ha anche moltiplicato, sommato e sottratto*. Ok, la smetto: era l'ultima. Giuro.
+
+Com'è possibile, però, che l'attributo color=\"chucknorris\" faccia diventare il testo rosso?
+
+Beh, tutto nasce dalla logica con la quale il linguaggio HTML gestisce gli errori.
+
+In generale, in HTML non esiste vero e proprio stato di errore. Quindi i browser sono progettati per essere molto permissivi e quando si trovano ad interpretare del codice, generalmente, fanno del loro meglio per correggere eventuali errori commessi dallo sviluppatore.
+
+Ad esempio, se in una pagina viene lasciato un tag - come un *div* o un *p* - aperto, allora il browser fa quanto in suo potere per cercare di capire dove quel tag avrebbe dovuto essere chiuso e mostrare il risultato in modo corretto.
+
+Un'impostazione di questo tipo, però, aggiunge al processo di interpretazione del codice parecchi artifici e soluzioni imprecise che portano a fenomeni curiosi, come appunto il fatto che la stringa *chucknorris* finisca con l'essere considerata un valore corrispondente a un colore rosso.
+
+Il motivo di questa fantasiosa interpretazione nasce da un set di regole ufficiali per la gestione dei colori legacy - cioè quelli provenienti da codice molto vecchio - che raccomanda l'utilizzo di una specifica procedura, ma che, così facendo, porta a convertire il nome dell'attore in una stringa che risulta poi corrispondere ad una tonalità di rosso.
+
+Secondo quanto specificato da queste regole, infatti, quando si trova davanti ad un valore inconsueto, il parser - cioè il motore che si occupa di trasformare il codice HTML nella pagina di un sito - deve tentare di interpretarlo come se fosse un numero esadecimale.
+
+La ragione di questa scelta risiede nel fatto che si cerca di mantenere la massima retrocompatibilità del linguaggio: l'esadecimale, infatti, è il sistema più vecchio utilizzato per specificare i valori dei colori in HTML e pertanto esso funziona anche con il codice più datato.
+
+Ad ogni modo, se correttamente specificato, un valore in tale formato è composto dal carattere *cancelletto* seguito da tre numeri che vanno da 00 a FF e che indicano rispettivamente l'intensità di rosso, di verde e di blu.
+
+Mi raccomando: tieni sempre a mente che nel formato esadecimale la numerazione segue - appunto - la base sedici e quindi un singolo numero va da 0 a F e non da 0 a 9 come nella numerazione decimale.
+
+Nel processo di rendering - cioè la trasformazione del codice in elementi grafici - il primo passaggio per l'elaborare un colore esadecimale, è la rimozione del cancelletto il quale è considerato una convenzione ma non è utile ai fini del calcolo.
+
+Quindi, ad esempio, se avessimo un valore tipo *#7F0A89*, dopo la prima pulizia otterremmo il corrispettivo *7F0A89*. Semplicemente senza cancelletto.
+
+Come secondo passo di rendering, poi, qualsiasi carattere che non sia un numero da 0 a 9 o una lettera da A a F - appunto, uniche cifre valide in esadecimale -, deve essere sostituito con uno zero.
+
+Dunque se il valore fosse, ad esempio, *abcxyz123*, esso diventerebbe *abc000123*.
+
+Al terzo passaggio viene, invece, standardizzata la lunghezza della stringa: se essa, infatti, è vuota o non è divisibile per tre, vanno aggiunti degli zeri fino a raggiungere una lunghezza adeguata - cioè un multiplo di tre.
+
+Per esempio, il valore *A* diventerebbe *A00*, mentre *ABCDE* diventerebbe *ABCDE0*.
+
+Al quarto passaggio, poi, il valore va separato in tre parti di pari lunghezza uguale che andranno a determinare le componenti di colore rosso, verde e blu.
+
+Se, ad esempio, avessimo *ABCDEF000*, la stringa verrebbe divisa in *ABC*, *DEF*, *000* dove il primo blocco rappresenterebbe il rosso, il secondo il verde e il terzo il blu.
+
+A questo punto, vanno applicate altre rifiniture.
+
+Ad esempio, se per caso i valori delle componenti fossero maggiori di otto caratteri, allora andrebbero tagliati rimuovendo i caratteri in eccesso partendo da sinistra.
+
+E se la lunghezza fosse maggiore di due e tutte le componenti iniziassero con uno zero, allora andrebbero rimossi gli zeri iniziali fino a portali a lunghezza di due.
+
+E se ancora i tre valori risultassero più lunghi di due caratteri ciascuno, andrebbero mantenuti solo i primi due caratteri, scartando il resto.
+
+Insomma, sembra complicato a descriverlo così, ma il concetto è che, alla fine del processo, devono rimanere tre numeri da due cifre.
+
+Applicate quindi tutte queste trasformazioni, il parser ha finalmente dei valori puliti che può utilizzare per renderizzare un colore miscelando i livelli specificati di rosso, verde e blu. E l'utente vedrà tale colore.
+
+Ora, tornando al nostro caso specifico, quando il browser deve renderizzare il valore *chucknorris*, stabilisce immediatamente che tra le varie modalità in cui può essere specificato un colore, l'unica utilizzabile è proprio quella di fallback, quindi quella esadecimale.
+
+Questo perché le varie modalità più moderne hanno parole chiave nel valore che le identificano, come *rgb* o *hsl* o il nome proprio di un colore, tutte cose che chiaramente non corrispondono al nome dell'attore.
+
+Il parser dunque avvia le trasformazioni che abbiamo descritto poco fa e accade la magia.
+
+Innanzitutto, i caratteri non validi nella stringa *chucknorris* vengono rimpiazzati con zeri, ottenendo così *c00c0000000*. - Questo semplicemente perché, di tutte le lettere della parola, solo le *C* possono essere cifre valide in esadecimale: tutto il resto diventa 0.
+
+La stringa ottenuta in tal modo, però, non è un multiplo di tre e quindi va aggiunto uno zero per renderla tale.
+
+Successivamente, essa va poi divisa nelle tre parti di cui abbiamo parlato prima e, pertanto, queste diventano *c00c*, *0000* e *0000*.
+
+Per ciascuna di queste parti, ora, vanno presi solo i primi due caratteri e quindi cioè che resta è: *c0*, *00* e *00*.
+
+A questo punto, abbiamo i tre valori per le tre componenti colore, ma solo il primo è diverso di zero. Quindi, banalmente, nel colore ottenuto è presente una certa parte di rosso e sono totalmente assenti il verde e il blu, e pertanto il risultato è *rosso*.
+## La legge di Postel
+
+La gestione degli errori in *HTML* si basa su una filosofia nota come *robustezza* o *tolleranza agli errori*, ed è riassunta efficacemente dal principio: *Sii tollerante in ciò che accetti, ma rigoroso in ciò che invii.*
+
+Questo principio prende il nome di *Legge di Postel*. Dal nome dell’informatico che l’ha formulata durante i primi anni dello sviluppo di Internet.
+
+Come accennato prima, i browser Web sono progettati per non bloccarsi o restituire errori critici, anche quando incontrano HTML malformato: essi, infatti, cercano di interpretare e riparare automaticamente i problemi, così da mostrare il contenuto nel modo più sensato possibile per l’utente.
+
+Questa tolleranza nell'interpretazione e nella gestione degli errori gioca un ruolo fondamentale nel funzionamento del metalinguaggio, garantendo tutta una serie di caratteristiche tipiche dei siti Web.
+
+Innanzitutto c'è un tema di *accessibilità universale*: il Web funziona anche per contenuti scritti male, incompleti o realizzati molti anni addietro, permettendo a chiunque di accedere alle informazioni anche se esse non sono in condizioni ottimali.
+
+Poi viene garantita un'enorme *retrocompatibilità*: gli ultimissimi browser sono perfettamente in grado di visualizzare correttamente anche siti molto vecchi e realizzati addirittura con precedenti versioni di HTML. In tal modo, essi garantiscono la continuità nella fruizione anche a distanza di molti anni e abbattono la necessità di manutenere i contenuti vecchi.
+
+Infine, anche l'*esperienza utente* giova enormemente di questo atteggiamento perché vengono evitate condizioni d’errore e viene garantita una resa visiva piacevole e uniforme - cose fondamentali per agevolare la fruizione anche da parte di utenti non esperti.
+
+Ovviamente, però, questa tolleranza ha anche i suoi limiti: ad esempio, può rendere più difficile il debug poiché gli errori non sono sempre evidenti. Oppure, può portare a comportamenti inusuali - vedi l'esempio di Chuck Norris - e incoraggiare pratiche di sviluppo poco pulite e poco rigorose.
+
+Per questo motivo, esistono strumenti specifici chiamati *validatori* che permettono - appunto - di validare la bontà del codice HTML scritto e suggeriscono correzioni e migliorie.
+
+E inoltre, con l'uso del nuovo HTML5 sono state introdotte moltissime funzionalità e linee guida che permettono di realizzare codice HTML più potente, pulito e corretto, pur mantenendo intatto il principio di tolleranza e la retrocompatibilità.
+
+Ma queste sono altre storie di cui magari parleremo in altri episodi.
+
+Tornando invece all'argomento di oggi, la gestione degli errori in HTML, grazie proprio alla filosofia della legge di Postel, risulta essere in effetti molto pragmatica: essa, infatti, privilegia la continuità e la robustezza rispetto alla rigidità e all'ottimizzazione.
+
+L’obiettivo principale non è puntare alla perfezione tecnica, bensì garantire che il Web funzioni, sempre e comunque, anche quando il codice risulta problematico o non aggiornatissimo o incompleto.
+
+Più in generale, questa legge rappresenta un importante principio di ingegneria della resilienza, che permette di massimizzare la capacità di comunicazione e evitare che errori minori compromettano il funzionamento dell’intero sistema.
+
+Essa, in realtà, è applicata a numerosi ambiti nel mondo dell'Informatica: dalla gestione dei protocolli di rete, fino alla progettazione dei formati dei file, passando per l'implementazione di modelli di Machine Learning e software vari.
+
+In effetti, la Legge di Postel non è solo un principio tecnico, ma una vera e propria filosofia: essa, infatti, ci ricorda che, in molti campi, è importante essere flessibili e comprensivi per far si che le cose funzionino.
+
+La rigidità e la precisione sono certamente una virtù, ma solo finché non inficiano il funzionamento generale; se portate all'estremo esse possono diventare un intralcio lungo il cammino verso il risultato desiderato.
+
+Il Web, così come lo conosciamo, è costruito su fondamenta di resilienza. Un sito del 1996 può essere visualizzato ancora oggi in un browser moderno. Una pagina può essere consultata anche se il CSS non è più valido o addirittura è completamente assente.
+
+E tutto questo è possibile proprio grazie al fatto che l'interpretazione del linguaggio è stata da sempre basata sulla Legge di Postel.
+## Conclusione
+Oggi puntata un po' più breve, ma ho capito che se non mi trattengo sulla quantità di informazioni e fonti che prendo in considerazione, finisce che a stento esce un episodio al mese.
+
+Quindi, rapidamente ringrazio i sempre presenti Edoardo e Carlo per la donazione mensile e anche Luca F e Marco C per la donazione spot. Loro hanno aderito alla filosofia Value4Value.
+
+Probabilmente ormai già sai cosa vuol dire, ma devo ripeterlo per chi magari è nuovo o non lo sa. Quindi perdonami.
+
+Value4Value, in pratica è la filosofia a cui aderisce questo progetto. Io produco contenuti gratuiti e senza pubblicità - che sono fastidiose e tracciano gli utenti - però in cambio chiedo a te di farti la seguente domanda: Pensieri in codice ha un valore per me?
+
+Se lo ascolti in modo continuativo, se ti insegna qualcosa, se ti intrattiene, allora forse un piccolo valore ce l'ha. Pensaci e decidi, senza nessun obbligo, se ti va di restituire un po' di questo valore. Tipo un caffè offerto.
+
+E come puoi fare ad offrirmi un caffè? Ovviamente con una donazione, per cui trovi tutti i dettagli alla sezione Sostieni del sito pensieriincodice.it. Ma anche e sopratutto contribuendo alla diffusione del podcast.
+
+Consiglialo, fallo ascoltare e parlane in giro. Online o offline. Ogni ascoltatore in più, che magari si affeziona e diventa assiduo, è un piccolo passo per il progetto.
+
+Oppure, supportami con qualche attività che sai o vuoi svolgere. Potresti aiutarmi a gestire un account social o a ricercare e mettere insieme fonti, a scrivere gli episodi. Ti dirò di più: se hai idee e ti va di espormele, io sono qui in ascolto.
+
+Ultimamente sto anche pensando che si potrebbero avviare nuove rubriche ma da solo non riesco a fare tutto, quindi lanciati. Tanto non sono alla ricerca di professionisti ma di qualcuno che abbia un po' di tempo e buona volontà.
+
+I contatti sono tutti sempre sul sito pensieriincodice.it.
+
+In ogni caso, noi ci sentiamo al prossimo episodio e non dimentichiamo mai che *Quando ogni sera i bambini vanno a dormire, controllano che nell'armadio non ci sia l'Uomo Nero, ma quando ogni sera l'Uomo Nero va a dormire, controlla che nell'armadio non ci sia Chuck Norris*.
+
+Ciao!
+"
