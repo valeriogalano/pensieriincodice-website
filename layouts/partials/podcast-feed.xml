@@ -85,6 +85,7 @@
             <description>
                 {{ print "<![CDATA[" | safeHTML }}
                 {{ print .Content | safeHTML }}
+                {{ partial "follow.html" . }}
                 {{ partial "support.html" . }}
                 {{ partial "partners.html" . }}
                 {{ partial "sources.html" . }}
@@ -94,6 +95,7 @@
             <content:encoded>
                 {{ print "<![CDATA[" | safeHTML }}
                 {{ print .Content | safeHTML }}
+                {{ partial "follow.html" . }}
                 {{ partial "support.html" . }}
                 {{ partial "partners.html" . }}
                 {{ partial "sources.html" . }}
