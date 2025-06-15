@@ -1,0 +1,343 @@
+text: "
+## Introduzione
+
+Che l'Intelligenza Artificiale stia prepotentemente cambiando moltissimi aspetti della nostra vita, ormai lo sanno anche i sassi.
+
+Cambia il lavoro, cambia l'intrattenimento, cambia lo shopping, cambia l'apprendimento, la ricerca di informazioni e chi più ne ha più ne metta.
+
+E come si fa a parlare di così tanti argomenti - e delle loro sfaccettature -, che sono così interessanti ma anche così numerosi da essere impossibili da conoscere a sufficienza per imbastire su di essi un discorso serio? 
+
+Beh, facile: si chiede aiuto a chi ne sa di più.
+
+Quello di oggi, quindi, è il primo episodio di una quadrilogia in cui un professionista ci parlerà di come l'AI ha cambiato il suo modo di realizzare spot televisivi, raccontandoci un caso reale e spiegando le varie fasi del processo produttivo!
+
+E ti assicuro che sarà interessantissimo e che impareremo entrambi un sacco di cose. Fidati!
+
+Prima di cominciare, però, voglio dirti che l'episodio di oggi è speciale anche per un altro motivo: esso, infatti, dà il via ad una nuova rubrica. Una rubrica che, onestamente, mi sta molto a cuore e spero diventi un appuntamento fisso. Ma che, come scoprirai fra poco, dipenderà essenzialmente da te!
+
+Sigla!
+## Pensieri in codice - Community Edition
+
+Se penso a questo progetto, a Pensieri in codice, mi vengono in mente tante cose: la consapevolezza che c'è là fuori un numero inspiegabilmente alto di persone che ascoltano quello che io ho da dire, ed esempio.
+
+Oppure la soddisfazione di aver prodotto una serie di contenuti nei quali ho riversato sempre il massimo dell'impegno di cui disponevo e del cui livello di qualità mi posso dichiarare piuttosto soddisfatto.
+
+Ma la cosa alla quale do assolutamente il maggior valore è la community che si è venuta a costruire attorno al progetto: mi riferisco alle persone che partecipano al gruppo Telegram e che ogni giorno discutono dei più disparati argomenti e si confrontano e così facendo crescono, imparano e, ovviamente, fanno crescere anche me.
+
+E sopratutto queste persone mi supportano in tantissimi modi.
+
+Ultimamente ti parlo di Value4Value ad ogni episodio, no? Del fatto che questo progetto è completamente gratuito ma ha bisogno anche del tuo supporto per andare avanti. E ti dico anche che tra i vari modi di contribuire c'è quello di dedicargli un po' del tuo talento.
+
+Beh, alla fine questo appello ha suscitato una risposta di affetto che ha permesso la nascita di questo episodio e, sono sicuro, di tanti altri a venire!
+
+Devi sapere, infatti, che un giorno, la persona la cui voce stai per ascoltare, che oltre ad essere un ascoltatore è anche un amico, mi ha scritto per dirmi: *bella 'sta storia del Value4Value, se vuoi io ti presto il mio talento per raccontare qualcosa di interessante*.
+
+E io: *fico! Visto che ne sai a pacchi, perché non descrivi come ha impattato l'Intelligenza Artificiale sulla produzione di contenuti video?*.
+
+E lui: *fico! Ma questa roba al momento è un casino, quindi ti spiego come ha influito sul mio lavoro e ci faccio una serie di episodi perché ho un botto di cose da dire*.
+
+E io: *fico! Sai che c'è? Potrei approfittarne per farne una rubrica aperta a tutti i membri della community che vogliono raccontare qualcosa*.
+
+E lui: *fico! Perché no?*
+
+Ed eccoci qua.
+
+Ovviamente noi non parliamo come in una commedia demenziale americana dei primi anni 2000 e lui, fra poco, spiegherà meglio questo scambio.
+
+Ad ogni modo, da questo discorso - più o meno - è nata l'idea di *Pensieri in codice - Community Edition*: uno spazio in cui anche tu che stai ascoltando e che ritieni di avere qualcosa di interessante da dire su argomenti legati all'Informatica, puoi partecipare.
+
+Dei dettagli su questa cosa, però, ne discutiamo alla fine dell'episodio. Per ora ho già blaterato troppo e non vedo l'ora di lasciare la parola al primo ospite del primo episodio di Pensieri in codice - Community Edition: il grandissimo Alex Raccuglia!
+
+## L'impatto dell'Intelligenza Artificiale su uno spot televisivo (parte 1 di 4)
+
+
+> Attenzione, questa parte dello script è stata generata dall'episodio utilizzando [Transcriber](https://ulti.media/transcriber/) (realizzato da Alex Raccuglia)
+
+
+Buongiorno a tutti, io sono Alex Racuglia e definirmi è una cosa un po' più complicata del solito.
+
+Ufficialmente io sono un regista e produttore di spot televisivi e video promozionali, ma ho iniziato la mia \"carriera\" studiando informatica sia alle superiori che all'università.
+  
+  Poi i casi della vita mi hanno portato a lavorare nel campo del video pesantemente.
+  
+  Però ho sempre mantenuto un piede nell'informatica per cui posso dire di essere un regista con la passione del digitale e anche della produzione digitale, ma dato che negli ultimi dieci anni ho ricominciato a scrivere software e ho aperto una piccolissima software house che sviluppa applicazioni per chi fa audio video, posso anche dire di essere un informatico con la passione del cinema.
+  
+  Sono anche un podcaster, ho prodotto negli ultimi 14 anni qualcosa come 1200 episodi in varie trasmissioni, circa una decina di trasmissioni.
+  
+  La più longeva di tutte, che è ancora viva, la registro in automobile, come sto facendo in questo momento, perché ho scoperto che l'automobile non è soltanto un posto in cui l'audio è relativamente isolato, ma è anche un posto in cui siamo effettivamente isolati, possiamo parlare ad alta voce come se stessimo pensando.
+  
+  Ovviamente l'automobile è anche un mezzo rumoroso, per cui negli ultimi anni ho utilizzato diversi software per la pulizia dell'audio e di conseguenza questo è quello che sentite intanto che vado da casa verso l'ufficio.
+  
+  Valerio, che conosco da prima della pandemia probabilmente, è una persona deliziosa, l'ho incontrato un paio di volte quando sono stato suo ospite, sono stato veramente suo ospite, è stato come incontrare una persona di altri tempi, una bella persona, chiacchieriamo, facciamo cose insieme, ci divertiamo e parlando qualche tempo fa mi ha detto \"sarebbe interessante parlare di come l'intelligenza artificiale ha impattato il mondo della produzione video\" e mi sono detto \"sarebbe interessante parlarne\" però quando ci ho pensato a bocce ferme ho detto \"però è difficile\" cioè ogni giorno su twitter o su x come volete chiamarlo c'è un nuovo modello che consente di realizzare video sempre più realistici al punto tale che circa un anno fa non avrei mai detto che quello che vedo è sintetico e invece adesso lo è.
+  
+  La sticella si è alzata, le modalità di produzione del video, dell'audio, del parlato sono sempre più complesse e parlare di questa cosa sarebbe stato veramente un po' un po' complicato per me, non tanto perché non sto seguendo il mercato, quanto perché è un mercato in tale evoluzione che probabilmente fra un mese quello che vi sto dicendo potrebbe risultare antico.
+  
+  Però ho pensato potrebbe essere interessante raccontare come l'intelligenza artificiale nelle sue varie incarnazioni influisce sul mio lavoro effettivamente e ho deciso di prendere ad esempio l'ultimo prodotto su cui sto lavorando, l'ultimo progetto che è uno spot televisivo per il mercato australiano per conto di un cliente francese perché in questo prodotto effettivamente c'è stata la più grande rivoluzione dell'intelligenza artificiale per me da quando faccio questo vestire e allora voglio raccontarvi un pochettino come funziona, come ha funzionato, come sta funzionando, perché non è ancora stato distribuito all'MIT.
+  
+  Cercherò di essere breve, di tralasciare le cose troppo complicate o i dettagli non significativi ma è anche vero che sono una persona che parla molto per cui mi forzerò di essere condensato.
+  
+  Prima di parlare però effettivamente di come l'intelligenza artificiale in alcune fase della lavorazione di questo progetto è entrata, devo raccontarvi un pochettino come funziona la realizzazione di uno spot televisivo ma in realtà di quasi tutti quelli che sono le produzioni audiovisive.
+  
+  Allora tutto quello che viene realizzato in video passa attraverso essenzialmente tre fasi.
+  
+  La fase di pre produzione, di produzione e di post produzione.
+  
+  Interessante come cosa.
+  
+  Dovrò fare un paio di passi indietro per raccontarvi il motivo per cui si chiama in questo modo.
+  
+  Allora fino a qualche tempo fa la fase di produzione che è effettivamente quella in cui il giorno in cui si gira lo spot su quelle telecamere, con gli attori sul set, con la scenografia, cioè proprio quella in cui viene girato era la fase più costosa e più importante perché era quella che coinvolgeva più persone.
+  
+  Non di rado mi è capitato di lavorare su set con 20 persone.
+  
+  Capite che 20 persone di una certa caratura professionale hanno un costo tale per cui quella giornata di lavoro di solito rappresentava l'80 per cento del costo del totale dello spot, anche il 90 per cento, per cui la produzione era il fulcro.
+  
+  Un giorno solo, due giorni di produzione che però si prendevano l'80-90 per cento del lavoro.
+  
+  Adesso le cose sono molto diverse, però rimaniamo su questa linea d'oro.
+  
+  Prima della produzione c'è tutta la fase di preproduzione, cioè come si prepara il giorno di produzione.
+  
+  Tutto quello che arriva dall'ideazione all'organizzazione, a fare 200.
+  
+  000 telefonate, insomma fare in modo che tutte quelle persone si ritrovino su quel set con tutti i materiali, con tutte le attrezzature, con tutto quello che serve per poter girare.
+  
+  E poi c'è la fase di post produzione, la fase in cui tutto il girato viene montato e messo insieme, con la color correction, con gli effetti speciali, con il sound design, il montaggio, la motion graphics, tutto quello che serve per costruire il prodotto finito.
+  
+  Diciamo che la fase di produzione crea gli ingredienti, e poi la fase di post produzione mette insieme questi ingredienti e produce la torta.
+  
+  E la fase di preproduzione è inventarsi la ricetta.
+  
+  Oggi vorrei concentrarmi essenzialmente sulla fase di preproduzione perché nel mio caso le cose sono un po' cambiate.
+  
+  Ancora un piccolo cerno storico, concedetemi di dilungarmi un pochettino.
+  
+  Quando c'è stata la rivoluzione digitale, cioè si è smesso di girare in pellicola, si è iniziato ad utilizzare degli strumenti che possono essere anche consumer, la fase di produzione ha iniziato a costare sempre di meno.
+  
+  C'era sempre meno bisogno di tanta gente e la fase di preproduzione è iniziata a diventare più importante, perché bisognava, per ottimizzare la produzione, per far sì di non sprecare soldi in quell'unico giorno che è costosissimo, bisogna pianificare molto bene.
+  
+  Più si pianifica, più si si organizza e più quel giorno costa molto meno.
+  
+  Risparmiare, che ne so, a una o due persone, alla fine può significare risparmiare tantissimo tempo.
+  
+  Un giorno di produzione può costare come 5, 6 o 10 di preproduzione, per cui la fase di preproduzione è diventata molto più importante.
+  
+  Che cosa significa preproduzione.
+  
+  La preproduzione parte dall'idea.
+  
+  Il cliente vuole promuovere un prodotto, di solito si rivolge a un'agenzia creativa che non è la stessa agenzia di produzione.
+  
+  L'agenzia creativa gli propone un'idea, ne so, secondo voi l'idea per questo spot è questa roba qui.
+  
+  A questo punto ci si organizza e si inizia a pensare se questa idea piace, si inizia a preparare la sceneggiatura.
+  
+  Oddio, prima si inizia a preparare il copyright, il copy che è essenzialmente tutto quello che viene detto nello spot.
+  
+  Se si hanno a disposizione 15 secondi, sono 15 secondi di parlato, si parte da quelli perché sono molto importanti, perché il parlato è uno dei canali di comunicazione, oltre a quello visivo.
+  
+  Dopo aver prodotto il copy e il copy viene approvato, dal cliente si passa alla sceneggiatura, ovvero si descrive che cosa viene visualizzato per ogni singola parola o ogni singola frase del copy.
+  
+  Questa è una fase relativamente breve per uno spot, una fase lunghissima per un film, però rimaniamo sullo spot televisivo che è un esempio relativamente semplice e molto efficace.
+  
+  Una volta che anche la sceneggiatura è approvata, si passa allo storyboard, cioè alla visualizzazione con dei disegni di tutte le inquadrature.
+  
+  Ora, adesso vi faccio l'esempio in pratica.
+  
+  Lo spot che sto realizzando è per una collezione di moto, di modellini di moto, di MotoGP e di Superbike.
+  
+  Moto relativamente famose, nel senso c'è la moto con cui Valentino Rossi ha vinto il suo mondiale, la moto di Casey Stoner, la moto di Bagnaia, quelle moto lì.
+  
+  Devo essere sincero, io ho fatto tantissimi video di spot di modellini e una delle cose su cui sono più specializzato.
+  
+  Devo dire che il prodotto è molto ben realizzato, è buona fattura.
+  
+  Quello che si fa ultimamente è non prendere, non usare uno storyboard disegnato da uno storyboard artist, cioè praticamente un tizio, un disegnitore, un illustratore che produce le tavole dello storyboard.
+  
+  Se si ha a disposizione veramente il prodotto, e avevamo a disposizione delle fotografie di tutti i modelli, abbiamo preparato lo storyboard praticamente facendo una previsualizzazione, che è una cosa diversa.
+  
+  In pratica, invece di fare i disegni, mettevamo delle fotografie compositate.
+  
+  In Photoshop di solito fa questa cosa, in modo da mostrare effettivamente ogni singola inquadratura, che cosa avremmo mostrato, mostrando effettivamente l'oggetto vero e non un suo disegno.
+  
+  E così siamo andati avanti e abbiamo proceduto.
+  
+  Una volta che lo storyboard è approvato, cioè sappiamo tutte le inquadrature che vanno girate, si va a girare e si gira.
+  
+  Oggi voglio concentrarmi effettivamente solo a fase di preproduzione, perché è stata quella in cui l'intelligenza artificiale è intervenuta più pesantemente, lasciando poi le altre puntate, le prossime volte in cui racconterò qualcosa, al resto della produzione.
+  
+  Allora, in questo progetto in particolare, era la seconda volta che interagivo con questo cliente.
+  
+  La prima volta ci hanno fatto fare un'offerta economica, ci hanno chiesto \"Noi dobbiamo fare uno spot per fare questa roba qui.
+  
+  Quanto ci costa?\" Senza neanche parlare di idee, di cose, nel senso non c'era una gara di mezzo.
+  
+  Volevano sapere quanto costava, perché hanno visto le altre cose che noi facevamo e sanno che noi, come azienda di produzione, facciamo bene questo tipo di prodotto.
+  
+  L'altra volta non è andata bene, hanno scelto di rimanere sul loro fornitore abituale.
+  
+  Stavolta hanno deciso \"Facciamo il salto, dalla quale andiamo su questi nuovi\" e hanno avuto bisogno delle idee creative.
+  
+  Idea creativa che doveva partire dal sottoscritto, che nonostante non è un vero e proprio copywriter, ogni tanto mi sono occupato di questo, su progetti relativamente semplici, e poi proviamo anche a fare questo.
+  
+  Com'è funzionato.
+  
+  Eh, questa cosa è stata molto divertente, perché era la prima volta che lavoravo con un cliente, però il cliente, molto correttamente, ci ha mostrato gli spot degli anni passati.
+  
+  Nel senso, cosa abbiamo fatto in passato, cosa ci piace, vogliamo una roba come questa, per cui ci ha dato una grandissima traccia da seguire.
+  
+  Non è proprio partire da zero.
+  
+  Però è anche vero che quando un cliente cambia fornitore, si aspetta comunque qualcosa di nuovo, qualcosa di leggermente differente, ma è anche vero, perché se io comunque mi chiedono \"Fai una cosa che hanno fatto tutti gli altri\", comunque a modo mio, ma non perché sono un genio, ma perché forse anche proprio per i miei limiti, ci infilerò qualcosa che secondo me è più importante o non importante.
+  
+  Stavolta che ero molto in, non dico in panico, ero un po' dubbioso sulle mie capacità per la sindrome del foglio bianco, ho fatto un paio di riunioni su Zoom, mi sono preso tutte le informazioni di tutto quello che c'era, e ho iniziato a preparare un documento molto complesso, molto ricco, in pages, cioè in Word, fate finta che l'abbia fatto in Word, con tutto quello che mi serviva, tutte le informazioni, tutto quanto.
+  
+  Ho fatto la cosa che non si dovrebbe fare, ma l'ho fatta.
+  
+  Sindrome del foglio bianco, ho preso queste informazioni, ho chiesto a ChatGPT, \"ChatGPT scrivimi il copy per uno spot televisivo di 14 secondi, non 15, dopo vi spiegherò perché 14, che presenti questa roba qui, con questo stile, mettendogli anche gli spot precedenti.
+  
+  GPT, modello 4 o mini, se non sbaglio, mi ha risposto con una cosa sensata.
+  
+  Ho fatto rifare questa cosa qui tipo 5-10 volte, fino a quando sono arrivato a un buon risultato, e io sapevo che questo risultato non era quello che sarebbe stato poi di definitivo, però è stato interessante, perché è stata una interessantissima traccia da sottoporre prima di tutta l'agenzia, di connessione, l'account, e poi al cliente finale, perché così gli ho detto \"questa è la nostra idea\".
+  
+  A questo punto è il cliente che dice \"no, ma io penso che sia meglio fare così, meglio fare così\", e di conseguenza ha dato le sue indicazioni di miglioramento, per cui il copy è stata una cosa prodotta di sotto mani, con l'int iniziale di ChatGPT, che poi tutto quello che ha tirato fuori di ChatGPT è stato totalmente rimaneggiato, che dell'originale non è rimasto niente, però è stato già il primo passo dell'intelligenza artificiale che mi ha dato uno spunto.
+  
+  Io poi nel tempo mi sono creato un po' di prompt già pronti per avere dei copy già indicativi di come potrebbe essere, perché appunto con l'intelligenza artificiale adesso il Fortis è nel scrivere un prompt adeguato.
+  
+  Per cui quello è stato il primo momento in cui l'intelligenza artificiale è entrata, ma non è finito.
+  
+  Una volta provato il copy, la cosa interessante è che io ho prodotto la sceneggiatura.
+  
+  Questi spot sono molto simetrici l'uno dall'altro, per cui è stato molto molto facile preparare una discussione del visual, e lì è arrivato il momento, un momento topico direi, perché ho ricevuto delle correzioni da parte del cliente.
+  
+  In che senso delle correzioni.
+  
+  Perché le correzioni ci stanno tutte nel senso, uno può dire \"vorrei visualizzare questo\", \"vorrei visualizzare quell'altro\", però il cliente ha mandato un report e questo report era chiaramente stato scritto da chat gpt.
+  
+  Se voi gli mostrate a chat gpt uno scritto e gli dite \"come potrei migliorare questa cosa?\", chat gpt vi risponde anche con il markdown.
+  
+  E allora nessun essere umano scrive in markdown una mail.
+  
+  Per cui questa cosa qua è stata divertentissima, perché ho ricevuto appunto il feedback, un feedback dato da chat gpt.
+  
+  Poi ho scoperto che il cliente, questo cliente, questa persona, spesso e volentieri si fa aiutare chat gpt nella scrittura delle proprie mail, per cui è stato bellissimo questa cosa qua.
+  
+  Inizialmente mi sono sentito un pochettino offeso, proprio perché io ho fatto la stronzata, ho fatto la furbata di farmi scrivere la prima versione del copy, che poi dopo è stato rimaneggiato da me ed altre persone dell'agenzia, con chat gpt e di conseguenza chi di chat gpt perisce, di chat gpt alla fine perisce, però vabbè.
+  
+  E successivamente abbiamo iniziato a produrre lo storyboard.
+  
+  Ora sullo storyboard c'è stato una sorta di momento di indecisione.
+  
+  Allora stiamo parlando di modelli di motociclette, di moto, della moto gp e della superbike.
+  
+  Di solito questi video, queste spot televisivi, iniziano con uno o due inquadrature, forse anche tre inquadrature molto veloci, che mostrano l'oggetto reale, cioè la moto in pista che gareggia eccetera eccetera.
+  
+  Inizialmente l'idea era anche questa, anche se non c'erano molti contatti con chi fa moto gp eccetera eccetera e tutte le agenzie di brocheraggio, di stock, di immagini, non avevano queste informazioni.
+  
+  Di conseguenza inizialmente si è detto \"potremmo utilizzare delle foto e animarle?\" No, perché i diritti che erano stati acquisiti per le fotografie da mettere nel fascicolo, non coprivano la pubblicazione delle foto in video, tanto meno la modifica delle foto.
+  
+  Per cui a un certo punto il cliente ha detto \"non è necessario effettivamente metterci la foto in sé\" e la proposta è stata quella \"perché non partiamo da alcuni shot che mostrano una pista di gara motociclistica di notte?\" Ora, io devo essere sincero da un po' che non seguo il moto gp.
+  
+  So che la formula 1 ha delle gare notturne a Dubai, negli Emirati Arabi, in cui illuminano a giorno questa pista con delle luci che consumeranno come 18 centrali nucleari, però non mi ricordo se questa cosa la fanno anche per le moto.
+  
+  Vabbè, allora mi sono messo a cercare nelle varie banche dati, nelle varie servizi di abbonamento a cui sono abbonato, dei video di stock che avevano solo delle gare notturne.
+  
+  C'erano, ma erano veramente miseri.
+  
+  Cioè, pratica uno con una moto che faceva un giro di pista, però era veramente triste, perché le piste notturne sono illuminate pochissimo, non sono come quelle del gran premio.
+  
+  Ero veramente in crisi, poi a un certo punto mi sono detto, insomma, questa richiesta qua è una richiesta talmente strana, perché non posso generare le immagini con un servizio come Medjourney, Firefly, OpenAI o Google.
+  
+  Cioè, ci sono tantissimi servizi di generazione delle immagini, perché non lo facciamo.
+  
+  Perché poi non sono sicuro di riuscire ad animarla.
+  
+  Allora, io sono abbonato, cioè la mia azienda è abbonata a Freepik, che col piano annuale ti mette a disposizione 200.
+  
+  000 crediti da spendere nella generazione di contenuti con l'intelligenza artificiale.
+  
+  La generazione di un'immagine di solito costa un credito, la generazione di un video può arrivare a costare anche mille crediti, a seconda del servizio che si usa.
+  
+  E io ho detto, beh, proviamo.
+  
+  Ho generato un po' di immagini, finché non sono arrivato ad alcune che mi piacevano, un'inquadratura di un motociclista di un guanto che accelera, un'inquadratura di un semaforo che da rosso diventa verde, e un'inquadratura di una moto che parte, inquadrata dal basso.
+  
+  E a questo punto proviamo a generare dei video sulla base di queste.
+  
+  E li abbiamo generati utilizzando Kling, Kling 1.
+  
+  6, andava piuttosto bene, e sì, praticamente al primo colpo, in due inquadrature, al terzo colpo, in un'altra inquadratura, il video è stato generato.
+  
+  Questo video è durato inizialmente 5-8 secondi, io l'ho fatto durare 5 secondi per poter spendere il meno possibile, ma non perché sono pitocco, perché non si sa mai cosa ci può servire domani, anche perché poi aver preso un secondo di uno di questi shot, e questa è la cosa fondamentale, un video di 5 secondi può essere brutto, ma un estratto di un secondo all'interno di un montaggio può essere invece molto significativo.
+  
+  Ed è quello che ho fatto, nel senso, ho tirato fuori questi un secondo, un secondo, un secondo, e funziona.
+  
+  Allora alla fin fine l'ho infilato dentro lo storyboard e glielo ho mandato, e andava bene, questa cosa è andata bene.
+  
+  Per cui il secondo punto in cui è arrivata l'intelligenza artificiale, la generazione di immagini e la generazione di video, che poi verranno utilizzati nello spot vero e proprio.
+  
+  Per realizzarlo lo storyboard, noi avevamo a disposizione le fotografie di questi modelli, fotografati in studio, però su sfondo bianco, perché sono abbastanza scuri, in modo tale da poter essere scontornati, e con Photoshop ho separato il soggetto dallo sfondo, sempre utilizzando l'intelligenza artificiale, ormai i modelli di selezione del soggetto sono molto, molto, molto accurati, e poi sempre con Photoshop, con la generazione di immagini, anche questi costano un credito a generazione, noi abbiamo a disposizione mille crediti al mese con il nostro abbonamento, ho fatto ambientare questi modelli all'interno di uno studio, andando a simulare anche la riflessione del piano.
+  
+  Per cui mentre la fotografia è stata fatta su un foglio di carta bianco, mettiamola così, su uno sfondo bianco di cartoncino, ho fatto cambiare lo sfondo facendolo diventare scuro, riflettente, ed è questa cosa qua, fondamentalmente lo storyboard si è creato con questa ultima nuova generazione.
+  
+  Tutto questo nella fase di preproduzione.
+  
+  Un'ultima cosa, e poi concludo la mia spattafiata sulla preproduzione, quando si prepara un copy, cioè il testo che viene poi pronunciato dallo speaker, bisogna essere consci del fatto che c'è un tempo massimo di ascolto, e il tempo massimo di ascolto è quello della durata dello spot.
+  
+  Nel caso dell'Italia, uno spot da 15 secondi ha 15 secondi di audio, di conseguenza tutto il parlato deve stare in 15 secondi.
+  
+  Poi se c'è anche un minimo di musica va bene, però di solito è in background perché in 15 secondi bisogna dire un sacco di cose e non c'è tempo per avere anche un attacco musicale.
+  
+  Di solito io testo questo tipo di cosa o registrandolo io direttamente, ma ultimamente faccio uso dei servizi di text-to-speech di Microsoft e Azure che hanno una buona qualità e soprattutto sono abbastanza intellegibili, che va bene perché un conto è farlo in italiano o in inglese, che ancora ancora potrei in qualche modo cavarla dicendo \"the pain is on the table\", però nel caso di lingue straniere, mi sto lavorando in questi giorni su Ungheria, Polonia, Grecia, oltre che Australia, è lì, devo per forza sintetizzarlo.
+  
+  Ho visto che ovviamente gli speaker sono un pochettino più veloci e possono essere un pochettino tagliati, per cui uno speaker digitale veloce da 140-150 parole al minuto, che non sono per niente poche, può essere comunque velocizzato del 5%.
+  
+  Io faccio così, prendo il copy, lo faccio speakerare dai servizi digitali di Microsoft e Azure, utilizzando la voce col tono più enfatico, entusiasta possibile.
+  
+  Ovvio che se faccio un documentario sono un po' più neutro, però su un video promozionale, un pubblicitario, cerco di essere un pochettino più enfatico.
+  
+  E poi tengo conto del fatto che posso velocizzare questo tempo di circa il 5% senza andare a fare dei tagli.
+  
+  La velocizzazione a tempi superiori di solito prevede degli interventi molto più drastici in post produzione, andando a tagliare delle singole sillabe e andando a resicare un fotogramma qui, un fotogramma là.
+  
+  E' una cosa molto molto delicata, necessita di un sacco di tempo e anche un sacco di scherzo per essere portata avanti bene.
+  
+  Per cui tendenzialmente mi faccio questa sorta di test.
+  
+  Una volta che il copy è pronto, io faccio il giro e dico al cliente \"guarda, sì va bene, oppure sì va bene, ma deve correre un po', oppure guarda, staremo qui, proprio non ci possiamo stare dentro, dobbiamo togliere qualcosa, dobbiamo cambiare qualcosa\".
+  
+  Nel caso dell'Australia, in particolare, gli spot televisivi in Australia hanno mezzo secondo di audio silenzioso all'inizio e mezzo secondo di audio silenzioso alla fine, per cui alla fine l'audio diventa, per uno spot di 15 secondi, diventa di 14 secondi, che insomma comincia a essere un certo taglio.
+  
+  Diciamo che abbiamo il 7, 5% di audio in meno, non è una percentuale trascurabile, perché a volte potrebbe significare due o tre parole in meno, e due o tre parole in meno possono veramente fare la differenza in uno spot da 15.
+  
+  Bene, questo è tutto quello che io uso in preproduzione, anziché ho usato in questo caso in preproduzione con l'intelligenza artificiale.
+  
+  E se ci penso bene, dopo questi 20-25 minuti di chiacchierata, si tratta di una quantità notevole di tutti i scollegati tra loro, tutti che vanno interpretati, tutti che vanno in qualche modo studiati e approfonditi, però sono effettivamente tutti strumenti che aiutano e che rendono il processo di preproduzione sicuramente non più veloce, ma producendo un semilavorato, cioè qualcosa su cui puoi lavorare, migliore, mettiamolo così, semilavorato più comprensibile e che aumenta il determinismo.
+  
+  Più si utilizzano questi strumenti in generale, più è più facile prevedere cosa succederà in fase di produzione e di conseguenza andare più a colpo sicuro, perché è la cosa più comoda e più difficile da fare, arrivare in produzione sapendo esattamente tutto quello che si fa e esattamente come verrà fuori.
+  
+  Direi che per oggi mi sono dilungato sin troppo, per cui continuiamo la prossima volta, ok.
+  
+  Un abbraccio, vi ringrazio di avermi ascoltato e ringrazio tantissimo Valerio dell'opportunità che mi ha dato di raccontarvi questa cosa.
+  
+  Alla prossima puntata.
+  ## Conclusione
+  
+  Allora, avevo ragione o no? Nelle prossime settimane usciranno anche gli altri tre episodi della serie. Alex mi ha già inviato il secondo perché lui, a differenza mia, riesce ad essere estremamente produttivo.
+  
+  Intanto, se ti va di seguire le sue numerose attività sui suoi vari canali, ti lascio in descrizione un po' di link dove trovare tantissimi altri contenuti simili a questo.
+  
+  Se poi vuoi discutere di questi ed altri argomenti con lui o con me, ricorda sempre che puoi - se non lo sei già - iscriverti al canale Telegram di Pensieri in codice che trovi in descrizione.
+  
+  Ma ora veniamo a noi e parliamo di te! Sì sì, proprio di te che stai ascoltando. Se hai un'idea che ti affascina, un'esperienza interessante da raccontare o semplicemente un argomento che ti appassiona legato all'Informatica o che ritieni adatto per Pensieri in codice, perché non condividerlo?
+
+Sarebbe un modo per metterti alla prova e per supportare questo progetto prendendo parte al movimento del Value4Value impiegando il tuo talento. Alla fine non è complicato: è un po' come registrare un vocale e comunque ci sarò sempre io a guidarti.
+  
+  Per partecipare, basta che mi contatti su Telegram o all'indirizzo email valerio@pensieriincodice.it e ci mettiamo d'accordo su come fare.
+  
+  Non serve essere un esperto, non serve una grande attrezzatura, basta lo smartphone e la voglia di raccontare e condividere! E chi lo sa, potresti scoprire che ti piace fare podcast e decidere di aprire un progetto tutto tuo!
+  
+  Quindi, non essere timido o timida! Trova un'argomento, riordina un po’ i pensieri e parliamone. Io non vedo l'ora di sentire le tue idee!
+  
+  Noi ci risentiamo al prossimo episodio del quale, chissà, potresti essere tu il protagonista e non dimenticare mai che *Un'informatico risolve problemi, a volte anche usando il computer*.
+"
