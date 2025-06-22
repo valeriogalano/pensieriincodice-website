@@ -309,7 +309,7 @@ Il software non ha alcuna contezza del significato del testo generato e nessuno 
 
 Questa cosa dipende dal fatto che la scelta delle parole è così impeccabile ed il risultato finale è così ben scritto da farlo sembrare preso da una fonte di qualità come un libro, un sito giornalistico, un'enciclopedia o una base dati, ma non è così: ogni somiglianza con la realtà è puramente casuale.
 
-Come riportato nell'articolo Way Does AI Hallucinate sul sito Technology Review del MIT, possiamo tranquillamente affermare che un llm è molto simile una gigantesca palla magica, di quelle che si agitano e poi dal liquido emerge una risposta a caso.
+Come riportato nell'articolo Why Does AI Hallucinate sul sito Technology Review del MIT, possiamo tranquillamente affermare che un llm è molto simile una gigantesca palla magica, di quelle che si agitano e poi dal liquido emerge una risposta a caso.
 
 Anche di questo abbiamo già parlato: nell'episodio 118 intitolato Come funziona ChatGPT (e gli altri Large Language Model): in pratica, un modello di testo generativo non fa altro che predire la più probabile parola successiva in una sequenza di parole esistente.
 
