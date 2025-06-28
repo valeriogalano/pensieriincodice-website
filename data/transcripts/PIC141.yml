@@ -1,0 +1,166 @@
+text: "
+## Introduzione
+
+Lo so: anche tu non vedevi l'ora che uscisse questo quarto e conclusivo episodio della serie Pensieri in codice Community Edition.
+
+Il grandissimo Alex Raccuglia ci ha tenuto compagnia in queste settimane e ci ha mostrato uno scorcio del suo lavoro e del modo di migliorarlo utilizzando l'Intelligenza Artificiale.
+
+Oggi, in questo ultimo episodio, invece, il nostro amico, regista e sviluppatore di software ci darà la sua opinione su una questione che ora come ora si pongono in tanti: risponderà, infatti, alla domanda *L'Intelligenza Artificiale mi lascerà senza lavoro?*
+
+Ovviamente, non serve che te lo dica, immagino: per godere al meglio di questa puntata, il mio consiglio è di recuperare prima gli episodi precedenti.
+
+Potrei dirti che ti lascio i link in descrizione al sito, a Spotify, ecc. ma sappiamo entrambi che me ne dimenticherò. Quindi fai in autonomia che tanto è semplice: vai nel feed e ascolta gli ultimi tre episodi quelli con Raccuglia nel titolo. 
+
+Io ora ti affido nelle sapienti mani, anzi alla sapiente voce di Alex, ti auguro buon ascolto e noi ci risentiamo tra un po'.
+
+Sigla.
+
+## L'Intelligenza Artificiale lascerà Alex senza lavoro?
+
+Or bene, a vale di questi tre episodi che avete ascoltato, tre puntate in cui vi ho raccontato e l'intelligenza artificiale si è palesata e ha aiutato in maniera piuttosto sensibile la realizzazione del mio spot televisivo, sia in preproduzione che in postproduzione, adesso siamo arrivati all'ultima parte di questa tetralogia e ovviamente, e in tutte le tetralogie, e in tutte le conclusioni uno si aspetta di sentire da parte mia un po' di considerazioni a caldo o a freddo.
+
+La realtà è che io voglio rispondere con questa ultima puntata, con questo ultimo episodio alla domanda che sicuramente vi siete fatti tutti, sia per voi stessi sia per il sottoscritto, ovvero sia l'intelligenza artificiale prenderà il mio lavoro.
+
+Per rispondere ho bisogno di fare qualche passo indietro e nel farlo vi dirò alcune cose che di solito la gente non vi dice per cui potreste essere interessati ad alcuni aspetti di quello che sto per raccontarvi.
+
+Allora, e vi ho già detto, questo spot televisivo è abbastanza nelle mie corde perché li faccio da tantissimi anni, questa categoria di produzione.
+
+A oggi, il 2025, uno spot del genere sul mercato italiano, parlo del mercato italiano però poi le cose si possono in qualche modo appiccicare anche all'estero, sul mercato italiano uno spot del genere può costare al cliente una cifra dai 7.
+
+500 ai 15.
+
+000 euro, in dipendenza da eventuali lavori extra che si fanno, degli effetti speciali, delle correzioni, delle acquisizioni di diritti o eventualmente uno speaker più o meno quotato, senza considerare le ricadute social che però di solito hanno dei prezzi molto più bassi perché si basano su del contenuto che viene girato il giorno della produzione.
+
+Non vi dico la cifra esatta perché dipende molto, non vi dico la cifra che è costato al cliente questo spot, però questa è la cifra che non include i costi di emissione, significa che ogni volta che uno spot in un suo taglio preciso, cioè 10-15 secondi, sono due spot diversi, vengono inviati ad un gruppo di emittenti, il costo non è concentrato in questo forfeito iniziale.
+
+Ecco, una campagna pubblicitaria di questo tipo di spot non è una campagna pubblicitaria normale perché di solito questi spot vengono promossi subito prima dell'inizio di settembre e subito dopo Natale perché sono i giorni dell'anno, le settimane dell'anno in cui gli spazi pubblicitari costano di meno.
+
+Ecco, gli spazi pubblicitari che costano di più in Italia sono quelli poco prima di Sanremo, cioè tra il telegiornale Sanremo che è la prima e la seconda interruzione pubblicitaria, quelli che costano di meno sono quelli che vengono proposti a fine estate e a fine Natale.
+
+Una campagna di questo tipo può costare dai 200 ai 300 mila euro per un numero di passaggi sulle reti Mediaset, Rai, Sky, Discovery Corner e la 7 dai 150 ai 225 passaggi più o meno, poi a volte di più, a volte di meno.
+
+L'ordine di grandezza è questo.
+
+Potete capire che la produzione dello spot e anche la sua ideazione costano molto poco rispetto alla campagna pubblicitaria.
+
+Ecco, questo è il primo passo, il primo step che volevo raccontarvi.
+
+La seconda cosa che volevo raccontarvi è la grande massima che ha piarato fuori l'amministratore delegato di NVIDIA che diceva alla gente \"Voi non dovete preoccuparvi che il vostro lavoro venga fatto dall'intelligenza artificiale, dovete preoccuparvi che il vostro lavoro verrà sostituito da qualcuno che usa l'intelligenza artificiale\".
+
+Ora, quello che mi chiedo è, il mio cliente finale potrebbe fare uno spot senza passare attraverso di me, dal mio magazzino di produzione.
+
+Volendo forse sì, ma sono sicuro che l'ultima cosa che può volere quello che ci ha missionato lo spot è farselo lui per due semplici motivi.
+
+Uno, non credo che abbia voglia di imparare a usare questi strumenti e due, anche se la cosa lo farebbe rispiamare tantissimo, dobbiamo considerare che la persona o il gruppo di persone che ci missionano questi spot non sono i padroni dell'azienda, sono persone che lavorano per questa azienda, per cui il loro obiettivo è fare in modo di rispettare i budget e le volontà di chi li anda, dei loro capi, e se fare una cosa internamente può portare un grandissimo risparmio di denaro, farla male può portare un grandissimo rischio di carriera, per cui l'idea è che queste persone non faranno mai il lavoro al posto mio, assolutamente, lo faranno fare a qualcun altro.
+
+Ma la domanda è, chi potrebbe essere questo qualcun altro.
+
+Ora, vi ho raccontato quello che è lo stato dell'arte di un certo tipo di modo di fare spot, però è anche vero che Google con VO3 ha realizzato dei video che sono effettivamente indistinguibili o unque sufficientemente indistinguibili da quelli realizzati davvero, e ho visto un po' di case study di spot televisivi realizzati con 2.
+
+000 euro, con un sacco di dispegno di energia e di soldi in prompt, in visualizzazioni, che sono tipo 400 prompt, di questi 400 ne abbiamo presi 25, però li abbiamo usati per fare lo spot.
+
+E cacchio, cioè, secondo me alla fine qualcuno che è dotato di una macchina fotografica, di una buona conoscenza di questi strumenti, potrebbe realizzare effettivamente questo spot da solo, senza considerare l'utilizzo, il prendersi in carico un'intera casa di produzione.
+
+Perché le case di produzione sono sempre più piccole, sono sempre più esseri umani, piuttosto che grandi pagnie con tanta gente.
+
+Esseri umani che, magari e me, che io non sono il miglior regista del mondo, no, ho un po' di esperienza, mi reputo piuttosto bravo e montatore, piuttosto bravo e sound designer e soprattutto sulla musica posso dire con poca modestia che quando io scelgo una musica cazzarola è quella, cioè io riesco sempre ad azzeccare la musica adatta al video.
+
+Sì, ragazzi, ascolto tanta musica, ho suonato per 15 anni, non è tanto perché ascolto la musica perché ho suonato per 15 anni, probabilmente è una di quelle cose che di culo mi va bene, però mi funziona sempre, cioè le musiche non me le hanno mai contestate, mai mai mai mai, al massimo mi hanno detto su due scelte che ho fatto cosa volevano e magari non corrispondeva esattamente con la mia preferita, ma ci ho sempre azzeccato.
+
+Per cui l'insieme di tutte queste cose, il doppiaggio che fra un anno, un anno e mezzo sarà veramente indistinguibile da quello di uno speaker, faranno sì che un ragazzo, un giovane, nella sua stanzetta, ancora abitando con i suoi genitori, che è una cosa buonissima, potrà permettersi di far pagare questo spot 750/1500 euro, cioè un ordine di grandezza in meno.
+
+Ora, voi capite che con questi ordini di grandezza il cliente, cioè quello che a noi ne ha dati 7500/15000 può iniziare a tremare, e dire, questa potrebbe essere una grande occasione.
+
+Una grande occasione di risparmiare dei soldi che possono essere poi, ovvio che non è che i soldi se li tiene lui, però possono essere utilizzati da altre parti per investire di più nella campagna di marketing social, eccetera eccetera eccetera.
+
+Io credo che nell'arco di un anno o due, il mio lavoro attuale verrà ridimensionato in modo tale per cui il mio concorrente sarà veramente il videomaker che ha un ordine di grandezza di meno.
+
+Ha meno esperienza, certamente, però l'esperienza la ripaga col prezzo basso e col fatto di poter, anche per certi versi, lavorare in perdita.
+
+Nel senso, la prima volta che fai un lavoro lo fai a 1500/1000 euro, per dire, e magari spendi 500/1000 euro in token, in acquisti di crediti su Google, Aveo, eccetera eccetera eccetera.
+
+Magari ci perdi, però l'hai fatto, a quel punto il mercato è finito.
+
+Perché il mercato ha capito che quello spot che prima si faceva con 7500/15000 euro, adesso si può fare con 750/1500.
+
+Punto.
+
+Sono arrabbiato col videomaker.
+
+No.
+
+Il mercato funziona con se stesso.
+
+Il mercato si autoregola.
+
+Sono visceralmente anticapitalista, nel senso in cui il capitalismo viene utilizzato per schiacciare i deboli.
+
+Però in questo caso, cioè nel senso, se il mercato decide questa cosa qui, che si può spendere ancora un decimo rispetto a prima, allora vuol dire che è giusto così.
+
+Vedevo in qualche modo adeguato.
+
+E così siamo arrivati al termine di questo gruppo di 4 episodi in cui vi ho raccontato, all'incirca in un'oretta di tempo, mi duole se vi ho fatto perdere troppi istanti della vostra vita, e ho utilizzato questi strumenti, chiamiamoli strumenti per adesso, che fanno uso dell'intelligenza artificiale o di quella classe di algoritmi che vengono assegnati giustamente nello spettro dell'intelligenza digitale per realizzare il mio lavoro.
+
+E vi ho anche raccontato che molto probabilmente fra un anno, fra due anni, il mio lavoro verrà svolto da qualcun altro che riuscirà a farlo con un livello qualitativo assolutamente parabile ad un prezzo assolutamente non parabile.
+
+E se mi chiedessero che cose intenzione di fare, boh, io quello che sto facendo adesso è divertirmi con queste cose, sperimentandole, cercando di trarne il maggior risultato possibile, nel senso cercando di riuscire a farne allo stesso tempo più cose, cose migliori o abbassare i tempi di produzione.
+
+Però per esperienza, ed è questa una cosa abbastanza une, ho visto che facendo questo lavoro da 25 anni, tendenzialmente il tempo che si impiega a realizzare un certo task, una certa parte del processo produttivo è quasi sempre lo stesso, solo che è aumentato il livello qualitativo, è aumentato il controllo, sono aumentate un sacco di cose.
+
+Io quando ho iniziato a lavorare facevo video in 320x240 all'interno di uno schermo di un'animazione su un cd-rom e adesso le mie produzioni sono in 4k.
+
+Prima lavoravo a 15 fotogrammi al secondo, adesso lavoro quando vado in televisione a 50, quando vado sul puter a 60, ho tantissime informazioni più da gestire e da processare e lo faccio con una qualità sempre migliore o unque con una qualità che mi soddisfa sempre di più e anche il mio lavoro è cambiato e adesso anche quando faccio delle cose pro bono, anche quando faccio delle cose in cui non devo impiegare la testa, anche quando faccio delle cose in cui basterebbe un qualsiasi tipo di lavoro, mi rendo conto che impiego quei tre minuti in più per fare delle cose più belle e vedo che tutti questi ingredienti che sono messi a disposizione da tante tecnologie diverse, da tante aziende diverse, mi servono per fare qualcosa che sia sempre più ricco e se fossi cinico direi che lo faccio per mantenermi sempre su una sorta di cresta dell'onda, per migliorare me stesso.
+
+Perché.
+
+Perché la realtà è che così facendo mi diverto di più, perché per e sono fatto io, rifare lo stesso lavoro due volte lo trovo piuttosto noioso.
+
+Alla terza incio a distrarmi, alla quarta non capisco più niente e ho delle grosse regressioni e invece trovando sempre delle cose diverse in maniera piuttosto naturale, giocando, finisce che mi diverto e sono più contento.
+
+Cosa mi riserverà il futuro.
+
+Non lo so, ma credo che nessuno lo sappia in questo momento.
+
+Detto questo, io vi ringrazio tantissimo di avermi ascoltato, spero che per dieci secondi vi abbia raccontato qualcosa che non sapevate o che non sapevate di sapere, questo già sarebbe per me un grande traguardo.
+
+Devo ancora dire grazissimo a Valerio, Valerio è davvero un bravissimo podcaster, ha una concezione del podcast molto diversa da quella che ho io, ma ciò nonostante ogni volta che arriva una puntata del suo podcast Pensieri in Codice salta automaticamente in cima alle cose che voglio ascoltare.
+
+Uno perché, e dice sempre lui, il tempo è tiranno e fare le cose fatte bene necessita di tante risorse, per cui è difficile mantenere un ritmo elevato e due perché unque il suo modo di raccontare le cose scrittato è davvero ricco ed è davvero interessante.
+
+Ogni volta che ascolto un suo podcast sempre ho imparato qualcosa, anche senza usare il puter.
+
+Sarei veramente tanto curioso di sapere che cosa vi è rimasto attaccato da questa chiacchierata che ho fatto.
+
+Di conseguenza nel gruppo Telegram di Pensieri in Codice, i riferimenti vi le darà Valerio subito a valle di questa puntata.
+
+Sarebbe bello appunto avere uno scambio, un'interazione in cui posso scoprire un sacco di cose anche di voi, anche di e a voi sta cambiando la vita l'intelligenza artificiale.
+
+Se invece pensate che sia veramente super figo e abbia un sacco di cose interessanti potete venire ad ascoltare il mio podcast.
+
+Potete ascoltare il mio podcast che si chiama \"Techno Peels\", lo trovate nei link dell'episodio, ma basta anche cercare \"Techno Peels\" con la \"ch\" \"Techno\" e insomma sentite il sottoscritto che fa questa cosa qui da 800 puntate e forse di più, raccontando il suo flusso di coscienza più o meno digitale e di e affronto i miei problemi sia nell'ambito informatico che nell'ambito della produzione e della post-produzione video.
+
+Ho detto tutto, grazie ancora, un forte abbraccio, ciao.
+
+## Conclusione
+
+Grazie Alex. Di tutto. Dell'impegno che hai messo in questa serie, di tutte le cose che ci hai fatto scoprire e capire, e anche dell'immeritatissima stima che, per qualche motivo, hai di me.
+
+Io sono stato onorato di averti ospite. Sono contentissimo del risultato di questo lavoro e spero che in futuro avrai voglia di ripetere l'esperienza.
+
+Per chi ci ascolta, invece: hai sentito Alex? Dai, unisciti al gruppo Telegram per discutere con noi, ma sopratutto con lui, di tutto ciò di cui abbiamo parlato in queste ultime settimane. Sono sicuro che il nostro amico sarà in grado e felice di rispondere alle tue domande e approfondire le varie questioni.
+
+A valle di questo esperimento - mi riferisco alla versione Community Edition di Pensieri in codice - posso dire che le cose sono andate molto bene, a mio parere. Tu cosa ne pensi? Ti piace questo tipo di format? Fammelo sapere perché è importante per gli sviluppi futuri di questo progetto.
+
+Se puoi, vuoi provare a partecipare anche tu come ha fatto Alex - come al solito - mi puoi contattare su Telegram, via mail scrivendo a valerio@pensieriincodice.it oppure sul sito pensieriincodice.it - sempre con due i gli indirizzi, mi raccomando.
+
+Come dico sempre: non è difficile; è quasi come registrare un vocale. Poi ne parliamo insieme, se vuoi.
+
+Se invece vuoi contattare Alex personalmente, magari per lavoro, magari per acquistare una delle sue app o vuoi ascoltare i suoi tantissimi contenuti - come già anticipato da lui - in descrizione trovi un bel po' di link - questi non mi dimentico di metterli.
+
+Prima di chiudere, approfitto per ringraziare i donatori mensili, Edoardo e Carlo, per il sostegno e l'apprezzamento che continuano a dimostrare.
+
+Se anche tu vuoi concretizzare il valore che ha per te questo progetto con una donazione, puoi farlo tramite vari sistemi che trovi elencati nella sezione *Sostieni* del sito pensieriincodice.it o nella descrizione dell'episodio.
+ 
+Per oggi direi che ci siamo detti abbastanza. Un saluto e ancora un ringraziamento ad Alex Raccuglia, un saluto a te che ci hai ascoltato e non dimenticare mai che *un'informatico risolve problemi, a volte anche usando il computer*.
+ 
+"

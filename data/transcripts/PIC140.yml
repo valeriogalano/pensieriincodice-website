@@ -1,0 +1,195 @@
+text: "
+## Introduzione
+
+Dopo gli ultimi due episodi in cui Alex ci ha spiegato i processi di pre-produzione e di produzione di spot televisivi con l'ausilio di strumenti di Intelligenza Artificiale, oggi, indovina un po', ci parlerà di post-produzione.
+
+Ovviamente, per comprendere al meglio l'argomento trattato, ti consigli di ascoltare prima i due episodi precedenti, se non lo hai già fatto. Nello specifico sono il 138 ed il 139 di Pensieri in codice Community Edition.
+
+Noi ci sentiamo tra un po', dopo l'intervento di Alex e nel frattempo ti auguro buon ascoltoelancio la sigla.
+
+## La post-produzione di uno spot con l'Intelligenza Artificiale
+
+Ciao a tutti e benvenuti e bentornati a questa terza puntata, questo terzo episodio, che dedico a e l'intelligenza artificiale è presente e influisce nel mio lavoro di produttore di spot televisivi.
+
+Nelle prime due puntate vi ho raccontato della pre-produzione, di quanto l'intelligenza artificiale venga utilizzata pesantemente nella pre-produzione per realizzare gli storyboard, anticipare l'audio dello speaker, generare immagini, eccetera.
+
+Nella scorsa puntata vi ho raccontato e l'intelligenza artificiale può aiutare la produzione, ovviamente in post-produzione, mediante uno slow motion più accurato di quello dell'optical flow.
+
+E pensavo di aver esaurito in queste due puntate tutta la parte dell'intelligenza artificiale, di e l'intelligenza artificiale coadiuva al mio lavoro di produttore di spot televisivi e oggi avrei parlato di un'altra cosa.
+
+Però in realtà mi è venuto in mente che l'intelligenza artificiale mi sta aiutando anche in post-produzione e di conseguenza adesso voglio raccontarvi e.
+
+La prima parte dell'aiuto arriva ancora una volta dallo speaker digitale.
+
+Io vi ho già parlato dello speaker digitale per la simulazione di quanto sarebbe durato lo speaker, in modo tale da essere consci del fatto che se uno speaker deve durare 14 secondi, e nel caso di questo spot in particolare, e lo speakerato digitale ne prende 14 e mezzo, allora siamo ragionevolissimamente sicuri che ci stiamo dentro.
+
+Se invece questo speaker digitale arriva a 18, le cose sono molto più plicate e bisogna pensare a qualche tipo di taglio da fare.
+
+Vi ho raccontato che per fare questa cosa qui in pre-produzione utilizzo i servizi di Azure, di Microsoft, che io vi consiglio perché tra l'altro se vi registrate sono gratuiti fino a 500.
+
+000 caratteri al mese.
+
+Significa, veramente, facendo due conti, 10 ore di parlato.
+
+Potete capire che potete sperimentare quanto volete.
+
+I tool per farlo online non sono super figli, però possono andare bene.
+
+Sto realizzando nel retro del mio cranio un'applicazione che faccia questa roba qui, ma per adesso è ancora una sorta di \"pour parler\", anche se la uso pesantemente per i miei progetti, ma è un'altra questione.
+
+Oggi non sono qui per parlarvi della mia vita da sviluppatore di software, perché ho fatto anche quello nella vita passata e anche presente.
+
+Per la simulazione a qualità migliore utilizzo i servizi di un altro sito che si chiama 11labs.
+
+io che hanno una qualità molto più elevata, sono molto più naturali dal punto di vista del parlato, ma il taglio gratuito arriva fino a 5000 caratteri al mese, il che significa 6 minuti di parlato, che per uno spot televisivo possono essere più che sufficienti per fare prove e riprove, ovviamente non per speakerare in lungo e largo qualcosa di molto più plesso.
+
+Faccio questo e linea guida, perché quando poi si registra con uno speaker vero e proprio, di solito si manda in riproduzione lo spot, lo studio di registrazione riproduce lo spot, a volte anche con la linea guida, cioè con la voce, in modo tale che lo speaker ci possa parlare sopra, o almeno avere una sorta di riferimento, anche se poi alla fine, dopo un po' di registrazioni, tagliano del tutto la parte visiva e vanno direttamente a memoria.
+
+Avere una linea guida del parlato è anche utile per far sì che si possano montare i video sulla base di qualcosa che viene detto, un video è sì quello che viene visualizzato, ma è anche quello che si ascolta e le due cose devono viaggiare di pari passo.
+
+Significa che se nel peck shot finale dicono \"a soli un euro e novantanove\", allora a quel punto, nel momento in cui dice \"a soli\" deve partire il bollo con scritto in grande \"un euro e novantanove\".
+
+Ci deve essere una sorta di corrispondenza più o meno esatta, a volte con il gioco, ma non più di tanto, tra quello che viene pronunciato e quello che viene visualizzato.
+
+Se lo speaker dice \"è un magazine pieno di informazioni e di fotografie\" e nel frattempo viene visualizzato un modello, no, bisogna far vedere un pochettino quello che viene raccontato, con un minimo di apertura mentale, nel senso che si può ritardare di mezzo secondo, di tre quarti di secondo, ma non di più.
+
+Per cui la voce guida è fondamentale.
+
+Fino all'anno scorso, fino a due anni fa, la voce guida la facevo io, in italiano e in inglese, perché quattordici anni di podcasting mi hanno dato un minimo di voce pesante e potente, però adesso passo direttamente alla voce guida, così almeno è una cosa più neutra e non sembra che io faccia tutti i ruoli di un'azienda, perché insomma non è una cosa molto bella.
+
+E pensavo che questo sarebbe stato il mio massimo nella fase di post-produzione, però in realtà mi sono reso conto, proprio ieri, che in realtà ho fatto altre cose nella fase di post-produzione.
+
+Allora, torniamo a pensare a questi singoli modelli.
+
+Vi ho raccontato la volta scorsa che ho sfruttato l'intelligenza artificiale e un modello di machine learning che genera uno slow motion più fluido di quello creato dall'optical flow, soprattutto per quanto concerne i riflessi in movimento, e di conseguenza mi sono bastate sei fotografie scattate in rapida sequenza clic clic clic clic per poter creare questi filmati che poi sono stati rallentati, potendo ingrandire tantissimo l'immagine con uno zoom velociccio, al punto tale che una schermata di in full hd 1920x1080 pixel rappresentava un dettaglio grande circa 2 cm, alto 2 cm, forse anche un pochettino di meno.
+
+Per cui capite che c'è un grandissimo ingrandimento, questo era per mostrare i dettagli che sono molto belli.
+
+Piccolo problema, quando avete questi ingrandimenti, una singola particella di polvere può essere grande 8x8 pixel e un puntino bianco così grande è veramente fastidioso.
+
+Non solo, scattando fotografie e non video è possibile trovare dei pixel morti nella macchina fotografica.
+
+Ora, le macchine fotografiche quando scattano, nella mia caso una macchina fotografica che ha quasi 15 anni, a 5000x3000 pixel, trovare un pixel bruciato è un non problema nella stampa.
+
+Se però si ingrandisce tantissimo, in modo tale che a un pixel corrisponda veramente un pixel nell'immagine definitiva, significa che ci può essere un singolo pixel che vedi veramente solo se lo guardi in immagine su uno schermo molto grande da vicino, però lo vedi e di conseguenza c'è un problema anche questo.
+
+e si fa ad ovviare.
+
+Se uno deve fare una fotografia e deve poi sistemare la fotografia in post-produzione è un non problema.
+
+Photoshop ha degli strumenti che sono in Photoshop da tipo 25 anni per la correzione di questi tipi di problematiche, il granello di polvere, la micro-sistemazione delle foto.
+
+Immaginate che se andate in farmacia a prare una crema idratante, l'espositore su cui c'è la fotografia molto grande di questa pelle perfetta è super trattata e ritrattata all'infinito, avendo decine, se non centinaia di layer di correzione in Photoshop, oppure decine di layer ma ognuno di quali con tantissimi punti finemente ritoccati.
+
+Questa cosa in fotografia si fa, si fa facilmente ed è triviale, significa che si fa in un attimo.
+
+Nel video è una cosa più plicata.
+
+e si fa a sistemare questa cosa nel video.
+
+Fino a qualche anno fa la cosa era praticamente impossibile per cui si passava veramente tantissimo tempo in produzione con un pennellino, con un soffiettino da tastiera in modo tale da tirar via qualsiasi granello di polvere, però c'erano dei punti in cui non era una questione di polvere ma era una questione di stampa della plastica o del metallo.
+
+In pratica questi modelli sono sì fatti bene ma non sono modelli da 150 euro l'uno, sono modelli che costano al produttore boh 1-2 euro forse, probabilmente anche meno, ovviamente fatti in Oriete, Legas in Cina, che significa che gli strumenti di stampaggio non sono precisi al micron e anche il metallo ha delle sbavature, le pennellature che sono state fatte con la macchina non sono precise al millimetro, al decimo di millimetro, perché unque l'immagine ingrandita mostra un sacco di imperfezioni.
+
+Abbiamo visto che applicare le correzioni a una foto è facilissimo, applicarle a un video è una cosa molto plicata.
+
+Durante la pandemia ho dovuto fare un lavoro e ho acquistato un plugin per After Effects, questo è un plugin molto interessante che si chiama Lockdown, ho acquistato la versione 2, adesso c'è la versione 3, non ho mai aggiornato perché non mi servivano le feature aggiuntive.
+
+In pratica cosa fa.
+
+Lockdown analizza l'immagine fotogramma per fotogramma nel video e genera i vettori di spostamento, un po' e fa l'Optical Flow, con un algoritmo molto plesso, molto ricco, non per fare il rallent dell'immagine ma proprio per mappare esattamente dove vanno i punti, in modo tale che se noi applichiamo una correzione sul primo fotogramma, questa correzione viene deformata con questi vettori di spostamento per seguire lo spostamento dell'immagine.
+
+A cosa serve.
+
+Io l'ho utilizzato in quel famoso video che vi ho raccontato, in quello spot che ho dovuto, per cui ho dovuto realizzare solo gli effetti visuali, per mettere dei marchi su delle magliette.
+
+I personaggi indossavano magliette, cioè tessuti, che si deformano e l'applicazione di queste deformazioni sulle magliette rendeva il tutto molto più naturale.
+
+Diciamo che è pensata per dei movimenti non esageratamente ampi, di rototraslazione e di deformazione della mesh, che siano textile, cioè di tessuto, o anici, o simili anici.
+
+Su quello funziona molto bene.
+
+E allora mi sono detto, e questa cosa qua veramente l'ho pensata nel momento in cui mi han detto \"ci vede un po' troppa polvere\", ma se io prendo Lockdown, cioè questa applicazione, questo plugin, lo applico a questo mio video di 5 fotogrammi, che può venire rallentato con l'intelligenza artificiale, però prima lo applico sulla parte principale di 4-5 fotogrammi e faccio le correzioni in Photoshop, dei singoli granelli di polvere o dei pixel bruciati, e poi lo applico a tutto il video, vediamo cosa succede, se funziona.
+
+Allora, sì, ha funzionato nel 90% dei casi.
+
+Nel 10% dei casi il tracking non era perfetto, perché magari il movimento di rototraslazione del modello andava a nascondere un punto, oppure c'era una differenza di luminosità.
+
+Se il modello ruota cambiano le luci, magari un punto che prima era grigio diventa grigio leggermente meno scuro, e di conseguenza la correzione che è un punto grigio sembra più scuro, per cui si vede il difetto.
+
+Il tracking è perfetto, cioè questo puntino segue il puntino originale, però diventa un'altra forma di disturbo, e in questi casi bisogna lavorare un pochettino più di fino, ma con tecniche tradizionali.
+
+E voi potreste dire, ma dove sta l'intelligenza artificiale in tutto questo.
+
+Beh, l'ultima versione di Photoshop consente di fare una rimozione delle imperfezioni basata sull'intelligenza artificiale, e non più su dei timbri o dei filtri originali o degli algoritmi precedenti, consentendo di avere delle immagini qualitativamente migliori e più naturali.
+
+Per cui in questo caso io ho applicato l'intelligenza artificiale di correzione di imperfezioni su una singola immagine, e poi con un algoritmo, non più con l'intelligenza artificiale, applicate queste correzioni a dei video in movimento.
+
+Sono soddisfatto dell'effetto finale, e sempre quando si parla di effetti visivi.
+
+Il problema non è questione di soddisfazione, perché si può sempre migliorare, migliorare, migliorare, migliorare.
+
+A un certo punto c'è un momento di stop che corrisponde con la fine di un certo tipo di budget, che sia il budget temporale, nel senso dobbiamo andare in produzione, cioè in distribuzione, o il budget di soldi.
+
+Se abbiamo allocato X euro per questa attività, questa attività di conseguenza può prendere al massimo X ore, e di conseguenza quando finisco le ore, dopo diventa un \"lo faccio perché mi va di farlo, ma non perché vengo pagato\".
+
+Però questa è una discussione un po' più plicata e molto più ricca.
+
+Ci sono algoritmi di tracking che fanno tracking di punti e di conseguenza possono lavorare meglio dell'optical flow.
+
+Sì, ma per adesso sono applicati a singole sottoimmagini e non a tutte le immagini, in modo tale da creare questa mappa di distorsione.
+
+La mappa di distorsione probabilmente viene creata in qualche modo con un mix di optical flow e di intelligenza artificiale, nel caso in cui c'è uno slow motion da fare, ma che io sappia, a oggi non c'è un algoritmo basato su machine learning che sia più efficiente ed efficace di uno di questi tradizionali.
+
+E direi che per quanto concerne la post-produzione, stavolta posso dire che abbiamo finito veramente.
+
+Non c'è un algoritmo ancora di pressione dei video che lavori con la AI, e se ci fosse sarebbe meno efficiente, meno efficace, sarebbe molto più lungo, e il non determinismo dell'intelligenza artificiale potrebbe portare a risultati che sarebbero meno performanti.
+
+In più, dato che ormai tutti i chip hanno dentro di loro un coprocessore votato proprio per la trasformazione, per la generazione di video pressi, per adesso l'intelligenza artificiale non è uno degli ambiti in cui si lavora per poter lavorare e avere dei risultati migliori, perché i risultati sono già molto molto molto buoni con algoritmi tradizionali.
+
+Forse l'unico momento in cui arriva l'intelligenza artificiale nella fase di post-produzione, ma in realtà in tutte le fasi di realizzazione del progetto, deriva dal fatto che spesso volentieri mi faccio in maniera più o meno automatica correggere le mail con ChatGPT.
+
+Mi sono scritto un micro scriptino che, selezionando un testo e copiandolo, fa una revisione di questo in maniera automatica, senza passare attraverso ChatGPT ma direttamente nell'editor che sto usando o nel programma di post-elettronica.
+
+Stesso dicasi per la traduzione in inglese.
+
+Ci sono momenti della giornata in cui il mio inglese è veramente pessimo, tipo \"the pen is on the table, the cat is on the cradle\" e di conseguenza le scrivo in italiano e me le faccio tradurre in inglese.
+
+Da DPL, uno dei servizi migliori per la traduzione, in maniera automatica, sempre con una binazione di tasti, che è una cosa oda perché così non si lascia mai il programma che si sta utilizzando e si rimane nel flusso.
+
+Ok, direi che per oggi abbiamo terminato qui.
+
+Credo di avere ancora uno o due puntate in cui vi racconterò cosa succede dopo che un video è stato distribuito con l'uso dell'intelligenza artificiale.
+
+Ma non è questo il giorno, sarà per la prossima volta.
+
+Vi auguro un buon ascolto di quel che verrà di seguito e ringrazio ancora Valerio per questa possibilità di essere ospite e di raccontarvi questa mia piccola e limitata esperienza e vi do appuntamento alla prossima volta.
+
+Ciao, buona giornata.
+
+## Conclusione
+
+No Alex, sono io che ringrazio te perché, come ben sai, come ti ho già detto privatamente in passato, tu sei semplicemente una persona interessante e stare a sentire ciò che ha da dire una persona interessante non può che arricchire.
+
+Con questo terzo episodio, il nostro ospite ha coperto l'intero processo di produzione del suo spot, ma ha ancora qualcosa di molto interessante da dirci. Non ti anticipo nulla, ma sappi che la prossima settimana uscire il quarto ed ultimo episodio di questa serie: mi raccomando non te lo perdere.
+
+Ora, dato che sicuramente tu avrai seguito il mio consiglio e avrai già ascoltato i due episodi precedenti, stavolta questa parte ce la togliamo davanti più velocemente perché è la terza volta che la senti in tre settimane e quindi ti avrà anche un po' stufato.
+
+Questa nuova rubrica di Pensieri in codice si chiama Community Edition ed è pensata per gli ascoltatori che voglio provare a parlare di un argomento informatico che li appassiona o che li affascina.
+
+Quindi se vuoi partecipare anche tu, contattami - su Telegram o via email all'indirizzo valerio@pensieriicodice.it - e parliamone. È facile, te l'assicuro. Ti guido io.
+
+Se invece sei un nuovo ascoltatore o una nuova ascoltatrice e non vuoi perderti i prossimi episodi o addirittura vuoi recuperare i vecchi, iscriviti al podcast: è tutto gratuito, senza pubblicità e lo trovi su tutte le maggiori piattaforme.
+
+Come sempre, in descrizione trovi link e informazioni utili, tra cui i vari siti presso i quali puoi raggiungere Alex Raccuglia e tutti i suoi contenuti, i software che ha scritto, ecc. 
+
+Infine, - procediamo velocemente anche qui - Pensieri in codice è un progetto indipendente di divulgazione. Non ha scopo di lucro, e lo porto avanti nel mio tempo libero con il supporto di vari membri della community che, quando possono, mi aiutano con la gestione, la creazione di locandine, ecc.
+
+Questo che vuol dire? Semplice: che per andare avanti ha bisogno anche del tuo supporto. Tu lo ascolti gratis, non vieni tracciato, non ascolti nemmeno la pubblicità, però l'accordo tra gentiluomini - o gentildonne, sempre che si dica così - è che tu pensi a quanto ti dispiacerebbe se il progetto sparisse.
+
+Te ne fregherebbe un po'? Se la risposta è no, allora vabbè: ciao. Ma se la risposta è sì, pensa a cosa potresti fare per dare il tuo piccolo contributo. E non parlo necessariamente di donazioni, anzi al momento sarebbe molto più interessante avere un po' del tuo tempo o del tuo talento.
+
+Penso che ormai lo sai, no? Si tratta di aiutare a condividere, aiutare a fare un po' di attività su qualche social, portare nuovi ascoltatori... le solite cose insomma. Se ti va, io sono nel gruppo Telegram: scrivimi, dimmi cosa sai fare o cosa ti piacerebbe fare o semplicemente se hai tempo da dedicare e ci ragioniamo insieme.
+
+Basta, per oggi chiudiamola qui. Non dimenticare che la prossima settimane esce l'episodio conclusivo della serie di Alex e, ovviamente, che *un'informatico risolve problemi, a volte anche usando il computer*.
+"
