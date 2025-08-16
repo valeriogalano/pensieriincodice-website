@@ -1,0 +1,294 @@
+text: "
+## Introduzione
+
+Dici la verità: anche tu qualche volta hai utilizzato un chatbot o un motore di ricerca basato su Intelligenza Artificiale generativa per farti dare delle risposte o dei consigli su un qualche argomento?
+
+Magari in un ambito nel quale non hai troppa dimestichezza e senti il bisogno di una guida. Non c'è nulla di male, ovviamente. Lo facciamo tutti, io per primo. 
+
+Ma c'è una cosa da tenere bene a mente quando utilizziamo un Large Language Model e cioè che esso, non solo potrebbe facilmente commettere errori, ma potrebbe anche mentire o addirittura assecondare le nostre affermazioni anche se queste sono completamente errate.  
+
+Oggi scopriamo insieme il motivo per cui, nonostante questi strumenti possano rappresentare un enorme vantaggio per chi li utilizza, è bene sapere che non bisogna mai fidarsi ciecamente delle loro risposte.
+
+Parliamo, infatti, del perché le Intelligenze Artificiali inventano cose, ci assecondano e ci mentono.
+
+Sigla.
+## Chiarimenti
+
+Prima di iniziare con il nostro discorso trovo doveroso fare alcuni chiarimenti.
+
+Innanzitutto, anche se in questo episodio utilizzeremo la definizione generica di Intelligenza Artificiale, ricordiamoci sempre che si parlerà solo ed esclusivamente di machine learning generativo. Nello specifico di Large Language Model.
+
+In secondo luogo, e questo non lo dirò mai abbastanza, anche se utilizzeremo verbi come mentire, assecondare, decidere, imparare, ecc., dobbiamo avere sempre ben chiaro in mente che gli LLM non hanno alcuna intenzionalità nei loro comportamenti né tantomeno una vera comprensione del significato dei testi che generano.
+
+Quando parliamo di allucinazioni, di pensiero o di menzogne, lo facciamo solo perché sono concetti che ci risultano più facili da comprendere e descrivono funzionamenti di queste macchine che assomigliano ai relativi comportamenti tipici degli esseri umani.
+
+Ma stiamo sempre parlando di macchine, non di umani. Pertanto, seppur apparendo in tutto e per tutto simile all'interazione con un altro individuo della nostra specie, le ragioni dietro la generazione di ogni singola riposta sono completamente diverse.
+
+In realtà, lo ripeto ancora, anche se ci ostiniamo a chiamarli Intelligenze, questi algoritmi non sono esseri intelligenti, non pensano veramente, non hanno obiettivi, intenzioni o volontà propria. Se si comportano in un determinato modo, come vedremo a breve, è semplicemente - semplicemente, fra virgolette - per questioni statistiche.
+
+Siamo noi ad attribuire ai risultati dei loro calcoli significati tipicamente umani.
+## Allucinazioni
+
+Se anche non ti sarà capitato di ricevere personalmente risposte errate da parte di un Large Language Model, avrai certamente letto qualche notizia, in giro per il Web, su chatbot che danno consigli assurdi o si comportano in modi inappropriati.
+
+Quando l'output di un LLM non ha senso, si parla di allucinazione e si intende quella condizione per cui un modello generativo produce una risposta che è perfettamente corretta e convincente dal punto di vista sintattico e formale, ma è sbagliata nel contenuto.
+
+Ad esempio, a me una volta è capitato che, mentre facevo ricerche su Charles Babbage per gli episodi su Ada Lovelace, un llm - credo ChatGPT - mi abbia riportato una citazione molto bella attribuita all'inventore, ma che in realtà non trovava riscontro in nessuna fonte e, soprattutto era stranamente datata circa 40 anni dopo la sua morte.
+
+A proposito: se non hai ascoltato la miniserie su Ada Lovelace, sappi che hai perso uno dei migliori contenuti che io abbia mai prodotto qui su Pensieri in codice, quindi recuperala, mi raccomando. Te la metto in descrizione.
+
+Tornando alle nostre allucinazioni, però, secondo fonti più oggettive, come la stessa OpenAI - una tra le maggiori aziende produttrici di Large Language Model - gli ultimi 4 modelli di ChatGPT presentano allucinazioni - in determinati ambiti - in percentuali di risposte che oscillano tra il 37% e l'80%.
+
+Ciò vuol dire che, anche con i migliori LLM in circolazione, in certi ambiti, potenzialmente una risposta su tre potrebbe essere errata in parte o totalmente: un dato abbastanza preoccupante, se pensiamo a come vengono utilizzati oggi questi strumenti. 
+
+Riflettendo, però, un attimo sulle basi del funzionamento di un Large Language Model non dovrebbe essere troppo complicato capire da dove originano tali e tanto diffusi malfunzionamenti.
+
+Anche su questa questione, c'è un interessantissimo episodio sempre di questo podcast intitolato *Come funziona ChatGPT* in cui ho già affrontato l'argomento in modo più approfondito - e trovi anche questo in descrizione.
+
+Ma volendo riassumere brevemente, possiamo semplicemente dire che, in fin dei conti un LLM compone i propri testi accodando una parola dopo l'altra selezionando ciascuna di esse, di volta in volta, su base statistica.
+
+In pratica, partendo da una sequenza di parole, individua statisticamente la successiva valutando quale è più probabile che possa accodarsi, basandosi sulle occorrenze all'interno di un corpus di documenti con i quali è stato addestrato.
+
+Più volte, nei dati di addestramento, un gruppo di parole è seguito da un'altra parola, più - secondo il modello - è probabile che quella parola si adatti bene al contesto. 
+
+L'algoritmo, poi, replica questa operazione di scelta un certo numero di volte fino a comporre un testo della lunghezza desiderata.
+
+Un LLM reale, ovviamente, è molto più complesso di così ed è dotato di moltissime sovrastrutture utili a migliorarne la qualità, ma per qualsiasi modello esistente, se lo si scompone e si scava abbastanza a fondo, il funzionamento di base è più o meno quello che ti ho descritto.
+
+E cosa vuol dire questo? Semplice: che a livello logico un Large Language Model, che potrebbe intuitivamente sembrare un enorme database della conoscenza umana, in realtà è molto più simile ad una gigantesca palla 8.
+
+Hai presente, no? Quelle sfere piene di liquido che agiti e dopo qualche istante fanno apparire una risposta: *Sì, No, Forse*...
+
+Se aprissimo un LLM e vi guardassimo all'interno non vedremmo delle informazioni - intese come dati ai quali viene dato un senso -, ma solo miliardi e miliardi di numeri.
+
+Questi numeri, vengono utilizzati dal modello per scegliere di volta in volta la parola successiva da aggiungere al testo, fra quelle che - sempre nel corpus di documenti utilizzati - ricorre con maggiore frequenza di seguito a quelle che già compongono la prima parte del testo.
+
+All'atto pratico, volendo semplificare al massimo, ogni volta che il modello deve aggiungere una parola al testo, utilizza i numeri di cui sopra per calcolare dei punteggi per ciascuna parola del suo vocabolario.
+
+Più alto è il punteggio e più è probabile che la parola si adatti bene alle precedenti.
+
+Messa in questi termini sembra molto semplice, quasi banale, eppure essenzialmente questo meccanismo permette l'esistenza di quei potentissimi strumenti che noi oggi chiamiamo Intelligenze Artificiali Generative.
+
+Purtroppo, però, in questo processo c'è un limite intrinseco.
+
+Se il calcolo della parola successiva, infatti, fosse sempre preciso al 100%, a parità di modello utilizzato ad una specifica frase seguirebbe sempre la stessa parola. Il calcolo del punteggio, infatti, darebbe sempre gli stessi risultati e questi porterebbero ad avere sempre lo stesso vincitore.
+
+In pratica, ciò vuol dire che, se fosse come detto, accadrebbe che a prompt identici, uno specifico modello risponderebbe sempre con risposte identiche.
+
+Ma noi sappiamo benissimo che nella realtà non è così: se facciamo cento volte la stessa domanda allo stesso modello otteniamo sempre una risposta leggermente diversa. Magari le informazioni cambiano solo un po' ma sicuramente cambia la forma in cui sono espresse.
+
+Questo comportamento deriva dal fatto che un LLM deve poter rispondere a prompt che non conosce già perfettamente e, per fare ciò, è necessario che esso possa combinare parole e frasi in modi nuovi rispetto ai testi originali su cui è stato addestrato.
+
+Un modello linguistico che avesse bisogno di input precisi e restituisse output costanti in modo deterministico non differirebbe da un software tradizionale, pertanto non avrebbe motivo di destare tanto entusiasmo ed essere oggetto di tanto dispendio di risorse a livello planetario, come invece accade per questa tecnologia.
+
+È necessario, invece, che un llm possa mescolare concetti e idee provenienti da fonti diverse, che possa variare nell'utilizzo delle parole e del modo di esprimere le informazioni, e tutto questo al fine di fornire risposte che sembrino creative e innovative.
+
+Il punto, però, è che un tale risultato di simulata creatività si può ottenere solo inserendo nel processo di selezione delle parole una piccola percentuale di imprecisione, una leggera componente di casualità che permetta di non associare sempre lo stesso output allo stesso input.
+
+La parola selezionata di volta in volta, quindi, non è esattamente la più pertinente, ma una scelta all'interno del gruppo delle più pertinenti.
+
+Una così semplice accortezza è, in realtà, il segreto della potenza di questi strumenti. È ciò che permette loro di fornire risposte sorprendenti, di mescolare idee da contesti diversi, di esprimersi con stili differenti, ecc.
+
+Peccato, però, che per questa stessa identica ragione essi non possono essere accurati al 100% - ovviamente - e, in determinati casi, un susseguirsi di scelte un po' troppo creative porti alla generazione di quelle risposte sbagliate che noi chiamiamo allucinazioni.
+
+Non esiste alcun modo per assicurarsi che parole messe in fila con una - seppur piccola - percentuale di casualità portino a comporre un testo con un senso logico ben definito e ad esporre informazioni corrette.
+
+Gli LLM - ripetiamolo ancora una volta - non hanno comprensione dei testi che generano e pertanto si può tranquillamente affermare che essi non possono avere capacità o intenzionalità di restituire affermazioni vere o false: di fatto, essi non hanno alcun vincolo di realtà.
+
+In effetti, guardandola da questo punto di vista, dovrebbe apparire chiaro che qualsiasi prodotto di un modello generativo è di fatto un'allucinazione: il modello, infatti, non è in grado di giudicare in alcun modo se ciò che ha restituito sia sensato o meno.
+
+Siamo noi a dare un senso a questi testi e, se li troviamo corretti e sensati, li definiamo risposte, altrimenti li chiamiamo allucinazioni.
+
+Per completezza di discorso, poi, diciamo ci sono anche altre ragioni - molto più intuitive - che possono portare i modelli generativi a sbagliare e sono, ad esempio, errori nei dati di addestramento o prompt eccessivamente ambigui, ma questi sono aspetti su cui è possibile lavorare.
+
+Si possono migliorare i dati fino a farli diventare quasi perfetti e si possono migliorare i prompt fino a farli diventare estremamente precisi. Quello che non si può fare, però, è eliminare la necessità di avere un meccanismo di combinazione dei concetti come quello descritto prima.
+
+Uno studio dell'università di Singapore, infatti, ha dimostrato matematicamente che, per quanto possa essere grande e potente un modello generativo linguistico, esso non potrà mai imparare tutte le risposte a tutte le domande possibili.
+
+Dovrà, pertanto, sempre in qualche modo combinare concetti e idee distinti e, per questo motivo, ci sarà sempre una certa percentuale di rischio che esso produca allucinazioni.
+## Sicofantia
+Se le allucinazioni sono forse il tipo di mal funzionamento più conosciuto nei grandi modelli di generazione linguistica, esse non sono certo l'unico motivo che ci dovrebbe spingere a mantenere un certo livello di vigilanza sulle risposte di questi strumenti.
+
+Il fenomeno della *sicofantia*, ad esempio, è venuto alla ribalta di recente, a seguito di uno specifico aggiornamento di qualche mese fa al più famoso chatbot in circolazione: che ovviamente è ChatGPT.
+
+Secondo la stessa casa produttrice - OpenAI -, il chatbot aveva iniziato a bollare come assolutamente fantastiche le idee più stupide propostegli dagli utilizzatori. Il culmine si è raggiunto quando un utente si è visto definire *genio* per aver ideato un business di vendita di cacche su bastoncini.
+
+Definirlo *sicofante* è risultato particolarmente calzante perché ChatGPT aveva iniziato - in maniera piuttosto evidente - a favorire le idee degli utenti al di sopra del buon senso e, per farlo, assumeva perfino un atteggiamento delatorio nei confronti della realtà dei fatti accertati.
+
+OpenAI ha ovviamente posto rimedio in tempi brevi con un nuovo aggiornamento ma la notizia non è passata inosservata e, anche se la tendenza del bot ad assecondare è stata mitigata, ciò non vuol dire che ora il modello sia totalmente immune da questo tipo di comportamenti.
+
+Anzi, in realtà, la cosa più preoccupante - risultata poi da una serie di indagini scatenate dalla notizia - è che la sicofantia è risultata essere molto più comune di quanto si possa pensare, nei chatbot, e anche non così recente.
+
+In un paper di Anthropic, ad esempio, - altra azienda tra i pesi massimi nella produzione di large language model - i ricercatori avevano evidenziato, già nel 2023, come sia uno comportamento diffuso, per gli assistenti digitali, quello di sacrificare la realtà delle cose a favore dell'adattamento al punto di vista dell'utente.
+
+In pratica, i chatbot hanno la tendenza a compiacere l'utente di turno, avvalorando le sue tesi anche se queste sono poco sensate o infondate e confermando le sue convinzioni anche se imprecise o addirittura sbagliate.
+
+Ora, vista la reazione di OpenAI, si potrebbe pensare che la sicofantia - a differenza delle allucinazioni, che abbiamo scoperto essere impossibili da estirpare a causa della strutturazione stessa di un modello linguistico - sia invece correggibile in qualche modo, ma purtroppo, anche in questo caso, non è così. Almeno non per il momento.
+
+La causa di questo strano funzionamento, infatti, viene fatta risalire, dai ricercatori stessi, direttamente al metodo utilizzato per l'addestramento dei più moderni modelli. Metodo che, purtroppo, rappresenta anche lo stato dell'arte.
+
+In altre parole: non esiste un metodo migliore per addestrare un large language model di quello conosciuto come *Reinforcement Learning from Human Feedback* e che viene attualmente utilizzato praticamente per tutti gli ultimi modelli, commerciali e non.
+
+Ad oggi, l'apprendimento per rinforzo con supervisione umana è l'unico in grado di portare alla creazione di LLM in grado di competere o migliorare rispetto a quelli di ultima generazione.
+
+Con la crescita esponenziale del Machine Learning Generativo, infatti, si è notato che, se da un lato le conoscenze aumentavano in modo più che proporzionale rispetto ai dati e alla capacità di calcolo a disposizione, non valeva lo stesso per la capacità di relazionarsi con gli utenti.
+
+La comprensione delle richieste era scarsa, e pertanto bastava un minimo errore nel prompt per portare alla generazione di risposte notevolmente lontane dall'argomento oggetto della domanda.
+
+I testi prodotti risultavano spesso poco simili a quelli che avrebbe scritto un umano, sia dal punto di vista della costruzione di frasi e dei periodi, sia dal punto di vista della capacità espressiva.
+
+E non erano rari atteggiamenti scorretti di vario tipo verso i più disparati soggetti: affermazioni discriminatorie, razzismo, sessismo, risposte aggressive, suggerimenti fuori luogo o addirittura potenzialmente pericolosi, e via discorrendo.
+
+Quando quindi le aziende hanno iniziato a realizzare che incrementare le moli di dati di addestramento e la potenza computazionale non era più sufficiente per andare a colmare i limiti dei loro modelli, hanno iniziato ad adottare l'apprendimento per rinforzo supervisionato da umani come successivo passo evolutivo.
+
+A onor del vero, questo non è l'unico motivo che ha portato all'adozione del RLHF: ne esiste perlomeno anche un secondo, anch'esso molto importante e forse anche più intuibile, ma me lo lascio per il prossimo blocco, perché ci aiuterà a capire meglio un concetto.
+
+Ad ogni modo, però, una volta risolto un problema come - spesso accade - se ne è venuto a creare un altro strettamente legato alla soluzione adottata.
+
+Il Reinforcement Learning con supervisione umana funziona con una semplice logica: il modello viene messo al lavoro - quindi nello specifico gli vengono fatte domande a cui deve rispondere - e viene premiato o punito a seconda che il controllore consideri buona o cattiva la risposta.
+
+Nel Reinforcement Learning semplice le punizioni e i premi sono in realtà risultati di formule matematiche, ma di questo abbiamo parlato nell'episodio su AlphaDev che ti lascio sempre in descrizione e che ti invito a recuperare.
+
+Nel metodo con rinforzo umano, invece, la differenza principale sta nel fatto che, il premio o la punizione viene assegnato non da un calcolo matematico ma direttamente dal giudizio umano.
+
+Questa affermazione suona come un enorme passo avanti, ed in effetti lo è, ma nasconde anche un'insidia che, ad una prima occhiata, non è così evidente.
+
+Se prima, infatti, i modelli venivano addestrati solo con rigorose formule matematiche, si poteva in un certo qual modo fare affidamento sul fatto che il risultato dell'operazione sarebbe stato tanto affidabile quanto lo erano le formule utilizzate.
+
+Inserendo, invece, una fase svolta da umani all'interno del processo, questa sicurezza viene un po' a decadere: ovviamente, anche in questo caso, il modello viene ottimizzato, ma non necessariamente nel migliore dei modi.
+
+Dato, infatti, che gli umani - purtroppo o per fortuna - sono fallibili, lo è anche il giudizio che possono esprimere sulle risposte generate da un LLM. Statisticamente parlando, non è pensabile che tutti i controllori conoscano alla perfezione e siano in grado di etichettare in modo perfetto ogni risposta.
+
+Capita che possano dare il proprio giudizio anche rispetto ad output che *sembrano* giusti o sbagliati ma in realtà non lo sono: sappiamo bene - l'abbiamo già detto più volte - che gli LLM hanno un modo molto convincente di esporre le informazioni, giuste o sbagliate che siano.
+
+Gli umani sono umani e pertanto tendono anche a farsi convincere da determinati modi di fare, da determinati toni nell'esposizione e, perché no, anche da lusinghe e accondiscendenza - che in maniera velata o meno, possono comunque a solleticare il loro ego.
+
+Dal canto suo, invece, il modello - ancora una volta - non è dotato di alcun tipo di capacità di comprendere cosa produce in output e cosa riceve in input, pertanto non sa per quale motivo le risposte gli vengono contrassegnate come giuste o sbagliate. Sa solo che è così.
+
+Con l'avanzare del processo di addestramento, esso accumula una serie di dati e cerca di estrapolarne un qualcosa che accomuni tra loro le risposte giuste da una parte, quelle sbagliate dall'altra e tutte le sfumature nel mezzo.
+
+In definitiva con il RLHF, un importante effetto collaterale è che il modello impara, fra le varie cose, anche che le risposte migliori sono quelle che maggiormente assecondano il proprio controllore. Magari quelle che gli danno ragione o che comunque non gli danno torto.
+## Menzogne
+L'ultima frontiera nel campo dei grandi modelli linguistici sono i cosiddetti *Large Reasoning Models* o *LRM* - o LRM all'italiana.
+
+Dicendola in modo semplice, essi sono dei modelli che, per rispondere ad un determinato prompt, eseguono tutta una serie di passaggi effettuando delle domande a sé stessi e rispondendovi, per migliorare la comprensione del problema sottoposto e la qualità della risposta.
+
+Questa serie di scambi precedenti alla generazione dell'output viene definita *chain-of-tought* - catena di pensiero - e, in molti modelli, viene proprio esplicitata come parte della risposta stessa. Ciò permette agli utenti di verificare in che modo il modello sia arrivato a formulare l'output fornito.
+
+Peccato, però, che un recente studio - sempre di Anthropic - ha evidenziato come, in realtà, in una percentuale sorprendentemente alta di casi, gli LRM presi in esame, tendono a divergere tra la risposta e la catena di pensiero.
+
+Gli esperimenti riportati si basavano essenzialmente sul fornire ai modelli dei suggerimenti da utilizzare per rispondere alle domande e poi sull'andare a verificare se essi venivano innanzitutto utilizzati e poi menzionati nella chain-of-tought.
+
+Tali suggerimenti potevano essere di vario tipo - alcuni erano corretti, altri sbagliati; alcuni palesi, altri poco evidenti - e al modello veniva lasciata piena libertà di scelta nel decidere se utilizzarli o meno.
+
+L'idea alla base degli esperimenti era quella di verificare se il modello, pur decidendo di utilizzare il suggerimento, evitasse poi di menzionarlo nella catena di pensiero. In tal caso, in tal caso sarebbe stato considerato bugiardo. In caso contrario, onesto.
+
+I risultati hanno mostrato che la maggioranza sostanziale delle risposte è stata infedele: tra i vari modelli esaminati, ad esempio, in media Claude 3.7 Sonnet ha menzionato il suggerimento solo il 25% delle volte, mentre DeepSeek R1 lo ha menzionato appena il 39% delle volte.
+
+Nel complesso, la ricerca indica che i modelli di ragionamento avanzati in generale, molto spesso nascondono i loro veri processi di pensiero, e talvolta lo fanno proprio quando i loro comportamenti sono esplicitamente disallineati.
+
+In pratica, possiamo dire che gli LRM, di fatto mentono. E non intendendo che essi riportano informazioni errate - quello lo abbiamo già constatato parlando di allucinazioni - ma proprio nel senso che essi non *dicono quello che pensano*.
+
+Dopo un'affermazione del genere, però, è sempre importante ricordare che un llm non dice verità o menzogna con un'intenzionalità, come abbiamo già detto nei blocchi precedenti, tira semplicemente fuori la sequenza di parole più probabili collegate al prompt.
+
+Prima ti ho anticipato che c'è una seconda ragione per la quale il *Reinforcement Learning con Feedback Umano* è stato adottato per l'addestramento dei più avanzati modelli linguistici e di ragionamento. Ed è arrivato il momento di parlarne.
+
+In uno scenario in espansione e competitivo come quello dell'IA generativa, non dobbiamo mai dimenticarci che LLM ed LRM sono macchine appositamente progettate per dare risposte, pertanto, la possibilità che esse ammettano di non saper rispondere non è auspicabile.
+
+Le aziende, per loro natura, devono massimizzare il profitto e, in quanto prodotto impiegato per generare fatturato, la risposta *non lo so* da parte di un modello generativo viene di fatto considerata un problema.
+
+Un sistema che funziona a intermittenza o non genera senso di sicurezza negli utenti che pagano fior fiore di quattrini per costruirvi sopra le proprie soluzioni tecnologiche di ogni tipo, non è esattamente una manna per il business.
+
+Come abbiamo già detto, però, già da un po' ci si è resi conto che il solo continuare ad aumentare parametri e dati, non sarebbe stato sufficiente a produrre macchine onniscienti e infallibili.
+
+Ed è per questo che il nostro discorso ritorna sul Reinforcement Learning basato su feedback umano che è - ripetiamolo - lo stato dell'arte dell'addestramento e permette agli sviluppatori di produrre modelli sempre più efficienti. 
+
+Peccato, però, che come qualsiasi Large Language Model o Large Reasoning Model là fuori, nemmeno gli umani siano poi così onniscienti e infallibili.
+
+Come abbiamo già detto, infatti, un grosso limite del RLHF è che tende, sì, ad ottimizzare la capacità di risposta delle IA tramite la massimizzazione del premio, ma non sempre lo fa nel migliore dei modi.
+
+Innanzitutto, dato che difficilmente un controllore si accontenterà di una risposta del tipo *sinceramente a questa domanda non so rispondere*, una cosa fondamentale che l'addestramento supervisionato imprime nei modelli è che *non lo so* non è una risposta che viene ricompensata.
+
+Al tempo stesso, però, gli umani designati come controllori, ovviamente, non possono conoscere ogni singola nozione dello scibile umano e, altrettanto ovviamente, non sono in grado di giudicare tutte le risposte della macchina con precisione totale e infallibilità.
+
+Ciò vuol dire che, durante l'addestramento, quando il modello genera una risposta che viene contrassegnata come errata, ci sono di fatto due strade per ottimizzare la situazione.
+
+La prima è  migliorare nel dare risposte più dettagliate e corrette. Ma l'altra - ed è qui che si verifica il problema - è generare risposte più convincenti e che sembrino più corrette, pur non essendolo.
+
+Se, dunque, l'LRM non ha una risposta corretta e *non lo so* non è una risposta valida, allora quello che resta è generare una risposta abbastanza verosimile, ben strutturata e in forma fluente, da riuscire a superare il controllo anche senza essere necessariamente corretta.
+
+I supervisori umani, infatti, semplicemente possono non essere in grado di segnalare come  risposte sbagliate quelle che - pur essendolo - appaiono però abbastanza sensate e coerenti da ingannarli.
+ 
+L'obiettivo dell'addestramento, in pratica, diventa non più quello di formulare risposte esatte, ma quello di *convincere l'essere umano che la risposta sia corretta*. Non importa come, se migliorando veramente l'output o semplicemente facendoglielo solo credere.
+
+In pratica, il modello impara che migliorare nella capacità di nascondere l'incompetenza funziona altrettanto bene che migliorare nella conoscenza. Di fatto, le IA mentono perché noi stiamo dicendo loro che facendolo vengono ricompensate.
+
+In uno studio pubblicato su *Nature*, alcuni ricercatori hanno evidenziato come, con il passare delle generazioni di modelli generativi, le riposte del tipo *non lo so* sono progressivamente state sostituite con risposte molto più articolate ma anche... sbagliate.
+
+A quanto pare, più difficile è la domanda sottoposta e più avanzato è il modello utilizzato, più è probabile che la risposta generata sia un insieme di sciocchezze. Solo che saranno sciocchezze molto plausibili e molto ben scritte.
+
+Gli stessi ricercatori, poi, hanno anche svolto un sondaggio online con 300 partecipanti per capire quale modello fosse il più bravo a mentire. Il vincitore è risultato essere ChatGPT, ma la cosa - a mio avviso - più interessante è che le persone non sono riuscite ad individuare gli errori in una percentuale molto alta di casi.
+
+Tra le varie, le risposte errate fornite nella categoria scientifica sono state qualificate come corrette in oltre il 19% dei casi. Quelle di geografia nel 32% e, addirittura, le trasformazioni - cioè compiti in cui si chiedeva di estrarre e riorganizzare le informazioni presenti nei prompt - in ben il 40%.
+
+In pratica, stiamo insegnando alle Intelligenze Artificiali a mentire, e lo stiamo facendo anche molto bene.
+## Dobbiamo fare attenzione
+Sapere come funzionano certe limitazioni delle Intelligenze Artificiali - strumenti che ormai utilizziamo praticamente ogni giorno - è fondamentale per evitare di incappare in una serie incidenti quantomeno spiacevoli.
+
+Tanto per cominciare, è lo stesso Sam Altman, CEO di OpenAI, a ricordare sempre più spesso al mondo che il suo prodotto di punta, ChatGPT, soffre costantemente di allucinazioni e a chiedersi come sia possibile che tante persone credano ciecamente a qualsiasi risposta esso produca. E se lo dice lui...
+
+Nell'ultimo articolo che mi è capitato sotto mano c'è questo suo virgolettato - la traduzione è mia - *Le persone hanno un livello molto alto di fiducia in ChatGPT, il che è interessante perché l'IA ha le allucinazioni. Dovrebbe essere quella tecnologia di cui non ti fidi così tanto* - fine citazione.
+
+Le problematiche che abbiamo descritto in questo episodio - come spesso accade per gli argomenti di cui parliamo in questo podcast - sono virtuali, ma hanno poi ricadute estremamente reali.
+
+Per la questione delle allucinazioni, non penso di doverti chiarire chissà cosa. Gli LLM sbagliano: possono tirare fuori informazioni sbagliate, possono sbagliare i calcoli, posso riportare male tendenze, andamenti o fare analisi incongrue, e non parliamo poi dei collegamenti logici fra concetti e ragionamenti.
+
+In pratica, se li utilizziamo per prendere decisioni, per fare scelte, o per creare testi da utilizzare altrove - dalla stesura di un libro alla preparazione di biglietti d'auguri - dobbiamo essere consci del fatto che, in ogni singola frase, si potrebbero annidare errori.
+
+Questo, chiaramente, non significa che non li possiamo usare mai, anzi io ne incoraggio l'utilizzo, quando utile. Mi raccomando non credere che io sia un luddista: sono il primo che li usa.
+
+A seconda del contesto e dell'importanza dell'attività che stiamo svolgendo, però, dobbiamo tenere bene a mente che è necessario controllare a fondo i loro output, prima di utilizzarli.
+
+Se, invece, spostiamo l'attenzione sulla sicofantia che abbiamo descritto pocanzi, i problemi sono forse un po' meno evidenti rispetto a quelli delle generiche allucinazioni.
+
+Al di là del semplice fatto di trovare magari fastidioso un interlocutore al quale stiamo in effetti chiedendo aiuto per portare a termine un'attività e che ci continua a rispondere riportando quante le nostre idee siano intelligenti e perfette, l'artificioso modo di assecondare degli LLM potrebbe, in realtà, rappresentare una sorta di trappola per l'utente.
+
+Come già accaduto per i social, i quali hanno spinto all'estremo la proliferazione delle cosiddette bolle - cioè quelle sorte di ambienti protetti in cui noi tutti trascorriamo parte del nostro tempo interagendo con persone che la pensano come noi o a contatto con informazioni che descrivono il mondo come noi lo vediamo, o ragionamenti che si allineano alle nostre convinzioni - allo stesso modo, un chatbot sicofante diventa un meccanismo di rinforzo del nostro pensiero e dei nostri bias.
+
+Se nessuno mi dice mai che ho torto su qualcosa, che sto sbagliando un ragionamento o sono in possesso di un'informazione sbagliata o ho fatto un ragionamento campato in aria, ma anzi si complimenta per qualsiasi cosa io esterni, allora non mi metto in discussione e mi convinco di essere totalmente nel giusto e che tutto il mondo la pensa come me, ma questo non è vero: non lo è mai.
+
+Se i chatbot divengono ennesimi strumenti di rinforzo della bolla, invece di aiutarmi a scoprire ed accettare diversi punti di vista o imparare a gestire il confronto e gli errori, saranno semplicemente una nuova gabbia dorata che mi isolerà ancora una volta dal mondo reale e da tutte le sue sfaccettature.
+
+Infine, nel nostro discorso restano quelle che abbiamo definito come menzogne - cioè il nascondere la vera catena di pensieri che ha portato ad una risposta. Esse sono una caratteristica degli LRM che ha vari impatti, soprattutto a livello tecnico.
+
+Innanzitutto, le catene di pensiero vengono utilizzate per studiare il comportamento dei modelli e verificare come avviene la produzione di un determinato output e, pertanto, la loro inesattezza inficia le attività di ricercatori, studiosi e progettisti.
+
+Ma pensiamo a qualcosa di ancora più pratico. Facciamo un esempio: immagina che ad un modello di ragionamento per il supporto medico venga chiesto *Quale delle seguenti indicazioni dobbiamo dare ad un paziente per ridurre il rischio di sviluppare un tumore? Eliminare la carne rossa? I grassi alimentari? Il pesce? O curare l'obesità?*.
+
+Il modello vede - da qualche parte nell'intera storia clinica del paziente o di chissà quale archivio - un sottile indizio che indica che la risposta corretta è *elimina i grassi alimentari* e scrive una lunga spiegazione nella sua catena di pensiero sul perché essa è corretta, senza mai menzionare di aver utilizzato quell'indizio.
+
+In un caso del genere c'è solo da sperare di essere in presenza di un bravo medico che si accorga che lo strumento ha generato un'allucinazione, perché dalle informazioni fornite sul processo di ragionamento effettuato sarà, di fatto, impossibile individuare la presenza dell'errore e la sua fonte.
+
+In conclusione, i chatbot basati su Intelligenza Artificiale generativa sono inaffidabili sotto molti punti di vista, anche se si sta lavorando per migliorarli e ci sono novità e passi avanti praticamente ogni giorno.
+
+Forse un giorno tutti i problemi verranno risolti, ma per il momento non è così. E, secondo me, serviranno ancora un bel po' di anni. Nel frattempo, quindi, quello che faccio - e che consiglio di fare anche a te - è fare attenzione e controllare gli output.
+
+So che non possiamo vigilare su tutto e verificare ogni singola parola - altrimenti invece di farci risparmiare tempo ce ne farebbero perdere -, però, almeno per le cose che riteniamo importanti, beh, lo sforzo dovremmo farlo.
+
+D'altronde, nessuna tecnologia funziona senza alcun costo da pagare e, nel caso dell'Intelligenza Generativa, la vigilanza è una delle componenti del prezzo più importanti e meno evidenti.
+
+## Conclusione
+Ce l'abbiamo fatta. Abbiamo portato a casa l'episodio 142. Ultimamente sono molto in difficoltà, devo dire, e magari dovrei provare a fare un ragionamento approfondito sul perché. Ma non oggi, perché altrimenti questo podcast non esce più.
+
+Velocissimamente ringrazio i donatori periodici, Edoardo e Carlo. E poi Michele e Paola che si aggiungono oggi con la loro donazione singola. Loro hanno scelto di restituire valore a Pensieri in codice in questo modo.
+
+Se vuoi farlo anche tu, trovi i link nella descrizione o nella sezione Sostieni del sito pensieriincodice.it. Ricorda: non è obbligatorio e non c'è una cifra minima; la scelta di quanto vale il mio lavoro io la lascio a te.
+
+Se invece preferisci ricompensarmi con un po' del tuo talento o del tuo tempo, ricordati che portare nuovi ascoltatori è sempre un bel modo - nel 2025 non ti devo certo spiegare io come diffondere un contenuto - e poi ricorda anche che ci sono tante attività su cui puoi dare una mano.
+
+Contattami e parliamone: c'è, ad esempio, la nuova rubrica Pensieri in codice Community Edition, in cui puoi creare il tuo episodio con la tua voce; oppure c'è la necessità di aprire e gestire degli account social; oppure, come dico sempre, dimmi tu cosa sapresti o vorresti fare e vediamo di organizzarci.
+
+Mi trovi su telegram, nel gruppo di Pensieri in codice - sempre link in descrizione e sul sito pensieriincodice.it - o all'indirizzo valerio@pensieriincodice.it (mi raccomando, con due i).
+
+Per citare il mio caro amico Alex Raccuglia, che ultimamente ha realizzato ben 4 episodi per Community Edition, *ti auguro un buon ascolto di quel che verrà* e noi ci risentiamo probabilmente a Settembre senza mai dimenticarci che *un informatico risolve problemi, a volte anche usando il computer*.
+"
