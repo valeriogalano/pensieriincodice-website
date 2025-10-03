@@ -1,0 +1,252 @@
+text: "
+## Introduzione
+
+Oggi il termine *Intelligenza Artificiale* è sulla bocca di tutti ma solo pochi decenni fa, tante delle tecnologie che oggi sono date per scontate erano a dir poco sperimentali, oppure pionieristiche, o addirittura non esistevano proprio.
+
+E troppo spesso, di queste scintille, di queste evoluzioni o genesi, si perde traccia nel corso del tempo o nel marasma della corsa a sviluppare l'ultima e più avanzata versione, che magari poco aggiunge in termini di valore reale, ma viene puntualmente corroborata dall'ennesimo roboante annuncio.
+
+Secondo me, invece, è sempre bene ricordare le storie interessanti sulle quali poggiano l'informatica, il software e la tecnologia moderni. Sopratutto se si tratta di idee, invenzioni e lavori che hanno come unica colpa quella di essere stati concepiti e realizzati troppo presto, prima che la società o il contesto tecnologico fossero pronti ad accoglierli.
+
+Oggi, quindi, basandomi fortemente sul libro *Meglio artificiale che niente* di *Oliviero Stock* - importante esponente dell'Intelligenza Artificiale in Italia e non solo - voglio raccontarti la storia di uno dei maggiori istituti europei per la ricerca in Intelligenza Artificiale - appunto - che vide la luce a Trento a metà degli anni '80.
+
+Sigla.
+## C'era una volta l'Intelligenza Artificiale in Trentino
+
+Il Trentino-Alto Adige rivendica le ragioni della propria autonomia a partire dalla metà dell'800 e negli anni '80 del secolo scorso - periodo nel quale inizia la nostra storia - gode già di uno status di autogoverno in moltissimi campi.
+
+Nonostante in quegli anni non sia considerata esattamente un polo culturale d'eccellenza, la Provincia Autonoma di Trento ospita industrie di rilievo e presenta una notevole efficienza, dovuta - oltre che all'autonomia - anche ad una tradizione di buona amministrazione.
+
+È proprio in questo clima - per l'esattezza nel 1982 - che - si narra, grazie ai buoni auspici di Romano Prodi, che all'epoca è presidente dell'*Istituto per la Ricostruzione Industriale* - due illustri personaggi di questa storia vengono messi in contatto fra loro.
+
+Il primo è Bruno Kessler, politico, all'epoca sottosegretario all'Interno, ex presidente della provincia di Trento, in carica per 14 anni, poi Senatore della repubblica. L'altro è Luigi Stringa, fisico, professore all'Università di Trento ed esperto di Intelligenza Artificiale e linguistica.
+
+Come già detto: sono gli anni '80. Ed è un periodo fervente per l'IA.
+
+Nel 1985, ad esempio, si tiene a Los Angeles la nona edizione dell'International Joint Conference on Artificial Intelligence - il più importante congresso mondiale sull'argomento - e si registrano ben 8000 partecipanti.
+
+Il mondo informatico e scientifico sta reagendo alla sfida lanciata dal Giappone di produrre una nuova classe di computer che, oltre ad avere capacità di calcolo parallelo, siano anche predisposti per il calcolo logico.
+
+È, di fatto, una forte spinta strategica verso la diffusione dell'IA che prende il nome di *Fifth Generation Computing* e alla quale gli Stati Uniti non sono certo disposti a rinunciare: ne consegue, quindi, una risposta importante in termini di investimenti e attenzione anche in Occidente.
+
+L'intuizione di Stringa, in questo periodo, è quella di approfittare della sua conoscenza con Kessler per proporre la costruzione di un nuovo istituto di ricerca a Trento che abbia come tema principale appunto quello dell'Intelligenza Artificiale e, in secondo luogo - reindirizzando competenze già presenti - quello della microelettronica. 
+
+Kessler, incoraggiato da pareri favorevoli e dalla stessa eco mediatica che giunge da oltre oceano, si entusiasma per l'idea e fa destinare al progetto un budget notevole da parte della Provincia Autonoma.
+
+Nasce così nel 1985 il nuovo *IRST* - *Istituto per la Ricerca Scientifica e Tecnologica* - che Stringa vuole idealmente collocare come una via di mezzo tra i concetti di Università e di Industria. Una sorta di terza via, il cui scopo è quello fare ricerca e sviluppo, ma anche di inseguire ricadute pratiche e di concreta necessità.
+
+Le aree di ricerca sono: machine vision, riconoscimento del parlato, linguaggio naturale, logica e ragionamento. Le idee di Stringa, poi, sono molto incentrate sul mondo fisico e fin dall'inizio si pensa ad un progetto di AI che sia però integrato a sistemi di interazione e robot.
+
+È così che, secondo i racconti di Oliviero Stock, già dal 1990 era comune incontrare il robot MAIA che si aggirava lentamente per i corridoi dell'istituto, anche se con fare incerto e lunghe e inspiegabili pause.
+
+E pare anche che non fosse l'unico: altri robot più piccoli, infatti, intesi per compiti e ruoli specifici si muovevano per la struttura, imparando e interagendo con gli umani presenti.
+
+È interessante notare, poi, come nonostante i fatti riportati risalgano principalmente agli anni '80 e '90, molti degli aneddoti che Stock ha incluso nel suo libro ricordano da vicino atteggiamenti e linee di pensiero piuttosto moderne.
+
+La forte attenzione all'interazione uomo-macchina, ad esempio: all'epoca vista come lo sviluppo di interfacce e sensoristica specifica mentre oggi come il modo per sfruttare l'hardware esistente e già ampiamente diffuso, rappresentato da computer e smartphone.
+
+O anche i modi di fare di Stringa, come amava le luci della ribalta e spesso faceva uscite notevoli con la stampa. Era solito promettere risultati eccezionali e ricadute straordinarie sul territorio. Promesse che successivamente, in momenti critici, venivano rilanciate più in alto... e sempre più lontano.
+
+Oggi l'IRST di Trento è stato riorganizzato e rinominato come Fondazione Bruno Kessler e, se vuoi approfondirne la veste e le attività moderne, trovi in descrizione il link al sito ufficiale.
+## AlFresco
+
+Una delle applicazioni di Intelligenza Artificiale nate e sviluppate all'IRST di Trento a cui viene dato maggior risalto all'interno del libro è certamente il progetto chiamato *AlFresco*.
+
+Si tratta di un sistema - perché chiamarlo solo software, come vedremo a breve, sarebbe assolutamente riduttivo - il cui scopo è quello di interagire con l'utente per illustrare in modo estensivo e personalizzato le caratteristiche di tutta una serie di affreschi del trecento d.C.
+
+Gli utilizzatori possono porre domande ed ottenere risposte dettagliate e specifiche sulle varie opere; possono ricevere informazioni collaterali riguardanti i luoghi di realizzazione o gli autori e la loro vita; e possono, perfino, isolare parti specifiche delle immagini ed approfondirne la conoscenza. 
+
+Le descrizioni dei vari aspetti del sistema sono abbastanza complesse e dettagliate e, se ti intriga l'argomento, io ti consiglio di leggere il libro di Stock di cui ti lascio il link sponsorizzato in descrizione, ma proviamo comunque a intuire quanto avveniristico è stato *AlFresco*.
+
+Similmente ad un moderno chatbot con accesso alla knowledge base aziendale,
+*AlFresco* - e ripetiamo ancora che stiamo parlando degli anni '80 e '90 -, possiede un proprio archivio composto sia da dati strutturati che non.
+
+Fra le tante si possono trovare innanzitutto le informazioni di base sulle varie opere e le relative immagini, ovviamente. Ma poi sono anche presenti video, opinioni di critici, fatti storici e schede di autori.
+
+Questo archivio, viene interrogato da un *componente asserzionale* il cui compito è quello di collegare le informazioni secondo schemi e gerarchie logiche e, al tempo stesso, personalizzate sulla base dell'utente richiedente.
+
+E infine, a monte di tutte le operazioni vi è un'interfaccia composta da schermi interattivi ed uno strumento di analisi e comprensione dei testi che permette agli utilizzatori di inserire le proprie richieste e le elabora riuscendo persino ad fare deduzioni ed interpretazioni complesse.
+
+Le difficoltà di questo approccio sono ovviamente innumerevoli e non sto qui a dirti quante né descrive Oliviero Stock nel suo libro, né quante altre - da programmatore quale sono - mi vengono che magari erano fin troppo specifiche e complesse e noiose da riportare in un testo divulgativo.
+
+Ad ogni modo, la sfida più interessante - forse -, tra quelle descritte, riguarda proprio la comprensione del contesto e dei concetti nell'ambito dell'interazione tra l'utente e *AlFresco*.
+
+A questo proposito: ho dimenticato di specificare che il sistema viene sviluppato a partire dall'italiano, che non è esattamente la più semplice delle lingue in termini di possibili costruzioni dei periodi ed espressioni comunicative.
+
+Un problema fondamentale, infatti, è rappresentato dalle cosiddette frasi ellittiche, cioè in pratica quelle frasi in cui soggetto o predicato non sono espressi chiaramente ma sono invece intuibili dal contesto.
+
+Tali tipologie di espressioni rientrano nell'ambito del paradosso di Moravec secondo cui, nonostante le macchine siano in grado di svolgere attività complesse - come i calcoli matematici - molto meglio degli esseri umani, risulta ancora difficile automatizzare compiti invece più semplici come il riconoscimento del sarcasmo o dei sottintesi.
+
+Per *AlFresco* è lo stesso Stock a fornirci vari esempi, dei quali ti riporto il seguente:
+*U: Giotto ritrasse San Francesco in un'opera di Assisi?*
+*S: Si, per esempio nella Predica agli uccelli*
+*U: E Gioacchino in un affresco di Padova?*
+
+In questo esempio, le interpretazioni dell'ultima domanda potrebbero essere varie, sopratutto se consideri che l'interazione tra uomo e macchina si riconduce sempre alla modalità scritta, facendo perdere così tutte le informazioni riguardanti l'intonazione.
+
+Per una persona è facile capire che il senso della domanda è *Giotto ritrasse Gioacchino in un affresco di Padova?*,  ma come potrebbe il parser linguistico di *AlFresco* giungere alla stessa conclusione?
+
+L'idea - geniale - è quella di far interagire continuamente l'interprete semantico-lessicale con il componente delle conoscenze di base. In questo modo, diventa possibile eliminare tutte quelle combinazioni che non hanno riscontri nei dati, riducendo così le scelte a disposizione.
+
+In più, un meccanismo basato sull'assegnazione di pesi ai vari nodi che rappresentano ciascun concetto - qualcosa di simile a ciò che avviene per i moderni *Large Language Model* - viene utilizzato per conferire una maggiore o minore attenzione agli oggetti dell'interazione, aiutando così ad indirizzare il discorso e sfoltire ulteriormente le possibili alternative.
+
+Dunque, nell'esempio menzionato prima, una interpretazione potrebbe essere *Gioacchino ritrasse San Francesco?* oppure *Gioacchino ritrasse Giotto?*, ma queste opzioni sono da escludere perché non si trovano informazioni su Gioacchino che ha dipinto Giotto o perché l'utente ha già espresso il proprio interesse per Giotto come artista e non come soggetto.
+
+Un altro aspetto interessante di *AlFresco*, poi, è una funzionalità atta a sincronizzare il parser del linguaggio naturale con l'utilizzo di schermi sensibili al tocco. Durante la costruzione delle frasi, dunque, è possibile evidenziare parti dell'affresco visualizzato.
+
+In tal modo, chi interroga il sistema, mentre scrive la propria richiesta può utilizzare aggettivi come *questo* o *quello* e indicare, direttamente toccando lo schermo, l'elemento a cui sta facendo riferimento.
+
+Le capacità di *AlFresco* comprendono poi la possibilità di restituire non solo informazioni generiche e immagini di affreschi, ma anche spezzoni di film, informazioni puntuali e descrizioni  complesse create in lingua naturale.
+
+Il tutto costruito attorno agli specifici interessi dell'utilizzatore - la cui conoscenza viene affinata di interazione in interazione - e condito da un approccio ipermediale volto a collegare fra loro le informazioni e fornire un percorso da seguire e da esplorare.
+
+La ricerca e lo sviluppo di *AlFresco* procedono fino a poco dopo la metà degli anni '90.
+
+Come ammette lo stesso Oliviero Stock, probabilmente oggi varie delle tecnologie e delle soluzioni adottate all'epoca sarebbero diverse ma ciò non toglie che si sia trattato di un filone di ricerca straordinario ed estremamente avanzato per i suoi tempi.
+## PEACH
+
+Verso la seconda metà degli anni '90 inizia a farsi strada una forte tendenza a livello internazionale che riguarda il connubio tra informatica e turismo.
+
+In quel periodo, perfino Bill Gates - come riportato dallo stesso Oliviero Stock nel libro - dichiara che la Microsoft centrerà il proprio sviluppo su tre pilastri principali: sanità, istruzione e *turismo*.
+
+Da un punto di vista generale, il processo di informatizzazione del mondo turistico viene tendenzialmente immaginato su tre fasi: la messa a disposizione di informazioni generiche, l'introduzione di transazioni elettroniche e la personalizzazione del contenuto per utente.
+
+Una situazione, questa, nella quale, grazie all'esperienza maturata con *AlFresco* su esposizione e personalizzazione dei contenuti, l'IRST parte, ovviamente, già con un certo vantaggio rispetto a tanti attori contemporanei.
+
+Con la nuova tendenza, quindi, si apre l'opportunità di investigare le possibilità di personalizzazione e adattamento della presentazione delle informazioni al visitatore di un museo.
+
+Il primo punto è studiare come presentare l'informazione nel modo migliore nel corso della visita, cercando di adattare il tutto allo specifico visitatore, ai suoi interessi e al suo comportamento.
+
+Poi, subito dopo, lo scenario si amplia al dialogo in più lingue utile al contesto della prenotazione turistica, con il tempo porta allo sviluppo sia di sistemi di riconoscimento del parlato in tempo reale sia di potenti sistemi di traduzione, fino ad arrivare alla tecnologia di conversazione multilingua simultanea.
+
+Da questa specifica esperienza, inoltre, nascerà poi un'ulteriore evoluzione che porterà ad un altro interessante progetto ma del quale parleremo a breve.
+
+Restando in tema, però, il campo delle visite museali e dei beni culturali risulta essere un contesto particolarmente adatto per lo sviluppo di interfacce intelligenti, spingendo così sul settore dell'AI rivolta all'uomo e iniziando a percorrere la strada del moderno edutainment.
+
+Ed è proprio da queste premesse che nasce il progetto PEACH: una combinazione di computer mobili di piccole dimensioni - dato che all'epoca ancora non esistevano gli smartphone -, di sistemi di riconoscimento della posizione e di reti di trasmissione dati.
+
+Su questa infrastruttura si lavora con l'obiettivo di costruire una guida artificiale pensata per l'individuo: una guida adattiva, le cui presentazioni a due persone diverse, anche se con uguale esperienza e profilo a priori, non devono essere identiche bensì determinate da quelli che sembrano essere gli interessi dei singoli visitatori, riscontrati nel corso della visita stessa.
+
+Il sistema deve essere discreto ma anche in grado di comportarsi come un accompagnatore sensibile, presentare le cose giuste per l'utente ed arrivare perfino a creare istantaneamente, un piccolo documentario appositamente pensato per la situazione.
+
+Un altro tema importante riguarda poi il capire esattamente di quale dettaglio dell'opera esposta il visitatore desidera avere maggiori informazioni, e per fare questo vengono utilizzate tecniche di riconoscimento delle immagini e strategie mutuate da *AlFresco*.
+
+Ancora, nell'ambito del progetto PEACH, si sperimenta la creazione automatica di un rapporto personale sulla visita, una sorta di ricordo dei punti di maggiore interesse per ciascun visitatore che poi, una volta tornato a casa, può essere la base per ulteriori approfondimenti. 
+
+Infine, uno degli aspetti innovativi - conseguito nell'ultimo anno del progetto - riguarda l'integrazione tra presentazioni visuali su grande schermo rivolte a un intero gruppo, da un lato, e informazioni personalizzate rivolte a ciascun membro di tale gruppo, dall'altro, sincronizzando il tutto opportunamente sui vari dispositivi personali.
+ 
+Il progetto PEACH si conclude nel 2005 con un bilancio molto positivo, con tanti risultati di assoluta avanguardia scientifica, vari prototipi innovativi e grandi prospettive applicative.
+
+Un lungo articolo scientifico sull'argomento viene premiato quale migliore lavoro pubblicato nel 2007 sulla più prestigiosa rivista internazionale dedicata alle interfacce intelligenti e gli spunti di ricerca che ne derivano - anche di base per varie tecnologie attuali - sono innumerevoli.
+
+## NNR Table
+
+Partendo dall'esperienza sulla comunicazione multilingua sviluppata nell'ambito del progetto PEACH - che comprende elaborazione del linguaggio naturale, modellazione dell'utente e sistemi di raccomandazione automatica, ragionamento su grafi, sistemi di pianificazione collaborativa e interfacce uomo-macchina -, l'IRST da il via ad un progetto ancora più ambizioso.
+
+Nella prima fase delle attività, all'istituto si lavora ad una specifica tecnologia per favorire la comunicazione sociale tra bambini autistici, poi, da essa si avvia un secondo programma che riguarda, invece, lo sviluppo di un'altra tecnologia che contribuisca ad vicinare due parti in conflitto e facilitare la comprensione reciproca e la riconciliazione.
+
+Non si tratta di un meccanismo volto alla risoluzione di un conflitto attraverso la negoziazione delle esigenze delle due parti, come si potrebbe immaginare uno strumento adatto a supportare, ad esempio, dei negoziatori professionisti.
+
+L'obiettivo è invece quello di realizzare un sistema, chiamato poi NNR Table - tavolo per la negoziazione e riconciliazione delle narrative -, che possa contribuire alla comprensione reciproca tra due persone comuni coinvolte in un conflitto, attraverso un processo di creazione di una narrazione accettabile da entrambe.
+
+In una condizione di conflitto, non è possibile ottenere un risultato di composizione se le due parti sono rigide nella loro narrativa, senza considerare l'altro: il sistema, quindi, è pensato per offrire dinamicamente opzioni e vincoli per uscire da situazioni di impasse. 
+
+Tutto si basa essenzialmente su due elementi, uno culturale ed uno tecnologico: da una parte, la teoria della risoluzione dei conflitti, dall'altra, l'automatizzazione tramite la interfacce collaborative su tavolo elettronico - cioè un tipo di grande schermo orizzontale, sensibile al tocco multiplo di più persone.
+
+L'intenzione dell'Istituto - e di Oliviero Stock che è responsabile del progetto - è quella di sperimentare la NNR Table con giovani arabi palestinesi ed ebrei e, in questa fase del progetto, di concentrarsi su studio, discussione, progettazione e critica.
+
+Ciascun soggetto coinvolto nelle operazioni porta il proprio pezzo di narrativa e sul tavolo vengono evidenziati i punti di disaccordo; gli ostacoli possono essere rimossi soltanto toccando insieme l'interfaccia.
+
+Siamo nella seconda metà degli anni 2000 e il progetto è piuttosto ambizioso e anche costellato di insidie su più livelli: conclusa l'implementazione del sistema, infatti, l'applicazione viene ampliata prendendo come soggetti delle sessioni giovani di 16-17 anni, sempre ebrei e arabi palestinesi.
+  
+Naturalmente, l'idea è quella di sperimentare con ragazzi di ambienti nazionalistici militanti, anche se non proprio i più estremisti - i quali difficilmente acconsentirebbero anche solo a sedere uno di fronte all'altro.
+
+Per questo motivo, ogni volta che le sedute avvengono a ridosso di un'azione militare israeliana, i palestinesi rifiutano di partecipare, e così anche il viceversa. E purtroppo come ben sappiamo da quelle parti eventi del genere sono piuttosto frequenti.
+
+Stock racconta che il lavoro in quel periodo *fu molto impegnativo e lungo ma, alla fine, i risultati furono davvero incoraggianti*. 
+
+Il team del progetto, infatti, riesce a dimostrare che il partecipare a una sessione con la NNR Table produce un effetto positivo sull'atteggiamento verso la parte avversa e i parametri che identificano vari aspetti del riconoscimento dell'altro presentano significativi miglioramenti. 
+
+Nonostante questi risultato, però, nel 2012 Trento fu tappezzata di manifesti che esponevano il nome di Oliviero Stock con la dicitura *collabora con l'Università di Haifa (Israele) nel settore dell'intelligenza artificiale all'interno di un accordo scientifico-militare tra Italia e Israele per lo sviluppo di tecnologie di interdizione, sorveglianza e guerra elettronica*.
+
+Cosa ovviamente non vera ma anzi diametralmente opposta alla realtà, in quanto il progetto NNR Table in sostanza era una base su cui lavorare per un futuro uso diffuso di tecnologia per ottenere la pace partendo *dal basso*.
+
+Nel 2006, comunque, il progetto giunge al termine con un bilancio estremamente positivo e attestazioni di qualità da vari organi di revisione scientifica nazionali e internazionali, e con la sigla di accordi tra l'IRST e l'Università di Haifa per la prosecuzione della ricerca e sviluppo nel campo.
+
+## L'Intelligenza Artificiale secondo Oliviero Stock
+
+Dato che - come già detto - questo episodio è fortemente basato sulle descrizioni riportate nel libro *Meglio artificiale che niente*, mi sembra doveroso anche accennare a quella che è la definizione di Intelligenza Artificiale così come espressa dall'autore Oliviero Stock.
+
+Innanzitutto, precisiamo che il prof. Stock, è entrato a far parte dell'IRST nel 1987 e ne è diventato direttore nel periodo tra il 1997 e il 2001. Tra l'altro è stato presidente delle associazioni italiana ed europea per l’intelligenza artificiale, nonché presidente dell'associazione mondiale di linguistica computazionale.
+
+Cito dunque direttamente le sue parole sull'argomento prese dal libro, per la precisione a pagina 223: *Per me l'AI resta prima di tutto il tentativo di far fare alle macchine lo sforzo di capire noi, e non viceversa*.
+
+Un'affermazione, questa, che evidenzia forse più un aspetto cruciale della filosofia del suo autore che della tecnologia in sé.
+
+L'intenzione che ne traspare - come si è visto anche dalle varie applicazioni descritte in precedenza - è sicuramente di creare un qualcosa che arricchisca l'esperienza e le possibilità umane, e non ponga subito in primo piano l'aspetto commerciale.  
+
+I maggiori programmi dell'IRST puntavano, infatti, a favorire aspetti culturali, di confronto fra persone, di assistenza per i più deboli e di coesione e miglioramento sociale.
+
+Erano tentativi di creare strumenti di supporto per la risoluzione di problemi reali e concreti; non tecnologie in cerca di un problema da risolvere, realizzate solo perché era possibile farlo ma senza un obiettivo chiaro - cosa che negli ultimi tempi ormai accade piuttosto spesso.
+
+Al di là delle visioni personali, poi, lo stesso Stock afferma che la maniera classica di definire l'IA è quella ingegneristica, che parla di sistemi basati su elaboratore che svolgono funzioni che, quando svolte da esseri umani, si ritiene denotino intelligenza.
+
+Come fa notare egli stesso, però, si tratta di una definizione che rimanda a un'altra definizione: quella di intelligenza. E questa seconda definizione, purtroppo, non è univoca.
+
+Menziona poi il solito aspetto critico delle reti neurali che viene ricondotto al fatto che esse sono considerate come scatole nere che giungono ad una soluzione, ma non forniscono un'esplicita spiegazione del come.
+
+Questo - ci ricorda Stock a pagina 236 - *non solo è piuttosto problematico, naturalmente, per un campo che aspira a essere scientifico, ma è anche inaccettabile in tanti contesti applicativi*.
+
+La cosa più interessante, però, è che essendo lui anche un linguista, tende a fondere i due concetti riportando la discussione ad una corrente di pensiero che più volte abbiamo menzionato su questo podcast.
+
+Negli anni '80, durante la prima lezione del suo corso di dottorato - ci racconta - egli iniziava parlando di un sondaggio letto su un giornale. Tale sondaggio includeva la domanda: *Secondo voi, qual è l'animale più intelligente?* E la risposta più comune era stata: *Il pappagallo*.
+
+*Effettivamente il linguaggio è indice di intelligenza, ma la capacità linguistica non va presa troppo superficialmente. È estremamente facile riprodurre aspetti dell'apparenza del linguaggio, e con questo dare talora l'impressione dell'intelligenza.*
+
+*Prima di tutto, ci si deve domandare se un'eccellente padronanza della forma linguistica corrisponda a ugualmente valide capacità di ragionamento, qualità che noi, naturalmente, attribuiamo a chi sa parlare così bene.*
+
+Non ripeterò cose già dette in vari altri episodi di questo podcast, ma mi è piaciuto vedere questo concetto - su cui anche io insisto tanto - espresso in modo così diretto e chiaro in queste poche frasi.
+
+E poi Oliviero Stock si interroga anche sui problemi legati ad Intelligenza Artificiale e conoscenza umana - altro argomento a me caro.
+
+Le domande sono tante: *sarà sufficiente la conoscenza umana per dare vita a Intelligenze Artificiali sempre più potenti?*, *saranno sufficienti tutte le informazioni scritte o registrate per rappresentare la pluralità del sapere umano?*, *quanto saranno adeguate le capacità di adattarsi alle varie situazioni comunicative, pensando che esse si basano su competenze di tipo linguistico-pragmatico e sociale?*
+
+E poi, sapendo che gli esseri umani parlano perché intendono conseguire un obiettivo agendo sul pensiero delle altre persone attraverso le parole, *con la proliferazione dell'IA, cosa accadrà al concetto di intenzionalità? E alla condivisione di conoscenze e valori che costituisce il fondamento delle relazioni sociali?*
+
+*Cosa accadrà alla diversità dei contenuti? Chi produrrà informazioni realmente nuove? Come cambierà il concetto di creatività?* - Lo so quest'ultima parte ti lascerà forse con più dubbi di quelli che avevi prima di ascoltare l'episodio, ma è questo il bello, no?
+
+Probabilmente tanta importanza l'acquisiranno aspetti come il pensiero critico, il giudizio di valore e la capacità di pensare in modo originale. E poi l'empatia, la gentilezza.
+
+In conclusione devo dire che mi trovo piuttosto allineato a quello che è il pensiero di Oliviero Stock sull'argomento e, pertanto, e mi piace concludere questo blocco con l'ennesima sua affermazione che ritengo estremamente interessante: e cioè che *[ ... ] l'AI, se presa con una visione ampia, non solo tecnica, ci costringe a ragionare sugli esseri umani.*
+
+## Conclusione
+
+Siamo in conclusione dell'episodio e io spero che gli argomenti trattati ti abbiano interessato al punto di farti persino valutare di acquistare e leggere il libro da cui sono tratti, che ti ricordo intitolarsi Meglio artificiale che niente di Oliviero Stock e di cui trovi il link affiliato in descrizione.
+
+Ti assicuro che ne vale la pena perché ciò che ti ho raccontato oggi è solo una minima parte delle informazioni riportate. L'autore ha vissuto gli eventi in prima persona quindi la narrazione è estremamente dettagliata anche sulla situazione storico-politica e il testo è pieno di aneddoti interessanti e a volte divertenti.
+
+Inoltre, ti ricordo che acquistare dai link affiliati, vuol dire - senza spendere un centesimo in più - supportare il progetto, perché una minima percentuale - una roba tipo il 3%, non ti credere - viene girata da Amazon a Pensieri in codice.
+
+Come ormai dico in ogni episodio da un po' di tempo, questo podcast è completamente indipendente - perché voglio poter parlare di quello che mi interessa senza dover dare conto a nessuno - e privo di pubblicità - perché pubblicità mirata, tracciamento degli utenti e schifezze così, preferisco lasciarle fuori.
+
+Ciò vuol dire che tutto si fonda sul mio tempo libero e sul supporto che tu decidi di darmi in uno o più dei vari modi a disposizione.
+
+Ad esempio potresti spendere un po' del tuo tempo per trovare nuovi ascoltatori facendo conoscere il progetto a qualcuno che ritieni che possa apprezzarlo.
+
+O puoi spendere un po' del tuo talento aiutando con tutte le cose che ci sono da fare. So che non si direbbe - nemmeno io lo credevo prima di iniziare quest'avventura - ma anche un semplice podcast richiede una quantità di attività notevole: è come un lavoro.
+
+A tante cose, purtroppo, devo rinunciare, come la gestione dei social. Per altre, invece, c'è qualcuno che mi aiuta, come Antonio e Francesco che si occupano delle copertine e degli automatismi per la pubblicazione delle news su Mastodon e nel gruppo Telegram - a proposito, di tutta questa roba trovi i link sul sito pensieriincodice.it, mi raccomando con due i.
+
+E poi ci sono i donatori - per questo episodio sono Edoardo, Carlo, Alex - che mensilmente o saltuariamente dimostrano il loro apprezzamento con donazioni tramite PayPal o Satispay - sempre link su pensieriincodice.it
+
+E tra l'altro, sempre sul sito, trovi le varie soglie alle quale i donatori hanno diritto a ricevere i gadget. Di cui - ricordiamolo - la card laminata è personalizzata col tuo nome e in edizione limitata e numerata. Non so per quanto sarà ancora disponibile.
+
+Comunque, non vorrei che pensassi che con questo progetto io intendo diventare ricco eh. L'idea è che mi fa piacere se il valore del mio impegno lo decidi tu. Decidi quanto vale per te Pensieri in codice e valuta di conseguenza il modo migliore per restituirne un po'.
+
+E bada bene: non è un obbligo.
+
+Detto questo, ti anticipo che molto probabilmente il prossimo sarà un episodio del nuovo format Community Edition, in cui è uno o più membri della community di Pensieri in codice a parlare di un argomento che ritiene interessante.
+
+Se vuoi provarci anche tu, scrivimi su Telegram o all'indirizzo valerio@pensieriincodice.it - devo ripeterlo che è con due i? 
+
+Nel frattempo io ti saluto, ti ringrazio per aver ascoltato fino alla fine e ti do appuntamento al prossimo episodio ricordandoti sempre che *Un informatico risolve problemi, a volte anche usando il computer*.
+"
