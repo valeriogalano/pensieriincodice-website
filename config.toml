@@ -105,6 +105,7 @@ unsafe= true
 
 # Main Settings
 [params]
+description = "Il podcast dove si ragiona da informatici. Con Valerio Galano"
 skinColor = "orange-pic" #TEMPLATE SKIN COLOR: [ blue, green, orange, pink, purple, red ]. If empty colors taken from thenes/ryan/assets/scss/_settings.scss
 skinDark = 0 #TEMPLATE UI: [ 1 - yes, 0 - no ]
 rtl = 0 #TEMPLATE RTL MODE: [ 1 - yes, 0 - no ]
