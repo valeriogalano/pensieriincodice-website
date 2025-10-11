@@ -1,6 +1,16 @@
 {{ define "main" }}
 {{ $dateFormat := .Site.Params.dateFormat }}
 
+{{- if .Description -}}
+<meta name="description" content="{{ .Description }}">
+<meta property="og:description" content="{{ .Description }}">
+<meta name="twitter:description" content="{{ .Description }}">
+{{- else if .Summary -}}
+<meta name="description" content="{{ .Summary }}">
+<meta property="og:description" content="{{ .Summary }}">
+<meta name="twitter:description" content="{{ .Summary }}">
+{{- end -}}
+
 {{ "<!-- Blog Post -->" | safeHTML }}
 <div class="card-inner blog blog-post animated" id="blog-card">
 	<div class="card-wrap">
