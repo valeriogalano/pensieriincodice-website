@@ -8,3 +8,5 @@ User-agent: *
 Disallow: /*.xml$
 Disallow: /*.srt$
 Disallow: /*.cgi$
+Disallow: /tags/
+Disallow: /transcriptions/
