@@ -1,0 +1,309 @@
+text: "
+## Introduzione
+
+Se sei entrato a far parte del gruppo Telegram di Pensieri in codice, molto probabilmente conosci già Giuseppe Pugliese, uno dei membri storici e più attivi della community di questo Podcast.
+
+E altrettanto probabilmente avrai già ascoltato almeno uno dei suoi innumerevoli, intensi ed appassionati vocali in cui parla del suo lavoro o commenta il video di qualche Youtuber o l'ultima novità dal mondo Microsoft.
+
+Ma quello che forse non sai è che Giuseppe è un tipo che, quando fa una cosa, ci mette veramente anima e corpo. Si impegna sempre al massimo, non si risparmia mai e cura ogni aspetto un modo quasi maniacale fino a sistemare ogni più piccolo dettaglio.
+
+Così, il giorno in cui mi ha detto che avrebbe preparato un episodio per il mio nuovo format - Pensieri in codice Community Edition - sapevo ne sarebbe venuto fuori qualcosa di molto interessante e ben realizzato... ma non immaginavo che mi avrebbe mandato quello che stai per ascoltare.
+
+Tra poco capirai da te cosa intendo perché io non ti voglio anticipare assolutamente alcunché. Ti do solamente un consiglio: se normalmente ascolti i podcast a velocità aumentata, questo ascoltalo a 1x.
+
+L'episodio è breve e ti porterà via al massimo un quarto d'ora, ma se mi darai ascolto ti assicuro che varrà la pena di impiegare questo tempo e riuscirai a godere a pieno dell'atmosfera che Giuseppe è riuscito a creare.
+
+Allora siamo d'accordo? Poi mi farai sapere se ho ragione o no. Ah e mi raccomando: ascolta fino alla fine perché ho anche una novità molto interessante da comunicarti.
+
+Buon ascolto.
+
+## Il Plugin Maledetto - Cronaca di un attacco notturno
+
+> Attenzione, questa parte dello script è stata generata dall'episodio utilizzando [Transcriber](https://ulti.media/transcriber/) (realizzato da Alex Raccuglia)
+
+A cosa servono le storie.
+
+Me lo sono sempre chiesto.
+
+Alla fine sono arrivato alla conclusione che le storie sono dall'alba dei tempi un modo per cristallizzare nel tempo un concetto, un insegnamento, un modo di vivere.
+
+Questa storia risale al 2017.
+
+L'ho ritrovata per caso sepolta tra gli appunti digitali di uno speciale di glicce che avevo iniziato a scrivere e poi ho messo da parte.
+
+è una di quelle notti che si scolpiscono nella memoria.
+
+Che ancora oggi mi tornano in mente ogni volta che sento la parola plug-in.
+
+Vale la pena raccontarla.
+
+Oggi vi porto con me in una storia fatta di sonno negato.
+
+Codice maligno o stingoprestorici.
+
+Una corsa contro il tempo.
+
+Per salvare un sito, e forse anche un cliente, da un disastro irreparabile.
+
+Ore 18.
+
+Tutto a inizio.
+
+Avevo finito una rinune preliminare con un nuovo cliente, mi aveva contattato per rifare da zero il tema del suo e-commerce di abbigliamento.
+
+Classico progetto che prendo con entusiasmo, pensai.
+
+Specie quando si tratta di mettere le mani su qualcosa di disastrato da chi l'ha preceduto.
+
+Ore 20 e 30, il primo passo.
+
+Installo un plugin di diagnostica per capire come gira il sito, tanto per portarmi avanti, poi cena, tanto caldo, troppo caldo, stanchezza.
+
+Le notti insonni, per finire il redesign del sito della galleria d'arte su cui stavo lavorando, si facevano sentire.
+
+Un po' di Netflix, sonno, buonanotte.
+
+Almeno così pensavo.
+
+Ore 3.30.
+
+Risveglio improvviso.
+
+Il telefono vibra come impazzito.
+
+La band al mio polso anche, avendo le notifiche prioritarie impostate anche di notte, in modo da poterli svegliare repentinamente.
+
+In caso di problemi, un'onda di mail dal tool diagnostico.
+
+Accendo lo schermo.
+
+La stanza si illumina come in un film horror.
+
+Capisco subito che qualcosa non va.
+
+Ore 3.32.
+
+Il disastro.
+
+Le notifiche parlano chiaro.
+
+Il sito è stato invaso, da codice malevolo.
+
+Centinaia, se non migliaia, di login falliti, con credenziali di amministratore a raffica.
+
+Era un brutto forse.
+
+Scatto in piedi, cerco di non svegliare mio fratello nella stanza accanto, corro al pc.
+
+Ore 3.35.
+
+Inizia la guerra.
+
+Mi collego.
+
+Per fortuna le credenziali che avevo funzionavano ancora, ma il sito è lentissimo.
+
+Segno evidente che qualcosa di grosso sta accadendo.
+
+Mi preparo al peggio.
+
+Ore 4 e 20.
+
+Il primo colpevole.
+
+Losting.
+
+Scopro che il sito gira ancora su PHP 5.2.
+
+Lasciamo stare le bestemmie.
+
+Sì, avete capito bene.
+
+Rilasciato nel novembre 2006.
+
+Io neanche avevo la barba.
+
+Forzo Losting a usare PHP 7, che comunque è del 2015, ma è il massimo che arruba mi consente di impostare.
+
+Un passo avanti, ma siamo nel fango più totale.
+
+Cercando di rimanere polite a livello di linguaggio visto che questo non è il mio ambiente, non è il mio podcast e quindi cerchiamo di mantenere un grado di civiltà.
+
+Ore 4 e 30.
+
+Panico.
+
+Le email continuano.
+
+Sudore, confusione, rabbia.
+
+Non trovo la falla.
+
+Poi come un lampo mi viene in mente.
+
+Cazzo guarda i plugin.
+
+Ed ecco il fatto di rimanere polite e se ne va a quel paese.
+
+Ore 4 e 32.
+
+La pista giusta.
+
+Scorro la lista dei plugin installati.
+
+Quasi tutti sono obsoliti.
+
+Avvio gli aggiornamenti.
+
+Tutti vanno a buon fine.
+
+Tranne uno.
+
+Ore 4 e 35.
+
+Il plug-in maledetto.
+
+Cerco su Google.
+
+Il plug-in è una barzelletta.
+
+Una stella, codice scritto da un cane cieco, funzioni inutili anche per chi sa usare un tema figlio.
+
+Ma la cosa peggiore è craccato.
+
+Aveva codice maligno integrato.
+
+SQL injection, XSS, attacchi al sito, a te, al tuo pc, ai tuoi utenti, a tua nonna, al conto bancario, qualsiasi cosa poteva fare di schifoso e maligno, lo stava facendo.
+
+Boom.
+
+Fine dei giochi.
+
+Avevo trovato il bastardo.
+
+Ma da lì in poi non c'era tempo per festeggiare.
+
+Era solo il inizio di una lunga, lunghissima notte.
+
+Ore 09.
+
+Pulizie di fine disastro.
+
+Il sole filtrava attraverso le tapparelle, ma per me era ancora notte fonda.
+
+E ho passato le ultime quattro ore e mezza come uno di quei poveracci che alla fine di una festa disastrosa si ritrovano a pulire il locale, tra vomito e bicchieri rotti, e gente che non era nemmeno invitata era riversa sul pavimento inerme.
+
+Ripulire il sito è stato proprio così.
+
+Rimuovere ogni file compromesso, scansionare ogni riga di codice, ogni cartella, ogni tabellata editata base, Wordpress.
+
+Un po' tutte le cartelle che erano all'interno del hosting.
+
+Un disastro.
+
+Alla fine, alle nove del mattino, esausto ma soddisfatto, ricarico il sito.
+
+Era tornato in piedi.
+
+Ma non solo.
+
+Era più veloce, più scattante, più sicuro di prima.
+
+Quasi come se quella notte infernale gli avesse dato una seconda vita e io nel mio piccolo avevo domato un mostro invisibile.
+
+Lezioni da portarsi a casa, cari signori.
+
+Attenzione a chi affidate il proprio sito.
+
+Se il vostro business video è online, il sito è come a casa vostra.
+
+Non lasciate in mano uno sconosciuto, dandogli la chiave della vostra abitazione.
+
+Con troppa leggerezza.
+
+Se non potete pagare subito, parlate chiaro.
+
+Un professionista serio saprà venirvi incontro.
+
+E soprattutto, non cacherà sul vostro pavimento.
+
+Non improvvisate.
+
+Chi diete aiuto, chi si improvvisa webmaster, spesso crea più danni che soluzioni.
+
+E in certi casi, i danni possono essere persino penali.
+
+Controllate hosting e plugin.
+
+Non usate plugin craccati.
+
+Non risparmiate sui server.
+
+Le versioni vecchie di VHP sono forte spalancate per chi sa dove colpire.
+
+P.S.
+
+Se io sono come un neofita, come faccio ad accorgermi che il plugin potrebbe essere craccato o avere qualcosa che non va.
+
+Basta che vi fate dare un accesso a WordPress, al vostro WordPress.
+
+Provate ad aggiornare i plugin se ci sono aggiornamenti.
+
+Se non si aggiorna, potrebbe esserci qualcosa che non va.
+
+Guardate i lavori di chi vi ripopone il sito.
+
+Se il suo portofolio è sempre uscito dall'anno domini 2009, facilmente la sua competenza è ferma anche a quel periodo.
+
+Se non precedente.
+
+Grazie a tutti per l'attenzione.
+
+Ringrazio Valerio per avermi dato la possibilità di condividervi questa puntata extra.
+
+Volevo sottolineare che questa storia andava raccontata.
+
+Perché istruire chi non è del mestiere è il primo passo per evitare che certi errori si ripetano.
+
+Perché ogni sito bucato, ogni progetto gestito male, ogni plugin craccato, nasce sempre dallo stesso errore.
+
+FIDARSI DI CHI ABBOZZA.
+
+Grazie di nuovo a tutti e ringrazio di nuovo per l'unesima volta Valerio per avermi dato la possibilità di fare un po' di testa mia in quanto mi ha lasciato totale carta bianca.
+
+Io gli ho dato solo un piccolo script di questa puntata.
+
+E quindi, se volete ascoltare delle puntate un po' meno creepy, a tema web design, videogiochi e server dati, in tono leggermente più colorito, fate un salto dalle mie parti.
+
+Ovviamente Valerio sono sicuro che vi lascerà tutti i riferimenti nelle show notes.
+
+E come recita il motto del podcast che mi sta ospitando, un informatico risolve problemi, a volte anche usando il computer.
+
+## Conclusione
+
+Davvero complimenti a Giuseppe e un enorme grazie per aver prodotto questo splendido contenuto per Pensieri in codice.
+
+Allora, avevo ragione o no? È, questo, un episodio veramente speciale o no? Da qui puoi anche aumentare nuovamente la velocità di riproduzione.
+
+Ti confesso che il nostro Giuseppe mi aveva già consegnato la registrazione più di un mese fa, ma ho voluto attendere che fosse il momento giusto per pubblicarla, perché ci tenevo un sacco che capitasse in un periodo *buono*.
+
+Ad ogni modo, se non ti è bastato e vuoi ascoltare altri contenuti prodotti da questo giovane informatico e podcaster, ti faccio presente che lui pubblica un podcast tutto suo che si chiama Glitch. Trovi, ovviamente il link in descrizione.
+
+Lì potrai ascoltarlo parlare di tanti argomenti legati al mondo dell'Informatica, di Microsoft, di news e tanto altro. Mi raccomando: se già non lo conosci, vallo a recuperare che ne vale la pena.
+
+Ora però passiamo un attimo ad un altro argomento, perché so che hai tanta curiosità di sapere di quale novità parlavo nell'introduzione.
+
+Beh, la novità è che da un mesetto circa, ho l'onore di essere ospite in un podcast di Runtime Radio condotto da Alex Raccuglia e Simone Pizzi, in cui parliamo di alta cucina... non è vero, sto scherzando. Ovviamente parliamo di Intelligenza Artificiale, ma da un'angolazione piuttosto specifica.
+
+In ogni episodio ci confrontiamo su come l'IA influisce sul nostro modo di sviluppare il software. Tutto è esaminato da un punto di vista estremamente soggettivo e ciascuno degli ospiti condivide il proprio workflow, le proprie esperienze ed opinioni.
+
+Se tutto va bene, a breve dovremmo registrare il terzo episodio e io spero che la cosa vada avanti per un bel po' - anche perché sono veramente fiero di poter partecipare ad una trasmissione che raggruppa persone che ammiro e di potermi confrontare con loro.
+
+Ovviamente, anche di questo podcast - il cui titolo è Good Vibrations: Sviluppare nell'Era dell'AI - ti lascio il link in descrizione. Sarei anche estremamente felice se ascoltassi i primi episodi e ci facessi sapere, tramite recensione, commento o messaggio su Telegram, cosa ne pensi.
+
+Detto questo, direi che non è rimasto spazio per la solita pappardella in cui ti richiedo il sostegno, ti parlo del value4value, ecc., ma tanto so che se hai ascoltato o ascolterai altri episodi di Pensieri in codice avrai modo di conoscere tutti i modi per sostenere il progetto.
+
+Ti dico solo che, se non lo hai già fatto, ti consiglio di unirti al gruppo e al canale Telegram così potrai conoscere tante persone interessanti - come Giuseppe - e restare sempre aggiornato su tutte le novità.
+
+Per oggi, dunque, possiamo chiuderla qui. Io ti ringrazio di aver ascoltato fino alla fine, ti saluto e ti ricordo sempre che *un'informatico risolve problemi, a volte anche usando il computer*.
+"
