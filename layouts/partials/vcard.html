@@ -33,6 +33,14 @@
       <a target="_blank" href="{{ .url }}" title="{{ .title }}"><span class="{{ .icon }}"></span></a>
       {{ end }}
     </div>
+    <div class="social">
+        Ascolta il podcast
+      {{ range $.Site.Data.home.platforms.items }}
+      <a target="_blank" href="{{ .url }}" title="{{ .title }}">
+        <img src="{{ .image | absURL }}" alt="{{ .title }}" style="height: 20px; width: auto; vertical-align: middle;" />
+      </a>
+      {{ end }}
+    </div>
 
     {{ "<!-- profile buttons -->" | safeHTML }}
     <div class="lnks">
