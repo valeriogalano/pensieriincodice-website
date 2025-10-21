@@ -8,7 +8,9 @@ Per l'occasione ho deciso di avviare il discorso partendo da un altro pilastro d
 Quindi, mettiti comodo o comoda e lascia che io ti guidi in questo viaggio un po' surreale attraverso il funzionamento e la filosofia del linguaggio HTML e quindi del Web.
 
 Sigla.
+
 ## Chuck Norris Facts
+
 Non so se realmente sia necessario spiegare cosa sono i *Chuck Norris Facts*, ma, nel caso in cui tu non li conosca, in questo blocco ti farò qualche esempio e ti racconterò un po' la presunta storia della nascita di questo fenomeno.
 
 Se la cosa non ti interessa perché magari sei già il massimo esperto di Chuck Norris, allora ti consiglio di skippare questo capitolo e di passare direttamente a quello successivo: non preoccuparti perché il resto dell'episodio sarà tranquillamente comprensibile anche saltando questa parte.
@@ -44,7 +46,9 @@ Il successo dei Chuck Norris Facts è subito immediato e travolgente. Presto que
 Chuck Norris stesso, inizialmente sorpreso, accoglie poi con simpatia il fenomeno, raccontando in diverse interviste che i *fatti* rappresentano una dimostrazione di affetto e ironia da parte dei suoi fan.
 
 Oggi, possiamo tranquillamente affermare che i *Chuck Norris Facts* sono uno dei primi esempi di contenuti virali capaci di unire milioni di persone attorno a un’idea leggera e giocosa, trasformando una star del cinema in un'icona culturale anche nel mondo digitale.
+
 ## Il colore Chuck Norris
+
 Ma ora ti starai chiedendo: che cosa c'entra Chuck Norris con l'HTML o la legge di Postel?
 
 Beh, devi sapere che Chuck Norris, oltre ad *aver contato fino a infinito, due volte* e a *poter dividere per zero*, è persino... un colore HTML.
@@ -118,6 +122,7 @@ Successivamente, essa va poi divisa nelle tre parti di cui abbiamo parlato prima
 Per ciascuna di queste parti, ora, vanno presi solo i primi due caratteri e quindi cioè che resta è: *c0*, *00* e *00*.
 
 A questo punto, abbiamo i tre valori per le tre componenti colore, ma solo il primo è diverso di zero. Quindi, banalmente, nel colore ottenuto è presente una certa parte di rosso e sono totalmente assenti il verde e il blu, e pertanto il risultato è *rosso*.
+
 ## La legge di Postel
 
 La gestione degli errori in *HTML* si basa su una filosofia nota come *robustezza* o *tolleranza agli errori*, ed è riassunta efficacemente dal principio: *Sii tollerante in ciò che accetti, ma rigoroso in ciò che invii.*
@@ -157,7 +162,9 @@ La rigidità e la precisione sono certamente una virtù, ma solo finché non inf
 Il Web, così come lo conosciamo, è costruito su fondamenta di resilienza. Un sito del 1996 può essere visualizzato ancora oggi in un browser moderno. Una pagina può essere consultata anche se il CSS non è più valido o addirittura è completamente assente.
 
 E tutto questo è possibile proprio grazie al fatto che l'interpretazione del linguaggio è stata da sempre basata sulla Legge di Postel.
+
 ## Conclusione
+
 Oggi puntata un po' più breve, ma ho capito che se non mi trattengo sulla quantità di informazioni e fonti che prendo in considerazione, finisce che a stento esce un episodio al mese.
 
 Quindi, rapidamente ringrazio i sempre presenti Edoardo e Carlo per la donazione mensile e anche Luca F e Marco C per la donazione spot. Loro hanno aderito alla filosofia Value4Value.

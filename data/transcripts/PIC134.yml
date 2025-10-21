@@ -12,6 +12,7 @@ E allora immagina il mio entusiasmo quando ho scoperto che esiste un intero filo
 Dopo svariate ore di ricerche, studio e e riflessione, è venuto quindi fuori l'episodio di oggi, nel quale parliamo sempre di AI, ma dal punto di vista delle vulnerabilità legate ai modelli di Machine Learning e, in particolare, scopriamo come è possibile avvelenare una Intelligenza Artificiale e quali conseguenze può causare un attacco del genere.
 
 Sigla.
+
 ## Attaccare un'Intelligenza Artificiale
 
 Ormai lo sappiamo, lo abbiamo sentito in tutte le salse e l'abbiamo detto e ridetto anche in vari episodi: i sistemi di Machine Learning - o se vogliamo di Intelligenza Artificiale - sono una tecnologia che ha praticamente invaso ogni aspetto della società moderna.
@@ -61,6 +62,7 @@ Modificando i dati in certi modi specifici, infatti, un malintenzionato può ins
 Per tal motivo, se in questo episodio ti parlo di malfunzionamenti sappi che non intendo necessariamente il fatto che il sistema smetta di funzionare, ma anzi che esso funzioni ma risponda in modi imprevisti e artificiosamente alterati.
 
 Approfondiremo meglio la questione a breve ma per ora, ciò che ci interessa che sia chiaro è che, sul semplice principio che non è possibile - o meglio è estremamente difficile - bonificare le enormi moli di dati utilizzati per l'addestramento dei modelli di Machine Learning, si basa tutta una categoria di attacchi definiti *AI Poisoning*.
+
 ## Infezioni intrinseche nei modelli
 
 Un punto importante da chiarire sugli attacchi di AI Poisoning, secondo me, è che questi sono essenzialmente volti a creare delle modifiche ai modelli nel momento della loro creazione, in modo da poterle sfruttare poi in un secondo momento, quando essi verranno messi in opera.
@@ -138,6 +140,7 @@ Inserendo un numero sufficiente di dati alterati, dunque, è possibile fare in m
 Un aspetto molto interessante di questo attacco, è che, infettando un modello tramite avvelenamento con trigger, i suoi risultati nei benchmark e la sua efficienza in termini di velocità restano essenzialmente identici, contribuendo così a rendere complicata una procedura di rilevazione dell'infezione.
 
 Lo studio che ho consultato io si riferisce specificamente ad Intelligenze Artificiali generative, ma, se vuoi approfondire, all'interno trovi varie menzioni ad altri studi che riguardano anche AI di classificazione.
+
 ## Data poisoning tramite tecnica ROME
 
 Un altro articolo intitolato PoisonGPT - trovi anche questo in descrizione e lo so: st'episodio è pieno di fonti ma non ci posso fare niente perché l'argomento è complicato - l'articolo, dicevo, racconta come sia possibile manipolare chirurgicamente un modello per inserirvi informazioni false.
@@ -219,6 +222,7 @@ Un attacco del genere riesce a superare le normali difese di Gemini perché sfru
 Infatti, invece di dare un'istruzione diretta - che verrebbe intercettata - il documento induce Gemini ad eseguire l'azione di salvare le informazioni nella memoria a lungo termine solo dopo che l'utente ha compiuto una determinata azione - cioè, come abbiamo detto, inserirre una parola chiave nel prompt.
 
 Questo attacco può essere portato a segno per via del peculiare funzionamento dei più recenti chatbot come Gemini e a voler essere precisi, non riesce effettivamente a guastare il modello in uso, però riesce comunque ad avvelenare l'istanza utilizzata da uno o un gruppo di utenti e, nei loro confronti, l'effetto è più o meno lo stesso del poisoning.
+
 ## Conseguenze
 
 Quelli che abbiamo descritto oggi sono solo alcuni degli attacchi che è possibile veicolare da e verso un modello di Machine Learning. Ne esistono molti altri ma questi sono quelli che mi hanno maggiormente colpito - e, in ogni caso, l'episodio non poteva durare 6 ore...
@@ -302,6 +306,7 @@ La conclusione è che, secondo me, creare le condizioni teoriche affinché la co
 E se te lo stai chiedendo: no, con l'avanzare della tecnologia di Machine Learning la cosa non si risolverà da sola.
 
 Se prendiamo i nuovi modelli di ragionamento, ad esempio, essi non mitigano affatto il problema, anzi secondo un altro studio che trovi sempre in descrizione, essi risultano ancora più convincenti dei propri predecessori anche quando restituiscono allucinazioni.
+
 ## Conclusione
 
 Oggi l'episodio è stato molto denso di informazioni, quindi direi di chiudere velocemente.

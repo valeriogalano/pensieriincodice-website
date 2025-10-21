@@ -27,6 +27,7 @@ Mi sono passati davanti vari articoli e post sul Vibe coding e ho letto cose che
 Ma no. Col cavolo. Mi spiace ma queste affermazioni semplicemente non sono vere. Chi le ha formulate, o non ha capito di cosa stava parlando o, peggio ancora, cerca di far passare un concetto falso - un po' di fuffa.
 
 Il Vibe coding ha una suo perché e - forse - una sua utilità, ma il discorso è - come al solito - molto più complesso di quanto sembri. Quindi, facciamo un bel respiro, cominciamo dal principio e proviamo a procedere con ordine.
+
 ## Definizione
 
 Innanzitutto, iniziamo col capire esattamente il significato della locuzione Vibe coding.
@@ -67,6 +68,7 @@ Con questo nuovo paradigma, il codice di fatto non viene più considerato. Conti
 Al di là del sensazionalismo, però, frasi come *non è male per progetti del fine settimana* e *per lo più funziona* dovrebbero già far capire che il Vibe coding non è la nuova frontiera dello sviluppo software, quanto piuttosto un metodo accessibile per fare qualche esperimento o poco più.
 
 Tuttavia, sembra che tanti là fuori, nella foga di gridare al nuovo miracolo - che ormai se non ne vediamo uno a settimana non siamo contenti - non siano neanche arrivati a leggere il Tweet fino in fondo - o non l'abbiano capito, chissà?
+
 ## Caratteristiche e limiti
 
 Il Vibe coding non è una nuova funzionalità degli ambienti di sviluppo o degli llm, non è un nuovo strumento e insomma non è un'innovazione. È semplicemente un modo diverso di utilizzare una serie di tool che già esistevano e già utilizziamo in tanti.
@@ -154,6 +156,7 @@ E infine - ma non meno importante - c'è la questione della qualità del codice.
 Normalmente la qualità, la sicurezza, l'affidabilità vengono verificate dagli sviluppatori tramite test, code review, e altre operazioni manuali o costruite ad hoc per le varie funzioni.
 
 Ora la mia domanda è: quanto può saperne un umano della qualità e della sicurezza del software prodotto da un modello AI se si limita solamente a dialogare con quest'ultimo senza mai visionarne il codice?
+
 ## Sviluppo assistito vs Vibe coding
 
 Come detto già in precedenza, la mia impressione è che il Vibe coding non sia stato affatto diffuso nel più chiaro dei modi da alcuni e che, per questo motivo, sia poi stato frainteso a catena da molti altri.
@@ -187,6 +190,7 @@ E poi, permettimi di essere anche un po' poetico: programmare, per me, è esplor
 Programmare è indagare problemi e risolverli utilizzando il proprio ingegno. E nel farlo, non solo si produce qualcosa, ma si cresce anche, imparando cose, comprendendo fatti, unendo i fili e scoprendo connessioni nascoste.
 
 Spesso si torna a casa - anche se io lavoro solo in smart working quindi da casa difficilmente mi sposto - con un'ampia comprensione del problema e della soluzione realizzata, una comprensione più ampia e più profonda di chiunque altro.
+
 ## Non è tutto da buttare
 
 Chiarita un po' la situazione, però, mi sento anche di non voler demonizzare al 100% il Vibe coding.
@@ -232,7 +236,9 @@ Il codice dovrebbe essere sempre sistemato e pulito. E questo processo, ormai lo
 Il Vibe coding è un possibilità e come tale non va esclusa a priori ma messa in pratica solo dopo averne valutato attentamente i pro e i contro. Non è un boost di produttività, non è un moltiplicatore di qualità, è solo un accesso estremamente semplificato alla realizzazione cose estremamente semplici.
 
 Può essere un buon metodo per produrre qualcosa di temporaneo o poco importante se usata bene, ma se usata male diventa subito un generatore di problemi e di debito tecnico.
+
 ## Conclusione
+
 Bene, ti ho raccontato la mia sul Vibe coding. Sono sicuro che ci sarà, la fuori chi avrà opinioni diverse dalle mie e mi piacerebbe conoscerle, quindi non esitare a scrivermi a valerio@pensieriincodice.it, a lasciare un commento ove possibile - tipo su YouTube o Spotify - o a unirti al gruppo Telegram del podcast, dove troverai tante altre persone interessanti.
 
 Intanto, io ringrazio l'amico *Davide Fasoli* di *INSiDER - Dentro la Tecnologia* per averci prestato la voce per leggere il tweet di Karpathy. Se non conosci INSiDER, beh sappi che è uno dei podcast fissi del mio feed.
