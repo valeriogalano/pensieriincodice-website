@@ -46,17 +46,17 @@ supporters:
   title: "Sostenitori"
   text: 'Un enorme grazie a tutti quelli che hanno deciso di supportare il podcast. Grazie a loro, Pensieri in codice è un progetto sostenibile e indipendente.'
   supporters:
-    - name: "Corrado Bigliardi"
-    - name: "Guelfo Alexander Ghibellini"
-    - name: "Juri"
-    - name: "Antonio Lazazzera"
-    - name: "Giordano Mancini"
-    - name: "mario.puppo"
-    - name: "PaolaZ"
-    - name: "Alex Raccuglia"
-      description: "Audio design, ospite e amico"
-    - name: "Edoardo Secco"
-    - name: "Carlo Tomas"
+   # - name: "Corrado Bigliardi"
+   # - name: "Guelfo Alexander Ghibellini"
+   # - name: "Juri"
+   # - name: "Antonio Lazazzera"
+   # - name: "Giordano Mancini"
+   # - name: "mario.puppo"
+   # - name: "PaolaZ"
+   # - name: "Alex Raccuglia"
+   #   description: "Audio design, ospite e amico"
+   # - name: "Edoardo Secco"
+   # - name: "Carlo Tomas"
 
   groups:
     - title: "Giga sostenitori"
@@ -212,18 +212,18 @@ clients:
 rewards:
   title: "Ricompense per le donazioni"
   items:
-  - label: "Titolo di sostenitore"
+  - label: "Menzione in episodio"
     value: "1"
     percentage: "33"
   - label: "Segnalibro e stickers"
     value: "10"
     percentage: "66"
-  - label: "Card laminata da sostenitore"
+  - label: "Card laminata edizione limitata"
     value: "50"
     percentage: "100"
   rows:
     - text: "Se diventi sostenitore, a prescindere dal livello di supporto, ricevi un ringraziamento pubblico nel podcast."
-    - text: "Inoltre, <strong><a href=\"/blog/nuovi-gadget-di-pensieri-in-codice/\">clicca qui.</a></strong> per scoprire come ricevere i gadget destinati ai sostenitori."
+    - text: "Inoltre, <strong><a href=\"/blog/nuovi-gadget-di-pensieri-in-codice/\">clicca qui</a></strong> per scoprire come ricevere i gadget destinati ai sostenitori."
 
 ### Platforms [ platforms ]
 platforms:
@@ -454,7 +454,22 @@ skills:
 ### Support [ support ]
 support:
   title: "Sostieni il progetto"
-  text: "Pensieri in codice è un podcast indipendente. Ciò vuol dire che vive grazie ai tuoi ascolti, alle tue condivisioni e al **tuo supporto**. Se ti piace il progetto, se lo ascolti regolarmente, insomma se ha **valore per te**, hai vari modi per dimostrare il tuo apprezzamento e il tuo sostegno."
+  text: "Pensieri in codice è un podcast indipendente basato sul modello **Value4Value**. Questo significa che ricevi **valore prima**, gratuitamente e senza tracciamento, e poi **decidi tu** quanto vale per te, restituendo valore attraverso il tuo **tempo**, il tuo **talento** o il tuo **sostegno economico**.
+
+
+Il Value4Value è una filosofia che promuove libertà, apertura e una connessione diretta tra creatore e ascoltatore. Solo una piccolissima percentuale delle persone restituisce valore, **ma è grazie a loro che questo podcast può esistere in modo sostenibile e indipendente**.
+
+
+**Come puoi restituire valore:**
+
+
+**1. Tempo** - Il tuo tempo e la tua attenzione sono preziosi: ascolta, condividi, lascia una recensione, parla del podcast ad altri, magari fagli ascoltare il tuo episodio preferito.
+
+
+**2. Talento** - Contribuisci con le tue competenze: segnala errori, [correggi una trascrizione](https://github.com/valeriogalano/pensieriincodice-cdn/tree/main/public/transcripts), [implementa migliorie per il sito o i progetti correlati](https://github.com/valeriogalano), oppure [proponi tu stesso ciò che pensi che possa servire](mailto:valerio@pensieriincodice.it).
+
+
+**3. Sostegno economico** - Supporta il progetto con una donazione o utilizzando i servizi partner."
   columns:
     - type: "list"
       title: "Con una donazione"
