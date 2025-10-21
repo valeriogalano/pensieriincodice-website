@@ -52,7 +52,7 @@ episode_type: full
 series: [{$series}]
 categories: [Podcast]
 tags: [{$keywords}]
-seasons: {$season}
+season: {$season}
 number: {$count}
 date: {$pubDate}
 audio: "episodes/PIC{$count}.mp3"
