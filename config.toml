@@ -173,8 +173,7 @@ sub_category = ""
 explicit = "false"
 itunesID = 12345677
 itunes_type = "episodic"  # accepted values are: "episodic" or "serial"
-updatePeriod = "monthly"
-updateFrequency = 1
+updateFrequency = "monthly"
 funding_url = "https://pensieriincodice.it/#support-card"
 funding_text = "Sostieni il podcast"
 

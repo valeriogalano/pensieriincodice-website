@@ -1,14 +1,12 @@
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <rss version="2.0"
-     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
      xmlns:atom="http://www.w3.org/2005/Atom"
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
      xmlns:content="http://purl.org/rss/1.0/modules/content/"
-     xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md">
+     xmlns:podcast="https://podcastindex.org/namespace/1.0">
     <channel>
         <atom:link href="{{ .Site.BaseURL }}podcast/index.xml" rel="self" type="application/rss+xml"/>
-        <sy:updatePeriod>{{ .Site.Params.Podcast.updatePeriod }}</sy:updatePeriod>
-        <sy:updateFrequency>{{ .Site.Params.Podcast.updateFrequency }}</sy:updateFrequency>
+        <podcast:updateFrequency rrule="FREQ={{ .Site.Params.Podcast.updateFrequency | upper }}">{{ .Site.Params.Podcast.updateFrequency | title }}</podcast:updateFrequency>
         <title>{{ .Site.Params.Podcast.title }}</title>
         <link>{{ .Site.BaseURL }}</link>
         <language>{{ .Site.LanguageCode }}</language>
