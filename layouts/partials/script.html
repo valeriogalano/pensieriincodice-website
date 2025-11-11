@@ -5,7 +5,7 @@
         <div>
             <a href="#">Nascondi</a>
             <p>
-                {{ with index $.Site.Data.transcripts $episode }}
+                {{ with index $.Site.Data.scripts $episode }}
                 {{- if .segments }}
                 <p>Quella che segue è una trascrizione automatica dell'episodio.</p>
                 {{ else }}
