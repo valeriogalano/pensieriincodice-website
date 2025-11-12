@@ -1,0 +1,3 @@
+622.605650	677.184149	L'amplificatore
+892.446224	944.481264	Il microfono non sa cosa deve catturare
+1547.061115	1617.162479	I musicisti sul palco
