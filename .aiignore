@@ -1,0 +1,12 @@
+# Ignore build output directories
+public/
+
+# Ignore project files
+.idea/
+*.iml
+
+# Ignore logs and temporary files
+logs/
+*.log
+*.tmp
+
