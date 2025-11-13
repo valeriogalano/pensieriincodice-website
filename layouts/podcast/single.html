@@ -7,7 +7,7 @@
 
 		<div class="content blog-single">
 
-			<div class="title">Episodio del podcast</div>
+			<div class="title" id="podcast-episode">Episodio del podcast</div>
 
 			<div class="row border-line-v">
 				<div class="col col-m-12 col-t-12 col-d-12">
@@ -57,8 +57,34 @@
 							{{ partial "partners.html" . }}
 							{{ partial "sources.html" . }}
 							{{ partial "credits.html" . }}
-							{{ partial "script.html" . }}
-						</div>
+ 						{{ partial "script.html" . }}
+ 					</div>
+
+ 					<script>
+ 						(function () {
+ 							// Auto-scroll alla sezione "Episodio del podcast" su mobile
+ 							// Trigger anche con hash esplicito (#episode / #episodio / #podcast-episode)
+ 							var isMobile = window.matchMedia('(max-width: 767px)').matches;
+ 							var hash = (location.hash || '').toLowerCase();
+ 							var hasExplicitHash = hash === '#episode' || hash === '#episodio' || hash === '#podcast-episode';
+ 							if (!isMobile && !hasExplicitHash) return;
+
+ 							function scrollNow() {
+ 								var el = document.getElementById('podcast-episode');
+ 								if (el && typeof el.scrollIntoView === 'function') {
+ 									el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+ 								}
+ 							}
+
+ 							if (document.readyState === 'loading') {
+ 								document.addEventListener('DOMContentLoaded', function(){
+ 									window.requestAnimationFrame(scrollNow);
+ 								});
+ 							} else {
+ 								window.requestAnimationFrame(scrollNow);
+ 							}
+ 						})();
+ 					</script>
 
 						<div class="post-text-bottom">
 							{{ if .Params.tags }}
