@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{{ .Site.Title }} • Link in bio</title>
+    <meta name="description" content="Link in bio di {{ .Site.Title }}: ultimi episodi del podcast" />
+    <style>
+      :root { --bg:#0b0b0b; --card:#151515; --muted:#9a9a9a; --text:#ffffff; --accent:#ff6a00; }
+      * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+      html, body { height: 100%; }
+      body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+             background: var(--bg); color: var(--text); }
+      .wrap { min-height: 100vh; display: flex; flex-direction: column; align-items: stretch; }
+      header { padding: 20px 16px 8px; text-align: center; }
+      header h1 { font-size: 20px; margin: 0; }
+      header p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+      .latest { margin: 12px 12px 8px; background: var(--card); border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+      .latest a { color: inherit; text-decoration: none; display: block; }
+      .cover { position: relative; width: 100%; aspect-ratio: 1/1; background: #222; display: block; }
+      .cover img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; }
+      .meta { padding: 14px; }
+      .eyebrow { color: var(--accent); font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+      .title { font-size: 18px; font-weight: 700; margin: 6px 0 4px; line-height: 1.25; }
+      .sub { color: var(--muted); font-size: 13px; }
+      .list { padding: 8px 8px 24px; }
+      .item { display: flex; gap: 12px; align-items: center; padding: 10px; border-radius: 12px; text-decoration: none; color: inherit; }
+      .item:active { background: rgba(255,255,255,.06); }
+      .thumb { width: 56px; height: 56px; border-radius: 10px; overflow: hidden; background: #222; flex: 0 0 auto; }
+      .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .itext { min-width: 0; }
+      .ititle { font-size: 15px; font-weight: 600; line-height: 1.2; margin: 0 0 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .imeta { font-size: 12px; color: var(--muted); }
+      .cta { display: inline-block; margin-top: 10px; background: var(--accent); color: #000; font-weight: 700; padding: 10px 14px; border-radius: 999px; font-size: 14px; }
+      @media (min-width: 640px){ .wrap { max-width: 640px; margin: 0 auto; } }
+      @supports not (aspect-ratio: 1/1) { .cover { padding-top: 100%; } .cover img { position: absolute; top:0; left:0; } }
+    </style>
+  </head>
+  <body>
+  {{/* Collect all podcast pages, newest first */}}
+  {{ $all := (where .Site.RegularPages "Type" "podcast").ByPublishDate.Reverse }}
+  <div class="wrap">
+    <header>
+      <h1>{{ .Site.Title }}</h1>
+      <p>Ascolta gli episodi più recenti</p>
+    </header>
+
+    {{ if gt (len $all) 0 }}
+    {{ $latest := index $all 0 }}
+    <section class="latest">
+      <a href="{{ $latest.RelPermalink }}" aria-label="Vai all'ultimo episodio: {{ $latest.Title }}">
+        <span class="cover">
+          {{ if $latest.Params.image }}
+            <img loading="eager" src="{{ $latest.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.image }}" alt="{{ $latest.Title }}" />
+          {{ else }}
+            <img loading="eager" src="{{ $latest.Site.Params.podcast.image | absURL }}" alt="{{ $latest.Title }}" />
+          {{ end }}
+        </span>
+        <div class="meta">
+          <div class="eyebrow">Ultimo episodio{{ with $latest.Params.number }} • #{{ . }}{{ end }}</div>
+          <div class="title">{{ $latest.Title }}</div>
+          <div class="sub">{{ $latest.PublishDate | time.Format .Site.Params.dateFormat }}</div>
+          <span class="cta">Ascolta ora</span>
+        </div>
+      </a>
+    </section>
+    {{ end }}
+
+    {{ if gt (len $all) 1 }}
+    <section class="list" aria-label="Tutti gli episodi">
+      {{ range $i, $p := (after 1 $all) }}
+        <a class="item" href="{{ $p.RelPermalink }}">
+          <span class="thumb">
+            {{ if $p.Params.image }}
+              <img loading="lazy" src="{{ $p.Site.Params.podcast.cdn_base_url }}{{ $p.Params.image }}" alt="{{ $p.Title }}" />
+            {{ else }}
+              <img loading="lazy" src="{{ $p.Site.Params.podcast.image | absURL }}" alt="{{ $p.Title }}" />
+            {{ end }}
+          </span>
+          <span class="itext">
+            <div class="ititle">{{ $p.Title }}</div>
+            <div class="imeta">{{ with $p.Params.number }}#{{ . }} • {{ end }}{{ $p.PublishDate | time.Format $.Site.Params.dateFormat }}</div>
+          </span>
+        </a>
+      {{ end }}
+    </section>
+    {{ end }}
+  </div>
+  </body>
+  </html>
