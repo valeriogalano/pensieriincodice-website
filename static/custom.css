@@ -149,3 +149,11 @@ section {
 .accordion :target h2 + div {
     height: auto;
 }
+
+#main-content h1 {
+    font-size: 20px;
+}
+
+#main-content h2 {
+    font-size: 18px;
+}
