@@ -29,7 +29,7 @@
       .thumb { width: 56px; height: 56px; border-radius: 10px; overflow: hidden; background: #222; flex: 0 0 auto; }
       .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
       .itext { min-width: 0; }
-      .ititle { font-size: 15px; font-weight: 600; line-height: 1.2; margin: 0 0 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .ititle { font-size: 15px; font-weight: 600; line-height: 1.2; margin: 0 0 4px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
       .imeta { font-size: 12px; color: var(--muted); }
       .cta { display: inline-block; margin-top: 10px; background: var(--accent); color: #000; font-weight: 700; padding: 10px 14px; border-radius: 999px; font-size: 14px; }
       @media (min-width: 640px){ .wrap { max-width: 640px; margin: 0 auto; } }
@@ -59,7 +59,22 @@
         <div class="meta">
           <div class="eyebrow">Ultimo episodio{{ with $latest.Params.number }} • #{{ . }}{{ end }}</div>
           <div class="title">{{ $latest.Title }}</div>
-          <div class="sub">{{ $latest.PublishDate | time.Format .Site.Params.dateFormat }}</div>
+          <div class="sub">
+            {{ $latest.PublishDate | time.Format .Site.Params.dateFormat }}
+            {{ $durRaw := $latest.Params.audio_duration }}
+            {{ if $durRaw }}
+              {{ $durStr := printf "%v" $durRaw }}
+              {{ if in $durStr ":" }}
+                • {{ $durStr }}
+              {{ else }}
+                {{ $total := $durRaw }}
+                {{ $h := div $total 3600 }}
+                {{ $m := mod (div $total 60) 60 }}
+                {{ $s := mod $total 60 }}
+                • {{ if gt $h 0 }}{{ printf "%d:%02d:%02d" $h $m $s }}{{ else }}{{ printf "%d:%02d" $m $s }}{{ end }}
+              {{ end }}
+            {{ end }}
+          </div>
           <span class="cta">Ascolta ora</span>
         </div>
       </a>
@@ -79,7 +94,22 @@
           </span>
           <span class="itext">
             <div class="ititle">{{ $p.Title }}</div>
-            <div class="imeta">{{ with $p.Params.number }}#{{ . }} • {{ end }}{{ $p.PublishDate | time.Format $.Site.Params.dateFormat }}</div>
+            <div class="imeta">
+              {{ with $p.Params.number }}#{{ . }} • {{ end }}{{ $p.PublishDate | time.Format $.Site.Params.dateFormat }}
+              {{ $durRaw := $p.Params.audio_duration }}
+              {{ if $durRaw }}
+                {{ $durStr := printf "%v" $durRaw }}
+                {{ if in $durStr ":" }}
+                  • {{ $durStr }}
+                {{ else }}
+                  {{ $total := $durRaw }}
+                  {{ $h := div $total 3600 }}
+                  {{ $m := mod (div $total 60) 60 }}
+                  {{ $s := mod $total 60 }}
+                  • {{ if gt $h 0 }}{{ printf "%d:%02d:%02d" $h $m $s }}{{ else }}{{ printf "%d:%02d" $m $s }}{{ end }}
+                {{ end }}
+              {{ end }}
+            </div>
           </span>
         </a>
       {{ end }}
