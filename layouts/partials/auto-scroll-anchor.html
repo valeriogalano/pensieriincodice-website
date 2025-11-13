@@ -1,0 +1,61 @@
+<script>
+  (function () {
+    try {
+      var cfg = { enabled: true, breakpoint: '(max-width: 767px)' };
+
+      if (!cfg.enabled) return;
+
+      var isMobile = window.matchMedia(cfg.breakpoint).matches;
+      var hash = (location.hash || '').toLowerCase();
+      var knownHashes = ['#content', '#main', '#main-content', '#episode', '#episodio', '#podcast-episode'];
+      var hasExplicitKnownHash = knownHashes.indexOf(hash) !== -1;
+
+      // If there is a hash but it's not one we manage, don't override browser default
+      if (!isMobile && !hasExplicitKnownHash) return;
+
+      var reduceMotion = false;
+      try { reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+
+      function targetFromHash(h) {
+        if (!h) return null;
+        try { return document.getElementById(h.replace('#','')); } catch (e) { return null; }
+      }
+
+      function pickTarget() {
+        // Priority: explicit known hash element
+        if (hasExplicitKnownHash) {
+          var t1 = targetFromHash(hash);
+          if (t1) return t1;
+        }
+        // Podcast specific anchor if present
+        var podcast = document.getElementById('podcast-episode');
+        if (podcast) return podcast;
+        // Generic anchors
+        var mainId = document.getElementById('main-content');
+        if (mainId) return mainId;
+        // Fallback: first content block
+        var q = document.querySelector('.card-inner .content, .content');
+        if (q) return q;
+        return null;
+      }
+
+      function scrollNow() {
+        var el = pickTarget();
+        if (el && typeof el.scrollIntoView === 'function') {
+          var behavior = reduceMotion ? 'auto' : 'smooth';
+          el.scrollIntoView({ behavior: behavior, block: 'start' });
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function(){
+          window.requestAnimationFrame(scrollNow);
+        });
+      } else {
+        window.requestAnimationFrame(scrollNow);
+      }
+    } catch (e) {
+      // swallow errors
+    }
+  })();
+</script>
