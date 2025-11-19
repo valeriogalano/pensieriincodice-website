@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+{{ "<!-- Card - Elenco Tag (lista) -->" | safeHTML }}
+<div class="card-inner blog blog-archive animated" id="blog-archive-card">
+  <div class="card-wrap">
+
+    <div class="content blog">
+
+      <div class="title">{{ .Title }}</div>
+
+      <ul>
+        {{- with .Data.Terms -}}
+          {{- range .Alphabetical -}}
+          <li>
+            <a href="{{ .Page.Permalink }}" class="name">{{ .Page.Title }}</a> ({{ .Count }})
+          </li>
+          {{- end -}}
+        {{- end -}}
+      </ul>
+
+    </div>
+
+  </div>
+</div>
+
+{{ end }}
