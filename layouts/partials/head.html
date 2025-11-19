@@ -85,29 +85,58 @@
     }
   </style>
 
+  {{ "<!-- Canonical + Open Graph base -->" | safeHTML }}
+  <link rel="canonical" href="{{ .Permalink }}" />
+
   <meta property="og:title"              content="{{ .Title }}" />
-  {{ if .Params.image }}
-    <meta property="og:image"            content="{{ .Site.Params.podcast.cdn_base_url }}{{ .Params.image }}" />
-  {{ else }}
-    <meta property="og:image"            content="{{ .Site.Params.podcast.image | absURL }}" />
-  {{ end }}
+  <meta property="og:url"                content="{{ .Permalink }}" />
+  <meta property="og:site_name"          content="{{ .Site.Title }}" />
+  <meta property="og:locale"             content="{{ replace (.Site.Language.Lang | default "it-IT") "-" "_" }}" />
+  <meta property="og:type"               content="{{ if .IsHome }}website{{ else if or (eq .Type "blog") (eq .Type "podcast") }}article{{ else }}website{{ end }}" />
+
   {{ if .Params.authors }}
     <meta name="author"                  content="{{ range .Params.authors }} {{ . }} {{ end }}">
   {{ else }}
     <meta name="author"                  content="Valerio Galano">
   {{ end }}
+
+  {{ $desc := "" }}
   {{ if .Description }}
-    <meta name="description"             content="{{ .Description }}">
-    <meta property="og:description"      content="{{ .Description }}">
-    <meta name="twitter:description"     content="{{ .Description }}">
+    {{ $desc = .Description }}
   {{ else if .Summary }}
-    <meta name="description"             content="{{ .Summary }}">
-    <meta property="og:description"      content="{{ .Summary }}">
-    <meta name="twitter:description"     content="{{ .Summary }}">
+    {{ $desc = .Summary }}
   {{ else if .Site.Params.description }}
-    <meta name="description"             content="{{ .Site.Params.description }}">
-    <meta property="og:description"      content="{{ .Site.Params.description }}">
-    <meta name="twitter:description"     content="{{ .Site.Params.description }}">
+    {{ $desc = .Site.Params.description }}
   {{ end }}
-  <meta property="og:url"                content="{{ .Permalink }}" />
+  {{ with $desc }}
+    <meta name="description"             content="{{ . }}">
+    <meta property="og:description"      content="{{ . }}">
+    <meta name="twitter:description"     content="{{ . }}">
+  {{ end }}
+
+  {{/* Immagine OG con varianti – preferisci quadrata 1200x1200 */}}
+  {{- $img := "" -}}
+  {{- if .Params.image_og -}}
+    {{- /* Le OG images vengono generate e servite dal sito (cartella static) */ -}}
+    {{- $img = ( .Params.image_og | absURL ) -}}
+  {{- else if .Params.image -}}
+    {{- $img = printf "%s%s" .Site.Params.podcast.cdn_base_url .Params.image -}}
+  {{- else -}}
+    {{- $img = ( .Site.Params.podcast.image | absURL ) -}}
+  {{- end -}}
+  <meta property="og:image"              content="{{ $img }}" />
+  <meta property="og:image:secure_url"   content="{{ replace $img "http://" "https://" }}" />
+  <meta property="og:image:type"         content="image/png" />
+  {{ $w := (or .Params.og_image_width 1200) }}
+  {{ $h := (or .Params.og_image_height 1200) }}
+  <meta property="og:image:width"        content="{{ $w }}" />
+  <meta property="og:image:height"       content="{{ $h }}" />
+  <meta property="og:image:alt"          content="{{ .Title }}" />
+
+  {{ "<!-- Twitter cards (non usate da Telegram ma utili altrove) -->" | safeHTML }}
+  <meta name="twitter:card"              content="summary_large_image" />
+  <meta name="twitter:site"              content="@valeriogalano" />
+  <meta name="twitter:creator"           content="@valeriogalano" />
+  <meta name="twitter:title"             content="{{ .Title }}" />
+  <meta name="twitter:image"             content="{{ $img }}" />
 </head>
