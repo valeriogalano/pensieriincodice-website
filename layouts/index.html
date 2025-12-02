@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+{{ $page := . }}
+
+{{ $menu := .Site.Menus.main }}
+
+{{ $cards := slice }}
+
+{{ range $menu }}
+  {{ $cards = $cards | append ( dict "name" .Identifier "sections" .Params.builder ) }}
+{{ end }}
+
+{{ range $i, $card := $cards }}
+
+<!-- Card - {{ $card.name }} -->
+<div class="card-inner{{ if not $i }} animated active{{ end }}" id="{{ $card.name }}-card">
+	<div class="card-wrap">
+
+  {{ $sections := $card.sections }}
+
+  {{ range $section := $sections }}
+
+    {{ $existsPath := $section | printf "partials/%s-section.html" }}
+    {{ $includePath := $section | printf "%s-section.html" }}
+    {{ if templates.Exists ( $existsPath ) }}
+      {{ partial $includePath $page }}
+    {{ end }}
+
+  {{ end }}
+
+  </div>
+</div>
+
+{{ end }}
+
+
+
+{{ end }}
