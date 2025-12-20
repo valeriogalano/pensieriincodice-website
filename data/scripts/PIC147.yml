@@ -1,0 +1,291 @@
+text: "
+## Introduzione
+
+Di Vibe Coding abbiamo già parlato una decina di episodi fa, facendo un po' di analisi per capire le definizione, le caratteristiche e le implicazioni di questa pratica.
+
+Oggi, dopo alcuni mesi e dopo averla sperimentata in prima persona, sono di nuovo qui, a raccontarti la mia personale esperienza - almeno una della tante: quella che mi sembra la più interessante - e, come sempre, a condividere le mie riflessioni sull'argomento.
+
+Sigla!
+
+## Il problema
+
+Questo esperimento ha avuto inizio alcune settimane fa, in una tiepida domenica di Ottobre in cui avevo deciso di eliminare per un po' l'applicazione di Instagram dal mio iPhone e mi sembrava di essere mentalmente ringiovanito di 10 anni.
+
+Ero dunque così alla ricerca di un modo intelligente di impiegare le centinaia di migliaia di neuroni risparmiati grazie alla mancata esposizione a meme e scrolling infinito che mi sono detto: *perché non dedicarmi a migliorare un po' il mio progetto Pensieri in codice*?
+
+Ora, se c'è una cosa che manca per il mio podcast - lo dico anche spesso a fine puntata - è un po' di attività sui social. Qualcosa che possa attirare nuovi ascoltatori ma che sia anche organico e disciplinato: dei contenuti adatti al mezzo, insomma.
+
+E il motivo per cui non ho mai affrontato questa questione è, ovviamente, la mancanza di tempo per svolgere tutte le operazioni necessarie a realizzare contenuti con le giuste caratteristiche.
+
+Si perché, per un prodotto solo audio come Pensieri in codice, i social non sono esattamente terreno fertile. Pensaci: Instagram, TikTok, Facebook, nessuno di questi è adatto alla pubblicazione di solo audio. Sono tutti pensati per video, foto o, al massimo, testo.
+
+La soluzione più corretta, quindi, per creare e portare avanti un social per questo progetto sarebbe quella di produrre immagini, caroselli e video appositi. Ma per fare questo, c'è bisogno di qualcuno che ci si dedichi, e io già spendo una quantità notevole di tempo solo per realizzare gli episodi.
+
+Invece di arrendermi e lasciar perdere, però, ho pensato che valesse la pena cercare una soluzione intermedia: qualcosa di accettabile ma che non mi richiedesse ulteriori eccessivi sforzi editoriali e di montaggio - che sono poi quelli che consumerebbero più tempo, ovviamente.
+
+E riflettendo e cercando online, mi sono ricordato che esistono dei servizi dedicati al podcasting che creano i cosiddetti *audiograms*, cioè dei video che contengono l'audio di spezzoni degli episodi montati con una grafica dedicata.
+
+Forse ti sarà capitato di vederne qualcuno: in pratica sono delle clip di spezzoni significativi di un podcast montati però con un’immagine con la locandina, il titolo, la trascrizione e, possibilmente, qualche elemento in movimento, che di solito è una forma d'onda dell'audio.
+
+La mia ricerca mi ha portato a trovare vari servizi adatti allo scopo ma, purtroppo, dopo qualche ora di test sono giunto alla conclusione che difficilmente avrei potuto risolvere la questione percorrendo questa strada.
+
+Molti di questi strumenti o servizi non hanno portato a risultati accettabili; alcuni non hanno portato proprio a risultati - della serie: la prova gratuita non mi ha permesso di produrre nemmeno un audiogram completo -; alcuni ancora hanno funzionato ma presentano un altro limite per me insormontabile: il prezzo.
+
+Capiamoci: non sto dicendo che non voglio assolutamente pagare per un servizio del genere, né mi sto lamentando dell'effettivo ammontare del costo - 30 dollari sono più che accettabili per la possibilità di creare infiniti audiogrammi -. Il problema è piuttosto del mio specifico progetto.
+
+Pensieri in codice non è un podcast professionale, ne un prodotto commerciale; è un piccolo progetto di divulgazione che io porto avanti per hobby, nel mio tempo libero.
+
+Al massimo riesco a pubblicare un paio di episodi al mese, quindi la spesa per un servizio del genere difficilmente potrebbe essere giustificabile, né tantomeno ammortizzabile - neanche lontanamente.
+
+Avrei dovuto escogitare un modo per riattivare le pubblicità e spendere l'intero ammontare delle donazioni solo per pagare una frazione di questa cifra: non avrebbe avuto senso.
+
+*E quindi?* ti starai chiedendo. E quindi la mia mattinata di analisi e ricerca si è conclusa così con un nulla di fatto e tanta delusione.
+
+Finché qualche ora dopo, mi sono ricordato di essere un programmatore.
+
+## L'idea
+
+Siccome io sono un po' come il tenente Colombo - che non riesce ad acquietarsi se non ha ricollegato tutti i fili di una questione -, qualche ora dopo il mio primo tentativo, ci stavo ancora pensando e mi sono chiesto: *ma quanto potrà mai essere complicato scrivermi da solo un software che faccia questa operazioni per me in modo automatizzato?*
+
+E inizialmente, la risposta a questa domanda è stata *parecchio*. 
+
+In effetti, con il mio passato da programmatore Web specializzato in back-end o di sviluppatore di soluzioni cloud, non ho conoscenze specifiche su come realizzare video, forme d'onda e cose di questo genere.
+
+Si tratta di conoscere come funziona il suono e probabilmente perfino la matematica che c'è dietro, per non parlare del montaggio del video, la gestione dei frame. Insomma non so nemmeno cosa mi sarebbe servito conoscere.
+
+Ma fortunatamente tutta questa storia e questi ragionamenti sono accaduti in un momento stranamente propizio: innanzitutto avevo da poco pubblicato l'episodio di Pensieri in codice sul *Vibe coding*.
+
+Al tempo stesso, poi, avevo iniziato la mia partecipazione al un nuovo podcast di *Runtimeradio* chiamato *Good Vibrations* nel quale, con Simone Pizzi, Alex Raccuglia e Luca Francesca, ci confrontiamo ogni due martedì sera parlando proprio di *Vibe coding*.
+
+E quindi ho pensato: *perché non provare? Vediamo se riesco a sviluppare questo strumento utilizzando il Vibe coding! Magari avrò successo o magari no, ma, in ogni caso, avrò sperimentato qualcosa di nuovo ed interessante.*
+
+Beh, spoiler: ho provato e ci sono anche riuscito. Ho realizzato uno script che prende uno spezzone di episodio di un podcast e genera delle clip in formati diversi in modo completamente autonomo.
+
+Un aspetto interessante di questa storia è che, per cercare di sperimentare al meglio la pratica del Vibe coding, ho anche deciso di scrivere lo script in questione in linguaggio Python e non in PHP, che è quello che uso per professione.
+
+Questo principalmente mi ha dato due vantaggi: il primo è che il Python oggettivamente più adatto allo scopo rispetto al PHP; ma il secondo - e più importante - è che non conoscendo io praticamente nulla di Python, sono stato costretto a fare vero Vibe coding.
+
+Anche guardando il codice del progetto, infatti, - cosa che ho provato a fare di tanto in tanto - non ci ho capito granché e, a parte per qualche concetto abbastanza banale, mi sono trovato sempre nella situazione di dover utilizzare l'agente AI per apportare modifiche.
+
+In questo modo ho potuto sperimentare abbastanza a fondo questa pratica e devo dire che, come già immaginavo, ho imparato veramente un bel po' di cose anche su come gestire il normale sviluppo di codice assistito da llm.
+
+E ora ti racconto più o meno com'è andata.
+
+## Cronache di Vibe Coding
+
+Giorno 19 Ottobre 2025 - Ore 16 circa. Entro nella bolla. Inizio a cercare di capire come spiegare ad un llm tutto quello che voglio ottenere da questo progetto.
+
+Rifletto. Ragiono. Scrivo requisiti e caratteristiche desiderate. Il prompt iniziale cresce.
+
+Ore 16:30. Sottometto il prompt e attendo l'elaborazione.
+
+Ore 16:40. Fallimento totale. Lo script non si avvia nemmeno. Errori su errori e non ho idea di quali funzionalità dovrebbero essere state effettivamente implementate e quali no.
+
+Ore 16:43. Come da raccomandazione di Andrej Karpathy nel suo tweet in cui ha per primo definito il Vibe coding, provo a sottomettere all'agente AI gli errori riscontrati.
+
+Ore 16:45. Gli errori sono cambiati. Forse i precedenti sono stati corretti ma ne sono spuntati di nuovi. Riprovo a darli in pasto al Large Language Model.
+
+Ore 16:47. Ancora errori. Sempre nuovi. Forse questo Vibe coding non è poi 'sto granché. Vado a prepararmi un tè.
+
+Ore 17:20. Cancello l'intero progetto.
+
+Ore 18:00. Mi sono fatto uno schema a grandi linee di tutte le attività che dovrei eseguire se volessi sviluppare questo progetto in PHP. Roba tipo: definizione delle cartelle, creazione comando da console che accetti dei parametri, implementazione chiamata curl per il download del feed, interpretazione di un file xml, ecc. ecc.
+
+Ho raccolto l'idee, cercato alcune informazioni che mi mancavano, pianificato il processo dall'inizio alla fine. Ora la mia intenzione è quella di guidare l'agente posso passo.
+
+Ore 18:11  
+Il progetto nasce con un timidissimo *primo commit*, come un pulcino che sbuca dal nido digitale, pronto a imparare a volare.
+
+Ore 18:13
+Ho messo su le fondamenta: una struttura di cartelle ordinata e un primo comando da terminale.
+
+Ore 18:18  
+Ho aggiunto la lettura del feed remoto del podcast e l'estrazione del file audio e la visualizzazione dei dettagli dell’episodio.
+
+Ore 18:21  
+Titolo del podcast e copertina fanno la loro comparsa a schermo.
+
+Ore 18:28  
+Entrano in scena le trascrizioni: è pronto il parser dei file .srt che permetterà di creare i sottotitoli.
+
+Ore 18:36
+Pronta l'estrazione dell’audio degli episodi.
+
+Ore 19:21
+Nasce il primo audiogramma: lo script estrae segmenti audio, trascrizione, titolo, locandina e dettagli vari e li utilizza per creare il video in formato orizzontale, quadrato e verticale con tanto di forma d'onda.
+
+Da qui in poi ci sono state tante altre lavorazioni, ma più che altro si è trattato di migliorie: parametri utili, miglioramenti estetici, aggiunta o rimozioni di elementi vari e via discorrendo.
+
+Morale della favola: nell'arco di circa 4 ore di una pigra domenica pomeriggio di Ottobre ho posto le basi per uno script che leggesse il feed di un podcast, estraesse i soundbite degli episodi, scaricasse locandina, audio, titolo, trascrizione e altra roba e usasse il tutto per costruire tre video pronti da condividere.
+
+Non male, direi.
+
+## Il principio di Pareto
+
+La prima cosa che ho realizzato scrivendo questo episodio è che il mio primo esperimento di Vibe coding ricade perfettamente nei dettami del principio di Pareto: l'80% dei risultati è arrivato dal 20% degli sforzi.
+
+Oggi lo script di generazione degli audiogrammi - che per inciso, ti lascio in descrizione se vuoi andare a guardare - è molto più avanzato di quello che ho sviluppato quel giorno.
+
+Ora lo si può usare in modo interattivo, si può lanciare con parametri a riga di comando, oppure si possono creare dei file di configurazione preconfezionati per più podcast. Così chi deve gestire più programmi contemporaneamente deve solo passare il file di configurazione giusto.
+
+Si possono scegliere i colori, quali video generare, se aggiungere o meno elementi come la trascrizione, il titolo o una call to action. Ma il concetto base resta quello originale, progettato e realizzato il 19 Ottobre.
+
+Onestamente, non penso proprio che avrei potuto implementare la stessa quantità di funzionalità nello stesso tempo, anche usando un linguaggio che conosco come il PHP. Non ci sarei mai riuscito proprio perché non ho conoscenze in ambito di programmazione audio e video.
+
+In quelle prime quattro ore di Vibe coding sono riuscito a mettere in piedi una prima versione funzionante dello script. Una versione, certo, basilare, ma che faceva da prova di concetto per tutto ciò che mi serviva.
+
+Ero francamente entusiasta.
+
+## Non è tutto oro...
+
+Fino ad ora ho parlato esclusivamente di Vibe coding, però devo confessarti che, di tanto in tanto, non ho resistito alla curiosità e mi sono andato a guardare il codice dello script tra i vari punti di avanzamento.
+
+È pur vero che non sono un programmatore Python, quindi probabilmente il mio giudizio non vale granché, però ho notato che alcune parti - ad esempio la gestione delle configurazioni - sembravano estremamente prolisse. Davvero tanto codice per fare certe robe.
+
+Poi, guardando all'organizzazione dei file e alla suddivisione del contenuto non ho avuto una gran sensazione di ordine ed eleganza, quanto piuttosto quella di un collage di patch appiccicate una sull'altra.
+
+Ovviamente il progetto non è finito. Sempre seguendo il principio di Pareto, più mi avvicino al risultato finale che vorrei ottenere, più la velocità di sviluppo rallenta e il numero di prompt aumenta.
+
+Ma viste le buone premesse, io questo progetto lo sto portando avanti - sempre in Vibe coding - e da allora non ho solo aggiunto funzionalità ma ho anche fatto un po' d'ordine... sia nel codice che nella mia testa.
+
+Innanzitutto ho capito che il Vibe coding ha un costo nascosto che, se non lo si sperimenta in prima persona, può essere complicato da comprendere. Non parlo solo di costo economico - che comunque c'è e non è affatto banale, credimi - bensì di costo in termini di energie mentali.
+
+Creare un prompt, affinarlo, scegliere cosa chiedere, scrivere nel modo più chiaro e preciso possibile per il modello, testare il risultato, capire se è corretto o sbagliato, se è qualcosa da cui si può andare avanti o che va rifiutato per ricominciare da un passo indietro...
+
+È come avere un assistente super veloce e super volenteroso che però ti sbatte sul tavolo tantissime opzioni e tu devi vagliarle, scartare quelle che non vanno bene e tenere quelle che fanno al caso tuo.
+
+E per fare queste operazioni nel modo giusto, secondo me, serve esperienza. Ma ne riparliamo meglio a breve.
+
+## Consigli pratici
+
+A questo punto, prima di andare avanti, vorrei condividere con te qualche consiglio pratico derivante dalla mia - seppur breve - esperienza maturata nel campo del Vibe coding. Magari vuoi provare e forse ti posso essere utile.
+
+Non mi voglio dilungare troppo con questo capitolo quindi non starò a dirti quale editor usare o quale modello da i risultati migliori, anche perché credo che siano questioni un po' soggettive e che dipendono da vari fattori.
+
+Semplicemente, scegli lo strumento che ti ispira di più e, se puoi, prova anche la versione pro per 1 mese - magari qualcuno che ha il primo mese gratis, non so - giusto per avere un'esperienza completa.
+
+Detto questo, i miei consigli per il tuo progetto sono essenzialmente tre.
+
+Primo: sperimenta. Sperimenta. Sperimenta. Sperimenta. Sopratutto all'inizio, quando puoi buttare tutto a mare e ricominciare velocemente. Un buon Vibe coding non è tutto merito del modello ma buona parte dipende da come strutturi le richieste e come fai le tue scelte.
+
+Secondo: tieni il progetto piccolo. All'inizio sopratutto avrai voglia di aggiungere l'impossibile: costruirai una baita, poi aggiungerai un piano e, senza sapere come, ti troverai a collocare l'attico al 100°.
+
+Sappi che questa cosa non funziona, almeno non subito. Per raggiungere un risultato del genere dovrai essere capace tu di *frammentare* il progetto nel modo giusto agli occhi dell'agente, altrimenti, raggiunta una quantità importante di codice, questo inizierà a svalvolare.
+
+Terzo: di tanto in tanto, fai pulizia. Quando modifichi in continuazione in Vibe coding vedrai apparire sempre più schifezze nel codice: retrocompatibilità non richieste, commenti non necessari, righe di codice che servono a fixare altro codice che sta due righe sopra.
+
+L'agente non ha una vera comprensione del codice, sopratutto se legge e modifica blocchi diversi in momenti diversi.
+
+Pertanto, ognittanto, puoi chiedergli di analizzare e rifattorizzare tutto o in parte - sempre controllando che non ti sfasci nulla, mi raccomando - in modo da mantenere il progetto un po' più compatto, leggibile e ordinato.
+
+Magari potrà non servire a te, ma comunque farà la differenza anche per la qualità del Vibe coding successivo.
+
+Lo so che, a parte il primo, gli altri consigli hanno molto senso anche in un progetto di sviluppo classico, ma magari non tutti ci pensano. Detto questo, torniamo al nostro discorso.
+
+## Vibe coding come abilitatore
+
+Ora, io se fossi in te - cioè se stessi ascoltando un programmatore con quasi 25 anni di esperienza in ambito professionale e che da piccolo si *divertiva* a scrivere i propri programmini per MS-DOS in basic, che mi parla di Vibe coding - avrei una bella serie di domande da fare.
+
+*Ma questa pratica ha senso?*, *Ora siamo tutti programmatori?*, *È una roba che vale la pena di utilizzare sempre o meglio affidarsi ancora ai professionisti?*. Insomma, hai capito il concetto.
+
+Io queste ed altre domande ho provato a farmele da solo alla luce di questa mia nuova esperienza, ci ho riflettuto un po' e devo dire che, almeno per ora, mi sento di confermare quanto immaginavo già nell'episodio 136.
+
+Da professionista non posso fare altro se non metterti in guardia dal fatto che un codice sviluppato tramite Vibe coding non può e non deve essere utilizzato per contesti seri o che abbiano anche solo un minimo di importanza.
+
+Tradotto: se un malfunzionamento di quel codice potesse causare danni a qualcuno, fermare un'attività di una qualche rilevanza o comportare una breccia di sicurezza di qualsiasi tipo, allora sarebbe da irresponsabili utilizzarlo.
+
+Sarebbe come mettere in produzione il codice sviluppato da un collega senza che questo sia passato per neanche una review. Non va bene nemmeno se quel collega è il miglior sviluppatore della storia, figuriamoci un llm.
+
+Detto questo, però, c'è un però. Lo accennavo già nell'episodio 136 ma qui vorrei provare ad esprimere il concetto in modo diverso. Ascolta un attimo.
+
+[Costanza al comando]
+
+Questa canzone è stata creata, o per meglio dire, generata, da me totalmente tramite utilizzo di Intelligenza Artificiale. Può piacere o non piacere il genere o il testo, di sicuro non vincerà mai Sanremo, ma di fatto è una canzone fatta e finita.
+
+In queste ultime settimane ne ho scritte e generate varie, e l'ho fatto per esprimere sentimenti e pensieri che ho sempre avuto in testa, ma che solo ora ho potuto esternare in questa forma.
+
+Si tratta di prodotti il cui senso sarà chiaro solo a me e ad un ristrettissimo gruppo di persone, ma è proprio questa la cosa più entusiasmante: è una roba estremamente di nicchia che non sarebbe dovuta esistere e invece esiste.
+
+E questa cosa è possibile solo e unicamente grazie a degli strumenti basati sull'IA che abbattono enormemente la complessità di un'attività tanto specializzata come il comporre e suonare la musica.
+
+Le mie canzoni hanno visto la luce solo perché esiste Suno - o chi per esso - perché in caso contrario, certamente non avrei avuto le capacità per comporle da solo e difficilmente avrei destinato le risorse necessarie per farlo fare ad un professionista.
+
+E, operativamente parlando, sono nate da una serie di richieste incrementali fatte ad llm. Richieste con le quali, a poco a poco, ho affinato il risultato fino a giungere alla generazione di ciò che desideravo.
+
+In pratica, ho fatto l'equivalente musicale del Vibe coding.
+
+Quello che sto cercando di dire - se riportiamo il discorso sullo sviluppo software - è che, secondo me, grazie al Vibe coding ci saranno persone che potranno realizzare tante idee che fino ad ora non hanno mai perseguito per via dello squilibrio tra valore del risultato e risorse necessarie.
+
+Come è giusto che sia, nasceranno creature che avranno valore solo per il loro creatore. Magari saranno estremamente personalizzate e cucite su bisogni particolari, magari saranno esercizi di stile, magari saranno giusto un modo di divertirsi o di sperimentare... ma diventeranno *reali* invece di restare *in un cassetto*.
+
+Detto questo, però, deve essere chiaro anche un altro fatto: non è che perché ho scritto 4 canzoni con l'IA, io adesso pensi di essere un compositore. Io a stento so suonare il campanello di casa e non so nemmeno quante sono le note in tutto.
+
+I risultati che ho ottenuto vanno sicuramente bene per me, ma essere un musicista o un artista è un'altra storia. Lì c'è consapevolezza di cosa si sta realizzando e di come *funziona* la musica, mentre a me l'IA nasconde tutta questa parte portandomi direttamente al risultato finale senza che io abbia idea del come.
+
+In pratica, esattamente la stessa cosa accade nel Vibe coding: si ottiene uno script, un'app o un sito che funziona, ma non si sa *come* funziona. Tutta la fase di comprensione del *come è fatto* viene saltata e ignorata.
+
+Ecco, in verità non voglio addentrarmi in un discorso su chi è artista o meno o chi è sviluppatore o meno, perché, a mio parere, tutto dipende dalla definizione di artista o di sviluppatore, quindi facciamo notte.
+
+Piuttosto, concludo questo capitolo dicendo che, secondo me, il Vibe coding - ma anche l'IA generativa in generale - rappresenta un abilitatore in tantissimi campi per chi non ha alcuna competenza e un potenziatore in quegli stessi campi per chi invece le competenze le ha già.
+
+## Wild coding
+
+Prima di chiudere c'è un ultimo piccolo discorso che voglio fare che riguarda un fenomeno che il mio amico Alex Raccuglia ha battezzato come *Wild coding*.
+
+Il Wild coding è quella sorta di frenesia che ti può prendere nel momento in cui ti rendi conto che in Vibe coding ora puoi generare tutte quelle cose che fino a qualche tempo fa semplicemente la tua mente scartava automaticamente perché sapeva che non avresti mai avuto il tempo o la voglia di realizzarle.
+
+Dopo aver sperimentato quanto è semplice e veloce produrre certi tipi di strumenti solo spiegandone il funzionamento ad un agente AI, può capitare di iniziare a fare un'associazione mentale per cui a un'idea corrisponde direttamente un nuovo progetto il Vibe coding.
+
+Beh, bisogna farci attenzione. Te lo dico perché a me è successo praticamente subito. Dopo il primo progetto che ti ho descritto, ne ho iniziato subito un altro, poi sono passato alle canzoni, poi alle immagini, e poi altro di cui non voglio ancora parlare.
+
+La trappola funziona in questo modo: devi fare un lavoretto che hai sempre fatto a mano, ma questa volta decidi che potresti provare a farlo usando un programmino che realizzerai in Vibe coding.
+
+In mezz'ora scarsa hai portato a casa quel famoso primo 80% di programma di cui parla il principio di Pareto.
+
+Nel frattempo però, ti sono venute altre 100 piccole idee che potresti *aggiungere* a quella in corso - tanto le fai veloci veloci in Vibe coding -, così inizi a lavorare anche alle idee collaterali e il progetto si amplia.
+
+Altre idee intanto si affollano nella mente: altri progetti, altri ambiti, cose a cui avevi pensato 10 anni fa ma che non hai mai potuto fare, quella proposta che ti fece tuo cugino quella volta e così via...
+
+In breve ti ritrovi con dieci nuovi progetti aperti e nessuno completato. Cento distrazioni e una enorme confusione. Impartisci comandi solo *perché puoi farlo*, magari senza chiederti per bene se quella modifica serva effettivamente o meno.
+
+Lavorando allo script degli audiogrammi, ad un certo punto ho *percepito* di non stare più ragionando abbastanza quando, ad esempio, mi è capitato di rimuovere delle funzionalità che avevo aggiunto qualche giorno prima perché a quel punto avevo capito che non erano più necessarie.
+
+In altri tempi l'avrei dedotto a tavolino prima in fase di progettazione.
+
+Non so da cosa dipenda questo fenomeno. Ho il sospetto che non sia solo la percezione di *potere* che da il Vibe coding ma che forse un peso lo abbiano anche i tempi di attesa tra quando inserisci un prompt e quando la sua esecuzione termina.
+
+A volte ci possono volere minuti tra un'operazione e l'altra e ti assicuro chesono sufficienti per poter lavorare a due progetti contemporaneamente - altra cosa sbagliatissima ma che mi è capitata.
+
+Prima del Vibe coding - ma anche prima dello sviluppo assistito da IA - questi momenti morti non esistevano perché eravamo impegnati in prima persona a scrivere il codice, quindi il cervello non aveva campo libero per spaziare.
+
+Probabilmente ho ancora bisogno di riflettere in merito, ma paradossalmente, queste pause, secondo me, sono contemporaneamente troppo lunghe e troppo brevi.
+
+Da un lato, è un po' come se il dover aspettare mentre l'agente lavora, mi crei una forma di ansia per cui già la mia mente corre avanti. Come se mi si attivasse l'effetto Zeigarnik e mi sentissi in difetto a non *produrre* pensieri in quel frattempo.
+
+Al tempo stesso però, forse il fatto che un Large Language Model impieghi così poco tempo a sviluppare una modifica che per me invece richiederebbe mezz'ora, un'ora o magari di più, mi fa perdere quella sensazione di rischiare di sprecare tempo implementando un qualcosa di inutile.
+
+Onestamente non so bene come funzioni questa cosa e se hai una qualche idea in merito, mi piacerebbe sentirla e ne potremmo discutere insieme nel gruppo Telegram di Pensieri in codice.
+
+## Conclusione
+
+Bene, anche stavolta episodio lunghissimo. Sto cercando di darmi una regolata perché magari se riuscissi ad essere meno prolisso, riuscirei anche a pubblicare più episodi ma boh: più scrivo e più mi viene da scrivere...
+
+Ad ogni modo, spero che questa disquisizione ti sia piaciuta. Oggi non ho granché fonti da lasciarti in descrizione perché è praticamente tutta farina del mio sacco.
+
+Ti ricordo invece che Pensieri in codice si basa sulla filosofia value4value, quindi io mi impegno a darti il prodotto migliore possibile per le mie capacità e tu, se ci trovi un valore, ti impegni a restituirlo in qualche modo.
+
+Puoi farlo nei soliti tre modi: Time, Talent and Treasure. Trovi tutti i dettagli all'indirizzo pensieriincodice.it/sostienti ma brevemente significa che puoi dare il tuo supporto molto facilmente.
+
+Primo: puoi condividere il podcast. Però condividerlo con criterio: spiega perché, fallo ascoltare a qualcuno a cui pensi possa davvero piacere, spiegagli come iscriversi, se non lo sa. In questo modo avrai più possibilità che si affezioni veramente.
+
+Tra l'altro, ricorda che se già fai cose del genere - parlare del progetto ad altri, ecc. - io difficilmente lo posso venire a sapere. Allora perché non me lo racconti mandandomi una mail a valerio@pensieriincodice.it ? - con due i, mi raccomando.
+
+Mi farebbe davvero piacere conoscere queste storie di condivisione e magari potrebbero venirne fuori idee interessanti. 
+
+Secondo: puoi dare una mano con il tuo talento. Ad esempio sto pensando di rifare tutto l'aspetto grafico del sito - che ormai è oggettivamente obsoleto -. Ti va di aiutarmi? Potremmo farlo anche in Vibe coding.
+
+Terzo: puoi fare una donazione. Come fanno ad esempio i donatori ricorrenti che sostengono il podcast ogni mese: Edoardo e Carlo. A cui oggi si uniscono anche due nuovi donatori spot: Nicola B. e Raffaele B.
+
+Bene. Detto questo direi che per oggi possiamo anche salutarci. Questo sarà l'ultimo episodio del 2025, quindi ti auguro di trascorrere delle serene feste con chi desideri e per l'ultima volta quest'anno ti ricordo che *un informatico risolve problemi, a volte anche usando il computer*.
+
+"
