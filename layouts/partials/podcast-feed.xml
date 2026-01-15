@@ -101,6 +101,10 @@
             <itunes:summary>{{ .Summary | htmlEscape | plainify }}</itunes:summary>
             <itunes:explicit>{{ .Params.explicit }}</itunes:explicit>
             <itunes:episodeType>{{ .Params.episode_type | default "full" }}</itunes:episodeType>
+            {{- if .Params.number -}}
+            <itunes:episode>{{ .Params.number }}</itunes:episode>
+            <podcast:episode>{{ .Params.number }}</podcast:episode>
+            {{- end -}}
             {{- if .Params.season -}}
             <itunes:season>{{ .Params.season }}</itunes:season>
             {{- end -}}
