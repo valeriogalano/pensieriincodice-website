@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="max-w-5xl mx-auto">
+    <header class="mb-12">
+        <h1 class="text-4xl font-extrabold mb-4">{{ .Title }}</h1>
+    </header>
+    <div class="flex flex-wrap gap-3">
+        {{ range .Pages }}
+        <a href="{{ .Permalink }}"
+            class="bg-pod-card border border-white/5 px-4 py-2 rounded-full text-sm hover:border-pod-orange/30 hover:text-pod-orange transition-all">
+            {{ .Title }} <span class="text-pod-gray text-xs ml-1">({{ .Pages.Len }})</span>
+        </a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

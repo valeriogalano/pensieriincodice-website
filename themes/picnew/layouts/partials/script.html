@@ -1,0 +1,21 @@
+{{ $episode := .Page.Params.number | printf "PIC%d" }}
+<div class="accordion">
+    <section id="show-text">
+        <h2><a href="#show-text">Mostra testo dell'episodio</a></h2>
+        <div>
+            <a href="#">Nascondi</a>
+            <p>
+                {{ with index $.Site.Data.scripts $episode }}
+                {{- if .segments }}
+                <p>Quella che segue è una trascrizione automatica dell'episodio.</p>
+                {{ else }}
+                <p>Quello che segue è lo script originale dell'episodio.</p>
+                {{ end }}
+                {{ replace .text "\n" "\n\n" | markdownify }}<br/>
+                {{ end }}
+            </p>
+            <a href="#">Nascondi</a>
+        </div>
+    </section>
+</div>
+<br/>

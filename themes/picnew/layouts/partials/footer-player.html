@@ -1,0 +1,115 @@
+<footer class="fixed bottom-0 left-0 right-0 h-24 glass-sidebar border-t border-white/5 flex items-center px-8 z-50">
+    <div class="max-w-7xl mx-auto w-full flex items-center">
+        <div class="flex items-center space-x-4 w-1/4">
+            <div class="w-12 h-12 bg-pod-orange rounded-lg hidden sm:flex items-center justify-center shadow-lg shadow-pod-orange/20">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                    <line x1="12" y1="19" x2="12" y2="22" />
+                </svg>
+            </div>
+            <div id="player-info">
+                <h5 class="text-sm font-bold truncate" id="player-title">{{ .Site.Title }}</h5>
+                <p class="text-[10px] text-pod-orange font-mono uppercase" id="player-status">Seleziona un episodio</p>
+            </div>
+        </div>
+        <div class="flex-1 flex flex-col items-center px-12">
+            <div class="flex items-center space-x-6 mb-2">
+                <button class="text-pod-gray hover:text-white transition-colors" id="player-prev" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="19 20 9 12 19 4 19 20" />
+                        <line x1="5" y1="19" x2="5" y2="5" />
+                    </svg>
+                </button>
+                <button id="player-play"
+                    class="w-10 h-10 bg-white text-pod-black rounded-full flex items-center justify-center hover:scale-105 transition-transform shadow-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" id="player-play-icon">
+                        <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                </button>
+                <button class="text-pod-gray hover:text-white transition-colors" id="player-next" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="5 4 15 12 5 20 5 4" />
+                        <line x1="19" y1="5" x2="19" y2="19" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full flex items-center space-x-3">
+                <span class="text-[10px] font-mono text-pod-gray" id="player-current-time">0:00</span>
+                <div class="flex-1 h-1 bg-white/10 rounded-full overflow-hidden relative group cursor-pointer" id="player-progress-bar">
+                    <div class="absolute inset-0 bg-pod-orange rounded-full" style="width: 0%" id="player-progress"></div>
+                </div>
+                <span class="text-[10px] font-mono text-pod-gray" id="player-duration">0:00</span>
+            </div>
+        </div>
+        <div class="flex items-center justify-end space-x-4 w-1/4">
+        </div>
+    </div>
+    <audio id="audio-player" preload="none"></audio>
+</footer>
+
+<script>
+(function() {
+    const audio = document.getElementById('audio-player');
+    const playBtn = document.getElementById('player-play');
+    const playIcon = document.getElementById('player-play-icon');
+    const titleEl = document.getElementById('player-title');
+    const statusEl = document.getElementById('player-status');
+    const progressBar = document.getElementById('player-progress-bar');
+    const progress = document.getElementById('player-progress');
+    const currentTimeEl = document.getElementById('player-current-time');
+    const durationEl = document.getElementById('player-duration');
+
+    const playSvg = '<polygon points="5 3 19 12 5 21 5 3" />';
+    const pauseSvg = '<rect x="6" y="4" width="4" height="16" /><rect x="14" y="4" width="4" height="16" />';
+
+    function formatTime(s) {
+        if (isNaN(s)) return '0:00';
+        const m = Math.floor(s / 60);
+        const sec = Math.floor(s % 60);
+        return m + ':' + (sec < 10 ? '0' : '') + sec;
+    }
+
+    window.playEpisode = function(url, title) {
+        audio.src = url;
+        audio.play();
+        titleEl.textContent = title;
+        statusEl.textContent = 'Ora in riproduzione';
+        playIcon.innerHTML = pauseSvg;
+    };
+
+    playBtn.addEventListener('click', function() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.innerHTML = pauseSvg;
+            statusEl.textContent = 'Ora in riproduzione';
+        } else {
+            audio.pause();
+            playIcon.innerHTML = playSvg;
+            statusEl.textContent = 'In pausa';
+        }
+    });
+
+    audio.addEventListener('timeupdate', function() {
+        currentTimeEl.textContent = formatTime(audio.currentTime);
+        if (audio.duration) {
+            progress.style.width = (audio.currentTime / audio.duration * 100) + '%';
+        }
+    });
+
+    audio.addEventListener('loadedmetadata', function() {
+        durationEl.textContent = formatTime(audio.duration);
+    });
+
+    progressBar.addEventListener('click', function(e) {
+        if (audio.duration) {
+            const rect = progressBar.getBoundingClientRect();
+            const pct = (e.clientX - rect.left) / rect.width;
+            audio.currentTime = pct * audio.duration;
+        }
+    });
+})();
+</script>

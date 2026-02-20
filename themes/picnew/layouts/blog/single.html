@@ -1,0 +1,34 @@
+{{ define "main" }}
+<article class="max-w-4xl mx-auto">
+    <header class="mb-12 text-center">
+        <div class="flex items-center justify-center space-x-4 mb-6 font-mono text-pod-orange">
+            <span>Blog</span>
+            <span>•</span>
+            <time>{{ .Date.Format "02 Jan 2006" }}</time>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight leading-tight">{{ .Title }}</h1>
+        {{ with .Params.tags }}
+        <div class="flex flex-wrap justify-center gap-2 mb-8">
+            {{ range . }}
+            <span class="text-xs bg-white/5 hover:bg-pod-orange/20 px-3 py-1 rounded-full transition-colors border border-white/5 text-pod-gray">#{{ . }}</span>
+            {{ end }}
+        </div>
+        {{ end }}
+    </header>
+
+    <div class="prose prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-pod-orange prose-code:text-pod-orange prose-code:bg-white/5 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-pod-card prose-pre:border prose-pre:border-white/10 mb-12">
+        {{ .Content }}
+    </div>
+
+    {{ if or .NextInSection .PrevInSection }}
+    <div class="mt-12 pt-8 border-t border-white/5 flex justify-between">
+        {{ with .PrevInSection }}
+        <a href="{{ .Permalink }}" class="text-pod-gray hover:text-pod-orange transition-colors font-mono text-sm">← {{ .Title }}</a>
+        {{ else }}<span></span>{{ end }}
+        {{ with .NextInSection }}
+        <a href="{{ .Permalink }}" class="text-pod-gray hover:text-pod-orange transition-colors font-mono text-sm">{{ .Title }} →</a>
+        {{ end }}
+    </div>
+    {{ end }}
+</article>
+{{ end }}

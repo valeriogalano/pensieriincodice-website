@@ -1,0 +1,7 @@
+<h2>Partner</h2>
+{{ with index $.Site.Data.partners "partners"}}
+{{ range . }}
+{{ . | markdownify }}<br/>
+{{ end }}
+{{ else }}
+{{ end }}

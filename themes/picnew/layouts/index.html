@@ -1,0 +1,118 @@
+{{ define "main" }}
+{{ $episodes := where .Site.RegularPages "Type" "podcast" }}
+{{ $latest := index $episodes 0 }}
+
+<!-- HERO / LATEST EPISODE -->
+<section class="grid grid-cols-12 gap-6 mb-12">
+    <div class="col-span-12 bg-pod-card border border-white/5 rounded-3xl p-8 relative overflow-hidden orange-glow transition-all group">
+        <div class="absolute top-0 right-0 p-6">
+            <span class="bg-pod-orange text-[10px] uppercase font-bold px-3 py-1 rounded-full">Ultima Uscita</span>
+        </div>
+        <div class="relative z-10 h-full flex flex-col items-start justify-center min-h-[300px]">
+            <span class="font-mono text-pod-orange text-sm mb-4">#{{ $latest.Params.number }} • {{ $latest.Date.Format "02 Jan 2006" }}</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight leading-tight max-w-4xl">{{ $latest.Title }}</h1>
+            <p class="text-pod-gray max-w-2xl mb-8 text-lg">{{ $latest.Summary }}</p>
+            <div class="mt-auto flex items-center space-x-6">
+                <a href="{{ $latest.Permalink }}"
+                    class="bg-pod-orange hover:bg-orange-500 text-white px-8 py-3 rounded-full font-bold transition-all transform hover:scale-105 flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                    <span>Ascolta Ora</span>
+                </a>
+                {{ with $latest.Params.audio_duration }}
+                {{ $min := div . 60 }}{{ $sec := mod . 60 }}
+                <span class="text-pod-gray font-mono text-sm">{{ $min }}:{{ printf "%02d" $sec }}</span>
+                {{ end }}
+            </div>
+        </div>
+        <div class="absolute -right-10 -bottom-10 w-96 h-96 bg-pod-orange/10 rounded-full blur-3xl group-hover:bg-pod-orange/20 transition-all"></div>
+    </div>
+</section>
+
+<!-- RECENT EPISODES -->
+<section class="mb-12">
+    <div class="flex items-center justify-between mb-8">
+        <h2 class="text-3xl font-bold tracking-tight">Episodi Recenti</h2>
+        <a href="{{ "episodes/" | relURL }}" class="text-pod-orange hover:underline font-mono text-sm uppercase tracking-wider">Vedi tutto →</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {{ range $episodes | first 6 | after 1 }}
+        <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group">
+            <div class="flex justify-between items-start mb-4">
+                <span class="text-xs font-mono text-pod-gray">#{{ .Params.number }}</span>
+                <span class="text-xs font-mono text-pod-gray">{{ .Date.Format "02/01/06" }}</span>
+            </div>
+            <h4 class="text-xl font-bold mb-3 group-hover:text-pod-orange transition-colors">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h4>
+            <p class="text-sm text-pod-gray mb-6 line-clamp-2">{{ .Summary }}</p>
+            <div class="flex items-center justify-between">
+                <div class="flex space-x-2">
+                    {{ range .Params.tags | first 2 }}
+                    <span class="text-[10px] bg-white/5 px-2 py-1 rounded">#{{ . }}</span>
+                    {{ end }}
+                </div>
+                {{ with .Params.audio }}
+                <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', '{{ $.Title }}')"
+                    class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pod-orange transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                </button>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+<!-- BLOG POSTS -->
+{{ $blogPosts := where .Site.RegularPages "Type" "blog" }}
+{{ if $blogPosts }}
+<section class="mb-12">
+    <div class="flex items-center justify-between mb-8">
+        <h2 class="text-3xl font-bold tracking-tight">Dal Blog</h2>
+        <a href="{{ "blog/" | relURL }}" class="text-pod-orange hover:underline font-mono text-sm uppercase tracking-wider">Vedi tutto →</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {{ range $blogPosts | first 3 }}
+        <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group">
+            <div class="flex justify-between items-start mb-4">
+                <span class="text-xs font-mono text-pod-gray">Blog</span>
+                <span class="text-xs font-mono text-pod-gray">{{ .Date.Format "02/01/06" }}</span>
+            </div>
+            <h4 class="text-xl font-bold mb-3 group-hover:text-pod-orange transition-colors">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h4>
+            <p class="text-sm text-pod-gray mb-6 line-clamp-2">{{ .Summary }}</p>
+            <div class="flex items-center justify-between">
+                <div class="flex space-x-2">
+                    {{ range .Params.tags | first 2 }}
+                    <span class="text-[10px] bg-white/5 px-2 py-1 rounded">#{{ . }}</span>
+                    {{ end }}
+                </div>
+                <a href="{{ .Permalink }}" class="text-pod-orange hover:underline text-sm font-bold">Leggi →</a>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+<!-- PARTNER -->
+{{ with index .Site.Data.partners "partners" }}
+<section class="mt-24 pt-12 border-t border-white/5 mb-12">
+    <h3 class="text-xl font-bold mb-8 text-center text-pod-gray uppercase tracking-widest font-mono">Progetti Amici</h3>
+    <div class="flex flex-wrap justify-center gap-12 items-center opacity-70 hover:opacity-100 transition-opacity">
+        {{ range . }}
+        <div class="text-center group cursor-pointer">
+            <div class="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mb-3 group-hover:bg-pod-orange/20 transition-colors">
+                <span class="font-bold text-xs">{{ . | markdownify }}</span>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}

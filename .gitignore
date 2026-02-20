@@ -1,5 +1,6 @@
 ### Complete JetBrains folder (not usefull for hugo project)
 .idea
+.output.txt
 
 ### Hugo template
 # Generated files by hugo

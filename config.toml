@@ -2,7 +2,7 @@
 title = "Pensieri in codice"
 baseURL = "https://pensieriincodice.it/" #YOUR SITE URL
 languageCode = "it-IT"
-theme = "ryancv"
+theme = "picnew"
 resourceDir = "resources"
 pagination.pagerSize = 8
 summaryLength = 20
@@ -176,6 +176,13 @@ itunes_type = "episodic"  # accepted values are: "episodic" or "serial"
 updateFrequency = "monthly"
 funding_url = "https://pensieriincodice.it/#support-card"
 funding_text = "Sostieni il podcast"
+
+[params.social]
+spotify = "https://open.spotify.com/show/3CQmjmOB1ICsEGKMBjpIgD"
+instagram = "https://www.instagram.com/pensieriincodice/"
+twitter = "https://twitter.com/penabordi"
+linkedin = "https://www.linkedin.com/in/valerio-galano/"
+github = "https://github.com/valeriogalano"
 
 # Sitemap Settings
 [sitemap]

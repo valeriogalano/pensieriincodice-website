@@ -1,0 +1,193 @@
+{{ define "main" }}
+<article class="max-w-4xl mx-auto">
+    <!-- Header -->
+    <header class="mb-12 text-center">
+        <div class="flex items-center justify-center space-x-4 mb-6 font-mono text-pod-orange">
+            <span>#{{ .Params.number }}</span>
+            <span>•</span>
+            <time>{{ .Date.Format "02 Jan 2006" }}</time>
+            {{ with .Params.season }}<span>•</span><span>Stagione {{ . }}</span>{{ end }}
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight leading-tight">{{ .Title }}</h1>
+
+        {{ with .Params.tags }}
+        <div class="flex flex-wrap justify-center gap-2 mb-8">
+            {{ range . }}
+            <a href="{{ (urls.Parse (printf "/tags/%s/" .)).String | relURL }}"
+                class="text-xs bg-white/5 hover:bg-pod-orange/20 px-3 py-1 rounded-full transition-colors border border-white/5 text-pod-gray">#{{ . }}</a>
+            {{ end }}
+        </div>
+        {{ end }}
+
+        {{ with .Params.audio }}
+        <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', '{{ $.Title }}')"
+            class="inline-flex items-center space-x-2 bg-pod-orange hover:bg-orange-500 text-white px-6 py-3 rounded-full font-bold hover:scale-105 transition-transform">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+            <span>Ascolta l'episodio</span>
+        </button>
+        {{ end }}
+    </header>
+
+    {{ if .Params.image }}
+    <div class="mb-12 rounded-2xl overflow-hidden">
+        <img src="{{ .Site.Params.podcast.cdn_base_url }}{{ .Params.image }}" alt="{{ .Title }}" class="w-full max-w-md mx-auto rounded-2xl" />
+    </div>
+    {{ end }}
+
+    <!-- Audio Player (fallback) -->
+    {{ with .Params.audio }}
+    <div class="mb-12">
+        <audio controls class="w-full" style="border-radius: 12px;">
+            <source src="{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}" type="audio/mpeg">
+            Il tuo browser non supporta l'elemento audio.
+        </audio>
+    </div>
+    {{ end }}
+
+    <!-- Content -->
+    <div class="prose prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-pod-orange prose-code:text-pod-orange prose-code:bg-white/5 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-pod-card prose-pre:border prose-pre:border-white/10 mb-12">
+        {{ .Content }}
+    </div>
+
+    <!-- Supporters -->
+    {{ if .Params.supporters }}
+    <div class="mt-12 pt-8 border-t border-white/5">
+        <h3 class="text-2xl font-bold mb-6 flex items-center space-x-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-pod-orange">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+            <span>Sostenitori di questo episodio</span>
+        </h3>
+        <div class="flex flex-wrap gap-3">
+            {{ range .Params.supporters }}
+            <span class="bg-pod-card border border-white/10 px-4 py-2 rounded-full text-sm text-pod-gray hover:text-white hover:border-pod-orange/30 transition-all">{{ . }}</span>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+    <!-- Support -->
+    <div class="mt-12 pt-8 border-t border-white/5" id="sostieni">
+        <h3 class="text-2xl font-bold mb-6">Sostieni il progetto</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <a href="https://www.satispay.com/download/qrcode/S6Y-CON--EC548199-5F32-4BD6-AAF5-73A999744E56" target="_blank" rel="noopener"
+                class="flex items-center space-x-3 bg-pod-card border border-white/5 rounded-xl p-4 hover:border-pod-orange/30 transition-all group">
+                <span class="w-2 h-2 bg-pod-orange rounded-full group-hover:scale-150 transition-transform"></span>
+                <span class="text-pod-gray group-hover:text-white transition-colors">Sostieni tramite Satispay</span>
+            </a>
+            <a href="https://revolut.me/valeriogalano" target="_blank" rel="noopener"
+                class="flex items-center space-x-3 bg-pod-card border border-white/5 rounded-xl p-4 hover:border-pod-orange/30 transition-all group">
+                <span class="w-2 h-2 bg-pod-orange rounded-full group-hover:scale-150 transition-transform"></span>
+                <span class="text-pod-gray group-hover:text-white transition-colors">Sostieni tramite Revolut</span>
+            </a>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=HRKMD7X43R7SS" target="_blank" rel="noopener"
+                class="flex items-center space-x-3 bg-pod-card border border-white/5 rounded-xl p-4 hover:border-pod-orange/30 transition-all group">
+                <span class="w-2 h-2 bg-pod-orange rounded-full group-hover:scale-150 transition-transform"></span>
+                <span class="text-pod-gray group-hover:text-white transition-colors">Sostieni tramite PayPal</span>
+            </a>
+        </div>
+        <p class="text-sm text-pod-gray mt-4">Sostieni utilizzando i link affiliati:
+            <a href="https://amzn.to/3CPOWgC" target="_blank" rel="noopener" class="text-pod-orange hover:underline">Amazon</a>,
+            <a href="https://doist.grsm.io/valeriogalano5066" target="_blank" rel="noopener" class="text-pod-orange hover:underline">Todoist</a>,
+            <a href="https://readwise.io/i/valerio61" target="_blank" rel="noopener" class="text-pod-orange hover:underline">Readwise Reader</a>,
+            <a href="https://web.satispay.com/promocode/VALERIOGALAN" target="_blank" rel="noopener" class="text-pod-orange hover:underline">Satispay</a>
+        </p>
+    </div>
+
+    <!-- Sources -->
+    {{ if .Params.sources }}
+    <div class="mt-12 pt-8 border-t border-white/5">
+        <h3 class="text-2xl font-bold mb-6">Fonti dell'episodio</h3>
+        <ul class="space-y-4">
+            {{ range .Params.sources }}
+            <li>
+                <a href="{{ .url }}" target="_blank" rel="noopener" class="flex items-center space-x-3 group">
+                    <span class="w-2 h-2 bg-pod-orange rounded-full group-hover:scale-150 transition-transform"></span>
+                    <span class="text-pod-gray group-hover:text-white transition-colors underline decoration-pod-orange/30 group-hover:decoration-pod-orange">{{ with .title }}{{ . }}{{ else }}{{ .url }}{{ end }}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+
+    <!-- Partners -->
+    {{ with index $.Site.Data.partners "partners" }}
+    <div class="mt-12 pt-8 border-t border-white/5">
+        <h3 class="text-2xl font-bold mb-6">Partner</h3>
+        <ul class="space-y-3">
+            {{ range . }}
+            <li class="text-pod-gray">{{ . | markdownify }}</li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+
+    <!-- Credits -->
+    {{ $season := .Params.season | printf "season%d" }}
+    {{ with index $.Site.Data.credits $season }}
+    <div class="mt-12 pt-8 border-t border-white/5">
+        <h3 class="text-2xl font-bold mb-6">Crediti</h3>
+        <ul class="space-y-3">
+            {{ range . }}
+            <li class="text-pod-gray">{{ . | safeHTML }}</li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+
+    <!-- Script / Transcript -->
+    {{ $episode := .Params.number | printf "PIC%d" }}
+    {{ with index $.Site.Data.scripts $episode }}
+    <div class="mt-12 pt-8 border-t border-white/5">
+        <h3 class="text-2xl font-bold mb-4 cursor-pointer" onclick="this.nextElementSibling.classList.toggle('hidden')">
+            {{ if .segments }}Trascrizione dell'episodio{{ else }}Script dell'episodio{{ end }}
+            <span class="text-pod-orange text-sm font-mono ml-2">▼</span>
+        </h3>
+        <div class="hidden">
+            {{ if .segments }}
+            <p class="text-sm text-pod-gray mb-4 italic">Quella che segue è una trascrizione automatica dell'episodio.</p>
+            {{ else }}
+            <p class="text-sm text-pod-gray mb-4 italic">Quello che segue è lo script originale dell'episodio.</p>
+            {{ end }}
+            <div class="prose prose-invert prose-sm max-w-none">
+                {{ replace .text "\n" "\n\n" | markdownify }}
+            </div>
+        </div>
+    </div>
+    {{ end }}
+
+    <!-- Community -->
+    <div class="mt-12 pt-8 border-t border-white/5">
+        <h3 class="text-2xl font-bold mb-6">Entra a far parte della community</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <a href="https://t.me/pensieriincodice" target="_blank" rel="noopener"
+                class="flex items-center space-x-3 bg-pod-card border border-white/5 rounded-xl p-4 hover:border-pod-orange/30 transition-all group">
+                <span class="w-2 h-2 bg-pod-orange rounded-full group-hover:scale-150 transition-transform"></span>
+                <span class="text-pod-gray group-hover:text-white transition-colors">Canale Telegram</span>
+            </a>
+            <a href="https://t.me/pensieriincodicecommunity" target="_blank" rel="noopener"
+                class="flex items-center space-x-3 bg-pod-card border border-white/5 rounded-xl p-4 hover:border-pod-orange/30 transition-all group">
+                <span class="w-2 h-2 bg-pod-orange rounded-full group-hover:scale-150 transition-transform"></span>
+                <span class="text-pod-gray group-hover:text-white transition-colors">Gruppo Telegram</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    {{ if or .NextInSection .PrevInSection }}
+    <div class="mt-12 pt-8 border-t border-white/5 flex justify-between">
+        {{ with .PrevInSection }}
+        <a href="{{ .Permalink }}" class="text-pod-gray hover:text-pod-orange transition-colors font-mono text-sm">← {{ .Title }}</a>
+        {{ else }}
+        <span></span>
+        {{ end }}
+        {{ with .NextInSection }}
+        <a href="{{ .Permalink }}" class="text-pod-gray hover:text-pod-orange transition-colors font-mono text-sm">{{ .Title }} →</a>
+        {{ end }}
+    </div>
+    {{ end }}
+</article>
+{{ end }}

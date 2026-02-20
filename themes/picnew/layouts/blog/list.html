@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="max-w-5xl mx-auto">
+    <header class="mb-12">
+        <h1 class="text-4xl font-extrabold mb-4">Blog</h1>
+        <div class="text-lg text-pod-gray">Articoli, novità e aggiornamenti.</div>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {{ range .Pages }}
+        <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group">
+            <div class="flex justify-between items-start mb-4">
+                <span class="text-xs font-mono text-pod-gray">Blog</span>
+                <span class="text-xs font-mono text-pod-gray">{{ .Date.Format "02/01/06" }}</span>
+            </div>
+            <h4 class="text-xl font-bold mb-3 group-hover:text-pod-orange transition-colors">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h4>
+            <p class="text-sm text-pod-gray mb-6 line-clamp-2">{{ .Summary }}</p>
+            <div class="flex items-center justify-between">
+                <div class="flex space-x-2">
+                    {{ range .Params.tags | first 2 }}
+                    <span class="text-[10px] bg-white/5 px-2 py-1 rounded">#{{ . }}</span>
+                    {{ end }}
+                </div>
+                <a href="{{ .Permalink }}" class="text-pod-orange hover:underline text-sm font-bold">Leggi →</a>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+
+    {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}

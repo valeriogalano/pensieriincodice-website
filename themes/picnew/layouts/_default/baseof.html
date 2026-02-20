@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    {{/* opengraph and twitter cards disabled due to incompatible front matter fields */}}
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ .Title }}">
+    <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pod-black': '#0a0a0a',
+                        'pod-card': '#141414',
+                        'pod-orange': '#ff6b00',
+                        'pod-gray': '#a0a0a0',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #ff6b00; }
+        .glass-sidebar {
+            background: rgba(20, 20, 20, 0.8);
+            backdrop-filter: blur(12px);
+            border-right: 1px solid rgba(255, 107, 0, 0.1);
+        }
+        .orange-glow:hover {
+            box-shadow: 0 0 20px rgba(255, 107, 0, 0.2);
+            border-color: #ff6b00;
+        }
+        .active-link {
+            color: #ff6b00;
+            border-left: 2px solid #ff6b00;
+        }
+        .page-content {
+            animation: fadeIn 0.5s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    {{ block "head" . }}{{ end }}
+    {{ hugo.Generator }}
+</head>
+<body class="bg-pod-black text-white font-sans selection:bg-pod-orange selection:text-white overflow-hidden h-screen flex">
+
+    {{ partial "sidebar.html" . }}
+
+    <main class="flex-1 overflow-y-auto relative pb-32">
+        {{ partial "header.html" . }}
+
+        <div class="max-w-7xl mx-auto px-12 py-12 page-content">
+            {{ block "main" . }}{{ end }}
+        </div>
+    </main>
+
+    {{ partial "footer-player.html" . }}
+
+</body>
+</html>
