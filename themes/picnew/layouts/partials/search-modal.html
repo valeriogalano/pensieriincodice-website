@@ -33,8 +33,17 @@
         modal.classList.add('hidden');
     }
 
-    trigger.addEventListener('click', openSearch);
-    overlay.addEventListener('click', closeSearch);
+    function initSearch() {
+        const trigger = document.getElementById('search-trigger');
+        if (trigger) trigger.addEventListener('click', openSearch);
+        overlay.addEventListener('click', closeSearch);
+    }
+
+    // Initialize on first load
+    initSearch();
+    
+    // Re-initialize on Turbo navigation
+    document.addEventListener('turbo:load', initSearch);
 
     window.addEventListener('keydown', (e) => {
         if ((e.metaKey || e.ctrlKey) && e.key === 'k') {

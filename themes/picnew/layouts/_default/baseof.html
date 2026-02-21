@@ -37,6 +37,7 @@
         }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
+    <script src="https://unpkg.com/@hotwired/turbo@7.3.0/dist/turbo.es2017-umd.js"></script>
     <style>
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: #0a0a0a; }
@@ -68,9 +69,11 @@
 </head>
 <body class="bg-pod-black text-white font-sans selection:bg-pod-orange selection:text-white overflow-hidden h-screen flex">
 
-    {{ partial "sidebar.html" . }}
+    <div id="sidebar-container" data-turbo-permanent>
+        {{ partial "sidebar.html" . }}
+    </div>
 
-    <main class="flex-1 overflow-y-auto relative pb-32">
+    <main id="main-content" class="flex-1 overflow-y-auto relative pb-32">
         {{ partial "header.html" . }}
 
         <div class="max-w-7xl mx-auto px-12 py-12 page-content">
@@ -78,7 +81,9 @@
         </div>
     </main>
 
-    {{ partial "footer-player.html" . }}
+    <div id="footer-player-container" data-turbo-permanent>
+        {{ partial "footer-player.html" . }}
+    </div>
     {{ partial "search-modal.html" . }}
 
 </body>

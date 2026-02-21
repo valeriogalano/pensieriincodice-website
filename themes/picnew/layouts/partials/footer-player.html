@@ -203,11 +203,14 @@
         }
     });
 
-    // Restore state
-    window.addEventListener('load', function() {
+    // Restore state and periodic save
+    const initPlayer = function() {
         const savedState = localStorage.getItem('pic_player_state');
         if (savedState) {
             const state = JSON.parse(savedState);
+            // If already playing the same source, don't re-init everything to avoid clicks
+            if (audio.src === state.url && !audio.paused) return;
+
             titleEl.textContent = state.title;
             statusEl.textContent = 'In pausa';
             
@@ -219,8 +222,10 @@
                 playerPlaceholder.classList.add('hidden');
             }
             
-            audio.src = state.url;
-            audio.currentTime = state.currentTime || 0;
+            if (audio.src !== state.url) {
+                audio.src = state.url;
+                audio.currentTime = state.currentTime || 0;
+            }
 
             if (state.chaptersUrl) {
                 fetch(state.chaptersUrl)
@@ -242,17 +247,28 @@
                 }
             }
         }
+    };
+
+    // Use window load for first hit, and turbo:load for navigation (if needed, but permanent should handle it)
+    window.addEventListener('load', initPlayer);
+    document.addEventListener('turbo:load', function() {
+        // This handles cases where we might need to refresh something after navigation
+        // even if the player is permanent. For example, updating links in the page
+        // that might need to interact with the player.
     });
 
     // Periodically save current time and playing status
     setInterval(() => {
-        const savedState = localStorage.getItem('pic_player_state');
-        if (savedState) {
-            const state = JSON.parse(savedState);
-            state.currentTime = audio.currentTime;
-            state.shouldPlay = !audio.paused;
-            localStorage.setItem('pic_player_state', JSON.stringify(state));
-        }
+        if (!audio.src) return;
+        const state = {
+            url: audio.src,
+            title: titleEl.textContent,
+            image: document.getElementById('player-image').src,
+            currentTime: audio.currentTime,
+            shouldPlay: !audio.paused,
+            chaptersUrl: localStorage.getItem('pic_player_state') ? JSON.parse(localStorage.getItem('pic_player_state')).chaptersUrl : null
+        };
+        localStorage.setItem('pic_player_state', JSON.stringify(state));
     }, 2000);
 
     speedSelect.addEventListener('change', function() {
