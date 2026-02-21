@@ -107,6 +107,11 @@
             audio.src = url;
             audio.load();
         }
+
+        // Apply current playback rate if selected
+        if (speedSelect) {
+            audio.playbackRate = parseFloat(speedSelect.value);
+        }
         
         // Use a promise to handle play() and ensure it starts
         const playPromise = audio.play();
@@ -227,6 +232,14 @@
                 audio.currentTime = state.currentTime || 0;
             }
 
+            if (state.playbackRate) {
+                speedSelect.value = state.playbackRate;
+                audio.playbackRate = state.playbackRate;
+                // Update the visible 1x/label if needed
+                const speedLabel = speedSelect.previousElementSibling;
+                if (speedLabel) speedLabel.textContent = state.playbackRate + 'x';
+            }
+
             if (state.chaptersUrl) {
                 fetch(state.chaptersUrl)
                     .then(response => response.json())
@@ -266,13 +279,18 @@
             image: document.getElementById('player-image').src,
             currentTime: audio.currentTime,
             shouldPlay: !audio.paused,
+            playbackRate: audio.playbackRate,
             chaptersUrl: localStorage.getItem('pic_player_state') ? JSON.parse(localStorage.getItem('pic_player_state')).chaptersUrl : null
         };
         localStorage.setItem('pic_player_state', JSON.stringify(state));
     }, 2000);
 
     speedSelect.addEventListener('change', function() {
-        audio.playbackRate = parseFloat(this.value);
+        const rate = parseFloat(this.value);
+        audio.playbackRate = rate;
+        // Update the 1x label next to select
+        const speedLabel = this.previousElementSibling;
+        if (speedLabel) speedLabel.textContent = rate + 'x';
     });
 
     playBtn.addEventListener('click', function() {
