@@ -1,0 +1,9 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- range where .Site.RegularPages "Type" "in" (slice "podcast" "blog") -}}
+    {{- $image := "" -}}
+    {{- if eq .Type "podcast" -}}
+        {{- $image = printf "%s%s" .Site.Params.podcast.cdn_base_url .Params.image -}}
+    {{- end -}}
+    {{- $.Scratch.Add "index" (dict "title" .Title "summary" .Summary "permalink" .Permalink "section" .Section "date" (.Date.Format "02 Jan 2006") "image" $image) -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}
