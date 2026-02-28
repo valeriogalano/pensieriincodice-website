@@ -48,7 +48,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {{ range $episodes | first 4 | after 1 }}
         {{ $episode := . }}
-        <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group overflow-hidden">
+        <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group overflow-hidden flex flex-col">
             {{ if .Params.image }}
             <div class="aspect-square mb-4 rounded-xl overflow-hidden relative">
                 <img src="{{ $.Site.Params.podcast.cdn_base_url }}{{ .Params.image }}" alt="{{ .Title }}" class="object-cover w-full h-full">
@@ -71,22 +71,20 @@
             <h4 class="text-xl font-bold mb-3 group-hover:text-pod-orange transition-colors">
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
             </h4>
-            <p class="text-sm text-pod-gray mb-6 line-clamp-2">{{ .Summary }}</p>
-            <div class="flex items-center justify-between mt-auto">
+            <p class="text-sm text-pod-gray line-clamp-2">{{ .Summary }}</p>
+            <div class="flex items-center justify-between mt-auto pt-6">
                 <div class="flex space-x-2">
                     {{ range .Params.tags | first 2 }}
                     <span class="text-[10px] bg-white/5 px-2 py-1 rounded">#{{ . }}</span>
                     {{ end }}
                 </div>
-                {{ if not .Params.image }}
                 {{ with .Params.audio }}
-                <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $episode.Title | jsonify }}, '{{ $.Site.Params.podcast.image | absURL }}')"
+                <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $episode.Title | jsonify }}, '{{ if $episode.Params.image }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.image }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $episode.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.chapters }}{{ end }}')"
                     class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pod-orange transition-all">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                         <polygon points="5 3 19 12 5 21 5 3" />
                     </svg>
                 </button>
-                {{ end }}
                 {{ end }}
             </div>
         </div>
@@ -104,7 +102,7 @@
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {{ range $blogPosts | first 3 }}
-        <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group">
+        <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group flex flex-col">
             <div class="flex justify-between items-start mb-4">
                 <span class="text-xs font-mono text-pod-gray">Blog</span>
                 <span class="text-xs font-mono text-pod-gray">{{ .Date.Format "02/01/06" }}</span>
@@ -112,8 +110,8 @@
             <h4 class="text-xl font-bold mb-3 group-hover:text-pod-orange transition-colors">
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
             </h4>
-            <p class="text-sm text-pod-gray mb-6 line-clamp-2">{{ .Summary }}</p>
-            <div class="flex items-center justify-between">
+            <p class="text-sm text-pod-gray line-clamp-2">{{ .Summary }}</p>
+            <div class="flex items-center justify-between mt-auto pt-6">
                 <div class="flex space-x-2">
                     {{ range .Params.tags | first 2 }}
                     <span class="text-[10px] bg-white/5 px-2 py-1 rounded">#{{ . }}</span>
