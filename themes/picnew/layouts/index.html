@@ -14,7 +14,7 @@
             <p class="text-pod-gray max-w-2xl mb-8 text-lg">{{ $latest.Summary }}</p>
             <div class="mt-auto flex items-center space-x-6">
                 {{ with $latest.Params.audio }}
-                <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', '{{ $latest.Title | replace "'" "\\'" }}', '{{ if $latest.Params.image }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.image }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $latest.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.chapters }}{{ end }}')"
+                <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $latest.Title | jsonify }}, '{{ if $latest.Params.image }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.image }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $latest.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.chapters }}{{ end }}')"
                     class="bg-pod-orange hover:bg-orange-500 text-white px-8 py-3 rounded-full font-bold transition-all transform hover:scale-105 flex items-center space-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                         <polygon points="5 3 19 12 5 21 5 3" />
@@ -40,13 +40,14 @@
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {{ range $episodes | first 6 | after 1 }}
+        {{ $episode := . }}
         <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group overflow-hidden">
             {{ if .Params.image }}
             <div class="aspect-square mb-4 rounded-xl overflow-hidden relative">
                 <img src="{{ $.Site.Params.podcast.cdn_base_url }}{{ .Params.image }}" alt="{{ .Title }}" class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-pod-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     {{ with .Params.audio }}
-                    <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', '{{ $.Title | replace "'" "\\'" }}', '{{ if $.Params.image }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $.Params.image }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $.Params.chapters }}{{ end }}')"
+                    <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $episode.Title | jsonify }}, '{{ if $episode.Params.image }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.image }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $episode.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.chapters }}{{ end }}')"
                         class="w-12 h-12 rounded-full bg-pod-orange text-white flex items-center justify-center transform translate-y-4 group-hover:translate-y-0 transition-all">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                             <polygon points="5 3 19 12 5 21 5 3" />
@@ -72,7 +73,7 @@
                 </div>
                 {{ if not .Params.image }}
                 {{ with .Params.audio }}
-                <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', '{{ $.Title | replace "'" "\\'" }}', '{{ $.Site.Params.podcast.image | absURL }}')"
+                <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $episode.Title | jsonify }}, '{{ $.Site.Params.podcast.image | absURL }}')"
                     class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pod-orange transition-all">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                         <polygon points="5 3 19 12 5 21 5 3" />

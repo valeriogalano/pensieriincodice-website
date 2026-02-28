@@ -103,6 +103,15 @@
     }
 
     window.playEpisode = function(url, title, image, chaptersUrl) {
+        // Remove quotes from jsonify if present
+        if (title && title.startsWith('"') && title.endsWith('"')) {
+            title = title.substring(1, title.length - 1);
+        }
+
+        if (titleEl) {
+            titleEl.textContent = title;
+        }
+
         if (audio.src !== url) {
             audio.src = url;
             audio.load();
@@ -112,7 +121,7 @@
         if (speedSelect) {
             audio.playbackRate = parseFloat(speedSelect.value);
         }
-        
+
         // Use a promise to handle play() and ensure it starts
         const playPromise = audio.play();
         if (playPromise !== undefined) {
@@ -125,8 +134,6 @@
                 statusEl.textContent = 'Pronto a riprodurre';
             });
         }
-
-        titleEl.textContent = title;
         
         const playerImg = document.getElementById('player-image');
         const playerPlaceholder = document.getElementById('player-placeholder-icon');
@@ -272,10 +279,10 @@
 
     // Periodically save current time and playing status
     setInterval(() => {
-        if (!audio.src) return;
+        if (!audio || !audio.src) return;
         const state = {
             url: audio.src,
-            title: titleEl.textContent,
+            title: titleEl ? titleEl.textContent : "",
             image: document.getElementById('player-image').src,
             currentTime: audio.currentTime,
             shouldPlay: !audio.paused,
