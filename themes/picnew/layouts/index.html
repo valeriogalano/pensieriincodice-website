@@ -51,7 +51,7 @@
         <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group overflow-hidden">
             {{ if .Params.image }}
             <div class="aspect-square mb-4 rounded-xl overflow-hidden relative">
-                <img src="{{ $.Site.Params.podcast.cdn_base_url }}{{ .Params.image }}" alt="{{ .Title }}" class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500">
+                <img src="{{ $.Site.Params.podcast.cdn_base_url }}{{ .Params.image }}" alt="{{ .Title }}" class="object-cover w-full h-full">
                 <div class="absolute inset-0 bg-gradient-to-t from-pod-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     {{ with .Params.audio }}
                     <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $episode.Title | jsonify }}, '{{ if $episode.Params.image }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.image }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $episode.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.chapters }}{{ end }}')"
