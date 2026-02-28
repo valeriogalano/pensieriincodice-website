@@ -1,0 +1,1 @@
+- At the end of the task, execute hugo and verify that it compiles successfully.
