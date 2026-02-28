@@ -39,7 +39,7 @@
         <a href="{{ "episodes/" | relURL }}" class="text-pod-orange hover:underline font-mono text-sm uppercase tracking-wider">Vedi tutto →</a>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {{ range $episodes | first 6 | after 1 }}
+        {{ range $episodes | first 4 | after 1 }}
         {{ $episode := . }}
         <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group overflow-hidden">
             {{ if .Params.image }}
