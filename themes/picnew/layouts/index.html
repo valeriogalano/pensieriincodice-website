@@ -8,24 +8,31 @@
         <div class="absolute top-0 right-0 p-6">
             <span class="bg-pod-orange text-[10px] uppercase font-bold px-3 py-1 rounded-full">Ultima Uscita</span>
         </div>
-        <div class="relative z-10 h-full flex flex-col items-start justify-center min-h-[300px]">
-            <span class="font-mono text-pod-orange text-sm mb-4">#{{ $latest.Params.number }} • {{ $latest.Date.Format "02 Jan 2006" }}</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight leading-tight max-w-4xl">{{ $latest.Title }}</h1>
-            <p class="text-pod-gray max-w-2xl mb-8 text-lg">{{ $latest.Summary }}</p>
-            <div class="mt-auto flex items-center space-x-6">
-                {{ with $latest.Params.audio }}
-                <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $latest.Title | jsonify }}, '{{ if $latest.Params.image }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.image }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $latest.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.chapters }}{{ end }}')"
-                    class="bg-pod-orange hover:bg-orange-500 text-white px-8 py-3 rounded-full font-bold transition-all transform hover:scale-105 flex items-center space-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <polygon points="5 3 19 12 5 21 5 3" />
-                    </svg>
-                    <span>Ascolta Ora</span>
-                </button>
-                {{ end }}
-                {{ with $latest.Params.audio_duration }}
-                {{ $min := div . 60 }}{{ $sec := mod . 60 }}
-                <span class="text-pod-gray font-mono text-sm">{{ $min }}:{{ printf "%02d" $sec }}</span>
-                {{ end }}
+        <div class="relative z-10 h-full flex items-center gap-10 min-h-[300px]">
+            {{ if $latest.Params.image }}
+            <div class="hidden md:block flex-shrink-0 w-56 h-56 rounded-2xl overflow-hidden shadow-2xl shadow-pod-orange/20">
+                <img src="{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.image }}" alt="{{ $latest.Title }}" class="object-cover w-full h-full">
+            </div>
+            {{ end }}
+            <div class="flex flex-col items-start justify-center flex-1">
+                <span class="font-mono text-pod-orange text-sm mb-4">#{{ $latest.Params.number }} • {{ $latest.Date.Format "02 Jan 2006" }}</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight leading-tight max-w-4xl">{{ $latest.Title }}</h1>
+                <p class="text-pod-gray max-w-2xl mb-8 text-lg">{{ $latest.Summary }}</p>
+                <div class="mt-auto flex items-center space-x-6">
+                    {{ with $latest.Params.audio }}
+                    <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $latest.Title | jsonify }}, '{{ if $latest.Params.image }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.image }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $latest.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.chapters }}{{ end }}')"
+                        class="bg-pod-orange hover:bg-orange-500 text-white px-8 py-3 rounded-full font-bold transition-all transform hover:scale-105 flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 3 19 12 5 21 5 3" />
+                        </svg>
+                        <span>Ascolta Ora</span>
+                    </button>
+                    {{ end }}
+                    {{ with $latest.Params.audio_duration }}
+                    {{ $min := div . 60 }}{{ $sec := mod . 60 }}
+                    <span class="text-pod-gray font-mono text-sm">{{ $min }}:{{ printf "%02d" $sec }}</span>
+                    {{ end }}
+                </div>
             </div>
         </div>
         <div class="absolute -right-10 -bottom-10 w-96 h-96 bg-pod-orange/10 rounded-full blur-3xl group-hover:bg-pod-orange/20 transition-all"></div>
