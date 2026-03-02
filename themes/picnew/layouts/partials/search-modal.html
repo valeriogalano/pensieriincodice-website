@@ -60,12 +60,25 @@
             const options = {
                 keys: ['title', 'summary'],
                 threshold: 0.4,
-                distance: 100
+                distance: 100,
+                includeMatches: true
             };
             fuse = new Fuse(data, options);
         } catch (err) {
             console.error('Search index load error:', err);
         }
+    }
+
+    function extractSnippet(text, term, radius) {
+        if (!text) return '';
+        const lower = text.toLowerCase();
+        const idx = lower.indexOf(term.toLowerCase());
+        if (idx === -1) return text.slice(0, radius * 2);
+        const start = Math.max(0, idx - radius);
+        const end = Math.min(text.length, idx + term.length + radius);
+        const snippet = (start > 0 ? '…' : '') + text.slice(start, end) + (end < text.length ? '…' : '');
+        const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        return snippet.replace(new RegExp(`(${escaped})`, 'gi'), '<mark class="bg-pod-orange/30 text-white rounded px-0.5">$1</mark>');
     }
 
     input.addEventListener('input', () => {
@@ -76,27 +89,32 @@
         }
 
         if (!fuse) return;
-        
+
         const searchResults = fuse.search(term);
         if (searchResults.length === 0) {
             results.innerHTML = '<div class="text-center py-12 text-pod-gray italic">Nessun risultato trovato</div>';
             return;
         }
 
-        results.innerHTML = searchResults.slice(0, 10).map(res => `
+        results.innerHTML = searchResults.slice(0, 10).map(res => {
+            const summaryMatch = res.matches && res.matches.find(m => m.key === 'summary');
+            const snippet = summaryMatch
+                ? extractSnippet(res.item.summary, term, 80)
+                : (res.item.summary ? res.item.summary.slice(0, 160) + (res.item.summary.length > 160 ? '…' : '') : '');
+            return `
             <a href="${res.item.permalink}" class="block p-4 rounded-xl hover:bg-white/5 transition-all group mb-2">
                 <div class="flex items-center space-x-4">
-                    ${res.item.image ? `<img src="${res.item.image}" class="w-12 h-12 rounded object-cover">` : `<div class="w-12 h-12 rounded bg-pod-orange/20 flex items-center justify-center text-pod-orange font-bold uppercase text-xs">${res.item.section.charAt(0)}</div>`}
+                    ${res.item.image ? `<img src="${res.item.image}" class="w-12 h-12 rounded object-cover flex-shrink-0">` : `<div class="w-12 h-12 rounded bg-pod-orange/20 flex items-center justify-center text-pod-orange font-bold uppercase text-xs flex-shrink-0">${res.item.section.charAt(0)}</div>`}
                     <div class="flex-1 min-w-0">
                         <div class="flex justify-between items-start">
                             <h4 class="font-bold text-white group-hover:text-pod-orange transition-colors truncate">${res.item.title}</h4>
-                            <span class="text-[10px] font-mono text-pod-gray ml-2 uppercase">${res.item.section}</span>
+                            <span class="text-[10px] font-mono text-pod-gray ml-2 uppercase flex-shrink-0">${res.item.section}</span>
                         </div>
-                        <p class="text-xs text-pod-gray line-clamp-1 mt-1">${res.item.summary || ''}</p>
+                        <p class="text-xs text-pod-gray line-clamp-2 mt-1">${snippet}</p>
                     </div>
                 </div>
-            </a>
-        `).join('');
+            </a>`;
+        }).join('');
     });
 })();
 </script>

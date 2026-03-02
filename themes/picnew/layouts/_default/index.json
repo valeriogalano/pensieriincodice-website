@@ -3,6 +3,8 @@
     {{- $image := "" -}}
     {{- if eq .Type "podcast" -}}
         {{- $image = printf "%s%s" .Site.Params.podcast.cdn_base_url .Params.image -}}
+    {{- else if .Params.featureImage -}}
+        {{- $image = .Params.featureImage -}}
     {{- end -}}
     {{- $.Scratch.Add "index" (dict "title" .Title "summary" .Summary "permalink" .Permalink "section" .Section "date" (.Date.Format "02 Jan 2006") "image" $image) -}}
 {{- end -}}
