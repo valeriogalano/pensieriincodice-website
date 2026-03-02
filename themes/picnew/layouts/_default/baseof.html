@@ -65,6 +65,16 @@
         }
     </style>
     {{ block "head" . }}{{ end }}
+    {{- $episodes := where .Site.RegularPages "Type" "podcast" -}}
+    {{- $playlist := slice -}}
+    {{- range $episodes -}}
+        {{- $img := printf "%s%s" $.Site.Params.podcast.cdn_base_url .Params.image -}}
+        {{- $audio := printf "%s%s" $.Site.Params.podcast.cdn_tracked_base_url .Params.audio -}}
+        {{- $chapters := "" -}}
+        {{- if .Params.chapters -}}{{- $chapters = printf "%s%s" $.Site.Params.podcast.cdn_base_url .Params.chapters -}}{{- end -}}
+        {{- $playlist = $playlist | append (dict "title" .Title "audio" $audio "image" $img "chapters" $chapters) -}}
+    {{- end -}}
+    <script>window.__playlist={{ $playlist | jsonify | safeJS }};</script>
     {{ hugo.Generator }}
 </head>
 <body class="bg-pod-black text-white font-sans selection:bg-pod-orange selection:text-white overflow-hidden h-screen flex">

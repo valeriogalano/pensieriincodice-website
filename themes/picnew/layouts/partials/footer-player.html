@@ -1,4 +1,4 @@
-<footer class="fixed bottom-0 left-0 right-0 h-24 glass-sidebar border-t border-white/5 flex items-center px-8 z-50">
+<footer class="fixed bottom-0 left-0 right-0 min-h-24 glass-sidebar border-t border-white/5 flex items-center px-8 z-50">
     <div class="max-w-7xl mx-auto w-full flex flex-col">
         <div class="flex items-center w-full">
             <div class="flex items-center space-x-4 w-1/4">
@@ -17,25 +17,62 @@
                 </div>
             </div>
             <div class="flex-1 flex flex-col items-center px-12">
-                <div class="flex items-center space-x-6 mb-2">
-                    <button class="text-pod-gray hover:text-white transition-colors" id="player-prev" disabled>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="19 20 9 12 19 4 19 20" />
-                            <line x1="5" y1="19" x2="5" y2="5" />
+                <div class="flex items-center space-x-3 mb-2">
+                    {{/* Skip back 15s */}}
+                    <button id="player-prev" disabled title="Indietro 15 secondi"
+                        class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
+                            <path d="M16 4 A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <polyline points="12,1 16,5 12,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <text x="16" y="20" text-anchor="middle" font-size="9" font-weight="bold" fill="currentColor" font-family="monospace">15</text>
                         </svg>
                     </button>
+                    {{/* Previous chapter */}}
+                    <button id="player-chapter-prev" disabled title="Capitolo precedente"
+                        class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="15 20 6 12 15 4 15 20"/>
+                            <line x1="4" y1="4" x2="4" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    {{/* Previous episode */}}
+                    <button id="player-episode-prev" disabled title="Episodio precedente"
+                        class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="19 20 9 12 19 4 19 20"/>
+                            <polygon points="9 20 0 12 9 4 9 20"/>
+                        </svg>
+                    </button>
+                    {{/* Play/Pause */}}
                     <button id="player-play"
                         class="w-10 h-10 bg-white text-pod-black rounded-full flex items-center justify-center hover:scale-105 transition-transform shadow-xl">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" id="player-play-icon">
                             <polygon points="5 3 19 12 5 21 5 3" />
                         </svg>
                     </button>
-                    <button class="text-pod-gray hover:text-white transition-colors" id="player-next" disabled>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="5 4 15 12 5 20 5 4" />
-                            <line x1="19" y1="5" x2="19" y2="19" />
+                    {{/* Next episode */}}
+                    <button id="player-episode-next" disabled title="Episodio successivo"
+                        class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 4 15 12 5 20 5 4"/>
+                            <polygon points="15 4 24 12 15 20 15 4"/>
+                        </svg>
+                    </button>
+                    {{/* Next chapter */}}
+                    <button id="player-chapter-next" disabled title="Capitolo successivo"
+                        class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="9 4 18 12 9 20 9 4"/>
+                            <line x1="20" y1="4" x2="20" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    {{/* Skip forward 30s */}}
+                    <button id="player-next" disabled title="Avanti 30 secondi"
+                        class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
+                            <path d="M16 4 A12 12 0 1 1 4 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <polyline points="20,1 16,5 20,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <text x="16" y="20" text-anchor="middle" font-size="9" font-weight="bold" fill="currentColor" font-family="monospace">30</text>
                         </svg>
                     </button>
                 </div>
@@ -49,7 +86,6 @@
             </div>
             <div class="flex items-center justify-end space-x-4 w-1/4">
                 <div class="flex items-center space-x-2 bg-white/5 rounded-lg px-2 py-1">
-                    <span class="text-[10px] font-mono text-pod-gray">1x</span>
                     <select id="player-speed" class="bg-transparent text-[10px] font-mono text-white focus:outline-none cursor-pointer">
                         <option value="0.5" class="bg-pod-black">0.5x</option>
                         <option value="0.8" class="bg-pod-black">0.8x</option>
@@ -89,6 +125,10 @@
     const chaptersContainer = document.getElementById('player-chapters-container');
     const chaptersList = document.getElementById('player-chapters-list');
     const toggleChaptersBtn = document.getElementById('toggle-chapters');
+    const chapterPrevBtn = document.getElementById('player-chapter-prev');
+    const chapterNextBtn = document.getElementById('player-chapter-next');
+    const episodePrevBtn = document.getElementById('player-episode-prev');
+    const episodeNextBtn = document.getElementById('player-episode-next');
 
     let currentChapters = [];
 
@@ -167,6 +207,8 @@
             hideChapters();
         }
         
+        updateEpisodeButtons();
+
         // Save state for persistence
         localStorage.setItem('pic_player_state', JSON.stringify({
             url: url,
@@ -180,10 +222,12 @@
 
     function renderChapters(chapters) {
         currentChapters = chapters;
+        currentChapterIndex = -1;
         chaptersList.innerHTML = '';
         chapters.forEach((chapter, index) => {
             const div = document.createElement('div');
-            div.className = 'flex items-center justify-between text-[10px] p-2 rounded hover:bg-white/10 cursor-pointer group border border-white/5';
+            div.className = 'flex items-center justify-between text-[10px] p-2 rounded hover:bg-white/10 cursor-pointer group border border-white/5 transition-colors';
+            div.dataset.chapterIndex = index;
             div.onclick = () => {
                 audio.currentTime = chapter.startTime;
                 if (audio.paused) audio.play();
@@ -199,6 +243,10 @@
             chaptersList.appendChild(div);
         });
         toggleChaptersBtn.classList.remove('hidden');
+        chapterPrevBtn.classList.remove('hidden');
+        chapterNextBtn.classList.remove('hidden');
+        chapterPrevBtn.disabled = false;
+        chapterNextBtn.disabled = false;
     }
 
     function hideChapters() {
@@ -206,6 +254,8 @@
         chaptersList.innerHTML = '';
         chaptersContainer.classList.add('hidden');
         toggleChaptersBtn.classList.add('hidden');
+        chapterPrevBtn.classList.add('hidden');
+        chapterNextBtn.classList.add('hidden');
     }
 
     toggleChaptersBtn.addEventListener('click', () => {
@@ -242,9 +292,6 @@
             if (state.playbackRate) {
                 speedSelect.value = state.playbackRate;
                 audio.playbackRate = state.playbackRate;
-                // Update the visible 1x/label if needed
-                const speedLabel = speedSelect.previousElementSibling;
-                if (speedLabel) speedLabel.textContent = state.playbackRate + 'x';
             }
 
             if (state.chaptersUrl) {
@@ -293,11 +340,7 @@
     }, 2000);
 
     speedSelect.addEventListener('change', function() {
-        const rate = parseFloat(this.value);
-        audio.playbackRate = rate;
-        // Update the 1x label next to select
-        const speedLabel = this.previousElementSibling;
-        if (speedLabel) speedLabel.textContent = rate + 'x';
+        audio.playbackRate = parseFloat(this.value);
     });
 
     playBtn.addEventListener('click', function() {
@@ -312,15 +355,29 @@
         }
     });
 
+    let currentChapterIndex = -1;
+
     audio.addEventListener('timeupdate', function() {
         currentTimeEl.textContent = formatTime(audio.currentTime);
         if (audio.duration) {
             progress.style.width = (audio.currentTime / audio.duration * 100) + '%';
         }
-    });
-
-    audio.addEventListener('loadedmetadata', function() {
-        durationEl.textContent = formatTime(audio.duration);
+        if (!currentChapters.length) return;
+        // Trova il capitolo corrente
+        let idx = 0;
+        for (let i = currentChapters.length - 1; i >= 0; i--) {
+            if (audio.currentTime >= currentChapters[i].startTime) { idx = i; break; }
+        }
+        if (idx === currentChapterIndex) return;
+        currentChapterIndex = idx;
+        // Aggiorna evidenziazione
+        const items = chaptersList.querySelectorAll('[data-chapter-index]');
+        items.forEach(el => {
+            const isActive = parseInt(el.dataset.chapterIndex) === idx;
+            el.classList.toggle('bg-pod-orange/20', isActive);
+            el.classList.toggle('border-pod-orange/40', isActive);
+            el.classList.toggle('border-white/5', !isActive);
+        });
     });
 
     progressBar.addEventListener('click', function(e) {
@@ -330,5 +387,77 @@
             audio.currentTime = pct * audio.duration;
         }
     });
+
+    const prevBtn = document.getElementById('player-prev');
+    const nextBtn = document.getElementById('player-next');
+
+    prevBtn.addEventListener('click', function() {
+        audio.currentTime = Math.max(0, audio.currentTime - 15);
+    });
+
+    nextBtn.addEventListener('click', function() {
+        audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30);
+    });
+
+    chapterPrevBtn.addEventListener('click', function() {
+        if (!currentChapters.length) return;
+        const curr = audio.currentTime;
+        // trova il capitolo precedente (startTime < curr - 1s)
+        let target = null;
+        for (let i = currentChapters.length - 1; i >= 0; i--) {
+            if (currentChapters[i].startTime < curr - 1) {
+                target = currentChapters[i];
+                break;
+            }
+        }
+        if (target) audio.currentTime = target.startTime;
+    });
+
+    chapterNextBtn.addEventListener('click', function() {
+        if (!currentChapters.length) return;
+        const curr = audio.currentTime;
+        const target = currentChapters.find(c => c.startTime > curr);
+        if (target) audio.currentTime = target.startTime;
+    });
+
+    audio.addEventListener('loadedmetadata', function() {
+        durationEl.textContent = formatTime(audio.duration);
+        prevBtn.disabled = false;
+        nextBtn.disabled = false;
+    });
+
+    function currentPlaylistIndex() {
+        const playlist = window.__playlist || [];
+        return playlist.findIndex(ep => audio.src && audio.src.includes(ep.audio));
+    }
+
+    function updateEpisodeButtons() {
+        const playlist = window.__playlist || [];
+        const idx = currentPlaylistIndex();
+        episodePrevBtn.disabled = playlist.length === 0;
+        episodeNextBtn.disabled = playlist.length === 0;
+    }
+
+    episodePrevBtn.addEventListener('click', function() {
+        const playlist = window.__playlist || [];
+        const idx = currentPlaylistIndex();
+        const target = idx > 0 ? idx - 1 : playlist.length - 1;
+        if (playlist[target]) {
+            const ep = playlist[target];
+            playEpisode(ep.audio, ep.title, ep.image, ep.chapters);
+        }
+    });
+
+    episodeNextBtn.addEventListener('click', function() {
+        const playlist = window.__playlist || [];
+        const idx = currentPlaylistIndex();
+        const target = (idx >= 0 && idx < playlist.length - 1) ? idx + 1 : 0;
+        if (playlist[target]) {
+            const ep = playlist[target];
+            playEpisode(ep.audio, ep.title, ep.image, ep.chapters);
+        }
+    });
+
+    updateEpisodeButtons();
 })();
 </script>
