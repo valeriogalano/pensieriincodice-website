@@ -1,0 +1,159 @@
+.new-skin .col .info-list ul li strong {
+    background: #fb6400;
+}
+
+.new-skin .col .info-list ul li {
+    line-height: 0.8em;
+}
+
+.new-skin .col .info-list ul li::before {
+    height: 0;
+}
+
+.bg-bubbles li {
+    background-image: url("/images/pensieriincodice-locandina.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.container .card-started .profile .slide::before {
+    bottom: -63%;
+    transform(rotate(11deg));
+    -moz-trasform: rotate(11deg);
+    -webkit-transform: rotate(11deg);
+    -ms-transform: rotate(11deg);
+    -o-transform: rotate(11deg);
+}
+.container .card-started .profile .slide::after {
+    right: -27%;
+    transform(rotate(-11deg));
+    -moz-transform: rotate(-11deg);
+    -webkit-transform: rotate(-11deg);
+    -ms-transform: rotate(-11deg);
+    -o-transform: rotate(-11deg);
+}
+
+.card-started .profile.no-photo .title {
+    padding-bottom: 10px;
+}
+
+/* Image opacity and hover animation */
+
+.client-items .client-item img {
+    opacity:0.9;
+}
+
+.client-items .client-item img:hover {
+    opacity: .8;
+    transform: scale(1.2);
+}
+
+.lnk:hover,
+.button:hover {
+	color: #fb6501 !important;
+}
+
+a:hover {
+    text-decoration:none;
+    color: #fb6501;
+}
+
+/* mobile fixes */
+
+@media (max-width: 560px) {
+    .top-menu {
+        position: fixed !important;
+        bottom: 0 !important;
+        margin-top: 0px !important;
+        max-width: 100%;
+        display: flex;
+        box-shadow: 0 5px 10px rgba(0,0,0,5%);
+        -webkit-box-shadow: 0 5px 10px rgba(0,0,0,5%);
+    }
+
+    .card-started .profile {
+        height: calc(100vh - 163px) !important;
+        min-height: 560px;
+    }
+
+    .container {
+        padding: 81px 0 0 !important;
+    }
+
+}
+
+/* esiste un file orange.css , l'arancione giusto è questo: #fb6501 */
+
+/* modifiche effetto "V" logo: da capire come far funzionare senza modificare il tema direttamente */
+
+/* .slide {
+			position: absolute;
+			overflow: hidden;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 52%;
+			background-color: $default-color;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			@include border-radius(4px 4px 0 0);
+
+			&:before, &:after {
+				content: '';
+				position: absolute;
+				left: -25%;
+				bottom: -62%;
+				width: 100%;
+				height: 70%;
+				background: $white-color;
+				@include transform(rotate(11deg));
+			}
+			&:after {
+				left: auto;
+				right: -27%;
+				@include transform(rotate(-11deg));
+
+
+*/
+
+/* Hide/show episodes text */
+section {
+    display: block;
+}
+
+.accordion h2,
+.accordion p {
+    margin: 0;
+}
+
+.accordion h2 a {
+    display: block;
+    position: relative;
+}
+
+.accordion h2 + div {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+.accordion :target h2 a:after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -3px;
+}
+
+.accordion :target h2 + div {
+    height: auto;
+}
+
+#main-content h1 {
+    font-size: 20px;
+}
+
+#main-content h2 {
+    font-size: 18px;
+}
