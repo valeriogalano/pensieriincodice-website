@@ -65,6 +65,19 @@
             </div>
             <span class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap overflow-hidden">Risorse</span>
         </a>
+        <a href="{{ "progetti/" | relURL }}"
+            class="flex items-center p-3 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if and .File (eq .File.Path "progetti/_index.md") }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
+            <div class="flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7" rx="1" />
+                    <rect x="14" y="3" width="7" height="7" rx="1" />
+                    <rect x="3" y="14" width="7" height="7" rx="1" />
+                    <rect x="14" y="14" width="7" height="7" rx="1" />
+                </svg>
+            </div>
+            <span class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap overflow-hidden">Progetti</span>
+        </a>
         <a href="{{ "autore/" | relURL }}"
             class="flex items-center p-3 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if and .File (eq .File.Path "autore/_index.md") }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
             <div class="flex-shrink-0">
