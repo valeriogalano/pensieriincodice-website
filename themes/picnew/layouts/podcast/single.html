@@ -36,16 +36,6 @@
     </div>
     {{ end }}
 
-    <!-- Audio Player (fallback) -->
-    {{ with .Params.audio }}
-    <div class="mb-12">
-        <audio controls class="w-full" style="border-radius: 12px;">
-            <source src="{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}" type="audio/mpeg">
-            Il tuo browser non supporta l'elemento audio.
-        </audio>
-    </div>
-    {{ end }}
-
     <!-- Content -->
     <div class="prose prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-pod-orange prose-code:text-pod-orange prose-code:bg-white/5 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-pod-card prose-pre:border prose-pre:border-white/10 mb-12">
         {{ .Content }}
