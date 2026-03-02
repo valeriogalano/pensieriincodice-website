@@ -96,5 +96,36 @@
     </div>
     {{ partial "search-modal.html" . }}
 
+    <script>
+        function updateActiveNav() {
+            const pathname = window.location.pathname;
+            const navLinks = document.querySelectorAll('#sidebar-container nav a');
+
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (!href) return;
+
+                const linkPath = new URL(href, window.location.origin).pathname;
+                let isActive = false;
+
+                if (linkPath === '/' || linkPath === '') {
+                    isActive = pathname === '/' || pathname === '';
+                } else {
+                    isActive = pathname.startsWith(linkPath);
+                }
+
+                if (isActive) {
+                    link.classList.add('active-link', 'text-white');
+                    link.classList.remove('text-pod-gray');
+                } else {
+                    link.classList.remove('active-link', 'text-white');
+                    link.classList.add('text-pod-gray');
+                }
+            });
+        }
+
+        document.addEventListener('turbo:load', updateActiveNav);
+    </script>
+
 </body>
 </html>
