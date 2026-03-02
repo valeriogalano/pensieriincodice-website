@@ -6,7 +6,7 @@
     </header>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {{ range .Pages }}
+        {{ range .Paginator.Pages }}
 {{ $page := . }}
         <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group flex flex-col overflow-hidden">
             {{ if .Params.image }}
@@ -56,6 +56,6 @@
         {{ end }}
     </div>
 
-    {{ template "_internal/pagination.html" . }}
+    {{ partial "pagination.html" . }}
 </div>
 {{ end }}
