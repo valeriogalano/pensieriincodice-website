@@ -145,11 +145,16 @@
     <h3 class="text-xl font-bold mb-8 text-center text-pod-gray uppercase tracking-widest font-mono">Progetti Amici</h3>
     <div class="flex flex-wrap justify-center gap-12 items-center opacity-70 hover:opacity-100 transition-opacity">
         {{ range . }}
-        <div class="text-center group cursor-pointer">
-            <div class="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mb-3 group-hover:bg-pod-orange/20 transition-colors">
-                <span class="font-bold text-xs">{{ . | markdownify }}</span>
+        <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}{{ if .note }} — {{ .note }}{{ end }}" class="text-center group">
+            <div class="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mb-3 group-hover:bg-pod-orange/20 transition-colors overflow-hidden">
+                {{ if .image }}
+                <img src="{{ .image }}" alt="{{ .name }}" class="w-full h-full object-contain p-3">
+                {{ else }}
+                <span class="font-bold text-xs">{{ .name }}</span>
+                {{ end }}
             </div>
-        </div>
+            <span class="text-xs text-pod-gray group-hover:text-pod-orange transition-colors">{{ .name }}</span>
+        </a>
         {{ end }}
     </div>
 </section>

@@ -1,4 +1,14 @@
 [
-  "[GrUSP](https://www.grusp.org/) (Codice sconto per tutti gli eventi: **community_PIC**)",
-  "[Schrödinger Hat](https://www.schrodinger-hat.it/)"
+  {
+    "name": "GrUSP",
+    "url": "https://www.grusp.org/",
+    "image": "/images/partners/grusp.png",
+    "note": "Codice sconto per tutti gli eventi: community_PIC"
+  },
+  {
+    "name": "Schrödinger Hat",
+    "url": "https://www.schrodinger-hat.it/",
+    "image": "/images/partners/schrodinger-hat.png",
+    "note": ""
+  }
 ]
