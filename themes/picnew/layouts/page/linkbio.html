@@ -100,7 +100,7 @@
 
     {{ if gt (len $all) 1 }}
     <section class="list" aria-label="Tutti gli episodi">
-      {{ range $i, $p := (after 1 $all) }}
+      {{ range $i, $p := (first 20 (after 1 $all)) }}
         <a class="item" href="{{ $p.RelPermalink }}">
           <span class="thumb">
             {{ if $p.Params.image }}
