@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0"><channel><atom:link href="https://valeriogalano.github.io/pensieriincodice-website/podcast/index.xml" rel="self" type="application/rss+xml"/><podcast:updateFrequency rrule="FREQ=MONTHLY">Monthly</podcast:updateFrequency><title>Pensieri in codice</title><link>https://valeriogalano.github.io/pensieriincodice-website/</link><language>it-IT</language><category>Technology</category><lastBuildDate>Mon, 02 Mar 2026 19:11:56 +0000</lastBuildDate><copyright>Copyright</copyright><image><url>https://cdn.pensieriincodice.it/images/pensieriincodice-locandina.png</url><title>Pensieri in codice</title><link>https://valeriogalano.github.io/pensieriincodice-website/</link></image><description>Il podcast dove si ragiona da informatici. Con Valerio Galano</description><generator>Hugo -- gohugo.io</generator><itunes:subtitle>Il podcast dove si ragiona da informatici. Con Valerio Galano</itunes:subtitle><itunes:author>Valerio Galano</itunes:author><itunes:type>episodic</itunes:type><itunes:summary>Il podcast dove si ragiona da informatici. Con Valerio Galano</itunes:summary><itunes:owner><itunes:name>Valerio Galano</itunes:name><itunes:email>v.galano@daredevel.com</itunes:email></itunes:owner><itunes:image href="https://cdn.pensieriincodice.it/images/pensieriincodice-locandina.png"/><itunes:category text="Technology"/><itunes:block>no</itunes:block><itunes:explicit>false</itunes:explicit><podcast:funding url="https://pensieriincodice.it/#support-card">Sostieni il podcast</podcast:funding><podcast:guid>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0"><channel><atom:link href="https://valeriogalano.github.io/pensieriincodice-website/podcast/index.xml" rel="self" type="application/rss+xml"/><podcast:updateFrequency rrule="FREQ=MONTHLY">Monthly</podcast:updateFrequency><title>Pensieri in codice</title><link>https://valeriogalano.github.io/pensieriincodice-website/</link><language>it-IT</language><category>Technology</category><lastBuildDate>Tue, 03 Mar 2026 16:22:33 +0000</lastBuildDate><copyright>Copyright</copyright><image><url>https://cdn.pensieriincodice.it/images/pensieriincodice-locandina.png</url><title>Pensieri in codice</title><link>https://valeriogalano.github.io/pensieriincodice-website/</link></image><description>Il podcast dove si ragiona da informatici. Con Valerio Galano</description><generator>Hugo -- gohugo.io</generator><itunes:subtitle>Il podcast dove si ragiona da informatici. Con Valerio Galano</itunes:subtitle><itunes:author>Valerio Galano</itunes:author><itunes:type>episodic</itunes:type><itunes:summary>Il podcast dove si ragiona da informatici. Con Valerio Galano</itunes:summary><itunes:owner><itunes:name>Valerio Galano</itunes:name><itunes:email>valerio@pensieriincodice.it</itunes:email></itunes:owner><itunes:image href="https://cdn.pensieriincodice.it/images/pensieriincodice-locandina.png"/><itunes:category text="Technology"/><itunes:block>no</itunes:block><itunes:explicit>false</itunes:explicit><podcast:funding url="https://pensieriincodice.it/#support-card">Sostieni il podcast</podcast:funding><podcast:guid>
 7b5d2ff7-d9f8-572a-8ec5-e872cc46ba4c</podcast:guid><item><title>Elea 9003 - Il primo calcolatore elettronico italiano</title><enclosure url="https://op3.dev/e/cdn.pensieriincodice.it/episodes/PIC148.mp3" length="33817494" type="audio/mp3"/><guid>https://cdn.pensieriincodice.it/episodes/PIC148.mp3</guid><link>https://valeriogalano.github.io/pensieriincodice-website/episodes/148-elea-9003-il-primo-calcolatore-elettronico-italiano/</link><pubDate>Sun, 15 Feb 2026 04:00:00 +0200</pubDate><description><![CDATA[
                 <p>Oggi ti racconto la storia dell’Elea 9003, il primo calcolatore elettronico commerciale italiano: un’avventura tra Olivetti, ricerca, transistor e design che ha provato a portare l’Italia nel futuro dell’elettronica.</p>
 <p><a href="https://pensieriincodice.it/148">Pensieri in codice</a></p>
@@ -33,6 +33,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -112,6 +114,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -189,6 +193,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -271,6 +277,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -353,6 +361,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -463,6 +473,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -575,6 +587,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -636,6 +650,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -702,6 +718,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -767,6 +785,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -828,6 +848,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -902,6 +924,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -976,6 +1000,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -1086,6 +1112,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -1206,6 +1234,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -1275,6 +1305,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -1346,6 +1378,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -1415,6 +1449,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -1486,6 +1522,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -1555,6 +1593,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -1626,6 +1666,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -1696,6 +1738,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -1757,6 +1801,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -1836,6 +1882,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -1915,6 +1963,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -2006,6 +2056,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -2099,6 +2151,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -2175,6 +2229,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -2248,6 +2304,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -2374,6 +2432,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -2501,6 +2561,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -2587,6 +2649,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -2672,6 +2736,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -2770,6 +2836,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -2868,6 +2936,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -3014,6 +3084,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -3161,6 +3233,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -3258,6 +3332,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -3357,6 +3433,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -3446,6 +3524,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -3542,6 +3622,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -3633,6 +3715,8 @@ Sostenitori di oggi:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -3721,6 +3805,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -3814,6 +3900,8 @@ Sostenitori di oggi:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -3913,6 +4001,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -3982,6 +4072,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -4047,6 +4139,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -4111,6 +4205,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -4190,6 +4286,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -4267,6 +4365,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -4352,6 +4452,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -4431,6 +4533,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -4501,6 +4605,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -4564,6 +4670,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -4640,6 +4748,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -4714,6 +4824,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -4779,6 +4891,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -4842,6 +4956,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -4912,6 +5028,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -4980,6 +5098,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -5062,6 +5182,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -5136,6 +5258,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -5213,6 +5337,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -5282,6 +5408,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -5358,6 +5486,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -5426,6 +5556,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -5509,6 +5641,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -5584,6 +5718,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -5694,6 +5830,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -5794,6 +5932,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -5868,6 +6008,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -5939,6 +6081,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -6030,6 +6174,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -6110,6 +6256,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -6193,6 +6341,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -6253,6 +6403,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -6339,6 +6491,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -6419,6 +6573,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -6503,6 +6659,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -6564,6 +6722,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -6640,6 +6800,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -6709,6 +6871,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -6789,6 +6953,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -6854,6 +7020,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -6972,6 +7140,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -7079,6 +7249,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -7226,6 +7398,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -7320,6 +7494,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -7420,6 +7596,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -7480,6 +7658,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -7552,6 +7732,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -7614,6 +7796,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -7683,6 +7867,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -7746,6 +7932,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -7819,6 +8007,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -7879,6 +8069,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -7975,6 +8167,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -8061,6 +8255,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -8150,6 +8346,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -8209,6 +8407,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -8279,6 +8479,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -8340,6 +8542,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -8414,6 +8618,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -8477,6 +8683,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -8545,6 +8753,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -8606,6 +8816,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -8683,6 +8895,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -8749,6 +8963,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -8827,6 +9043,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -8895,6 +9113,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -8971,6 +9191,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -9035,6 +9257,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -9112,6 +9336,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -9181,6 +9407,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -9254,6 +9482,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -9314,6 +9544,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -9393,6 +9625,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -9462,6 +9696,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -9535,6 +9771,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -9595,6 +9833,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -9667,6 +9907,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -9729,6 +9971,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -9797,6 +10041,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -9859,6 +10105,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -9927,6 +10175,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -9989,6 +10239,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -10061,6 +10313,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -10121,6 +10375,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -10196,6 +10452,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -10261,6 +10519,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -10328,6 +10588,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -10389,6 +10651,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -10456,6 +10720,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -10518,6 +10784,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -10585,6 +10853,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -10646,6 +10916,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -10719,6 +10991,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -10781,6 +11055,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -10846,6 +11122,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -10905,6 +11183,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -10970,6 +11250,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -11032,6 +11314,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -11099,6 +11383,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -11160,6 +11446,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -11232,6 +11520,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -11293,6 +11583,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -11366,6 +11658,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -11428,6 +11722,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -11505,6 +11801,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -11570,6 +11868,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -11637,6 +11937,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -11698,6 +12000,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -11769,6 +12073,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -11835,6 +12141,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -11907,6 +12215,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -11972,6 +12282,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -12047,6 +12359,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -12116,6 +12430,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -12189,6 +12505,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -12252,6 +12570,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -12332,6 +12652,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -12399,6 +12721,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -12469,6 +12793,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -12531,6 +12857,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -12613,6 +12941,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -12683,6 +13013,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -12757,6 +13089,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -12820,6 +13154,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -12890,6 +13226,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -12953,6 +13291,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -13025,6 +13365,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -13088,6 +13430,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -13157,6 +13501,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -13219,6 +13565,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -13298,6 +13646,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -13370,6 +13720,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -13470,6 +13822,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -13553,6 +13907,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -13648,6 +14004,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -13733,6 +14091,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -13828,6 +14188,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -13911,6 +14273,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -14004,6 +14368,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -14087,6 +14453,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -14180,6 +14548,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -14263,6 +14633,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -14355,6 +14727,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -14437,6 +14811,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -14530,6 +14906,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -14614,6 +14992,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -14709,6 +15089,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -14793,6 +15175,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -14890,6 +15274,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -14976,6 +15362,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -15071,6 +15459,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -15156,6 +15546,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -15263,6 +15655,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -15361,6 +15755,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -15468,6 +15864,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -15553,6 +15951,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -15647,6 +16047,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -15732,6 +16134,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -15828,6 +16232,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -15915,6 +16321,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -16015,6 +16423,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -16104,6 +16514,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -16202,6 +16614,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -16287,6 +16701,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -16385,6 +16801,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -16474,6 +16892,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -16572,6 +16992,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -16657,6 +17079,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -16747,6 +17171,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -16828,6 +17254,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -16917,6 +17345,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -17001,6 +17431,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -17102,6 +17534,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -17195,6 +17629,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -17296,6 +17732,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -17380,6 +17818,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -17473,6 +17913,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -17557,6 +17999,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -17659,6 +18103,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -17753,6 +18199,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -17846,6 +18294,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -17931,6 +18381,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -18021,6 +18473,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -18102,6 +18556,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -18187,6 +18643,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -18265,6 +18723,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -18342,6 +18802,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -18412,6 +18874,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -18489,6 +18953,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -18558,6 +19024,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -18637,6 +19105,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -18709,6 +19179,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -18788,6 +19260,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -18858,6 +19332,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -18954,6 +19430,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -19042,6 +19520,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -19117,6 +19597,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -19185,6 +19667,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -19277,6 +19761,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -19357,6 +19843,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -19442,6 +19930,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -19520,6 +20010,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -19608,6 +20100,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -19691,6 +20185,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -19780,6 +20276,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -19863,6 +20361,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -19955,6 +20455,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -20035,6 +20537,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -20121,6 +20625,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -20201,6 +20707,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -20283,6 +20791,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -20359,6 +20869,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -20441,6 +20953,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -20520,6 +21034,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -20604,6 +21120,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -20682,6 +21200,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -20771,6 +21291,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -20848,6 +21370,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -20936,6 +21460,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -21013,6 +21539,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -21101,6 +21629,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -21178,6 +21708,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -21267,6 +21799,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -21345,6 +21879,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -21430,6 +21966,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -21503,6 +22041,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -21582,6 +22122,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -21653,6 +22195,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -21730,6 +22274,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -21801,6 +22347,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -21883,6 +22431,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -21959,6 +22509,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -22046,6 +22598,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -22122,6 +22676,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -22205,6 +22761,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -22277,6 +22835,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -22360,6 +22920,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -22436,6 +22998,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -22520,6 +23084,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -22593,6 +23159,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -22680,6 +23248,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -22760,6 +23330,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -22838,6 +23410,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -22903,6 +23477,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -22975,6 +23551,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -23040,6 +23618,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -23114,6 +23694,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -23181,6 +23763,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -23258,6 +23842,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -23326,6 +23912,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
@@ -23402,6 +23990,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
                 <h2>Partner</h2>
 
 
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
+
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
 <a href="https://www.schrodinger-hat.it/" target="_blank" rel="noopener">Schrödinger Hat</a><br/>
@@ -23468,6 +24058,8 @@ Sostieni utilizzando i link affiliati di Pensieri in codice:
 
                 <h2>Partner</h2>
 
+
+<a href="https://runtimeradio.com/" target="_blank" rel="noopener">Runtime Radio</a><br/>
 
 <a href="https://www.grusp.org/" target="_blank" rel="noopener">GrUSP</a> — Codice sconto per tutti gli eventi: community_PIC<br/>
 
