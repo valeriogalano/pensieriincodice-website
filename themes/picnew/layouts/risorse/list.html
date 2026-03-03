@@ -1,0 +1,48 @@
+{{ define "main" }}
+{{- $allEpisodes := where .Site.RegularPages "Type" "podcast" -}}
+{{- $withSources := slice -}}
+{{- range $allEpisodes -}}
+  {{- if .Params.sources -}}
+    {{- $withSources = $withSources | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $sorted := sort $withSources "Params.number" "desc" -}}
+{{- $paginator := .Paginate $sorted 10 -}}
+
+<div class="max-w-3xl mx-auto">
+    <h1 class="text-4xl font-extrabold tracking-tight mb-2">Fonti & Risorse</h1>
+    <p class="text-pod-gray mb-10">Le fonti citate in ogni episodio, in ordine cronologico inverso.</p>
+
+    <div class="space-y-10">
+        {{ range $paginator.Pages }}
+        <div class="border border-white/5 rounded-xl bg-pod-card overflow-hidden">
+            <a href="{{ .RelPermalink }}" class="flex items-center space-x-4 px-6 py-4 hover:bg-white/5 transition-colors group border-b border-white/5">
+                <span class="text-pod-orange font-mono text-sm font-bold flex-shrink-0">#{{ .Params.number }}</span>
+                <h2 class="text-sm font-semibold group-hover:text-pod-orange transition-colors leading-snug">{{ .Title }}</h2>
+                <time class="ml-auto text-xs text-pod-gray flex-shrink-0 font-mono">{{ .Date.Format "02/01/2006" }}</time>
+            </a>
+            <ul class="px-6 py-4 space-y-2">
+                {{ range .Params.sources }}
+                <li class="flex items-start space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-pod-orange flex-shrink-0 mt-0.5">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                    </svg>
+                    <a href="{{ .url }}" target="_blank" rel="noopener"
+                        class="text-xs text-pod-gray hover:text-white transition-colors break-all {{ if .title }}font-sans{{ else }}font-mono{{ end }}">{{ if .title }}{{ .title }}{{ else }}{{ .url }}{{ end }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+    </div>
+
+    {{ if gt $paginator.TotalPages 1 }}
+    <div class="mt-12">
+        {{ partial "pagination.html" . }}
+    </div>
+    {{ end }}
+</div>
+{{ end }}
