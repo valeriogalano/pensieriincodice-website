@@ -245,6 +245,19 @@ url = "https://www.instagram.com/pensieriincodice/"
 name = "TikTok"
 url = "https://www.tiktok.com/@pensieriincodice"
 
+[[params.social]]
+name = "Canale Telegram"
+url = "https://t.me/pensieriincodice"
+
+[[params.social]]
+name = "Community Telegram"
+url = "https://t.me/pensieriincodicecommunity"
+
+[[params.social]]
+name = "Email"
+url = "mailto:valerio@pensieriincodice.it"
+icon = "email"
+
 # Sitemap Settings
 [sitemap]
 changefreq = "weekly"
