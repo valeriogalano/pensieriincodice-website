@@ -1,0 +1,65 @@
+{{ define "main" }}
+<div class="max-w-2xl mx-auto">
+    <h1 class="text-4xl font-extrabold tracking-tight mb-4">Contatti</h1>
+    <p class="text-pod-gray mb-12">Tutti i modi per entrare in contatto, seguire il podcast e far parte della community.</p>
+
+    {{/* Community */}}
+    <section class="mb-10">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-pod-orange mb-4">Community</h2>
+        <div class="space-y-3">
+            <a href="https://t.me/pensieriincodice" target="_blank" rel="noopener"
+                class="flex items-center space-x-4 p-4 bg-pod-card border border-white/5 rounded-xl hover:border-pod-orange/30 transition-all group">
+                <img src="https://www.google.com/s2/favicons?domain=t.me&sz=32" alt="Telegram" class="w-6 h-6">
+                <div>
+                    <div class="font-semibold group-hover:text-pod-orange transition-colors">Canale Telegram</div>
+                    <div class="text-xs text-pod-gray">Annunci, aggiornamenti e novità dal podcast</div>
+                </div>
+            </a>
+            <a href="https://t.me/pensieriincodicecommunity" target="_blank" rel="noopener"
+                class="flex items-center space-x-4 p-4 bg-pod-card border border-white/5 rounded-xl hover:border-pod-orange/30 transition-all group">
+                <img src="https://www.google.com/s2/favicons?domain=t.me&sz=32" alt="Telegram" class="w-6 h-6">
+                <div>
+                    <div class="font-semibold group-hover:text-pod-orange transition-colors">Gruppo Telegram</div>
+                    <div class="text-xs text-pod-gray">Discuti gli episodi con gli altri ascoltatori</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    {{/* Email */}}
+    <section class="mb-10">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-pod-orange mb-4">Email</h2>
+        <a href="mailto:{{ .Site.Params.podcast.email }}"
+            class="flex items-center space-x-4 p-4 bg-pod-card border border-white/5 rounded-xl hover:border-pod-orange/30 transition-all group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-pod-gray group-hover:text-pod-orange transition-colors flex-shrink-0">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <div>
+                <div class="font-semibold group-hover:text-pod-orange transition-colors">Scrivi una mail</div>
+                <div class="text-xs text-pod-gray">{{ .Site.Params.podcast.email }}</div>
+            </div>
+        </a>
+    </section>
+
+    {{/* Social */}}
+    <section class="mb-10">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-pod-orange mb-4">Social</h2>
+        <div class="space-y-3">
+            {{ range .Site.Params.social }}
+            {{ $parsed := urls.Parse .url }}
+            <a href="{{ .url }}" target="_blank" rel="noopener"
+               class="flex items-center space-x-4 p-4 bg-pod-card border border-white/5 rounded-xl hover:border-pod-orange/30 transition-all group">
+                <img src="https://www.google.com/s2/favicons?domain={{ $parsed.Host }}&sz=32" alt="{{ .name }}" class="w-6 h-6">
+                <div>
+                    <div class="font-semibold group-hover:text-pod-orange transition-colors">{{ .name }}</div>
+                    <div class="text-xs text-pod-gray">{{ .url }}</div>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+    </section>
+</div>
+{{ end }}
