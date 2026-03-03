@@ -58,5 +58,26 @@
         </div>
     </section>
     {{ end }}
+
+    {{/* Raccolta sostenitori unici da tutti gli episodi */}}
+    {{- $allSupporters := slice -}}
+    {{- range where .Site.RegularPages "Type" "podcast" -}}
+    {{- range .Params.supporters -}}
+    {{- $allSupporters = $allSupporters | append . -}}
+    {{- end -}}
+    {{- end -}}
+    {{- $uniqueSupporters := $allSupporters | uniq | sort -}}
+    {{ with $uniqueSupporters }}
+    <section class="mb-12 pt-12 border-t border-white/5">
+        <h2 class="text-2xl font-bold mb-2">Grazie a chi ha già sostenuto</h2>
+        <p class="text-pod-gray mb-6">Queste persone hanno dimostrato il loro apprezzamento per il progetto.</p>
+        <div class="flex flex-wrap gap-2">
+            {{ range . }}
+            <span class="bg-pod-card border border-white/10 px-4 py-2 rounded-full text-sm text-pod-gray hover:text-white hover:border-pod-orange/30 transition-all">{{ . }}</span>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+
 </div>
 {{ end }}
