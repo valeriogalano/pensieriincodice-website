@@ -98,12 +98,21 @@
                 <button id="toggle-chapters" class="text-pod-gray hover:text-white transition-colors hidden" title="Capitoli">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
                 </button>
+                <button id="toggle-transcript" class="text-pod-gray hover:text-white transition-colors hidden" title="Trascrizione">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                </button>
             </div>
         </div>
         <div id="player-chapters-container" class="hidden w-full mt-4 max-h-48 overflow-y-auto bg-pod-black/50 rounded-lg p-4 scrollbar-thin scrollbar-thumb-pod-orange">
             <h6 class="text-xs font-bold text-pod-gray uppercase mb-2">Capitoli</h6>
             <div id="player-chapters-list" class="grid grid-cols-1 md:grid-cols-2 gap-2">
                 <!-- Chapters will be injected here -->
+            </div>
+        </div>
+        <div id="player-transcript-container" class="hidden w-full mt-4 max-h-48 overflow-y-auto bg-pod-black/50 rounded-lg p-4 scrollbar-thin scrollbar-thumb-pod-orange">
+            <h6 class="text-xs font-bold text-pod-gray uppercase mb-2">Trascrizione</h6>
+            <div id="player-transcript-list" class="space-y-1">
+                <!-- Transcript will be injected here -->
             </div>
         </div>
     </div>
@@ -125,12 +134,17 @@
     const chaptersContainer = document.getElementById('player-chapters-container');
     const chaptersList = document.getElementById('player-chapters-list');
     const toggleChaptersBtn = document.getElementById('toggle-chapters');
+    const transcriptContainer = document.getElementById('player-transcript-container');
+    const transcriptList = document.getElementById('player-transcript-list');
+    const toggleTranscriptBtn = document.getElementById('toggle-transcript');
     const chapterPrevBtn = document.getElementById('player-chapter-prev');
     const chapterNextBtn = document.getElementById('player-chapter-next');
     const episodePrevBtn = document.getElementById('player-episode-prev');
     const episodeNextBtn = document.getElementById('player-episode-next');
 
     let currentChapters = [];
+    let currentTranscript = [];
+    let currentTranscriptIndex = -1;
 
     const playSvg = '<polygon points="5 3 19 12 5 21 5 3" />';
     const pauseSvg = '<rect x="6" y="4" width="4" height="16" /><rect x="14" y="4" width="4" height="16" />';
@@ -142,7 +156,7 @@
         return m + ':' + (sec < 10 ? '0' : '') + sec;
     }
 
-    window.playEpisode = function(url, title, image, chaptersUrl) {
+    window.playEpisode = function(url, title, image, chaptersUrl, transcriptUrl) {
         // Remove quotes from jsonify if present
         if (title && title.startsWith('"') && title.endsWith('"')) {
             title = title.substring(1, title.length - 1);
@@ -206,7 +220,20 @@
         } else {
             hideChapters();
         }
-        
+
+        // Load transcript if available
+        if (transcriptUrl) {
+            fetch(transcriptUrl)
+                .then(response => response.text())
+                .then(text => renderTranscript(parseSRT(text)))
+                .catch(err => {
+                    console.error("Error loading transcript:", err);
+                    hideTranscript();
+                });
+        } else {
+            hideTranscript();
+        }
+
         updateEpisodeButtons();
 
         // Save state for persistence
@@ -215,6 +242,7 @@
             title: title,
             image: image || "{{ .Site.Params.podcast.image | absURL }}",
             chaptersUrl: chaptersUrl,
+            transcriptUrl: transcriptUrl || null,
             currentTime: audio.currentTime,
             shouldPlay: true
         }));
@@ -258,10 +286,56 @@
         chapterNextBtn.classList.add('hidden');
     }
 
+    function parseSRT(text) {
+        const segments = [];
+        const blocks = text.trim().split(/\n\n+/);
+        for (const block of blocks) {
+            const lines = block.trim().split('\n');
+            if (lines.length < 3) continue;
+            const m = lines[1].match(/(\d{2}):(\d{2}):(\d{2})[,.](\d{3})\s*-->\s*(\d{2}):(\d{2}):(\d{2})[,.](\d{3})/);
+            if (!m) continue;
+            const start = +m[1] * 3600 + +m[2] * 60 + +m[3] + +m[4] / 1000;
+            const end   = +m[5] * 3600 + +m[6] * 60 + +m[7] + +m[8] / 1000;
+            const segText = lines.slice(2).join(' ').trim();
+            if (segText) segments.push({ start, end, text: segText });
+        }
+        return segments;
+    }
+
+    function renderTranscript(segments) {
+        currentTranscript = segments;
+        currentTranscriptIndex = -1;
+        transcriptList.innerHTML = '';
+        segments.forEach((seg, index) => {
+            const div = document.createElement('div');
+            div.className = 'px-2 py-1 rounded cursor-pointer hover:bg-white/10 transition-colors text-[11px] leading-relaxed text-pod-gray';
+            div.dataset.transcriptIndex = index;
+            div.onclick = () => { audio.currentTime = seg.start; if (audio.paused) audio.play(); };
+            div.innerHTML = `<span class="text-pod-orange font-mono mr-2 text-[9px]">${formatTime(seg.start)}</span>${seg.text}`;
+            transcriptList.appendChild(div);
+        });
+        toggleTranscriptBtn.classList.remove('hidden');
+    }
+
+    function hideTranscript() {
+        currentTranscript = [];
+        currentTranscriptIndex = -1;
+        transcriptList.innerHTML = '';
+        transcriptContainer.classList.add('hidden');
+        toggleTranscriptBtn.classList.add('hidden');
+    }
+
     toggleChaptersBtn.addEventListener('click', () => {
         chaptersContainer.classList.toggle('hidden');
         if (!chaptersContainer.classList.contains('hidden')) {
-            // Adjust footer height if necessary or scroll into view
+            transcriptContainer.classList.add('hidden');
+        }
+    });
+
+    toggleTranscriptBtn.addEventListener('click', () => {
+        transcriptContainer.classList.toggle('hidden');
+        if (!transcriptContainer.classList.contains('hidden')) {
+            chaptersContainer.classList.add('hidden');
         }
     });
 
@@ -301,6 +375,12 @@
                         if (data && data.chapters) renderChapters(data.chapters);
                     });
             }
+            if (state.transcriptUrl) {
+                fetch(state.transcriptUrl)
+                    .then(response => response.text())
+                    .then(text => renderTranscript(parseSRT(text)))
+                    .catch(() => {});
+            }
             
             if (state.shouldPlay) {
                 const playPromise = audio.play();
@@ -334,7 +414,8 @@
             currentTime: audio.currentTime,
             shouldPlay: !audio.paused,
             playbackRate: audio.playbackRate,
-            chaptersUrl: localStorage.getItem('pic_player_state') ? JSON.parse(localStorage.getItem('pic_player_state')).chaptersUrl : null
+            chaptersUrl: localStorage.getItem('pic_player_state') ? JSON.parse(localStorage.getItem('pic_player_state')).chaptersUrl : null,
+            transcriptUrl: localStorage.getItem('pic_player_state') ? JSON.parse(localStorage.getItem('pic_player_state')).transcriptUrl : null
         };
         localStorage.setItem('pic_player_state', JSON.stringify(state));
     }, 2000);
@@ -362,22 +443,44 @@
         if (audio.duration) {
             progress.style.width = (audio.currentTime / audio.duration * 100) + '%';
         }
-        if (!currentChapters.length) return;
-        // Trova il capitolo corrente
-        let idx = 0;
-        for (let i = currentChapters.length - 1; i >= 0; i--) {
-            if (audio.currentTime >= currentChapters[i].startTime) { idx = i; break; }
+        if (currentChapters.length) {
+            // Trova il capitolo corrente
+            let idx = 0;
+            for (let i = currentChapters.length - 1; i >= 0; i--) {
+                if (audio.currentTime >= currentChapters[i].startTime) { idx = i; break; }
+            }
+            if (idx !== currentChapterIndex) {
+                currentChapterIndex = idx;
+                const items = chaptersList.querySelectorAll('[data-chapter-index]');
+                items.forEach(el => {
+                    const isActive = parseInt(el.dataset.chapterIndex) === idx;
+                    el.classList.toggle('bg-pod-orange/20', isActive);
+                    el.classList.toggle('border-pod-orange/40', isActive);
+                    el.classList.toggle('border-white/5', !isActive);
+                });
+            }
         }
-        if (idx === currentChapterIndex) return;
-        currentChapterIndex = idx;
-        // Aggiorna evidenziazione
-        const items = chaptersList.querySelectorAll('[data-chapter-index]');
-        items.forEach(el => {
-            const isActive = parseInt(el.dataset.chapterIndex) === idx;
-            el.classList.toggle('bg-pod-orange/20', isActive);
-            el.classList.toggle('border-pod-orange/40', isActive);
-            el.classList.toggle('border-white/5', !isActive);
-        });
+
+        if (currentTranscript.length) {
+            let tIdx = -1;
+            for (let i = currentTranscript.length - 1; i >= 0; i--) {
+                if (audio.currentTime >= currentTranscript[i].start) { tIdx = i; break; }
+            }
+            if (tIdx !== currentTranscriptIndex) {
+                currentTranscriptIndex = tIdx;
+                const tItems = transcriptList.querySelectorAll('[data-transcript-index]');
+                tItems.forEach(el => {
+                    const isActive = parseInt(el.dataset.transcriptIndex) === tIdx;
+                    el.classList.toggle('bg-pod-orange/20', isActive);
+                    el.classList.toggle('text-white', isActive);
+                    el.classList.toggle('text-pod-gray', !isActive);
+                });
+                if (tIdx >= 0 && !transcriptContainer.classList.contains('hidden')) {
+                    const activeEl = transcriptList.querySelector(`[data-transcript-index="${tIdx}"]`);
+                    if (activeEl) activeEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+                }
+            }
+        }
     });
 
     progressBar.addEventListener('click', function(e) {
@@ -444,7 +547,7 @@
         const target = idx > 0 ? idx - 1 : playlist.length - 1;
         if (playlist[target]) {
             const ep = playlist[target];
-            playEpisode(ep.audio, ep.title, ep.image, ep.chapters);
+            playEpisode(ep.audio, ep.title, ep.image, ep.chapters, ep.transcript);
         }
     });
 
@@ -454,7 +557,7 @@
         const target = (idx >= 0 && idx < playlist.length - 1) ? idx + 1 : 0;
         if (playlist[target]) {
             const ep = playlist[target];
-            playEpisode(ep.audio, ep.title, ep.image, ep.chapters);
+            playEpisode(ep.audio, ep.title, ep.image, ep.chapters, ep.transcript);
         }
     });
 

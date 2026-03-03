@@ -23,7 +23,9 @@
         {{- $audio := printf "%s%s" $.Site.Params.podcast.cdn_tracked_base_url .Params.audio -}}
         {{- $chapters := "" -}}
         {{- if .Params.chapters -}}{{- $chapters = printf "%s%s" $.Site.Params.podcast.cdn_base_url .Params.chapters -}}{{- end -}}
-        {{- $playlist = $playlist | append (dict "title" .Title "audio" $audio "image" $img "chapters" $chapters) -}}
+        {{- $transcript := "" -}}
+        {{- if .Params.transcript -}}{{- $transcript = printf "%s%s" $.Site.Params.podcast.cdn_base_url .Params.transcript -}}{{- end -}}
+        {{- $playlist = $playlist | append (dict "title" .Title "audio" $audio "image" $img "chapters" $chapters "transcript" $transcript) -}}
     {{- end -}}
     <script>window.__playlist={{ $playlist | jsonify | safeJS }};</script>
     {{ hugo.Generator }}
