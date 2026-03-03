@@ -181,32 +181,26 @@ funding_text = "Sostieni il podcast"
 [[params.platforms]]
 name = "RSS"
 url = "/blog/feed-senza-tracciamento/"
-icon = "rss"
 
 [[params.platforms]]
 name = "Spotify"
 url = "https://open.spotify.com/show/5YEceJXlDE8st36dtgcjJJ"
-icon = "spotify"
 
 [[params.platforms]]
 name = "Apple Podcasts"
 url = "https://podcasts.apple.com/it/podcast/pensieri-in-codice/id1454106438"
-icon = "apple-podcasts"
 
 [[params.platforms]]
 name = "YouTube Music"
 url = "https://www.youtube.com/@pensieriincodice/podcasts"
-icon = "youtube-music"
 
 [[params.platforms]]
 name = "Amazon Music"
 url = "https://music.amazon.it/podcasts/f027f2e3-437d-46f8-879a-d3816c7170b9/pensieri-in-codice"
-icon = "amazon-music"
 
 [[params.platforms]]
 name = "Podcast Addict"
 url = "https://podcastaddict.com/podcast/pensieri-in-codice/4832655"
-icon = "podcast-addict"
 
 # Link per sostenere il podcast
 [[params.support.direct]]
@@ -242,12 +236,10 @@ url = "https://web.satispay.com/promocode/VALERIOGALAN"
 [[params.social]]
 name = "Instagram"
 url = "https://www.instagram.com/pensieriincodice/"
-icon = "instagram"
 
 [[params.social]]
 name = "TikTok"
 url = "https://www.tiktok.com/@pensieriincodice"
-icon = "tiktok"
 
 # Sitemap Settings
 [sitemap]
