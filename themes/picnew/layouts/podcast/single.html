@@ -1,3 +1,28 @@
+{{ define "head" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "url": {{ .Permalink | jsonify }},
+  "name": {{ .Title | jsonify }},
+  "datePublished": "{{ .Date.Format "2006-01-02" }}",
+  "description": {{ with .Description }}{{ . | jsonify }}{{ else }}{{ .Summary | plainify | jsonify }}{{ end }},
+  "timeRequired": "PT{{ .Params.audio_duration }}S",
+  "associatedMedia": {
+    "@type": "MediaObject",
+    "contentUrl": {{ printf "%s%s" .Site.Params.podcast.cdn_tracked_base_url .Params.audio | jsonify }},
+    "encodingFormat": "audio/mpeg"
+  },
+  "image": {{ if .Params.image }}{{ printf "%s%s" .Site.Params.podcast.cdn_base_url .Params.image | jsonify }}{{ else }}{{ .Site.Params.podcast.image | absURL | jsonify }}{{ end }},
+  "partOfSeries": {
+    "@type": "PodcastSeries",
+    "name": {{ .Site.Params.podcast.title | jsonify }},
+    "url": {{ .Site.Home.Permalink | jsonify }}
+  }
+}
+</script>
+{{ end }}
+
 {{ define "main" }}
 <article class="max-w-4xl mx-auto">
     <!-- Header -->

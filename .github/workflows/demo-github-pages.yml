@@ -22,11 +22,19 @@ jobs:
         with:
           submodules: true
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.156.0'
           extended: true
+
+      - name: Install npm dependencies
+        run: npm install
 
       - name: Build
         run: hugo --minify --baseURL "https://valeriogalano.github.io/pensieriincodice-website/"
