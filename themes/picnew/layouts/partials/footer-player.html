@@ -18,13 +18,12 @@
             </div>
             <div class="flex-1 flex flex-col items-center px-12">
                 <div class="flex items-center space-x-3 mb-2">
-                    {{/* Skip back 15s */}}
-                    <button id="player-prev" disabled title="Indietro 15 secondi"
+                    {{/* Previous episode */}}
+                    <button id="player-episode-prev" disabled title="Episodio precedente"
                         class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
-                            <path d="M16 4 A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <polyline points="12,1 16,5 12,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <text x="16" y="20" text-anchor="middle" font-size="9" font-weight="bold" fill="currentColor" font-family="monospace">15</text>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="19 20 9 12 19 4 19 20"/>
+                            <polygon points="9 20 0 12 9 4 9 20"/>
                         </svg>
                     </button>
                     {{/* Previous chapter */}}
@@ -35,12 +34,13 @@
                             <line x1="4" y1="4" x2="4" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </button>
-                    {{/* Previous episode */}}
-                    <button id="player-episode-prev" disabled title="Episodio precedente"
+                    {{/* Skip back 15s */}}
+                    <button id="player-prev" disabled title="Indietro 15 secondi"
                         class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="19 20 9 12 19 4 19 20"/>
-                            <polygon points="9 20 0 12 9 4 9 20"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
+                            <path d="M16 4 A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <polyline points="12,1 16,5 12,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <text x="16" y="20" text-anchor="middle" font-size="9" font-weight="bold" fill="currentColor" font-family="monospace">15</text>
                         </svg>
                     </button>
                     {{/* Play/Pause */}}
@@ -50,12 +50,13 @@
                             <polygon points="5 3 19 12 5 21 5 3" />
                         </svg>
                     </button>
-                    {{/* Next episode */}}
-                    <button id="player-episode-next" disabled title="Episodio successivo"
+                    {{/* Skip forward 30s */}}
+                    <button id="player-next" disabled title="Avanti 30 secondi"
                         class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="5 4 15 12 5 20 5 4"/>
-                            <polygon points="15 4 24 12 15 20 15 4"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
+                            <path d="M16 4 A12 12 0 1 1 4 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <polyline points="20,1 16,5 20,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <text x="16" y="20" text-anchor="middle" font-size="9" font-weight="bold" fill="currentColor" font-family="monospace">30</text>
                         </svg>
                     </button>
                     {{/* Next chapter */}}
@@ -66,13 +67,12 @@
                             <line x1="20" y1="4" x2="20" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </button>
-                    {{/* Skip forward 30s */}}
-                    <button id="player-next" disabled title="Avanti 30 secondi"
+                    {{/* Next episode */}}
+                    <button id="player-episode-next" disabled title="Episodio successivo"
                         class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
-                            <path d="M16 4 A12 12 0 1 1 4 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <polyline points="20,1 16,5 20,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <text x="16" y="20" text-anchor="middle" font-size="9" font-weight="bold" fill="currentColor" font-family="monospace">30</text>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 4 15 12 5 20 5 4"/>
+                            <polygon points="15 4 24 12 15 20 15 4"/>
                         </svg>
                     </button>
                 </div>
