@@ -1,5 +1,5 @@
 ---
-title: "Il Podcast"
+title: "Info"
 description: "L'informatica è cultura, non solo istruzioni."
 draft: false
 ---
