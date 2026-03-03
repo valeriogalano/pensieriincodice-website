@@ -81,7 +81,7 @@ unsafe= true
     ]
 [[menu.main]]
   identifier = ""
-  name = "Archivio episodi"
+  name = "Episodi"
   pre = "play"
   url = "episodes"
   weight = 5
