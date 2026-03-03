@@ -177,12 +177,77 @@ updateFrequency = "monthly"
 funding_url = "https://pensieriincodice.it/#support-card"
 funding_text = "Sostieni il podcast"
 
-[params.social]
-spotify = "https://open.spotify.com/show/3CQmjmOB1ICsEGKMBjpIgD"
-instagram = "https://www.instagram.com/pensieriincodice/"
-twitter = "https://twitter.com/penabordi"
-linkedin = "https://www.linkedin.com/in/valerio-galano/"
-github = "https://github.com/valeriogalano"
+# Piattaforme podcast (mostrate nell'header, in ordine)
+[[params.platforms]]
+name = "RSS"
+url = "/blog/feed-senza-tracciamento/"
+icon = "rss"
+
+[[params.platforms]]
+name = "Spotify"
+url = "https://open.spotify.com/show/5YEceJXlDE8st36dtgcjJJ"
+icon = "spotify"
+
+[[params.platforms]]
+name = "Apple Podcasts"
+url = "https://podcasts.apple.com/it/podcast/pensieri-in-codice/id1454106438"
+icon = "apple-podcasts"
+
+[[params.platforms]]
+name = "YouTube Music"
+url = "https://www.youtube.com/@pensieriincodice/podcasts"
+icon = "youtube-music"
+
+[[params.platforms]]
+name = "Amazon Music"
+url = "https://music.amazon.it/podcasts/f027f2e3-437d-46f8-879a-d3816c7170b9/pensieri-in-codice"
+icon = "amazon-music"
+
+[[params.platforms]]
+name = "Podcast Addict"
+url = "https://podcastaddict.com/podcast/pensieri-in-codice/4832655"
+icon = "podcast-addict"
+
+# Link per sostenere il podcast
+[[params.support.direct]]
+name = "Satispay"
+url = "https://www.satispay.com/download/qrcode/S6Y-CON--EC548199-5F32-4BD6-AAF5-73A999744E56"
+
+[[params.support.direct]]
+name = "Revolut"
+url = "https://revolut.me/valeriogalano"
+
+[[params.support.direct]]
+name = "PayPal"
+url = "https://www.paypal.com/donate/?hosted_button_id=HRKMD7X43R7SS"
+note = "applica commissioni"
+
+[[params.support.affiliate]]
+name = "Amazon"
+url = "https://amzn.to/3CPOWgC"
+
+[[params.support.affiliate]]
+name = "Todoist"
+url = "https://doist.grsm.io/valeriogalano5066"
+
+[[params.support.affiliate]]
+name = "Readwise Reader"
+url = "https://readwise.io/i/valerio61"
+
+[[params.support.affiliate]]
+name = "Satispay"
+url = "https://web.satispay.com/promocode/VALERIOGALAN"
+
+# Social media (mostrati nell'header dopo le piattaforme)
+[[params.social]]
+name = "Instagram"
+url = "https://www.instagram.com/pensieriincodice/"
+icon = "instagram"
+
+[[params.social]]
+name = "TikTok"
+url = "https://www.tiktok.com/@pensieriincodice"
+icon = "tiktok"
 
 # Sitemap Settings
 [sitemap]
