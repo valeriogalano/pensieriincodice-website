@@ -13,6 +13,35 @@
     </div>
     {{ end }}
 
+    {{/* Ricompense */}}
+    <section class="mb-12">
+        <h2 class="text-2xl font-bold mb-2">Ricompense per le donazioni</h2>
+        <p class="text-pod-gray mb-8">A prescindere dal livello di supporto, ricevi un ringraziamento pubblico nel podcast. Inoltre puoi ricevere i gadget destinati ai sostenitori.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div class="relative bg-pod-card border border-white/5 rounded-2xl p-6 flex flex-col">
+                <div class="text-3xl font-extrabold text-pod-orange mb-1">€1</div>
+                <div class="text-xs font-mono text-pod-gray uppercase tracking-widest mb-4">o più</div>
+                <div class="font-semibold text-white">Menzione in episodio</div>
+                <p class="text-sm text-pod-gray mt-2">Il tuo nome viene citato con gratitudine nel podcast.</p>
+            </div>
+            <div class="relative bg-pod-card border border-pod-orange/30 rounded-2xl p-6 flex flex-col ring-1 ring-pod-orange/20">
+                <div class="absolute -top-3 left-6">
+                    <span class="bg-pod-orange text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Popolare</span>
+                </div>
+                <div class="text-3xl font-extrabold text-pod-orange mb-1">€10</div>
+                <div class="text-xs font-mono text-pod-gray uppercase tracking-widest mb-4">o più</div>
+                <div class="font-semibold text-white">Segnalibro e stickers</div>
+                <p class="text-sm text-pod-gray mt-2">Ricevi per posta un segnalibro e degli stickers esclusivi.</p>
+            </div>
+            <div class="relative bg-pod-card border border-white/5 rounded-2xl p-6 flex flex-col">
+                <div class="text-3xl font-extrabold text-pod-orange mb-1">€50</div>
+                <div class="text-xs font-mono text-pod-gray uppercase tracking-widest mb-4">o più</div>
+                <div class="font-semibold text-white">Card laminata edizione limitata</div>
+                <p class="text-sm text-pod-gray mt-2">Una card laminata in edizione limitata, collezione esclusiva.</p>
+            </div>
+        </div>
+    </section>
+
     {{ with .Site.Params.support.direct }}
     <section class="mb-12">
         <h2 class="text-2xl font-bold mb-6">Supporta direttamente</h2>
