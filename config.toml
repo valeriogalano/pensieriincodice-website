@@ -232,6 +232,10 @@ url = "https://readwise.io/i/valerio61"
 name = "Satispay"
 url = "https://web.satispay.com/promocode/VALERIOGALAN"
 
+[[params.support.affiliate]]
+name = "NextDNS"
+url = "https://nextdns.io/?from=pmy29ab3"
+
 # Social media (mostrati nell'header dopo le piattaforme)
 [[params.social]]
 name = "Instagram"
