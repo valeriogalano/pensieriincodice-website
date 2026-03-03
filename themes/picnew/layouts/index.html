@@ -139,6 +139,41 @@
 </section>
 {{ end }}
 
+<!-- ALTRI PROGETTI -->
+{{ with .Site.Data.projects }}
+<section class="mb-12">
+    <div class="flex items-center justify-between mb-8">
+        <h2 class="text-3xl font-bold tracking-tight">Altri Progetti</h2>
+        <a href="{{ "progetti/" | relURL }}" class="text-pod-orange hover:underline font-mono text-sm uppercase tracking-wider">Vedi tutto →</a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {{ range . }}
+        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
+            class="bg-pod-card border border-white/5 rounded-2xl overflow-hidden hover:border-pod-orange/50 transition-all group flex flex-col">
+            <div class="aspect-square overflow-hidden">
+                <img src="{{ .image }}" alt="{{ .name }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="text-xs font-mono text-pod-orange uppercase tracking-wider">{{ .network }}</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-pod-orange transition-colors">{{ .name }}</h3>
+                <p class="text-sm text-pod-gray flex-1">{{ .description }}</p>
+                <div class="flex items-center gap-1 mt-4 text-pod-orange text-sm font-bold">
+                    <span>Ascolta</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                </div>
+            </div>
+        </a>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
 <!-- PARTNER -->
 {{ with index .Site.Data.partners "partners" }}
 <section class="mt-24 pt-12 border-t border-white/5 mb-12">
