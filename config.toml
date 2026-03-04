@@ -208,7 +208,7 @@ name = "Satispay"
 url = "https://www.satispay.com/download/qrcode/S6Y-CON--EC548199-5F32-4BD6-AAF5-73A999744E56"
 
 [[params.support.direct]]
-name = "Revolut"
+name = "Revolut o carta di credito"
 url = "https://revolut.me/valeriogalano"
 
 [[params.support.direct]]
