@@ -216,6 +216,14 @@ name = "PayPal"
 url = "https://www.paypal.com/donate/?hosted_button_id=HRKMD7X43R7SS"
 note = "applica commissioni"
 
+[params.support.wire]
+beneficiary = "Valerio Galano"
+iban = "LT57 3250 0166 8568 6649"
+bic = "REVOLT21"
+bank_name = "Revolut Bank UAB"
+bank_address = "Konstitucijos ave. 21B, 08130, Vilnius, Lithuania"
+bic_correspondent = "CHASDEFX"
+
 [[params.support.affiliate]]
 name = "Amazon"
 url = "https://amzn.to/3CPOWgC"

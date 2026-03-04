@@ -18,7 +18,7 @@
         <h2 class="text-2xl font-bold mb-2">Supporta direttamente</h2>
         <p class="text-pod-gray mb-2">A prescindere dal livello di supporto, ricevi un ringraziamento pubblico nel podcast. Con donazioni più alte puoi ricevere gadget esclusivi: stickers, segnalibri e card laminate in edizione limitata.</p>
         <a href="{{ $.Site.Home.RelPermalink }}blog/nuovi-gadget-di-pensieri-in-codice/" class="text-sm text-pod-orange hover:underline mb-6 inline-block">Scopri tutti i dettagli →</a>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-start">
             {{ range . }}
             <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
                 class="flex items-center justify-between bg-pod-card border border-white/5 hover:border-pod-orange/50 rounded-2xl p-6 transition-all group">
@@ -35,6 +35,40 @@
                 </svg>
             </a>
             {{ end }}
+            {{/* {{ with $.Site.Params.support.wire }}
+            <details class="sm:col-span-2 bg-pod-card border border-white/5 hover:border-pod-orange/50 rounded-2xl transition-all group/wire">
+                <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                    <span class="text-lg font-semibold group-open/wire:text-pod-orange transition-colors">Bonifico Bancario</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-pod-gray group-open/wire:rotate-180 transition-transform flex-shrink-0">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </summary>
+                <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-sm px-6 pt-2" style="padding-bottom: 2rem;">
+                    <div>
+                        <dt class="text-[10px] text-pod-gray uppercase font-mono mb-1">Beneficiario</dt>
+                        <dd class="font-mono text-white">{{ .beneficiary }}</dd>
+                    </div>
+                    <div>
+                        <dt class="text-[10px] text-pod-gray uppercase font-mono mb-1">IBAN</dt>
+                        <dd class="font-mono text-white tracking-wider">{{ .iban }}</dd>
+                    </div>
+                    <div>
+                        <dt class="text-[10px] text-pod-gray uppercase font-mono mb-1">Codice BIC/SWIFT</dt>
+                        <dd class="font-mono text-white">{{ .bic }}</dd>
+                    </div>
+                    <div>
+                        <dt class="text-[10px] text-pod-gray uppercase font-mono mb-1">Banca</dt>
+                        <dd class="text-pod-gray">{{ .bank_name }}</dd>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <dt class="text-[10px] text-pod-gray uppercase font-mono mb-1">BIC banca corrispondente</dt>
+                        <dd class="font-mono text-pod-gray">{{ .bic_correspondent }}</dd>
+                    </div>
+                </dl>
+            </details>
+            {{ end }} */}}
         </div>
         <p class="text-sm text-pod-gray mt-4">Dopo aver inviato una donazione, scrivi a <a href="mailto:valerio@pensieriincodice.it" class="text-pod-orange hover:underline">valerio@pensieriincodice.it</a> per comunicarmi con che nome vuoi essere ringraziato in puntata e il tuo indirizzo <a href="/blog/nuovi-gadget-di-pensieri-in-codice/" class="text-pod-orange hover:underline">se hai diritto a ricevere i gadget</a>.</p>
     </section>
