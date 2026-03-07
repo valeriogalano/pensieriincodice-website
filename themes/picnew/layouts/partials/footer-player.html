@@ -12,7 +12,7 @@
                     </svg>
                 </div>
                 <div id="player-info">
-                    <h5 class="text-sm font-bold truncate max-w-[150px] md:max-w-[200px]" id="player-title">{{ .Site.Title }}</h5>
+                    <a href="#" class="text-sm font-bold truncate max-w-[150px] md:max-w-[200px] hover:text-pod-orange transition-colors block" id="player-title" title="{{ .Site.Title }}">{{ .Site.Title }}</a>
                     <p class="text-[10px] text-pod-orange font-mono uppercase" id="player-status">Seleziona un episodio</p>
                 </div>
             </div>
@@ -156,7 +156,7 @@
         return m + ':' + (sec < 10 ? '0' : '') + sec;
     }
 
-    window.playEpisode = function(url, title, image, chaptersUrl, transcriptUrl) {
+    window.playEpisode = function(url, title, image, chaptersUrl, transcriptUrl, permalink) {
         // Remove quotes from jsonify if present
         if (title && title.startsWith('"') && title.endsWith('"')) {
             title = title.substring(1, title.length - 1);
@@ -164,6 +164,8 @@
 
         if (titleEl) {
             titleEl.textContent = title;
+            titleEl.title = title;
+            titleEl.href = permalink || '#';
         }
 
         if (audio.src !== url) {
@@ -547,7 +549,7 @@
         const target = idx > 0 ? idx - 1 : playlist.length - 1;
         if (playlist[target]) {
             const ep = playlist[target];
-            playEpisode(ep.audio, ep.title, ep.image, ep.chapters, ep.transcript);
+            playEpisode(ep.audio, ep.title, ep.image, ep.chapters, ep.transcript, ep.permalink);
         }
     });
 
@@ -557,7 +559,7 @@
         const target = (idx >= 0 && idx < playlist.length - 1) ? idx + 1 : 0;
         if (playlist[target]) {
             const ep = playlist[target];
-            playEpisode(ep.audio, ep.title, ep.image, ep.chapters, ep.transcript);
+            playEpisode(ep.audio, ep.title, ep.image, ep.chapters, ep.transcript, ep.permalink);
         }
     });
 
