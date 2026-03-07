@@ -84,13 +84,13 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                     <span class="font-medium">Autore</span>
                 </a>
-                <a href="{{ "contatti/" | relURL }}" class="mobile-nav-link flex items-center space-x-4 px-3 py-3 rounded-lg hover:bg-white/5 transition-all text-pod-gray hover:text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                    <span class="font-medium">Contatti</span>
-                </a>
                 <a href="{{ "sostieni/" | relURL }}" class="mobile-nav-link flex items-center space-x-4 px-3 py-3 rounded-lg hover:bg-white/5 transition-all text-pod-orange">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
                     <span class="font-medium">Sostieni</span>
+                </a>
+                <a href="{{ "contatti/" | relURL }}" class="mobile-nav-link flex items-center space-x-4 px-3 py-3 rounded-lg hover:bg-white/5 transition-all text-pod-gray hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <span class="font-medium">Contatti</span>
                 </a>
             </nav>
             {{- $rss      := where .Site.Params.platforms "type" "rss" -}}
