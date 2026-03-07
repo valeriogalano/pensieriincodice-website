@@ -57,14 +57,15 @@
 #mobile-brand { display: none; }
 #mobile-search-trigger { display: none; }
 
-/* ===== DESKTOP (>= 768px): nascondi elementi mobile-only ===== */
-@media (min-width: 768px) {
+/* ===== DESKTOP (>= 1024px): nascondi elementi mobile-only ===== */
+@media (min-width: 1024px) {
     #mobile-menu-toggle { display: none; }
     #mobile-menu-drawer { display: none; }
 }
 
-/* ===== MOBILE (< 768px) ===== */
-@media (max-width: 767px) {
+/* ===== MOBILE + TABLET (< 1024px) ===== */
+@media (max-width: 1023px) {
+    #desktop-logo { display: none !important; }
     /* Sidebar: nascosta su mobile */
     #sidebar-container { display: none; }
 
