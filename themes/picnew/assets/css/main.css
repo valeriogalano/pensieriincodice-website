@@ -66,6 +66,11 @@
 /* ===== MOBILE + TABLET (< 1024px) ===== */
 @media (max-width: 1023px) {
     #desktop-logo { display: none !important; }
+    #latest-badge-container {
+        position: static;
+        padding: 0;
+        margin-bottom: 0.75rem;
+    }
     /* Sidebar: nascosta su mobile */
     #sidebar-container { display: none; }
 

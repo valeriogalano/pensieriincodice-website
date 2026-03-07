@@ -5,8 +5,8 @@
 <!-- HERO / LATEST EPISODE -->
 <section class="grid grid-cols-12 gap-6 mb-12">
     <div class="col-span-12 bg-pod-card border border-white/5 rounded-3xl p-8 relative overflow-hidden orange-glow transition-all group">
-        <div class="absolute top-0 right-0 p-6">
-            <span class="bg-pod-orange text-[10px] uppercase font-bold px-3 py-1 rounded-full">Ultima Uscita</span>
+        <div id="latest-badge-container" class="absolute top-0 right-0 p-6">
+            <span id="latest-badge" class="bg-pod-orange text-[10px] uppercase font-bold px-3 py-1 rounded-full">Ultima Uscita</span>
         </div>
         <div class="relative z-10 h-full flex items-center gap-10 min-h-[300px]">
             {{ if $latest.Params.image }}
