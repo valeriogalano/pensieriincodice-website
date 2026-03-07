@@ -53,6 +53,10 @@
     left: 0;
 }
 
+/* Elementi mobile-only: nascosti di default (CSS puro, nessuna classe Tailwind) */
+#mobile-brand { display: none; }
+#mobile-search-trigger { display: none; }
+
 /* ===== DESKTOP (>= 768px): nascondi elementi mobile-only ===== */
 @media (min-width: 768px) {
     #mobile-menu-toggle { display: none; }
@@ -70,18 +74,16 @@
         padding-right: 1rem !important;
     }
 
-    /* Header: nascondi icone social/piattaforme */
+    /* Header mobile: mostra locandina+titolo e icona ricerca */
+    #mobile-brand { display: flex; }
+    #mobile-search-trigger { display: flex; }
+
+    /* Header mobile: nascondi barra ricerca e icone social */
+    #search-trigger { display: none !important; }
     .header-icons { display: none; }
 
     /* Header: nascondi shortcut CMD+K */
     .search-shortcut { display: none; }
-
-    /* Search bar: permetti restringimento e tronca il testo */
-    #search-trigger {
-        min-width: 0;
-        overflow: hidden;
-        max-width: 280px;
-    }
     #search-trigger > span {
         overflow: hidden;
         white-space: nowrap;

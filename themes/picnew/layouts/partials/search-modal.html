@@ -36,6 +36,8 @@
     function initSearch() {
         const trigger = document.getElementById('search-trigger');
         if (trigger) trigger.addEventListener('click', openSearch);
+        const mobileTrigger = document.getElementById('mobile-search-trigger');
+        if (mobileTrigger) mobileTrigger.addEventListener('click', openSearch);
         overlay.addEventListener('click', closeSearch);
     }
 
