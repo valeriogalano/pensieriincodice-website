@@ -64,14 +64,30 @@
     /* Sidebar: nascosta su mobile */
     #sidebar-container { display: none; }
 
-    /* Header: padding ridotto */
-    header { padding-left: 1rem; padding-right: 1rem; }
+    /* Header: padding ridotto (con !important per battere la classe Tailwind px-12) */
+    header {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
 
     /* Header: nascondi icone social/piattaforme */
     .header-icons { display: none; }
 
     /* Header: nascondi shortcut CMD+K */
     .search-shortcut { display: none; }
+
+    /* Search bar: permetti restringimento e tronca il testo */
+    #search-trigger {
+        min-width: 0;
+        overflow: hidden;
+        max-width: 280px;
+    }
+    #search-trigger > span {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        min-width: 0;
+    }
 
     /* Player footer: layout verticale */
     #footer-player-container footer {
@@ -92,8 +108,11 @@
         padding-right: 0;
         margin-top: 0.5rem;
     }
+    /* Colonna destra (velocità, capitoli, trascrizione): riga sotto i controlli */
     .player-right-col {
-        display: none;
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.5rem;
     }
     /* Mostra immagine player anche su mobile (override hidden sm:flex) */
     #player-image-container {
