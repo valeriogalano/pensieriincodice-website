@@ -69,8 +69,16 @@
         }
     }
 
+    function stripHtml(html) {
+        if (!html) return '';
+        const tmp = document.createElement('div');
+        tmp.innerHTML = html;
+        return tmp.textContent || tmp.innerText || '';
+    }
+
     function extractSnippet(text, term, radius) {
         if (!text) return '';
+        text = stripHtml(text);
         const lower = text.toLowerCase();
         const idx = lower.indexOf(term.toLowerCase());
         if (idx === -1) return text.slice(0, radius * 2);
@@ -98,16 +106,17 @@
 
         results.innerHTML = searchResults.slice(0, 10).map(res => {
             const summaryMatch = res.matches && res.matches.find(m => m.key === 'summary');
+            const plainSummary = stripHtml(res.item.summary);
             const snippet = summaryMatch
                 ? extractSnippet(res.item.summary, term, 80)
-                : (res.item.summary ? res.item.summary.slice(0, 160) + (res.item.summary.length > 160 ? '…' : '') : '');
+                : (plainSummary ? plainSummary.slice(0, 160) + (plainSummary.length > 160 ? '…' : '') : '');
             return `
             <a href="${res.item.permalink}" class="block p-4 rounded-xl hover:bg-white/5 transition-all group mb-2">
                 <div class="flex items-center space-x-4">
                     ${res.item.image ? `<img src="${res.item.image}" class="w-12 h-12 rounded object-cover flex-shrink-0">` : `<div class="w-12 h-12 rounded bg-pod-orange/20 flex items-center justify-center text-pod-orange font-bold uppercase text-xs flex-shrink-0">${res.item.section.charAt(0)}</div>`}
                     <div class="flex-1 min-w-0">
                         <div class="flex justify-between items-start">
-                            <h4 class="font-bold text-white group-hover:text-pod-orange transition-colors truncate">${res.item.title}</h4>
+                            <h4 class="font-bold text-white group-hover:text-pod-orange transition-colors truncate min-w-0">${res.item.title}</h4>
                             <span class="text-[10px] font-mono text-pod-gray ml-2 uppercase flex-shrink-0">${res.item.section}</span>
                         </div>
                         <p class="text-xs text-pod-gray line-clamp-2 mt-1">${snippet}</p>
