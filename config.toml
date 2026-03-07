@@ -181,26 +181,32 @@ funding_text = "Sostieni il podcast"
 [[params.platforms]]
 name = "RSS"
 url = "/blog/feed-senza-tracciamento/"
+type = "rss"
 
 [[params.platforms]]
 name = "Spotify"
 url = "https://open.spotify.com/show/5YEceJXlDE8st36dtgcjJJ"
+type = "podcast"
 
 [[params.platforms]]
 name = "Apple Podcasts"
 url = "https://podcasts.apple.com/it/podcast/pensieri-in-codice/id1454106438"
+type = "podcast"
 
 [[params.platforms]]
 name = "YouTube Music"
 url = "https://www.youtube.com/@pensieriincodice/podcasts"
+type = "podcast"
 
 [[params.platforms]]
 name = "Amazon Music"
 url = "https://music.amazon.it/podcasts/f027f2e3-437d-46f8-879a-d3816c7170b9/pensieri-in-codice"
+type = "podcast"
 
 [[params.platforms]]
 name = "Podcast Addict"
 url = "https://podcastaddict.com/podcast/pensieri-in-codice/4832655"
+type = "podcast"
 
 # Link per sostenere il podcast
 [[params.support.direct]]
@@ -248,23 +254,22 @@ url = "https://nextdns.io/?from=pmy29ab3"
 [[params.social]]
 name = "Instagram"
 url = "https://www.instagram.com/pensieriincodice/"
+type = "social"
 
 [[params.social]]
 name = "TikTok"
 url = "https://www.tiktok.com/@pensieriincodice"
+type = "social"
 
 [[params.social]]
 name = "Canale Telegram"
 url = "https://t.me/pensieriincodice"
+type = "community"
 
 [[params.social]]
 name = "Community Telegram"
 url = "https://t.me/pensieriincodicecommunity"
-
-[[params.social]]
-name = "Email"
-url = "mailto:valerio@pensieriincodice.it"
-icon = "email"
+type = "community"
 
 # Sitemap Settings
 [sitemap]

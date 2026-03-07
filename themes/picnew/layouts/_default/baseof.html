@@ -93,38 +93,79 @@
                     <span class="font-medium">Sostieni</span>
                 </a>
             </nav>
-            {{ if or .Site.Params.platforms .Site.Params.social }}
-            <div class="px-6 mt-6 pt-6 border-t border-white/10">
-                <p class="text-[10px] text-pod-gray uppercase font-mono mb-3 tracking-wider">Seguici su</p>
-                <div class="flex flex-wrap gap-4 items-center">
-                    {{ range .Site.Params.platforms }}
-                    {{ $url := .url }}
-                    {{ if not (hasPrefix .url "http") }}{{ $url = .url | relURL }}{{ end }}
-                    {{ $parsed := urls.Parse .url }}
-                    <a href="{{ $url }}" {{ if hasPrefix .url "http" }}target="_blank" rel="noopener"{{ end }} title="{{ .name }}" class="flex items-center space-x-2 text-pod-gray hover:text-white transition-colors">
-                        {{ if $parsed.Host }}
-                        <img src="https://www.google.com/s2/favicons?domain={{ $parsed.Host }}&sz=32" alt="{{ .name }}" width="20" height="20" class="w-5 h-5 brightness-0 invert opacity-60">
-                        {{ else }}
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-60"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+            {{- $rss      := where .Site.Params.platforms "type" "rss" -}}
+            {{- $podcasts := where .Site.Params.platforms "type" "podcast" -}}
+            {{- $socials  := where .Site.Params.social "type" "social" -}}
+            {{- $community := where .Site.Params.social "type" "community" -}}
+
+            <div class="px-6 mt-6 pt-6 border-t border-white/10 space-y-5">
+                {{/* Podcast */}}
+                {{ if or $rss $podcasts }}
+                <div>
+                    <p class="text-[10px] text-pod-gray uppercase font-mono mb-2 tracking-wider">Podcast</p>
+                    <div class="space-y-1">
+                        {{ range $rss }}
+                        {{ $url := .url }}
+                        {{ if not (hasPrefix .url "http") }}{{ $url = .url | relURL }}{{ end }}
+                        <a href="{{ $url }}" title="{{ .name }}" class="flex items-center space-x-3 text-pod-gray hover:text-white transition-colors py-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-60 flex-shrink-0"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                            <span class="text-sm">{{ .name }}</span>
+                        </a>
                         {{ end }}
-                        <span class="text-sm">{{ .name }}</span>
-                    </a>
-                    {{ end }}
-                    {{ range .Site.Params.social }}
-                    {{ $parsed := urls.Parse .url }}
-                    {{ $isMail := hasPrefix .url "mailto:" }}
-                    <a href="{{ .url }}" {{ if not $isMail }}target="_blank" rel="noopener"{{ end }} title="{{ .name }}" class="flex items-center space-x-2 text-pod-gray hover:text-white transition-colors">
-                        {{ if $isMail }}
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-60"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                        {{ else }}
-                        <img src="https://www.google.com/s2/favicons?domain={{ $parsed.Host }}&sz=32" alt="{{ .name }}" width="20" height="20" class="w-5 h-5 brightness-0 invert opacity-60">
+                        {{ range $podcasts }}
+                        {{ $parsed := urls.Parse .url }}
+                        <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}" class="flex items-center space-x-3 text-pod-gray hover:text-white transition-colors py-1">
+                            <img src="https://www.google.com/s2/favicons?domain={{ $parsed.Host }}&sz=32" alt="{{ .name }}" width="18" height="18" class="w-[18px] h-[18px] brightness-0 invert opacity-60 flex-shrink-0">
+                            <span class="text-sm">{{ .name }}</span>
+                        </a>
                         {{ end }}
-                        <span class="text-sm">{{ .name }}</span>
-                    </a>
-                    {{ end }}
+                    </div>
                 </div>
+                {{ end }}
+
+                {{/* Social */}}
+                {{ if $socials }}
+                <div>
+                    <p class="text-[10px] text-pod-gray uppercase font-mono mb-2 tracking-wider">Social</p>
+                    <div class="space-y-1">
+                        {{ range $socials }}
+                        {{ $parsed := urls.Parse .url }}
+                        <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}" class="flex items-center space-x-3 text-pod-gray hover:text-white transition-colors py-1">
+                            <img src="https://www.google.com/s2/favicons?domain={{ $parsed.Host }}&sz=32" alt="{{ .name }}" width="18" height="18" class="w-[18px] h-[18px] brightness-0 invert opacity-60 flex-shrink-0">
+                            <span class="text-sm">{{ .name }}</span>
+                        </a>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+
+                {{/* Community */}}
+                {{ if $community }}
+                <div>
+                    <p class="text-[10px] text-pod-gray uppercase font-mono mb-2 tracking-wider">Community</p>
+                    <div class="space-y-1">
+                        {{ range $community }}
+                        {{ $parsed := urls.Parse .url }}
+                        <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}" class="flex items-center space-x-3 text-pod-gray hover:text-white transition-colors py-1">
+                            <img src="https://www.google.com/s2/favicons?domain={{ $parsed.Host }}&sz=32" alt="{{ .name }}" width="18" height="18" class="w-[18px] h-[18px] brightness-0 invert opacity-60 flex-shrink-0">
+                            <span class="text-sm">{{ .name }}</span>
+                        </a>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+
+                {{/* Contatti */}}
+                {{ if .Site.Params.podcast.email }}
+                <div>
+                    <p class="text-[10px] text-pod-gray uppercase font-mono mb-2 tracking-wider">Contatti</p>
+                    <a href="mailto:{{ .Site.Params.podcast.email }}" title="Email" class="flex items-center space-x-3 text-pod-gray hover:text-white transition-colors py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-60 flex-shrink-0"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <span class="text-sm">{{ .Site.Params.podcast.email }}</span>
+                    </a>
+                </div>
+                {{ end }}
             </div>
-            {{ end }}
         </div>
     </div>
 
