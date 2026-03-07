@@ -50,7 +50,7 @@
 
 <!-- RECENT EPISODES -->
 <section class="mb-12">
-    <div class="flex items-center justify-between mb-8">
+    <div class="section-header flex items-center justify-between mb-8">
         <h2 class="text-3xl font-bold tracking-tight">Episodi Recenti</h2>
         <a href="{{ "episodes/" | relURL }}" class="text-pod-orange hover:underline font-mono text-sm uppercase tracking-wider">Vedi tutto →</a>
     </div>
@@ -99,13 +99,14 @@
         </div>
         {{ end }}
     </div>
+    <a href="{{ "episodes/" | relURL }}" class="mobile-see-all text-pod-orange font-mono text-sm uppercase tracking-wider">Vedi tutto →</a>
 </section>
 
 <!-- BLOG POSTS -->
 {{ $blogPosts := where .Site.RegularPages "Type" "blog" }}
 {{ if $blogPosts }}
 <section class="mb-12">
-    <div class="flex items-center justify-between mb-8">
+    <div class="section-header flex items-center justify-between mb-8">
         <h2 class="text-3xl font-bold tracking-tight">News Recenti</h2>
         <a href="{{ "blog/" | relURL }}" class="text-pod-orange hover:underline font-mono text-sm uppercase tracking-wider">Vedi tutto →</a>
     </div>
@@ -136,6 +137,7 @@
         </div>
         {{ end }}
     </div>
+    <a href="{{ "blog/" | relURL }}" class="mobile-see-all text-pod-orange font-mono text-sm uppercase tracking-wider">Vedi tutto →</a>
 </section>
 {{ end }}
 

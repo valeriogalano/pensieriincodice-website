@@ -39,6 +39,8 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
+.mobile-see-all { display: none; }
+
 /* ===== MOBILE DRAWER ===== */
 #mobile-menu-overlay {
     background-color: rgba(0, 0, 0, 0.6);
@@ -66,6 +68,8 @@
 /* ===== MOBILE + TABLET (< 1024px) ===== */
 @media (max-width: 1023px) {
     #desktop-logo { display: none !important; }
+    .section-header a { display: none; }
+    .mobile-see-all { display: block; margin-top: 1rem; }
     #latest-badge-container {
         position: static;
         padding: 0;
