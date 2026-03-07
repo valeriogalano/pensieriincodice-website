@@ -47,6 +47,13 @@
     // Re-initialize on Turbo navigation
     document.addEventListener('turbo:load', initSearch);
 
+    const shortcutEl = document.getElementById('search-shortcut-key');
+    if (shortcutEl) {
+        const isMac = /Mac|iPhone|iPad|iPod/.test(navigator.platform) ||
+            navigator.userAgentData?.platform === 'macOS';
+        shortcutEl.textContent = isMac ? 'CMD+K' : 'CTRL+K';
+    }
+
     window.addEventListener('keydown', (e) => {
         if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
             e.preventDefault();
