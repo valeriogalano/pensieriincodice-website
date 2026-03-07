@@ -1,5 +1,5 @@
 {{ $currentPage := . }}
-<aside class="glass-sidebar w-20 hover:w-64 transition-all duration-300 ease-in-out h-full flex flex-col items-center py-8 z-50 group">
+<aside class="glass-sidebar w-20 hover:w-64 transition-all duration-300 ease-in-out h-full hidden md:flex flex-col items-center py-8 z-50 group">
     <div class="mb-12">
         <a href="{{ .Site.Home.RelPermalink }}">
             <img src="{{ .Site.Params.podcast.image | absURL }}" alt="Logo PIC" class="w-10 h-10 rounded-lg border border-pod-orange/50 group-hover:scale-110 transition-transform">

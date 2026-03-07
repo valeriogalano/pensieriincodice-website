@@ -1,8 +1,8 @@
-<footer class="fixed bottom-0 left-0 right-0 min-h-24 glass-sidebar border-t border-white/5 flex items-center px-8 z-50">
+<footer class="fixed bottom-0 left-0 right-0 glass-sidebar border-t border-white/5 z-50 px-4 md:px-8 py-3 md:py-0">
     <div class="max-w-7xl mx-auto w-full flex flex-col">
-        <div class="flex items-center w-full">
-            <div class="flex items-center space-x-4 w-1/4">
-                <div id="player-image-container" class="w-12 h-12 bg-pod-orange rounded-lg hidden sm:flex items-center justify-center shadow-lg shadow-pod-orange/20 overflow-hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:min-h-24 w-full">
+            <div class="flex items-center space-x-4 w-full md:w-1/4">
+                <div id="player-image-container" class="w-10 h-10 md:w-12 md:h-12 bg-pod-orange rounded-lg flex items-center justify-center shadow-lg shadow-pod-orange/20 overflow-hidden flex-shrink-0">
                     <img id="player-image" src="{{ .Site.Params.podcast.image | absURL }}" class="object-cover w-full h-full">
                     <svg id="player-placeholder-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden">
@@ -16,7 +16,7 @@
                     <p class="text-[10px] text-pod-orange font-mono uppercase" id="player-status">Seleziona un episodio</p>
                 </div>
             </div>
-            <div class="flex-1 flex flex-col items-center px-12">
+            <div class="flex-1 flex flex-col items-center px-0 md:px-12 mt-2 md:mt-0 w-full">
                 <div class="flex items-center space-x-3 mb-2">
                     {{/* Previous episode */}}
                     <button id="player-episode-prev" disabled title="Episodio precedente"
@@ -84,7 +84,7 @@
                     <span class="text-[10px] font-mono text-pod-gray" id="player-duration">0:00</span>
                 </div>
             </div>
-            <div class="flex items-center justify-end space-x-4 w-1/4">
+            <div class="hidden md:flex items-center justify-end space-x-4 md:w-1/4">
                 <div class="flex items-center space-x-2 bg-white/5 rounded-lg px-2 py-1">
                     <select id="player-speed" class="bg-transparent text-[10px] font-mono text-white focus:outline-none cursor-pointer">
                         <option value="0.5" class="bg-pod-black">0.5x</option>
