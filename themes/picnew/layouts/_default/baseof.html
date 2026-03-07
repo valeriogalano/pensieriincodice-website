@@ -49,8 +49,8 @@
     </div>
 
     <div id="mobile-menu-container" data-turbo-permanent>
-        <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/60 z-[60] hidden"></div>
-        <div id="mobile-menu-drawer" class="fixed top-0 left-0 h-full w-72 bg-[rgba(20,20,20,0.97)] border-r border-white/10 z-[70] transform -translate-x-full transition-transform duration-300 flex flex-col py-8 overflow-y-auto md:hidden">
+        <div id="mobile-menu-overlay" class="fixed inset-0 hidden"></div>
+        <div id="mobile-menu-drawer" class="fixed top-0 left-0 h-full w-72 bg-pod-card border-r border-white/10 flex flex-col py-8 overflow-y-auto">
             <div class="px-6 mb-8 flex items-center justify-between">
                 <a href="{{ .Site.Home.RelPermalink }}" class="text-xl font-extrabold tracking-tighter text-white no-underline">PENSIERI<span class="text-pod-orange">IN</span>CODICE</a>
                 <button id="mobile-menu-close" class="text-pod-gray hover:text-white transition-colors p-1" aria-label="Chiudi menu">
@@ -164,12 +164,12 @@
 
         // Mobile menu
         function openMobileMenu() {
-            document.getElementById('mobile-menu-drawer').classList.remove('-translate-x-full');
+            document.getElementById('mobile-menu-drawer').classList.add('open');
             document.getElementById('mobile-menu-overlay').classList.remove('hidden');
         }
 
         function closeMobileMenu() {
-            document.getElementById('mobile-menu-drawer').classList.add('-translate-x-full');
+            document.getElementById('mobile-menu-drawer').classList.remove('open');
             document.getElementById('mobile-menu-overlay').classList.add('hidden');
         }
 

@@ -38,3 +38,67 @@
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* ===== MOBILE DRAWER ===== */
+#mobile-menu-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 60;
+}
+#mobile-menu-drawer {
+    z-index: 70;
+    left: -100%;
+    transition: left 0.3s ease-in-out;
+}
+#mobile-menu-drawer.open {
+    left: 0;
+}
+
+/* ===== DESKTOP (>= 768px): nascondi elementi mobile-only ===== */
+@media (min-width: 768px) {
+    #mobile-menu-toggle { display: none; }
+    #mobile-menu-drawer { display: none; }
+}
+
+/* ===== MOBILE (< 768px) ===== */
+@media (max-width: 767px) {
+    /* Sidebar: nascosta su mobile */
+    #sidebar-container { display: none; }
+
+    /* Header: padding ridotto */
+    header { padding-left: 1rem; padding-right: 1rem; }
+
+    /* Header: nascondi icone social/piattaforme */
+    .header-icons { display: none; }
+
+    /* Header: nascondi shortcut CMD+K */
+    .search-shortcut { display: none; }
+
+    /* Player footer: layout verticale */
+    #footer-player-container footer {
+        min-height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.75rem 1rem;
+    }
+    .player-main-row {
+        flex-direction: column;
+    }
+    .player-info-col {
+        width: 100%;
+    }
+    .player-controls-col {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 0.5rem;
+    }
+    .player-right-col {
+        display: none;
+    }
+    /* Mostra immagine player anche su mobile (override hidden sm:flex) */
+    #player-image-container {
+        display: flex !important;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

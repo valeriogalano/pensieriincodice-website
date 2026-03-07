@@ -1,6 +1,6 @@
-<header class="sticky top-0 z-40 bg-pod-black/80 backdrop-blur-md px-4 md:px-12 py-6 flex justify-between items-center border-b border-white/5">
-    <div class="flex items-center space-x-4 md:space-x-8 flex-1">
-        <button id="mobile-menu-toggle" class="md:hidden text-pod-gray hover:text-white transition-colors flex-shrink-0" aria-label="Apri menu">
+<header class="sticky top-0 z-40 bg-pod-black/80 backdrop-blur-md px-12 py-6 flex justify-between items-center border-b border-white/5">
+    <div class="flex items-center space-x-8 flex-1">
+        <button id="mobile-menu-toggle" class="text-pod-gray hover:text-white transition-colors flex-shrink-0" aria-label="Apri menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
             </svg>
@@ -14,11 +14,11 @@
                 <circle cx="11" cy="11" r="8" />
                 <path d="m21 21-4.3-4.3" />
             </svg>
-            <span class="text-pod-gray text-sm font-mono">Cerca episodi... <span class="ml-auto text-xs opacity-50 hidden sm:inline">CMD+K</span></span>
+            <span class="text-pod-gray text-sm font-mono">Cerca episodi... <span class="ml-auto text-xs opacity-50 search-shortcut">CMD+K</span></span>
         </div>
     </div>
 
-    <div class="hidden md:flex space-x-3 items-center">
+    <div class="flex space-x-3 items-center header-icons">
         {{/* Piattaforme podcast */}}
         {{ range .Site.Params.platforms }}
         {{ $url := .url }}
