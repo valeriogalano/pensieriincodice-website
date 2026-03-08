@@ -29,3 +29,14 @@ Così è nato **Pensieri in Codice**: un podcast per chi si trova nel mezzo, né
 Non parlo dell'ultima versione di Python o di quanti token gestisce il nuovo ChatGPT. Parlo di cosa significa vivere nell'era digitale: come gli algoritmi influenzano le nostre scelte, in che modo la tecnologia modella la nostra libertà, quali risvolti sociali ha l'informatica nel mondo reale.
 
 Ogni episodio richiede dalle 20 alle 40 ore di lavoro. Non è efficienza — è maniacalità. Ma se qualcuno dedica 40 minuti del suo tempo ad ascoltarmi, ho il dovere di far sì che ne valga la pena.
+
+<div class="mt-12 flex justify-center">
+    <a href="https://valeriogalano.it" target="_blank" rel="noopener" class="inline-flex items-center px-8 py-4 bg-pod-orange text-white font-bold rounded-xl hover:bg-pod-orange/90 transition-all transform hover:-translate-y-1 shadow-lg shadow-pod-orange/20 group">
+        <span>Visita il sito dell'autore</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 group-hover:translate-x-1 transition-transform">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+    </a>
+</div>
