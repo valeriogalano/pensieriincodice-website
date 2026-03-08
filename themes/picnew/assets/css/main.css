@@ -30,6 +30,25 @@
 .prose p:first-child { margin-top: 0; }
 .prose p:last-child { margin-bottom: 0; }
 
+.prose a:not([class*="text-"]) {
+    color: #ff6b00;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.prose a:not([class*="text-"]):hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.prose code {
+    color: #ff6b00;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
 .page-content {
     animation: fadeIn 0.5s ease-out;
 }
