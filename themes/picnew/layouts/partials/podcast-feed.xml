@@ -111,7 +111,7 @@
             <itunes:keywords>
                 {{- range $index, $key:= .Params.tags -}}
                 {{- if $index }}, {{ end -}}
-                {{ $key }}
+                {{ $key | urlize }}
                 {{- end -}}
             </itunes:keywords>
             {{- end -}}
