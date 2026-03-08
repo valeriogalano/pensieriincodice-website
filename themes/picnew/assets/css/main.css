@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #ff6b00; }
+
+.glass-sidebar {
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(12px);
+    border-right: 1px solid rgba(255, 107, 0, 0.1);
+}
+
+.orange-glow:hover {
+    box-shadow: 0 0 20px rgba(255, 107, 0, 0.2);
+    border-color: #ff6b00;
+}
+
+.active-link {
+    color: #ff6b00;
+    border-left: 2px solid #ff6b00;
+}
+
+.prose p {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+.prose p:first-child { margin-top: 0; }
+.prose p:last-child { margin-bottom: 0; }
+
+.prose a:not([class*="text-"]) {
+    color: #ff6b00;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.prose a:not([class*="text-"]):hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.prose code {
+    color: #ff6b00;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.page-content {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.mobile-see-all { display: none; }
+
+/* ===== MOBILE DRAWER ===== */
+#mobile-menu-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 60;
+}
+#mobile-menu-drawer {
+    z-index: 70;
+    left: -100%;
+    transition: left 0.3s ease-in-out;
+}
+#mobile-menu-drawer.open {
+    left: 0;
+}
+
+/* Elementi mobile-only: nascosti di default (CSS puro, nessuna classe Tailwind) */
+#mobile-brand { display: none; }
+#mobile-search-trigger { display: none; }
+
+/* ===== DESKTOP (>= 1024px): nascondi elementi mobile-only ===== */
+@media (min-width: 1024px) {
+    #mobile-menu-toggle { display: none; }
+    #mobile-menu-drawer { display: none; }
+}
+
+/* ===== MOBILE + TABLET (< 1024px) ===== */
+@media (max-width: 1023px) {
+    #desktop-logo { display: none !important; }
+    .section-header a { display: none; }
+    .mobile-see-all { display: block; margin-top: 1rem; }
+    #latest-badge-container {
+        position: static;
+        padding: 0;
+        margin-bottom: 0.75rem;
+    }
+    /* Sidebar: nascosta su mobile */
+    #sidebar-container { display: none; }
+
+    /* Header: padding ridotto (con !important per battere la classe Tailwind px-12) */
+    header {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    /* Header mobile: mostra locandina+titolo e icona ricerca */
+    #mobile-brand { display: flex; }
+    #mobile-search-trigger { display: flex; }
+
+    /* Header mobile: nascondi barra ricerca e icone social */
+    #search-trigger { display: none !important; }
+    .header-icons { display: none; }
+
+    /* Header: nascondi shortcut CMD+K */
+    .search-shortcut { display: none; }
+    #search-trigger > span {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        min-width: 0;
+    }
+
+    /* Player footer: layout verticale */
+    #footer-player-container footer {
+        min-height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.75rem 1rem;
+    }
+    .player-main-row {
+        flex-direction: column;
+    }
+    .player-info-col {
+        width: 100%;
+    }
+    .player-controls-col {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 0.5rem;
+    }
+    /* Colonna destra (velocità, capitoli, trascrizione): riga sotto i controlli */
+    .player-right-col {
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+    /* Mostra immagine player anche su mobile (override hidden sm:flex) */
+    #player-image-container {
+        display: flex !important;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

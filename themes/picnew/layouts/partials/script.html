@@ -1,0 +1,32 @@
+{{ $episode := .Page.Params.number | printf "PIC%d" }}
+{{ $data := index $.Site.Data.scripts $episode }}
+<div class="accordion">
+    <section id="show-text">
+        <h2><a href="#show-text">Mostra testo dell'episodio</a></h2>
+        <div>
+            <a href="#">Nascondi</a>
+            <div class="prose prose-invert max-w-none mt-4">
+                {{ with $data }}
+                    {{- if .segments }}
+                        <p class="text-sm text-pod-gray italic mb-6">Quella che segue è una trascrizione automatica dell'episodio. Clicca sui paragrafi per saltare al minuto corrispondente.</p>
+                        <div class="space-y-4">
+                        {{ range .segments }}
+                            <p class="cursor-pointer hover:text-pod-orange transition-colors" 
+                               data-start="{{ .start }}"
+                               onclick="const ap = document.getElementById('audio-player'); if(ap) { ap.currentTime = this.dataset.start; ap.play(); }">
+                                <span class="font-mono text-xs text-pod-orange mr-2">[{{ (div (int .start) 60) }}:{{ printf "%02d" (int (mod .start 60)) }}]</span>
+                                {{ .text }}
+                            </p>
+                        {{ end }}
+                        </div>
+                    {{ else }}
+                        <p class="text-sm text-pod-gray italic mb-6">Quello che segue è lo script originale dell'episodio.</p>
+                        {{ replace .text "\n" "\n\n" | markdownify }}
+                    {{ end }}
+                {{ end }}
+            </div>
+            <a href="#" class="inline-block mt-8">Nascondi</a>
+        </div>
+    </section>
+</div>
+<br/>

@@ -1,0 +1,53 @@
+{{ $pag := .Paginator }}
+{{ if gt $pag.TotalPages 1 }}
+{{ $curr := $pag.PageNumber }}
+{{ $total := $pag.TotalPages }}
+
+<nav class="flex items-center justify-center gap-2 mt-12" aria-label="Paginazione">
+
+    {{/* Freccia precedente */}}
+    {{ if $pag.HasPrev }}
+    <a href="{{ $pag.Prev.URL }}" aria-label="Pagina precedente"
+       class="w-9 h-9 flex items-center justify-center rounded-lg bg-pod-card border border-white/10 text-pod-gray hover:border-pod-orange hover:text-pod-orange transition-all text-xs font-mono">
+        «
+    </a>
+    {{ else }}
+    <span class="w-9 h-9 flex items-center justify-center rounded-lg bg-pod-card border border-white/5 text-white/20 cursor-default text-xs font-mono">«</span>
+    {{ end }}
+
+    {{/* Numeri: mostra 1, ultima, e curr±1. Ellissi dove c'è un salto */}}
+    {{ $lastShown := 0 }}
+    {{ range $pag.Pagers }}
+        {{ $n := .PageNumber }}
+        {{ $diff := sub $n $curr }}
+        {{ if lt $diff 0 }}{{ $diff = mul $diff -1 }}{{ end }}
+        {{ if or (eq $n 1) (eq $n $total) (le $diff 1) }}
+            {{/* Ellissi se c'è un salto rispetto all'ultima pagina mostrata */}}
+            {{ if gt (sub $n $lastShown) 1 }}
+            <span class="w-9 h-9 flex items-center justify-center text-pod-gray text-sm select-none">…</span>
+            {{ end }}
+            {{/* Pagina corrente */}}
+            {{ if eq $n $curr }}
+            <span class="w-9 h-9 flex items-center justify-center rounded-lg bg-pod-orange text-white font-bold text-sm cursor-default">{{ $n }}</span>
+            {{ else }}
+            <a href="{{ .URL }}" aria-label="Pagina {{ $n }}"
+               class="w-9 h-9 flex items-center justify-center rounded-lg bg-pod-card border border-white/10 text-pod-gray hover:border-pod-orange hover:text-pod-orange transition-all text-sm font-mono">
+                {{ $n }}
+            </a>
+            {{ end }}
+            {{ $lastShown = $n }}
+        {{ end }}
+    {{ end }}
+
+    {{/* Freccia successiva */}}
+    {{ if $pag.HasNext }}
+    <a href="{{ $pag.Next.URL }}" aria-label="Pagina successiva"
+       class="w-9 h-9 flex items-center justify-center rounded-lg bg-pod-card border border-white/10 text-pod-gray hover:border-pod-orange hover:text-pod-orange transition-all text-xs font-mono">
+        »
+    </a>
+    {{ else }}
+    <span class="w-9 h-9 flex items-center justify-center rounded-lg bg-pod-card border border-white/5 text-white/20 cursor-default text-xs font-mono">»</span>
+    {{ end }}
+
+</nav>
+{{ end }}

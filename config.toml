@@ -2,7 +2,7 @@
 title = "Pensieri in codice"
 baseURL = "https://pensieriincodice.it/" #YOUR SITE URL
 languageCode = "it-IT"
-theme = "ryancv"
+theme = "picnew"
 resourceDir = "resources"
 pagination.pagerSize = 8
 summaryLength = 20
@@ -16,14 +16,6 @@ defaultContentLanguage = "it"
 [markup.goldmark.renderer]
 unsafe= true
 
-# Menu Settings
-##
-### to add or remove card (or menu item)
-### param "name" - Menu item name
-### param "pre" - Menu item icon class, all icons class you can see here https://ionicons.com/v4/
-### param "identifier" - Menu item url slug
-### param "url" - Menu item url
-### param "sections" - list of sections what will be show of each card, all prebuild sections name see in documentations
 [menu]
 [[menu.main]]
   identifier = "about"
@@ -38,10 +30,6 @@ unsafe= true
       "facts",
       "partners",
       "netzero"
-#      "about",
-#      "services",
-#      "pricing",
-#      "testimonials"
     ]
 [[menu.main]]
   identifier = "history"
@@ -51,8 +39,7 @@ unsafe= true
   weight = 4
   [menu.main.params]
     builder = [
-      "history",
-     # "skills"
+      "history"
     ]
 [[menu.main]]
   identifier = "blog"
@@ -75,22 +62,16 @@ unsafe= true
     builder = [
       "support",
       "rewards",
-      "supporters",
-      #"contact-info",
-      #"contact-form"
+      "supporters"
     ]
 [[menu.main]]
   identifier = ""
-  name = "Archivio episodi"
+  name = "Episodi"
   pre = "play"
   url = "episodes"
   weight = 5
   [menu.main.params]
-    builder = [
-  #"supporters"
-  #"contact-info",
-  #"contact-form"
-    ]
+    builder = []
 
 [[menu.sidebar]]
   identifier = "blog"
@@ -106,64 +87,15 @@ unsafe= true
 # Main Settings
 [params]
 description = "Il podcast dove si ragiona da informatici. Con Valerio Galano"
-skinColor = "orange-pic" #TEMPLATE SKIN COLOR: [ blue, green, orange, pink, purple, red ]. If empty colors taken from thenes/ryan/assets/scss/_settings.scss
-skinDark = 0 #TEMPLATE UI: [ 1 - yes, 0 - no ]
-rtl = 0 #TEMPLATE RTL MODE: [ 1 - yes, 0 - no ]
-skinMinimal = 0 #TEMPLATE MINIMAL SKIN: [ 1 - yes, 0 - no ]
 dateFormat = ":date_long"
-authorName = "Daniele Galano Web & Graphic Designer"
-disqusComments = "" #YOUR DISQUS COMMENTS SHORTNAME
-formspreeURL = "https://formspree.io/f/your_api_key" #YOUR FORMSPREE URL
-googleAnalytics = "" #YOUR GOOGLE ANALYTICS CODE
 taxonomiesExcludedFromSitemap = ["tags"]
-
-# Background
-[params.background]
-type = "default" #BACKGROUND TYPE: [ default, blured ]
-
-# Google MAPS
-[params.googleMaps]
-key = "" #YOUR GOOGLE MAPS API KEY: leave empty if you want to hide Google Maps
-lat = "40.773328" #YOUR GOOGLE MAPS LATITUDE
-long = "-73.960088" #YOUR GOOGLE MAPS LONGITUDE
-zoom = "14" #YOUR GOOGLE MAPS ZOOM VALUE
-
-# Sidebar
-[params.sidebar]
-enable = 1 #SIDEBAR SHOW: [ 1 - yes, 0 - no ]
-search = 0 #SIDEBAR SEARCH WIDGET: [ 1 - yes, 0 - no ]
-latestPosts = 1 #SIDEBAR LATEST POSTS WIDGET: [ 1 - yes, 0 - no ]
-categories = 1 #SIDEBAR CATEGORIES TAXONOMY WIDGET: [ 1 - yes, 0 - no ]
-tags = 0 #SIDEBAR TAG TAXONOMY WIDGET: [ 1 - yes, 0 - no ]
-menuWidget = 1 #SIDEBAR MENU WIDGET: [ 1 - yes, 0 - no ]
-
-# Animation Settings
-[params.animation]
-in = "fadeInLeft" #ANIMATION IN: [ rotateInUpLeft, rollIn, jackInTheBox, fadeIn, fadeInUp, fadeInLeft ]
-out = "fadeOutLeft" #ANIMATION OUT: [ rotateOutUpLeft, rollOut, jackOutTheBox, fadeOut, fadeOutUp, fadeOutLeft ]
-
-# Portfolio Settings
-[params.portfolio]
-homeNumOfItems = 12
-[[params.portfolio.filters]]
-name = "Photo"
-slug = "photo"
-[[params.portfolio.filters]]
-name = "Video"
-slug = "video"
-[[params.portfolio.filters]]
-name = "Music"
-slug = "music"
-[[params.portfolio.filters]]
-name = "Design"
-slug = "design"
 
 [params.podcast]
 title = "Pensieri in codice"
 subtitle = "Il podcast dove si ragiona da informatici. Con Valerio Galano"
 summary = "Il podcast dove si ragiona da informatici. Con Valerio Galano"
 authors = [ "Valerio Galano" ]
-email = "v.galano@daredevel.com"
+email = "valerio@pensieriincodice.it"
 image = "images/pensieriincodice-locandina.png"
 cdn_base_url = "https://cdn.pensieriincodice.it/"
 cdn_tracked_base_url = "https://op3.dev/e/cdn.pensieriincodice.it/"
@@ -176,6 +108,100 @@ itunes_type = "episodic"  # accepted values are: "episodic" or "serial"
 updateFrequency = "monthly"
 funding_url = "https://pensieriincodice.it/#support-card"
 funding_text = "Sostieni il podcast"
+
+# Piattaforme podcast (mostrate nell'header, in ordine)
+[[params.platforms]]
+name = "RSS"
+url = "/blog/feed-senza-tracciamento/"
+type = "rss"
+
+[[params.platforms]]
+name = "Spotify"
+url = "https://open.spotify.com/show/5YEceJXlDE8st36dtgcjJJ"
+type = "podcast"
+
+[[params.platforms]]
+name = "Apple Podcasts"
+url = "https://podcasts.apple.com/it/podcast/pensieri-in-codice/id1454106438"
+type = "podcast"
+
+[[params.platforms]]
+name = "YouTube Music"
+url = "https://www.youtube.com/@pensieriincodice/podcasts"
+type = "podcast"
+
+[[params.platforms]]
+name = "Amazon Music"
+url = "https://music.amazon.it/podcasts/f027f2e3-437d-46f8-879a-d3816c7170b9/pensieri-in-codice"
+type = "podcast"
+
+[[params.platforms]]
+name = "Podcast Addict"
+url = "https://podcastaddict.com/podcast/pensieri-in-codice/4832655"
+type = "podcast"
+
+# Link per sostenere il podcast
+[[params.support.direct]]
+name = "Satispay"
+url = "https://www.satispay.com/download/qrcode/S6Y-CON--EC548199-5F32-4BD6-AAF5-73A999744E56"
+
+[[params.support.direct]]
+name = "Revolut o carta di credito"
+url = "https://revolut.me/valeriogalano"
+
+[[params.support.direct]]
+name = "PayPal"
+url = "https://www.paypal.com/donate/?hosted_button_id=HRKMD7X43R7SS"
+note = "applica commissioni"
+
+[params.support.wire]
+beneficiary = "Valerio Galano"
+iban = "LT57 3250 0166 8568 6649"
+bic = "REVOLT21"
+bank_name = "Revolut Bank UAB"
+bank_address = "Konstitucijos ave. 21B, 08130, Vilnius, Lithuania"
+bic_correspondent = "CHASDEFX"
+
+[[params.support.affiliate]]
+name = "Amazon"
+url = "https://amzn.to/3CPOWgC"
+
+[[params.support.affiliate]]
+name = "Todoist"
+url = "https://doist.grsm.io/valeriogalano5066"
+
+[[params.support.affiliate]]
+name = "Readwise Reader"
+url = "https://readwise.io/i/valerio61"
+
+[[params.support.affiliate]]
+name = "Satispay"
+url = "https://web.satispay.com/promocode/VALERIOGALAN"
+
+[[params.support.affiliate]]
+name = "NextDNS"
+url = "https://nextdns.io/?from=pmy29ab3"
+
+# Social media (mostrati nell'header dopo le piattaforme)
+[[params.social]]
+name = "Instagram"
+url = "https://www.instagram.com/pensieriincodice/"
+type = "social"
+
+[[params.social]]
+name = "TikTok"
+url = "https://www.tiktok.com/@pensieriincodice"
+type = "social"
+
+[[params.social]]
+name = "Canale Telegram"
+url = "https://t.me/pensieriincodice"
+type = "community"
+
+[[params.social]]
+name = "Community Telegram"
+url = "https://t.me/pensieriincodicecommunity"
+type = "community"
 
 # Sitemap Settings
 [sitemap]

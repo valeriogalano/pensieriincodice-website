@@ -1,0 +1,7 @@
+<h2>Partner</h2>
+{{ with index $.Site.Data.partners "partners"}}
+{{ range . }}
+<a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>{{ if .note }} — {{ .note }}{{ end }}<br/>
+{{ end }}
+{{ else }}
+{{ end }}

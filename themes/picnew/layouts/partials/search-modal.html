@@ -1,0 +1,138 @@
+<div id="search-modal" class="fixed inset-0 z-[60] hidden flex items-start justify-center pt-[10vh] px-4">
+    <div class="absolute inset-0 bg-pod-black/90 backdrop-blur-sm" id="search-overlay"></div>
+    <div class="bg-pod-card border border-white/10 w-full max-w-2xl rounded-2xl shadow-2xl relative z-10 overflow-hidden flex flex-col max-h-[70vh]">
+        <div class="p-6 border-b border-white/5 flex items-center space-x-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-pod-orange">
+                <circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" />
+            </svg>
+            <input type="text" id="search-input" placeholder="Cerca nel sito..." class="bg-transparent border-none outline-none text-xl w-full text-white placeholder-pod-gray" autofocus>
+            <span class="text-[10px] font-mono text-pod-gray border border-white/10 px-2 py-1 rounded">ESC</span>
+        </div>
+        <div id="search-results" class="overflow-y-auto p-4 flex-1">
+            <div class="text-center py-12 text-pod-gray italic">Inizia a scrivere per cercare...</div>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    let fuse;
+    const modal = document.getElementById('search-modal');
+    const input = document.getElementById('search-input');
+    const results = document.getElementById('search-results');
+    const trigger = document.getElementById('search-trigger');
+    const overlay = document.getElementById('search-overlay');
+
+    function openSearch() {
+        modal.classList.remove('hidden');
+        input.focus();
+        if (!fuse) loadSearch();
+    }
+
+    function closeSearch() {
+        modal.classList.add('hidden');
+    }
+
+    function initSearch() {
+        const trigger = document.getElementById('search-trigger');
+        if (trigger) trigger.addEventListener('click', openSearch);
+        const mobileTrigger = document.getElementById('mobile-search-trigger');
+        if (mobileTrigger) mobileTrigger.addEventListener('click', openSearch);
+        overlay.addEventListener('click', closeSearch);
+    }
+
+    // Initialize on first load
+    initSearch();
+    
+    // Re-initialize on Turbo navigation
+    document.addEventListener('turbo:load', initSearch);
+
+    const shortcutEl = document.getElementById('search-shortcut-key');
+    if (shortcutEl) {
+        const isMac = /Mac|iPhone|iPad|iPod/.test(navigator.platform) ||
+            navigator.userAgentData?.platform === 'macOS';
+        shortcutEl.textContent = isMac ? 'CMD+K' : 'CTRL+K';
+    }
+
+    window.addEventListener('keydown', (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+            e.preventDefault();
+            openSearch();
+        }
+        if (e.key === 'Escape') closeSearch();
+    });
+
+    async function loadSearch() {
+        try {
+            const response = await fetch('/index.json');
+            const data = await response.json();
+            const options = {
+                keys: ['title', 'summary'],
+                threshold: 0.4,
+                distance: 100,
+                includeMatches: true
+            };
+            fuse = new Fuse(data, options);
+        } catch (err) {
+            console.error('Search index load error:', err);
+        }
+    }
+
+    function stripHtml(html) {
+        if (!html) return '';
+        const tmp = document.createElement('div');
+        tmp.innerHTML = html;
+        return tmp.textContent || tmp.innerText || '';
+    }
+
+    function extractSnippet(text, term, radius) {
+        if (!text) return '';
+        text = stripHtml(text);
+        const lower = text.toLowerCase();
+        const idx = lower.indexOf(term.toLowerCase());
+        if (idx === -1) return text.slice(0, radius * 2);
+        const start = Math.max(0, idx - radius);
+        const end = Math.min(text.length, idx + term.length + radius);
+        const snippet = (start > 0 ? '…' : '') + text.slice(start, end) + (end < text.length ? '…' : '');
+        const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        return snippet.replace(new RegExp(`(${escaped})`, 'gi'), '<mark class="bg-pod-orange/30 text-white rounded px-0.5">$1</mark>');
+    }
+
+    input.addEventListener('input', () => {
+        const term = input.value.trim();
+        if (!term) {
+            results.innerHTML = '<div class="text-center py-12 text-pod-gray italic">Inizia a scrivere per cercare...</div>';
+            return;
+        }
+
+        if (!fuse) return;
+
+        const searchResults = fuse.search(term);
+        if (searchResults.length === 0) {
+            results.innerHTML = '<div class="text-center py-12 text-pod-gray italic">Nessun risultato trovato</div>';
+            return;
+        }
+
+        results.innerHTML = searchResults.slice(0, 10).map(res => {
+            const summaryMatch = res.matches && res.matches.find(m => m.key === 'summary');
+            const plainSummary = stripHtml(res.item.summary);
+            const snippet = summaryMatch
+                ? extractSnippet(res.item.summary, term, 80)
+                : (plainSummary ? plainSummary.slice(0, 160) + (plainSummary.length > 160 ? '…' : '') : '');
+            return `
+            <a href="${res.item.permalink}" class="block p-4 rounded-xl hover:bg-white/5 transition-all group mb-2">
+                <div class="flex items-center space-x-4">
+                    ${res.item.image ? `<img src="${res.item.image}" class="w-12 h-12 rounded object-cover flex-shrink-0">` : `<div class="w-12 h-12 rounded bg-pod-orange/20 flex items-center justify-center text-pod-orange font-bold uppercase text-xs flex-shrink-0">${res.item.section.charAt(0)}</div>`}
+                    <div class="flex-1 min-w-0">
+                        <div class="flex justify-between items-start">
+                            <h4 class="font-bold text-white group-hover:text-pod-orange transition-colors truncate min-w-0">${res.item.title}</h4>
+                            <span class="text-[10px] font-mono text-pod-gray ml-2 uppercase flex-shrink-0">${res.item.section}</span>
+                        </div>
+                        <p class="text-xs text-pod-gray line-clamp-2 mt-1">${snippet}</p>
+                    </div>
+                </div>
+            </a>`;
+        }).join('');
+    });
+})();
+</script>

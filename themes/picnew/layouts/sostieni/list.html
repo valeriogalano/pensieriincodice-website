@@ -1,0 +1,124 @@
+{{ define "main" }}
+<div class="max-w-3xl mx-auto">
+    <header class="mb-12">
+        <h1 class="text-4xl font-extrabold mb-4">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="text-lg text-pod-gray">{{ . }}</p>
+        {{ end }}
+    </header>
+
+    {{ with .Content }}
+    <div class="prose prose-invert prose-lg max-w-none prose-headings:font-bold mb-12">
+        {{ . }}
+    </div>
+    {{ end }}
+
+    {{ with .Site.Params.support.direct }}
+    <section class="mb-12">
+        <h2 class="text-2xl font-bold mb-2">Supporta direttamente</h2>
+        <p class="text-pod-gray mb-2">A prescindere dal livello di supporto, ricevi un ringraziamento pubblico nel podcast. Con donazioni più alte puoi ricevere gadget esclusivi: stickers, segnalibri e card laminate in edizione limitata.</p>
+        <a href="{{ $.Site.Home.RelPermalink }}blog/nuovi-gadget-di-pensieri-in-codice/" class="text-sm text-pod-orange hover:underline mb-6 inline-block">Scopri tutti i dettagli →</a>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-start">
+            {{ range . }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
+                class="flex items-center justify-between bg-pod-card border border-white/5 hover:border-pod-orange/50 rounded-2xl p-6 transition-all group">
+                <span class="text-lg font-semibold group-hover:text-pod-orange transition-colors">{{ .name }}</span>
+                {{ with .note }}
+                <span class="text-xs text-pod-gray ml-2">({{ . }})</span>
+                {{ end }}
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="text-pod-gray group-hover:text-pod-orange transition-colors flex-shrink-0 ml-4">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+            </a>
+            {{ end }}
+            {{/* {{ with $.Site.Params.support.wire }}
+            <details class="sm:col-span-2 bg-pod-card border border-white/5 hover:border-pod-orange/50 rounded-2xl transition-all group/wire">
+                <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                    <span class="text-lg font-semibold group-open/wire:text-pod-orange transition-colors">Bonifico Bancario</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-pod-gray group-open/wire:rotate-180 transition-transform flex-shrink-0">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </summary>
+                <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-sm px-6 pt-2" style="padding-bottom: 2rem;">
+                    <div>
+                        <dt class="text-[10px] text-pod-gray uppercase font-mono mb-1">Beneficiario</dt>
+                        <dd class="font-mono text-white">{{ .beneficiary }}</dd>
+                    </div>
+                    <div>
+                        <dt class="text-[10px] text-pod-gray uppercase font-mono mb-1">IBAN</dt>
+                        <dd class="font-mono text-white tracking-wider">{{ .iban }}</dd>
+                    </div>
+                    <div>
+                        <dt class="text-[10px] text-pod-gray uppercase font-mono mb-1">Codice BIC/SWIFT</dt>
+                        <dd class="font-mono text-white">{{ .bic }}</dd>
+                    </div>
+                    <div>
+                        <dt class="text-[10px] text-pod-gray uppercase font-mono mb-1">Banca</dt>
+                        <dd class="text-pod-gray">{{ .bank_name }}</dd>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <dt class="text-[10px] text-pod-gray uppercase font-mono mb-1">BIC banca corrispondente</dt>
+                        <dd class="font-mono text-pod-gray">{{ .bic_correspondent }}</dd>
+                    </div>
+                </dl>
+            </details>
+            {{ end }} */}}
+        </div>
+        <p class="text-sm text-pod-gray mt-4">Dopo aver inviato una donazione, <a href="{{ "contatti/" | relURL }}" class="text-pod-orange hover:underline">comunicami</a> con che nome vuoi essere ringraziato in puntata e il tuo indirizzo postale <a href="/blog/nuovi-gadget-di-pensieri-in-codice/" class="text-pod-orange hover:underline">se hai diritto a ricevere i gadget</a>.</p>
+    </section>
+    {{ end }}
+
+    {{ with .Site.Params.support.affiliate }}
+    <section>
+        <h2 class="text-2xl font-bold mb-2">Link affiliati</h2>
+        <p class="text-pod-gray mb-6">Usando questi link per i tuoi acquisti o per iscriverti ai servizi, supporti il podcast senza costi aggiuntivi.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {{ range . }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
+                class="flex items-center justify-between bg-pod-card border border-white/5 hover:border-pod-orange/50 rounded-2xl p-6 transition-all group">
+                <span class="text-lg font-semibold group-hover:text-pod-orange transition-colors">{{ .name }}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="text-pod-gray group-hover:text-pod-orange transition-colors flex-shrink-0">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+            </a>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+
+    {{/* Raccolta sostenitori unici da tutti gli episodi */}}
+    {{- $allSupporters := slice -}}
+    {{- range where .Site.RegularPages "Type" "podcast" -}}
+    {{- range .Params.supporters -}}
+    {{- $allSupporters = $allSupporters | append . -}}
+    {{- end -}}
+    {{- end -}}
+    {{- $uniqueSupporters := $allSupporters | uniq | sort -}}
+    {{ with $uniqueSupporters }}
+    <section class="mb-12 pt-12 border-t border-white/5">
+        <h2 class="text-2xl font-bold mb-2">Grazie a chi ha già sostenuto</h2>
+        <p class="text-pod-gray mb-6">Queste persone hanno dimostrato il loro apprezzamento per il progetto.</p>
+        <div class="flex flex-wrap gap-2">
+            {{ range . }}
+            <span class="bg-pod-card border border-white/10 px-4 py-2 rounded-full text-sm text-pod-gray hover:text-white hover:border-pod-orange/30 transition-all">{{ . }}</span>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+
+    <section class="pt-12 border-t border-white/5">
+        <p class="text-pod-gray text-sm">Un ringraziamento speciale a <a href="https://simonepizzi.runtimeradio.it/" target="_blank" rel="noopener noreferrer" class="text-white font-semibold hover:text-pod-orange transition-colors">Simone Pizzi</a> per aver ideato il design di questo sito.</p>
+    </section>
+
+</div>
+{{ end }}
