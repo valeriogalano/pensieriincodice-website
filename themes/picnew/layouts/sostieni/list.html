@@ -188,9 +188,23 @@
     </section>
     {{ end }}
 
-    <section class="pt-12 border-t border-white/5">
-        <p class="text-pod-gray text-sm">Un ringraziamento speciale a <a href="https://simonepizzi.runtimeradio.it/" target="_blank" rel="noopener noreferrer" class="text-white font-semibold hover:text-pod-orange transition-colors">Simone Pizzi</a> per aver ideato il design di questo sito.</p>
+    {{ with .Site.Params.support.special_thanks }}
+    <section class="pt-12 border-t border-white/5 mb-12">
+        <h2 class="text-2xl font-bold mb-2">Ringraziamenti speciali</h2>
+        <p class="text-pod-gray mb-6">Persone che hanno contribuito in modo straordinario alla nascita o alla crescita di questo progetto.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {{ range . }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
+                class="flex flex-col bg-pod-card border border-white/5 hover:border-pod-orange/50 rounded-2xl p-6 transition-all group">
+                <span class="text-lg font-semibold group-hover:text-pod-orange transition-colors mb-1">{{ .name }}</span>
+                {{ with .note }}
+                <span class="text-sm text-pod-gray">{{ . }}</span>
+                {{ end }}
+            </a>
+            {{ end }}
+        </div>
     </section>
+    {{ end }}
 
 </div>
 {{ end }}

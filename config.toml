@@ -182,6 +182,11 @@ url = "https://web.satispay.com/promocode/VALERIOGALAN"
 name = "NextDNS"
 url = "https://nextdns.io/?from=pmy29ab3"
 
+[[params.support.special_thanks]]
+name = "Simone Pizzi"
+url = "https://simonepizzi.runtimeradio.it/"
+note = "Ha ideato il design di questo sito"
+
 # Social media (mostrati nell'header dopo le piattaforme)
 [[params.social]]
 name = "Instagram"
