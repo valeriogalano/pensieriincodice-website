@@ -185,7 +185,47 @@ url = "https://nextdns.io/?from=pmy29ab3"
 [[params.support.special_thanks]]
 name = "Simone Pizzi"
 url = "https://simonepizzi.runtimeradio.it/"
-note = "Ha ideato il design di questo sito"
+note = "Design di questo sito"
+
+[[params.support.special_thanks]]
+name = "Alex Raccuglia"
+url = "https://ulti.media/"
+note = "Sound design"
+
+[[params.support.special_thanks]]
+name = "Guelfo Alexander Ghibellini"
+url = "#"
+note = "Strategia e comunicazione"
+
+[[params.support.special_thanks]]
+name = "Giuseppe Pugliese"
+url = "https://magnetarman.com/"
+note = "Montaggio speciale"
+
+[[params.support.special_thanks]]
+name = "Francesco Zubani"
+url = "https://fatualux.github.io"
+note = "Cover e trascrizioni"
+
+[[params.support.special_thanks]]
+name = "Maria Chiara Virgili"
+url = "https://linktr.ee/dannatiarchitettipodcast/"
+note = "Voce intro - Stagione 2"
+
+[[params.support.special_thanks]]
+name = "Spad"
+url = "https://mercuriopodcast.com/"
+note = "Voce intro - Stagione 2"
+
+[[params.support.special_thanks]]
+name = "Costanza Martina Vitale"
+url = "#"
+note = "Voce intro - Stagione 1"
+
+[[params.support.special_thanks]]
+name = "Daniele Galano"
+url = "https://www.instagram.com/daniele_galano/"
+note = "Graphic design"
 
 # Social media (mostrati nell'header dopo le piattaforme)
 [[params.social]]
