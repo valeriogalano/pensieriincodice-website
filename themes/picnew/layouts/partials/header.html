@@ -173,30 +173,43 @@
 
 <script>
 (function() {
-    function initDropdown(toggleId, dropdownId, chevronId, containerId) {
-        var toggle   = document.getElementById(toggleId);
-        var dropdown = document.getElementById(dropdownId);
-        var chevron  = document.getElementById(chevronId);
+    var dropdowns = [
+        { toggleId: 'follow-dropdown-toggle', dropdownId: 'follow-dropdown', chevronId: 'follow-chevron', containerId: 'follow-dropdown-container' },
+        { toggleId: 'theme-toggle',           dropdownId: 'theme-dropdown',  chevronId: 'theme-chevron',  containerId: 'theme-dropdown-container'  },
+    ];
+
+    function closeAll(except) {
+        dropdowns.forEach(function(d) {
+            if (d.dropdownId === except) return;
+            var el = document.getElementById(d.dropdownId);
+            var ch = document.getElementById(d.chevronId);
+            if (el) el.classList.add('hidden');
+            if (ch) ch.style.transform = '';
+        });
+    }
+
+    dropdowns.forEach(function(d) {
+        var toggle   = document.getElementById(d.toggleId);
+        var dropdown = document.getElementById(d.dropdownId);
+        var chevron  = document.getElementById(d.chevronId);
         if (!toggle || !dropdown) return;
 
         toggle.addEventListener('click', function(e) {
             e.stopPropagation();
             var isOpen = !dropdown.classList.contains('hidden');
+            closeAll(d.dropdownId);
             dropdown.classList.toggle('hidden', isOpen);
             if (chevron) chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
         });
 
         document.addEventListener('click', function(e) {
-            var container = document.getElementById(containerId);
+            var container = document.getElementById(d.containerId);
             if (container && !container.contains(e.target)) {
                 dropdown.classList.add('hidden');
                 if (chevron) chevron.style.transform = '';
             }
         });
-    }
-
-    initDropdown('follow-dropdown-toggle', 'follow-dropdown', 'follow-chevron', 'follow-dropdown-container');
-    initDropdown('theme-toggle', 'theme-dropdown', 'theme-chevron', 'theme-dropdown-container');
+    });
 })();
 
 window.setTheme = function(pref) {
