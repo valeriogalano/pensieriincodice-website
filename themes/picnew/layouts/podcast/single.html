@@ -24,7 +24,7 @@
 {{ end }}
 
 {{ define "main" }}
-<article class="max-w-4xl mx-auto">
+<article class="max-w-4xl mx-auto relative" data-audio="{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ .Params.audio }}">
     <!-- Header -->
     <header class="mb-12 text-center">
         <div class="flex items-center justify-center space-x-4 mb-6 font-mono text-pod-orange">

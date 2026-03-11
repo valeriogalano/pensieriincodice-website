@@ -435,12 +435,51 @@
         }
     };
 
+    // Listened episodes history (localStorage: 'pic_listened_episodes' → array of audio URLs)
+    function markListened(url) {
+        if (!url) return;
+        const key = 'pic_listened_episodes';
+        let list = [];
+        try { list = JSON.parse(localStorage.getItem(key)) || []; } catch(e) {}
+        if (!list.includes(url)) {
+            list.push(url);
+            localStorage.setItem(key, JSON.stringify(list));
+            applyListenedBadges();
+        }
+    }
+
+    function isListened(url) {
+        if (!url) return false;
+        try {
+            return (JSON.parse(localStorage.getItem('pic_listened_episodes')) || []).includes(url);
+        } catch(e) { return false; }
+    }
+
+    function applyListenedBadges() {
+        document.querySelectorAll('[data-audio]').forEach(card => {
+            const url = card.dataset.audio;
+            const existing = card.querySelector('.pic-listened-badge');
+            if (isListened(url)) {
+                if (!existing) {
+                    const badge = document.createElement('span');
+                    badge.className = 'pic-listened-badge absolute top-3 left-3 bg-green-600/90 text-white text-[9px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1 z-10 pointer-events-none';
+                    badge.innerHTML = '<svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>&nbsp;Ascoltato';
+                    card.appendChild(badge);
+                }
+            } else {
+                if (existing) existing.remove();
+            }
+        });
+    }
+
+    audio.addEventListener('ended', function() {
+        if (audio.src) markListened(audio.src);
+    });
+
     // Use window load for first hit, and turbo:load for navigation (if needed, but permanent should handle it)
-    window.addEventListener('load', initPlayer);
+    window.addEventListener('load', function() { initPlayer(); applyListenedBadges(); });
     document.addEventListener('turbo:load', function() {
-        // This handles cases where we might need to refresh something after navigation
-        // even if the player is permanent. For example, updating links in the page
-        // that might need to interact with the player.
+        applyListenedBadges();
     });
 
     // Periodically save current time and playing status
@@ -481,6 +520,7 @@
         currentTimeEl.textContent = formatTime(audio.currentTime);
         if (audio.duration) {
             progress.style.width = (audio.currentTime / audio.duration * 100) + '%';
+            if (audio.currentTime / audio.duration >= 0.9) markListened(audio.src);
         }
         if (currentChapters.length) {
             // Trova il capitolo corrente

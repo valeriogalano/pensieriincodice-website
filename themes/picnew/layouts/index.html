@@ -4,7 +4,7 @@
 
 <!-- HERO / LATEST EPISODE -->
 <section class="grid grid-cols-12 gap-6 mb-12">
-    <div class="col-span-12 bg-pod-card border border-white/5 rounded-3xl p-8 relative overflow-hidden orange-glow transition-all group">
+    <div class="col-span-12 bg-pod-card border border-white/5 rounded-3xl p-8 relative overflow-hidden orange-glow transition-all group" data-audio="{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ $latest.Params.audio }}">
         <div id="latest-badge-container" class="absolute top-0 right-0 p-6">
             <span id="latest-badge" class="bg-pod-orange text-[10px] uppercase font-bold px-3 py-1 rounded-full">Ultima Uscita</span>
         </div>
@@ -57,7 +57,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {{ range $episodes | first 4 | after 1 }}
         {{ $episode := . }}
-        <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group overflow-hidden flex flex-col">
+        <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group overflow-hidden flex flex-col relative" data-audio="{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ .Params.audio }}">
             {{ if .Params.image }}
             <div class="aspect-square mb-4 rounded-xl overflow-hidden relative">
                 <img src="{{ $.Site.Params.podcast.cdn_base_url }}{{ .Params.image }}" alt="{{ .Title }}" class="object-cover w-full h-full">
