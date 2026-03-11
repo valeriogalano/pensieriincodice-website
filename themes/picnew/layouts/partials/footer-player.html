@@ -395,6 +395,43 @@
                     });
                 }
             }
+        } else if (window.__playlist && window.__playlist.length > 0) {
+            const ep = window.__playlist[0];
+
+            if (titleEl) {
+                titleEl.textContent = ep.title;
+                titleEl.title = ep.title;
+                titleEl.href = ep.permalink || '#';
+            }
+            statusEl.textContent = 'In pausa';
+
+            const playerImg = document.getElementById('player-image');
+            const playerPlaceholder = document.getElementById('player-placeholder-icon');
+            if (ep.image) {
+                playerImg.src = ep.image;
+                playerImg.classList.remove('hidden');
+                playerPlaceholder.classList.add('hidden');
+            }
+
+            audio.src = ep.audio;
+            audio.load();
+
+            if (ep.chapters) {
+                fetch(ep.chapters)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data && data.chapters) renderChapters(data.chapters);
+                    })
+                    .catch(() => {});
+            }
+            if (ep.transcript) {
+                fetch(ep.transcript)
+                    .then(response => response.text())
+                    .then(text => renderTranscript(parseSRT(text)))
+                    .catch(() => {});
+            }
+
+            updateEpisodeButtons();
         }
     };
 
