@@ -54,7 +54,10 @@
         <div id="mobile-menu-overlay" class="fixed inset-0 hidden"></div>
         <div id="mobile-menu-drawer" class="fixed top-0 left-0 h-full w-72 bg-pod-card border-r border-white/10 flex flex-col py-8 overflow-y-auto">
             <div class="px-6 mb-8 flex items-center justify-between">
-                <a href="{{ .Site.Home.RelPermalink }}" class="text-xl font-extrabold tracking-tighter text-white no-underline">PENSIERI<span class="text-pod-orange">IN</span>CODICE</a>
+                <a href="{{ .Site.Home.RelPermalink }}" class="no-underline mx-auto">
+                    <img src="{{ .Site.Params.podcast.image | absURL }}" alt="{{ .Site.Title }}"
+                        class="w-9 h-9 rounded-lg border border-pod-orange/40 object-cover">
+                </a>
                 <button id="mobile-menu-close" class="text-pod-gray hover:text-white transition-colors p-1" aria-label="Chiudi menu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>

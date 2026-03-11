@@ -10,9 +10,7 @@
             <span id="desktop-logo" class="text-xl font-extrabold tracking-tighter text-white hidden md:block">PENSIERI<span class="text-pod-orange">IN</span>CODICE</span>
         </a>
         {{/* Mobile: locandina + titolo */}}
-        <a href="{{ .Site.Home.RelPermalink }}" id="mobile-brand" class="flex items-center gap-2 flex-1 min-w-0 no-underline">
-            <img src="{{ .Site.Params.podcast.image | absURL }}" alt="{{ .Site.Title }}"
-                class="w-8 h-8 rounded-md border border-pod-orange/30 flex-shrink-0 object-cover">
+        <a href="{{ .Site.Home.RelPermalink }}" id="mobile-brand" class="flex items-center flex-1 min-w-0 no-underline">
             <span class="text-xl font-extrabold tracking-tighter text-white truncate">PENSIERI<span class="text-pod-orange">IN</span>CODICE</span>
         </a>
         {{/* Desktop: barra di ricerca */}}
