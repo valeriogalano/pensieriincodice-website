@@ -8,9 +8,9 @@
         <div id="latest-badge-container" class="absolute top-0 right-0 p-6">
             <span id="latest-badge" class="bg-pod-orange text-[10px] uppercase font-bold px-3 py-1 rounded-full">Ultima Uscita</span>
         </div>
-        <div class="relative z-10 h-full flex items-center gap-10 min-h-[300px]">
+        <div class="relative z-10 h-full flex items-center gap-10 min-h-[300px] hero-latest-content">
             {{ if $latest.Params.image }}
-            <div class="hidden md:block flex-shrink-0 w-56 h-56 rounded-2xl overflow-hidden shadow-2xl shadow-pod-orange/20">
+            <div class="flex-shrink-0 w-56 h-56 rounded-2xl overflow-hidden shadow-2xl shadow-pod-orange/20 hero-latest-image">
                 <img src="{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.image }}" alt="{{ $latest.Title }}" class="object-cover w-full h-full">
             </div>
             {{ end }}

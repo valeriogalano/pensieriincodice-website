@@ -151,4 +151,15 @@
         width: 2.5rem;
         height: 2.5rem;
     }
+
+    /* Hero: layout verticale su mobile */
+    .hero-latest-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .hero-latest-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
 }
