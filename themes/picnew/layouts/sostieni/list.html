@@ -13,8 +13,34 @@
     </div>
     {{ end }}
 
+    <!-- Value for Value -->
+    <section class="mb-12 bg-pod-card border border-white/5 rounded-2xl p-8">
+        <div class="flex items-start gap-4 mb-4">
+            <span class="text-3xl">⚖️</span>
+            <div>
+                <h2 class="text-2xl font-bold mb-2">Value for Value</h2>
+                <p class="text-pod-gray">Pensieri in Codice è un progetto indipendente, libero e senza pubblicità. Si regge sul principio del <span class="text-white font-semibold">Value for Value</span>: se il podcast ti dà valore, restituisci valore nella misura e nella forma che puoi.</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
+            <div class="bg-pod-black/30 rounded-xl p-4 border border-white/5">
+                <div class="text-pod-orange font-mono text-xs uppercase tracking-wider mb-2">⏱ Tempo</div>
+                <p class="text-sm text-pod-gray">Condividi il podcast, consiglia un episodio, lascia una recensione. Costa zero e vale tantissimo.</p>
+            </div>
+            <div class="bg-pod-black/30 rounded-xl p-4 border border-white/5">
+                <div class="text-pod-orange font-mono text-xs uppercase tracking-wider mb-2">🛠 Talento</div>
+                <p class="text-sm text-pod-gray">Hai competenze utili? Invia feedback, suggerisci argomenti, segnala errori. Il tuo contributo migliora il progetto.</p>
+            </div>
+            <div class="bg-pod-black/30 rounded-xl p-4 border border-white/5">
+                <div class="text-pod-orange font-mono text-xs uppercase tracking-wider mb-2">💰 Tesoro</div>
+                <p class="text-sm text-pod-gray">Supporta economicamente con una donazione diretta o usando i link affiliati per i tuoi acquisti abituali.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="mb-12">
-        <h2 class="text-2xl font-bold mb-2">Condividi il progetto</h2>
+        <h2 class="text-2xl font-bold mb-1">Condividi il progetto</h2>
+        <p class="text-[11px] text-pod-orange font-mono uppercase tracking-wider mb-3">⏱ Tempo</p>
         <p class="text-pod-gray mb-6">Il modo più semplice e prezioso per sostenere Pensieri in Codice è parlarne. Condividi il podcast con chi potrebbe apprezzarlo, consiglia un episodio a un amico, lascia una recensione sulla tua piattaforma preferita. Ogni condivisione aiuta il progetto a crescere più di qualsiasi donazione.</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {{- $rss      := where .Site.Params.platforms "type" "rss" -}}
@@ -44,9 +70,23 @@
         </div>
     </section>
 
+    <section class="mb-12">
+        <h2 class="text-2xl font-bold mb-1">Contribuisci con il tuo talento</h2>
+        <p class="text-[11px] text-pod-orange font-mono uppercase tracking-wider mb-3">🛠 Talento</p>
+        <p class="text-pod-gray mb-6">Hai competenze che possono migliorare il progetto? Invia feedback sugli episodi, segnala errori, suggerisci argomenti o ospiti, aiuta con traduzioni o accessibilità. Qualsiasi contributo è benvenuto.</p>
+        <a href="{{ "contatti/" | relURL }}"
+            class="inline-flex items-center gap-2 bg-pod-card border border-white/5 hover:border-pod-orange/50 rounded-2xl px-6 py-4 transition-all group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-pod-gray group-hover:text-pod-orange transition-colors flex-shrink-0">
+                <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <span class="text-lg font-semibold group-hover:text-pod-orange transition-colors">Contattami</span>
+        </a>
+    </section>
+
     {{ with .Site.Params.support.direct }}
     <section class="mb-12">
-        <h2 class="text-2xl font-bold mb-2">Supporta economicamente</h2>
+        <h2 class="text-2xl font-bold mb-1">Supporta economicamente</h2>
+        <p class="text-[11px] text-pod-orange font-mono uppercase tracking-wider mb-3">💰 Tesoro</p>
         <p class="text-pod-gray mb-2">A prescindere dal livello di supporto, ricevi un ringraziamento pubblico nel podcast. Con donazioni più alte puoi ricevere gadget esclusivi: stickers, segnalibri e card laminate in edizione limitata.</p>
         <a href="{{ $.Site.Home.RelPermalink }}blog/nuovi-gadget-di-pensieri-in-codice/" class="text-sm text-pod-orange hover:underline mb-6 inline-block">Scopri tutti i dettagli →</a>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-start">
@@ -107,7 +147,8 @@
 
     {{ with .Site.Params.support.affiliate }}
     <section>
-        <h2 class="text-2xl font-bold mb-2">Link affiliati</h2>
+        <h2 class="text-2xl font-bold mb-1">Link affiliati</h2>
+        <p class="text-[11px] text-pod-orange font-mono uppercase tracking-wider mb-3">💰 Tesoro</p>
         <p class="text-pod-gray mb-6">Usando questi link per i tuoi acquisti o per iscriverti ai servizi, supporti il podcast senza costi aggiuntivi.</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {{ range . }}
