@@ -188,6 +188,11 @@ url = "https://simonepizzi.runtimeradio.it/"
 note = "Design di questo sito"
 
 [[params.support.special_thanks]]
+name = "Antonio Porcelli"
+url = "https://progressify.it/"
+note = "Automazioni"
+
+[[params.support.special_thanks]]
 name = "Alex Raccuglia"
 url = "https://ulti.media/"
 note = "Sound design"
