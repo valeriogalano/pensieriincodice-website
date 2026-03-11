@@ -51,23 +51,23 @@
                 </svg>
             </button>
             <div id="theme-dropdown"
-                class="hidden absolute right-0 top-full mt-2 min-w-max bg-pod-card border border-white/10 rounded-xl shadow-2xl shadow-black/40 py-2 z-50">
+                class="hidden absolute right-0 top-full mt-2 bg-pod-card border border-white/10 rounded-xl shadow-2xl shadow-black/40 py-2 z-50" style="width: max-content">
                 <button onclick="setTheme('system')" data-theme-option="system"
-                    class="flex items-center gap-3 px-5 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap w-full text-left">
+                    class="flex items-center gap-3 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap w-full text-left" style="padding-left: 1.25rem; padding-right: 2rem">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
                         <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
                     </svg>
                     <span>Sistema</span>
                 </button>
                 <button onclick="setTheme('light')" data-theme-option="light"
-                    class="flex items-center gap-3 px-5 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap w-full text-left">
+                    class="flex items-center gap-3 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap w-full text-left" style="padding-left: 1.25rem; padding-right: 2rem">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
                         <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
                     </svg>
                     <span>Chiaro</span>
                 </button>
                 <button onclick="setTheme('dark')" data-theme-option="dark"
-                    class="flex items-center gap-3 px-5 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap w-full text-left">
+                    class="flex items-center gap-3 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap w-full text-left" style="padding-left: 1.25rem; padding-right: 2rem">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
                         <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
                     </svg>
@@ -105,7 +105,7 @@
                 {{ $url := .url }}
                 {{ if not (hasPrefix .url "http") }}{{ $url = .url | relURL }}{{ end }}
                 <a href="{{ $url }}" title="{{ .name }}"
-                    class="flex items-center gap-3 px-4 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap">
+                    class="flex items-center gap-3 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap" style="padding-left: 1rem; padding-right: 2rem">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-pod-orange flex-shrink-0">
                         <path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/>
                     </svg>
@@ -120,7 +120,7 @@
                 {{ range $podcasts }}
                 {{ $parsed := urls.Parse .url }}
                 <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}"
-                    class="flex items-center gap-3 px-4 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap">
+                    class="flex items-center gap-3 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap" style="padding-left: 1rem; padding-right: 2rem">
                     <img src="https://www.google.com/s2/favicons?domain={{ $parsed.Host }}&sz=32"
                         alt="{{ .name }}" width="15" height="15"
                         class="w-[15px] h-[15px] flex-shrink-0">
@@ -135,7 +135,7 @@
                 {{ range $socials }}
                 {{ $parsed := urls.Parse .url }}
                 <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}"
-                    class="flex items-center gap-3 px-4 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap">
+                    class="flex items-center gap-3 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap" style="padding-left: 1rem; padding-right: 2rem">
                     <img src="https://www.google.com/s2/favicons?domain={{ $parsed.Host }}&sz=32"
                         alt="{{ .name }}" width="15" height="15"
                         class="w-[15px] h-[15px] flex-shrink-0">
@@ -147,7 +147,7 @@
                 {{ range $community }}
                 {{ $parsed := urls.Parse .url }}
                 <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}"
-                    class="flex items-center gap-3 px-4 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap">
+                    class="flex items-center gap-3 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap" style="padding-left: 1rem; padding-right: 2rem">
                     <img src="https://www.google.com/s2/favicons?domain={{ $parsed.Host }}&sz=32"
                         alt="{{ .name }}" width="15" height="15"
                         class="w-[15px] h-[15px] flex-shrink-0">
@@ -158,7 +158,7 @@
                 {{/* Separatore / Email */}}
                 {{ if .Site.Params.podcast.email }}<div class="my-1 border-t border-white/5"></div>
                 <a href="mailto:{{ .Site.Params.podcast.email }}" title="Email"
-                    class="flex items-center gap-3 px-4 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap">
+                    class="flex items-center gap-3 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap" style="padding-left: 1rem; padding-right: 2rem">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
                         <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
