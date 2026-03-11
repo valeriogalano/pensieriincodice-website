@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'pod-black': '#0a0a0a',
-        'pod-card':  '#141414',
+        'pod-black': 'rgb(var(--pod-black) / <alpha-value>)',
+        'pod-card':  'rgb(var(--pod-card) / <alpha-value>)',
         'pod-orange': '#ff6b00',
-        'pod-gray':  '#a0a0a0',
+        'pod-gray':  'rgb(var(--pod-gray) / <alpha-value>)',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

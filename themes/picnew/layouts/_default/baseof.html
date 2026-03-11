@@ -29,6 +29,8 @@
     {{- end -}}
     <script>window.__playlist={{ $playlist | jsonify | safeJS }};</script>
     {{ hugo.Generator }}
+    <!-- Anti-FOUC: applica il tema prima del render -->
+    <script>(function(){var p=localStorage.getItem('pic_theme')||'system',h=document.documentElement;h.classList.remove('light','dark');if(p==='dark')h.classList.add('dark');else if(p==='light')h.classList.add('light');else h.classList.add(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');}());</script>
 </head>
 <body class="bg-pod-black text-white font-sans selection:bg-pod-orange selection:text-white overflow-hidden h-screen flex">
 
@@ -226,6 +228,55 @@
         });
 
         document.addEventListener('turbo:load', closeMobileMenu);
+    </script>
+
+    <script>
+        // ===== THEME MANAGEMENT =====
+        window.getThemePref = function() {
+            return localStorage.getItem('pic_theme') || 'system';
+        };
+
+        window.applyTheme = function(pref) {
+            var html = document.documentElement;
+            html.classList.remove('light', 'dark');
+            if (pref === 'dark') {
+                html.classList.add('dark');
+            } else if (pref === 'light') {
+                html.classList.add('light');
+            } else {
+                html.classList.add(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            }
+            updateThemeButton(pref);
+        };
+
+        function updateThemeButton(pref) {
+            var btn = document.getElementById('theme-toggle');
+            if (!btn) return;
+            btn.querySelectorAll('[data-theme-icon]').forEach(function(el) { el.classList.add('hidden'); });
+            var icon = btn.querySelector('[data-theme-icon="' + pref + '"]');
+            if (icon) icon.classList.remove('hidden');
+            var labels = { system: 'Tema: Sistema', light: 'Tema: Chiaro', dark: 'Tema: Scuro' };
+            btn.setAttribute('title', labels[pref] || labels.system);
+        }
+
+        window.cycleTheme = function() {
+            var order = ['system', 'light', 'dark'];
+            var current = getThemePref();
+            var next = order[(order.indexOf(current) + 1) % order.length];
+            localStorage.setItem('pic_theme', next);
+            applyTheme(next);
+        };
+
+        // Aggiorna se il sistema operativo cambia preferenza
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+            if (getThemePref() === 'system') applyTheme('system');
+        });
+
+        function initThemeButton() {
+            updateThemeButton(getThemePref());
+        }
+        document.addEventListener('turbo:load', initThemeButton);
+        window.addEventListener('load', initThemeButton);
     </script>
 
 </body>
