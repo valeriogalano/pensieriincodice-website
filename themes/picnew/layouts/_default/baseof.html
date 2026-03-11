@@ -260,8 +260,12 @@
             btn.querySelectorAll('[data-theme-icon]').forEach(function(el) { el.classList.add('hidden'); });
             var icon = btn.querySelector('[data-theme-icon="' + pref + '"]');
             if (icon) icon.classList.remove('hidden');
-            var labels = { system: 'Tema: Sistema', light: 'Tema: Chiaro', dark: 'Tema: Scuro' };
-            btn.setAttribute('title', labels[pref] || labels.system);
+            // Evidenzia la voce attiva nel dropdown
+            document.querySelectorAll('[data-theme-option]').forEach(function(el) {
+                var active = el.dataset.themeOption === pref;
+                el.classList.toggle('text-pod-orange', active);
+                el.classList.toggle('text-pod-gray', !active);
+            });
         }
 
         window.cycleTheme = function() {
