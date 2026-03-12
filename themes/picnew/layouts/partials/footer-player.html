@@ -15,6 +15,19 @@
                     <a href="#" class="text-sm font-bold truncate max-w-[150px] md:max-w-[200px] hover:text-pod-orange transition-colors block" id="player-title" title="{{ .Site.Title }}">{{ .Site.Title }}</a>
                     <p class="text-[10px] text-pod-orange font-mono uppercase" id="player-status">Seleziona un episodio</p>
                 </div>
+                <div id="player-mobile-actions" class="flex items-center gap-2">
+                    <button id="player-mini-play"
+                        class="w-8 h-8 bg-white text-pod-black rounded-full flex items-center justify-center hover:scale-105 transition-transform shadow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" id="player-mini-play-icon">
+                            <polygon points="5 3 19 12 5 21 5 3" />
+                        </svg>
+                    </button>
+                    <button id="player-collapse-btn" class="text-pod-gray hover:text-white transition-colors" aria-label="Comprimi player">
+                        <svg id="player-collapse-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
             <div class="player-controls-col flex-1 flex flex-col items-center px-12">
                 <div class="flex items-center space-x-3 mb-2">
@@ -148,8 +161,42 @@
     let currentTranscript = [];
     let currentTranscriptIndex = -1;
 
+    const collapseBtn = document.getElementById('player-collapse-btn');
+    const miniPlayBtn = document.getElementById('player-mini-play');
+    const miniPlayIcon = document.getElementById('player-mini-play-icon');
+    const footerContainer = document.getElementById('footer-player-container');
+
     const playSvg = '<polygon points="5 3 19 12 5 21 5 3" />';
     const pauseSvg = '<rect x="6" y="4" width="4" height="16" /><rect x="14" y="4" width="4" height="16" />';
+
+    function updatePlayIcons(svg) {
+        playIcon.innerHTML = svg;
+        if (miniPlayIcon) miniPlayIcon.innerHTML = svg;
+    }
+
+    // Collapse toggle
+    if (localStorage.getItem('pic_player_collapsed') === 'true') {
+        footerContainer.classList.add('player-collapsed');
+    }
+    if (collapseBtn) {
+        collapseBtn.addEventListener('click', function() {
+            const collapsed = footerContainer.classList.toggle('player-collapsed');
+            localStorage.setItem('pic_player_collapsed', collapsed);
+        });
+    }
+    if (miniPlayBtn) {
+        miniPlayBtn.addEventListener('click', function() {
+            if (audio.paused) {
+                audio.play();
+                updatePlayIcons(pauseSvg);
+                statusEl.textContent = 'Ora in riproduzione';
+            } else {
+                audio.pause();
+                updatePlayIcons(playSvg);
+                statusEl.textContent = 'In pausa';
+            }
+        });
+    }
 
     function formatTime(s) {
         if (isNaN(s)) return '0:00';
@@ -184,11 +231,11 @@
         const playPromise = audio.play();
         if (playPromise !== undefined) {
             playPromise.then(_ => {
-                playIcon.innerHTML = pauseSvg;
+                updatePlayIcons(pauseSvg);
                 statusEl.textContent = 'Ora in riproduzione';
             }).catch(error => {
                 console.log("Autoplay prevented:", error);
-                playIcon.innerHTML = playSvg;
+                updatePlayIcons(playSvg);
                 statusEl.textContent = 'Pronto a riprodurre';
             });
         }
@@ -390,7 +437,7 @@
                 const playPromise = audio.play();
                 if (playPromise !== undefined) {
                     playPromise.then(_ => {
-                        playIcon.innerHTML = pauseSvg;
+                        updatePlayIcons(pauseSvg);
                         statusEl.textContent = 'Ora in riproduzione';
                     }).catch(error => {
                         console.log("Autoplay on restore prevented:", error);
@@ -507,11 +554,11 @@
     playBtn.addEventListener('click', function() {
         if (audio.paused) {
             audio.play();
-            playIcon.innerHTML = pauseSvg;
+            updatePlayIcons(pauseSvg);
             statusEl.textContent = 'Ora in riproduzione';
         } else {
             audio.pause();
-            playIcon.innerHTML = playSvg;
+            updatePlayIcons(playSvg);
             statusEl.textContent = 'In pausa';
         }
     });
