@@ -102,6 +102,8 @@ html.light .prose code {
 /* Mobile-only: nascosti di default */
 #mobile-brand { display: none; }
 #mobile-search-trigger { display: none; }
+
+/* Player mobile actions: nascosto di default */
 #player-mobile-actions { display: none; }
 
 /* ===== DESKTOP (>= 1024px) ===== */
@@ -164,8 +166,10 @@ html.light .prose code {
         height: 2.5rem;
     }
 
-    /* Player mobile: bottone collapse + mini play */
+    /* Player mobile: collapse */
     #player-mobile-actions { display: flex; align-items: center; gap: 0.5rem; margin-left: auto; }
+    #player-info { flex: 1; min-width: 0; }
+    #player-title { max-width: 100%; }
     #footer-player-container:not(.player-collapsed) #player-mini-play { display: none; }
     #footer-player-container.player-collapsed .player-controls-col { display: none; }
     #footer-player-container.player-collapsed .player-right-col { display: none; }
