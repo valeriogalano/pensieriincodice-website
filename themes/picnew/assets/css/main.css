@@ -35,8 +35,36 @@ html.light .glass-sidebar {
     border-right: 1px solid rgba(255, 107, 0, 0.1);
 }
 
+/* ===== ACCESSIBILITY ===== */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 1rem;
+    z-index: 9999;
+    background: #ff6b00;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    text-decoration: none;
+}
+.skip-link:focus { left: 1rem; }
+
 /* ===== GLOW & ACTIVE ===== */
-.orange-glow:hover {
+.orange-glow:hover,
+.orange-glow:focus-within {
     box-shadow: 0 0 20px rgba(255, 107, 0, 0.2);
     border-color: #ff6b00;
 }

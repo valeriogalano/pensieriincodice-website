@@ -47,7 +47,7 @@
         {{ with .Params.audio }}
         <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $.Title | jsonify }}, '{{ if $.Params.image }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $.Params.image }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $.Params.chapters }}{{ end }}', '{{ if $.Params.transcript }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $.Params.transcript }}{{ end }}', '{{ $.RelPermalink }}')"
             class="inline-flex items-center space-x-2 bg-pod-orange hover:bg-orange-500 text-white px-6 py-3 rounded-full font-bold hover:scale-105 transition-transform">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <polygon points="5 3 19 12 5 21 5 3" />
             </svg>
             <span>Ascolta l'episodio</span>
@@ -160,11 +160,13 @@
     {{ $episode := .Params.number | printf "PIC%d" }}
     {{ with index $.Site.Data.scripts $episode }}
     <div class="mt-12 pt-8 border-t border-white/5">
-        <h3 class="text-2xl font-bold mb-4 cursor-pointer" onclick="this.nextElementSibling.classList.toggle('hidden')">
+        <button class="text-2xl font-bold mb-4 cursor-pointer flex items-center text-left w-full"
+            aria-expanded="false" aria-controls="episode-script-content"
+            onclick="var c=document.getElementById('episode-script-content');var open=c.classList.toggle('hidden');this.setAttribute('aria-expanded', open?'false':'true');this.querySelector('.script-chevron').style.transform=open?'':'rotate(180deg)'">
             {{ if .segments }}Trascrizione dell'episodio{{ else }}Script dell'episodio{{ end }}
-            <span class="text-pod-orange text-sm font-mono ml-2">▼</span>
-        </h3>
-        <div class="hidden">
+            <span class="text-pod-orange text-sm font-mono ml-2 script-chevron" style="transition:transform 0.2s" aria-hidden="true">▼</span>
+        </button>
+        <div id="episode-script-content" class="hidden">
             {{ if .segments }}
             <p class="text-sm text-pod-gray mb-4 italic">Quella che segue è una trascrizione automatica dell'episodio.</p>
             {{ else }}

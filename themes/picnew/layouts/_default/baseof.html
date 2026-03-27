@@ -36,6 +36,8 @@
 </head>
 <body class="bg-pod-black text-white font-sans selection:bg-pod-orange selection:text-white overflow-hidden h-screen flex">
 
+    <a href="#main-content" class="skip-link">Salta al contenuto principale</a>
+
     <div id="sidebar-container" data-turbo-permanent>
         {{ partial "sidebar.html" . }}
     </div>
@@ -53,53 +55,69 @@
     </div>
 
     <div id="mobile-menu-container" data-turbo-permanent>
-        <div id="mobile-menu-overlay" class="fixed inset-0 hidden"></div>
-        <div id="mobile-menu-drawer" class="fixed top-0 left-0 h-full w-72 bg-pod-card border-r border-white/10 flex flex-col py-8 overflow-y-auto">
+        <div id="mobile-menu-overlay" class="fixed inset-0 hidden" aria-hidden="true"></div>
+        <nav id="mobile-menu-drawer" class="fixed top-0 left-0 h-full w-72 bg-pod-card border-r border-white/10 flex flex-col py-8 overflow-y-auto" aria-label="Menu di navigazione mobile" aria-hidden="true">
             <div class="px-6 mb-8 flex items-center justify-between">
                 <a href="{{ .Site.Home.RelPermalink }}" class="no-underline mx-auto">
                     <img src="{{ .Site.Params.podcast.image | absURL }}" alt="{{ .Site.Title }}"
                         class="w-9 h-9 rounded-lg border border-pod-orange/40 object-cover">
                 </a>
-                <button id="mobile-menu-close" class="text-pod-gray hover:text-white transition-colors p-1" aria-label="Chiudi menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <button id="mobile-menu-close" class="text-pod-gray hover:text-white transition-colors p-1" aria-label="Chiudi menu" aria-controls="mobile-menu-drawer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
                     </svg>
                 </button>
             </div>
-            <nav class="flex-1 px-4 space-y-1">
+            <ul class="flex-1 px-4 space-y-1 list-none m-0 p-0" role="list">
+                <li>
                 <a href="{{ .Site.Home.RelPermalink }}" class="mobile-nav-link flex items-center space-x-4 px-3 py-3 rounded-lg hover:bg-white/5 transition-all text-pod-gray hover:text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                     <span class="font-medium">Home</span>
                 </a>
+                </li>
+                <li>
                 <a href="{{ "episodes/" | relURL }}" class="mobile-nav-link flex items-center space-x-4 px-3 py-3 rounded-lg hover:bg-white/5 transition-all text-pod-gray hover:text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
                     <span class="font-medium">Episodi</span>
                 </a>
+                </li>
+                <li>
                 <a href="{{ "blog/" | relURL }}" class="mobile-nav-link flex items-center space-x-4 px-3 py-3 rounded-lg hover:bg-white/5 transition-all text-pod-gray hover:text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
                     <span class="font-medium">News</span>
                 </a>
+                </li>
+                <li>
                 <a href="{{ "fonti/" | relURL }}" class="mobile-nav-link flex items-center space-x-4 px-3 py-3 rounded-lg hover:bg-white/5 transition-all text-pod-gray hover:text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M8 7h6"/><path d="M8 11h8"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M8 7h6"/><path d="M8 11h8"/></svg>
                     <span class="font-medium">Fonti</span>
                 </a>
+                </li>
+                <li>
                 <a href="{{ "mission/" | relURL }}" class="mobile-nav-link flex items-center space-x-4 px-3 py-3 rounded-lg hover:bg-white/5 transition-all text-pod-gray hover:text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
                     <span class="font-medium">Mission</span>
                 </a>
+                </li>
+                <li>
                 <a href="{{ "autore/" | relURL }}" class="mobile-nav-link flex items-center space-x-4 px-3 py-3 rounded-lg hover:bg-white/5 transition-all text-pod-gray hover:text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                     <span class="font-medium">Autore</span>
                 </a>
+                </li>
+                <li>
                 <a href="{{ "sostieni/" | relURL }}" class="mobile-nav-link flex items-center space-x-4 px-3 py-3 rounded-lg hover:bg-white/5 transition-all text-pod-orange">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
                     <span class="font-medium">Sostieni</span>
                 </a>
+                </li>
+                <li>
                 <a href="{{ "contatti/" | relURL }}" class="mobile-nav-link flex items-center space-x-4 px-3 py-3 rounded-lg hover:bg-white/5 transition-all text-pod-gray hover:text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                     <span class="font-medium">Contatti</span>
                 </a>
-            </nav>
+                </li>
+            </ul>
             {{- $rss      := where .Site.Params.platforms "type" "rss" -}}
             {{- $podcasts := where .Site.Params.platforms "type" "podcast" -}}
             {{- $socials  := where .Site.Params.social "type" "social" -}}
@@ -199,8 +217,10 @@
                 if (isActive) {
                     link.classList.add('active-link', 'text-white');
                     link.classList.remove('text-pod-gray');
+                    link.setAttribute('aria-current', 'page');
                 } else {
                     link.classList.remove('active-link', 'text-white');
+                    link.removeAttribute('aria-current');
                     if (!link.classList.contains('text-pod-orange')) {
                         link.classList.add('text-pod-gray');
                     }
@@ -212,13 +232,26 @@
 
         // Mobile menu
         function openMobileMenu() {
-            document.getElementById('mobile-menu-drawer').classList.add('open');
-            document.getElementById('mobile-menu-overlay').classList.remove('hidden');
+            var drawer = document.getElementById('mobile-menu-drawer');
+            var overlay = document.getElementById('mobile-menu-overlay');
+            var toggle = document.getElementById('mobile-menu-toggle');
+            drawer.classList.add('open');
+            drawer.setAttribute('aria-hidden', 'false');
+            overlay.classList.remove('hidden');
+            if (toggle) toggle.setAttribute('aria-expanded', 'true');
+            // Move focus to close button for keyboard users
+            var closeBtn = document.getElementById('mobile-menu-close');
+            if (closeBtn) closeBtn.focus();
         }
 
         function closeMobileMenu() {
-            document.getElementById('mobile-menu-drawer').classList.remove('open');
-            document.getElementById('mobile-menu-overlay').classList.add('hidden');
+            var drawer = document.getElementById('mobile-menu-drawer');
+            var overlay = document.getElementById('mobile-menu-overlay');
+            var toggle = document.getElementById('mobile-menu-toggle');
+            drawer.classList.remove('open');
+            drawer.setAttribute('aria-hidden', 'true');
+            overlay.classList.add('hidden');
+            if (toggle) toggle.setAttribute('aria-expanded', 'false');
         }
 
         // Event delegation: il bottone hamburger viene ricreato da Turbo ad ogni navigazione

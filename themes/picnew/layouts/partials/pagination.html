@@ -28,7 +28,7 @@
             {{ end }}
             {{/* Pagina corrente */}}
             {{ if eq $n $curr }}
-            <span class="w-9 h-9 flex items-center justify-center rounded-lg bg-pod-orange text-white font-bold text-sm cursor-default">{{ $n }}</span>
+            <span class="w-9 h-9 flex items-center justify-center rounded-lg bg-pod-orange text-white font-bold text-sm cursor-default" aria-current="page">{{ $n }}</span>
             {{ else }}
             <a href="{{ .URL }}" aria-label="Pagina {{ $n }}"
                class="w-9 h-9 flex items-center justify-center rounded-lg bg-pod-card border border-white/10 text-pod-gray hover:border-pod-orange hover:text-pod-orange transition-all text-sm font-mono">

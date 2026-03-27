@@ -30,8 +30,9 @@
                 <div class="flex items-center space-x-6 mt-10">
                     {{ with $latest.Params.audio }}
                     <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $latest.Title | jsonify }}, '{{ if $latest.Params.image }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.image }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $latest.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.chapters }}{{ end }}', '{{ if $latest.Params.transcript }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.transcript }}{{ end }}', '{{ $latest.RelPermalink }}')"
+                        aria-label="Ascolta: {{ $latest.Title }}"
                         class="bg-pod-orange hover:bg-orange-500 text-white px-8 py-3 rounded-full font-bold transition-all transform hover:scale-105 flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <polygon points="5 3 19 12 5 21 5 3" />
                         </svg>
                         <span class="whitespace-nowrap">Ascolta Ora</span>
@@ -64,8 +65,9 @@
                 <div class="absolute inset-0 bg-gradient-to-t from-pod-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     {{ with .Params.audio }}
                     <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $episode.Title | jsonify }}, '{{ if $episode.Params.image }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.image }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $episode.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.chapters }}{{ end }}', '{{ if $episode.Params.transcript }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.transcript }}{{ end }}', '{{ $episode.RelPermalink }}')"
+                        aria-label="Riproduci: {{ $episode.Title }}"
                         class="w-12 h-12 rounded-full bg-pod-orange text-white flex items-center justify-center transform translate-y-4 group-hover:translate-y-0 transition-all">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <polygon points="5 3 19 12 5 21 5 3" />
                         </svg>
                     </button>
@@ -89,8 +91,9 @@
                 </div>
                 {{ with .Params.audio }}
                 <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $episode.Title | jsonify }}, '{{ if $episode.Params.image }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.image }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $episode.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.chapters }}{{ end }}', '{{ if $episode.Params.transcript }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.transcript }}{{ end }}', '{{ $episode.RelPermalink }}')"
+                    aria-label="Riproduci: {{ $episode.Title }}"
                     class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pod-orange transition-all">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                         <polygon points="5 3 19 12 5 21 5 3" />
                     </svg>
                 </button>

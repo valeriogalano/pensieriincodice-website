@@ -1,11 +1,11 @@
-<footer class="fixed bottom-0 left-0 right-0 min-h-24 glass-sidebar border-t border-white/5 flex items-center px-8 z-50">
+<footer class="fixed bottom-0 left-0 right-0 min-h-24 glass-sidebar border-t border-white/5 flex items-center px-8 z-50" aria-label="Lettore audio del podcast" role="region">
     <div class="max-w-7xl mx-auto w-full flex flex-col">
         <div class="player-main-row flex items-center w-full">
             <div class="player-info-col flex items-center space-x-4 w-1/4">
                 <div id="player-image-container" class="w-12 h-12 bg-pod-orange rounded-lg hidden sm:flex items-center justify-center shadow-lg shadow-pod-orange/20 overflow-hidden">
-                    <img id="player-image" src="{{ .Site.Params.podcast.image | absURL }}" class="object-cover w-full h-full">
+                    <img id="player-image" src="{{ .Site.Params.podcast.image | absURL }}" alt="Copertina dell'episodio" class="object-cover w-full h-full">
                     <svg id="player-placeholder-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden">
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden" aria-hidden="true">
                         <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
                         <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
                         <line x1="12" y1="19" x2="12" y2="22" />
@@ -16,14 +16,14 @@
                     <p class="text-[10px] text-pod-orange font-mono uppercase" id="player-status">Seleziona un episodio</p>
                 </div>
                 <div id="player-mobile-actions" class="flex items-center gap-2">
-                    <button id="player-mini-play"
+                    <button id="player-mini-play" aria-label="Riproduci/Pausa"
                         class="w-8 h-8 bg-white text-pod-black rounded-full flex items-center justify-center hover:scale-105 transition-transform shadow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" id="player-mini-play-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" id="player-mini-play-icon" aria-hidden="true">
                             <polygon points="5 3 19 12 5 21 5 3" />
                         </svg>
                     </button>
-                    <button id="player-collapse-btn" class="text-pod-gray hover:text-white transition-colors" aria-label="Comprimi player">
-                        <svg id="player-collapse-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s">
+                    <button id="player-collapse-btn" class="text-pod-gray hover:text-white transition-colors" aria-label="Comprimi player" aria-controls="footer-player-container" aria-expanded="true">
+                        <svg id="player-collapse-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s" aria-hidden="true">
                             <polyline points="6 9 12 15 18 9"/>
                         </svg>
                     </button>
@@ -32,58 +32,58 @@
             <div class="player-controls-col flex-1 flex flex-col items-center px-12">
                 <div class="flex items-center space-x-3 mb-2">
                     {{/* Previous episode */}}
-                    <button id="player-episode-prev" disabled title="Episodio precedente"
+                    <button id="player-episode-prev" disabled aria-label="Episodio precedente"
                         class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <polygon points="19 20 9 12 19 4 19 20"/>
                             <polygon points="9 20 0 12 9 4 9 20"/>
                         </svg>
                     </button>
                     {{/* Previous chapter */}}
-                    <button id="player-chapter-prev" disabled title="Capitolo precedente"
+                    <button id="player-chapter-prev" disabled aria-label="Capitolo precedente"
                         class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <polygon points="15 20 6 12 15 4 15 20"/>
                             <line x1="4" y1="4" x2="4" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </button>
                     {{/* Skip back 15s */}}
-                    <button id="player-prev" disabled title="Indietro 15 secondi"
+                    <button id="player-prev" disabled aria-label="Indietro 15 secondi"
                         class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
                             <path d="M16 4 A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                             <polyline points="12,1 16,5 12,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <text x="16" y="20" text-anchor="middle" font-size="9" font-weight="bold" fill="currentColor" font-family="monospace">15</text>
                         </svg>
                     </button>
                     {{/* Play/Pause */}}
-                    <button id="player-play"
+                    <button id="player-play" aria-label="Riproduci/Pausa"
                         class="w-10 h-10 bg-white text-pod-black rounded-full flex items-center justify-center hover:scale-105 transition-transform shadow-xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" id="player-play-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" id="player-play-icon" aria-hidden="true">
                             <polygon points="5 3 19 12 5 21 5 3" />
                         </svg>
                     </button>
                     {{/* Skip forward 30s */}}
-                    <button id="player-next" disabled title="Avanti 30 secondi"
+                    <button id="player-next" disabled aria-label="Avanti 30 secondi"
                         class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
                             <path d="M16 4 A12 12 0 1 1 4 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                             <polyline points="20,1 16,5 20,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <text x="16" y="20" text-anchor="middle" font-size="9" font-weight="bold" fill="currentColor" font-family="monospace">30</text>
                         </svg>
                     </button>
                     {{/* Next chapter */}}
-                    <button id="player-chapter-next" disabled title="Capitolo successivo"
+                    <button id="player-chapter-next" disabled aria-label="Capitolo successivo"
                         class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <polygon points="9 4 18 12 9 20 9 4"/>
                             <line x1="20" y1="4" x2="20" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </button>
                     {{/* Next episode */}}
-                    <button id="player-episode-next" disabled title="Episodio successivo"
+                    <button id="player-episode-next" disabled aria-label="Episodio successivo"
                         class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <polygon points="5 4 15 12 5 20 5 4"/>
                             <polygon points="15 4 24 12 15 20 15 4"/>
                         </svg>
@@ -91,7 +91,8 @@
                 </div>
                 <div class="w-full flex items-center space-x-3">
                     <span class="text-[10px] font-mono text-pod-gray" id="player-current-time">0:00</span>
-                    <div class="flex-1 h-1 bg-white/10 rounded-full overflow-hidden relative group cursor-pointer" id="player-progress-bar">
+                    <div class="flex-1 h-1 bg-white/10 rounded-full overflow-hidden relative group cursor-pointer" id="player-progress-bar"
+                        role="slider" aria-label="Progresso della riproduzione" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
                         <div class="absolute inset-0 bg-pod-orange rounded-full" style="width: 0%" id="player-progress"></div>
                     </div>
                     <span class="text-[10px] font-mono text-pod-gray" id="player-duration">0:00</span>
@@ -99,6 +100,7 @@
             </div>
             <div class="player-right-col flex items-center justify-end space-x-4 w-1/4">
                 <div class="flex items-center space-x-2 bg-white/5 rounded-lg px-2 py-1">
+                    <label for="player-speed" class="sr-only">Velocità di riproduzione</label>
                     <select id="player-speed" class="bg-transparent text-[10px] font-mono text-white focus:outline-none cursor-pointer">
                         <option value="0.5" class="bg-pod-black">0.5x</option>
                         <option value="0.8" class="bg-pod-black">0.8x</option>
@@ -110,21 +112,21 @@
                         <option value="3" class="bg-pod-black">3.0x</option>
                     </select>
                 </div>
-                <button id="toggle-chapters" class="text-pod-gray hover:text-white transition-colors hidden" title="Capitoli">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                <button id="toggle-chapters" class="text-pod-gray hover:text-white transition-colors hidden" aria-label="Mostra/nascondi capitoli" aria-controls="player-chapters-container" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
                 </button>
-                <button id="toggle-transcript" class="text-pod-gray hover:text-white transition-colors hidden" title="Trascrizione">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                <button id="toggle-transcript" class="text-pod-gray hover:text-white transition-colors hidden" aria-label="Mostra/nascondi trascrizione" aria-controls="player-transcript-container" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
                 </button>
             </div>
         </div>
-        <div id="player-chapters-container" class="hidden w-full mt-4 max-h-48 overflow-y-auto bg-pod-black/50 rounded-lg p-4 scrollbar-thin scrollbar-thumb-pod-orange">
+        <div id="player-chapters-container" class="hidden w-full mt-4 max-h-48 overflow-y-auto bg-pod-black/50 rounded-lg p-4 scrollbar-thin scrollbar-thumb-pod-orange" aria-live="polite" aria-label="Capitoli dell'episodio">
             <h6 class="text-xs font-bold text-pod-gray uppercase mb-2">Capitoli</h6>
             <div id="player-chapters-list" class="grid grid-cols-1 md:grid-cols-2 gap-2">
                 <!-- Chapters will be injected here -->
             </div>
         </div>
-        <div id="player-transcript-container" class="hidden w-full mt-4 max-h-48 overflow-y-auto bg-pod-black/50 rounded-lg p-4 scrollbar-thin scrollbar-thumb-pod-orange">
+        <div id="player-transcript-container" class="hidden w-full mt-4 max-h-48 overflow-y-auto bg-pod-black/50 rounded-lg p-4 scrollbar-thin scrollbar-thumb-pod-orange" aria-live="polite" aria-label="Trascrizione dell'episodio">
             <h6 class="text-xs font-bold text-pod-gray uppercase mb-2">Trascrizione</h6>
             <div id="player-transcript-list" class="space-y-1">
                 <!-- Transcript will be injected here -->
@@ -182,6 +184,8 @@
         collapseBtn.addEventListener('click', function() {
             const collapsed = footerContainer.classList.toggle('player-collapsed');
             localStorage.setItem('pic_player_collapsed', collapsed);
+            collapseBtn.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+            collapseBtn.setAttribute('aria-label', collapsed ? 'Espandi player' : 'Comprimi player');
         });
     }
     if (miniPlayBtn) {
@@ -378,15 +382,21 @@
 
     toggleChaptersBtn.addEventListener('click', () => {
         chaptersContainer.classList.toggle('hidden');
-        if (!chaptersContainer.classList.contains('hidden')) {
+        const open = !chaptersContainer.classList.contains('hidden');
+        toggleChaptersBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (open) {
             transcriptContainer.classList.add('hidden');
+            toggleTranscriptBtn.setAttribute('aria-expanded', 'false');
         }
     });
 
     toggleTranscriptBtn.addEventListener('click', () => {
         transcriptContainer.classList.toggle('hidden');
-        if (!transcriptContainer.classList.contains('hidden')) {
+        const open = !transcriptContainer.classList.contains('hidden');
+        toggleTranscriptBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (open) {
             chaptersContainer.classList.add('hidden');
+            toggleChaptersBtn.setAttribute('aria-expanded', 'false');
         }
     });
 
@@ -568,7 +578,9 @@
     audio.addEventListener('timeupdate', function() {
         currentTimeEl.textContent = formatTime(audio.currentTime);
         if (audio.duration) {
-            progress.style.width = (audio.currentTime / audio.duration * 100) + '%';
+            const pct = Math.round(audio.currentTime / audio.duration * 100);
+            progress.style.width = pct + '%';
+            progressBar.setAttribute('aria-valuenow', pct);
             if (audio.currentTime / audio.duration >= 0.9) markListened(audio.src);
         }
         if (currentChapters.length) {
@@ -616,6 +628,32 @@
             const rect = progressBar.getBoundingClientRect();
             const pct = (e.clientX - rect.left) / rect.width;
             audio.currentTime = pct * audio.duration;
+        }
+    });
+
+    // Keyboard navigation for progress bar slider
+    progressBar.addEventListener('keydown', function(e) {
+        if (!audio.duration) return;
+        const step = audio.duration * 0.02; // 2% step
+        const bigStep = audio.duration * 0.1; // 10% step
+        if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
+            e.preventDefault();
+            audio.currentTime = Math.min(audio.duration, audio.currentTime + step);
+        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
+            e.preventDefault();
+            audio.currentTime = Math.max(0, audio.currentTime - step);
+        } else if (e.key === 'PageUp') {
+            e.preventDefault();
+            audio.currentTime = Math.min(audio.duration, audio.currentTime + bigStep);
+        } else if (e.key === 'PageDown') {
+            e.preventDefault();
+            audio.currentTime = Math.max(0, audio.currentTime - bigStep);
+        } else if (e.key === 'Home') {
+            e.preventDefault();
+            audio.currentTime = 0;
+        } else if (e.key === 'End') {
+            e.preventDefault();
+            audio.currentTime = audio.duration;
         }
     });
 
