@@ -273,6 +273,6 @@ home = ["HTML", "RSS", "JSON", "podcast"]
 
 [permalinks]
   [permalinks.page]
-    podcast = '/:filename'
+    podcast = '/:contentbasename'
   [permalinks.section]
-    podcast = '/episodes/:filename'
+    podcast = '/episodes/:contentbasename'
