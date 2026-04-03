@@ -87,7 +87,7 @@
           <a class="cta" href="{{ $latest.RelPermalink }}" aria-label="Ascolta ora: {{ $latest.Title }}">Ascolta ora</a>
           <div class="platforms">
             <span class="label">Segui il podcast -> </span>
-            {{ range $.Site.Data.home.platforms.items }}
+            {{ range hugo.Data.home.platforms.items }}
             <a target="_blank" href="{{ .url }}" title="{{ .title }}">
               <img src="{{ .image | absURL }}" alt="{{ .title }}" />
             </a>

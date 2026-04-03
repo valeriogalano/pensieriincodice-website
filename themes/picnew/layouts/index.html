@@ -145,7 +145,7 @@
 {{ end }}
 
 <!-- ALTRI PROGETTI -->
-{{ with .Site.Data.projects }}
+{{ with hugo.Data.projects }}
 <section class="mb-12">
     <div class="flex items-center justify-between mb-8">
         <h2 class="text-3xl font-bold tracking-tight">Altri Progetti</h2>
@@ -179,7 +179,7 @@
 {{ end }}
 
 <!-- PARTNER -->
-{{ with index .Site.Data.partners "partners" }}
+{{ with index hugo.Data.partners "partners" }}
 <section class="mt-24 pt-12 border-t border-white/5 mb-12">
     <h3 class="text-xl font-bold mb-8 text-center text-pod-gray uppercase tracking-widest font-mono">Progetti Amici</h3>
     <div class="flex flex-wrap justify-center gap-12 items-center opacity-70 hover:opacity-100 transition-opacity">

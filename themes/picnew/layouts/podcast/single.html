@@ -129,7 +129,7 @@
     {{ end }}
 
     <!-- Partners -->
-    {{ with index $.Site.Data.partners "partners" }}
+    {{ with index hugo.Data.partners "partners" }}
     <div class="mt-12 pt-8 border-t border-white/5">
         <h3 class="text-2xl font-bold mb-6">Partner</h3>
         <ul class="space-y-3">
@@ -145,7 +145,7 @@
 
     <!-- Credits -->
     {{ $season := .Params.season | printf "season%d" }}
-    {{ with index $.Site.Data.credits $season }}
+    {{ with index hugo.Data.credits $season }}
     <div class="mt-12 pt-8 border-t border-white/5">
         <h3 class="text-2xl font-bold mb-6">Crediti</h3>
         <ul class="space-y-3">
@@ -158,7 +158,7 @@
 
     <!-- Script / Transcript -->
     {{ $episode := .Params.number | printf "PIC%d" }}
-    {{ with index $.Site.Data.scripts $episode }}
+    {{ with index hugo.Data.scripts $episode }}
     <div class="mt-12 pt-8 border-t border-white/5">
         <button class="text-2xl font-bold mb-4 cursor-pointer flex items-center text-left w-full"
             aria-expanded="false" aria-controls="episode-script-content"

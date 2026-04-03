@@ -1,5 +1,5 @@
 {{ $episode := .Page.Params.number | printf "PIC%d" }}
-{{ $data := index $.Site.Data.scripts $episode }}
+{{ $data := index hugo.Data.scripts $episode }}
 <div class="accordion">
     <section id="show-text">
         <h2><a href="#show-text">Mostra testo dell'episodio</a></h2>
