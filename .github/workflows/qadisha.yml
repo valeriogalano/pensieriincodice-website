@@ -37,7 +37,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.152.2'
+          hugo-version: '0.159.2'
           extended: true
 
       - name: Install npm dependencies
@@ -49,6 +49,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
+          protocol: sftp
           server: pensieriincodice.it
           username: website@pensieriincodice.it
           password: ${{ secrets.FTP_PASSWORD }}
