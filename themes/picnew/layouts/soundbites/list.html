@@ -1,0 +1,182 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto">
+
+    <header class="mb-12">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">Soundbites</h1>
+        <p class="text-pod-gray text-lg">I momenti più significativi del podcast, ascoltabili direttamente.</p>
+    </header>
+
+    <audio id="sb-player" preload="none"></audio>
+
+    <div class="space-y-3">
+        {{ range where (.Site.Pages.ByDate.Reverse) "Type" "podcast" }}
+            {{ $ep := . }}
+            {{ if not .File }}{{ continue }}{{ end }}
+            {{ $base := .File.BaseFileName }}
+            {{ $sbPath := printf "assets/soundbites/%s.txt" $base }}
+            {{ if fileExists $sbPath }}
+                {{ $content := readFile $sbPath }}
+                {{ $lines := split ($content | chomp) "\n" }}
+                {{ range $idx, $line := $lines }}
+                    {{ if gt (len ($line | plainify)) 0 }}
+                        {{ $parts := split $line "\t" }}
+                        {{ if lt (len $parts) 3 }}
+                            {{ $line = replaceRE " +" " " $line }}
+                            {{ $sp := split $line " " }}
+                            {{ if ge (len $sp) 3 }}
+                                {{ $parts = slice (index $sp 0) (index $sp 1) (delimit (after 2 $sp) " ") }}
+                            {{ end }}
+                        {{ end }}
+                        {{ if ge (len $parts) 3 }}
+                            {{ $startStr := trim (index $parts 0) " " }}
+                            {{ $endStr   := trim (index $parts 1) " " }}
+                            {{ $title    := index $parts 2 }}
+                            {{ if gt (len $parts) 3 }}
+                                {{ $title = delimit (after 2 $parts) "\t" }}
+                            {{ end }}
+                            {{ $title = replace $title "\t" " " }}
+                            {{ $start    := float $startStr }}
+                            {{ $end      := float $endStr }}
+                            {{ $duration := sub $end $start }}
+                            {{ if gt $duration 0 }}
+                                {{ $startMins := math.Floor (div $start 60) }}
+                                {{ $startSecs := math.Floor (sub $start (mul $startMins 60)) }}
+                                {{ $durMins   := math.Floor (div $duration 60) }}
+                                {{ $durSecs   := math.Floor (sub $duration (mul $durMins 60)) }}
+                                {{ $sbId      := printf "sb-%s-%d" $base $idx }}
+                                {{ $audioUrl  := printf "%s%s" $ep.Site.Params.podcast.cdn_tracked_base_url $ep.Params.audio }}
+
+                                <div id="card-{{ $sbId }}" class="bg-pod-card border border-l-2 border-white/5 border-l-transparent rounded-xl p-4 hover:border-white/10 transition-all flex items-center gap-4">
+                                    <button id="{{ $sbId }}"
+                                        onclick="playSoundbite('{{ $sbId }}', '{{ $audioUrl }}', {{ $startStr }}, {{ $endStr }}, {{ $ep.Title | jsonify }}, '{{ $ep.RelPermalink }}')"
+                                        class="flex-shrink-0 w-11 h-11 bg-pod-orange hover:bg-orange-500 text-white rounded-full flex items-center justify-center transition-all hover:scale-105"
+                                        aria-label="Ascolta: {{ $title }}">
+                                        <svg class="sb-play-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                                        <svg class="sb-pause-icon hidden" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                                    </button>
+
+                                    <div class="flex-1 min-w-0">
+                                        <p class="sb-title font-semibold text-white truncate transition-colors">{{ $title }}</p>
+                                        <p class="text-sm text-pod-gray mt-0.5 flex items-center gap-2">
+                                            <span class="font-mono">{{ printf "%02.0f:%02.0f" $startMins $startSecs }}</span>
+                                            <span aria-hidden="true">·</span>
+                                            <span>{{ printf "%02.0f:%02.0f" $durMins $durSecs }} min</span>
+                                        </p>
+                                        <p class="text-xs text-pod-gray/50 mt-0.5 truncate">
+                                            #{{ $ep.Params.number }} — {{ $ep.Title }}
+                                        </p>
+                                    </div>
+
+                                    <div class="flex items-center gap-3 flex-shrink-0">
+                                        <a href="{{ $ep.RelPermalink }}"
+                                            class="text-xs text-pod-gray hover:text-pod-orange transition-colors border border-white/10 hover:border-pod-orange/30 px-3 py-1.5 rounded-full whitespace-nowrap"
+                                            aria-label="Ascolta l'episodio completo: {{ $ep.Title }}">
+                                            Episodio completo
+                                        </a>
+                                    </div>
+                                </div>
+
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </div>
+
+</div>
+
+<script>
+(function () {
+    var player = document.getElementById('sb-player');
+    var currentId = null;
+    var stopAt = null;
+
+    player.addEventListener('timeupdate', function () {
+        if (stopAt !== null && player.currentTime >= stopAt) {
+            player.pause();
+            setIdle(currentId);
+            currentId = null;
+            stopAt = null;
+        }
+    });
+
+    player.addEventListener('ended', function () {
+        if (currentId) { setIdle(currentId); }
+        currentId = null;
+        stopAt = null;
+    });
+
+    window.playSoundbite = function (id, url, start, end, epTitle, epPermalink) {
+        start = parseFloat(start);
+        end   = parseFloat(end);
+        if (epTitle && epTitle.startsWith('"') && epTitle.endsWith('"')) {
+            epTitle = epTitle.substring(1, epTitle.length - 1);
+        }
+
+        if (currentId === id && !player.paused) {
+            player.pause();
+            setIdle(id);
+            currentId = null;
+            stopAt = null;
+            return;
+        }
+
+        if (currentId && currentId !== id) { setIdle(currentId); }
+
+        var fp = document.getElementById('audio-player');
+        if (fp && !fp.paused) { fp.pause(); }
+
+        if (player.src !== url) { player.src = url; }
+
+        player.currentTime = start;
+        stopAt = end;
+        currentId = id;
+        player.play().catch(function () {});
+        setPlaying(id);
+
+        var titleEl = document.getElementById('player-title');
+        if (titleEl && epPermalink) {
+            titleEl.href = epPermalink;
+            if (epTitle) { titleEl.textContent = epTitle; titleEl.title = epTitle; }
+        }
+    };
+
+    function setPlaying(id) {
+        var btn = document.getElementById(id);
+        if (!btn) return;
+        btn.querySelector('.sb-play-icon').classList.add('hidden');
+        btn.querySelector('.sb-pause-icon').classList.remove('hidden');
+        var card = document.getElementById('card-' + id);
+        if (card) {
+            card.classList.add('sb-card-active');
+            card.classList.remove('border-l-transparent');
+            var title = card.querySelector('.sb-title');
+            if (title) { title.classList.add('text-pod-orange'); title.classList.remove('text-white'); }
+        }
+    }
+
+    function setIdle(id) {
+        var btn = document.getElementById(id);
+        if (!btn) return;
+        btn.querySelector('.sb-play-icon').classList.remove('hidden');
+        btn.querySelector('.sb-pause-icon').classList.add('hidden');
+        var card = document.getElementById('card-' + id);
+        if (card) {
+            card.classList.remove('sb-card-active');
+            card.classList.add('border-l-transparent');
+            var title = card.querySelector('.sb-title');
+            if (title) { title.classList.remove('text-pod-orange'); title.classList.add('text-white'); }
+        }
+    }
+    window.stopSoundbite = function () {
+        if (currentId) {
+            player.pause();
+            setIdle(currentId);
+            currentId = null;
+            stopAt = null;
+        }
+    };
+}());
+</script>
+{{ end }}

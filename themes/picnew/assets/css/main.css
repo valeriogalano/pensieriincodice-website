@@ -240,6 +240,15 @@ html.light .hover\:bg-white\/5:hover { background-color: rgba(0, 0, 0, 0.04); }
 /* Separatori nell'header (span w-px bg-white/10) */
 html.light .bg-white\/10 { background-color: rgba(0, 0, 0, 0.10); }
 
+/* Soundbite card attiva */
+.sb-card-active {
+    background-color: rgb(255 107 0 / 0.05);
+    border-left-color: #ff6b00;
+}
+html.light .sb-card-active {
+    background-color: rgb(255 107 0 / 0.12);
+}
+
 /* Pulsante play nel footer player: era bg-white text-pod-black */
 html.light #player-play {
     background-color: rgb(26 21 16);

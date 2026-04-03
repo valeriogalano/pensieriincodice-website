@@ -191,6 +191,7 @@
     if (miniPlayBtn) {
         miniPlayBtn.addEventListener('click', function() {
             if (audio.paused) {
+                if (window.stopSoundbite) window.stopSoundbite();
                 audio.play();
                 updatePlayIcons(pauseSvg);
                 statusEl.textContent = 'Ora in riproduzione';
@@ -210,6 +211,7 @@
     }
 
     window.playEpisode = function(url, title, image, chaptersUrl, transcriptUrl, permalink) {
+        if (window.stopSoundbite) window.stopSoundbite();
         // Remove quotes from jsonify if present
         if (title && title.startsWith('"') && title.endsWith('"')) {
             title = title.substring(1, title.length - 1);
@@ -561,8 +563,19 @@
         audio.playbackRate = parseFloat(this.value);
     });
 
+    audio.addEventListener('pause', function() {
+        updatePlayIcons(playSvg);
+        statusEl.textContent = 'In pausa';
+    });
+
+    audio.addEventListener('play', function() {
+        updatePlayIcons(pauseSvg);
+        statusEl.textContent = 'Ora in riproduzione';
+    });
+
     playBtn.addEventListener('click', function() {
         if (audio.paused) {
+            if (window.stopSoundbite) window.stopSoundbite();
             audio.play();
             updatePlayIcons(pauseSvg);
             statusEl.textContent = 'Ora in riproduzione';

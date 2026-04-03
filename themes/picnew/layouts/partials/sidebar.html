@@ -30,6 +30,16 @@
             </div>
             <span class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap overflow-hidden">Episodi</span>
         </a>
+        <a href="{{ "soundbites/" | relURL }}" aria-label="Soundbites"
+            class="flex items-center p-3 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if eq .Section "soundbites" }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
+            <div class="flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="2 12 6 6 10 18 14 6 18 18 22 12"/>
+                </svg>
+            </div>
+            <span class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap overflow-hidden">Soundbites</span>
+        </a>
         <a href="{{ "blog/" | relURL }}" aria-label="News"
             class="flex items-center p-3 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if eq .Section "blog" }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
             <div class="flex-shrink-0">
