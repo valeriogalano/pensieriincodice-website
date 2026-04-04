@@ -10,7 +10,7 @@
         <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group">
             {{ if .Params.featureImage }}
             <div class="aspect-video mb-4 rounded-xl overflow-hidden">
-                <img src="{{ .Params.featureImage }}" alt="{{ .Title }}" class="object-cover w-full h-full">
+                <img src="{{ .Params.featureImage }}" alt="{{ .Title }}" class="object-contain w-full h-full">
             </div>
             {{ end }}
             <div class="flex justify-between items-start mb-4">
