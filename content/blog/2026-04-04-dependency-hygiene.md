@@ -1,6 +1,6 @@
 ---
 title: "Dependency Hygiene"
-date: 2026-04-04T16:15:15+02:00
+date: 2026-04-04T16:23:30+02:00
 featureImage: /images/pensieriincodice-locandina.png
 categories:
   - News
@@ -14,13 +14,7 @@ draft: false
 
 *Fonte: [stitcher.io](https://stitcher.io/blog/dependency-hygiene)*
 
----
-
 Prova note
-
----
-
-## Passaggi in evidenza
 
 > other packages out there depending on something that depends on something that depends on `symfony/polyfill-mbstring`, that makes it vitually impossible to not require it. Even though I have the `mbstring` extension in all my PHP installations!
 
