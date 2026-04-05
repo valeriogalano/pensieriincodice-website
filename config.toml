@@ -276,3 +276,13 @@ home = ["HTML", "RSS", "JSON", "podcast"]
     podcast = '/:contentbasename'
   [permalinks.section]
     podcast = '/episodes/:contentbasename'
+
+[module]
+  [[module.imports]]
+    path = "github.com/valeriogalano/podcast-feed-hugo"
+    [[module.imports.mounts]]
+      source = "layouts"
+      target = "layouts"
+    [[module.imports.mounts]]
+      source = "archetypes"
+      target = "archetypes"
