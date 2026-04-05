@@ -1,14 +1,14 @@
 {{ $currentPage := . }}
-<aside class="glass-sidebar w-20 hover:w-64 transition-all duration-300 ease-in-out h-full flex flex-col items-center py-8 z-50 group" aria-label="Barra laterale di navigazione">
-    <div class="mb-12">
+<aside class="glass-sidebar w-20 hover:w-64 transition-all duration-300 ease-in-out h-full flex flex-col items-center py-4 lg:py-8 z-50 group" aria-label="Barra laterale di navigazione">
+    <div class="mb-4 lg:mb-12">
         <a href="{{ .Site.Home.RelPermalink }}" aria-label="Home — {{ .Site.Title }}">
             <img src="{{ .Site.Params.podcast.image | absURL }}" alt="" class="w-10 h-10 rounded-lg border border-pod-orange/50 group-hover:scale-110 transition-transform">
         </a>
     </div>
 
-    <nav class="flex-1 w-full space-y-4 px-4 overflow-hidden" aria-label="Navigazione principale">
+    <nav class="flex-1 w-full space-y-1 px-4 overflow-hidden" aria-label="Navigazione principale">
         <a href="{{ .Site.Home.RelPermalink }}" aria-label="Home"
-            class="flex items-center p-3 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if .IsHome }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
+            class="flex items-center p-2 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if .IsHome }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
             <div class="flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -19,7 +19,7 @@
             <span class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap overflow-hidden">Home</span>
         </a>
         <a href="{{ "episodes/" | relURL }}" aria-label="Episodi"
-            class="flex items-center p-3 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if or (eq .Section "podcast") (eq .RelPermalink "/episodes/") }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
+            class="flex items-center p-2 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if or (eq .Section "podcast") (eq .RelPermalink "/episodes/") }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
             <div class="flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -31,7 +31,7 @@
             <span class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap overflow-hidden">Episodi</span>
         </a>
         <a href="{{ "soundbites/" | relURL }}" aria-label="Soundbites"
-            class="flex items-center p-3 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if eq .Section "soundbites" }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
+            class="flex items-center p-2 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if eq .Section "soundbites" }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
             <div class="flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -41,7 +41,7 @@
             <span class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap overflow-hidden">Soundbites</span>
         </a>
         <a href="{{ "blog/" | relURL }}" aria-label="News"
-            class="flex items-center p-3 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if eq .Section "blog" }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
+            class="flex items-center p-2 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if eq .Section "blog" }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
             <div class="flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -52,7 +52,7 @@
             <span class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap overflow-hidden">News</span>
         </a>
         <a href="{{ "fonti/" | relURL }}" aria-label="Fonti"
-            class="flex items-center p-3 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if and .File (eq .File.Path "fonti/_index.md") }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
+            class="flex items-center p-2 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if and .File (eq .File.Path "fonti/_index.md") }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
             <div class="flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -64,7 +64,7 @@
             <span class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap overflow-hidden">Fonti</span>
         </a>
         <a href="{{ "mission/" | relURL }}" aria-label="Mission"
-            class="flex items-center p-3 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if and .File (eq .File.Path "mission/_index.md") }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
+            class="flex items-center p-2 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if and .File (eq .File.Path "mission/_index.md") }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
             <div class="flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -76,7 +76,7 @@
             <span class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap overflow-hidden">Mission</span>
         </a>
         <a href="{{ "autore/" | relURL }}" aria-label="Autore"
-            class="flex items-center p-3 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if and .File (eq .File.Path "autore/_index.md") }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
+            class="flex items-center p-2 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if and .File (eq .File.Path "autore/_index.md") }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
             <div class="flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -87,7 +87,7 @@
             <span class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap overflow-hidden">Autore</span>
         </a>
         <a href="{{ "sostieni/" | relURL }}" aria-label="Sostieni il podcast"
-            class="flex items-center p-3 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if and .File (eq .File.Path "sostieni/_index.md") }}active-link text-white{{ else }}text-pod-orange hover:text-pod-orange{{ end }}">
+            class="flex items-center p-2 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if and .File (eq .File.Path "sostieni/_index.md") }}active-link text-white{{ else }}text-pod-orange hover:text-pod-orange{{ end }}">
             <div class="flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -97,7 +97,7 @@
             <span class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap overflow-hidden">Sostieni</span>
         </a>
         <a href="{{ "contatti/" | relURL }}" aria-label="Contatti"
-        class="flex items-center p-3 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if and .File (eq .File.Path "contatti/_index.md") }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
+        class="flex items-center p-2 rounded-lg hover:bg-white/5 transition-all duration-300 {{ if and .File (eq .File.Path "contatti/_index.md") }}active-link text-white{{ else }}text-pod-gray hover:text-white{{ end }}">
         <div class="flex-shrink-0">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -109,9 +109,9 @@
         </a>
     </nav>
 
-    <div class="mt-auto w-full px-4 space-y-4 overflow-hidden">
+    <div class="mt-auto w-full px-4 space-y-1 overflow-hidden">
         <a href="{{ "sostieni/" | relURL }}" aria-label="Sostieni il podcast"
-            class="w-full flex items-center p-3 text-pod-orange hover:bg-pod-orange/10 rounded-lg transition-all duration-300 {{ if and .File (eq .File.Path "sostieni/_index.md") }}bg-pod-orange/10{{ end }}">
+            class="w-full flex items-center p-2 text-pod-orange hover:bg-pod-orange/10 rounded-lg transition-all duration-300 {{ if and .File (eq .File.Path "sostieni/_index.md") }}bg-pod-orange/10{{ end }}">
             <div class="flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
