@@ -1,6 +1,6 @@
 <div align="center">
   <img src="static/images/pensieriincodice-locandina.png" alt="Logo Progetto" width="150"/>
-  <h1>Pensieri In Codice — Website</h1>
+  <h1>Pensieri in codice — Website</h1>
   <p>Sito web del podcast, costruito con Hugo.</p>
   <p>
     <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance"/>
