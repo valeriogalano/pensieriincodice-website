@@ -1,7 +1,7 @@
 ---
 title: "Le nuove statistiche di Pensieri in codice"
 date: 2024-01-18T10:00:00+02:00
-featureImage: http://cdn.pensieriincodice.it/images/nuove-statistiche-di-pensieri-in-codice-feature.jpg
+featureImage: https://cdn.pensieriincodice.it/images/nuove-statistiche-di-pensieri-in-codice-feature.jpg
 image: images/nuove-statistiche-di-pensieri-in-codice-thumbnail.jpg
 tags:
 - Statistiche
