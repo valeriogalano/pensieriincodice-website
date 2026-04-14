@@ -1,7 +1,7 @@
 ---
 title: "Il feed di Pensieri in codice senza tracciamento o pubblicità"
 date: 2024-02-07T10:00:00+02:00
-featureImage: http://cdn.pensieriincodice.it/images/feed-senza-tracciamento-feature.jpg
+featureImage: https://cdn.pensieriincodice.it/images/feed-senza-tracciamento-feature.jpg
 image: images/feed-senza-tracciamento-thumbnail.jpg
 tags:
 - Feed
