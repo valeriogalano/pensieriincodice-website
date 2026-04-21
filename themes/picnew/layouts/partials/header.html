@@ -177,14 +177,14 @@
 
 <script>
 (function() {
-    var dropdowns = [
+    var dropdownConfigs = [
         { toggleId: 'platforms-dropdown-toggle', dropdownId: 'platforms-dropdown', chevronId: 'platforms-chevron', containerId: 'platforms-dropdown-container' },
         { toggleId: 'social-dropdown-toggle',    dropdownId: 'social-dropdown',    chevronId: 'social-chevron',    containerId: 'social-dropdown-container'    },
         { toggleId: 'theme-toggle',              dropdownId: 'theme-dropdown',     chevronId: 'theme-chevron',     containerId: 'theme-dropdown-container'     },
     ];
 
     function closeAll(except) {
-        dropdowns.forEach(function(d) {
+        dropdownConfigs.forEach(function(d) {
             if (d.dropdownId === except) return;
             var el = document.getElementById(d.dropdownId);
             var ch = document.getElementById(d.chevronId);
@@ -195,46 +195,64 @@
         });
     }
 
-    dropdowns.forEach(function(d) {
-        var toggle   = document.getElementById(d.toggleId);
-        var dropdown = document.getElementById(d.dropdownId);
-        var chevron  = document.getElementById(d.chevronId);
-        if (!toggle || !dropdown) return;
-
-        toggle.addEventListener('click', function(e) {
-            e.stopPropagation();
-            var isOpen = !dropdown.classList.contains('hidden');
-            closeAll(d.dropdownId);
-            dropdown.classList.toggle('hidden', isOpen);
-            toggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
-            if (chevron) chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
-        });
-
-        document.addEventListener('click', function(e) {
+    function handleOutsideClick(e) {
+        dropdownConfigs.forEach(function(d) {
             var container = document.getElementById(d.containerId);
+            var dropdown  = document.getElementById(d.dropdownId);
+            var toggle    = document.getElementById(d.toggleId);
+            var chevron   = document.getElementById(d.chevronId);
+            if (!dropdown || !toggle) return;
             if (container && !container.contains(e.target)) {
                 dropdown.classList.add('hidden');
                 toggle.setAttribute('aria-expanded', 'false');
                 if (chevron) chevron.style.transform = '';
             }
         });
+    }
 
-        // Chiudi con Escape
-        toggle.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                dropdown.classList.add('hidden');
-                toggle.setAttribute('aria-expanded', 'false');
-                if (chevron) chevron.style.transform = '';
-            }
+    function init() {
+        dropdownConfigs.forEach(function(d) {
+            var toggle   = document.getElementById(d.toggleId);
+            var dropdown = document.getElementById(d.dropdownId);
+            var chevron  = document.getElementById(d.chevronId);
+            if (!toggle || !dropdown) return;
+            if (toggle.dataset.dropdownInit) return;
+            toggle.dataset.dropdownInit = '1';
+
+            toggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                var isOpen = !dropdown.classList.contains('hidden');
+                closeAll(d.dropdownId);
+                dropdown.classList.toggle('hidden', isOpen);
+                toggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+                if (chevron) chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+            });
+
+            toggle.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    dropdown.classList.add('hidden');
+                    toggle.setAttribute('aria-expanded', 'false');
+                    if (chevron) chevron.style.transform = '';
+                }
+            });
         });
-    });
+
+        document.removeEventListener('click', handleOutsideClick);
+        document.addEventListener('click', handleOutsideClick);
+    }
+
+    document.addEventListener('turbo:load', init);
+    document.addEventListener('DOMContentLoaded', init);
 })();
 
 window.setTheme = function(pref) {
     localStorage.setItem('pic_theme', pref);
     applyTheme(pref);
-    document.getElementById('theme-dropdown').classList.add('hidden');
-    document.getElementById('theme-chevron').style.transform = '';
-    document.getElementById('theme-toggle').setAttribute('aria-expanded', 'false');
+    var d = document.getElementById('theme-dropdown');
+    var c = document.getElementById('theme-chevron');
+    var t = document.getElementById('theme-toggle');
+    if (d) d.classList.add('hidden');
+    if (c) c.style.transform = '';
+    if (t) t.setAttribute('aria-expanded', 'false');
 };
 </script>
