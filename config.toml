@@ -183,6 +183,11 @@ name = "NextDNS"
 url = "https://nextdns.io/?from=pmy29ab3"
 
 [[params.support.special_thanks]]
+name = "Patrizia Giannantoni"
+url = "#"
+note = "Revisione contenuti"
+
+[[params.support.special_thanks]]
 name = "Simone Pizzi"
 url = "https://simonepizzi.runtimeradio.it/"
 note = "Design di questo sito"
