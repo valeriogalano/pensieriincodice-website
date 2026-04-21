@@ -76,30 +76,28 @@
             </div>
         </div>
 
-        {{/* Dropdown "Segui": raccoglie RSS, piattaforme, social, community, email */}}
-        <div class="relative" id="follow-dropdown-container">
-            <button id="follow-dropdown-toggle"
+        {{- $rss      := where .Site.Params.platforms "type" "rss" -}}
+        {{- $podcasts := where .Site.Params.platforms "type" "podcast" -}}
+        {{- $socials  := where .Site.Params.social "type" "social" -}}
+        {{- $community := where .Site.Params.social "type" "community" -}}
+
+        {{/* Dropdown Piattaforme */}}
+        {{ if or $rss $podcasts }}
+        <div class="relative" id="platforms-dropdown-container">
+            <button id="platforms-dropdown-toggle"
                 class="flex items-center gap-1.5 text-pod-gray hover:text-pod-orange transition-colors flex-shrink-0 text-sm font-mono"
-                aria-label="Segui il podcast su..." title="Segui su..." aria-expanded="false" aria-controls="follow-dropdown" aria-haspopup="true">
+                aria-label="Ascolta su..." title="Ascolta su..." aria-expanded="false" aria-controls="platforms-dropdown" aria-haspopup="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+                    <path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"/><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"/><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"/><path d="M19.1 4.9C23 8.8 23 15.2 19.1 19.1"/>
                 </svg>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="follow-chevron" aria-hidden="true">
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="platforms-chevron" aria-hidden="true">
                     <polyline points="6 9 12 15 18 9"/>
                 </svg>
             </button>
-
-            <div id="follow-dropdown" role="menu"
+            <div id="platforms-dropdown" role="menu"
                 class="hidden absolute right-0 top-full mt-2 w-52 bg-pod-card border border-white/10 rounded-xl shadow-2xl shadow-black/40 py-2 z-50">
-
-                {{- $rss      := where .Site.Params.platforms "type" "rss" -}}
-                {{- $podcasts := where .Site.Params.platforms "type" "podcast" -}}
-                {{- $socials  := where .Site.Params.social "type" "social" -}}
-                {{- $community := where .Site.Params.social "type" "community" -}}
-
-                {{/* RSS */}}
                 {{ range $rss }}
                 {{ $url := .url }}
                 {{ if not (hasPrefix .url "http") }}{{ $url = .url | relURL }}{{ end }}
@@ -111,51 +109,57 @@
                     <span>{{ .name }}</span>
                 </a>
                 {{ end }}
-
-                {{/* Separatore RSS / Piattaforme */}}
                 {{ if and $rss $podcasts }}<div class="my-1 border-t border-white/5"></div>{{ end }}
-
-                {{/* Piattaforme podcast */}}
                 {{ range $podcasts }}
                 {{ $parsed := urls.Parse .url }}
                 <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}"
                     class="flex items-center gap-3 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap" style="padding-left: 1rem; padding-right: 2rem">
                     <img src="https://www.google.com/s2/favicons?domain={{ $parsed.Host }}&sz=32"
-                        alt="{{ .name }}" width="15" height="15"
-                        class="w-[15px] h-[15px] flex-shrink-0">
+                        alt="{{ .name }}" width="15" height="15" class="w-[15px] h-[15px] flex-shrink-0">
                     <span>{{ .name }}</span>
                 </a>
                 {{ end }}
+            </div>
+        </div>
+        {{ end }}
 
-                {{/* Separatore Piattaforme / Social */}}
-                {{ if and (or $rss $podcasts) (or $socials $community) }}<div class="my-1 border-t border-white/5"></div>{{ end }}
-
-                {{/* Social */}}
+        {{/* Dropdown Social/Contatti */}}
+        {{ if or $socials $community .Site.Params.podcast.email }}
+        <div class="relative" id="social-dropdown-container">
+            <button id="social-dropdown-toggle"
+                class="flex items-center gap-1.5 text-pod-gray hover:text-pod-orange transition-colors flex-shrink-0 text-sm font-mono"
+                aria-label="Seguici su..." title="Seguici su..." aria-expanded="false" aria-controls="social-dropdown" aria-haspopup="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="social-chevron" aria-hidden="true">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div id="social-dropdown" role="menu"
+                class="hidden absolute right-0 top-full mt-2 w-52 bg-pod-card border border-white/10 rounded-xl shadow-2xl shadow-black/40 py-2 z-50">
                 {{ range $socials }}
                 {{ $parsed := urls.Parse .url }}
                 <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}"
                     class="flex items-center gap-3 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap" style="padding-left: 1rem; padding-right: 2rem">
                     <img src="https://www.google.com/s2/favicons?domain={{ $parsed.Host }}&sz=32"
-                        alt="{{ .name }}" width="15" height="15"
-                        class="w-[15px] h-[15px] flex-shrink-0">
+                        alt="{{ .name }}" width="15" height="15" class="w-[15px] h-[15px] flex-shrink-0">
                     <span>{{ .name }}</span>
                 </a>
                 {{ end }}
-
-                {{/* Community */}}
                 {{ range $community }}
                 {{ $parsed := urls.Parse .url }}
                 <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}"
                     class="flex items-center gap-3 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap" style="padding-left: 1rem; padding-right: 2rem">
                     <img src="https://www.google.com/s2/favicons?domain={{ $parsed.Host }}&sz=32"
-                        alt="{{ .name }}" width="15" height="15"
-                        class="w-[15px] h-[15px] flex-shrink-0">
+                        alt="{{ .name }}" width="15" height="15" class="w-[15px] h-[15px] flex-shrink-0">
                     <span>{{ .name }}</span>
                 </a>
                 {{ end }}
-
-                {{/* Separatore / Email */}}
-                {{ if .Site.Params.podcast.email }}<div class="my-1 border-t border-white/5"></div>
+                {{ if .Site.Params.podcast.email }}
+                {{ if or $socials $community }}<div class="my-1 border-t border-white/5"></div>{{ end }}
                 <a href="mailto:{{ .Site.Params.podcast.email }}" title="Email"
                     class="flex items-center gap-3 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap" style="padding-left: 1rem; padding-right: 2rem">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
@@ -167,14 +171,16 @@
                 {{ end }}
             </div>
         </div>
+        {{ end }}
     </div>
 </header>
 
 <script>
 (function() {
     var dropdowns = [
-        { toggleId: 'follow-dropdown-toggle', dropdownId: 'follow-dropdown', chevronId: 'follow-chevron', containerId: 'follow-dropdown-container' },
-        { toggleId: 'theme-toggle',           dropdownId: 'theme-dropdown',  chevronId: 'theme-chevron',  containerId: 'theme-dropdown-container'  },
+        { toggleId: 'platforms-dropdown-toggle', dropdownId: 'platforms-dropdown', chevronId: 'platforms-chevron', containerId: 'platforms-dropdown-container' },
+        { toggleId: 'social-dropdown-toggle',    dropdownId: 'social-dropdown',    chevronId: 'social-chevron',    containerId: 'social-dropdown-container'    },
+        { toggleId: 'theme-toggle',              dropdownId: 'theme-dropdown',     chevronId: 'theme-chevron',     containerId: 'theme-dropdown-container'     },
     ];
 
     function closeAll(except) {

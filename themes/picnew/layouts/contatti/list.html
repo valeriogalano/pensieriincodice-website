@@ -1,47 +1,9 @@
 {{ define "main" }}
-{{- $rss      := where .Site.Params.platforms "type" "rss" -}}
-{{- $podcasts := where .Site.Params.platforms "type" "podcast" -}}
 {{- $socials  := where .Site.Params.social "type" "social" -}}
 {{- $community := where .Site.Params.social "type" "community" -}}
 <div class="max-w-2xl mx-auto">
     <h1 class="text-4xl font-extrabold tracking-tight mb-4">Contatti</h1>
     <p class="text-pod-gray mb-12">Tutti i modi per entrare in contatto, seguire il podcast e far parte della community.</p>
-
-    {{/* Aggregatori podcast */}}
-    {{ if or $rss $podcasts }}
-    <section class="mb-10">
-        <h2 class="text-xs font-bold uppercase tracking-widest text-pod-orange mb-4">Ascolta il podcast</h2>
-        <div class="space-y-3">
-            {{ range $rss }}
-            {{ $url := .url }}
-            {{ if not (hasPrefix .url "http") }}{{ $url = .url | relURL }}{{ end }}
-            <a href="{{ $url }}"
-                class="flex items-center space-x-4 p-4 bg-pod-card border border-white/5 rounded-xl hover:border-pod-orange/30 transition-all group">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="text-pod-gray group-hover:text-pod-orange transition-colors flex-shrink-0">
-                    <path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/>
-                </svg>
-                <div>
-                    <div class="font-semibold group-hover:text-pod-orange transition-colors">{{ .name }}</div>
-                    <div class="text-xs text-pod-gray">Feed RSS del podcast</div>
-                </div>
-            </a>
-            {{ end }}
-            {{ range $podcasts }}
-            {{ $parsed := urls.Parse .url }}
-            <a href="{{ .url }}" target="_blank" rel="noopener"
-                class="flex items-center space-x-4 p-4 bg-pod-card border border-white/5 rounded-xl hover:border-pod-orange/30 transition-all group">
-                <img src="https://www.google.com/s2/favicons?domain={{ $parsed.Host }}&sz=32" alt="{{ .name }}" class="w-6 h-6 flex-shrink-0">
-                <div>
-                    <div class="font-semibold group-hover:text-pod-orange transition-colors">{{ .name }}</div>
-                    <div class="text-xs text-pod-gray">{{ .url }}</div>
-                </div>
-            </a>
-            {{ end }}
-        </div>
-    </section>
-    {{ end }}
 
     {{/* Social */}}
     {{ if $socials }}
