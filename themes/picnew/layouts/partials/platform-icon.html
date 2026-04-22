@@ -1,0 +1,4 @@
+{{- $name := .name -}}
+{{- $class := .class | default "w-6 h-6 flex-shrink-0" -}}
+{{- $letter := substr $name 0 1 | upper -}}
+<span class="{{ $class }} rounded flex items-center justify-center bg-white/10 text-white font-bold text-xs flex-shrink-0" aria-hidden="true">{{ $letter }}</span>

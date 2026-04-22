@@ -11,10 +11,9 @@
         <h2 class="text-xs font-bold uppercase tracking-widest text-pod-orange mb-4">Social</h2>
         <div class="space-y-3">
             {{ range $socials }}
-            {{ $parsed := urls.Parse .url }}
             <a href="{{ .url }}" target="_blank" rel="noopener"
                class="flex items-center space-x-4 p-4 bg-pod-card border border-white/5 rounded-xl hover:border-pod-orange/30 transition-all group">
-                <img src="https://www.google.com/s2/favicons?domain={{ $parsed.Host }}&sz=32" alt="{{ .name }}" class="w-6 h-6 flex-shrink-0">
+                {{ partial "platform-icon.html" (dict "name" .name "class" "w-6 h-6") }}
                 <div>
                     <div class="font-semibold group-hover:text-pod-orange transition-colors">{{ .name }}</div>
                     <div class="text-xs text-pod-gray">{{ .url }}</div>
@@ -31,10 +30,9 @@
         <h2 class="text-xs font-bold uppercase tracking-widest text-pod-orange mb-4">Community</h2>
         <div class="space-y-3">
             {{ range $community }}
-            {{ $parsed := urls.Parse .url }}
             <a href="{{ .url }}" target="_blank" rel="noopener"
                 class="flex items-center space-x-4 p-4 bg-pod-card border border-white/5 rounded-xl hover:border-pod-orange/30 transition-all group">
-                <img src="https://www.google.com/s2/favicons?domain={{ $parsed.Host }}&sz=32" alt="{{ .name }}" class="w-6 h-6 flex-shrink-0">
+                {{ partial "platform-icon.html" (dict "name" .name "class" "w-6 h-6") }}
                 <div>
                     <div class="font-semibold group-hover:text-pod-orange transition-colors">{{ .name }}</div>
                     <div class="text-xs text-pod-gray">{{ .url }}</div>
