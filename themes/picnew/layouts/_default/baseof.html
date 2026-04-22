@@ -274,8 +274,10 @@
             if (e.target.closest('#mobile-menu-toggle')) openMobileMenu();
         });
 
-        document.getElementById('mobile-menu-overlay').addEventListener('click', closeMobileMenu);
-        document.getElementById('mobile-menu-close').addEventListener('click', closeMobileMenu);
+        var mobileOverlay = document.getElementById('mobile-menu-overlay');
+        if (mobileOverlay) mobileOverlay.addEventListener('click', closeMobileMenu);
+        var mobileClose = document.getElementById('mobile-menu-close');
+        if (mobileClose) mobileClose.addEventListener('click', closeMobileMenu);
         document.querySelectorAll('.mobile-nav-link').forEach(function(link) {
             link.addEventListener('click', closeMobileMenu);
         });
