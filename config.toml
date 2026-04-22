@@ -282,6 +282,17 @@ home = ["HTML", "RSS", "JSON", "podcast"]
   [permalinks.section]
     podcast = '/episodes/:contentbasename'
 
+[server]
+  [[server.headers]]
+    for = "/fonts/*"
+    [server.headers.values]
+      "Access-Control-Allow-Origin" = "*"
+      "Cache-Control" = "public, max-age=31536000"
+  [[server.headers]]
+    for = "/js/*"
+    [server.headers.values]
+      "Cache-Control" = "public, max-age=31536000"
+
 [module]
   [[module.imports]]
     path = "github.com/valeriogalano/podcast-feed-hugo"
