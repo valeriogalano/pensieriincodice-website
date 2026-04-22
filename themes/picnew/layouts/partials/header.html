@@ -83,7 +83,7 @@
 
         {{/* Dropdown Piattaforme */}}
         {{ if or $rss $podcasts }}
-        <div class="relative" id="platforms-dropdown-container">
+        <div class="relative hidden lg:block" id="platforms-dropdown-container">
             <button id="platforms-dropdown-toggle"
                 class="flex items-center gap-1.5 text-pod-gray hover:text-pod-orange transition-colors flex-shrink-0 text-sm font-mono"
                 aria-label="Ascolta su..." title="Ascolta su..." aria-expanded="false" aria-controls="platforms-dropdown" aria-haspopup="true">
@@ -125,7 +125,7 @@
 
         {{/* Dropdown Social/Contatti */}}
         {{ if or $socials $community .Site.Params.podcast.email }}
-        <div class="relative" id="social-dropdown-container">
+        <div class="relative hidden lg:block" id="social-dropdown-container">
             <button id="social-dropdown-toggle"
                 class="flex items-center gap-1.5 text-pod-gray hover:text-pod-orange transition-colors flex-shrink-0 text-sm font-mono"
                 aria-label="Seguici su..." title="Seguici su..." aria-expanded="false" aria-controls="social-dropdown" aria-haspopup="true">
