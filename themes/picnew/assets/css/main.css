@@ -24,6 +24,10 @@ html.light {
 html.light ::-webkit-scrollbar-thumb { background: #c8bdb4; }
 
 /* ===== GLASS SIDEBAR ===== */
+.glass-sidebar:hover nav {
+    overflow-y: auto;
+}
+
 .glass-sidebar {
     background: rgba(20, 20, 20, 0.85);
     backdrop-filter: blur(12px);
