@@ -9,3 +9,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Replace http with https in blog featureImage URLs
+- Restore accidentally deleted files
+- Make desktop sidebar and header dropdowns scrollable on short viewports
