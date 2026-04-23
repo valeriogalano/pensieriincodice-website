@@ -97,7 +97,7 @@
                 </svg>
             </button>
             <div id="platforms-dropdown" role="menu"
-                class="hidden absolute right-0 top-full mt-2 w-52 bg-pod-card border border-white/10 rounded-xl shadow-2xl shadow-black/40 py-2 z-50">
+                class="hidden absolute right-0 top-full mt-2 w-52 bg-pod-card border border-white/10 rounded-xl shadow-2xl shadow-black/40 py-2 z-50 max-h-[calc(100vh-5rem)] overflow-y-auto">
                 {{ range $rss }}
                 {{ $url := .url }}
                 {{ if not (hasPrefix .url "http") }}{{ $url = .url | relURL }}{{ end }}
@@ -137,7 +137,7 @@
                 </svg>
             </button>
             <div id="social-dropdown" role="menu"
-                class="hidden absolute right-0 top-full mt-2 w-52 bg-pod-card border border-white/10 rounded-xl shadow-2xl shadow-black/40 py-2 z-50">
+                class="hidden absolute right-0 top-full mt-2 w-52 bg-pod-card border border-white/10 rounded-xl shadow-2xl shadow-black/40 py-2 z-50 max-h-[calc(100vh-5rem)] overflow-y-auto">
                 {{ range $socials }}
                 <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}"
                     class="flex items-center gap-3 py-2 text-sm text-pod-gray hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap" style="padding-left: 1rem; padding-right: 2rem">
