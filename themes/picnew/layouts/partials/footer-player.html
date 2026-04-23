@@ -162,6 +162,8 @@
     let currentChapters = [];
     let currentTranscript = [];
     let currentTranscriptIndex = -1;
+    let activeChaptersUrl = null;
+    let activeTranscriptUrl = null;
 
     const collapseBtn = document.getElementById('player-collapse-btn');
     const miniPlayBtn = document.getElementById('player-mini-play');
@@ -260,6 +262,7 @@
         }
 
         // Load chapters if available
+        activeChaptersUrl = chaptersUrl || null;
         if (chaptersUrl) {
             fetch(chaptersUrl)
                 .then(response => response.json())
@@ -279,6 +282,7 @@
         }
 
         // Load transcript if available
+        activeTranscriptUrl = transcriptUrl || null;
         if (transcriptUrl) {
             fetch(transcriptUrl)
                 .then(response => response.text())
@@ -431,15 +435,24 @@
                 audio.playbackRate = state.playbackRate;
             }
 
-            if (state.chaptersUrl) {
-                fetch(state.chaptersUrl)
+            // Fall back to playlist data if saved state is missing chapter/transcript URLs
+            const playlist = window.__playlist || [];
+            const matchedEp = playlist.find(ep => state.url && state.url.includes(ep.audio));
+            const chaptersUrl = state.chaptersUrl || (matchedEp && matchedEp.chapters) || null;
+            const transcriptUrl = state.transcriptUrl || (matchedEp && matchedEp.transcript) || null;
+            activeChaptersUrl = chaptersUrl;
+            activeTranscriptUrl = transcriptUrl;
+
+            if (chaptersUrl) {
+                fetch(chaptersUrl)
                     .then(response => response.json())
                     .then(data => {
                         if (data && data.chapters) renderChapters(data.chapters);
-                    });
+                    })
+                    .catch(() => {});
             }
-            if (state.transcriptUrl) {
-                fetch(state.transcriptUrl)
+            if (transcriptUrl) {
+                fetch(transcriptUrl)
                     .then(response => response.text())
                     .then(text => renderTranscript(parseSRT(text)))
                     .catch(() => {});
@@ -476,6 +489,9 @@
 
             audio.src = ep.audio;
             audio.load();
+
+            activeChaptersUrl = ep.chapters || null;
+            activeTranscriptUrl = ep.transcript || null;
 
             if (ep.chapters) {
                 fetch(ep.chapters)
@@ -553,8 +569,8 @@
             currentTime: audio.currentTime,
             shouldPlay: !audio.paused,
             playbackRate: audio.playbackRate,
-            chaptersUrl: localStorage.getItem('pic_player_state') ? JSON.parse(localStorage.getItem('pic_player_state')).chaptersUrl : null,
-            transcriptUrl: localStorage.getItem('pic_player_state') ? JSON.parse(localStorage.getItem('pic_player_state')).transcriptUrl : null
+            chaptersUrl: activeChaptersUrl,
+            transcriptUrl: activeTranscriptUrl
         };
         localStorage.setItem('pic_player_state', JSON.stringify(state));
     }, 2000);
