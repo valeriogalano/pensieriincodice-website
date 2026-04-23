@@ -1,3 +1,0 @@
-- At the end of the task, execute hugo and verify that it compiles successfully.
-- If needed run `npm install` to install dependencies.
-- 
