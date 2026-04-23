@@ -12,10 +12,10 @@
             <img src="{{ . }}" alt="{{ $.Title }}" class="object-contain w-full h-full">
         </div>
         {{ end }}
-        {{ with .Params.tags }}
+        {{ with .GetTerms "tags" }}
         <div class="flex flex-wrap justify-center gap-2 mb-8">
             {{ range . }}
-            <span class="text-xs bg-white/5 hover:bg-pod-orange/20 px-3 py-1 rounded-full transition-colors border border-white/5 text-pod-gray">#{{ . }}</span>
+            <a href="{{ .Permalink }}" class="text-xs bg-white/5 hover:bg-pod-orange/20 px-3 py-1 rounded-full transition-colors border border-white/5 text-pod-gray">#{{ .Title | lower }}</a>
             {{ end }}
         </div>
         {{ end }}

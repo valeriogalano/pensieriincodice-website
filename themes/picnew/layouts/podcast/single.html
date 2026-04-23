@@ -35,11 +35,10 @@
         </div>
         <h1 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight leading-tight">{{ .Title }}</h1>
 
-        {{ with .Params.tags }}
+        {{ with .GetTerms "tags" }}
         <div class="flex flex-wrap justify-center gap-2 mb-8">
             {{ range . }}
-            <a href="{{ printf "/tags/%s/" (. | urlize) | relURL }}"
-                class="text-xs bg-white/5 hover:bg-pod-orange/20 px-3 py-1 rounded-full transition-colors border border-white/5 text-pod-gray">#{{ . }}</a>
+            <a href="{{ .Permalink }}" class="text-xs bg-white/5 hover:bg-pod-orange/20 px-3 py-1 rounded-full transition-colors border border-white/5 text-pod-gray">#{{ .Title | lower }}</a>
             {{ end }}
         </div>
         {{ end }}

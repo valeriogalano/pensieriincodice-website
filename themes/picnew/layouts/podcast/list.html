@@ -35,8 +35,8 @@
             <p class="text-sm text-pod-gray mb-6 line-clamp-2">{{ .Summary }}</p>
             <div class="flex items-center justify-between mt-auto">
                 <div class="flex space-x-2">
-                    {{ range first 2 (.Params.tags | default slice) }}
-                    <span class="text-[10px] bg-white/5 px-2 py-1 rounded">#{{ . }}</span>
+                    {{ range first 2 (.GetTerms "tags") }}
+                    <a href="{{ .Permalink }}" class="text-[10px] bg-white/5 px-2 py-1 rounded hover:text-pod-orange transition-colors">#{{ .Title | lower }}</a>
                     {{ end }}
                 </div>
                 <div class="flex items-center space-x-3">
