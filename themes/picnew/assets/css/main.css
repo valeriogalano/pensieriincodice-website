@@ -253,6 +253,34 @@ html.light .prose blockquote {
     }
 }
 
+/* ===== MOBILE LANDSCAPE (< 1024px, orientamento orizzontale) ===== */
+@media (max-width: 1023px) and (orientation: landscape) {
+    #footer-player-container footer {
+        padding: 0.4rem 1rem;
+        min-height: auto;
+    }
+    .player-main-row { flex-direction: row; align-items: center; flex-wrap: nowrap; }
+    .player-info-col { width: auto; flex: 1; }
+    .player-controls-col { width: auto; flex: 1; margin-top: 0; padding: 0 0.5rem; }
+    .player-right-col { width: auto; margin-top: 0; justify-content: flex-end; }
+    #player-image-container { width: 2rem !important; height: 2rem !important; }
+
+    /* Expanded player in landscape: cover a sinistra, controlli a destra */
+    #player-expanded {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #player-expanded > div:nth-child(3) { /* cover */
+        width: 35%;
+        padding: 0.5rem;
+    }
+    #player-expanded > div:nth-child(3) .w-48 {
+        width: 100%;
+        height: auto;
+        max-width: 140px;
+    }
+}
+
 /* ============================= */
 /* ===== PLAYER ENHANCEMENTS ==== */
 /* ============================= */
