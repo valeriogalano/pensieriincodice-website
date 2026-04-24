@@ -176,9 +176,14 @@
                 <!-- Chapters will be injected here -->
             </div>
         </div>
-        <div id="player-transcript-container" class="hidden w-full mt-4 max-h-48 overflow-y-auto bg-pod-black/50 rounded-lg p-4 scrollbar-thin scrollbar-thumb-pod-orange" aria-live="polite" aria-label="Trascrizione dell'episodio">
-            <h6 class="text-xs font-bold text-pod-gray uppercase mb-2">Trascrizione</h6>
-            <div id="player-transcript-list" class="space-y-1">
+        <div id="player-transcript-container" class="hidden w-full mt-4 bg-pod-black/50 rounded-lg p-4" aria-live="polite" aria-label="Trascrizione dell'episodio">
+            <div class="flex items-center gap-3 mb-2">
+                <h6 class="text-xs font-bold text-pod-gray uppercase flex-shrink-0">Trascrizione</h6>
+                <input id="player-transcript-search" type="search" placeholder="Cerca…"
+                    class="flex-1 bg-white/5 border border-white/10 rounded px-2 py-0.5 text-[11px] text-white placeholder-pod-gray focus:outline-none focus:border-pod-orange transition-colors"
+                    aria-label="Cerca nella trascrizione">
+            </div>
+            <div id="player-transcript-list" class="space-y-1 max-h-40 overflow-y-auto scrollbar-thin scrollbar-thumb-pod-orange">
                 <!-- Transcript will be injected here -->
             </div>
         </div>
@@ -217,6 +222,7 @@
     const toggleBookmarksBtn = document.getElementById('toggle-bookmarks');
     const transcriptContainer = document.getElementById('player-transcript-container');
     const transcriptList = document.getElementById('player-transcript-list');
+    const transcriptSearch = document.getElementById('player-transcript-search');
     const toggleTranscriptBtn = document.getElementById('toggle-transcript');
     const chapterPrevBtn = document.getElementById('player-chapter-prev');
     const chapterNextBtn = document.getElementById('player-chapter-next');
@@ -692,25 +698,55 @@
         return segments;
     }
 
+    function highlightText(text, query) {
+        if (!query) return text;
+        const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        return text.replace(new RegExp('(' + escaped + ')', 'gi'), '<mark class="bg-pod-orange/40 text-white rounded px-0.5">$1</mark>');
+    }
+
+    function filterTranscript(query) {
+        const items = transcriptList.querySelectorAll('[data-transcript-index]');
+        const q = query.trim().toLowerCase();
+        items.forEach(function(div) {
+            const seg = currentTranscript[parseInt(div.dataset.transcriptIndex, 10)];
+            if (!seg) return;
+            const matches = !q || seg.text.toLowerCase().includes(q);
+            div.classList.toggle('hidden', !matches);
+            const textNode = div.querySelector('.transcript-text');
+            if (textNode) textNode.innerHTML = matches && q ? highlightText(seg.text, query) : seg.text;
+        });
+    }
+
     function renderTranscript(segments) {
         currentTranscript = segments;
         currentTranscriptIndex = -1;
         transcriptList.innerHTML = '';
+        if (transcriptSearch) transcriptSearch.value = '';
         segments.forEach((seg, index) => {
             const div = document.createElement('div');
             div.className = 'px-2 py-1 rounded cursor-pointer hover:bg-white/10 transition-colors text-[11px] leading-relaxed text-pod-gray';
             div.dataset.transcriptIndex = index;
             div.onclick = () => { audio.currentTime = seg.start; if (audio.paused) audio.play(); };
-            div.innerHTML = `<span class="text-pod-orange font-mono mr-2 text-[9px]">${formatTime(seg.start)}</span>${seg.text}`;
+            div.innerHTML = `<span class="text-pod-orange font-mono mr-2 text-[9px]">${formatTime(seg.start)}</span><span class="transcript-text">${seg.text}</span>`;
             transcriptList.appendChild(div);
         });
         toggleTranscriptBtn.classList.remove('hidden');
+    }
+
+    if (transcriptSearch) {
+        transcriptSearch.addEventListener('input', function() {
+            filterTranscript(this.value);
+        });
+        transcriptSearch.addEventListener('keydown', function(e) {
+            e.stopPropagation();
+        });
     }
 
     function hideTranscript() {
         currentTranscript = [];
         currentTranscriptIndex = -1;
         transcriptList.innerHTML = '';
+        if (transcriptSearch) transcriptSearch.value = '';
         transcriptContainer.classList.add('hidden');
         toggleTranscriptBtn.classList.add('hidden');
     }
