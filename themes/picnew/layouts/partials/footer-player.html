@@ -295,9 +295,20 @@
     if (shareBtn) {
         shareBtn.addEventListener('click', function(e) {
             e.stopPropagation();
+            const shareUrl = currentPermalink ? buildShareUrl(currentPermalink, audio.currentTime) : window.location.href;
+            // Use native Web Share API on mobile if available
+            if (navigator.share) {
+                navigator.share({
+                    title: titleEl ? titleEl.textContent : '{{ .Site.Title }}',
+                    text: 'Ascolta "' + (titleEl ? titleEl.textContent : '{{ .Site.Title }}') + '" su Pensieri in Codice',
+                    url: shareUrl
+                }).catch(function() {});
+                return;
+            }
+            // Fallback: desktop panel
             const isOpen = !sharePanel.classList.contains('hidden');
             if (!isOpen && currentPermalink) {
-                shareUrlInput.value = buildShareUrl(currentPermalink, audio.currentTime);
+                shareUrlInput.value = shareUrl;
                 shareFeedback.classList.add('hidden');
             }
             sharePanel.classList.toggle('hidden', isOpen);
@@ -1031,12 +1042,16 @@
     const prevBtn = document.getElementById('player-prev');
     const nextBtn = document.getElementById('player-next');
 
+    function vibrate(ms) { try { if (navigator.vibrate) navigator.vibrate(ms); } catch(e) {} }
+
     prevBtn.addEventListener('click', function() {
         audio.currentTime = Math.max(0, audio.currentTime - 15);
+        vibrate(10);
     });
 
     nextBtn.addEventListener('click', function() {
         audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30);
+        vibrate(10);
     });
 
     chapterPrevBtn.addEventListener('click', function() {
