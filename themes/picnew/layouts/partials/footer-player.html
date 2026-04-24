@@ -108,6 +108,15 @@
                 </div>
             </div>
             <div class="player-right-col flex items-center justify-end space-x-4 w-1/4">
+                <div class="hidden lg:flex items-center space-x-1.5 bg-white/5 rounded-lg px-2 py-1" id="player-volume-control">
+                    <button id="player-volume-btn" class="text-pod-gray hover:text-white transition-colors flex-shrink-0" aria-label="Muto/Riattiva audio">
+                        <svg id="player-volume-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                    </button>
+                    <label for="player-volume" class="sr-only">Volume</label>
+                    <input type="range" id="player-volume" min="0" max="1" step="0.05" value="1"
+                        class="w-16 h-1 accent-pod-orange cursor-pointer"
+                        aria-label="Volume">
+                </div>
                 <div class="flex items-center space-x-2 bg-white/5 rounded-lg px-2 py-1">
                     <label for="player-speed" class="sr-only">Velocità di riproduzione</label>
                     <select id="player-speed" class="bg-transparent text-[10px] font-mono text-white focus:outline-none cursor-pointer">
@@ -169,6 +178,9 @@
     const episodeNextBtn = document.getElementById('player-episode-next');
     const chMarksContainer = document.getElementById('player-ch-marks');
     const seekThumb = document.getElementById('player-seek-thumb');
+    const volumeBtn = document.getElementById('player-volume-btn');
+    const volumeIcon = document.getElementById('player-volume-icon');
+    const volumeSlider = document.getElementById('player-volume');
     const resumeBanner = document.getElementById('player-resume-banner');
     const resumeLabel = document.getElementById('player-resume-label');
     const resumeConfirmBtn = document.getElementById('player-resume-confirm');
@@ -189,6 +201,44 @@
         resumeBanner.classList.add('hidden');
         clearTimeout(resumeBannerTimer);
         pendingResumeTime = 0;
+    }
+
+    const volumeSvgHigh = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>';
+    const volumeSvgLow  = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>';
+    const volumeSvgMute = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>';
+    let prevVolume = 1;
+
+    function updateVolumeIcon(vol) {
+        if (vol === 0) volumeIcon.innerHTML = volumeSvgMute;
+        else if (vol < 0.5) volumeIcon.innerHTML = volumeSvgLow;
+        else volumeIcon.innerHTML = volumeSvgHigh;
+    }
+
+    if (volumeSlider) {
+        volumeSlider.addEventListener('input', function() {
+            audio.volume = parseFloat(this.value);
+            if (audio.volume > 0) {
+                audio.muted = false;
+                prevVolume = audio.volume;
+            }
+            updateVolumeIcon(audio.volume);
+        });
+    }
+
+    if (volumeBtn) {
+        volumeBtn.addEventListener('click', function() {
+            if (audio.muted || audio.volume === 0) {
+                audio.muted = false;
+                audio.volume = prevVolume || 1;
+                volumeSlider.value = audio.volume;
+            } else {
+                prevVolume = audio.volume;
+                audio.muted = true;
+                audio.volume = 0;
+                volumeSlider.value = 0;
+            }
+            updateVolumeIcon(audio.volume);
+        });
     }
 
     resumeConfirmBtn.addEventListener('click', function() {
