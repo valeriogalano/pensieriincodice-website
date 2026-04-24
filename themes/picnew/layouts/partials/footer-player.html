@@ -611,11 +611,16 @@
             };
             
             div.innerHTML = `
-                <div class="flex items-center space-x-2 truncate">
-                    <span class="text-pod-orange font-mono">${formatTime(chapter.startTime)}</span>
+                <div class="flex items-center space-x-2 truncate flex-1 min-w-0">
+                    <span class="text-pod-orange font-mono flex-shrink-0">${formatTime(chapter.startTime)}</span>
                     <span class="text-white group-hover:text-pod-orange transition-colors truncate">${chapter.title}</span>
                 </div>
-                ${chapter.img ? `<img src="${chapter.img}" class="h-4 w-4 rounded object-cover flex-shrink-0 ml-2">` : ''}
+                <div class="flex items-center gap-2 ml-2 flex-shrink-0">
+                    ${chapter.img ? `<img src="${chapter.img}" class="h-4 w-4 rounded object-cover">` : ''}
+                    <div class="w-14 h-1 bg-white/10 rounded-full overflow-hidden" data-chapter-progress="${index}">
+                        <div class="h-full bg-pod-orange rounded-full transition-all duration-300" style="width:0%"></div>
+                    </div>
+                </div>
             `;
             chaptersList.appendChild(div);
         });
@@ -638,6 +643,19 @@
             chMarksContainer.appendChild(mark);
         });
         updateChapterMarkColors();
+    }
+
+    function updateChapterProgressBars() {
+        if (!currentChapters.length || !audio.duration) return;
+        currentChapters.forEach(function(chapter, i) {
+            const bar = chaptersList.querySelector('[data-chapter-progress="' + i + '"] div');
+            if (!bar) return;
+            const end = (i + 1 < currentChapters.length) ? currentChapters[i + 1].startTime : audio.duration;
+            const duration = end - chapter.startTime;
+            if (duration <= 0) return;
+            const elapsed = Math.min(Math.max(audio.currentTime - chapter.startTime, 0), duration);
+            bar.style.width = ((elapsed / duration) * 100) + '%';
+        });
     }
 
     function updateChapterMarkColors() {
@@ -1064,7 +1082,7 @@
             if ('mediaSession' in navigator && navigator.mediaSession.setPositionState) {
                 try { navigator.mediaSession.setPositionState({ duration: audio.duration, playbackRate: audio.playbackRate, position: audio.currentTime }); } catch(e) {}
             }
-            if (currentChapters.length) updateChapterMarkColors();
+            if (currentChapters.length) { updateChapterMarkColors(); updateChapterProgressBars(); }
         }
         if (currentChapters.length) {
             // Trova il capitolo corrente
