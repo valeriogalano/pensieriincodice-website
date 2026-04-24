@@ -1,5 +1,12 @@
 <footer class="fixed bottom-0 left-0 right-0 min-h-24 glass-sidebar border-t border-white/5 flex items-center px-8 z-50" aria-label="Lettore audio del podcast" role="region">
     <div class="max-w-7xl mx-auto w-full flex flex-col">
+        <div id="player-resume-banner" class="hidden w-full mb-2 flex items-center justify-between px-3 py-1.5 rounded-lg text-xs font-mono bg-pod-orange/90 text-white" role="status" aria-live="polite">
+            <button id="player-resume-confirm" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <span id="player-resume-label">Riprendi da 0:00</span>
+            </button>
+            <button id="player-resume-dismiss" class="opacity-70 hover:opacity-100 transition-opacity ml-4" aria-label="Chiudi">✕</button>
+        </div>
         <div class="player-main-row flex items-center w-full">
             <div class="player-info-col flex items-center space-x-4 w-1/4">
                 <div id="player-image-container" class="w-12 h-12 bg-pod-orange rounded-lg hidden sm:flex items-center justify-center shadow-lg shadow-pod-orange/20 overflow-hidden">
@@ -162,6 +169,35 @@
     const episodeNextBtn = document.getElementById('player-episode-next');
     const chMarksContainer = document.getElementById('player-ch-marks');
     const seekThumb = document.getElementById('player-seek-thumb');
+    const resumeBanner = document.getElementById('player-resume-banner');
+    const resumeLabel = document.getElementById('player-resume-label');
+    const resumeConfirmBtn = document.getElementById('player-resume-confirm');
+    const resumeDismissBtn = document.getElementById('player-resume-dismiss');
+
+    let resumeBannerTimer = null;
+    let pendingResumeTime = 0;
+
+    function showResumeBanner(savedTime) {
+        pendingResumeTime = savedTime;
+        resumeLabel.textContent = 'Riprendi da ' + formatTime(savedTime);
+        resumeBanner.classList.remove('hidden');
+        clearTimeout(resumeBannerTimer);
+        resumeBannerTimer = setTimeout(hideResumeBanner, 5000);
+    }
+
+    function hideResumeBanner() {
+        resumeBanner.classList.add('hidden');
+        clearTimeout(resumeBannerTimer);
+        pendingResumeTime = 0;
+    }
+
+    resumeConfirmBtn.addEventListener('click', function() {
+        audio.currentTime = pendingResumeTime;
+        if (audio.paused) audio.play();
+        hideResumeBanner();
+    });
+
+    resumeDismissBtn.addEventListener('click', hideResumeBanner);
 
     let currentChapters = [];
     let currentTranscript = [];
@@ -229,10 +265,20 @@
             titleEl.href = permalink || '#';
         }
 
-        if (audio.src !== url) {
+        const isNewEpisode = audio.src !== url;
+        if (isNewEpisode) {
             audio.src = url;
             audio.load();
         }
+
+        // Show resume banner if this episode has a saved position > 5s
+        hideResumeBanner();
+        try {
+            const savedState = JSON.parse(localStorage.getItem('pic_player_state'));
+            if (savedState && savedState.url === url && savedState.currentTime > 5) {
+                showResumeBanner(savedState.currentTime);
+            }
+        } catch(e) {}
 
         // Apply current playback rate if selected
         if (speedSelect) {
@@ -493,8 +539,11 @@
                         statusEl.textContent = 'Ora in riproduzione';
                     }).catch(error => {
                         console.log("Autoplay on restore prevented:", error);
+                        if (state.currentTime > 5) showResumeBanner(state.currentTime);
                     });
                 }
+            } else if (state.currentTime > 5) {
+                showResumeBanner(state.currentTime);
             }
         } else if (window.__playlist && window.__playlist.length > 0) {
             const ep = window.__playlist[0];
@@ -600,7 +649,7 @@
             transcriptUrl: activeTranscriptUrl
         };
         localStorage.setItem('pic_player_state', JSON.stringify(state));
-    }, 2000);
+    }, 5000);
 
     speedSelect.addEventListener('change', function() {
         audio.playbackRate = parseFloat(this.value);
