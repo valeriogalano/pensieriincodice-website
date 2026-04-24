@@ -130,6 +130,20 @@
                         <option value="3" class="bg-pod-black">3.0x</option>
                     </select>
                 </div>
+                <div class="relative hidden lg:flex items-center" id="player-sleep-wrapper">
+                    <button id="player-sleep-btn" class="text-pod-gray hover:text-white transition-colors flex items-center gap-1" aria-label="Sleep timer" aria-expanded="false" aria-controls="player-sleep-panel">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span id="player-sleep-countdown" class="text-[10px] font-mono hidden"></span>
+                    </button>
+                    <div id="player-sleep-panel" class="hidden absolute bottom-full right-0 mb-2 bg-pod-card border border-white/10 rounded-lg p-2 shadow-xl z-10 min-w-[130px]" role="menu">
+                        <p class="text-[10px] text-pod-gray uppercase font-bold px-2 pb-1 border-b border-white/10 mb-1">Sleep timer</p>
+                        <button class="sleep-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-minutes="15">15 minuti</button>
+                        <button class="sleep-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-minutes="30">30 minuti</button>
+                        <button class="sleep-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-minutes="60">60 minuti</button>
+                        <button class="sleep-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-minutes="end">Fine episodio</button>
+                        <button class="sleep-option w-full text-left text-xs text-pod-gray hover:text-white px-2 py-1 rounded transition-colors mt-1 border-t border-white/10" data-minutes="off">Disattiva</button>
+                    </div>
+                </div>
                 <button id="toggle-chapters" class="text-pod-gray hover:text-white transition-colors hidden" aria-label="Mostra/nascondi capitoli" aria-controls="player-chapters-container" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
                 </button>
@@ -178,6 +192,9 @@
     const episodeNextBtn = document.getElementById('player-episode-next');
     const chMarksContainer = document.getElementById('player-ch-marks');
     const seekThumb = document.getElementById('player-seek-thumb');
+    const sleepBtn = document.getElementById('player-sleep-btn');
+    const sleepPanel = document.getElementById('player-sleep-panel');
+    const sleepCountdown = document.getElementById('player-sleep-countdown');
     const volumeBtn = document.getElementById('player-volume-btn');
     const volumeIcon = document.getElementById('player-volume-icon');
     const volumeSlider = document.getElementById('player-volume');
@@ -240,6 +257,77 @@
             updateVolumeIcon(audio.volume);
         });
     }
+
+    let sleepTimeout = null;
+    let sleepCountdownInterval = null;
+    let sleepEndsAt = 0;
+    let sleepOnEnd = false;
+
+    function clearSleepTimer() {
+        clearTimeout(sleepTimeout);
+        clearInterval(sleepCountdownInterval);
+        sleepTimeout = null;
+        sleepCountdownInterval = null;
+        sleepEndsAt = 0;
+        sleepOnEnd = false;
+        if (sleepCountdown) { sleepCountdown.textContent = ''; sleepCountdown.classList.add('hidden'); }
+        if (sleepBtn) sleepBtn.classList.remove('text-pod-orange');
+    }
+
+    function startSleepTimer(minutes) {
+        clearSleepTimer();
+        if (minutes === 'end') {
+            sleepOnEnd = true;
+            if (sleepCountdown) { sleepCountdown.textContent = 'fine ep.'; sleepCountdown.classList.remove('hidden'); }
+            if (sleepBtn) sleepBtn.classList.add('text-pod-orange');
+            return;
+        }
+        const ms = minutes * 60 * 1000;
+        sleepEndsAt = Date.now() + ms;
+        if (sleepBtn) sleepBtn.classList.add('text-pod-orange');
+        if (sleepCountdown) sleepCountdown.classList.remove('hidden');
+        sleepTimeout = setTimeout(function() {
+            audio.pause();
+            clearSleepTimer();
+        }, ms);
+        sleepCountdownInterval = setInterval(function() {
+            const remaining = Math.max(0, sleepEndsAt - Date.now());
+            const m = Math.floor(remaining / 60000);
+            const s = Math.floor((remaining % 60000) / 1000);
+            if (sleepCountdown) sleepCountdown.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+            if (remaining === 0) clearSleepTimer();
+        }, 1000);
+    }
+
+    if (sleepBtn) {
+        sleepBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const isOpen = !sleepPanel.classList.contains('hidden');
+            sleepPanel.classList.toggle('hidden', isOpen);
+            sleepBtn.setAttribute('aria-expanded', String(!isOpen));
+        });
+    }
+
+    document.querySelectorAll('.sleep-option').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const val = this.dataset.minutes;
+            sleepPanel.classList.add('hidden');
+            sleepBtn.setAttribute('aria-expanded', 'false');
+            if (val === 'off') { clearSleepTimer(); return; }
+            startSleepTimer(val === 'end' ? 'end' : parseInt(val, 10));
+        });
+    });
+
+    document.addEventListener('click', function(e) {
+        if (sleepPanel && !sleepPanel.classList.contains('hidden') && !sleepPanel.contains(e.target) && e.target !== sleepBtn) {
+            sleepPanel.classList.add('hidden');
+            sleepBtn.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+    audio.addEventListener('ended', function() {
+        if (sleepOnEnd) { clearSleepTimer(); }
+    });
 
     resumeConfirmBtn.addEventListener('click', function() {
         audio.currentTime = pendingResumeTime;
