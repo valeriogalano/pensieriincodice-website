@@ -165,6 +165,9 @@
                 <button id="toggle-transcript" class="text-pod-gray hover:text-white transition-colors hidden" aria-label="Mostra/nascondi trascrizione" aria-controls="player-transcript-container" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
                 </button>
+                <button id="toggle-bookmarks" class="text-pod-gray hover:text-white transition-colors" aria-label="Mostra/nascondi segnalibri" aria-controls="player-bookmarks-container" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                </button>
             </div>
         </div>
         <div id="player-chapters-container" class="hidden w-full mt-4 max-h-48 overflow-y-auto bg-pod-black/50 rounded-lg p-4 scrollbar-thin scrollbar-thumb-pod-orange" aria-live="polite" aria-label="Capitoli dell'episodio">
@@ -178,6 +181,19 @@
             <div id="player-transcript-list" class="space-y-1">
                 <!-- Transcript will be injected here -->
             </div>
+        </div>
+        <div id="player-bookmarks-container" class="hidden w-full mt-4 bg-pod-black/50 rounded-lg p-4" aria-live="polite" aria-label="Segnalibri dell'episodio">
+            <div class="flex items-center justify-between mb-3">
+                <h6 class="text-xs font-bold text-pod-gray uppercase">Segnalibri</h6>
+                <button id="player-bookmark-add" class="flex items-center gap-1 text-[10px] text-pod-orange hover:text-white transition-colors font-mono uppercase" aria-label="Aggiungi segnalibro al momento corrente">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    Aggiungi
+                </button>
+            </div>
+            <div id="player-bookmarks-list" class="space-y-1 max-h-36 overflow-y-auto">
+                <!-- Bookmarks will be injected here -->
+            </div>
+            <p id="player-bookmarks-empty" class="text-[11px] text-pod-gray text-center py-2">Nessun segnalibro. Premi B o clicca Aggiungi.</p>
         </div>
     </div>
     <audio id="audio-player" preload="none"></audio>
@@ -198,6 +214,7 @@
     const chaptersContainer = document.getElementById('player-chapters-container');
     const chaptersList = document.getElementById('player-chapters-list');
     const toggleChaptersBtn = document.getElementById('toggle-chapters');
+    const toggleBookmarksBtn = document.getElementById('toggle-bookmarks');
     const transcriptContainer = document.getElementById('player-transcript-container');
     const transcriptList = document.getElementById('player-transcript-list');
     const toggleTranscriptBtn = document.getElementById('toggle-transcript');
@@ -687,6 +704,8 @@
         if (open) {
             transcriptContainer.classList.add('hidden');
             toggleTranscriptBtn.setAttribute('aria-expanded', 'false');
+            bookmarksContainer.classList.add('hidden');
+            toggleBookmarksBtn.setAttribute('aria-expanded', 'false');
         }
     });
 
@@ -697,8 +716,92 @@
         if (open) {
             chaptersContainer.classList.add('hidden');
             toggleChaptersBtn.setAttribute('aria-expanded', 'false');
+            bookmarksContainer.classList.add('hidden');
+            toggleBookmarksBtn.setAttribute('aria-expanded', 'false');
         }
     });
+
+    // ===== BOOKMARKS =====
+    const bookmarksContainer = document.getElementById('player-bookmarks-container');
+    const bookmarksList = document.getElementById('player-bookmarks-list');
+    const bookmarksEmpty = document.getElementById('player-bookmarks-empty');
+    const bookmarkAddBtn = document.getElementById('player-bookmark-add');
+
+    function getBookmarkKey(url) { return 'pic_bookmarks_' + btoa(url).replace(/=/g, ''); }
+
+    function loadBookmarks(url) {
+        try { return JSON.parse(localStorage.getItem(getBookmarkKey(url))) || []; } catch(e) { return []; }
+    }
+
+    function saveBookmarks(url, list) {
+        localStorage.setItem(getBookmarkKey(url), JSON.stringify(list));
+    }
+
+    function renderBookmarks() {
+        const url = audio.src;
+        const list = loadBookmarks(url);
+        bookmarksList.innerHTML = '';
+        if (!list.length) {
+            bookmarksEmpty.classList.remove('hidden');
+            return;
+        }
+        bookmarksEmpty.classList.add('hidden');
+        list.forEach(function(bm, i) {
+            const div = document.createElement('div');
+            div.className = 'flex items-center justify-between text-[11px] px-2 py-1.5 rounded hover:bg-white/10 group border border-white/5 cursor-pointer';
+            div.innerHTML = `
+                <button class="flex items-center gap-2 flex-1 min-w-0 text-left" data-bm-time="${bm.time}">
+                    <span class="text-pod-orange font-mono flex-shrink-0">${formatTime(bm.time)}</span>
+                    <span class="text-white truncate">${bm.note || 'Segnalibro'}</span>
+                </button>
+                <button class="text-pod-gray hover:text-red-400 ml-2 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" data-bm-delete="${i}" aria-label="Elimina segnalibro">✕</button>
+            `;
+            div.querySelector('[data-bm-time]').addEventListener('click', function() {
+                audio.currentTime = parseFloat(this.dataset.bmTime);
+                if (audio.paused) audio.play();
+            });
+            div.querySelector('[data-bm-delete]').addEventListener('click', function(e) {
+                e.stopPropagation();
+                const idx = parseInt(this.dataset.bmDelete, 10);
+                const updated = loadBookmarks(url);
+                updated.splice(idx, 1);
+                saveBookmarks(url, updated);
+                renderBookmarks();
+            });
+            bookmarksList.appendChild(div);
+        });
+    }
+
+    window.addBookmark = function(note) {
+        if (!audio.src) return;
+        const list = loadBookmarks(audio.src);
+        list.push({ time: audio.currentTime, note: note || '', created: Date.now() });
+        list.sort(function(a, b) { return a.time - b.time; });
+        saveBookmarks(audio.src, list);
+        if (!bookmarksContainer.classList.contains('hidden')) renderBookmarks();
+    };
+
+    if (bookmarkAddBtn) {
+        bookmarkAddBtn.addEventListener('click', function() {
+            window.addBookmark('');
+            renderBookmarks();
+        });
+    }
+
+    if (toggleBookmarksBtn) {
+        toggleBookmarksBtn.addEventListener('click', function() {
+            bookmarksContainer.classList.toggle('hidden');
+            const open = !bookmarksContainer.classList.contains('hidden');
+            toggleBookmarksBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            if (open) {
+                chaptersContainer.classList.add('hidden');
+                toggleChaptersBtn.setAttribute('aria-expanded', 'false');
+                transcriptContainer.classList.add('hidden');
+                toggleTranscriptBtn.setAttribute('aria-expanded', 'false');
+                renderBookmarks();
+            }
+        });
+    }
 
     // Restore state and periodic save
     const initPlayer = function() {
