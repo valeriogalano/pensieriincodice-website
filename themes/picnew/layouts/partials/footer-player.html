@@ -473,6 +473,7 @@
             titleEl.title = title;
             titleEl.href = permalink || '#';
         }
+        updateMediaSession(title, image);
 
         const isNewEpisode = audio.src !== url;
         if (isNewEpisode) {
@@ -881,14 +882,42 @@
         audio.playbackRate = parseFloat(this.value);
     });
 
+    // ===== MEDIA SESSION API =====
+    function updateMediaSession(title, image, chapterTitle) {
+        if (!('mediaSession' in navigator)) return;
+        const artwork = image ? [
+            { src: image, sizes: '512x512', type: 'image/jpeg' },
+            { src: image, sizes: '256x256', type: 'image/jpeg' }
+        ] : [];
+        navigator.mediaSession.metadata = new MediaMetadata({
+            title: chapterTitle || title || '{{ .Site.Title }}',
+            artist: '{{ .Site.Title }}',
+            album: '{{ .Site.Title }}',
+            artwork: artwork
+        });
+        navigator.mediaSession.setActionHandler('play',          () => audio.play());
+        navigator.mediaSession.setActionHandler('pause',         () => audio.pause());
+        navigator.mediaSession.setActionHandler('seekbackward',  () => { audio.currentTime = Math.max(0, audio.currentTime - 15); });
+        navigator.mediaSession.setActionHandler('seekforward',   () => { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30); });
+        navigator.mediaSession.setActionHandler('previoustrack', () => { if (typeof prevEpisode !== 'undefined') prevEpisode(); });
+        navigator.mediaSession.setActionHandler('nexttrack',     () => { if (typeof nextEpisode !== 'undefined') nextEpisode(); });
+        try {
+            navigator.mediaSession.setActionHandler('seekto', function(details) {
+                if (details.seekTime !== undefined) audio.currentTime = details.seekTime;
+            });
+        } catch(e) {}
+    }
+
     audio.addEventListener('pause', function() {
         updatePlayIcons(playSvg);
         statusEl.textContent = 'In pausa';
+        if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused';
     });
 
     audio.addEventListener('play', function() {
         updatePlayIcons(pauseSvg);
         statusEl.textContent = 'Ora in riproduzione';
+        if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing';
     });
 
     playBtn.addEventListener('click', function() {
@@ -918,6 +947,9 @@
             progressBar.setAttribute('aria-valuenow', Math.round(pct));
             seekThumb.style.left = pct + '%';
             if (audio.currentTime / audio.duration >= 0.9) markListened(audio.src);
+            if ('mediaSession' in navigator && navigator.mediaSession.setPositionState) {
+                try { navigator.mediaSession.setPositionState({ duration: audio.duration, playbackRate: audio.playbackRate, position: audio.currentTime }); } catch(e) {}
+            }
             if (currentChapters.length) updateChapterMarkColors();
         }
         if (currentChapters.length) {
@@ -935,6 +967,8 @@
                     el.classList.toggle('border-pod-orange/40', isActive);
                     el.classList.toggle('border-white/5', !isActive);
                 });
+                const chapterTitle = currentChapters[idx] ? currentChapters[idx].title : null;
+                updateMediaSession(titleEl ? titleEl.textContent : null, document.getElementById('player-image').src, chapterTitle);
             }
         }
 
