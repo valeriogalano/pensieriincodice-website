@@ -223,6 +223,15 @@ html.light .prose blockquote {
         height: 2.5rem;
     }
 
+    /* Touch target minimi 44×44px per i button del player */
+    #footer-player-container button {
+        min-width: 44px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     /* Player mobile: collapse */
     #player-mobile-actions { display: flex; align-items: center; gap: 0.5rem; margin-left: auto; }
     #player-info { flex: 1; min-width: 0; }
@@ -242,6 +251,54 @@ html.light .prose blockquote {
         height: auto;
         aspect-ratio: 1 / 1;
     }
+}
+
+/* ============================= */
+/* ===== PLAYER ENHANCEMENTS ==== */
+/* ============================= */
+
+/* Safe area iPhone: evita che il player finisca sotto la home indicator */
+#footer-player-container footer {
+    padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+}
+
+/* Chapter markers sulla seekbar */
+#player-progress-bar .ch-marks-container {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+.ch-mark {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 2px;
+    height: 10px;
+    border-radius: 1px;
+    background: #6b7280;
+    transition: background 0.2s;
+}
+.ch-mark.past {
+    background: #E86520;
+}
+
+/* Thumb visibile sulla seekbar */
+#player-progress-bar .seek-thumb {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+#player-progress-bar:hover .seek-thumb,
+#player-progress-bar:active .seek-thumb {
+    opacity: 1;
 }
 
 /* ============================= */
