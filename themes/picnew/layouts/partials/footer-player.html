@@ -1137,6 +1137,119 @@
         });
     }
 
+    // ===== TOUCH GESTURES (Pointer Events API) =====
+    (function() {
+        if (window.innerWidth >= 1024) return; // desktop only uses mouse
+
+        // --- Helper: show skip feedback overlay ---
+        function showSkipFeedback(direction) {
+            const el = document.createElement('div');
+            el.textContent = direction > 0 ? '+30s' : '-15s';
+            el.style.cssText = 'position:fixed;' + (direction > 0 ? 'right:16px' : 'left:16px') + ';bottom:120px;z-index:60;background:rgba(232,101,32,0.9);color:#fff;font-size:14px;font-weight:bold;padding:6px 12px;border-radius:8px;pointer-events:none;transition:opacity 0.4s';
+            document.body.appendChild(el);
+            setTimeout(function() { el.style.opacity = '0'; setTimeout(function() { el.remove(); }, 400); }, 600);
+        }
+
+        // 1. Swipe UP on mini-player footer → open expanded player
+        var footerEl = document.querySelector('#footer-player-container footer');
+        if (footerEl) {
+            var swipeStartY = 0;
+            footerEl.addEventListener('pointerdown', function(e) { swipeStartY = e.clientY; }, { passive: true });
+            footerEl.addEventListener('pointerup', function(e) {
+                if (swipeStartY - e.clientY > 40) openExpandedPlayer();
+            }, { passive: true });
+        }
+
+        // 2+3. Double tap and swipe horizontal on expanded player
+        var expandedBody = document.getElementById('player-expanded');
+        if (expandedBody) {
+            var tapCount = 0, tapTimer = null, tapX = 0;
+            var pointerDownX = 0, pointerDownTime = 0;
+            var longPressTimer = null;
+
+            expandedBody.addEventListener('pointerdown', function(e) {
+                // Ignore taps on interactive controls
+                if (e.target.closest('button,input,select,a')) return;
+                pointerDownX = e.clientX;
+                pointerDownTime = Date.now();
+
+                // Long press on play button → bookmark
+                if (e.target.closest('#player-expanded-play')) {
+                    longPressTimer = setTimeout(function() {
+                        if (window.addBookmark) window.addBookmark('');
+                        vibrate(50);
+                    }, 500);
+                }
+            }, { passive: true });
+
+            expandedBody.addEventListener('pointerup', function(e) {
+                clearTimeout(longPressTimer);
+                if (e.target.closest('button,input,select,a')) return;
+                var dx = e.clientX - pointerDownX;
+                var dt = Date.now() - pointerDownTime;
+
+                // Swipe horizontal (> 60px, < 300ms) → skip
+                if (Math.abs(dx) > 60 && dt < 300) {
+                    if (dx > 0) { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30); vibrate(10); }
+                    else { audio.currentTime = Math.max(0, audio.currentTime - 15); vibrate(10); }
+                    showSkipFeedback(dx);
+                    return;
+                }
+
+                // Double tap → skip
+                tapCount++;
+                tapX = e.clientX;
+                if (tapCount === 1) {
+                    tapTimer = setTimeout(function() { tapCount = 0; }, 300);
+                } else if (tapCount === 2) {
+                    clearTimeout(tapTimer);
+                    tapCount = 0;
+                    var half = window.innerWidth / 2;
+                    if (tapX < half) { audio.currentTime = Math.max(0, audio.currentTime - 15); vibrate(10); showSkipFeedback(-1); }
+                    else { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30); vibrate(10); showSkipFeedback(1); }
+                }
+            }, { passive: true });
+
+            // 5. Swipe vertical on speed badge → ±0.1× per 10px
+            var speedBadge = document.getElementById('player-expanded-speed');
+            if (speedBadge) {
+                var speedPointerY = 0;
+                speedBadge.addEventListener('pointerdown', function(e) { speedPointerY = e.clientY; e.stopPropagation(); }, { passive: true });
+                speedBadge.addEventListener('pointermove', function(e) {
+                    if (!e.buttons) return;
+                    var dy = speedPointerY - e.clientY;
+                    if (Math.abs(dy) > 10) {
+                        var step = dy > 0 ? 0.1 : -0.1;
+                        var newRate = Math.round(Math.min(3, Math.max(0.5, audio.playbackRate + step)) * 10) / 10;
+                        audio.playbackRate = newRate;
+                        if (speedSelect) speedSelect.value = newRate;
+                        speedBadge.value = newRate;
+                        speedPointerY = e.clientY;
+                    }
+                }, { passive: true });
+            }
+        }
+
+        // 6. Fine scrubbing on expanded seekbar: vertical movement reduces horizontal sensitivity
+        var expBar = document.getElementById('player-expanded-progress-bar');
+        if (expBar) {
+            var scrubbing = false, scrubStartX = 0, scrubStartY = 0, scrubStartTime = 0;
+            expBar.addEventListener('pointerdown', function(e) {
+                scrubbing = true; scrubStartX = e.clientX; scrubStartY = e.clientY; scrubStartTime = audio.currentTime;
+                expBar.setPointerCapture(e.pointerId);
+            });
+            expBar.addEventListener('pointermove', function(e) {
+                if (!scrubbing || !audio.duration) return;
+                var dx = e.clientX - scrubStartX;
+                var dy = Math.abs(e.clientY - scrubStartY);
+                var sensitivity = 1 / (1 + dy * 0.05); // vertical drag reduces sensitivity
+                var pct = (dx / expBar.offsetWidth) * sensitivity;
+                audio.currentTime = Math.max(0, Math.min(audio.duration, scrubStartTime + pct * audio.duration));
+            });
+            expBar.addEventListener('pointerup', function() { scrubbing = false; });
+        }
+    })();
+
     // ===== KEYBOARD SHORTCUTS =====
     document.addEventListener('keydown', function(e) {
         const tag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
