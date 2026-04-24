@@ -144,6 +144,21 @@
                         <button class="sleep-option w-full text-left text-xs text-pod-gray hover:text-white px-2 py-1 rounded transition-colors mt-1 border-t border-white/10" data-minutes="off">Disattiva</button>
                     </div>
                 </div>
+                <div class="relative hidden lg:flex items-center" id="player-share-wrapper">
+                    <button id="player-share-btn" class="text-pod-gray hover:text-white transition-colors" aria-label="Condividi con timestamp" aria-expanded="false" aria-controls="player-share-panel">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                    </button>
+                    <div id="player-share-panel" class="hidden absolute bottom-full right-0 mb-2 bg-pod-card border border-white/10 rounded-lg p-3 shadow-xl z-10 w-72" role="dialog" aria-label="Condividi episodio">
+                        <p class="text-[10px] text-pod-gray uppercase font-bold mb-2">Condividi da questo punto</p>
+                        <div class="flex items-center gap-2 bg-white/5 rounded px-2 py-1.5 mb-2">
+                            <input id="player-share-url" type="text" readonly
+                                class="flex-1 bg-transparent text-[11px] font-mono text-white focus:outline-none min-w-0 truncate"
+                                aria-label="URL con timestamp">
+                            <button id="player-share-copy" class="text-pod-orange hover:text-white transition-colors flex-shrink-0 text-[10px] font-bold uppercase" aria-label="Copia URL">Copia</button>
+                        </div>
+                        <p id="player-share-feedback" class="text-[10px] text-pod-orange hidden">✓ Copiato!</p>
+                    </div>
+                </div>
                 <button id="toggle-chapters" class="text-pod-gray hover:text-white transition-colors hidden" aria-label="Mostra/nascondi capitoli" aria-controls="player-chapters-container" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
                 </button>
@@ -192,6 +207,11 @@
     const episodeNextBtn = document.getElementById('player-episode-next');
     const chMarksContainer = document.getElementById('player-ch-marks');
     const seekThumb = document.getElementById('player-seek-thumb');
+    const shareBtn = document.getElementById('player-share-btn');
+    const sharePanel = document.getElementById('player-share-panel');
+    const shareUrlInput = document.getElementById('player-share-url');
+    const shareCopyBtn = document.getElementById('player-share-copy');
+    const shareFeedback = document.getElementById('player-share-feedback');
     const sleepBtn = document.getElementById('player-sleep-btn');
     const sleepPanel = document.getElementById('player-sleep-panel');
     const sleepCountdown = document.getElementById('player-sleep-countdown');
@@ -257,6 +277,56 @@
             updateVolumeIcon(audio.volume);
         });
     }
+
+    let currentPermalink = '';
+
+    function buildShareUrl(permalink, seconds) {
+        try {
+            const url = new URL(permalink, window.location.href);
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            url.searchParams.set('t', m + 'm' + (s < 10 ? '0' : '') + s + 's');
+            return url.toString();
+        } catch(e) {
+            return permalink;
+        }
+    }
+
+    if (shareBtn) {
+        shareBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const isOpen = !sharePanel.classList.contains('hidden');
+            if (!isOpen && currentPermalink) {
+                shareUrlInput.value = buildShareUrl(currentPermalink, audio.currentTime);
+                shareFeedback.classList.add('hidden');
+            }
+            sharePanel.classList.toggle('hidden', isOpen);
+            shareBtn.setAttribute('aria-expanded', String(!isOpen));
+        });
+    }
+
+    if (shareCopyBtn) {
+        shareCopyBtn.addEventListener('click', function() {
+            const url = shareUrlInput.value;
+            if (!url) return;
+            navigator.clipboard.writeText(url).then(function() {
+                shareFeedback.classList.remove('hidden');
+                setTimeout(function() { shareFeedback.classList.add('hidden'); }, 2000);
+            }).catch(function() {
+                shareUrlInput.select();
+                document.execCommand('copy');
+                shareFeedback.classList.remove('hidden');
+                setTimeout(function() { shareFeedback.classList.add('hidden'); }, 2000);
+            });
+        });
+    }
+
+    document.addEventListener('click', function(e) {
+        if (sharePanel && !sharePanel.classList.contains('hidden') && !sharePanel.contains(e.target) && e.target !== shareBtn) {
+            sharePanel.classList.add('hidden');
+            shareBtn.setAttribute('aria-expanded', 'false');
+        }
+    });
 
     let sleepTimeout = null;
     let sleepCountdownInterval = null;
@@ -397,6 +467,7 @@
             title = title.substring(1, title.length - 1);
         }
 
+        currentPermalink = permalink || window.location.href;
         if (titleEl) {
             titleEl.textContent = title;
             titleEl.title = title;
@@ -768,7 +839,24 @@
     });
 
     // Use window load for first hit, and turbo:load for navigation (if needed, but permanent should handle it)
-    window.addEventListener('load', function() { initPlayer(); applyListenedBadges(); });
+    window.addEventListener('load', function() {
+        initPlayer();
+        applyListenedBadges();
+        // Handle ?t= timestamp in URL (e.g. from share link)
+        const tParam = new URLSearchParams(window.location.search).get('t');
+        if (tParam) {
+            const match = tParam.match(/^(?:(\d+)m)?(?:(\d+)s)?$/);
+            if (match) {
+                const secs = (parseInt(match[1] || 0, 10) * 60) + parseInt(match[2] || 0, 10);
+                if (secs > 0) {
+                    audio.addEventListener('loadedmetadata', function seekOnce() {
+                        audio.currentTime = secs;
+                        audio.removeEventListener('loadedmetadata', seekOnce);
+                    }, { once: true });
+                }
+            }
+        }
+    });
     document.addEventListener('turbo:load', function() {
         applyListenedBadges();
     });
