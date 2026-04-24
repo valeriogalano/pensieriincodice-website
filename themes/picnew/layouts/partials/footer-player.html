@@ -165,6 +165,7 @@
                 <button id="toggle-transcript" class="text-pod-gray hover:text-white transition-colors hidden" aria-label="Mostra/nascondi trascrizione" aria-controls="player-transcript-container" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
                 </button>
+                <button id="player-shortcuts-btn" class="text-pod-gray hover:text-white transition-colors hidden lg:flex items-center justify-center w-5 h-5 rounded border border-white/20 text-[11px] font-bold" aria-label="Mostra scorciatoie da tastiera" aria-haspopup="dialog">?</button>
                 <button id="toggle-bookmarks" class="text-pod-gray hover:text-white transition-colors" aria-label="Mostra/nascondi segnalibri" aria-controls="player-bookmarks-container" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
                 </button>
@@ -204,6 +205,30 @@
     <audio id="audio-player" preload="none"></audio>
 </footer>
 
+<div id="player-shortcuts-modal" class="hidden fixed inset-0 z-[60] flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Scorciatoie da tastiera">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" id="player-shortcuts-backdrop"></div>
+    <div class="relative bg-pod-card border border-white/10 rounded-xl p-6 shadow-2xl max-w-sm w-full">
+        <div class="flex items-center justify-between mb-4">
+            <h3 class="text-sm font-bold text-white">Scorciatoie da tastiera</h3>
+            <button id="player-shortcuts-close" class="text-pod-gray hover:text-white transition-colors text-lg leading-none" aria-label="Chiudi">✕</button>
+        </div>
+        <div class="grid grid-cols-2 gap-x-6 gap-y-2 text-[11px]">
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Play / Pausa</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">Spazio</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">−15 secondi</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">←</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">+30 secondi</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">→</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Volume +</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">↑</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Volume −</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">↓</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Muto</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">M</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Velocità +</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">+</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Velocità −</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">−</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Inizio</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">0</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Segnalibro</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">B</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Sleep timer</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">S</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Questa guida</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">?</kbd></div>
+        </div>
+    </div>
+</div>
+
 <script>
 (function() {
     const audio = document.getElementById('audio-player');
@@ -230,6 +255,10 @@
     const episodeNextBtn = document.getElementById('player-episode-next');
     const chMarksContainer = document.getElementById('player-ch-marks');
     const seekThumb = document.getElementById('player-seek-thumb');
+    const shortcutsBtn = document.getElementById('player-shortcuts-btn');
+    const shortcutsModal = document.getElementById('player-shortcuts-modal');
+    const shortcutsClose = document.getElementById('player-shortcuts-close');
+    const shortcutsBackdrop = document.getElementById('player-shortcuts-backdrop');
     const shareBtn = document.getElementById('player-share-btn');
     const sharePanel = document.getElementById('player-share-panel');
     const shareUrlInput = document.getElementById('player-share-url');
@@ -857,6 +886,104 @@
         });
     }
 
+    // ===== SHORTCUTS MODAL =====
+    function openShortcutsModal() { if (shortcutsModal) shortcutsModal.classList.remove('hidden'); }
+    function closeShortcutsModal() { if (shortcutsModal) shortcutsModal.classList.add('hidden'); }
+
+    if (shortcutsBtn) shortcutsBtn.addEventListener('click', openShortcutsModal);
+    if (shortcutsClose) shortcutsClose.addEventListener('click', closeShortcutsModal);
+    if (shortcutsBackdrop) shortcutsBackdrop.addEventListener('click', closeShortcutsModal);
+
+    // ===== KEYBOARD SHORTCUTS =====
+    document.addEventListener('keydown', function(e) {
+        const tag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
+        if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
+        if (document.activeElement && document.activeElement.isContentEditable) return;
+
+        switch (e.key) {
+            case ' ':
+            case 'Spacebar':
+                e.preventDefault();
+                if (audio.paused) audio.play(); else audio.pause();
+                break;
+            case 'ArrowLeft':
+                if (!e.altKey && !e.metaKey && document.activeElement !== progressBar) {
+                    e.preventDefault();
+                    audio.currentTime = Math.max(0, audio.currentTime - 15);
+                    vibrate(10);
+                }
+                break;
+            case 'ArrowRight':
+                if (!e.altKey && !e.metaKey && document.activeElement !== progressBar) {
+                    e.preventDefault();
+                    audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30);
+                    vibrate(10);
+                }
+                break;
+            case 'ArrowUp':
+                if (document.activeElement !== progressBar) {
+                    e.preventDefault();
+                    audio.volume = Math.min(1, audio.volume + 0.1);
+                    if (volumeSlider) volumeSlider.value = audio.volume;
+                    updateVolumeIcon(audio.volume);
+                }
+                break;
+            case 'ArrowDown':
+                if (document.activeElement !== progressBar) {
+                    e.preventDefault();
+                    audio.volume = Math.max(0, audio.volume - 0.1);
+                    if (volumeSlider) volumeSlider.value = audio.volume;
+                    updateVolumeIcon(audio.volume);
+                }
+                break;
+            case 'm':
+            case 'M':
+                if (audio.muted || audio.volume === 0) {
+                    audio.muted = false; audio.volume = prevVolume || 1;
+                    if (volumeSlider) volumeSlider.value = audio.volume;
+                } else {
+                    prevVolume = audio.volume; audio.muted = true; audio.volume = 0;
+                    if (volumeSlider) volumeSlider.value = 0;
+                }
+                updateVolumeIcon(audio.volume);
+                break;
+            case '+':
+            case '=': {
+                const rates = [0.5, 0.8, 1, 1.2, 1.5, 2, 2.5, 3];
+                const idx = rates.indexOf(audio.playbackRate);
+                if (idx < rates.length - 1) { audio.playbackRate = rates[idx + 1]; if (speedSelect) speedSelect.value = audio.playbackRate; }
+                break;
+            }
+            case '-': {
+                const rates = [0.5, 0.8, 1, 1.2, 1.5, 2, 2.5, 3];
+                const idx = rates.indexOf(audio.playbackRate);
+                if (idx > 0) { audio.playbackRate = rates[idx - 1]; if (speedSelect) speedSelect.value = audio.playbackRate; }
+                break;
+            }
+            case '0':
+                audio.currentTime = 0;
+                break;
+            case 'b':
+            case 'B':
+                if (window.addBookmark) window.addBookmark('');
+                break;
+            case 's':
+            case 'S':
+                if (sleepPanel) {
+                    const isOpen = !sleepPanel.classList.contains('hidden');
+                    sleepPanel.classList.toggle('hidden', isOpen);
+                    if (sleepBtn) sleepBtn.setAttribute('aria-expanded', String(!isOpen));
+                }
+                break;
+            case '?':
+                openShortcutsModal();
+                break;
+            case 'Escape':
+                closeShortcutsModal();
+                break;
+        }
+    });
+
     // Restore state and periodic save
     const initPlayer = function() {
         const savedState = localStorage.getItem('pic_player_state');
@@ -1156,7 +1283,9 @@
                 });
                 if (tIdx >= 0 && !transcriptContainer.classList.contains('hidden')) {
                     const activeEl = transcriptList.querySelector(`[data-transcript-index="${tIdx}"]`);
-                    if (activeEl) activeEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+                    if (activeEl && !activeEl.classList.contains('hidden')) {
+                        activeEl.scrollIntoView({ block: 'center', behavior: 'smooth' });
+                    }
                 }
             }
         }
