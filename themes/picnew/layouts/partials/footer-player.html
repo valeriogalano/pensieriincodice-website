@@ -94,6 +94,8 @@
                     <div class="flex-1 h-1 bg-white/10 rounded-full overflow-hidden relative group cursor-pointer" id="player-progress-bar"
                         role="slider" aria-label="Progresso della riproduzione" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
                         <div class="absolute inset-0 bg-pod-orange rounded-full" style="width: 0%" id="player-progress"></div>
+                        <div class="ch-marks-container" id="player-ch-marks"></div>
+                        <div class="seek-thumb" id="player-seek-thumb"></div>
                     </div>
                     <span class="text-[10px] font-mono text-pod-gray" id="player-duration">0:00</span>
                 </div>
@@ -158,6 +160,8 @@
     const chapterNextBtn = document.getElementById('player-chapter-next');
     const episodePrevBtn = document.getElementById('player-episode-prev');
     const episodeNextBtn = document.getElementById('player-episode-next');
+    const chMarksContainer = document.getElementById('player-ch-marks');
+    const seekThumb = document.getElementById('player-seek-thumb');
 
     let currentChapters = [];
     let currentTranscript = [];
@@ -336,11 +340,34 @@
         chapterNextBtn.classList.remove('hidden');
         chapterPrevBtn.disabled = false;
         chapterNextBtn.disabled = false;
+        if (audio.duration) renderChapterMarks();
+    }
+
+    function renderChapterMarks() {
+        chMarksContainer.innerHTML = '';
+        if (!audio.duration || !currentChapters.length) return;
+        currentChapters.forEach(chapter => {
+            const pct = (chapter.startTime / audio.duration) * 100;
+            const mark = document.createElement('div');
+            mark.className = 'ch-mark';
+            mark.style.left = pct + '%';
+            chMarksContainer.appendChild(mark);
+        });
+        updateChapterMarkColors();
+    }
+
+    function updateChapterMarkColors() {
+        const marks = chMarksContainer.querySelectorAll('.ch-mark');
+        marks.forEach((mark, i) => {
+            const isPast = audio.currentTime >= currentChapters[i].startTime;
+            mark.classList.toggle('past', isPast);
+        });
     }
 
     function hideChapters() {
         currentChapters = [];
         chaptersList.innerHTML = '';
+        chMarksContainer.innerHTML = '';
         chaptersContainer.classList.add('hidden');
         toggleChaptersBtn.classList.add('hidden');
         chapterPrevBtn.classList.add('hidden');
@@ -604,13 +631,19 @@
 
     let currentChapterIndex = -1;
 
+    audio.addEventListener('loadedmetadata', function() {
+        if (currentChapters.length) renderChapterMarks();
+    });
+
     audio.addEventListener('timeupdate', function() {
         currentTimeEl.textContent = formatTime(audio.currentTime);
         if (audio.duration) {
-            const pct = Math.round(audio.currentTime / audio.duration * 100);
+            const pct = (audio.currentTime / audio.duration) * 100;
             progress.style.width = pct + '%';
-            progressBar.setAttribute('aria-valuenow', pct);
+            progressBar.setAttribute('aria-valuenow', Math.round(pct));
+            seekThumb.style.left = pct + '%';
             if (audio.currentTime / audio.duration >= 0.9) markListened(audio.src);
+            if (currentChapters.length) updateChapterMarkColors();
         }
         if (currentChapters.length) {
             // Trova il capitolo corrente
