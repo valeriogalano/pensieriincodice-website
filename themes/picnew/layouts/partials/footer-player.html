@@ -617,8 +617,8 @@
                 </div>
                 <div class="flex items-center gap-2 ml-2 flex-shrink-0">
                     ${chapter.img ? `<img src="${chapter.img}" class="h-4 w-4 rounded object-cover">` : ''}
-                    <div class="w-14 h-1 bg-white/10 rounded-full overflow-hidden" data-chapter-progress="${index}">
-                        <div class="h-full bg-pod-orange rounded-full transition-all duration-300" style="width:0%"></div>
+                    <div style="width:3.5rem;height:0.25rem;background-color:rgba(255,255,255,0.1);border-radius:9999px;overflow:hidden" data-chapter-progress="${index}">
+                        <div style="height:100%;background-color:#ff6b00;border-radius:9999px;transition:width 300ms;width:0%"></div>
                     </div>
                 </div>
             `;
@@ -724,6 +724,7 @@
             toggleTranscriptBtn.setAttribute('aria-expanded', 'false');
             bookmarksContainer.classList.add('hidden');
             toggleBookmarksBtn.setAttribute('aria-expanded', 'false');
+            updateChapterProgressBars();
         }
     });
 
@@ -1068,7 +1069,7 @@
     let currentChapterIndex = -1;
 
     audio.addEventListener('loadedmetadata', function() {
-        if (currentChapters.length) renderChapterMarks();
+        if (currentChapters.length) { renderChapterMarks(); updateChapterProgressBars(); }
     });
 
     audio.addEventListener('timeupdate', function() {
