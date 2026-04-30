@@ -135,7 +135,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                         <span id="player-sleep-countdown" class="text-[10px] font-mono hidden"></span>
                     </button>
-                    <div id="player-sleep-panel" class="hidden absolute bottom-full right-0 mb-2 bg-pod-card border border-white/10 rounded-lg p-2 shadow-xl z-10 min-w-[130px]" role="menu">
+                    <div id="player-sleep-panel" class="hidden fixed bg-pod-card border border-white/10 rounded-lg p-2 shadow-xl z-[200] min-w-[130px]" role="menu">
                         <p class="text-[10px] text-pod-gray uppercase font-bold px-2 pb-1 border-b border-white/10 mb-1">Sleep timer</p>
                         <button class="sleep-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-minutes="15">15 minuti</button>
                         <button class="sleep-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-minutes="30">30 minuti</button>
@@ -303,6 +303,11 @@
         sleepBtn.addEventListener('click', function(e) {
             e.stopPropagation();
             const isOpen = !sleepPanel.classList.contains('hidden');
+            if (!isOpen) {
+                const rect = sleepBtn.getBoundingClientRect();
+                sleepPanel.style.bottom = (window.innerHeight - rect.top + 8) + 'px';
+                sleepPanel.style.right = (window.innerWidth - rect.right) + 'px';
+            }
             sleepPanel.classList.toggle('hidden', isOpen);
             sleepBtn.setAttribute('aria-expanded', String(!isOpen));
         });
