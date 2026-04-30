@@ -36,10 +36,22 @@ hugo
 
 ---
 
+## Documentazione
+
+| File | Contenuto |
+|------|-----------|
+| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Stack tecnico, struttura directory, layout, partial, breakpoint, frontmatter episodi |
+| [docs/FEATURES.md](docs/FEATURES.md) | Panoramica di tutte le funzionalità del sito (pagine, ricerca, feed, PWA, CSS custom) |
+| [docs/PLAYER.md](docs/PLAYER.md) | Documentazione dettagliata del player audio con note anti-regression |
+
+---
+
 ## Repository correlate
 
-- [pensieriincodice-cdn](https://github.com/valeriogalano/pensieriincodice-cdn) — Asset pubblicati via CDN (episodi, cover, trascrizioni)
-- [pensieriincodice-assets](https://github.com/valeriogalano/pensieriincodice-assets) — Sorgenti degli asset
+| Repository | Descrizione |
+|------------|-------------|
+| [pensieriincodice-cdn](https://github.com/valeriogalano/pensieriincodice-cdn) | Asset pubblicati via CDN (episodi, cover, trascrizioni) |
+| [pensieriincodice-assets](https://github.com/valeriogalano/pensieriincodice-assets) | Sorgenti degli asset |
 
 ---
 
