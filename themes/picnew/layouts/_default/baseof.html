@@ -31,9 +31,11 @@
     <script>window.__playlist={{ $playlist | jsonify | safeJS }};</script>
     <link rel="icon" type="image/png" href="{{ .Site.Params.podcast.image | absURL }}">
     <link rel="apple-touch-icon" href="{{ .Site.Params.podcast.image | absURL }}">
+    <link rel="manifest" href="/manifest.json">
     {{ hugo.Generator }}
     <!-- Anti-FOUC: applica il tema prima del render -->
     <script>(function(){var p=localStorage.getItem('pic_theme')||'system',h=document.documentElement;h.classList.remove('light','dark');if(p==='dark')h.classList.add('dark');else if(p==='light')h.classList.add('light');else h.classList.add(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');}());</script>
+    <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){});});}</script>
 </head>
 <body class="bg-pod-black text-white font-sans selection:bg-pod-orange selection:text-white overflow-hidden h-screen flex">
 

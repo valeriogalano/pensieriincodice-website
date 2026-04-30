@@ -1,8 +1,105 @@
+{{/* ===== EXPANDED PLAYER (mobile full-screen) ===== */}}
+<div id="player-expanded"
+    class="fixed inset-0 z-[55] flex flex-col bg-pod-black lg:hidden"
+    style="transform: translateY(100%); transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);"
+    aria-label="Player espanso" role="dialog" aria-modal="true" aria-hidden="true">
+    {{/* Handle bar */}}
+    <div class="flex justify-center pt-3 pb-1 flex-shrink-0 cursor-pointer" id="player-expanded-handle">
+        <div class="w-10 h-1 bg-white/20 rounded-full"></div>
+    </div>
+    {{/* Header row */}}
+    <div class="flex items-center justify-between px-4 py-2 flex-shrink-0">
+        <button id="player-expanded-close" class="text-pod-gray hover:text-white transition-colors p-2" aria-label="Chiudi player espanso">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <p class="text-[10px] text-pod-orange font-mono uppercase tracking-widest">In riproduzione</p>
+        <div class="w-10"></div>
+    </div>
+    {{/* Cover + info */}}
+    <div class="flex flex-col items-center px-8 pt-2 pb-4 flex-shrink-0">
+        <div class="w-48 h-48 rounded-xl overflow-hidden border-2 border-pod-orange/40 shadow-2xl shadow-pod-orange/20 mb-4">
+            <img id="player-expanded-image" src="{{ .Site.Params.podcast.image | absURL }}" alt="" class="w-full h-full object-cover">
+        </div>
+        <p id="player-expanded-title" class="text-base font-bold text-white text-center line-clamp-2 mb-1">{{ .Site.Title }}</p>
+        <p class="text-xs text-pod-gray">{{ .Site.Title }}</p>
+    </div>
+    {{/* Seekbar */}}
+    <div class="px-6 flex-shrink-0">
+        <div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden relative cursor-pointer" id="player-expanded-progress-bar">
+            <div class="absolute inset-0 bg-pod-orange rounded-full" style="width:0%" id="player-expanded-progress"></div>
+            <div class="ch-marks-container" id="player-expanded-ch-marks"></div>
+        </div>
+        <div class="flex justify-between mt-1">
+            <span class="text-[10px] font-mono text-pod-gray" id="player-expanded-current">0:00</span>
+            <span class="text-[10px] font-mono text-pod-gray" id="player-expanded-duration">0:00</span>
+        </div>
+    </div>
+    {{/* Main controls */}}
+    <div class="flex items-center justify-center gap-4 px-4 py-4 flex-shrink-0">
+        <button id="player-expanded-episode-prev" class="text-pod-gray hover:text-white transition-colors p-2" aria-label="Episodio precedente" disabled>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+        <button id="player-expanded-chapter-prev" class="text-pod-gray hover:text-white transition-colors p-2" aria-label="Capitolo precedente" disabled>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><polyline points="5 19 5 5"/></svg>
+        </button>
+        <button id="player-expanded-prev" class="text-pod-gray hover:text-white transition-colors p-2" aria-label="Indietro 15 secondi">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 1 0 .49-4.51"/><text x="8.5" y="13.5" font-size="5" fill="currentColor" stroke="none">15</text></svg>
+        </button>
+        <button id="player-expanded-play" class="w-16 h-16 bg-white text-pod-black rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform" aria-label="Riproduci/Pausa">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" id="player-expanded-play-icon" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </button>
+        <button id="player-expanded-next" class="text-pod-gray hover:text-white transition-colors p-2" aria-label="Avanti 30 secondi">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-.49-4.51"/><text x="8.5" y="13.5" font-size="5" fill="currentColor" stroke="none">30</text></svg>
+        </button>
+        <button id="player-expanded-chapter-next" class="text-pod-gray hover:text-white transition-colors p-2" aria-label="Capitolo successivo" disabled>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><polyline points="19 5 19 19"/></svg>
+        </button>
+        <button id="player-expanded-episode-next" class="text-pod-gray hover:text-white transition-colors p-2" aria-label="Episodio successivo" disabled>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+    </div>
+    {{/* Speed + secondary actions */}}
+    <div class="flex items-center justify-center gap-6 px-4 pb-3 flex-shrink-0">
+        <select id="player-expanded-speed" class="bg-white/5 border border-white/10 rounded px-2 py-1 text-[11px] font-mono text-white focus:outline-none cursor-pointer" aria-label="Velocità">
+            <option value="0.5" class="bg-pod-black">0.5x</option>
+            <option value="0.8" class="bg-pod-black">0.8x</option>
+            <option value="1" class="bg-pod-black" selected>1.0x</option>
+            <option value="1.2" class="bg-pod-black">1.2x</option>
+            <option value="1.5" class="bg-pod-black">1.5x</option>
+            <option value="2" class="bg-pod-black">2.0x</option>
+            <option value="2.5" class="bg-pod-black">2.5x</option>
+            <option value="3" class="bg-pod-black">3.0x</option>
+        </select>
+        <button id="player-expanded-bookmark" class="text-pod-gray hover:text-white transition-colors p-2" aria-label="Aggiungi segnalibro">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        </button>
+        <button id="player-expanded-share" class="text-pod-gray hover:text-white transition-colors p-2" aria-label="Condividi">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        </button>
+    </div>
+    {{/* Tab panel (Chapters / Transcript) */}}
+    <div class="flex-1 overflow-hidden flex flex-col px-4 pb-4 min-h-0">
+        <div class="flex gap-2 mb-2 flex-shrink-0">
+            <button id="player-expanded-tab-chapters" class="text-[11px] px-3 py-1 rounded-full bg-white/10 text-white font-medium" aria-pressed="true">Capitoli</button>
+            <button id="player-expanded-tab-transcript" class="text-[11px] px-3 py-1 rounded-full text-pod-gray hover:text-white transition-colors" aria-pressed="false">Trascrizione</button>
+        </div>
+        <div id="player-expanded-chapters" class="flex-1 overflow-y-auto space-y-1 scrollbar-thin scrollbar-thumb-pod-orange"></div>
+        <div id="player-expanded-transcript" class="hidden flex-1 overflow-y-auto space-y-1 scrollbar-thin scrollbar-thumb-pod-orange"></div>
+    </div>
+</div>
+
 <footer class="fixed bottom-0 left-0 right-0 min-h-24 glass-sidebar border-t border-white/5 flex items-center px-8 z-50" aria-label="Lettore audio del podcast" role="region">
     <div class="max-w-7xl mx-auto w-full flex flex-col">
+        <div id="player-resume-banner" class="hidden w-full mb-2 flex items-center justify-between px-3 py-1.5 rounded-lg text-xs font-mono bg-pod-orange/90 text-white" role="status" aria-live="polite">
+            <button id="player-resume-confirm" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <span id="player-resume-label">Riprendi da 0:00</span>
+            </button>
+            <button id="player-resume-dismiss" class="opacity-70 hover:opacity-100 transition-opacity ml-4" aria-label="Chiudi">✕</button>
+        </div>
         <div class="player-main-row flex items-center w-full">
             <div class="player-info-col flex items-center space-x-4 w-1/4">
-                <div id="player-image-container" class="w-12 h-12 bg-pod-orange rounded-lg hidden sm:flex items-center justify-center shadow-lg shadow-pod-orange/20 overflow-hidden">
+                <div id="player-image-container" class="w-12 h-12 bg-pod-orange rounded-lg hidden sm:flex items-center justify-center shadow-lg shadow-pod-orange/20 overflow-hidden cursor-pointer" id="player-expand-trigger" role="button" aria-label="Espandi player" tabindex="0">
                     <img id="player-image" src="{{ .Site.Params.podcast.image | absURL }}" alt="Copertina dell'episodio" class="object-cover w-full h-full">
                     <svg id="player-placeholder-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden" aria-hidden="true">
@@ -101,6 +198,15 @@
                 </div>
             </div>
             <div class="player-right-col flex items-center justify-end space-x-4 w-1/4">
+                <div class="hidden lg:flex items-center space-x-1.5 bg-white/5 rounded-lg px-2 py-1" id="player-volume-control">
+                    <button id="player-volume-btn" class="text-pod-gray hover:text-white transition-colors flex-shrink-0" aria-label="Muto/Riattiva audio">
+                        <svg id="player-volume-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                    </button>
+                    <label for="player-volume" class="sr-only">Volume</label>
+                    <input type="range" id="player-volume" min="0" max="1" step="0.05" value="1"
+                        class="w-16 h-1 accent-pod-orange cursor-pointer"
+                        aria-label="Volume">
+                </div>
                 <div class="flex items-center space-x-2 bg-white/5 rounded-lg px-2 py-1">
                     <label for="player-speed" class="sr-only">Velocità di riproduzione</label>
                     <select id="player-speed" class="bg-transparent text-[10px] font-mono text-white focus:outline-none cursor-pointer">
@@ -114,11 +220,44 @@
                         <option value="3" class="bg-pod-black">3.0x</option>
                     </select>
                 </div>
+                <div class="relative hidden lg:flex items-center" id="player-sleep-wrapper">
+                    <button id="player-sleep-btn" class="text-pod-gray hover:text-white transition-colors flex items-center gap-1" aria-label="Sleep timer" aria-expanded="false" aria-controls="player-sleep-panel">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span id="player-sleep-countdown" class="text-[10px] font-mono hidden"></span>
+                    </button>
+                    <div id="player-sleep-panel" class="hidden absolute bottom-full right-0 mb-2 bg-pod-card border border-white/10 rounded-lg p-2 shadow-xl z-10 min-w-[130px]" role="menu">
+                        <p class="text-[10px] text-pod-gray uppercase font-bold px-2 pb-1 border-b border-white/10 mb-1">Sleep timer</p>
+                        <button class="sleep-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-minutes="15">15 minuti</button>
+                        <button class="sleep-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-minutes="30">30 minuti</button>
+                        <button class="sleep-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-minutes="60">60 minuti</button>
+                        <button class="sleep-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-minutes="end">Fine episodio</button>
+                        <button class="sleep-option w-full text-left text-xs text-pod-gray hover:text-white px-2 py-1 rounded transition-colors mt-1 border-t border-white/10" data-minutes="off">Disattiva</button>
+                    </div>
+                </div>
+                <div class="relative hidden lg:flex items-center" id="player-share-wrapper">
+                    <button id="player-share-btn" class="text-pod-gray hover:text-white transition-colors" aria-label="Condividi con timestamp" aria-expanded="false" aria-controls="player-share-panel">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                    </button>
+                    <div id="player-share-panel" class="hidden absolute bottom-full right-0 mb-2 bg-pod-card border border-white/10 rounded-lg p-3 shadow-xl z-10 w-72" role="dialog" aria-label="Condividi episodio">
+                        <p class="text-[10px] text-pod-gray uppercase font-bold mb-2">Condividi da questo punto</p>
+                        <div class="flex items-center gap-2 bg-white/5 rounded px-2 py-1.5 mb-2">
+                            <input id="player-share-url" type="text" readonly
+                                class="flex-1 bg-transparent text-[11px] font-mono text-white focus:outline-none min-w-0 truncate"
+                                aria-label="URL con timestamp">
+                            <button id="player-share-copy" class="text-pod-orange hover:text-white transition-colors flex-shrink-0 text-[10px] font-bold uppercase" aria-label="Copia URL">Copia</button>
+                        </div>
+                        <p id="player-share-feedback" class="text-[10px] text-pod-orange hidden">✓ Copiato!</p>
+                    </div>
+                </div>
                 <button id="toggle-chapters" class="text-pod-gray hover:text-white transition-colors hidden" aria-label="Mostra/nascondi capitoli" aria-controls="player-chapters-container" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
                 </button>
                 <button id="toggle-transcript" class="text-pod-gray hover:text-white transition-colors hidden" aria-label="Mostra/nascondi trascrizione" aria-controls="player-transcript-container" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                </button>
+                <button id="player-shortcuts-btn" class="text-pod-gray hover:text-white transition-colors hidden lg:flex items-center justify-center w-5 h-5 rounded border border-white/20 text-[11px] font-bold" aria-label="Mostra scorciatoie da tastiera" aria-haspopup="dialog">?</button>
+                <button id="toggle-bookmarks" class="text-pod-gray hover:text-white transition-colors" aria-label="Mostra/nascondi segnalibri" aria-controls="player-bookmarks-container" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
                 </button>
             </div>
         </div>
@@ -128,15 +267,57 @@
                 <!-- Chapters will be injected here -->
             </div>
         </div>
-        <div id="player-transcript-container" class="hidden w-full mt-4 max-h-48 overflow-y-auto bg-pod-black/50 rounded-lg p-4 scrollbar-thin scrollbar-thumb-pod-orange" aria-live="polite" aria-label="Trascrizione dell'episodio">
-            <h6 class="text-xs font-bold text-pod-gray uppercase mb-2">Trascrizione</h6>
-            <div id="player-transcript-list" class="space-y-1">
+        <div id="player-transcript-container" class="hidden w-full mt-4 bg-pod-black/50 rounded-lg p-4" aria-live="polite" aria-label="Trascrizione dell'episodio">
+            <div class="flex items-center gap-3 mb-2">
+                <h6 class="text-xs font-bold text-pod-gray uppercase flex-shrink-0">Trascrizione</h6>
+                <input id="player-transcript-search" type="search" placeholder="Cerca…"
+                    class="flex-1 bg-white/5 border border-white/10 rounded px-2 py-0.5 text-[11px] text-white placeholder-pod-gray focus:outline-none focus:border-pod-orange transition-colors"
+                    aria-label="Cerca nella trascrizione">
+            </div>
+            <div id="player-transcript-list" class="space-y-1 max-h-40 overflow-y-auto scrollbar-thin scrollbar-thumb-pod-orange">
                 <!-- Transcript will be injected here -->
             </div>
+        </div>
+        <div id="player-bookmarks-container" class="hidden w-full mt-4 bg-pod-black/50 rounded-lg p-4" aria-live="polite" aria-label="Segnalibri dell'episodio">
+            <div class="flex items-center justify-between mb-3">
+                <h6 class="text-xs font-bold text-pod-gray uppercase">Segnalibri</h6>
+                <button id="player-bookmark-add" class="flex items-center gap-1 text-[10px] text-pod-orange hover:text-white transition-colors font-mono uppercase" aria-label="Aggiungi segnalibro al momento corrente">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    Aggiungi
+                </button>
+            </div>
+            <div id="player-bookmarks-list" class="space-y-1 max-h-36 overflow-y-auto">
+                <!-- Bookmarks will be injected here -->
+            </div>
+            <p id="player-bookmarks-empty" class="text-[11px] text-pod-gray text-center py-2">Nessun segnalibro. Premi B o clicca Aggiungi.</p>
         </div>
     </div>
     <audio id="audio-player" preload="none"></audio>
 </footer>
+
+<div id="player-shortcuts-modal" class="hidden fixed inset-0 z-[60] flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Scorciatoie da tastiera">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" id="player-shortcuts-backdrop"></div>
+    <div class="relative bg-pod-card border border-white/10 rounded-xl p-6 shadow-2xl max-w-sm w-full">
+        <div class="flex items-center justify-between mb-4">
+            <h3 class="text-sm font-bold text-white">Scorciatoie da tastiera</h3>
+            <button id="player-shortcuts-close" class="text-pod-gray hover:text-white transition-colors text-lg leading-none" aria-label="Chiudi">✕</button>
+        </div>
+        <div class="grid grid-cols-2 gap-x-6 gap-y-2 text-[11px]">
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Play / Pausa</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">Spazio</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">−15 secondi</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">←</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">+30 secondi</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">→</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Volume +</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">↑</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Volume −</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">↓</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Muto</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">M</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Velocità +</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">+</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Velocità −</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">−</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Inizio</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">0</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Segnalibro</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">B</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Sleep timer</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">S</kbd></div>
+            <div class="flex items-center justify-between"><span class="text-pod-gray">Questa guida</span><kbd class="bg-white/10 px-1.5 py-0.5 rounded font-mono text-white">?</kbd></div>
+        </div>
+    </div>
+</div>
 
 <script>
 (function() {
@@ -153,8 +334,10 @@
     const chaptersContainer = document.getElementById('player-chapters-container');
     const chaptersList = document.getElementById('player-chapters-list');
     const toggleChaptersBtn = document.getElementById('toggle-chapters');
+    const toggleBookmarksBtn = document.getElementById('toggle-bookmarks');
     const transcriptContainer = document.getElementById('player-transcript-container');
     const transcriptList = document.getElementById('player-transcript-list');
+    const transcriptSearch = document.getElementById('player-transcript-search');
     const toggleTranscriptBtn = document.getElementById('toggle-transcript');
     const chapterPrevBtn = document.getElementById('player-chapter-prev');
     const chapterNextBtn = document.getElementById('player-chapter-next');
@@ -162,6 +345,238 @@
     const episodeNextBtn = document.getElementById('player-episode-next');
     const chMarksContainer = document.getElementById('player-ch-marks');
     const seekThumb = document.getElementById('player-seek-thumb');
+    const expandedPlayer = document.getElementById('player-expanded');
+    const expandedClose = document.getElementById('player-expanded-close');
+    const expandedHandle = document.getElementById('player-expanded-handle');
+    const expandedPlayBtn = document.getElementById('player-expanded-play');
+    const expandedPlayIcon = document.getElementById('player-expanded-play-icon');
+    const expandedProgress = document.getElementById('player-expanded-progress');
+    const expandedProgressBar = document.getElementById('player-expanded-progress-bar');
+    const expandedChMarks = document.getElementById('player-expanded-ch-marks');
+    const expandedCurrentEl = document.getElementById('player-expanded-current');
+    const expandedDurationEl = document.getElementById('player-expanded-duration');
+    const expandedTitle = document.getElementById('player-expanded-title');
+    const expandedImage = document.getElementById('player-expanded-image');
+    const expandedSpeedSelect = document.getElementById('player-expanded-speed');
+    const expandedChaptersPanel = document.getElementById('player-expanded-chapters');
+    const expandedTranscriptPanel = document.getElementById('player-expanded-transcript');
+    const expandedTabChapters = document.getElementById('player-expanded-tab-chapters');
+    const expandedTabTranscript = document.getElementById('player-expanded-tab-transcript');
+    const expandTrigger = document.getElementById('player-image-container');
+    const shortcutsBtn = document.getElementById('player-shortcuts-btn');
+    const shortcutsModal = document.getElementById('player-shortcuts-modal');
+    const shortcutsClose = document.getElementById('player-shortcuts-close');
+    const shortcutsBackdrop = document.getElementById('player-shortcuts-backdrop');
+    const shareBtn = document.getElementById('player-share-btn');
+    const sharePanel = document.getElementById('player-share-panel');
+    const shareUrlInput = document.getElementById('player-share-url');
+    const shareCopyBtn = document.getElementById('player-share-copy');
+    const shareFeedback = document.getElementById('player-share-feedback');
+    const sleepBtn = document.getElementById('player-sleep-btn');
+    const sleepPanel = document.getElementById('player-sleep-panel');
+    const sleepCountdown = document.getElementById('player-sleep-countdown');
+    const volumeBtn = document.getElementById('player-volume-btn');
+    const volumeIcon = document.getElementById('player-volume-icon');
+    const volumeSlider = document.getElementById('player-volume');
+    const resumeBanner = document.getElementById('player-resume-banner');
+    const resumeLabel = document.getElementById('player-resume-label');
+    const resumeConfirmBtn = document.getElementById('player-resume-confirm');
+    const resumeDismissBtn = document.getElementById('player-resume-dismiss');
+
+    let resumeBannerTimer = null;
+    let pendingResumeTime = 0;
+
+    function showResumeBanner(savedTime) {
+        pendingResumeTime = savedTime;
+        resumeLabel.textContent = 'Riprendi da ' + formatTime(savedTime);
+        resumeBanner.classList.remove('hidden');
+        clearTimeout(resumeBannerTimer);
+        resumeBannerTimer = setTimeout(hideResumeBanner, 5000);
+    }
+
+    function hideResumeBanner() {
+        resumeBanner.classList.add('hidden');
+        clearTimeout(resumeBannerTimer);
+        pendingResumeTime = 0;
+    }
+
+    const volumeSvgHigh = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>';
+    const volumeSvgLow  = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>';
+    const volumeSvgMute = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>';
+    let prevVolume = 1;
+
+    function updateVolumeIcon(vol) {
+        if (vol === 0) volumeIcon.innerHTML = volumeSvgMute;
+        else if (vol < 0.5) volumeIcon.innerHTML = volumeSvgLow;
+        else volumeIcon.innerHTML = volumeSvgHigh;
+    }
+
+    if (volumeSlider) {
+        volumeSlider.addEventListener('input', function() {
+            audio.volume = parseFloat(this.value);
+            if (audio.volume > 0) {
+                audio.muted = false;
+                prevVolume = audio.volume;
+            }
+            updateVolumeIcon(audio.volume);
+        });
+    }
+
+    if (volumeBtn) {
+        volumeBtn.addEventListener('click', function() {
+            if (audio.muted || audio.volume === 0) {
+                audio.muted = false;
+                audio.volume = prevVolume || 1;
+                volumeSlider.value = audio.volume;
+            } else {
+                prevVolume = audio.volume;
+                audio.muted = true;
+                audio.volume = 0;
+                volumeSlider.value = 0;
+            }
+            updateVolumeIcon(audio.volume);
+        });
+    }
+
+    let currentPermalink = '';
+
+    function buildShareUrl(permalink, seconds) {
+        try {
+            const url = new URL(permalink, window.location.href);
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            url.searchParams.set('t', m + 'm' + (s < 10 ? '0' : '') + s + 's');
+            return url.toString();
+        } catch(e) {
+            return permalink;
+        }
+    }
+
+    if (shareBtn) {
+        shareBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const shareUrl = currentPermalink ? buildShareUrl(currentPermalink, audio.currentTime) : window.location.href;
+            // Use native Web Share API on mobile if available
+            if (navigator.share) {
+                navigator.share({
+                    title: titleEl ? titleEl.textContent : '{{ .Site.Title }}',
+                    text: 'Ascolta "' + (titleEl ? titleEl.textContent : '{{ .Site.Title }}') + '" su Pensieri in Codice',
+                    url: shareUrl
+                }).catch(function() {});
+                return;
+            }
+            // Fallback: desktop panel
+            const isOpen = !sharePanel.classList.contains('hidden');
+            if (!isOpen && currentPermalink) {
+                shareUrlInput.value = shareUrl;
+                shareFeedback.classList.add('hidden');
+            }
+            sharePanel.classList.toggle('hidden', isOpen);
+            shareBtn.setAttribute('aria-expanded', String(!isOpen));
+        });
+    }
+
+    if (shareCopyBtn) {
+        shareCopyBtn.addEventListener('click', function() {
+            const url = shareUrlInput.value;
+            if (!url) return;
+            navigator.clipboard.writeText(url).then(function() {
+                shareFeedback.classList.remove('hidden');
+                setTimeout(function() { shareFeedback.classList.add('hidden'); }, 2000);
+            }).catch(function() {
+                shareUrlInput.select();
+                document.execCommand('copy');
+                shareFeedback.classList.remove('hidden');
+                setTimeout(function() { shareFeedback.classList.add('hidden'); }, 2000);
+            });
+        });
+    }
+
+    document.addEventListener('click', function(e) {
+        if (sharePanel && !sharePanel.classList.contains('hidden') && !sharePanel.contains(e.target) && e.target !== shareBtn) {
+            sharePanel.classList.add('hidden');
+            shareBtn.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+    let sleepTimeout = null;
+    let sleepCountdownInterval = null;
+    let sleepEndsAt = 0;
+    let sleepOnEnd = false;
+
+    function clearSleepTimer() {
+        clearTimeout(sleepTimeout);
+        clearInterval(sleepCountdownInterval);
+        sleepTimeout = null;
+        sleepCountdownInterval = null;
+        sleepEndsAt = 0;
+        sleepOnEnd = false;
+        if (sleepCountdown) { sleepCountdown.textContent = ''; sleepCountdown.classList.add('hidden'); }
+        if (sleepBtn) sleepBtn.classList.remove('text-pod-orange');
+    }
+
+    function startSleepTimer(minutes) {
+        clearSleepTimer();
+        if (minutes === 'end') {
+            sleepOnEnd = true;
+            if (sleepCountdown) { sleepCountdown.textContent = 'fine ep.'; sleepCountdown.classList.remove('hidden'); }
+            if (sleepBtn) sleepBtn.classList.add('text-pod-orange');
+            return;
+        }
+        const ms = minutes * 60 * 1000;
+        sleepEndsAt = Date.now() + ms;
+        if (sleepBtn) sleepBtn.classList.add('text-pod-orange');
+        if (sleepCountdown) sleepCountdown.classList.remove('hidden');
+        sleepTimeout = setTimeout(function() {
+            audio.pause();
+            clearSleepTimer();
+        }, ms);
+        sleepCountdownInterval = setInterval(function() {
+            const remaining = Math.max(0, sleepEndsAt - Date.now());
+            const m = Math.floor(remaining / 60000);
+            const s = Math.floor((remaining % 60000) / 1000);
+            if (sleepCountdown) sleepCountdown.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+            if (remaining === 0) clearSleepTimer();
+        }, 1000);
+    }
+
+    if (sleepBtn) {
+        sleepBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const isOpen = !sleepPanel.classList.contains('hidden');
+            sleepPanel.classList.toggle('hidden', isOpen);
+            sleepBtn.setAttribute('aria-expanded', String(!isOpen));
+        });
+    }
+
+    document.querySelectorAll('.sleep-option').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const val = this.dataset.minutes;
+            sleepPanel.classList.add('hidden');
+            sleepBtn.setAttribute('aria-expanded', 'false');
+            if (val === 'off') { clearSleepTimer(); return; }
+            startSleepTimer(val === 'end' ? 'end' : parseInt(val, 10));
+        });
+    });
+
+    document.addEventListener('click', function(e) {
+        if (sleepPanel && !sleepPanel.classList.contains('hidden') && !sleepPanel.contains(e.target) && e.target !== sleepBtn) {
+            sleepPanel.classList.add('hidden');
+            sleepBtn.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+    audio.addEventListener('ended', function() {
+        if (sleepOnEnd) { clearSleepTimer(); }
+    });
+
+    resumeConfirmBtn.addEventListener('click', function() {
+        audio.currentTime = pendingResumeTime;
+        if (audio.paused) audio.play();
+        hideResumeBanner();
+    });
+
+    resumeDismissBtn.addEventListener('click', hideResumeBanner);
 
     let currentChapters = [];
     let currentTranscript = [];
@@ -223,16 +638,30 @@
             title = title.substring(1, title.length - 1);
         }
 
+        currentPermalink = permalink || window.location.href;
         if (titleEl) {
             titleEl.textContent = title;
             titleEl.title = title;
             titleEl.href = permalink || '#';
         }
+        if (expandedTitle) expandedTitle.textContent = title;
+        if (expandedImage) expandedImage.src = image || "{{ .Site.Params.podcast.image | absURL }}";
+        updateMediaSession(title, image);
 
-        if (audio.src !== url) {
+        const isNewEpisode = audio.src !== url;
+        if (isNewEpisode) {
             audio.src = url;
             audio.load();
         }
+
+        // Show resume banner if this episode has a saved position > 5s
+        hideResumeBanner();
+        try {
+            const savedState = JSON.parse(localStorage.getItem('pic_player_state'));
+            if (savedState && savedState.url === url && savedState.currentTime > 5) {
+                showResumeBanner(savedState.currentTime);
+            }
+        } catch(e) {}
 
         // Apply current playback rate if selected
         if (speedSelect) {
@@ -327,11 +756,16 @@
             };
             
             div.innerHTML = `
-                <div class="flex items-center space-x-2 truncate">
-                    <span class="text-pod-orange font-mono">${formatTime(chapter.startTime)}</span>
+                <div class="flex items-center space-x-2 truncate flex-1 min-w-0">
+                    <span class="text-pod-orange font-mono flex-shrink-0">${formatTime(chapter.startTime)}</span>
                     <span class="text-white group-hover:text-pod-orange transition-colors truncate">${chapter.title}</span>
                 </div>
-                ${chapter.img ? `<img src="${chapter.img}" class="h-4 w-4 rounded object-cover flex-shrink-0 ml-2">` : ''}
+                <div class="flex items-center gap-2 ml-2 flex-shrink-0">
+                    ${chapter.img ? `<img src="${chapter.img}" class="h-4 w-4 rounded object-cover">` : ''}
+                    <div class="w-14 h-1 bg-white/10 rounded-full overflow-hidden" data-chapter-progress="${index}">
+                        <div class="h-full bg-pod-orange rounded-full transition-all duration-300" style="width:0%"></div>
+                    </div>
+                </div>
             `;
             chaptersList.appendChild(div);
         });
@@ -354,6 +788,19 @@
             chMarksContainer.appendChild(mark);
         });
         updateChapterMarkColors();
+    }
+
+    function updateChapterProgressBars() {
+        if (!currentChapters.length || !audio.duration) return;
+        currentChapters.forEach(function(chapter, i) {
+            const bar = chaptersList.querySelector('[data-chapter-progress="' + i + '"] div');
+            if (!bar) return;
+            const end = (i + 1 < currentChapters.length) ? currentChapters[i + 1].startTime : audio.duration;
+            const duration = end - chapter.startTime;
+            if (duration <= 0) return;
+            const elapsed = Math.min(Math.max(audio.currentTime - chapter.startTime, 0), duration);
+            bar.style.width = ((elapsed / duration) * 100) + '%';
+        });
     }
 
     function updateChapterMarkColors() {
@@ -390,25 +837,55 @@
         return segments;
     }
 
+    function highlightText(text, query) {
+        if (!query) return text;
+        const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        return text.replace(new RegExp('(' + escaped + ')', 'gi'), '<mark class="bg-pod-orange/40 text-white rounded px-0.5">$1</mark>');
+    }
+
+    function filterTranscript(query) {
+        const items = transcriptList.querySelectorAll('[data-transcript-index]');
+        const q = query.trim().toLowerCase();
+        items.forEach(function(div) {
+            const seg = currentTranscript[parseInt(div.dataset.transcriptIndex, 10)];
+            if (!seg) return;
+            const matches = !q || seg.text.toLowerCase().includes(q);
+            div.classList.toggle('hidden', !matches);
+            const textNode = div.querySelector('.transcript-text');
+            if (textNode) textNode.innerHTML = matches && q ? highlightText(seg.text, query) : seg.text;
+        });
+    }
+
     function renderTranscript(segments) {
         currentTranscript = segments;
         currentTranscriptIndex = -1;
         transcriptList.innerHTML = '';
+        if (transcriptSearch) transcriptSearch.value = '';
         segments.forEach((seg, index) => {
             const div = document.createElement('div');
             div.className = 'px-2 py-1 rounded cursor-pointer hover:bg-white/10 transition-colors text-[11px] leading-relaxed text-pod-gray';
             div.dataset.transcriptIndex = index;
             div.onclick = () => { audio.currentTime = seg.start; if (audio.paused) audio.play(); };
-            div.innerHTML = `<span class="text-pod-orange font-mono mr-2 text-[9px]">${formatTime(seg.start)}</span>${seg.text}`;
+            div.innerHTML = `<span class="text-pod-orange font-mono mr-2 text-[9px]">${formatTime(seg.start)}</span><span class="transcript-text">${seg.text}</span>`;
             transcriptList.appendChild(div);
         });
         toggleTranscriptBtn.classList.remove('hidden');
+    }
+
+    if (transcriptSearch) {
+        transcriptSearch.addEventListener('input', function() {
+            filterTranscript(this.value);
+        });
+        transcriptSearch.addEventListener('keydown', function(e) {
+            e.stopPropagation();
+        });
     }
 
     function hideTranscript() {
         currentTranscript = [];
         currentTranscriptIndex = -1;
         transcriptList.innerHTML = '';
+        if (transcriptSearch) transcriptSearch.value = '';
         transcriptContainer.classList.add('hidden');
         toggleTranscriptBtn.classList.add('hidden');
     }
@@ -420,6 +897,8 @@
         if (open) {
             transcriptContainer.classList.add('hidden');
             toggleTranscriptBtn.setAttribute('aria-expanded', 'false');
+            bookmarksContainer.classList.add('hidden');
+            toggleBookmarksBtn.setAttribute('aria-expanded', 'false');
         }
     });
 
@@ -430,6 +909,434 @@
         if (open) {
             chaptersContainer.classList.add('hidden');
             toggleChaptersBtn.setAttribute('aria-expanded', 'false');
+            bookmarksContainer.classList.add('hidden');
+            toggleBookmarksBtn.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+    // ===== BOOKMARKS =====
+    const bookmarksContainer = document.getElementById('player-bookmarks-container');
+    const bookmarksList = document.getElementById('player-bookmarks-list');
+    const bookmarksEmpty = document.getElementById('player-bookmarks-empty');
+    const bookmarkAddBtn = document.getElementById('player-bookmark-add');
+
+    function getBookmarkKey(url) { return 'pic_bookmarks_' + btoa(url).replace(/=/g, ''); }
+
+    function loadBookmarks(url) {
+        try { return JSON.parse(localStorage.getItem(getBookmarkKey(url))) || []; } catch(e) { return []; }
+    }
+
+    function saveBookmarks(url, list) {
+        localStorage.setItem(getBookmarkKey(url), JSON.stringify(list));
+    }
+
+    function renderBookmarks() {
+        const url = audio.src;
+        const list = loadBookmarks(url);
+        bookmarksList.innerHTML = '';
+        if (!list.length) {
+            bookmarksEmpty.classList.remove('hidden');
+            return;
+        }
+        bookmarksEmpty.classList.add('hidden');
+        list.forEach(function(bm, i) {
+            const div = document.createElement('div');
+            div.className = 'flex items-center justify-between text-[11px] px-2 py-1.5 rounded hover:bg-white/10 group border border-white/5 cursor-pointer';
+            div.innerHTML = `
+                <button class="flex items-center gap-2 flex-1 min-w-0 text-left" data-bm-time="${bm.time}">
+                    <span class="text-pod-orange font-mono flex-shrink-0">${formatTime(bm.time)}</span>
+                    <span class="text-white truncate">${bm.note || 'Segnalibro'}</span>
+                </button>
+                <button class="text-pod-gray hover:text-red-400 ml-2 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" data-bm-delete="${i}" aria-label="Elimina segnalibro">✕</button>
+            `;
+            div.querySelector('[data-bm-time]').addEventListener('click', function() {
+                audio.currentTime = parseFloat(this.dataset.bmTime);
+                if (audio.paused) audio.play();
+            });
+            div.querySelector('[data-bm-delete]').addEventListener('click', function(e) {
+                e.stopPropagation();
+                const idx = parseInt(this.dataset.bmDelete, 10);
+                const updated = loadBookmarks(url);
+                updated.splice(idx, 1);
+                saveBookmarks(url, updated);
+                renderBookmarks();
+            });
+            bookmarksList.appendChild(div);
+        });
+    }
+
+    window.addBookmark = function(note) {
+        if (!audio.src) return;
+        const list = loadBookmarks(audio.src);
+        list.push({ time: audio.currentTime, note: note || '', created: Date.now() });
+        list.sort(function(a, b) { return a.time - b.time; });
+        saveBookmarks(audio.src, list);
+        if (!bookmarksContainer.classList.contains('hidden')) renderBookmarks();
+    };
+
+    if (bookmarkAddBtn) {
+        bookmarkAddBtn.addEventListener('click', function() {
+            window.addBookmark('');
+            renderBookmarks();
+        });
+    }
+
+    if (toggleBookmarksBtn) {
+        toggleBookmarksBtn.addEventListener('click', function() {
+            bookmarksContainer.classList.toggle('hidden');
+            const open = !bookmarksContainer.classList.contains('hidden');
+            toggleBookmarksBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            if (open) {
+                chaptersContainer.classList.add('hidden');
+                toggleChaptersBtn.setAttribute('aria-expanded', 'false');
+                transcriptContainer.classList.add('hidden');
+                toggleTranscriptBtn.setAttribute('aria-expanded', 'false');
+                renderBookmarks();
+            }
+        });
+    }
+
+    // ===== SHORTCUTS MODAL =====
+    function openShortcutsModal() { if (shortcutsModal) shortcutsModal.classList.remove('hidden'); }
+    function closeShortcutsModal() { if (shortcutsModal) shortcutsModal.classList.add('hidden'); }
+
+    if (shortcutsBtn) shortcutsBtn.addEventListener('click', openShortcutsModal);
+    if (shortcutsClose) shortcutsClose.addEventListener('click', closeShortcutsModal);
+    if (shortcutsBackdrop) shortcutsBackdrop.addEventListener('click', closeShortcutsModal);
+
+    // ===== EXPANDED PLAYER =====
+    function openExpandedPlayer() {
+        if (!expandedPlayer) return;
+        expandedPlayer.style.transform = 'translateY(0)';
+        expandedPlayer.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        syncExpandedPlayer();
+    }
+
+    function closeExpandedPlayer() {
+        if (!expandedPlayer) return;
+        expandedPlayer.style.transform = 'translateY(100%)';
+        expandedPlayer.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    function syncExpandedPlayer() {
+        if (!expandedPlayer || expandedPlayer.getAttribute('aria-hidden') === 'true') return;
+        if (expandedTitle) expandedTitle.textContent = titleEl ? titleEl.textContent : '';
+        if (expandedImage) expandedImage.src = document.getElementById('player-image').src;
+        if (expandedSpeedSelect) expandedSpeedSelect.value = audio.playbackRate;
+        updateExpandedPlayIcon();
+        syncExpandedChapters();
+        syncExpandedTranscript();
+    }
+
+    function updateExpandedPlayIcon() {
+        if (!expandedPlayIcon) return;
+        expandedPlayIcon.innerHTML = audio.paused ? '<polygon points="5 3 19 12 5 21 5 3"/>' : '<rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>';
+    }
+
+    function syncExpandedChapters() {
+        if (!expandedChaptersPanel) return;
+        expandedChaptersPanel.innerHTML = '';
+        if (!currentChapters.length) { expandedChaptersPanel.innerHTML = '<p class="text-[11px] text-pod-gray text-center py-4">Nessun capitolo disponibile</p>'; return; }
+        currentChapters.forEach(function(ch, i) {
+            const div = document.createElement('div');
+            div.className = 'flex items-center justify-between px-2 py-1.5 rounded cursor-pointer hover:bg-white/10 transition-colors text-[11px] border border-white/5';
+            div.dataset.expChIndex = i;
+            div.innerHTML = '<span class="text-pod-orange font-mono mr-2 flex-shrink-0">' + formatTime(ch.startTime) + '</span><span class="truncate">' + ch.title + '</span>';
+            div.addEventListener('click', function() { audio.currentTime = ch.startTime; if (audio.paused) audio.play(); });
+            expandedChaptersPanel.appendChild(div);
+        });
+    }
+
+    function syncExpandedTranscript() {
+        if (!expandedTranscriptPanel) return;
+        expandedTranscriptPanel.innerHTML = '';
+        if (!currentTranscript.length) { expandedTranscriptPanel.innerHTML = '<p class="text-[11px] text-pod-gray text-center py-4">Nessuna trascrizione disponibile</p>'; return; }
+        currentTranscript.forEach(function(seg, i) {
+            const div = document.createElement('div');
+            div.className = 'px-2 py-1 rounded cursor-pointer hover:bg-white/10 transition-colors text-[11px] text-pod-gray leading-relaxed';
+            div.dataset.expTrIndex = i;
+            div.innerHTML = '<span class="text-pod-orange font-mono mr-1 text-[9px]">' + formatTime(seg.start) + '</span>' + seg.text;
+            div.addEventListener('click', function() { audio.currentTime = seg.start; if (audio.paused) audio.play(); });
+            expandedTranscriptPanel.appendChild(div);
+        });
+    }
+
+    if (expandTrigger) {
+        expandTrigger.addEventListener('click', function(e) {
+            if (window.innerWidth < 1024) openExpandedPlayer();
+        });
+    }
+    if (expandedClose) expandedClose.addEventListener('click', closeExpandedPlayer);
+    if (expandedHandle) expandedHandle.addEventListener('click', closeExpandedPlayer);
+
+    if (expandedPlayBtn) {
+        expandedPlayBtn.addEventListener('click', function() {
+            if (audio.paused) audio.play(); else audio.pause();
+        });
+    }
+
+    audio.addEventListener('play', function() { updateExpandedPlayIcon(); });
+    audio.addEventListener('pause', function() { updateExpandedPlayIcon(); });
+
+    audio.addEventListener('timeupdate', function() {
+        if (!expandedPlayer || expandedPlayer.getAttribute('aria-hidden') === 'true') return;
+        if (audio.duration) {
+            const pct = (audio.currentTime / audio.duration) * 100;
+            if (expandedProgress) expandedProgress.style.width = pct + '%';
+        }
+        if (expandedCurrentEl) expandedCurrentEl.textContent = formatTime(audio.currentTime);
+    });
+
+    audio.addEventListener('loadedmetadata', function() {
+        if (expandedDurationEl) expandedDurationEl.textContent = formatTime(audio.duration);
+    });
+
+    if (expandedProgressBar) {
+        expandedProgressBar.addEventListener('click', function(e) {
+            if (!audio.duration) return;
+            const rect = expandedProgressBar.getBoundingClientRect();
+            audio.currentTime = ((e.clientX - rect.left) / rect.width) * audio.duration;
+        });
+    }
+
+    if (expandedSpeedSelect) {
+        expandedSpeedSelect.addEventListener('change', function() {
+            audio.playbackRate = parseFloat(this.value);
+            if (speedSelect) speedSelect.value = this.value;
+        });
+    }
+
+    document.getElementById('player-expanded-prev') && document.getElementById('player-expanded-prev').addEventListener('click', function() { audio.currentTime = Math.max(0, audio.currentTime - 15); vibrate(10); });
+    document.getElementById('player-expanded-next') && document.getElementById('player-expanded-next').addEventListener('click', function() { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30); vibrate(10); });
+    document.getElementById('player-expanded-bookmark') && document.getElementById('player-expanded-bookmark').addEventListener('click', function() { if (window.addBookmark) window.addBookmark(''); vibrate(50); });
+    document.getElementById('player-expanded-share') && document.getElementById('player-expanded-share').addEventListener('click', function() {
+        const shareUrl = currentPermalink ? buildShareUrl(currentPermalink, audio.currentTime) : window.location.href;
+        if (navigator.share) { navigator.share({ title: titleEl ? titleEl.textContent : '', url: shareUrl }).catch(function(){}); }
+    });
+
+    if (expandedTabChapters) {
+        expandedTabChapters.addEventListener('click', function() {
+            expandedChaptersPanel.classList.remove('hidden');
+            expandedTranscriptPanel.classList.add('hidden');
+            expandedTabChapters.classList.add('bg-white/10', 'text-white');
+            expandedTabChapters.classList.remove('text-pod-gray');
+            expandedTabTranscript.classList.remove('bg-white/10', 'text-white');
+            expandedTabTranscript.classList.add('text-pod-gray');
+        });
+    }
+    if (expandedTabTranscript) {
+        expandedTabTranscript.addEventListener('click', function() {
+            expandedTranscriptPanel.classList.remove('hidden');
+            expandedChaptersPanel.classList.add('hidden');
+            expandedTabTranscript.classList.add('bg-white/10', 'text-white');
+            expandedTabTranscript.classList.remove('text-pod-gray');
+            expandedTabChapters.classList.remove('bg-white/10', 'text-white');
+            expandedTabChapters.classList.add('text-pod-gray');
+        });
+    }
+
+    // ===== TOUCH GESTURES (Pointer Events API) =====
+    (function() {
+        if (window.innerWidth >= 1024) return; // desktop only uses mouse
+
+        // --- Helper: show skip feedback overlay ---
+        function showSkipFeedback(direction) {
+            const el = document.createElement('div');
+            el.textContent = direction > 0 ? '+30s' : '-15s';
+            el.style.cssText = 'position:fixed;' + (direction > 0 ? 'right:16px' : 'left:16px') + ';bottom:120px;z-index:60;background:rgba(232,101,32,0.9);color:#fff;font-size:14px;font-weight:bold;padding:6px 12px;border-radius:8px;pointer-events:none;transition:opacity 0.4s';
+            document.body.appendChild(el);
+            setTimeout(function() { el.style.opacity = '0'; setTimeout(function() { el.remove(); }, 400); }, 600);
+        }
+
+        // 1. Swipe UP on mini-player footer → open expanded player
+        var footerEl = document.querySelector('#footer-player-container footer');
+        if (footerEl) {
+            var swipeStartY = 0;
+            footerEl.addEventListener('pointerdown', function(e) { swipeStartY = e.clientY; }, { passive: true });
+            footerEl.addEventListener('pointerup', function(e) {
+                if (swipeStartY - e.clientY > 40) openExpandedPlayer();
+            }, { passive: true });
+        }
+
+        // 2+3. Double tap and swipe horizontal on expanded player
+        var expandedBody = document.getElementById('player-expanded');
+        if (expandedBody) {
+            var tapCount = 0, tapTimer = null, tapX = 0;
+            var pointerDownX = 0, pointerDownTime = 0;
+            var longPressTimer = null;
+
+            expandedBody.addEventListener('pointerdown', function(e) {
+                // Ignore taps on interactive controls
+                if (e.target.closest('button,input,select,a')) return;
+                pointerDownX = e.clientX;
+                pointerDownTime = Date.now();
+
+                // Long press on play button → bookmark
+                if (e.target.closest('#player-expanded-play')) {
+                    longPressTimer = setTimeout(function() {
+                        if (window.addBookmark) window.addBookmark('');
+                        vibrate(50);
+                    }, 500);
+                }
+            }, { passive: true });
+
+            expandedBody.addEventListener('pointerup', function(e) {
+                clearTimeout(longPressTimer);
+                if (e.target.closest('button,input,select,a')) return;
+                var dx = e.clientX - pointerDownX;
+                var dt = Date.now() - pointerDownTime;
+
+                // Swipe horizontal (> 60px, < 300ms) → skip
+                if (Math.abs(dx) > 60 && dt < 300) {
+                    if (dx > 0) { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30); vibrate(10); }
+                    else { audio.currentTime = Math.max(0, audio.currentTime - 15); vibrate(10); }
+                    showSkipFeedback(dx);
+                    return;
+                }
+
+                // Double tap → skip
+                tapCount++;
+                tapX = e.clientX;
+                if (tapCount === 1) {
+                    tapTimer = setTimeout(function() { tapCount = 0; }, 300);
+                } else if (tapCount === 2) {
+                    clearTimeout(tapTimer);
+                    tapCount = 0;
+                    var half = window.innerWidth / 2;
+                    if (tapX < half) { audio.currentTime = Math.max(0, audio.currentTime - 15); vibrate(10); showSkipFeedback(-1); }
+                    else { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30); vibrate(10); showSkipFeedback(1); }
+                }
+            }, { passive: true });
+
+            // 5. Swipe vertical on speed badge → ±0.1× per 10px
+            var speedBadge = document.getElementById('player-expanded-speed');
+            if (speedBadge) {
+                var speedPointerY = 0;
+                speedBadge.addEventListener('pointerdown', function(e) { speedPointerY = e.clientY; e.stopPropagation(); }, { passive: true });
+                speedBadge.addEventListener('pointermove', function(e) {
+                    if (!e.buttons) return;
+                    var dy = speedPointerY - e.clientY;
+                    if (Math.abs(dy) > 10) {
+                        var step = dy > 0 ? 0.1 : -0.1;
+                        var newRate = Math.round(Math.min(3, Math.max(0.5, audio.playbackRate + step)) * 10) / 10;
+                        audio.playbackRate = newRate;
+                        if (speedSelect) speedSelect.value = newRate;
+                        speedBadge.value = newRate;
+                        speedPointerY = e.clientY;
+                    }
+                }, { passive: true });
+            }
+        }
+
+        // 6. Fine scrubbing on expanded seekbar: vertical movement reduces horizontal sensitivity
+        var expBar = document.getElementById('player-expanded-progress-bar');
+        if (expBar) {
+            var scrubbing = false, scrubStartX = 0, scrubStartY = 0, scrubStartTime = 0;
+            expBar.addEventListener('pointerdown', function(e) {
+                scrubbing = true; scrubStartX = e.clientX; scrubStartY = e.clientY; scrubStartTime = audio.currentTime;
+                expBar.setPointerCapture(e.pointerId);
+            });
+            expBar.addEventListener('pointermove', function(e) {
+                if (!scrubbing || !audio.duration) return;
+                var dx = e.clientX - scrubStartX;
+                var dy = Math.abs(e.clientY - scrubStartY);
+                var sensitivity = 1 / (1 + dy * 0.05); // vertical drag reduces sensitivity
+                var pct = (dx / expBar.offsetWidth) * sensitivity;
+                audio.currentTime = Math.max(0, Math.min(audio.duration, scrubStartTime + pct * audio.duration));
+            });
+            expBar.addEventListener('pointerup', function() { scrubbing = false; });
+        }
+    })();
+
+    // ===== KEYBOARD SHORTCUTS =====
+    document.addEventListener('keydown', function(e) {
+        const tag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
+        if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
+        if (document.activeElement && document.activeElement.isContentEditable) return;
+
+        switch (e.key) {
+            case ' ':
+            case 'Spacebar':
+                e.preventDefault();
+                if (audio.paused) audio.play(); else audio.pause();
+                break;
+            case 'ArrowLeft':
+                if (!e.altKey && !e.metaKey && document.activeElement !== progressBar) {
+                    e.preventDefault();
+                    audio.currentTime = Math.max(0, audio.currentTime - 15);
+                    vibrate(10);
+                }
+                break;
+            case 'ArrowRight':
+                if (!e.altKey && !e.metaKey && document.activeElement !== progressBar) {
+                    e.preventDefault();
+                    audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30);
+                    vibrate(10);
+                }
+                break;
+            case 'ArrowUp':
+                if (document.activeElement !== progressBar) {
+                    e.preventDefault();
+                    audio.volume = Math.min(1, audio.volume + 0.1);
+                    if (volumeSlider) volumeSlider.value = audio.volume;
+                    updateVolumeIcon(audio.volume);
+                }
+                break;
+            case 'ArrowDown':
+                if (document.activeElement !== progressBar) {
+                    e.preventDefault();
+                    audio.volume = Math.max(0, audio.volume - 0.1);
+                    if (volumeSlider) volumeSlider.value = audio.volume;
+                    updateVolumeIcon(audio.volume);
+                }
+                break;
+            case 'm':
+            case 'M':
+                if (audio.muted || audio.volume === 0) {
+                    audio.muted = false; audio.volume = prevVolume || 1;
+                    if (volumeSlider) volumeSlider.value = audio.volume;
+                } else {
+                    prevVolume = audio.volume; audio.muted = true; audio.volume = 0;
+                    if (volumeSlider) volumeSlider.value = 0;
+                }
+                updateVolumeIcon(audio.volume);
+                break;
+            case '+':
+            case '=': {
+                const rates = [0.5, 0.8, 1, 1.2, 1.5, 2, 2.5, 3];
+                const idx = rates.indexOf(audio.playbackRate);
+                if (idx < rates.length - 1) { audio.playbackRate = rates[idx + 1]; if (speedSelect) speedSelect.value = audio.playbackRate; }
+                break;
+            }
+            case '-': {
+                const rates = [0.5, 0.8, 1, 1.2, 1.5, 2, 2.5, 3];
+                const idx = rates.indexOf(audio.playbackRate);
+                if (idx > 0) { audio.playbackRate = rates[idx - 1]; if (speedSelect) speedSelect.value = audio.playbackRate; }
+                break;
+            }
+            case '0':
+                audio.currentTime = 0;
+                break;
+            case 'b':
+            case 'B':
+                if (window.addBookmark) window.addBookmark('');
+                break;
+            case 's':
+            case 'S':
+                if (sleepPanel) {
+                    const isOpen = !sleepPanel.classList.contains('hidden');
+                    sleepPanel.classList.toggle('hidden', isOpen);
+                    if (sleepBtn) sleepBtn.setAttribute('aria-expanded', String(!isOpen));
+                }
+                break;
+            case '?':
+                openShortcutsModal();
+                break;
+            case 'Escape':
+                closeShortcutsModal();
+                break;
         }
     });
 
@@ -493,8 +1400,11 @@
                         statusEl.textContent = 'Ora in riproduzione';
                     }).catch(error => {
                         console.log("Autoplay on restore prevented:", error);
+                        if (state.currentTime > 5) showResumeBanner(state.currentTime);
                     });
                 }
+            } else if (state.currentTime > 5) {
+                showResumeBanner(state.currentTime);
             }
         } else if (window.__playlist && window.__playlist.length > 0) {
             const ep = window.__playlist[0];
@@ -581,7 +1491,24 @@
     });
 
     // Use window load for first hit, and turbo:load for navigation (if needed, but permanent should handle it)
-    window.addEventListener('load', function() { initPlayer(); applyListenedBadges(); });
+    window.addEventListener('load', function() {
+        initPlayer();
+        applyListenedBadges();
+        // Handle ?t= timestamp in URL (e.g. from share link)
+        const tParam = new URLSearchParams(window.location.search).get('t');
+        if (tParam) {
+            const match = tParam.match(/^(?:(\d+)m)?(?:(\d+)s)?$/);
+            if (match) {
+                const secs = (parseInt(match[1] || 0, 10) * 60) + parseInt(match[2] || 0, 10);
+                if (secs > 0) {
+                    audio.addEventListener('loadedmetadata', function seekOnce() {
+                        audio.currentTime = secs;
+                        audio.removeEventListener('loadedmetadata', seekOnce);
+                    }, { once: true });
+                }
+            }
+        }
+    });
     document.addEventListener('turbo:load', function() {
         applyListenedBadges();
     });
@@ -600,20 +1527,48 @@
             transcriptUrl: activeTranscriptUrl
         };
         localStorage.setItem('pic_player_state', JSON.stringify(state));
-    }, 2000);
+    }, 5000);
 
     speedSelect.addEventListener('change', function() {
         audio.playbackRate = parseFloat(this.value);
     });
 
+    // ===== MEDIA SESSION API =====
+    function updateMediaSession(title, image, chapterTitle) {
+        if (!('mediaSession' in navigator)) return;
+        const artwork = image ? [
+            { src: image, sizes: '512x512', type: 'image/jpeg' },
+            { src: image, sizes: '256x256', type: 'image/jpeg' }
+        ] : [];
+        navigator.mediaSession.metadata = new MediaMetadata({
+            title: chapterTitle || title || '{{ .Site.Title }}',
+            artist: '{{ .Site.Title }}',
+            album: '{{ .Site.Title }}',
+            artwork: artwork
+        });
+        navigator.mediaSession.setActionHandler('play',          () => audio.play());
+        navigator.mediaSession.setActionHandler('pause',         () => audio.pause());
+        navigator.mediaSession.setActionHandler('seekbackward',  () => { audio.currentTime = Math.max(0, audio.currentTime - 15); });
+        navigator.mediaSession.setActionHandler('seekforward',   () => { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30); });
+        navigator.mediaSession.setActionHandler('previoustrack', () => { if (typeof prevEpisode !== 'undefined') prevEpisode(); });
+        navigator.mediaSession.setActionHandler('nexttrack',     () => { if (typeof nextEpisode !== 'undefined') nextEpisode(); });
+        try {
+            navigator.mediaSession.setActionHandler('seekto', function(details) {
+                if (details.seekTime !== undefined) audio.currentTime = details.seekTime;
+            });
+        } catch(e) {}
+    }
+
     audio.addEventListener('pause', function() {
         updatePlayIcons(playSvg);
         statusEl.textContent = 'In pausa';
+        if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused';
     });
 
     audio.addEventListener('play', function() {
         updatePlayIcons(pauseSvg);
         statusEl.textContent = 'Ora in riproduzione';
+        if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing';
     });
 
     playBtn.addEventListener('click', function() {
@@ -643,7 +1598,10 @@
             progressBar.setAttribute('aria-valuenow', Math.round(pct));
             seekThumb.style.left = pct + '%';
             if (audio.currentTime / audio.duration >= 0.9) markListened(audio.src);
-            if (currentChapters.length) updateChapterMarkColors();
+            if ('mediaSession' in navigator && navigator.mediaSession.setPositionState) {
+                try { navigator.mediaSession.setPositionState({ duration: audio.duration, playbackRate: audio.playbackRate, position: audio.currentTime }); } catch(e) {}
+            }
+            if (currentChapters.length) { updateChapterMarkColors(); updateChapterProgressBars(); }
         }
         if (currentChapters.length) {
             // Trova il capitolo corrente
@@ -660,6 +1618,8 @@
                     el.classList.toggle('border-pod-orange/40', isActive);
                     el.classList.toggle('border-white/5', !isActive);
                 });
+                const chapterTitle = currentChapters[idx] ? currentChapters[idx].title : null;
+                updateMediaSession(titleEl ? titleEl.textContent : null, document.getElementById('player-image').src, chapterTitle);
             }
         }
 
@@ -679,7 +1639,9 @@
                 });
                 if (tIdx >= 0 && !transcriptContainer.classList.contains('hidden')) {
                     const activeEl = transcriptList.querySelector(`[data-transcript-index="${tIdx}"]`);
-                    if (activeEl) activeEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+                    if (activeEl && !activeEl.classList.contains('hidden')) {
+                        activeEl.scrollIntoView({ block: 'center', behavior: 'smooth' });
+                    }
                 }
             }
         }
@@ -722,12 +1684,16 @@
     const prevBtn = document.getElementById('player-prev');
     const nextBtn = document.getElementById('player-next');
 
+    function vibrate(ms) { try { if (navigator.vibrate) navigator.vibrate(ms); } catch(e) {} }
+
     prevBtn.addEventListener('click', function() {
         audio.currentTime = Math.max(0, audio.currentTime - 15);
+        vibrate(10);
     });
 
     nextBtn.addEventListener('click', function() {
         audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30);
+        vibrate(10);
     });
 
     chapterPrevBtn.addEventListener('click', function() {
