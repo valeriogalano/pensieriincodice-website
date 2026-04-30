@@ -563,6 +563,7 @@
             image: image || "{{ .Site.Params.podcast.image | absURL }}",
             chaptersUrl: chaptersUrl,
             transcriptUrl: transcriptUrl || null,
+            permalink: currentPermalink,
             currentTime: audio.currentTime,
             shouldPlay: true
         }));
@@ -698,7 +699,7 @@
 
             titleEl.textContent = state.title;
             statusEl.textContent = 'In pausa';
-            
+
             const playerImg = document.getElementById('player-image');
             const playerPlaceholder = document.getElementById('player-placeholder-icon');
             if (state.image) {
@@ -706,7 +707,7 @@
                 playerImg.classList.remove('hidden');
                 playerPlaceholder.classList.add('hidden');
             }
-            
+
             if (audio.src !== state.url) {
                 audio.src = state.url;
                 audio.currentTime = state.currentTime || 0;
@@ -720,6 +721,8 @@
             // Fall back to playlist data if saved state is missing chapter/transcript URLs
             const playlist = window.__playlist || [];
             const matchedEp = playlist.find(ep => state.url && state.url.includes(ep.audio));
+            currentPermalink = state.permalink || (matchedEp && matchedEp.permalink) || '';
+            if (titleEl) titleEl.href = currentPermalink || '#';
             const chaptersUrl = state.chaptersUrl || (matchedEp && matchedEp.chapters) || null;
             const transcriptUrl = state.transcriptUrl || (matchedEp && matchedEp.transcript) || null;
             activeChaptersUrl = chaptersUrl;
@@ -872,7 +875,8 @@
             shouldPlay: !audio.paused,
             playbackRate: audio.playbackRate,
             chaptersUrl: activeChaptersUrl,
-            transcriptUrl: activeTranscriptUrl
+            transcriptUrl: activeTranscriptUrl,
+            permalink: currentPermalink
         };
         localStorage.setItem('pic_player_state', JSON.stringify(state));
     }, 5000);
