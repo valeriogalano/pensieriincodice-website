@@ -1372,6 +1372,7 @@
             // Fall back to playlist data if saved state is missing chapter/transcript URLs
             const playlist = window.__playlist || [];
             const matchedEp = playlist.find(ep => state.url && state.url.includes(ep.audio));
+            currentPermalink = (matchedEp && matchedEp.permalink) || window.location.href;
             const chaptersUrl = state.chaptersUrl || (matchedEp && matchedEp.chapters) || null;
             const transcriptUrl = state.transcriptUrl || (matchedEp && matchedEp.transcript) || null;
             activeChaptersUrl = chaptersUrl;
@@ -1424,6 +1425,7 @@
                 playerPlaceholder.classList.add('hidden');
             }
 
+            currentPermalink = ep.permalink || window.location.href;
             audio.src = ep.audio;
             audio.load();
 
@@ -1492,21 +1494,28 @@
 
     // Use window load for first hit, and turbo:load for navigation (if needed, but permanent should handle it)
     window.addEventListener('load', function() {
-        initPlayer();
-        applyListenedBadges();
-        // Handle ?t= timestamp in URL (e.g. from share link)
+        // Parse ?t= before initPlayer so we can suppress the resume banner
+        let seekFromUrl = 0;
         const tParam = new URLSearchParams(window.location.search).get('t');
         if (tParam) {
             const match = tParam.match(/^(?:(\d+)m)?(?:(\d+)s)?$/);
             if (match) {
-                const secs = (parseInt(match[1] || 0, 10) * 60) + parseInt(match[2] || 0, 10);
-                if (secs > 0) {
-                    audio.addEventListener('loadedmetadata', function seekOnce() {
-                        audio.currentTime = secs;
-                        audio.removeEventListener('loadedmetadata', seekOnce);
-                    }, { once: true });
-                }
+                seekFromUrl = (parseInt(match[1] || 0, 10) * 60) + parseInt(match[2] || 0, 10);
             }
+        }
+
+        initPlayer();
+        applyListenedBadges();
+
+        if (seekFromUrl > 0) {
+            // Hide any resume banner that initPlayer may have shown
+            hideResumeBanner();
+            // Seek to the shared timestamp, overriding any saved position
+            audio.addEventListener('loadedmetadata', function seekOnce() {
+                audio.currentTime = seekFromUrl;
+            }, { once: true });
+            // If metadata is already available (cached audio), seek immediately
+            if (audio.readyState >= 1) audio.currentTime = seekFromUrl;
         }
     });
     document.addEventListener('turbo:load', function() {
