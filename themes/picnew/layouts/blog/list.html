@@ -6,7 +6,7 @@
     </header>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {{ range .Pages }}
+        {{ range .Paginator.Pages }}
         <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group">
             {{ if .Params.featureImage }}
             <div class="aspect-video mb-4 rounded-xl overflow-hidden">
