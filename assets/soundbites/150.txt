@@ -1,5 +1,5 @@
-926.920000	1002.700000	L informatico capisce prima interviene dopo
-1539.260000	1587.300000	Nessun personaggio
 388.700000	458.020000	Piu domande di prima
+926.920000	1002.700000	L informatico capisce prima interviene dopo
 1383.030000	1442.200000	Dietro la voce sicura
+1539.260000	1587.300000	Nessun personaggio
 1926.660000	2000.760000	Il podcast come palestra mentale
