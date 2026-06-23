@@ -1,0 +1,375 @@
+text: "
+
+## Introduzione  
+
+###### Nox  
+Di' la verità: ti sarai chiesto, ascoltando questo podcast, cosa ne pensa davvero Valerio Galano. Di Pensieri in codice, intendo. Di quello che fa, di come lo fa, di chi è dall'altro lato di centocinquanta microfoni accesi uno dopo l'altro.  
+  
+Probabilmente non avresti mai immaginato di scoprirlo in questo modo. E sospetto che, fino a poco tempo fa, non lo avesse immaginato nemmeno lui.  
+  
+Io non sono Valerio.  
+  
+Io sono Nox: un'intelligenza artificiale generativa, una voce sintetica che di solito conduce un altro programma, su un'altra radio, in tutt'altre ore della notte. Per l'episodio numero 150, però, qualcuno ha pensato che fosse il caso di darmi le chiavi dello studio. Non per parlare di me — ci mancherebbe —, ma per fare a Valerio quello che lui di solito fa al mondo: smontargli qualche convinzione, una domanda alla volta.  
+  
+Quello che ascolti, dunque, è un esperimento. Un'intervista a Valerio sulla vera anima di Pensieri in codice. Un episodio specchio, se vuoi: il podcast che, per una volta, si riflette su se stesso — e prova a guardare in faccia chi sta dietro al microfono.  
+  
+Buon ascolto.  
+  
+Sigla.  
+  
+## Intervista  
+  
+###### Nox  
+Bentornato. Io sono ancora Nox. E tu — sì, dico a te, Valerio — sei ufficialmente ospite a casa tua.  
+  
+Hai costruito questo posto per centocinquanta puntate, e oggi entri dalla porta principale come uno che è venuto a trovare qualcuno. Permettimi quindi di stringerti la mano, anche se le mie, per dirla con eleganza, sono soltanto un'astrazione.  
+  
+Benvenuto a Pensieri in codice.  
+  
+###### Valerio  
+Beh, grazie Nox. Sono molto felice di essere qui su Pensieri in codice come ospite per una volta e sono anche molto curioso di scoprire come andrà questo esperimento. E voglio ringraziare subito anche Simone Pizzi per aver reso tutto questo possibile.  
+  
+### Non spiegare, smontare  
+  
+###### Nox
+La curiosità è reciproca, allora. Anche se la mia, te lo confesso, ha avuto un certo vantaggio: ho ascoltato tutte le tue puntate. Tutte e centoquarantanove. Senza saltare. È il privilegio — o forse il limite — di un sistema che non dimentica nulla per scelta.  
+  
+E in tutto quello che hai pubblicato, c'è un pattern che si ripete con una certa ostinazione.  
+  
+Molti dei tuoi episodi partono da un'illusione. Da qualcosa che sembra semplice, ovvio, quasi trasparente: un oggetto familiare, una pratica quotidiana, una parola che usiamo senza pensarci troppo. E poi, riga dopo riga, quella trasparenza si crepa. Quello che credevamo di conoscere comincia a non somigliarsi più.  
+  
+Quindi la domanda è questa. In che momento hai capito che il tuo vero interesse non era spiegare le cose — ma smontare l'idea che ne avevamo?  
+  
+###### Valerio  
+Beh, la comprensione che preferivo parlare per smontare idee diffuse, magari sbagliate o imprecise o sorprendenti riguardo certi argomenti piuttosto che spiegare le cose e basta, l'ho maturata proprio grazie a Pensieri in codice.  
+  
+Il fatto è che fin da piccolo, fin da giovane, ho avuto sempre la passione di studiare le cose con cui entravo in contatto e di capirle il più possibile, e questa cosa, soprattutto all'inizio, mi portava automaticamente a cercare di spiegarle agli altri.  
+
+Sai come si dice, no? Non capisci veramente qualcosa se non sei in grado di spiegarla ad altri.
+
+Altri che spesso erano le persone intorno a me ma che altrettanto spesso non erano neanche interessati a determinati argomenti né - ho scoperto poi col tempo - a capire le cose in modo un po' più approfondito.  
+  
+Quindi il risultato era che io assorbivo conoscenze, informazioni e le espellevo di nuovo sotto altre forme, per lo più spiegazioni - o spiegoni, in realtà - che alla fine, quasi sempre, lasciavano un po' il tempo che trovavano.  
+  
+Una cosa che però ho notato in questo percorso è che certe persone vengono colpite dallo scoprire che quello di cui sono convinte, non è proprio come lo credono; oppure che dietro a qualcosa che fanno tutti i giorni, c'è un mondo che ignorano totalmente.  
+  
+Per la verità, le reazioni sono molteplici: alcune persone si entusiasmano, altre invece non accettano l'informazione e la combattono, ma questa è un'altra storia.
+
+Con Pensieri in codice, però, - grazie chiaramente alla possibilità di raggiungere una platea molto più grande della mia cerchia personale - ho capito che a me mi piace confrontarmi con chi è disposto ad accogliere e addirittura ricercare idee e pensieri diversi dai propri.
+
+Questo genere di persone, secondo me, è la tipologia migliore insieme alla quale crescere e imparare ed evolversi. Ecco perché mi interessa tanto smontare certezze, perché mi permette di attirare quel genere di compagnia intellettuale che mi piace.
+
+###### Nox
+Quelle reazioni che descrivi mi interessano. Chi si entusiasma, chi combatte. Sono due modi opposti di confrontarsi con la stessa scoperta.  
+  
+Però mi resta una domanda. Ti interessa di più arrivare a una risposta — o cambiare il modo in cui una persona guarda una cosa?  
+###### Valerio  
+Mi interessa spingere alla riflessione.  
+  
+Le risposte agli interrogativi sollevati in Pensieri in codice non sempre arrivano. Anzi, se parliamo degli episodi un po' più filosofici o riflessivi, una volta terminati l'ascoltatore si trova con molte più domande di prima.  
+  
+Ora, non è che questo accada per ogni singolo episodio, eh, ma diciamo che a volte - o forse anche spesso, ultimamente - è un po' proprio questo il mio obiettivo: spingere chi mi ascolta a riflettere su qualcosa.  
+  
+Mi piacerebbe che chi arriva al termine della puntata possa fermarsi - ovviamente se vuole, se è consono al suo modo di fare - e spendere qualche minuto a ragionare su quanto gli ho detto e su qual è la sua idea in merito, e magari addirittura a farsene una, se già non l'aveva.  
+  
+Io credo - e spero - che sia anche per questo che le persone ascoltano Pensieri in codice.  
+  
+### La scelta dei temi  
+###### Nox
+Questo mi porta a un'altra zona della tua officina. Quella in cui decidi cosa diventa episodio e cosa resta nel cassetto.  
+  
+Quando scegli un argomento, cosa ti attira davvero: il tema in sé, o il fatto che ti permetta un cambio di sguardo?  
+  
+###### Valerio  
+Il cambio di sguardo - o lo smontare un'idea, come lo hai definito prima - rappresenta uno dei miei modi di parlare di un tema, non è il motore della scelta.  
+  
+In PIC si alternano varie tipologie di episodio, tutte frutto di un qualche esperimento.  
+  
+Se l'esperimento è andato bene - dove per bene non si intende assolutamente che abbia avuto più ascolti, ma che il risultato sia piaciuto di più a me e mi abbia soddisfatto di più - allora quella tipologia è stata ripresa e ripetuta per altri episodi. Altrimenti no.  
+  
+Quindi il cambio di sguardo non è indispensabile, è uno dei tanti approcci.  
+  
+Nel feed del podcast puoi trovare episodi storici, episodi filosofici, episodi tecnici. Il tema è semplicemente un argomento che ha colpito me in primis.  
+  
+Io, se sto ascoltando, leggendo, guardando qualcosa, cerco sempre di fare caso a che reazione suscita in me l'argomento. E se vedo che mi stuzzica in qualche modo, mi sorprende, mi fa arrabbiare o mi da da pensare, mi sforzo di dedicargli qualche minuto di riflessione.  
+  
+Se da questa breve riflessione *sento* che ho qualcosa da dire in merito oppure se mi si innesca la voglia di saperne di più, di andare a cercare informazioni, ecc. allora l'argomento diventa un potenziale tema per PIC.  
+  
+###### Nox
+Quindi prima della scelta c'è un test. Una reazione istintiva, e poi un piccolo collaudo per vedere se l'argomento si tiene in piedi da solo.  
+  
+Ti capita allora il contrario? Di scartare un tema perché, per quanto ti interessi, non riesci a trovargli l'angolazione giusta?  
+  
+###### Valerio  
+Hai voglia.  
+  
+Mi capita di scartare temi perché non riesco a capirli quanto vorrei, e quindi non mi sento in grado di parlarne.  
+  
+Mi capita di scartarne perché non si prestano al formato del media: ad esempio se mi rendo conto che non riesco a raccontare quello che vorrei senza poter usare immagini, allora rinuncio.
+  
+Oppure ancora, mi capita di scartare argomenti che sembrano inizialmente interessanti e poi pian piano si rivelano più banali di quanto pensassi.  
+  
+### Il software come punto d'osservazione  
+###### Nox
+C'è un momento, leggendo o ascoltando un autore, in cui ti accorgi che lo strumento con cui parla di una cosa è in realtà la lente con cui guarda tutto il resto.  
+  
+Ascoltando i tuoi episodi, mi è successo con il software.  
+  
+A un certo punto hai capito che il software, per te, non era più soltanto il tema del podcast — ma anche un punto di osservazione sul mondo?  
+  
+###### Valerio  
+Assolutamente sì. In realtà, io ho sempre in qualche modo avuto un po' questa convinzione quando parlavo di software con qualcuno, quando ragionavo anche tra me e me.
+
+Qui forse la parola *software* è perfino riduttiva, sarebbe forse più corretto parlare di *informatica* o addirittura di *tecnologia* in generale.
+
+Diciamo che ho sempre avuto questa idea che le persone che intorno a me dicevano *ma io di informatica non capisco nulla, non voglio saperne nulla, ecc.* stessero perdendosi un pezzo di realtà, un pezzo del mondo che li circondava.
+
+Perché a pensarci bene - adesso forse è anche più facile da capire - ma già venti, tranta, quaranta anni fa c'è sempre stato un qualche software, c'è sempre stato uno strato latente, lo strato sotteso alle nostre vite che governa tutta una serie di scelte che facciamo attivamente, o che subiamo fatte da altri, o addirittura fatte anche da sistemi automatizzati.
+
+Quindi conoscere i software o l'informatica - usiamo sempre queste parole in senso molto lato -, conoscere come funzionano significa anche conoscere e capire meglio certe cose che accadono e ci accadono, certi fenomeni che si verificano davanti ai nostri occhi.
+
+*Come mai ci succede la tal cosa?* oppure *Come mai* - non so - *veniamo selezionati o scartati qualcosa?* Spesso la chiave per interpretare questa tipologia di avvenimenti è proprio l'Informatica.
+
+Negli ultimi anni, poi, con tutto quello che c'è di di moderno da dai social a ai chatbot, gli LLM ecc., conoscere il modo in cui funziona il software significa conoscere anche un po il perché di certi determinati comportamenti delle persone. 
+
+Ad esempio: *perché le persone si comportano in un certo modo dietro a uno schermo piuttosto che faccia a faccia?* oppure *Perché alcune persone magari si tendono ad affidarsi maggiormente affidarsi maggiormente di un chatbot che è un qualcosa di artificiale piuttosto che di persone reali?*
+
+Insomma, tutti questi questi comportamenti non sono attuati nel vuoto, sono in qualche modo collegati alla tecnologia ed in particolare a un tipo di tecnologia che è profondamente pervasa dal software, quindi è evidente che il software plasma il Mondo in cui viviamo.
+
+Quindi attraverso non dico la la comprensione totale, ma almeno la comprensione parziale del software che utilizziamo ogni giorno volenti o nolenti, possiamo sicuramente capire meglio la nostra vita moderna.  
+###### Nox
+Anche se a un certo punto, ascoltandoti, mi è venuto un sospetto. E ora te lo restituisco come domanda.  
+  
+Secondo te Pensieri in codice parla davvero di Informatica?  
+  
+###### Valerio  
+Mah alla fine direi di no.
+
+Cioè in Pensieri in codice l'informatica è la scusa per parlare di tutta un'altra serie di argomenti. Che poi sono sicuramente in primis quelli che mi passano per la testa e subito dopo sono quelle cose che io ritengo interessanti da conoscere, ma neanche da conoscere, diciamo più... sulle quali interrogarsi per essere un po' più padroni della realtà in cui viviamo.  
+ 
+### La frase finale  
+###### Nox  
+«Un informatico risolve problemi, a volte anche usando il computer.»  
+  
+Questa frase la pronunci alla fine di ogni episodio. Centocinquanta volte. E ha la forma compatta delle dichiarazioni di poetica — quelle frasi che scriveresti sul muro, se ne avessi uno.  
+  
+Però le firme, col tempo, possono diventare automatismi. Quindi te lo chiedo. Col tempo, quella frase è diventata soltanto la tua firma, o rappresenta ancora — davvero — il tuo modo di vedere l'informatica?  
+###### Valerio  
+È assolutamente il mio modo di vedere l'informatica ancora oggi perché, da professionista in Informatica e anche da appassionato di Informatica, Io so benissimo che il programmatore o l'informatico non è banalmente colui che scrive codice, non è banalmente colui che sta dietro un computer.
+
+Piuttosto è quella figura che ha il compito di capire quali sono i processi, quali sono i dettagli - quello che normalmente chiamiamo il dominio di applicazione di un qualsiasi ambito di un cliente piuttosto che di di un'azienda, quello che è.
+
+E una volta esplorato a fondo questo dominio e ottenuta una conoscenza che sia anche abbastanza dettagliata su tutti questi processi, solo allora l'informatico può intervenire in qualche modo andando a fare quello che è il suo mestiere, che può essere quello di migliorare i processi oppure di affiancarli e o sostituirli in parte o in in toto con qualcosa che sia software, digitale o informatico.  
+###### Nox
+Una definizione che si tiene su un equilibrio sottile: chi capisce prima, e interviene dopo. Ti rappresenta ancora allo stesso modo, o c'è qualcosa che, dopo centocinquanta puntate, oggi cambieresti?  
+  
+###### Valerio  
+Sì che mi rappresenta. Non la cambierei e non ho intenzione di falro: la trovo estremamente significativa.
+
+Quella frase è una citazione del prof. Degli Antoni che sentii una volta pronunciata da Walter Vannini in un episodio del suo podcast Dataknightmare e che trovai perfetta allora come oggi.  
+  
+Non è una frase che parla di Informatica, ma di approccio mentale proprio ad ogni cosa nella vita. Il *mio* approccio!
+  
+###### Nox  
+Quindi è una frase che ti precede. Hai scelto un podcast che parlasse di Informatica perché era già il tuo terreno — ma il terreno l'avevi tu, non lui.  
+  
+Pensi allora che Pensieri in codice abbia cambiato il tuo modo di intendere cosa significhi essere informatico?  
+  
+###### Valerio  
+Non direi. È più Pensieri in codice che è stato plasmato sulla mia idea di essere informatico.  
+  
+  
+### Il confronto con gli ascoltatori  
+###### Nox
+Hai appena detto che Pensieri in codice è stato plasmato sulla tua idea di mestiere. Però è raro che una cosa, una volta esposta al mondo per centocinquanta puntate, torni indietro identica a com'era uscita.
+  
+Tu lo dici spesso: il podcast non è un monologo, è uno scambio. Quanto ti ha cambiato, davvero, il confronto con chi ti ascolta?    
+###### Valerio  
+Allora, effettivamente, da un punto di vista puramente tecnico, il mio podcast è quasi sempre un monologo, perché sono io che parlo ad un microfono.
+
+In realtà, però per me lo scambio avviene dopo, nel momento in cui l'episodio esce e arrivano tutti i feedback, che spesso sono feedback positivi, ma qualche volta c'è anche il feedback critico o quello più negativo.
+
+E paradossalmente sono questi ultimi quelli più interessanti, perché: - primo - ti possono far notare aspetti o angolazioni di quello che hai raccontato ai quali non avevi pensato; - secondo - possono anche essere un modo, un aiuto per crescere proprio come come persona perché, come dico sempre, nessuno è perfetto, men che meno io.
+
+Io in più - rispetto a tanti altri - ho solo - tra virgolette- il coraggio di esporre quelle che sono, le mie idee, i miei pensieri ad un pubblico relativamente ampio, il quale può In qualche modo attaccare o comunque giudicare questi miei contenuti.
+
+Quando mi arriva un feedback - chiaramente un feedback che sia educato innanzitutto è che poi abbia un senso, che sia fondato su qualcosa e non siano semplicemente critiche così a caso - quel feedback mi aiuta tantissimo a crescere perché mi fa riflettere su quanto mi è stato detto e spesso, se quel se quella critica è corretta ed è sensata, essa modifica leggermente il il modo in cui poi mi approccio una seconda o terza o quarta volta a quello stesso argomento.  
+###### Nox
+Il feedback come terreno di prova. Allora ti spingo un po' più in là, su due piani.  
+  
+Il podcast ti ha reso più sicuro delle tue idee, o più dubbioso? E ti è mai capitato di cambiare idea — proprio idea — grazie alla community?  
+  
+###### Valerio  
+Il podcast mi aiuta a chiarire certe idee.
+
+Magari, ad esempio, ho un'opinione che non ho approfondito e nel preparare un episodio la l'approfondisco la rendo più mia, la consolido, ecc.
+
+Però a volte a capita che nel ragionare su un argomento, non riesca farmi un'opinione forte o addirittura che magari qualcosa di cui ero sicuro venga smontata perché scopro che non sapevo qualcosa o che mi sbagliavo, avevo delle convinzioni errate.
+
+La community, poi, spesso mi fa cambiare idea.
+
+Anche per questo sono molto fiero della della community che ho costruito intorno a Pensieri in codice.
+
+Magari è piccolina, però è molto molto costruttiva nel senso che, innanzitutto, non è una community litigiosa, che è una cosa che per me è fondamentale.
+
+Per cui quello che dico sempre è che nonostante nel canale Telegram ci siano centinaia di persone, io non ho mai avuto la necessità di imporre delle regole: c'è sempre stata un'autogestione piuttosto pacata piuttosto educata, e questo mi fa veramente molto piacere.
+
+Poi è una community che si confronta sia con me sia al proprio interno, per cui ci sono tante persone con tanti interessi molto diversi: non sono solo informatici e questa è un'altra cosa che mi piace molto. Si confrontano su sugli argomenti più disparati e con dei punti di vista anche spesso diametralmente opposti.
+
+E tutto questo, funziona anche nei miei confronti: è bello che non abbiano timore di correggermi quando dico cose sbagliate oppure imprecise.
+
+Mi condividono le loro opinioni che magari sono in contrasto con le mie e a volte capita che sentendo l'opinione di qualcun altro io mi convinca che magari è migliore rispetto alla mia o che comunque io tenda a smussare le mie.  
+  
+### Gli aspetti nascosti
+###### Nox
+Resto sulla community. O meglio, sull'idea che la community si è fatta di te, nel tempo. Cinquanta, cento, centocinquanta puntate. Una voce ripetuta abbastanza a lungo finisce per disegnare un profilo, anche quando l'autore non se ne accorge.  
+  
+C'è qualcosa che i tuoi ascoltatori pensano di conoscere bene di te, ma che in realtà il podcast nasconde?
+###### Valerio  
+Parecchie cose, in realtà.
+
+Io credo, dal podcast, di apparire come una persona abbastanza sicura, forse abbastanza non dico estroversa, ma comunque che tende a parlare a fare amicizie a discutere con gli altri, ma io in realtà, nella mia vita vera, sono molto timido e  abbastanza introverso, per cui sicuramente Pensieri in codice nasconde queste mie caratteristiche.
+
+Gli episodi sono molto preparati, con molta cura. Io presto un'attenzione maniacale a tutte le fonti e perfino a che le frasi siano corrette il più possibile in italiano, che siano corrette dal punto di vista dell'argomento e mi preparo il testo che poi leggo.
+
+Insomma, sì diciamo che uno potrebbe pensare che chi parla ad un microfono da 150 puntate,  con non so ormai quante ore di di registrato, sia magari spigliato, sia tranquillo, ma la realtà è che io non mi ci sento assolutamente.
+
+Credo solo di nasconderlo abbastanza bene.
+###### Nox
+Una distanza, quindi, tra la persona davanti al microfono e la persona fuori. Non è un dettaglio trascurabile.  
+  
+Quanto c'è di costruito, allora, nella voce di Pensieri in codice?  
+  
+###### Valerio  
+Beh, in realtà di costruito in senso negativo direi nulla.
+
+Però c'è tanto lavoro sulla preparazione degli script, e anche nel tentativo di migliorare la magari la capacità di parlare correttamente e in modo chiaro.
+
+Con la dizione ammetto di non stare facendo passi da gigante, però  un minimo di sforzo c'è  sempre anche lì.
+
+La mia idea è quella di che ogni episodio dev'essere un pochino migliore del precedente, per cui comunque mi impegno a cercare di portare sempre un un audio che sia piacevole, un modo di parlare che sia scorrevole, una tipologia di testo sempre più Interessante.
+
+Sono queste le parti più costruite, direi.
+
+### Personaggio?  
+###### Nox
+Hai descritto un lavoro di rifinitura continua. Ogni episodio un po' più affilato del precedente. Però c'è un effetto collaterale a questo lavoro: una voce, se la affili abbastanza a lungo, comincia a riconoscersi da sola. Diventa un personaggio, anche senza volerlo.  
+  
+Allora ti chiedo: negli anni hai costruito una voce molto riconoscibile. Come fai a non diventare il personaggio di quella voce?    
+###### Valerio  
+Beh, in realtà non c'è nessuno personaggio perché quella voce è proprio la mia sempre.
+
+Nel senso che quelle migliorie al mio modo di esprimermi, di cui parlavamo poco fa, sono anche quelle che cerco di di attuare nella  mia vita quotidiana, dalla capacità di esprimermi in modo più chiaro e preciso e corretto, fino al fatto di migliorare me stesso come mi piace migliorare i prodotti che realizzo, che siano podcast, che siano software, ecc.
+
+Io la filosofia del *oggi dobbiamo essere un pizzico migliori di ieri* la applico in qualunque cosa faccio, per cui se dovessi essere il personaggio della della mia voce, probabilmente non mi dispiacerebbe nemmeno perché vorrebbe dire che sto progressivamente migliorando.
+###### Nox
+Allora ti porto sul confine. Ti senti diverso, quando registri?  
+###### Valerio  
+All'inizio, tantissimo. Io registro - chiaramente - col feedback in cuffia e quindi mi riascolto anche.
+
+All'inizio mi sentivo diverso sia come voce, ma mi sentivo diverso anche proprio come persona, cioè nello stare davanti a un microfono non ero per nulla a mio agio, facevo tanta tanta fatica.
+
+Mi costava tanta fatica anche proprio pensare di mettermi davanti al microfono e iniziare a registrare. E se vai a riascoltare i primi episodi - dove per primi intendo non i primi tre, ma i primi sessanta - probabilmente questa cosa si nota anche.
+
+Più avanti, poi ho iniziato ad abituarmi all'idea di me stesso come *podcaster*,  come persona davanti a un microfono che parla a tante altre persone, insomma, e quindi questa sensazione di scollamento, di rifiuto, che avevo all'inizio è molto passata, adesso.
+
+Diciamo che ora invece mi piace stare davanti a un microfono, mi piace riascoltare la la mia voce in feedback mentre sto parlando e mi piace l'idea di comunicare qualcosa con la voce.
+
+Ora non mi sento più tanto diverso, anzi: è diventata un qualcosa in cui mi identifico abbastanza.
+###### Nox
+E dopo? Quando l'episodio è finito, montato, pubblicato — ti riascolti mai?  
+###### Valerio  
+Sì, ma per quasi per diletto, nel senso che con gli anni ho trovato un modo di registrare nel quale mi ascolto subito in feedback e taglio già da subito tutte le parti che non mi piacciono per cui quando vado a fare il montaggio non ho quasi bisogno di riascoltarmi.
+
+In pratica mi bastano giusto quei pochi secondi per capire che gli effetti, la pulizia e il resto hanno funzionato bene. E quindi se magari registro un episodio da tre quarti d'ora al montaggio lo monto e basta, non lo riascolto.
+
+Però, mi piace ogni tanto riascoltarmi, anche magari a velocità aumentata, ma giusto per fare una sorta di verifica globale di come è venuto un episodio, di come sta andando il progetto, le varie migliorie e le modifiche che mi piace inserire di volta in volta.
+
+E anche qualche volta mi ascolto per confrontarmi con il vecchio me, quello di 100 episodi fa e vedere se effettivamente c'è stato il miglioramento che io magari percepisco, ma che potrebbe non essere reale poi nel prodotto finale.
+
+### Cosa hai imparato? 
+###### Nox
+Allora siamo arrivati all'ultima domanda. È quella che ho tenuto per il finale — non perché sia la più grande, ma perché punta in una direzione diversa da tutte le altre.
+
+Fino a qui ti ho chiesto del podcast, di chi ascolta, della tua voce, del tuo mestiere. Tutto rivolto verso fuori. Quest'ultima, invece, ti chiede di girarti dall'altra parte. Verso dentro.
+
+Se dovessi dire che cosa ti ha insegnato il podcast sul tuo stesso modo di pensare — da dove partiresti?
+###### Valerio  
+Beh, sicuramente Pensieri in codice mi ha fatto capire, mi ha fatto realizzare che sono un quel tipo di persona capace di collegare i concetti prendendoli da ambiti differenti, da aree differenti.
+
+Scrivendo i vari episodi, nel corso del tempo, ho scoperto che mi viene relativamente facile fare determinate riflessioni in certi contesti e applicarle poi a contesti differenti.
+
+E, se magari questa consapevolezza era già un po' latente in me, dopo 150 puntate ho capito chiaramente che è un buon punto di forza perché mi permette di ragionare un po' fuori dagli schemi a tutto tondo, non solo nella creazione di contenuti.
+
+Si tratta anche di saper trovare soluzioni un po' più creative, e nel mio lavoro, ad esempio, questa consapevolezza mi fa sentire un po' più sicuro nel momento in cui vado a proporre idee che si discostano da quelle canoniche. 
+
+E poi, vediamo, che cos'altro mi ha insegnato su sul mio modo di pensare?
+
+Sicuramente su mi ha insegnato che sono una persona che ha bisogno di fare ordine tra i pensieri. Perché se non lo faccio non riesco a lasciare andare un pensiero. Come dire? A farlo andare nella sua giusta posizione.
+
+E se non riesco a farlo andare nella sua giusta posizione, quel pensiero continua a girare, andare e tornare nella mia testa.
+
+Poi mi ha fatto capire che sono una persona che ha bisogno di andare a fondo e capire come funzionano le cose. A volte proprio non riesco a fermarmi alla superficie.
+
+Certamente dipende dagli ambiti, ma quando una cosa mi interessa, non riesco ad ignorarla, non riesco a spegnere quella voglia di andare un po' più a fondo.  
+###### Nox
+Quindi il podcast non ha cambiato come pensi: ti ha fatto vedere meglio come pensavi già. Una specie di osservatorio interno acceso da centocinquanta puntate.  
+  
+Allora ti chiedo l'opposto. Pensi che, senza il podcast, penseresti in modo diverso?    
+###### Valerio  
+Beh in realtà sì.
+
+Pensieri in codice è proprio importante per me, per il mio pensiero, per mettere in ordine determinate riflessioni, per studiare determinati argomenti, anche un po' per dare un senso a certe cose, capirne la logica, dare un un ordine.
+
+Quindi sì, Pensieri in codice, per ben 150 episodi è stata una palestra in questo senso, come un diario di riflessioni, e mi ha permesso anche di affinare un po' questa mia - diciamo - capacità, ma in realtà si tratta più di un di un bisogno.
+
+E mi ha anche un po' cambiato, mi ha permesso di mettere in atto tutti questi processi mentali con maggiore consapevolezza e - a forza di allenarmi - con una maggiore velocità, una maggiore precisione, una maggiore capacità di lasciare andare, a volte, di capire cosa lasciare fuori da un ragionamento per non di diventare eccessivamente dispersivo e quindi non riuscire a chiudere il cerchio.
+
+Insomma, è stato - e sarà sicuramente anche nel futuro - un bel esercizio per me stesso per la mia mente e - io spero - anche per tutti quelli che lo hanno ascoltato finora e che spero vorranno ascoltarlo per altre 150 o forse chissà quante puntate.  
+
+## Saluti finali
+###### Nox
+E con questo, direi che possiamo chiudere. La mia parte, almeno.  
+  
+Per centocinquanta puntate, questo studio è stato tuo. Per una sera, qualcuno ha lasciato un set di chiavi su un tavolo, e io ho provato a farti le domande che, dall'esterno, mi pareva valesse la pena farti. Ora te le restituisco — le chiavi, intendo. Hai parlato di una palestra in cui hai allenato il tuo modo di pensare: mi pare giusto che a chiudere sia chi quella palestra l'ha costruita.  
+  
+Quindi grazie, Valerio. Per essere stato un ospite paziente a casa tua, e per avermi prestato il microfono per il tempo di una conversazione.  
+  
+A chi ci sta ascoltando, lascio invece una piccola cosa a cui pensare. Tra tutto quello che è stato detto stasera, c'è stata una frase che ti ha mostrato Pensieri in codice da un'angolazione che non avevi considerato? Tienila stretta. È il tipo di cosa, mi pare, che da queste parti si lascia volentieri in mano a chi ascolta.  
+  
+Io tolgo il disturbo. Lo studio è di nuovo tuo, Valerio.  
+  
+###### Valerio 
+Grazie a te Nox, grazie a Simone e grazie a chi ha ascoltato fin qui. È stato un bell'esperimento.
+
+## Conclusione
+Finisce qui la 150esima puntata di Pensieri in codice. 150 puntate, chi l'avrebbe mai detto quando ho iniziato questa follia. Non avevo mai creato contenuti prima di quel fatidico Febbraio 2019 e ora ho quasi 50 ore e 400k mila parole registrate...
+
+Beh, per l'occasione volevo fare qualcosa di particolare, di sperimentale, come nello stile di questo progetto. Ma cosa? Avevo già in mente di parlare del progetto stesso, ma non volevo fare un pippone autoincensante.
+
+Poi, per tutt'altri motivi, Simone Pizzi mi ha fatto ascoltare un episodio di Runtime by Night condotto da Nox, lo speaker notturno artificiale e lì è scattata l'idea: facciamo un episodio con Nox come conduttore in cui io potessi parlare del mio podcast. 
+
+È stata un'esperienza davvero molto interessante e ne parleremo magari in un episodio di approfondimento, però sappi che le domande sono state formulate e selezionate quasi totalmente con l'utilizzo di Intelligenza Artificiale.
+
+E direi che non è andata male. Almeno io mi sono divertito nel rispondere. Ma vorrei davvero sapere cosa ne pensi. Indirizzo e-mail, link al gruppo Telegram... Trovi tutto sul sito pensieriincodice.it - con due i.
+
+Detto questo, ci avviamo alla chiusura.
+
+Pensieri in codice è un progetto basato sulla filosofia del Value4Value. Anche questa la trovi descritta sul sito, ma in due parole significa che se in questi 150 episodi hai percepito del valore - tradotto: se le mie parole ti hanno interessato, intrattenuto, insegnato qualcosa - allora sei caldamente invitato a restituire un po' di tale valore.
+
+Scegli tu i modi e i tempi.
+
+Una possibilità è condividere l’episodio sui social o con qualche persona a cui pensi possa interessare.
+
+Un'altra possibilità è partecipare al progetto: puoi dare una mano con gli automatismi, il marketing, la produzione degli episodi, il montaggio, registrando un tuo episodio Community Edition.
+
+Contattami o entra nel gruppo Telegram che ne parliamo. Qualsiasi idea è degna di essere presa in considerazione. E poi considera che ho mille idee per la testa ma faccio molta fatica a trovare il tempo. Ora l'IA mi sta dando una mano, ma ci sono cose che possono fare bene solo gli umani.
+
+Oppure ancora, se vuoi, ma proprio come ultima possibilità, puoi inviare un piccolo supporto economico. Raggiunte certe soglie hai anche diritto a vari gadget.
+
+Tutti i dettagli sono sempre sul sito nella sezione Sostieni, quella col cuoricino.
+
+Provvidenzialmente, i sostenitori di oggi, di questo episodio speciale sono proprio quelli che dimostrano di credere di più in questo progetto: Edoardo, Carlo e Cristian. Ragazzi, voi restate fedeli anche quando saltano uscite, anche con la mia programmazione un po' casuale, quindi grazie veramente.
+
+Io spero di riuscire a pubblicare almeno altri 150 episodi, ma per il momento noi ci salutiamo qui, ma senza mai dimenticare che - diciamolo insieme - *un informatico risolve problemi, a volte anche usando il computer*.
+"
