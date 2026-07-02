@@ -1,5 +1,5 @@
-388.700000	458.020000	Piu domande di prima
-926.920000	1002.700000	L informatico capisce prima interviene dopo
-1383.030000	1442.200000	Dietro la voce sicura
-1539.260000	1587.300000	Nessun personaggio
-1926.660000	2000.760000	Il podcast come palestra mentale
+389.603217	460.583335	Più domande di prima
+927.376421	997.356843	L'informatico capisce prima interviene dopo
+1376.699238	1443.503578	Dietro la voce sicura
+1538.930556	1587.763234	Nessun personaggio
+1924.614422	2001.476157	Il podcast come palestra mentale
