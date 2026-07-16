@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Gli assistenti AI di coding sono sicuri? Il caso xAI - Securityinfo.it"
 date: 2026-07-16T13:12:13+00:00
 tags:
