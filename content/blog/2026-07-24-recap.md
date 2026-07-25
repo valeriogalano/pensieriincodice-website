@@ -1,0 +1,30 @@
+---
+title: "Recap automatizzato del 2026-07-24"
+date: 2026-07-24T10:00:00+02:00
+featureImage: https://pensieriincodice.it/images/blog/recap.png
+image: https://pensieriincodice.it/images/blog/recap.png
+tags:
+- Dev
+- Recap
+- Generato
+categories:
+- News
+type: blog
+author: Valerio Galano
+---
+
+_Questo testo è stato generato con claude:claude-haiku-4-5-20251001_
+
+# GoodLinks Publisher e il nuovo equilibrio tra strumenti
+
+Valerio ha intrapreso una trasformazione significativa del suo ecosistema di pubblicazione, passando da una pipeline basata su Readwise a una nuova architettura incentrata su [GoodLinks Publisher](https://codeberg.org/valeriogalano/goodlinks-publisher). Non si è trattato di una semplice migrazione, ma di una riprogettazione completa che riflette come gli strumenti evolvono e come un sviluppatore deve adattarsi a quei cambiamenti. 📚
+
+Il progetto rappresenta una fan-out non bloccante verso tre destinazioni: Mastodon, Telegram e il blog Hugo. Quello che rende interessante questo lavoro è la resilienza architettonica. Ogni output ha il suo stato separato in `published_ids.json`, il che significa che se Telegram fallisce, Mastodon non viene bloccato. Se il blog non risponde, il retry interessa solo il contenuto Hugo. Valerio ha aggiunto anche un backup automatico dello stato direttamente su Codeberg: ogni volta che qualcosa cambia, viene committato e pushato, trasformando il vault stesso in fonte di verità.
+
+Una delle aggiunte più recenti è l'archiviazione automatica nel vault Obsidian. Non si tratta solo di un mirror: Valerio estrae con trafilatura il contenuto completo di ogni articolo taggato in GoodLinks, crea una nota di metadati e highlights, e la scrive via Local REST API. Il match è idempotente basato su URL normalizzato, il che significa niente file di stato fragile — il vault Obsidian diventa la fonte di verità. La schedulazione è diurna (dalle 8:20 alle 20:20 ogni ora al minuto 20) e include notifiche macOS in caso di errore.
+
+Nel frattempo, [Timebox](https://github.com/valeriogalano/Timebox) ha ricevuto una serie di miglioramenti che affinano l'esperienza settimanale. Valerio ha aggiunto proiezioni end-of-week per area, glifi di stato del carico, navigazione tra giorni nella schermata Giorno (rinominata da "Oggi"), e ha sincronizzato il concetto di settimana selezionata tra le due schermate principali. Ha anche allineato i keybinding ai standard di Todoist — usare Q per QuickLog invece di Cmd+L è una scelta che riduce il carico cognitivo per chi usa entrambi gli strumenti. 🔄
+
+Ci sono stati anche diversi fix importanti: Todoist ha cambiato formato API e ora passa l'ora dentro il campo `due.date` in formato ISO, non nel deprecato `due.datetime`. Valerio ha aggiornato il parser per accettare entrambe le forme, garantendo la compatibilità con la nuova API v1.
+
+Quello che emerge da questa settimana di lavoro è una filosofia ricorrente: automazione robusta, idempotenza, e la consapevolezza che i tool di terze parti evolvono. Non bastava migrare da Readwise a GoodLinks — serviva reimaginare come quei dati fluiscono nel sistema, dove vivono, come si riprendono in caso di errore. E questa mentalità defensiva permea anche i piccoli fix di Timebox, dove il supporto per due versioni diverse dell'API Todoist non è uno sforzo contemporaneo, ma una scelta consapevole di non lasciare gli utenti indietro.
