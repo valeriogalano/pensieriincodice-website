@@ -17,7 +17,7 @@ _Questo testo è stato generato con claude:claude-haiku-4-5-20251001_
 
 # GoodLinks Publisher e il nuovo equilibrio tra strumenti
 
-Valerio ha intrapreso una trasformazione significativa del suo ecosistema di pubblicazione, passando da una pipeline basata su Readwise a una nuova architettura incentrata su [GoodLinks Publisher](https://codeberg.org/valeriogalano/goodlinks-publisher). Non si è trattato di una semplice migrazione, ma di una riprogettazione completa che riflette come gli strumenti evolvono e come un sviluppatore deve adattarsi a quei cambiamenti. 📚
+Valerio ha intrapreso una trasformazione significativa del suo ecosistema di pubblicazione, passando da una pipeline basata su Readwise a una nuova architettura incentrata su [GoodLinks Publisher](https://github.com/valeriogalano/goodlinks-publisher). Non si è trattato di una semplice migrazione, ma di una riprogettazione completa che riflette come gli strumenti evolvono e come un sviluppatore deve adattarsi a quei cambiamenti. 📚
 
 Il progetto rappresenta una fan-out non bloccante verso tre destinazioni: Mastodon, Telegram e il blog Hugo. Quello che rende interessante questo lavoro è la resilienza architettonica. Ogni output ha il suo stato separato in `published_ids.json`, il che significa che se Telegram fallisce, Mastodon non viene bloccato. Se il blog non risponde, il retry interessa solo il contenuto Hugo. Valerio ha aggiunto anche un backup automatico dello stato direttamente su Codeberg: ogni volta che qualcosa cambia, viene committato e pushato, trasformando il vault stesso in fonte di verità.
 
