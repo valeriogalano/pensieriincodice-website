@@ -5,6 +5,8 @@
             <span>Blog</span>
             <span>•</span>
             <time>{{ .Date.Format "02 Jan 2006" }}</time>
+            <span>•</span>
+            <span>{{ .Params.author | default "Valerio Galano" }}</span>
         </div>
         <h1 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight leading-tight">{{ .Title }}</h1>
         {{ with .Params.featureImage }}
