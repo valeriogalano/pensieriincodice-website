@@ -274,7 +274,7 @@ noUgly = true
 Rel = "alternate"
 
 [outputs]
-home = ["HTML", "JSON", "podcast"]
+home = ["HTML", "RSS", "JSON", "podcast"]
 
 [permalinks]
   [permalinks.page]
