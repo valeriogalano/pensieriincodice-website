@@ -17,7 +17,7 @@
     <link>{{ .Permalink }}</link>
     <description>Articoli, novità e aggiornamenti da {{ .Site.Title }}</description>
     <generator>Hugo</generator>
-    <language>{{ site.Language.LanguageCode }}</language>
+    <language>{{ site.Language.Locale }}</language>
     {{ with .Site.Params.podcast.email }}<managingEditor>{{ . }} ({{ $.Site.Title }})</managingEditor>{{ end }}
     {{ with .Site.Params.podcast.email }}<webMaster>{{ . }} ({{ $.Site.Title }})</webMaster>{{ end }}
     {{ with .Site.Copyright }}<copyright>{{ . }}</copyright>{{ end }}

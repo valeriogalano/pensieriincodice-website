@@ -39,7 +39,7 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:image" content="{{ $image }}">
 <meta property="og:image:alt" content="{{ $imageAlt }}">
-<meta property="og:locale" content="{{ .Site.LanguageCode | replaceRE "-" "_" }}">
+<meta property="og:locale" content="{{ .Site.Language.Locale | replaceRE "-" "_" }}">
 
 {{- if $isArticle }}
 <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
