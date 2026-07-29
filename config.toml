@@ -1,7 +1,7 @@
 # General Settings
 title = "Pensieri in codice"
 baseURL = "https://pensieriincodice.it/" #YOUR SITE URL
-languageCode = "it-IT"
+locale = "it-IT"
 theme = "picnew"
 resourceDir = "resources"
 pagination.pagerSize = 8
@@ -10,7 +10,7 @@ defaultContentLanguage = "it"
 
 [languages.it]
   contentDir = 'content/'
-  languageName = 'Italiano'
+  label = 'Italiano'
   weight = 1
 
 [markup.goldmark.renderer]
