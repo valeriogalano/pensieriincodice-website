@@ -8,12 +8,12 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         {{ range .Paginator.Pages }}
 {{ $page := . }}
-        <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group flex flex-col overflow-hidden relative" data-audio="{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ .Params.audio }}">
+        <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group flex flex-col overflow-hidden relative" data-audio="{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ .Params.audio_file }}">
             {{ if .Params.image }}
             <div class="aspect-square mb-4 rounded-xl overflow-hidden relative">
                 <img src="{{ $.Site.Params.podcast.cdn_base_url }}{{ .Params.image }}" alt="{{ .Title }}" class="object-cover w-full h-full">
                 <div class="absolute inset-0 bg-gradient-to-t from-pod-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    {{ with .Params.audio }}
+                    {{ with .Params.audio_file }}
                     <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $page.Title | jsonify }}, '{{ if $page.Params.image }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $page.Params.image }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $page.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $page.Params.chapters }}{{ end }}', '{{ if $page.Params.transcript }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $page.Params.transcript }}{{ end }}', '{{ $page.RelPermalink }}')"
                         aria-label="Riproduci: {{ $page.Title }}"
                         class="w-12 h-12 rounded-full bg-pod-orange text-white flex items-center justify-center transform translate-y-4 group-hover:translate-y-0 transition-all">
@@ -41,7 +41,7 @@
                 </div>
                 <div class="flex items-center space-x-3">
                     {{ if not .Params.image }}
-                    {{ with .Params.audio }}
+                    {{ with .Params.audio_file }}
                     <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $page.Title | jsonify }}, '{{ $.Site.Params.podcast.image | absURL }}', '{{ if $page.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $page.Params.chapters }}{{ end }}', '{{ if $page.Params.transcript }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $page.Params.transcript }}{{ end }}', '{{ $page.RelPermalink }}')"
                         aria-label="Riproduci: {{ $page.Title }}"
                         class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pod-orange transition-all">

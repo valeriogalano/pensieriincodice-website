@@ -60,7 +60,7 @@
                                     {{ $durMins   := math.Floor (div $duration 60) }}
                                     {{ $durSecs   := math.Floor (sub $duration (mul $durMins 60)) }}
                                     {{ $sbId      := printf "sb-%s-%d" $base $idx }}
-                                    {{ $audioUrl  := printf "%s%s" $ep.Site.Params.podcast.cdn_tracked_base_url $ep.Params.audio }}
+                                    {{ $audioUrl  := printf "%s%s" $ep.Site.Params.podcast.cdn_tracked_base_url $ep.Params.audio_file }}
 
                                     <li id="card-{{ $sbId }}" class="flex items-center gap-3 rounded-lg px-2 py-1 -mx-2 border-l-2 border-l-transparent transition-all">
                                         <button id="{{ $sbId }}"

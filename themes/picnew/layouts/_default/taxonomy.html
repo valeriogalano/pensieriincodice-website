@@ -11,7 +11,7 @@
             <div class="aspect-square mb-4 rounded-xl overflow-hidden relative">
                 <img src="{{ $.Site.Params.podcast.cdn_base_url }}{{ .Params.image }}" alt="{{ .Title }}" class="object-cover w-full h-full">
                 <div class="absolute inset-0 bg-gradient-to-t from-pod-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    {{ with .Params.audio }}
+                    {{ with .Params.audio_file }}
                     <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $page.Title | jsonify }}, '{{ if $page.Params.image }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $page.Params.image }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $page.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $page.Params.chapters }}{{ end }}', '{{ if $page.Params.transcript }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $page.Params.transcript }}{{ end }}', '{{ $page.RelPermalink }}')"
                         class="w-12 h-12 rounded-full bg-pod-orange text-white flex items-center justify-center transform translate-y-4 group-hover:translate-y-0 transition-all">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -38,7 +38,7 @@
                 </div>
                 <div class="flex items-center space-x-3">
                     {{ if not .Params.image }}
-                    {{ with .Params.audio }}
+                    {{ with .Params.audio_file }}
                     <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $page.Title | jsonify }}, '{{ $.Site.Params.podcast.image | absURL }}', '{{ if $page.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $page.Params.chapters }}{{ end }}', '{{ if $page.Params.transcript }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $page.Params.transcript }}{{ end }}', '{{ $page.RelPermalink }}')"
                         class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pod-orange transition-all">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">

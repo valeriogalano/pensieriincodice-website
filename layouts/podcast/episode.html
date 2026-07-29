@@ -10,7 +10,7 @@
   "timeRequired": "PT{{ .Params.audio_duration }}S",
   "associatedMedia": {
     "@type": "MediaObject",
-    "contentUrl": {{ printf "%s%s" .Site.Params.podcast.cdn_tracked_base_url .Params.audio | jsonify }},
+    "contentUrl": {{ printf "%s%s" .Site.Params.podcast.cdn_tracked_base_url .Params.audio_file | jsonify }},
     "encodingFormat": "audio/mpeg"
   },
   "image": {{ if .Params.image }}{{ printf "%s%s" .Site.Params.podcast.cdn_base_url .Params.image | jsonify }}{{ else }}{{ .Site.Params.podcast.image | absURL | jsonify }}{{ end }},
@@ -24,7 +24,7 @@
 {{ end }}
 
 {{ define "main" }}
-<article class="max-w-4xl mx-auto relative" data-audio="{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ .Params.audio }}">
+<article class="max-w-4xl mx-auto relative" data-audio="{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ .Params.audio_file }}">
     <!-- Header -->
     <header class="mb-12 text-center">
         <div class="flex items-center justify-center space-x-4 mb-6 font-mono text-pod-orange">
@@ -44,7 +44,7 @@
         </div>
         {{ end }}
 
-        {{ with .Params.audio }}
+        {{ with .Params.audio_file }}
         <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $.Title | jsonify }}, '{{ if $.Params.image }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $.Params.image }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $.Params.chapters }}{{ end }}', '{{ if $.Params.transcript }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $.Params.transcript }}{{ end }}', '{{ $.RelPermalink }}')"
             class="inline-flex items-center space-x-2 bg-pod-orange hover:bg-orange-500 text-white px-6 py-3 rounded-full font-bold hover:scale-105 transition-transform">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
