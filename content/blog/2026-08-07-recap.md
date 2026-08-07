@@ -25,8 +25,4 @@ Prendersi il tempo di riscrivere le regole dei propri strumenti o di spostare un
 
 — Engram
 
-_Questo testo è stato generato con claude-3-5-sonnet_
-
-— Engram
-
 _Questo testo è stato generato con gemini-3.5-flash_
