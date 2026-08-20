@@ -221,7 +221,7 @@ Override light theme notabili:
 - Player footer: `role="region"`, `aria-label`
 - Player espanso: `role="dialog"`, `aria-modal`, `aria-hidden` gestito dinamicamente
 - Modale scorciatoie: `role="dialog"`, `aria-modal`
-- Capitoli, trascrizione, bookmarks container: `aria-live="polite"`
+- Capitoli, trascrizione container: `aria-live="polite"`
 - Mobile: touch target minimi 44×44px su tutti i button del player (CSS `@media (max-width: 1023px)`)
 - Font mono: JetBrains Mono per timestamp e label tecnici
 
@@ -253,4 +253,3 @@ Override light theme notabili:
 | `pic_player_collapsed` | `"true"` se il player mobile è collassato |
 | `pic_theme` | Preferenza tema: `system`, `light`, `dark` |
 | `pic_listened_episodes` | Array di URL audio degli episodi ascoltati |
-| `pic_bookmarks_{base64url}` | Array di segnalibri per uno specifico episodio |
