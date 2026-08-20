@@ -107,9 +107,13 @@
             {{- if .Params.season -}}
             <itunes:season>{{ .Params.season }}</itunes:season>
             {{- end -}}
-            {{- if .Params.tags -}}
+            {{- $keywords := .Params.tags | default slice -}}
+            {{- with .Site.Params.Podcast.default_keywords -}}
+            {{- $keywords = $keywords | append . -}}
+            {{- end -}}
+            {{- if $keywords -}}
             <itunes:keywords>
-                {{- range $index, $key:= .Params.tags -}}
+                {{- range $index, $key:= $keywords -}}
                 {{- if $index }}, {{ end -}}
                 {{ $key }}
                 {{- end -}}

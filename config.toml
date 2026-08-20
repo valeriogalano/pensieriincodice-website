@@ -102,6 +102,7 @@ cdn_tracked_base_url = "https://op3.dev/e/cdn.pensieriincodice.it/"
 copyright = "Copyright"
 category = "Technology"
 sub_category = ""
+default_keywords = "Tecnologia, Informatica"
 explicit = "false"
 itunesID = 12345677
 itunes_type = "episodic"  # accepted values are: "episodic" or "serial"
