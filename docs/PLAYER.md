@@ -231,40 +231,7 @@ All'evento `window load`, prima di `initPlayer()`:
 
 ---
 
-## 6. Bookmarks (segnalibri)
-
-### Storage
-
-Chiave localStorage per episodio: `pic_bookmarks_` + `btoa(audioUrl).replace(/=/g, '')`
-
-Formato JSON: array di oggetti `{time: float, note: string, created: timestamp}`, ordinati per `time`.
-
-### Interfaccia
-
-Button `#toggle-bookmarks` → pannello `#player-bookmarks-container`. Mutua esclusione con capitoli e trascrizione (apertura di uno chiude gli altri).
-
-Button "Aggiungi" (`#player-bookmark-add`): crea un segnalibro al `currentTime` con nota vuota.
-
-Aggiunta da expanded player: button `#player-expanded-bookmark`.
-
-Aggiunta da keyboard: tasto `B`.
-
-Long press sul play button nel player espanso (500ms): aggiunge segnalibro + `vibrate(50)`.
-
-Aggiunta globale: `window.addBookmark(note)` — chiamabile da altri script.
-
-### Renderizzazione
-
-Ogni segnalibro mostra: timestamp arancione + testo nota (o "Segnalibro" se vuoto) + tasto elimina (visibile su hover). Click sul segnalibro: `audio.currentTime = bm.time` + play se in pausa.
-
-### Edge case
-
-- I segnalibri sono legati all'URL audio esatto; se il CDN cambia URL, i segnalibri vengono persi.
-- Non c'è limite al numero di segnalibri per episodio.
-
----
-
-## 7. Capitoli
+## 6. Capitoli
 
 ### Caricamento
 
@@ -284,7 +251,7 @@ Richiesta `fetch(chaptersUrl)` → JSON (formato Podcast Chapters JSON, con camp
 
 ### Interfaccia
 
-Button `#toggle-chapters` (visibile solo se ci sono capitoli) → pannello `#player-chapters-container` con griglia 1-2 colonne. Mutua esclusione con trascrizione e bookmarks.
+Button `#toggle-chapters` (visibile solo se ci sono capitoli) → pannello `#player-chapters-container` con griglia 1-2 colonne. Mutua esclusione con trascrizione.
 
 ### Evidenziazione capitolo corrente
 
@@ -306,7 +273,7 @@ Evidenziazione nel pannello espanso: aggiornata in `timeupdate` quando il player
 
 ---
 
-## 8. Trascrizione
+## 7. Trascrizione
 
 ### Formato
 
@@ -321,7 +288,7 @@ Richiesta `fetch(transcriptUrl)` → testo SRT.
 
 ### Interfaccia
 
-Button `#toggle-transcript` → pannello `#player-transcript-container` con search input e lista scrollabile (max-h: 40, con scrollbar thin arancione). Mutua esclusione con capitoli e bookmarks.
+Button `#toggle-transcript` → pannello `#player-transcript-container` con search input e lista scrollabile (max-h: 40, con scrollbar thin arancione). Mutua esclusione con capitoli.
 
 Click su un segmento: `audio.currentTime = seg.start` + play.
 
@@ -342,7 +309,7 @@ Input `#player-transcript-search`: su `input`, chiama `filterTranscript(query)`.
 
 ---
 
-## 9. Player espanso (mobile full-screen)
+## 8. Player espanso (mobile full-screen)
 
 ### Apertura
 
@@ -366,7 +333,7 @@ CSS transform: `translateY(100%)` ↔ `translateY(0)`, transizione `0.35s cubic-
 - Titolo episodio
 - Seekbar con marker capitoli + timestamp corrente/totale
 - Controlli: prev episodio | prev capitolo | −15s | ▶/⏸ (grande) | +30s | next capitolo | next episodio
-- Speed select + tasto bookmark + tasto share
+- Speed select + tasto share
 - Tab Capitoli / Trascrizione (con area scrollabile)
 
 ### Sincronizzazione
@@ -377,7 +344,7 @@ Aggiornamenti in tempo reale: seekbar (`timeupdate`), icona play (`play`/`pause`
 
 ---
 
-## 10. Touch gestures (Pointer Events API)
+## 9. Touch gestures (Pointer Events API)
 
 Attivate solo se `window.innerWidth < 1024`.
 
@@ -399,21 +366,17 @@ Due tap entro 300ms:
 - Tap nel lato sinistro dello schermo: −15s
 - Tap nel lato destro: +30s
 
-### 4. Long press sul play button espanso → bookmark
-
-Durata > 500ms: aggiunge segnalibro al momento corrente + `vibrate(50)`.
-
-### 5. Drag verticale sullo speed select → cambia velocità
+### 4. Drag verticale sullo speed select → cambia velocità
 
 Ogni 10px di movimento verticale: ±0.1× di velocità (range 0.5–3.0, step 0.1).
 
-### 6. Fine scrubbing sulla seekbar espansa
+### 5. Fine scrubbing sulla seekbar espansa
 
 Pointer capture attivo durante il drag. La sensibilità diminuisce in base allo spostamento verticale: `sensitivity = 1 / (1 + dy * 0.05)`. Permette un posizionamento preciso trascinando obliquamente.
 
 ---
 
-## 11. Keyboard shortcuts
+## 10. Keyboard shortcuts
 
 Attive solo se il focus non è su `input`, `textarea`, `select`, né su un elemento `contenteditable`.
 
@@ -428,7 +391,6 @@ Attive solo se il focus non è su `input`, `textarea`, `select`, né su un eleme
 | `+` / `=` | Velocità: step successivo |
 | `-` | Velocità: step precedente |
 | `0` | Torna all'inizio |
-| `B` | Aggiungi segnalibro |
 | `S` | Apri/chiudi sleep timer panel |
 | `?` | Apri modale scorciatoie |
 | `Escape` | Chiudi modale scorciatoie |
@@ -439,7 +401,7 @@ Modale scorciatoie: `#player-shortcuts-modal` (z-index 60), aperta da button `#p
 
 ---
 
-## 12. Media Session API
+## 11. Media Session API
 
 Inizializzata da `updateMediaSession(title, image, chapterTitle)` alla chiamata di `playEpisode` e ad ogni cambio di capitolo.
 
@@ -479,7 +441,7 @@ In `timeupdate`, aggiornato `setPositionState({duration, playbackRate, position}
 
 ---
 
-## 13. Listened badges (episodi ascoltati)
+## 12. Listened badges (episodi ascoltati)
 
 ### Storage
 
@@ -497,7 +459,7 @@ Chiamata: al `window load` e ad ogni `turbo:load`.
 
 ---
 
-## 14. PWA / Service Worker
+## 13. PWA / Service Worker
 
 Il Service Worker si trova in `/static/sw.js` e viene registrato in `<head>`:
 
