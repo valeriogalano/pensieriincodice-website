@@ -208,17 +208,10 @@ html.light .prose blockquote {
     }
     .player-main-row { flex-direction: column; }
     .player-info-col { width: 100%; }
-    .player-controls-col {
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-        margin-top: 0.5rem;
-    }
-    .player-right-col {
-        width: 100%;
-        justify-content: center;
-        margin-top: 0.5rem;
-    }
+    /* Due soli stati su mobile: barra mini e player espanso.
+       Controlli e azioni secondarie vivono nell'espanso. */
+    .player-controls-col { display: none; }
+    .player-right-col { display: none; }
     #player-image-container {
         display: flex !important;
         width: 2.5rem;
@@ -234,15 +227,11 @@ html.light .prose blockquote {
         justify-content: center;
     }
 
-    /* Player mobile: collapse */
+    /* Player mobile: barra mini */
     #player-mobile-actions { display: flex; align-items: center; gap: 0.5rem; margin-left: auto; }
     #player-info { flex: 1; min-width: 0; }
     #player-title { max-width: 100%; }
-    #footer-player-container:not(.player-collapsed) #player-mini-play { display: none; }
-    #footer-player-container.player-collapsed .player-controls-col { display: none; }
-    #footer-player-container.player-collapsed .player-right-col { display: none; }
-    #footer-player-container.player-collapsed #player-collapse-chevron { transform: rotate(180deg); }
-    #footer-player-container.player-collapsed footer { min-height: auto; }
+    #footer-player-container footer { min-height: auto; }
 
     .hero-latest-content {
         flex-direction: column;
@@ -263,8 +252,6 @@ html.light .prose blockquote {
     }
     .player-main-row { flex-direction: row; align-items: center; flex-wrap: nowrap; }
     .player-info-col { width: auto; flex: 1; }
-    .player-controls-col { width: auto; flex: 1; margin-top: 0; padding: 0 0.5rem; }
-    .player-right-col { width: auto; margin-top: 0; justify-content: flex-end; }
     #player-image-container { width: 2rem !important; height: 2rem !important; }
 
     /* Expanded player in landscape: cover a sinistra, controlli a destra */
