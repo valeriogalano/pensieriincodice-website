@@ -81,6 +81,11 @@
             <button id="player-expanded-tab-transcript" class="text-[11px] px-3 py-1 rounded-full text-pod-gray hover:text-white transition-colors" aria-pressed="false">Trascrizione</button>
         </div>
         <div id="player-expanded-chapters" class="flex-1 overflow-y-auto space-y-1 scrollbar-thin scrollbar-thumb-pod-orange"></div>
+        <div id="player-expanded-transcript-search-wrap" class="hidden mb-2 flex-shrink-0">
+            <input id="player-expanded-transcript-search" type="search" placeholder="Cerca nella trascrizione…"
+                class="w-full bg-white/5 border border-white/10 rounded px-2 py-1 text-[11px] text-white placeholder-pod-gray focus:outline-none focus:border-pod-orange transition-colors"
+                aria-label="Cerca nella trascrizione" aria-controls="player-expanded-transcript">
+        </div>
         <div id="player-expanded-transcript" class="hidden flex-1 overflow-y-auto space-y-1 scrollbar-thin scrollbar-thumb-pod-orange"></div>
     </div>
 </div>
@@ -341,6 +346,8 @@
     const expandedTranscriptPanel = document.getElementById('player-expanded-transcript');
     const expandedTabChapters = document.getElementById('player-expanded-tab-chapters');
     const expandedTabTranscript = document.getElementById('player-expanded-tab-transcript');
+    const expandedTranscriptSearch = document.getElementById('player-expanded-transcript-search');
+    const expandedTranscriptSearchWrap = document.getElementById('player-expanded-transcript-search-wrap');
     const expandTrigger = document.getElementById('player-image-container');
     const shortcutsBtn = document.getElementById('player-shortcuts-btn');
     const shortcutsModal = document.getElementById('player-shortcuts-modal');
@@ -822,8 +829,8 @@
         return text.replace(new RegExp('(' + escaped + ')', 'gi'), '<mark class="bg-pod-orange/40 text-white rounded px-0.5">$1</mark>');
     }
 
-    function filterTranscript(query) {
-        const items = transcriptList.querySelectorAll('[data-transcript-index]');
+    function filterTranscript(query, list) {
+        const items = (list || transcriptList).querySelectorAll('[data-transcript-index]');
         const q = query.trim().toLowerCase();
         items.forEach(function(div) {
             const seg = currentTranscript[parseInt(div.dataset.transcriptIndex, 10)];
@@ -856,6 +863,15 @@
             filterTranscript(this.value);
         });
         transcriptSearch.addEventListener('keydown', function(e) {
+            e.stopPropagation();
+        });
+    }
+
+    if (expandedTranscriptSearch) {
+        expandedTranscriptSearch.addEventListener('input', function() {
+            filterTranscript(this.value, expandedTranscriptPanel);
+        });
+        expandedTranscriptSearch.addEventListener('keydown', function(e) {
             e.stopPropagation();
         });
     }
@@ -945,12 +961,13 @@
     function syncExpandedTranscript() {
         if (!expandedTranscriptPanel) return;
         expandedTranscriptPanel.innerHTML = '';
+        if (expandedTranscriptSearch) expandedTranscriptSearch.value = '';
         if (!currentTranscript.length) { expandedTranscriptPanel.innerHTML = '<p class="text-[11px] text-pod-gray text-center py-4">Nessuna trascrizione disponibile</p>'; return; }
         currentTranscript.forEach(function(seg, i) {
             const div = document.createElement('div');
             div.className = 'px-2 py-1 rounded cursor-pointer hover:bg-white/10 transition-colors text-[11px] text-pod-gray leading-relaxed';
-            div.dataset.expTrIndex = i;
-            div.innerHTML = '<span class="text-pod-orange font-mono mr-1 text-[9px]">' + formatTime(seg.start) + '</span>' + seg.text;
+            div.dataset.transcriptIndex = i;
+            div.innerHTML = '<span class="text-pod-orange font-mono mr-1 text-[9px]">' + formatTime(seg.start) + '</span><span class="transcript-text">' + seg.text + '</span>';
             div.addEventListener('click', function() { audio.currentTime = seg.start; if (audio.paused) audio.play(); });
             expandedTranscriptPanel.appendChild(div);
         });
@@ -1012,6 +1029,7 @@
         expandedTabChapters.addEventListener('click', function() {
             expandedChaptersPanel.classList.remove('hidden');
             expandedTranscriptPanel.classList.add('hidden');
+            if (expandedTranscriptSearchWrap) expandedTranscriptSearchWrap.classList.add('hidden');
             expandedTabChapters.classList.add('bg-white/10', 'text-white');
             expandedTabChapters.classList.remove('text-pod-gray');
             expandedTabTranscript.classList.remove('bg-white/10', 'text-white');
@@ -1022,6 +1040,7 @@
         expandedTabTranscript.addEventListener('click', function() {
             expandedTranscriptPanel.classList.remove('hidden');
             expandedChaptersPanel.classList.add('hidden');
+            if (expandedTranscriptSearchWrap) expandedTranscriptSearchWrap.classList.remove('hidden');
             expandedTabTranscript.classList.add('bg-white/10', 'text-white');
             expandedTabTranscript.classList.remove('text-pod-gray');
             expandedTabChapters.classList.remove('bg-white/10', 'text-white');
