@@ -352,8 +352,10 @@ html.light .sb-card-active {
     background-color: rgb(255 107 0 / 0.12);
 }
 
-/* Pulsante play nel footer player: era bg-white text-pod-black */
-html.light #player-play {
+/* Pulsanti play: bg-white text-pod-black diventa beige su beige in light,
+   perche' --pod-black in light e' il beige di sfondo. Vale per tutti e tre
+   (footer, barra mini, player espanso), non solo per #player-play. */
+html.light .bg-white.text-pod-black {
     background-color: rgb(26 21 16);
     color: rgb(250 247 242);
 }
