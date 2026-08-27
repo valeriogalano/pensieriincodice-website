@@ -84,9 +84,7 @@
                         <button class="sleep-option w-full text-left text-xs text-pod-gray hover:text-white px-2 py-1 rounded transition-colors mt-1 border-t border-white/10" data-minutes="off">Disattiva</button>
             </div>
         </div>
-        <button id="player-expanded-share" class="text-pod-gray hover:text-white transition-colors p-2" aria-label="Condividi">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-        </button>
+        {{ partial "player-share.html" (dict "id" "expanded" "size" 20 "align" "center") }}
     </div>
     {{/* Tab panel (Chapters / Transcript) */}}
     <div class="flex-1 overflow-hidden flex flex-col px-4 pb-4 min-h-0">
@@ -245,20 +243,8 @@
                         <button class="sleep-option w-full text-left text-xs text-pod-gray hover:text-white px-2 py-1 rounded transition-colors mt-1 border-t border-white/10" data-minutes="off">Disattiva</button>
                     </div>
                 </div>
-                <div class="relative hidden lg:flex items-center" id="player-share-wrapper">
-                    <button id="player-share-btn" class="text-pod-gray hover:text-white transition-colors" aria-label="Condividi con timestamp" aria-expanded="false" aria-controls="player-share-panel">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-                    </button>
-                    <div id="player-share-panel" class="hidden absolute bottom-full right-0 mb-2 bg-pod-card border border-white/10 rounded-lg p-3 shadow-xl z-10 w-72" role="dialog" aria-label="Condividi episodio">
-                        <p class="text-[10px] text-pod-gray uppercase font-bold mb-2">Condividi da questo punto</p>
-                        <div class="flex items-center gap-2 bg-white/5 rounded px-2 py-1.5 mb-2">
-                            <input id="player-share-url" type="text" readonly
-                                class="flex-1 bg-transparent text-[11px] font-mono text-white focus:outline-none min-w-0 truncate"
-                                aria-label="URL con timestamp">
-                            <button id="player-share-copy" class="text-pod-orange hover:text-white transition-colors flex-shrink-0 text-[10px] font-bold uppercase" aria-label="Copia URL">Copia</button>
-                        </div>
-                        <p id="player-share-feedback" class="text-[10px] text-pod-orange hidden">✓ Copiato!</p>
-                    </div>
+                <div class="hidden lg:flex">
+                    {{ partial "player-share.html" (dict "id" "footer" "size" 18 "align" "right") }}
                 </div>
                 <button id="toggle-chapters" class="text-pod-gray hover:text-white transition-colors hidden" aria-label="Mostra/nascondi capitoli" aria-controls="player-chapters-container" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
@@ -363,11 +349,9 @@
     const shortcutsModal = document.getElementById('player-shortcuts-modal');
     const shortcutsClose = document.getElementById('player-shortcuts-close');
     const shortcutsBackdrop = document.getElementById('player-shortcuts-backdrop');
-    const shareBtn = document.getElementById('player-share-btn');
-    const sharePanel = document.getElementById('player-share-panel');
-    const shareUrlInput = document.getElementById('player-share-url');
-    const shareCopyBtn = document.getElementById('player-share-copy');
-    const shareFeedback = document.getElementById('player-share-feedback');
+    // Un solo comportamento, piu' comandi che lo espongono: barra desktop e player espanso
+    const shareBtns = document.querySelectorAll('[data-share-btn]');
+    const sharePanels = document.querySelectorAll('[data-share-panel]');
     const sleepBtn = document.getElementById('player-sleep-btn');
     const sleepPanel = document.getElementById('player-sleep-panel');
     // Un solo timer, piu' comandi che lo mostrano: footer su desktop, player espanso su mobile
@@ -462,51 +446,97 @@
         }
     }
 
-    if (shareBtn) {
-        shareBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const shareUrl = currentPermalink ? buildShareUrl(currentPermalink, audio.currentTime) : window.location.href;
-            // Use native Web Share API on mobile if available
-            if (navigator.share) {
-                navigator.share({
-                    title: titleEl ? titleEl.textContent : '{{ .Site.Title }}',
-                    text: 'Ascolta "' + (titleEl ? titleEl.textContent : '{{ .Site.Title }}') + '" su Pensieri in Codice',
-                    url: shareUrl
-                }).catch(function() {});
-                return;
-            }
-            // Fallback: desktop panel
-            const isOpen = !sharePanel.classList.contains('hidden');
-            if (!isOpen && currentPermalink) {
-                shareUrlInput.value = shareUrl;
-                shareFeedback.classList.add('hidden');
-            }
-            sharePanel.classList.toggle('hidden', isOpen);
-            shareBtn.setAttribute('aria-expanded', String(!isOpen));
-        });
+    // Toast effimero. Vive fuori dal blocco delle gesture, che su desktop esce subito,
+    // perche' la conferma di copia serve a ogni larghezza.
+    function showToast(text, side, ms) {
+        const el = document.createElement('div');
+        el.textContent = text;
+        const pos = side === 'left' ? 'left:16px'
+            : side === 'right' ? 'right:16px'
+            : 'left:50%;transform:translateX(-50%)';
+        el.style.cssText = 'position:fixed;' + pos + ';bottom:120px;z-index:60;background:rgba(232,101,32,0.9);color:#fff;font-size:14px;font-weight:bold;padding:6px 12px;border-radius:8px;pointer-events:none;transition:opacity 0.4s';
+        document.body.appendChild(el);
+        setTimeout(function() { el.style.opacity = '0'; setTimeout(function() { el.remove(); }, 400); }, ms || 600);
     }
 
-    if (shareCopyBtn) {
-        shareCopyBtn.addEventListener('click', function() {
-            const url = shareUrlInput.value;
-            if (!url) return;
-            navigator.clipboard.writeText(url).then(function() {
-                shareFeedback.classList.remove('hidden');
-                setTimeout(function() { shareFeedback.classList.add('hidden'); }, 2000);
-            }).catch(function() {
-                shareUrlInput.select();
-                document.execCommand('copy');
-                shareFeedback.classList.remove('hidden');
-                setTimeout(function() { shareFeedback.classList.add('hidden'); }, 2000);
-            });
-        });
+    function copyLink(url) {
+        function done() { showToast('Link copiato', 'center', 1600); }
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(url).then(done).catch(function() { legacyCopy(url, done); });
+            return;
+        }
+        legacyCopy(url, done);
     }
+
+    function legacyCopy(url, done) {
+        const ta = document.createElement('textarea');
+        ta.value = url;
+        ta.style.cssText = 'position:fixed;top:-1000px';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); done(); }
+        catch (e) { showToast('Copia non riuscita', 'center', 1600); }
+        ta.remove();
+    }
+
+    // Foglio nativo dove c'e', appunti dove non c'e'. Nessun percorso finisce in silenzio.
+    window.shareEpisode = function(url, title) {
+        if (!navigator.share) { copyLink(url); return; }
+        navigator.share({ title: title, url: url }).catch(function(err) {
+            // il foglio chiuso dall'utente non e' un errore: qualsiasi altra cosa lo e'
+            if (err && err.name === 'AbortError') return;
+            copyLink(url);
+        });
+    };
+
+    function formatShareTime(seconds) {
+        const m = Math.floor(seconds / 60);
+        const sec = Math.floor(seconds % 60);
+        return m + ':' + (sec < 10 ? '0' : '') + sec;
+    }
+
+    function closeSharePanels() {
+        sharePanels.forEach(function(panel) { panel.classList.add('hidden'); });
+        shareBtns.forEach(function(btn) { btn.setAttribute('aria-expanded', 'false'); });
+    }
+
+    shareBtns.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const wrapper = btn.closest('[data-share-wrapper]');
+            const panel = wrapper.querySelector('[data-share-panel]');
+            const isOpen = !panel.classList.contains('hidden');
+            closeSharePanels();
+            if (isOpen) return;
+            // Il minuto si congela all'apertura. Se leggessimo currentTime al tap,
+            // l'audio nel frattempo e' andato avanti e l'etichetta avrebbe mentito.
+            const frozen = audio.currentTime;
+            wrapper.dataset.shareAt = frozen;
+            const label = wrapper.querySelector('[data-share-time]');
+            if (label) label.textContent = formatShareTime(frozen);
+            panel.classList.remove('hidden');
+            btn.setAttribute('aria-expanded', 'true');
+        });
+    });
+
+    document.querySelectorAll('.share-option').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const withTimestamp = this.dataset.shareMode === 'timestamp';
+            const at = parseFloat(this.closest('[data-share-wrapper]').dataset.shareAt || '0');
+            const base = currentPermalink
+                ? new URL(currentPermalink, window.location.href).toString()
+                : window.location.href;
+            closeSharePanels();
+            window.shareEpisode(
+                withTimestamp && currentPermalink ? buildShareUrl(currentPermalink, at) : base,
+                titleEl ? titleEl.textContent : '{{ .Site.Title }}'
+            );
+        });
+    });
 
     document.addEventListener('click', function(e) {
-        if (sharePanel && !sharePanel.classList.contains('hidden') && !sharePanel.contains(e.target) && e.target !== shareBtn) {
-            sharePanel.classList.add('hidden');
-            shareBtn.setAttribute('aria-expanded', 'false');
-        }
+        if (e.target.closest('[data-share-wrapper]')) return;
+        closeSharePanels();
     });
 
     let sleepTimeout = null;
@@ -1040,10 +1070,6 @@
 
     document.getElementById('player-expanded-prev') && document.getElementById('player-expanded-prev').addEventListener('click', function() { audio.currentTime = Math.max(0, audio.currentTime - 15); vibrate(10); });
     document.getElementById('player-expanded-next') && document.getElementById('player-expanded-next').addEventListener('click', function() { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30); vibrate(10); });
-    document.getElementById('player-expanded-share') && document.getElementById('player-expanded-share').addEventListener('click', function() {
-        const shareUrl = currentPermalink ? buildShareUrl(currentPermalink, audio.currentTime) : window.location.href;
-        if (navigator.share) { navigator.share({ title: titleEl ? titleEl.textContent : '', url: shareUrl }).catch(function(){}); }
-    });
 
     if (expandedTabChapters) {
         expandedTabChapters.addEventListener('click', function() {
@@ -1071,15 +1097,6 @@
     // ===== TOUCH GESTURES (Pointer Events API) =====
     (function() {
         if (window.innerWidth >= 1024) return; // desktop only uses mouse
-
-        // --- Helper: show skip feedback overlay ---
-        function showSkipFeedback(direction) {
-            const el = document.createElement('div');
-            el.textContent = direction > 0 ? '+30s' : '-15s';
-            el.style.cssText = 'position:fixed;' + (direction > 0 ? 'right:16px' : 'left:16px') + ';bottom:120px;z-index:60;background:rgba(232,101,32,0.9);color:#fff;font-size:14px;font-weight:bold;padding:6px 12px;border-radius:8px;pointer-events:none;transition:opacity 0.4s';
-            document.body.appendChild(el);
-            setTimeout(function() { el.style.opacity = '0'; setTimeout(function() { el.remove(); }, 400); }, 600);
-        }
 
         // 1. Swipe UP on mini-player footer → open expanded player
         var footerEl = document.querySelector('#footer-player-container footer');
@@ -1113,7 +1130,7 @@
                 if (Math.abs(dx) > 60 && dt < 300) {
                     if (dx > 0) { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30); vibrate(10); }
                     else { audio.currentTime = Math.max(0, audio.currentTime - 15); vibrate(10); }
-                    showSkipFeedback(dx);
+                    showToast(dx > 0 ? '+30s' : '-15s', dx > 0 ? 'right' : 'left');
                     return;
                 }
 
@@ -1126,8 +1143,8 @@
                     clearTimeout(tapTimer);
                     tapCount = 0;
                     var half = window.innerWidth / 2;
-                    if (tapX < half) { audio.currentTime = Math.max(0, audio.currentTime - 15); vibrate(10); showSkipFeedback(-1); }
-                    else { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30); vibrate(10); showSkipFeedback(1); }
+                    if (tapX < half) { audio.currentTime = Math.max(0, audio.currentTime - 15); vibrate(10); showToast('-15s', 'left'); }
+                    else { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 30); vibrate(10); showToast('+30s', 'right'); }
                 }
             }, { passive: true });
 
