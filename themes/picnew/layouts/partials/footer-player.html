@@ -344,6 +344,7 @@
     const expandedTranscriptSearch = document.getElementById('player-expanded-transcript-search');
     const expandedTranscriptSearchWrap = document.getElementById('player-expanded-transcript-search-wrap');
     const miniBar = document.querySelector('.player-main-row');
+    const coverTrigger = document.getElementById('player-image-container');
     const shortcutsBtn = document.getElementById('player-shortcuts-btn');
     const shortcutsModal = document.getElementById('player-shortcuts-modal');
     const shortcutsClose = document.getElementById('player-shortcuts-close');
@@ -959,6 +960,15 @@
             if (window.innerWidth >= 1024) return;
             // il play della barra, il titolo e ogni altro controllo restano loro stessi
             if (e.target.closest('a, button, input, select, [role="slider"]')) return;
+            openExpandedPlayer();
+        });
+    }
+    // La copertina si dichiara role="button": da tastiera deve fare quello che dice
+    if (coverTrigger) {
+        coverTrigger.addEventListener('keydown', function(e) {
+            if (e.key !== 'Enter' && e.key !== ' ') return;
+            if (window.innerWidth >= 1024) return;
+            e.preventDefault();
             openExpandedPlayer();
         });
     }
