@@ -1,0 +1,18 @@
+{{/* Pulsante condividi del player, con le due scelte esplicite.
+     Parametri: id (suffisso univoco), size (px dell'icona), align (left|right).
+     Usato due volte: nel player espanso e nella barra desktop. */}}
+<div class="relative flex items-center" data-share-wrapper>
+    <button id="player-share-btn-{{ .id }}" data-share-btn
+        class="text-pod-gray hover:text-white transition-colors {{ if eq .id "expanded" }}p-2{{ end }}"
+        aria-label="Condividi" aria-expanded="false" aria-haspopup="true"
+        aria-controls="player-share-panel-{{ .id }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="{{ .size }}" height="{{ .size }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+    </button>
+    <div id="player-share-panel-{{ .id }}" data-share-panel
+        class="hidden absolute bottom-full {{ if eq .align "right" }}right-0{{ else }}left-1/2 -translate-x-1/2{{ end }} mb-2 bg-pod-card border border-white/10 rounded-lg p-2 shadow-xl z-10 min-w-[190px]"
+        role="menu">
+        <p class="text-[10px] text-pod-gray uppercase font-bold px-2 pb-1 border-b border-white/10 mb-1">Condividi</p>
+        <button class="share-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-share-mode="episode">L'episodio</button>
+        <button class="share-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-share-mode="timestamp">Da <span data-share-time>0:00</span></button>
+    </div>
+</div>
