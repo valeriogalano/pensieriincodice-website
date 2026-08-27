@@ -70,6 +70,20 @@
             <option value="2.5" class="bg-pod-black">2.5x</option>
             <option value="3" class="bg-pod-black">3.0x</option>
         </select>
+        <div class="relative flex items-center" data-sleep-wrapper>
+            <button id="player-expanded-sleep-btn" data-sleep-btn class="text-pod-gray hover:text-white transition-colors p-2 flex items-center gap-1" aria-label="Sleep timer" aria-expanded="false" aria-controls="player-expanded-sleep-panel" aria-haspopup="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span id="player-expanded-sleep-countdown" data-sleep-countdown class="text-[10px] font-mono hidden"></span>
+            </button>
+            <div id="player-expanded-sleep-panel" data-sleep-panel class="hidden absolute bottom-full left-1/2 -translate-x-1/2 mb-2 bg-pod-card border border-white/10 rounded-lg p-2 shadow-xl z-10 min-w-[150px]" role="menu">
+                        <p class="text-[10px] text-pod-gray uppercase font-bold px-2 pb-1 border-b border-white/10 mb-1">Sleep timer</p>
+                        <button class="sleep-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-minutes="15">15 minuti</button>
+                        <button class="sleep-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-minutes="30">30 minuti</button>
+                        <button class="sleep-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-minutes="60">60 minuti</button>
+                        <button class="sleep-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-minutes="end">Fine episodio</button>
+                        <button class="sleep-option w-full text-left text-xs text-pod-gray hover:text-white px-2 py-1 rounded transition-colors mt-1 border-t border-white/10" data-minutes="off">Disattiva</button>
+            </div>
+        </div>
         <button id="player-expanded-share" class="text-pod-gray hover:text-white transition-colors p-2" aria-label="Condividi">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
         </button>
@@ -217,12 +231,12 @@
                         <option value="3" class="bg-pod-black">3.0x</option>
                     </select>
                 </div>
-                <div class="relative hidden lg:flex items-center" id="player-sleep-wrapper">
-                    <button id="player-sleep-btn" class="text-pod-gray hover:text-white transition-colors flex items-center gap-1" aria-label="Sleep timer" aria-expanded="false" aria-controls="player-sleep-panel">
+                <div class="relative hidden lg:flex items-center" id="player-sleep-wrapper" data-sleep-wrapper>
+                    <button id="player-sleep-btn" data-sleep-btn class="text-pod-gray hover:text-white transition-colors flex items-center gap-1" aria-label="Sleep timer" aria-expanded="false" aria-controls="player-sleep-panel">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                        <span id="player-sleep-countdown" class="text-[10px] font-mono hidden"></span>
+                        <span id="player-sleep-countdown" data-sleep-countdown class="text-[10px] font-mono hidden"></span>
                     </button>
-                    <div id="player-sleep-panel" class="hidden absolute bottom-full right-0 mb-2 bg-pod-card border border-white/10 rounded-lg p-2 shadow-xl z-10 min-w-[130px]" role="menu">
+                    <div id="player-sleep-panel" data-sleep-panel class="hidden absolute bottom-full right-0 mb-2 bg-pod-card border border-white/10 rounded-lg p-2 shadow-xl z-10 min-w-[130px]" role="menu">
                         <p class="text-[10px] text-pod-gray uppercase font-bold px-2 pb-1 border-b border-white/10 mb-1">Sleep timer</p>
                         <button class="sleep-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-minutes="15">15 minuti</button>
                         <button class="sleep-option w-full text-left text-xs text-white hover:text-pod-orange px-2 py-1 rounded transition-colors" data-minutes="30">30 minuti</button>
@@ -356,7 +370,21 @@
     const shareFeedback = document.getElementById('player-share-feedback');
     const sleepBtn = document.getElementById('player-sleep-btn');
     const sleepPanel = document.getElementById('player-sleep-panel');
-    const sleepCountdown = document.getElementById('player-sleep-countdown');
+    // Un solo timer, piu' comandi che lo mostrano: footer su desktop, player espanso su mobile
+    const sleepBtns = document.querySelectorAll('[data-sleep-btn]');
+    const sleepPanels = document.querySelectorAll('[data-sleep-panel]');
+    const sleepCountdowns = document.querySelectorAll('[data-sleep-countdown]');
+    function closeSleepPanels() {
+        sleepPanels.forEach(function(panel) { panel.classList.add('hidden'); });
+        sleepBtns.forEach(function(btn) { btn.setAttribute('aria-expanded', 'false'); });
+    }
+    function paintSleepState(text, active) {
+        sleepCountdowns.forEach(function(el) {
+            el.textContent = text;
+            el.classList.toggle('hidden', !text);
+        });
+        sleepBtns.forEach(function(btn) { btn.classList.toggle('text-pod-orange', active); });
+    }
     const volumeBtn = document.getElementById('player-volume-btn');
     const volumeIcon = document.getElementById('player-volume-icon');
     const volumeSlider = document.getElementById('player-volume');
@@ -493,22 +521,19 @@
         sleepCountdownInterval = null;
         sleepEndsAt = 0;
         sleepOnEnd = false;
-        if (sleepCountdown) { sleepCountdown.textContent = ''; sleepCountdown.classList.add('hidden'); }
-        if (sleepBtn) sleepBtn.classList.remove('text-pod-orange');
+        paintSleepState('', false);
     }
 
     function startSleepTimer(minutes) {
         clearSleepTimer();
         if (minutes === 'end') {
             sleepOnEnd = true;
-            if (sleepCountdown) { sleepCountdown.textContent = 'fine ep.'; sleepCountdown.classList.remove('hidden'); }
-            if (sleepBtn) sleepBtn.classList.add('text-pod-orange');
+            paintSleepState('fine ep.', true);
             return;
         }
         const ms = minutes * 60 * 1000;
         sleepEndsAt = Date.now() + ms;
-        if (sleepBtn) sleepBtn.classList.add('text-pod-orange');
-        if (sleepCountdown) sleepCountdown.classList.remove('hidden');
+        paintSleepState('', true);
         sleepTimeout = setTimeout(function() {
             audio.pause();
             clearSleepTimer();
@@ -517,35 +542,36 @@
             const remaining = Math.max(0, sleepEndsAt - Date.now());
             const m = Math.floor(remaining / 60000);
             const s = Math.floor((remaining % 60000) / 1000);
-            if (sleepCountdown) sleepCountdown.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+            paintSleepState(m + ':' + (s < 10 ? '0' : '') + s, true);
             if (remaining === 0) clearSleepTimer();
         }, 1000);
     }
 
-    if (sleepBtn) {
-        sleepBtn.addEventListener('click', function(e) {
+    sleepBtns.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
             e.stopPropagation();
-            const isOpen = !sleepPanel.classList.contains('hidden');
-            sleepPanel.classList.toggle('hidden', isOpen);
-            sleepBtn.setAttribute('aria-expanded', String(!isOpen));
+            const panel = btn.closest('[data-sleep-wrapper]').querySelector('[data-sleep-panel]');
+            const isOpen = !panel.classList.contains('hidden');
+            closeSleepPanels();
+            if (!isOpen) {
+                panel.classList.remove('hidden');
+                btn.setAttribute('aria-expanded', 'true');
+            }
         });
-    }
+    });
 
     document.querySelectorAll('.sleep-option').forEach(function(btn) {
         btn.addEventListener('click', function() {
             const val = this.dataset.minutes;
-            sleepPanel.classList.add('hidden');
-            sleepBtn.setAttribute('aria-expanded', 'false');
+            closeSleepPanels();
             if (val === 'off') { clearSleepTimer(); return; }
             startSleepTimer(val === 'end' ? 'end' : parseInt(val, 10));
         });
     });
 
     document.addEventListener('click', function(e) {
-        if (sleepPanel && !sleepPanel.classList.contains('hidden') && !sleepPanel.contains(e.target) && e.target !== sleepBtn) {
-            sleepPanel.classList.add('hidden');
-            sleepBtn.setAttribute('aria-expanded', 'false');
-        }
+        if (e.target.closest('[data-sleep-wrapper]')) return;
+        closeSleepPanels();
     });
 
     audio.addEventListener('ended', function() {
@@ -1218,8 +1244,11 @@
             case 'S':
                 if (sleepPanel) {
                     const isOpen = !sleepPanel.classList.contains('hidden');
-                    sleepPanel.classList.toggle('hidden', isOpen);
-                    if (sleepBtn) sleepBtn.setAttribute('aria-expanded', String(!isOpen));
+                    closeSleepPanels();
+                    if (!isOpen) {
+                        sleepPanel.classList.remove('hidden');
+                        if (sleepBtn) sleepBtn.setAttribute('aria-expanded', 'true');
+                    }
                 }
                 break;
             case '?':
