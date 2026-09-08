@@ -329,6 +329,24 @@ capitoli/trascrizione finisce sotto la barra del browser. In verticale una media
 query comprime anche padding e margini attorno ai controlli — mai i touch target
 da 44px.
 
+### Cover che si ritira
+
+Scorrendo il pannello capitoli o trascrizione (`scrollTop > 8`) il player prende
+la classe `panel-focus` e la cover collassa a zero: in quel momento interessa la
+lista. **Torna scorrendo di nuovo fino in cima** (`scrollTop === 0`), che e'
+l'unico modo per riaprirla: non c'e' un tasto.
+
+Perche' funzioni bisogna che la cover si ritiri solo quando serve davvero: la
+condizione e' che la lista resti piu' lunga del pannello allargato
+(`scrollHeight > clientHeight + altezza cover`). Senza, una lista corta
+sparirebbe la cover, si ritroverebbe tutta dentro il pannello, tornerebbe a
+`scrollTop = 0` da sola e farebbe riapparire la cover subito: uno sfarfallio, e
+per l'utente nessun modo di capire cosa e' successo.
+
+A 390x664 l'area scrollabile passa da 146px a 287px, da 4-5 a 9 capitoli.
+
+La classe si azzera all'apertura e alla chiusura del player espanso.
+
 ### Animazione
 
 CSS transform: `translateY(100%)` ↔ `translateY(0)`, transizione `0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94)`.

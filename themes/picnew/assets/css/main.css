@@ -293,6 +293,19 @@ html.light .prose blockquote {
     height: min(12rem, 20dvh);
 }
 
+/* Scorrendo capitoli o trascrizione la cover sparisce (classe messa dal JS
+   del player): li' interessa la lista, non la locandina. */
+#player-expanded #player-expanded-cover {
+    transition: width 0.25s ease, height 0.25s ease, margin-bottom 0.25s ease, opacity 0.2s ease;
+}
+#player-expanded.panel-focus #player-expanded-cover {
+    width: 0;
+    height: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    border-width: 0;
+}
+
 /* In verticale lo spazio e' poco: si comprimono padding e margini attorno ai
    controlli, mai i touch target da 44px. */
 @media (max-width: 1023px) and (orientation: portrait) {
