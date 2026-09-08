@@ -279,6 +279,47 @@ html.light .prose blockquote {
     padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
 }
 
+/* Player espanso: altezza sulla viewport davvero visibile. Con `inset-0`
+   Safari e Firefox mobile usano la large viewport, quindi il fondo del
+   pannello capitoli/trascrizione finisce sotto la barra del browser. */
+#player-expanded {
+    height: 100dvh;
+}
+
+/* Su schermi bassi la cover si restringe: lo spazio recuperato va al
+   pannello capitoli/trascrizione, che e' l'unica parte scrollabile. */
+#player-expanded-cover {
+    width: min(12rem, 20dvh);
+    height: min(12rem, 20dvh);
+}
+
+/* Scorrendo capitoli o trascrizione la cover sparisce (classe messa dal JS
+   del player): li' interessa la lista, non la locandina. */
+#player-expanded #player-expanded-cover {
+    transition: width 0.25s ease, height 0.25s ease, margin-bottom 0.25s ease, opacity 0.2s ease;
+}
+#player-expanded.panel-focus #player-expanded-cover {
+    width: 0;
+    height: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    border-width: 0;
+}
+
+/* In verticale lo spazio e' poco: si comprimono padding e margini attorno ai
+   controlli, mai i touch target da 44px. */
+@media (max-width: 1023px) and (orientation: portrait) {
+    #player-expanded-handle { padding-top: 0.25rem; }
+    #player-expanded-cover { margin-bottom: 0.5rem; }
+    #player-expanded-cover-block { padding-top: 0; padding-bottom: 0.5rem; }
+    #player-expanded-controls { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+}
+
+/* Home indicator iPhone: il pannello e' l'ultimo elemento del player espanso */
+#player-expanded-tabs {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
 /* Chapter markers sulla seekbar */
 #player-progress-bar .ch-marks-container {
     position: absolute;

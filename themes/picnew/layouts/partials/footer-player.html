@@ -16,8 +16,8 @@
         <div class="w-10"></div>
     </div>
     {{/* Cover + info */}}
-    <div class="flex flex-col items-center px-8 pt-2 pb-4 flex-shrink-0">
-        <div class="w-48 h-48 rounded-xl overflow-hidden border-2 border-pod-orange/40 shadow-2xl shadow-pod-orange/20 mb-4">
+    <div id="player-expanded-cover-block" class="flex flex-col items-center px-8 pt-2 pb-4 flex-shrink-0">
+        <div id="player-expanded-cover" class="w-48 h-48 rounded-xl overflow-hidden border-2 border-pod-orange/40 shadow-2xl shadow-pod-orange/20 mb-4">
             <img id="player-expanded-image" src="{{ .Site.Params.podcast.image | absURL }}" alt="" class="w-full h-full object-cover">
         </div>
         <p id="player-expanded-title" class="text-base font-bold text-white text-center line-clamp-2 mb-1">{{ .Site.Title }}</p>
@@ -35,7 +35,7 @@
         </div>
     </div>
     {{/* Main controls */}}
-    <div class="flex items-center justify-center gap-4 px-4 py-4 flex-shrink-0">
+    <div id="player-expanded-controls" class="flex items-center justify-center gap-4 px-4 py-4 flex-shrink-0">
         <button id="player-expanded-episode-prev" class="text-pod-gray hover:text-white transition-colors p-2" aria-label="Episodio precedente" disabled>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5" stroke="currentColor" stroke-width="2"/></svg>
         </button>
@@ -87,7 +87,7 @@
         {{ partial "player-share.html" (dict "id" "expanded" "size" 20 "align" "center") }}
     </div>
     {{/* Tab panel (Chapters / Transcript) */}}
-    <div class="flex-1 overflow-hidden flex flex-col px-4 pb-4 min-h-0">
+    <div id="player-expanded-tabs" class="flex-1 overflow-hidden flex flex-col px-4 pb-4 min-h-0">
         <div class="flex gap-2 mb-2 flex-shrink-0">
             <button id="player-expanded-tab-chapters" class="text-[11px] px-3 py-1 rounded-full bg-white/10 text-white font-medium" aria-pressed="true">Capitoli</button>
             <button id="player-expanded-tab-transcript" class="text-[11px] px-3 py-1 rounded-full text-pod-gray hover:text-white transition-colors" aria-pressed="false">Trascrizione</button>
@@ -337,6 +337,7 @@
     const expandedTitle = document.getElementById('player-expanded-title');
     const expandedImage = document.getElementById('player-expanded-image');
     const expandedSpeedSelect = document.getElementById('player-expanded-speed');
+    const expandedCover = document.getElementById('player-expanded-cover');
     const expandedChaptersPanel = document.getElementById('player-expanded-chapters');
     const expandedTranscriptPanel = document.getElementById('player-expanded-transcript');
     const expandedTabChapters = document.getElementById('player-expanded-tab-chapters');
@@ -955,13 +956,43 @@
     function openExpandedPlayer() {
         if (!expandedPlayer) return;
         expandedPlayer.style.transform = 'translateY(0)';
+        expandedPlayer.classList.remove('panel-focus');
         expandedPlayer.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
         syncExpandedPlayer();
     }
 
+    // Scorrendo capitoli o trascrizione la cover si ritira: in quel momento non
+    // serve, e lo spazio va alla lista. Torna scorrendo di nuovo fino in cima.
+    function coverSpace() {
+        if (!expandedCover) return 0;
+        const r = expandedCover.getBoundingClientRect();
+        if (!r.height) return 0;
+        return r.height + parseFloat(getComputedStyle(expandedCover).marginBottom || 0);
+    }
+
+    function watchPanelScroll(panel) {
+        if (!panel) return;
+        panel.addEventListener('scroll', function() {
+            if (panel.scrollTop === 0) {
+                expandedPlayer.classList.remove('panel-focus');
+                return;
+            }
+            if (panel.scrollTop <= 8) return;
+            // Si ritira solo se la lista resta piu' lunga del pannello allargato.
+            // Altrimenti sparirebbe, il pannello conterrebbe tutto, lo scroll
+            // tornerebbe a zero da solo e la cover riapparirebbe subito.
+            if (panel.scrollHeight > panel.clientHeight + coverSpace()) {
+                expandedPlayer.classList.add('panel-focus');
+            }
+        }, { passive: true });
+    }
+    watchPanelScroll(expandedChaptersPanel);
+    watchPanelScroll(expandedTranscriptPanel);
+
     function closeExpandedPlayer() {
         if (!expandedPlayer) return;
+        expandedPlayer.classList.remove('panel-focus');
         expandedPlayer.style.transform = 'translateY(100%)';
         expandedPlayer.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
