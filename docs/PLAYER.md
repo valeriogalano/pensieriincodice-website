@@ -321,6 +321,14 @@ Input `#player-transcript-search`: su `input`, chiama `filterTranscript(query)`.
 - Button `#player-expanded-close` (chevron giù)
 - Click sull'handle bar `#player-expanded-handle`
 
+### Altezza
+
+`height: 100dvh` (in `main.css`). Con il solo `inset-0` Safari e Firefox mobile
+dimensionano il player sulla *large viewport*, quindi il fondo del pannello
+capitoli/trascrizione finisce sotto la barra del browser. In verticale una media
+query comprime anche padding e margini attorno ai controlli — mai i touch target
+da 44px.
+
 ### Animazione
 
 CSS transform: `translateY(100%)` ↔ `translateY(0)`, transizione `0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94)`.
@@ -329,7 +337,7 @@ CSS transform: `translateY(100%)` ↔ `translateY(0)`, transizione `0.35s cubic-
 
 - Handle bar (drag indicator)
 - Header: tasto chiudi + label "In riproduzione"
-- Cover 192×192px con bordo arancione
+- Cover quadrata con bordo arancione: lato `min(12rem, 20dvh)`, cosi' su schermi bassi lo spazio va al pannello capitoli/trascrizione
 - Titolo episodio
 - Seekbar con marker capitoli + timestamp corrente/totale
 - Controlli: prev episodio | prev capitolo | −15s | ▶/⏸ (grande) | +30s | next capitolo | next episodio
