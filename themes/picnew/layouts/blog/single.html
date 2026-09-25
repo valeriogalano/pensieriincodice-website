@@ -6,7 +6,13 @@
             <span>•</span>
             <time>{{ .Date.Format "02 Jan 2006" }}</time>
             <span>•</span>
-            <span>{{ .Params.author | default "Valerio Galano" }}</span>
+            {{ $author := .Params.author | default "Valerio Galano" }}
+            <span class="inline-flex items-center gap-2">
+                {{ with index site.Data.authors $author }}
+                <img src="{{ .image | relURL }}" alt="" width="28" height="28" class="w-7 h-7 rounded-full object-cover">
+                {{ end }}
+                <span>{{ $author }}</span>
+            </span>
         </div>
         <h1 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight leading-tight">{{ .Title }}</h1>
         {{ with .Params.featureImage }}
@@ -26,6 +32,16 @@
     <div class="prose prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-pre:bg-pod-card prose-pre:border prose-pre:border-white/10 mb-12">
         {{ .Content }}
     </div>
+
+    {{ with index site.Data.authors (.Params.author | default "Valerio Galano") }}
+    <div class="not-prose mb-12 flex items-center gap-4 bg-pod-card border border-white/5 rounded-2xl p-5">
+        <img src="{{ .image | relURL }}" alt="" width="40" height="40" class="w-10 h-10 rounded-full object-cover flex-shrink-0">
+        <div>
+            <div class="font-semibold">{{ $.Params.author | default "Valerio Galano" }}</div>
+            {{ with .role }}<div class="text-sm text-pod-gray">{{ . }}</div>{{ end }}
+        </div>
+    </div>
+    {{ end }}
 
     {{ if or .NextInSection .PrevInSection }}
     <div class="mt-12 pt-8 border-t border-white/5 flex justify-between">

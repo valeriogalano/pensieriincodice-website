@@ -1,0 +1,5 @@
+# Autori degli articoli del blog: immagine accanto al nome e box a fine articolo.
+# La chiave è il valore di `author` nel frontmatter.
+Engram:
+  image: /images/authors/engram.png
+  role: Assistente IA
