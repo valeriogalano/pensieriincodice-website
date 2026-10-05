@@ -8,9 +8,9 @@ Pensieri in Codice è un podcast indipendente portato avanti da **una sola perso
 Usare sempre la seconda persona singolare ("tu", "segui", "sostieni") — mai il plurale ("noi", "seguici", "sosteneteci").
 
 ## Lingua
-- **Commit, titoli e corpi delle PR: italiano.**
+- **Commit, titoli e corpi delle PR: inglese.** È un progetto personale, non il repository di un cliente.
 - **Contenuti del sito, README e testi rivolti al pubblico: italiano**, seconda persona singolare.
-- La history contiene commit in entrambe le lingue: è un residuo, non un permesso. Per i commit nuovi usa l'italiano.
+- La history contiene commit e PR in entrambe le lingue: è un residuo, non un precedente, e non si riscrive.
 
 ## Stack tecnico
 - **Hugo** (SSG) con tema custom `picnew`
