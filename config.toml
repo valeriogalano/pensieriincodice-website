@@ -8,6 +8,11 @@ pagination.pagerSize = 8
 summaryLength = 20
 defaultContentLanguage = "it"
 
+# Copertine scaricate dal CDN per le miniature: dopo una settimana Hugo le riscarica,
+# così una copertina sostituita con lo stesso nome si aggiorna da sola.
+[caches.getresource]
+maxAge = "168h"
+
 [languages.it]
   contentDir = 'content/'
   label = 'Italiano'

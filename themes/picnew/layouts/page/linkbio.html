@@ -56,7 +56,7 @@
       <a href="{{ $latest.RelPermalink }}" aria-label="Vai all'ultimo episodio: {{ $latest.Title }}">
         <span class="cover">
           {{ if $latest.Params.image }}
-            <img loading="eager" src="{{ $latest.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.image }}" alt="{{ $latest.Title }}" />
+            <img loading="eager" fetchpriority="high" src="{{ partial "thumb.html" (printf "%s%s" site.Params.podcast.cdn_base_url $latest.Params.image) }}" alt="{{ $latest.Title }}" />
           {{ else }}
             <img loading="eager" src="{{ $latest.Site.Params.podcast.image | absURL }}" alt="{{ $latest.Title }}" />
           {{ end }}
@@ -104,7 +104,7 @@
         <a class="item" href="{{ $p.RelPermalink }}">
           <span class="thumb">
             {{ if $p.Params.image }}
-              <img loading="lazy" src="{{ $p.Site.Params.podcast.cdn_base_url }}{{ $p.Params.image }}" alt="{{ $p.Title }}" />
+              <img loading="lazy" src="{{ partial "thumb.html" (printf "%s%s" site.Params.podcast.cdn_base_url $p.Params.image) }}" alt="{{ $p.Title }}" />
             {{ else }}
               <img loading="lazy" src="{{ $p.Site.Params.podcast.image | absURL }}" alt="{{ $p.Title }}" />
             {{ end }}

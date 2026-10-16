@@ -43,11 +43,22 @@ jobs:
           hugo-version: '0.159.2'
           extended: true
 
+      - name: Cache Hugo resources
+        uses: actions/cache@v6
+        with:
+          path: |
+            resources/_gen
+            ${{ runner.temp }}/hugo_cache
+          key: hugo-${{ github.run_id }}
+          restore-keys: hugo-
+
       - name: Install npm dependencies
         run: npm install
 
       - name: Build
         run: hugo -D
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
