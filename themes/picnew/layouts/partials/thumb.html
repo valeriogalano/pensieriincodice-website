@@ -10,7 +10,10 @@
   {{- with .Err -}}
     {{- warnf "thumb: %s" . -}}
   {{- else with .Value -}}
-    {{- $url = (.Resize "800x webp q80").RelPermalink -}}
+    {{- /* Solo immagini raster: Resize su HTML o SVG fermerebbe la build */ -}}
+    {{- if and (eq .MediaType.MainType "image") (ne .MediaType.SubType "svg") -}}
+      {{- $url = (.Resize "800x webp q80").RelPermalink -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 {{- end -}}
