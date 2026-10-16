@@ -20,7 +20,7 @@
     {{- $episodes := where .Site.RegularPages "Type" "podcast" -}}
     {{- $playlist := slice -}}
     {{- range $episodes -}}
-        {{- $img := printf "%s%s" $.Site.Params.podcast.cdn_base_url .Params.image -}}
+        {{- $img := partial "thumb.html" (printf "%s%s" $.Site.Params.podcast.cdn_base_url .Params.image) -}}
         {{- $audio := printf "%s%s" $.Site.Params.podcast.cdn_tracked_base_url .Params.audio_file -}}
         {{- $chapters := "" -}}
         {{- if .Params.chapters -}}{{- $chapters = printf "%s%s" $.Site.Params.podcast.cdn_base_url .Params.chapters -}}{{- end -}}
