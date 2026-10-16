@@ -57,7 +57,7 @@
 
     {{ if .Params.image }}
     <div class="mb-12 rounded-2xl overflow-hidden">
-        <img src="{{ .Site.Params.podcast.cdn_base_url }}{{ .Params.image }}" alt="{{ .Title }}" class="w-full max-w-md mx-auto rounded-2xl" />
+        <img fetchpriority="high" width="800" height="800" src="{{ partial "thumb.html" (printf "%s%s" site.Params.podcast.cdn_base_url .Params.image) }}" alt="{{ .Title }}" class="w-full max-w-md mx-auto rounded-2xl" />
     </div>
     {{ end }}
 

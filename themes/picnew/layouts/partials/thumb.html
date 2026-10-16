@@ -1,0 +1,20 @@
+{{- /*
+  Miniatura WebP (800px di larghezza) di un'immagine remota, per le pagine del sito.
+  Gli originali sul CDN restano intatti: il feed e le app continuano a usare quelli.
+  Se il download fallisce torna l'URL originale, così la build non si rompe.
+  I percorsi relativi (immagini in static/) passano così come sono.
+*/ -}}
+{{- $url := . -}}
+{{- if hasPrefix $url "http" -}}
+{{- with try (resources.GetRemote $url) -}}
+  {{- with .Err -}}
+    {{- warnf "thumb: %s" . -}}
+  {{- else with .Value -}}
+    {{- /* Solo immagini raster: Resize su HTML o SVG fermerebbe la build */ -}}
+    {{- if and (eq .MediaType.MainType "image") (ne .MediaType.SubType "svg") -}}
+      {{- $url = (.Resize "800x webp q80").RelPermalink -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- end -}}
+{{- return $url -}}

@@ -47,3 +47,28 @@ Redirect 301 /2zp6vYw https://amzn.to/2AUUbAt
 Redirect 301 /3ctoMTp https://amzn.to/3egKhHP
 Redirect 301 /2YSbaLS https://amzn.to/2YSbaLS
 Redirect 301 /2H3YImV https://amzn.to/2H3YImV
+
+# Cache del browser. Le miniature e il CSS hanno nomi con hash, gli altri file statici no:
+# per questo immagini, CSS e JS restano a 30 giorni e solo i font arrivano a un anno.
+# L'HTML resta senza scadenza, così un nuovo deploy si vede subito.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType image/x-icon "access plus 30 days"
+  ExpiresByType text/css "access plus 30 days"
+  ExpiresByType application/javascript "access plus 30 days"
+  ExpiresByType text/javascript "access plus 30 days"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/ttf "access plus 1 year"
+</IfModule>
+
+# Il service worker non va mai servito dalla cache, altrimenti gli aggiornamenti tardano.
+<Files "sw.js">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "no-cache"
+  </IfModule>
+</Files>
