@@ -25,15 +25,15 @@
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
             <a href="#tempo" class="bg-pod-black/30 rounded-xl p-4 border border-white/5 hover:border-pod-orange/50 transition-all group block">
                 <div class="text-pod-orange font-mono text-xs uppercase tracking-wider mb-2">⏱ Tempo</div>
-                <p class="text-sm text-pod-gray group-hover:text-white transition-colors">Condividi il podcast, consiglia un episodio, lascia una recensione. Costa zero e vale tantissimo.</p>
+                <p class="text-sm text-pod-gray group-hover:text-white transition-colors">Fai conoscere il podcast a chi può apprezzarlo.</p>
             </a>
             <a href="#talento" class="bg-pod-black/30 rounded-xl p-4 border border-white/5 hover:border-pod-orange/50 transition-all group block">
                 <div class="text-pod-orange font-mono text-xs uppercase tracking-wider mb-2">🛠 Talento</div>
-                <p class="text-sm text-pod-gray group-hover:text-white transition-colors">Hai competenze utili? Invia feedback, suggerisci argomenti, segnala errori. Il tuo contributo migliora il progetto.</p>
+                <p class="text-sm text-pod-gray group-hover:text-white transition-colors">Metti a disposizione le tue competenze, o la tua voce.</p>
             </a>
             <a href="#tesoro" class="bg-pod-black/30 rounded-xl p-4 border border-white/5 hover:border-pod-orange/50 transition-all group block">
                 <div class="text-pod-orange font-mono text-xs uppercase tracking-wider mb-2">💰 Tesoro</div>
-                <p class="text-sm text-pod-gray group-hover:text-white transition-colors">Supporta economicamente con una donazione diretta o usando i link affiliati per i tuoi acquisti abituali.</p>
+                <p class="text-sm text-pod-gray group-hover:text-white transition-colors">Fai una donazione o usa i link affiliati.</p>
             </a>
         </div>
     </section>
@@ -74,6 +74,12 @@
         <h2 class="text-2xl font-bold mb-1">Contribuisci con il tuo talento</h2>
         <p class="text-[11px] text-pod-orange font-mono uppercase tracking-wider mb-3">🛠 Talento</p>
         <p class="text-pod-gray mb-6">Hai competenze che possono migliorare il progetto? Invia feedback sugli episodi, segnala errori, suggerisci argomenti o ospiti, aiuta con traduzioni o accessibilità. Qualsiasi contributo è benvenuto.</p>
+        <p class="text-pod-gray mb-2">Puoi anche proporre un episodio tutto tuo per la <span class="text-white font-semibold">Community Edition</span>, il formato in cui a parlare di un argomento che ti appassiona sei tu, con la tua voce.</p>
+        {{ with site.GetPage "/blog/community-edition" }}
+        <a href="{{ .RelPermalink }}" class="text-sm text-pod-orange hover:underline mb-6 inline-block">Scopri come funziona →</a>
+        {{ else }}
+        <div class="mb-6"></div>
+        {{ end }}
         <a href="{{ "contatti/" | relURL }}"
             class="inline-flex items-center gap-2 bg-pod-card border border-white/5 hover:border-pod-orange/50 rounded-2xl px-6 py-4 transition-all group">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-pod-gray group-hover:text-pod-orange transition-colors flex-shrink-0">
@@ -155,7 +161,7 @@
     {{ with .Site.Params.support.special_thanks }}
     <section class="pt-12 border-t border-white/5 mb-12">
         <h2 class="text-2xl font-bold mb-2">Ringraziamenti speciali</h2>
-        <p class="text-pod-gray mb-6">Persone che hanno contribuito in modo straordinario alla nascita o alla crescita di questo progetto. Di sicuro avrò dimenticato qualcuno: non me ne vogliate, anzi fatemelo presente e rimedierò.</p>
+        <p class="text-pod-gray mb-6">Persone che hanno contribuito in modo straordinario alla nascita o alla crescita di questo progetto. Di sicuro avrò dimenticato qualcuno: non me ne volere, anzi fammelo presente e rimedierò.</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {{ range . }}
             {{ if and .url (ne .url "#") }}
