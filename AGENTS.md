@@ -69,7 +69,14 @@ lavorare senza.
 
 La descrizione è un paragrafo di 2-4 frasi in seconda persona singolare. Subito dopo il paragrafo
 va la riga `[Pensieri in codice](https://pensieriincodice.it/NNN)`, che deve restare il primo link
-della descrizione: link dell'ospite, fonti e altro vanno sotto. Titolo, descrizione e tag sono
+della descrizione: link dell'ospite, fonti e altro vanno sotto.
+
+Il corpo si scrive in **Markdown vero**: elenchi con `- ` preceduti da una riga vuota, link
+`[testo](url)` o `<url>`. Mai pallini `•`, `<br />`, HTML incollato, spazi non separabili o altri
+residui di Word e degli editor: un testo che arriva da lì va ripulito prima del commit. Controlla
+nell'HTML generato che un elenco esca come `<ul><li>` e non come un paragrafo unico.
+
+Titolo, descrizione e tag sono
 una **bozza**: li rivede Valerio prima della pubblicazione.
 
 Prima di consegnare, fai girare `hugo` e verifica che la pagina e la voce nel feed escano
