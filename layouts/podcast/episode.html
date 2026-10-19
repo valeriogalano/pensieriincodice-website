@@ -128,6 +128,24 @@
     </div>
     {{ end }}
 
+    <!-- Equipment -->
+    {{ with .Params.equipment }}
+    <div class="mt-12 pt-8 border-t border-white/5">
+        <h3 class="text-2xl font-bold mb-6">Attrezzatura</h3>
+        <ul class="space-y-4">
+            {{ range . }}
+            <li>
+                <a href="{{ .url }}" target="_blank" rel="noopener sponsored" class="flex items-center space-x-3 group">
+                    <span class="w-2 h-2 bg-pod-orange rounded-full group-hover:scale-150 transition-transform"></span>
+                    <span class="text-pod-gray group-hover:text-white transition-colors underline decoration-pod-orange/30 group-hover:decoration-pod-orange">{{ .title }}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+        <p class="text-sm text-pod-gray mt-4">Link affiliati: il costo per te non cambia, ma una piccola parte del ricavato sostiene il podcast.</p>
+    </div>
+    {{ end }}
+
     <!-- Partners -->
     {{ with index hugo.Data.partners "partners" }}
     <div class="mt-12 pt-8 border-t border-white/5">

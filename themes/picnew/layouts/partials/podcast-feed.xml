@@ -78,6 +78,7 @@
                 {{ partial "support.html" . }}
                 {{ partial "partners.html" . }}
                 {{ partial "sources.html" . }}
+                {{ partial "equipment.html" . }}
                 {{ partial "credits.html" . }}
                 {{ print "]]>" | safeHTML }}
             </description>
@@ -88,6 +89,7 @@
                 {{ partial "support.html" . }}
                 {{ partial "partners.html" . }}
                 {{ partial "sources.html" . }}
+                {{ partial "equipment.html" . }}
                 {{ partial "credits.html" . }}
                 {{ print "]]>" | safeHTML }}
             </content:encoded>
