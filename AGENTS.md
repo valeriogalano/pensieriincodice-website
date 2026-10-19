@@ -67,8 +67,9 @@ copiane la struttura del frontmatter, campo per campo.
 Lo script dell'episodio sta in `data/scripts/PICNNN.yml`; se manca, chiedilo invece di
 lavorare senza.
 
-La descrizione è un paragrafo di 2-4 frasi in seconda persona singolare, e si chiude sempre con
-la riga `[Pensieri in codice](https://pensieriincodice.it/NNN)`. Titolo, descrizione e tag sono
+La descrizione è un paragrafo di 2-4 frasi in seconda persona singolare. Subito dopo il paragrafo
+va la riga `[Pensieri in codice](https://pensieriincodice.it/NNN)`, che deve restare il primo link
+della descrizione: link dell'ospite, fonti e altro vanno sotto. Titolo, descrizione e tag sono
 una **bozza**: li rivede Valerio prima della pubblicazione.
 
 Prima di consegnare, fai girare `hugo` e verifica che la pagina e la voce nel feed escano
