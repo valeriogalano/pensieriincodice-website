@@ -69,7 +69,9 @@ lavorare senza.
 
 La descrizione è un paragrafo di 2-4 frasi in seconda persona singolare. Subito dopo il paragrafo
 va la riga `[Pensieri in codice](https://pensieriincodice.it/NNN)`, che deve restare il primo link
-della descrizione: link dell'ospite, fonti e altro vanno sotto.
+della descrizione: i link dell'ospite vanno sotto. Fonti, sostenitori e canali del podcast **non
+si scrivono nel corpo**: le fonti vanno in `sources` (con `title`), i sostenitori in `supporters`,
+e i canali li aggiunge il partial `follow.html`. Pagina e feed li generano da lì.
 
 Il corpo si scrive in **Markdown vero**: elenchi con `- ` preceduti da una riga vuota, link
 `[testo](url)` o `<url>`. Mai pallini `•`, `<br />`, HTML incollato, spazi non separabili o altri
