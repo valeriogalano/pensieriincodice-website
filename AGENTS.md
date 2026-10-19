@@ -56,6 +56,7 @@ copiane la struttura del frontmatter, campo per campo.
 | `audio_size` | Byte, dal file sul CDN: il `Content-Length` di `curl -sI` sullo stesso URL |
 | `supporters`, `sources` | Il blocco YAML `# Sostenitori e fonti` della nota dell'episodio in Obsidian, copiato così com'è |
 | Titolo, descrizione | La sezione `# Descrizione` della nota dell'episodio, se c'è. Altrimenti una bozza dallo script |
+| `equipment` | L'attrezzatura usata per registrare, voce per voce con `title` e `url` (link affiliato). Copiala dall'episodio precedente e chiedi se è cambiata |
 | `tags` | Scegli tra i tag già usati in `content/podcast/`, non inventarne di nuovi senza chiedere |
 | `url` | `/episodes/NNN-` seguito dallo slug del titolo |
 
@@ -69,9 +70,9 @@ lavorare senza.
 
 La descrizione è un paragrafo di 2-4 frasi in seconda persona singolare. Subito dopo il paragrafo
 va la riga `[Pensieri in codice](https://pensieriincodice.it/NNN)`, che deve restare il primo link
-della descrizione: i link dell'ospite vanno sotto. Fonti, sostenitori e canali del podcast **non
-si scrivono nel corpo**: le fonti vanno in `sources` (con `title`), i sostenitori in `supporters`,
-e i canali li aggiunge il partial `follow.html`. Pagina e feed li generano da lì.
+della descrizione: i link dell'ospite vanno sotto. Fonti, sostenitori, attrezzatura e canali del
+podcast **non si scrivono nel corpo**: le fonti vanno in `sources` (con `title`), i sostenitori in
+`supporters`, l'attrezzatura in `equipment`, e i canali li aggiunge il partial `follow.html`. Pagina e feed li generano da lì.
 
 Il corpo si scrive in **Markdown vero**: elenchi con `- ` preceduti da una riga vuota, link
 `[testo](url)` o `<url>`. Mai pallini `•`, `<br />`, HTML incollato, spazi non separabili o altri

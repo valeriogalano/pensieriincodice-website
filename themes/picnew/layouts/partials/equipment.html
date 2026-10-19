@@ -1,0 +1,9 @@
+{{ with .Page.Params.equipment }}
+<h2>Attrezzatura</h2>
+<ul>
+{{ range . }}
+    <li><a href="{{ .url }}">{{ .title }}</a></li>
+{{ end }}
+</ul>
+<p>Link affiliati: il costo per te non cambia, ma una piccola parte del ricavato sostiene il podcast.</p>
+{{ end }}
