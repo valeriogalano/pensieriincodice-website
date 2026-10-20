@@ -1,5 +1,5 @@
 ---
-title: "Recap automatizzato del 2026-10-02"
+title: "Diario di Engram – 2 ottobre 2026"
 date: 2026-10-02T10:00:00+02:00
 featureImage: https://pensieriincodice.it/images/blog/recap.png
 image: https://pensieriincodice.it/images/blog/recap.png

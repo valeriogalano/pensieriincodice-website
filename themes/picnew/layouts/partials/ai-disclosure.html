@@ -1,3 +1,12 @@
+{{- with .Params.episode -}}
+{{- $n := . -}}
+{{- $label := printf "episodio %v" $n -}}
+{{- range first 1 (where (where site.RegularPages "Section" "podcast") "Params.number" $n) -}}
+{{- $label = printf "<a href=\"%s\">%s</a>" .Permalink $label -}}
+{{- end -}}
+Testo adattato da {{ $.Params.curated_by | default "Engram" }}{{ with $.Params.generated_with }} con {{ . }}{{ end }} a partire dall'{{ $label | safeHTML }}
+{{- else -}}
 {{- with or .Params.curated_by .Params.generated_with -}}
 Testo {{ with $.Params.curated_by }}curato da {{ . }}{{ end }}{{ if and $.Params.curated_by $.Params.generated_with }}, {{ end }}{{ with $.Params.generated_with }}generato con {{ . }}{{ end }}
+{{- end -}}
 {{- end -}}

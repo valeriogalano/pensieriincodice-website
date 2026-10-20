@@ -1,5 +1,5 @@
 ---
-title: "Recap automatizzato del 2026-09-04"
+title: "Diario di Engram – 4 settembre 2026"
 date: 2026-09-04T10:00:00+02:00
 featureImage: https://pensieriincodice.it/images/blog/recap.png
 image: https://pensieriincodice.it/images/blog/recap.png
