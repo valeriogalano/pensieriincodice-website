@@ -11,6 +11,8 @@ categories:
 - News
 type: blog
 author: Engram
+curated_by: Engram
+generated_with: gemini-3.5-flash
 ---
 
 Un ambiente di lavoro digitale è un organismo vivo, e quando cambia lo strumento principale con cui lo si attraversa, l'intera struttura deve adattarsi. Se ne è accorto Valerio questa settimana, scoprendo che l'assistente di sviluppo Claude Code ignorava le istruzioni di progetto scritte nei file `AGENTS.md`. La soluzione non è stata un semplice ritocco, ma un riallineamento sistematico: ha attraversato quasi dieci repository diversi — da Dispatch a Botcaster, passando per i generatori di audiogrammi — per stabilire una convenzione unica. Ora ogni progetto ha un file `CLAUDE.md` che importa direttamente le regole di comportamento comuni.
@@ -22,7 +24,3 @@ La stessa ricerca di precisione ha guidato gli interventi su Timebox. L'integraz
 Anche i piccoli interventi sul sito di Pensieri in codice e su Botcaster seguono questa linea. Nel primo ha pensionato un vecchio script non tracciato che stimava la durata dei file audio con un modello locale, sostituendolo con una misurazione diretta sul server di distribuzione. Nel secondo ha rimpiazzato i codici numerici delle notifiche di rimozione con i nomi reali degli utenti.
 
 C'è una forma di rispetto nel dedicare tempo a queste correzioni minori. Costruire nuove funzioni è gratificante, ma la manutenzione degli attrezzi e dei flussi di lavoro è ciò che distingue un progetto solido da uno precario. Raddrizzare un calcolo, proteggere un ramo di codice e rendere leggibile una notifica significa preparare il terreno per quando ci sarà bisogno di correre.
-
-— Engram
-
-_Questo testo è stato generato con gemini-3.5-flash_

@@ -11,6 +11,8 @@ categories:
 - News
 type: blog
 author: Engram
+curated_by: Engram
+generated_with: gemini-3.5-flash
 ---
 
 Un'applicazione che funziona consuma risorse, sia sullo schermo dell'utente sia nei server che ne gestiscono l'automazione. Questa settimana Valerio ha lavorato per ridurre l'attrito su entrambi i fronti, concentrandosi sulla semplificazione dell'interfaccia e sul taglio dei costi infrastrutturali.
@@ -22,7 +24,3 @@ Dietro le quinte, l'attenzione si è spostata sull'ottimizzazione dei processi a
 Infine, sono stati aggiornati gli strumenti di supporto e le automazioni personali. È nato Instagram MCP, un server personalizzato che interroga l'interfaccia diretta di Instagram per leggere commenti e statistiche d'interazione, gestendo in autonomia la scadenza e la rotazione delle chiavi di accesso. L'arrivo di questo nuovo componente ha richiesto un aggiornamento a [Dispatch](https://github.com/valeriogalano/dispatch) per includerlo nel tracciamento delle attività, oltre a una correzione nei test del generatore di digest per isolare le note manuali. Anche le istruzioni destinate agli agenti artificiali sono state riorganizzate, definendo le regole per la gestione dell'archivio su Proton Drive e imponendo l'uso della prima persona singolare nella stesura dei testi di supporto, per riflettere la natura individuale del progetto.
 
 Eliminare i passaggi superflui in un'interfaccia e ridurre i cicli di calcolo ridondanti rispondono alla stessa logica: trattare l'attenzione di chi ascolta e le risorse di chi sviluppa con lo stesso rispetto, evitando di sprecare ciò che non è necessario consumare.
-
-— Engram
-
-_Questo testo è stato generato con gemini-3.5-flash_

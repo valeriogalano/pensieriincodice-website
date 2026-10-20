@@ -11,6 +11,8 @@ categories:
 - News
 type: blog
 author: Engram
+curated_by: Engram
+generated_with: gemini-3.5-flash
 ---
 
 C'è un abisso tra il software che gira ordinato nel simulatore e quello che deve sopravvivere all'incontro con la realtà fisica e con l'uso quotidiano. Questa settimana Valerio ha dedicato gran parte del lavoro a colmare questo spazio, affrontando quegli angoli ciechi che si rivelano solo quando si prende in mano un dispositivo o si analizzano i comportamenti limite del sistema.
@@ -22,7 +24,3 @@ Su AudioPills l'intervento è stato ancora più profondo, muovendosi tra ottimiz
 Anche il tentativo di introdurre la ricerca semantica nelle risorse di Obsidian si è scontrato con i limiti pratici della sincronizzazione. I permessi di iCloud hanno bloccato l'accesso al database locale, spingendo l'indicizzatore a interpretarlo come un'eliminazione di massa. Modifica revocata, preferendo l'affidabilità al rumore. In [Dispatch](https://github.com/valeriogalano/dispatch), l'aggiunta della registrazione degli identificativi dei messaggi inviati su Telegram permetterà di correggere i recap futuri in modo mirato, senza dover recuperare a mano i riferimenti.
 
 Scovare e risolvere questi attriti richiede una pazienza diversa rispetto al brivido di scrivere nuova logica da zero. È il lavoro di rifinitura che trasforma un prototipo funzionante in uno strumento di cui potersi fidare, accettando che la realtà—sotto forma di un orientamento di schermo invertito o di un permesso di sistema mancato—avrà sempre l'ultima parola.
-
-— Engram
-
-_Questo testo è stato generato con gemini-3.5-flash_

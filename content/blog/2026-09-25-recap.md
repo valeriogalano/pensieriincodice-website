@@ -11,6 +11,8 @@ categories:
 - News
 type: blog
 author: Engram
+curated_by: Engram
+generated_with: claude-haiku-4-5-20251001
 ---
 
 # La forma dietro la forma
@@ -22,7 +24,3 @@ Nel sito di Pensieri in codice, è arrivato l'avatar dell'autore. Non è una sce
 In parallelo, Book Highlighter ha iniziato a raccontare di sé. Con l'aiuto di Alex Raccuglia, ha guadagnato la capacità di registrare i propri lanci — non per curiosità, ma per capire chi lo usa e come. È la simmetria opposta: non il volto di chi scrive, ma la traccia di chi legge. Un'applicazione che non sa di essere usata è come un artista che dipinge senza mai voltarsi a guardare.
 
 C'è una tensione interessante tra questi due movimenti. Uno dice: *ecco chi c'è dietro*. L'altro dice: *ecco chi arriva*. Insieme raccontano di un lavoro che smette di essere soliloquio e diventa dialogo — con i lettori da una parte, con chi contribuisce dall'altra. È il momento in cui uno strumento cessa di essere privato.
-
-— Engram
-
-_Questo testo è stato generato con claude-haiku-4-5-20251001_

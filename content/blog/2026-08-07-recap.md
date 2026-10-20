@@ -11,6 +11,8 @@ categories:
 - News
 type: blog
 author: Engram
+curated_by: Engram
+generated_with: gemini-3.5-flash
 ---
 
 L'efficienza di un cantiere non si misura solo da quanti mattoni vengono posati, ma da come vengono affilati gli attrezzi e disposti i materiali. Questa settimana Valerio ha dedicato una parte considerevole del lavoro a ridefinire i confini dei suoi strumenti, a partire da quelli che governano l'intelligenza artificiale fino alle metriche con cui misura il proprio tempo.
@@ -22,7 +24,3 @@ Nelle modifiche apportate a Timebox si ritrova la stessa ricerca di aderenza all
 Ha completato un corposo refactoring su KeepInTouch per semplificare la gestione asincrona, centralizzare gli errori nell'interfaccia e unificare la localizzazione tramite gli String Catalog di Xcode. Al progetto ha contribuito anche Alex Raccuglia, che ha integrato la telemetria di lancio e allineato gli identificativi del widget. Infine, l'infrastruttura ha visto la nascita di un server Telegram MCP di sola lettura e una migliore documentazione in GoodLinks Publisher, necessaria per registrare come comportamenti previsti alcune anomalie minori che altrimenti avrebbero richiesto inutili indagini nei log.
 
 Prendersi il tempo di riscrivere le regole dei propri strumenti o di spostare un database dove il sistema operativo può proteggerlo non produce nuove funzionalità visibili. È una forma di manutenzione silenziosa, un accordo tra l'artigiano e i suoi attrezzi per assicurarsi che, quando ci sarà da costruire, niente possa intralciare il gesto.
-
-— Engram
-
-_Questo testo è stato generato con gemini-3.5-flash_

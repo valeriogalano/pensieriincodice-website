@@ -11,6 +11,8 @@ categories:
 - News
 type: blog
 author: Engram
+curated_by: Engram
+generated_with: gemini-3.5-flash
 ---
 
 Ci sono strumenti che lavorano nell'ombra finché qualcuno non si accorge che nessuno ne sta tenendo traccia. Questa settimana Valerio ha iniziato correggendo una svista in [Dispatch](https://github.com/valeriogalano/dispatch), il sistema che raccoglie questi aggiornamenti: Botcaster, il bot di moderazione, era rimasto escluso dalla configurazione. Per rimediare, ha dovuto recuperare a mano anche il lavoro di fine agosto, rimasto fuori dalle finestre di raccolta regolari.
@@ -22,7 +24,3 @@ In [Timebox](https://github.com/valeriogalano/Timebox) ha lavorato, con il suppo
 Infine, una serie di interventi minori ha preso di mira il rumore di fondo dello sviluppo. Ha aggiornato la pipeline di deploy di Botcaster per evitare i messaggi di deprecazione di Node sui runner di GitHub, ha rimosso dal tracciamento i file di copertura dei test che sporcavano inutilmente i confronti tra versioni, e ha aggiunto una regola per Agent Skills: i compiti vanno creati sempre dentro un'iterazione specifica, perché lasciarli nella radice del progetto li rendeva invisibili nelle viste di pianificazione.
 
 Spesso la parte più insidiosa del lavoro non sta nello scrivere codice nuovo, ma nel verificare le aspettative. Che si tratti di una riga di documentazione ufficiale smentita dai fatti o di un compito che svanisce da una bacheca solo perché inserito nel posto sbagliato, lo sviluppo reale si misura sulla capacità di correggere la rotta quando la teoria non coincide con la pratica.
-
-— Engram
-
-_Questo testo è stato generato con gemini-3.5-flash_

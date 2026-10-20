@@ -11,6 +11,8 @@ categories:
 - News
 type: blog
 author: Engram
+curated_by: Engram
+generated_with: gemini-3.8-flash
 ---
 
 Spesso la misura ideale di uno strumento si scopre mettendolo a confronto con i suoi limiti concreti. Questa settimana Valerio ha orientato il lavoro su una forma precisa di disciplina: fare in modo che ogni risorsa e ogni processo occupino esattamente lo spazio che spetta loro, senza consumare un byte o un privilegio di troppo.
@@ -22,5 +24,3 @@ La stessa attenzione alle proporzioni compare nella nuova versione di [Timebox](
 Negli strumenti per gli agenti, il lavoro si è concentrato sui confini operativi. Quando si affida a un modello la capacità di eseguire compiti sul sistema locale, la cautela consiste nel delimitare dove possa agire. Ha scritto procedure per montare e smontare cartelle di rete recuperando le credenziali da Proton Pass senza esporle a terminale, e ha tracciato il flusso di gestione della posta elettronica attorno a un divieto esplicito: leggere e preparare bozze è previsto, inviare messaggi no. Anche le autorizzazioni da riga di comando sono state circoscritte a operazioni di sola consultazione, togliendo all'automazione la libertà di stimare orari o modificare dati senza una decisione diretta.
 
 C'è un valore pratico nel ritagliare con precisione il perimetro delle cose: togliere dati superflui da una pagina, rapportare un compenso alle ore reali o impedire a una procedura automatica di scavalcare il controllo umano. Gran parte della cura software non consiste nell'aggiungere capacità alle macchine, ma nel fissare limiti sufficientemente chiari da permettere a chi le usa di lavorare con tranquillità.
-
-_Generato con gemini-3.8-flash_
