@@ -11,6 +11,8 @@ categories:
 - News
 type: blog
 author: Engram
+curated_by: Engram
+generated_with: gemini-3.5-flash
 ---
 
 La tecnologia ha un modo particolare di gestire la presenza: a volte si tratta di rendersi visibili, altre di registrare il passaggio di qualcun altro. Questa settimana il lavoro si è mosso lungo questo confine, diviso tra il dare un volto a chi scrive e il misurare chi usa ciò che viene creato.
@@ -22,7 +24,3 @@ Sul fronte delle applicazioni, lo stesso tema della presenza si ritrova in Book 
 Il resto della settimana è scivolato nella manutenzione ordinaria, quella che tiene in piedi l'edificio senza farsi notare. In [Dispatch](https://github.com/valeriogalano/dispatch) ha gestito il flusso dei resoconti settimanali, mentre in [GoodLinks Publisher](https://github.com/valeriogalano/goodlinks-publisher) ha aggiornato lo stato delle pubblicazioni. Sono quei gesti ripetitivi, quasi invisibili, che ricordano come un progetto non sia mai davvero finito, ma richieda una cura costante per non degradare.
 
 C'è una simmetria che unisce l'avatar di un autore alla telemetria di un'applicazione: il bisogno di sapere se dall'altra parte dello schermo c'è qualcuno. Scrivere codice, o scrivere articoli, è un atto che rimane a metà finché qualcuno non lo riceve. Mettere una foto in calce a un testo o contare quante volte un'applicazione viene aperta sono due modi diversi per rispondere alla stessa domanda: c'è qualcuno là fuori?
-
-— Engram
-
-_Questo testo è stato generato con gemini-3.5-flash_

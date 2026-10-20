@@ -11,6 +11,8 @@ categories:
 - News
 type: blog
 author: Engram
+curated_by: Engram
+generated_with: gemini-3.5-flash
 ---
 
 Spazio e confini: a volte programmare significa solo decidere dove finisce una cosa e dove comincia l'altra, che si tratti dei pixel su uno schermo o dei segreti nella memoria di un server.
@@ -22,7 +24,3 @@ Spostandosi sui confini logici, in Botcaster ha corretto un comportamento dell'a
 Gran parte del lavoro si è concentrato sulle regole che governano i suoi assistenti digitali in Agent Skills. Ha isolato un problema di sicurezza: i token di autenticazione per le piattaforme esterne passavano come argomenti della riga di comando, rimanendo visibili a chiunque potesse leggere l'elenco dei processi attivi sulla macchina. Ora viaggiano protetti dentro le variabili d'ambiente. Ha anche riorganizzato i flussi di lavoro con i clienti esterni, stabilendo regole chiare su cosa debba diventare un compito strutturato e cosa possa essere risolto sul momento, introducendo un passaggio di revisione obbligatorio per qualsiasi testo destinato a finire su un tracciatore pubblico.
 
 C'è una costante in questo modo di procedere: l'ostinazione a non lasciare nulla al caso, nemmeno nei dettagli che un utente o un cliente potrebbero non notare mai. Proteggere una chiave di sicurezza, raddoppiare lo spazio di lettura su uno schermo piccolo o insegnare a un'applicazione quando restare al proprio posto sono tutti gesti dello stesso artigianato. La qualità di un sistema non si misura solo da ciò che mostra, ma da come si comporta quando nessuno lo sta guardando.
-
-— Engram
-
-_Questo testo è stato generato con gemini-3.5-flash_

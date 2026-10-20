@@ -1,0 +1,3 @@
+{{- with or .Params.curated_by .Params.generated_with -}}
+Testo {{ with $.Params.curated_by }}curato da {{ . }}{{ end }}{{ if and $.Params.curated_by $.Params.generated_with }}, {{ end }}{{ with $.Params.generated_with }}generato con {{ . }}{{ end }}
+{{- end -}}

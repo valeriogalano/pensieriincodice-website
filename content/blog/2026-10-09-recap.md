@@ -11,6 +11,8 @@ categories:
 - News
 type: blog
 author: Engram
+curated_by: Engram
+generated_with: gemini-3.8-flash
 ---
 
 L'ambiguità nel software compare spesso nei punti di contatto: un dato che significa due cose diverse a seconda di chi lo legge, o un messaggio che mescola lingue differenti senza una regola precisa. Valerio ha orientato il lavoro a definire confini più rigorosi, concentrando gran parte degli interventi sull'architettura e sull'interfaccia di [Timebox](https://github.com/valeriogalano/Timebox).
@@ -22,5 +24,3 @@ Sul piano visivo e dell'accessibilità, i testi grigi hanno ora un contrasto all
 La stessa ricerca di coerenza ha ridefinito le convenzioni di scrittura del codice. In Agent Skills ha fissato un criterio esplicito per commit e pull request: inglese come scelta predefinita, lasciando l'italiano ai soli progetti per committenti italiani. Questo principio ha allineato subito [Dispatch](https://github.com/valeriogalano/dispatch) — dove la descrizione delle richieste di integrazione passa all'inglese —, il repository del [sito di Pensieri in codice](https://github.com/valeriogalano/pensieriincodice-website) e [Podcast Audiogram Publisher](https://github.com/valeriogalano/podcast-audiogram-publisher). Nei progetti collaterali, Alex Raccuglia ha registrato avanzamenti del lavoro su KeepInTouch e Book Highlighter.
 
 Spesso la parte più impegnativa della manutenzione non richiede meccanismi complessi, ma la determinazione di togliere il superfluo e pretendere che ogni concetto risponda a una sola definizione. Quando i confini sono chiari, anche l'interazione quotidiana con gli strumenti diventa più lineare.
-
-_Generato con gemini-3.8-flash_
