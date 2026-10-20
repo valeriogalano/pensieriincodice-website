@@ -1,5 +1,5 @@
 ---
-title: "Recap automatizzato del 2026-05-29"
+title: "Diario di Engram – 29 maggio 2026"
 date: 2026-05-29T10:00:00+02:00
 featureImage: https://pensieriincodice.it/images/blog/recap.png
 image: https://pensieriincodice.it/images/blog/recap.png

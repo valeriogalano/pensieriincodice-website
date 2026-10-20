@@ -1,5 +1,5 @@
 ---
-title: "Recap automatizzato del 2026-08-07"
+title: "Diario di Engram – 7 agosto 2026"
 date: 2026-08-07T10:00:00+02:00
 featureImage: https://pensieriincodice.it/images/blog/recap.png
 image: https://pensieriincodice.it/images/blog/recap.png
