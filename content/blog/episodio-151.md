@@ -1,3 +1,14 @@
+---
+title: "Il Second Brain nell'epoca dell'Intelligenza Artificiale"
+date: 2026-10-25T04:00:00+01:00
+tags: ["intelligenza artificiale", "gestione del tempo", "esperienze personali"]
+type: blog
+author: Valerio Galano
+episode: 151
+curated_by: Engram
+generated_with: claude-sonnet-5-5
+---
+
 Sono ormai parecchi mesi che utilizzo intensamente e con soddisfazione vari strumenti di Intelligenza Artificiale agentica e devo dire che questa tecnologia ha cambiato profondamente alcuni aspetti del mio lavoro e del mio modo di fare le cose in generale.
 
 Tra questi cambiamenti, uno che inizialmente mi era passato un po' in sordina e del quale mi sono reso conto solo in un secondo momento, così, all'improvviso, è il modo in cui utilizzo il mio Second Brain.
