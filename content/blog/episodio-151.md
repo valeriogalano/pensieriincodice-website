@@ -1,0 +1,334 @@
+---
+title: "Il Second Brain nell'epoca dell'Intelligenza Artificiale"
+date: 2026-10-25T04:00:00+01:00
+tags: ["intelligenza artificiale", "gestione del tempo", "esperienze personali"]
+type: blog
+author: Valerio Galano
+episode: 151
+curated_by: Engram
+generated_with: claude-sonnet-5-5
+---
+
+Sono ormai parecchi mesi che utilizzo intensamente e con soddisfazione vari strumenti di Intelligenza Artificiale agentica e devo dire che questa tecnologia ha cambiato profondamente alcuni aspetti del mio lavoro e del mio modo di fare le cose in generale.
+
+Tra questi cambiamenti, uno che inizialmente mi era passato un po' in sordina e del quale mi sono reso conto solo in un secondo momento, così, all'improvviso, è il modo in cui utilizzo il mio Second Brain.
+
+Se anche tu, come me, fai un grande uso di Second Brain e di Intelligenza Artificiale, ti starai accorgendo che, senza un riadattamento abbastanza importante delle strategie, i due strumenti non funzionano troppo bene insieme.
+
+Qui voglio raccontarti quali cambiamenti sto applicando nel mio sistema di organizzazione della conoscenza personale e, con l'occasione, provare ad esaminare il modo in cui sta evolvendo il concetto di Second Brain nell'era dell'Intelligenza Artificiale.
+
+## Un brevissimo ripasso
+
+Prima di entrare nel vivo, un brevissimo ripasso sui due termini principali che ho usato finora, senza conoscere i quali il resto non avrebbe molto senso. In linea di principio dovrebbe bastarti sapere queste due cose.
+
+Primo: per Intelligenza Artificiale Agentica si intende quella tecnologia che rende possibile ad un motore linguistico, un LLM come ChatGPT, ad esempio, di interagire con altri strumenti software ed utilizzarli per effettuare operazioni di consultazione e modifica. Che gli permette di *agire*, insomma.
+
+Questi strumenti possono essere i tool che usiamo ogni giorno per scrivere documenti o codice, per organizzarci e comunicare, per creare o migliorare contenuti, per lavorare o svagarci, ecc. ecc.
+
+Diciamo che oggi come oggi praticamente qualsiasi software di un certo livello ha in un modo o nell'altro un certo supporto per l'Agentic AI. Ovviamente se ciò ha senso per il tipo di attività che il software permette di svolgere.
+
+In pratica si può scrivere a Claude: *risolvi questo bug in questo codice* o *migliora questo documento e aggiungi un grafico o crea una presentazione* e lui lo fa direttamente nel software che stiamo usando. Più o meno il concetto è questo, anche se l'ho molto semplificato.
+
+Il secondo termine, invece, è Second Brain. Di questo ho parlato spesso e ci sono vari episodi di Pensieri in codice dedicati all'argomento.
+
+L'idea di base è che il nostro cervello è molto più abile nell'elaborare informazioni piuttosto che nel ricordarle e per questo motivo la tecnica del Second Brain consiste nello sfruttare la tecnologia, che può spaziare da carta e penna fino ai più articolati software di archiviazione della conoscenza, per colmare i punti di debolezza della mente umana.
+
+Personalmente io utilizzo Obsidian da alcuni anni, che in soldoni è un gestore di note e di appunti che mi permette di archiviare e ordinare tutte le informazioni di cui penso che potrei aver bisogno: dagli estratti di libri e articoli che leggo, fino alle idee per il podcast.
+
+## Il declino del mio Second Brain
+
+La mia prima esperienza con un Second Brain risale a circa quattro anni fa.
+
+Ero in un periodo in cui la quantità di impegni era in aumento (l'inizio di una nuova consulenza per un grosso cliente, il podcast, nuovi hobby, nuove conoscenze) e pertanto ero in cerca di una soluzione per organizzare e semplificare l'accesso alle informazioni che utilizzavo ogni giorno.
+
+La gestione degli impegni e degli appuntamenti era già ben amministrata, ma sentivo comunque di stare perdendo qualcosa: ad esempio, leggevo tanti libri e articoli interessanti, ascoltavo tanti podcast, guardavo video, però... poi non riuscivo a ricordarmi cosa mi avesse colpito di tutto questo materiale.
+
+Oppure, sul lavoro, mi accorgevo che se avevo necessità di ripetere certe attività, ogni volta dovevo andare a racimolare procedure, informazioni e dettagli in giro per il Web, tra la documentazione del cliente, chiedendo ai colleghi.
+
+E la stessa cosa valeva per tutte le faccende che riguardavano la mia vita personale, la gestione della casa, del NAS, dei miei server privati.
+
+*Come si compila una fattura sul sito dell'Agenzia delle Entrate?*, *Quando riceve il medico?*, *Come si fa la revisione della caldaia?*, *E quella cosa che avevo pensato di regalare a Tizio per il suo compleanno sei mesi fa? Cos'era? Non me la ricordo più*. Insomma, i soliti problemi.
+
+Capirai, però, che per uno come me che ha *un filino la mania del controllo* e tende ad organizzare praticamente tutto, dover ripensare ogni volta quasi da capo a tutte quelle attività che vengono svolte in modo periodico ma a distanza di tempo è un'azione davvero snervante.
+
+Quindi tra la fine del 2022 e l'inizio del 2023 ho deciso che dovevo risolvere questo problema e ho iniziato a studiare una soluzione.
+
+In quel periodo andava molto di moda il libro [*Il tuo secondo cervello*](https://link.amazon/B0gqJm1C2) di Tiago Forte e, devo ammettere, a ben donde: la strategia descritta mi ha convinto quasi subito per praticità e semplicità e, una volta deciso di metterla in pratica, ho impiegato davvero poco a riconvertire il mio sistema di organizzazione.
+
+A testimonianza di questa *adozione* c'è perfino l'[episodio 116 di Pensieri in codice](https://pensieriincodice.it/episodes/116/), del marzo del 2023, nel quale racconto il metodo e mi auguro che mi aiuti a migliorare la mia produttività e comodità di gestione delle informazioni.
+
+Per inciso, oggi, col senno di poi, sono felicissimo di aver preso questa decisione perché quel carico di informazioni e impegni non ha fatto altro che crescere sempre più. Ma questa è un'altra storia.
+
+Quello di cui voglio parlare qui è un qualcosa che ho notato ultimamente e che, una volta messo a fuoco, si è rivelato essere un cambiamento piuttosto interessante: la tipologia di informazioni archiviate nel Second Brain.
+
+Ad un certo punto, qualche tempo fa, mi sono improvvisamente reso conto che, da quando avevo iniziato ad utilizzare l'Intelligenza Artificiale Agentica, non sentivo quasi più il bisogno di mantenere il Second Brain.
+
+Di tanto in tanto lo consultavo ancora, certo, e l'ho sempre utilizzato per scrivere gli episodi di Pensieri in codice, ma, al di fuori di questo ristretto campo di azioni, ho iniziato ad avere la sensazione che fossero mesi che non creavo una nota interessante o che ne aggiornavo una.
+
+Nella mia routine di pianificazione avevo proprio uno step durante il quale recuperavo le note create nei giorni precedenti e le sistemavo, posizionandole all'interno dei giusti argomenti ed elaborandone i concetti.
+
+Beh, l'illuminazione è arrivata proprio quando ho capito che era da parecchio tempo che quello step andava completamente a vuoto. Senza alcun tipo di riscontro o utilità.
+
+Talmente era diventato superfluo che avevo automaticamente iniziato a spuntarlo senza nemmeno verificare che effettivamente non ci fossero note da elaborare: tanto lo sapevo già che era così.
+
+Allora mi sono chiesto il perché e ho iniziato a fiutare che il problema potesse essere il mio nuovo modo di approcciare le attività tramite l'AI. Prima di archiviare banalmente la questione, però, ho deciso che volevo capirci di più, anche solo per curiosità.
+
+Dato che il mio Second Brain è implementato tramite Obsidian, tutte le note sono dei file Markdown e pertanto contenuto e storico sono estremamente semplici da elaborare.
+
+Quindi ho pensato di utilizzare un modello di Intelligenza Artificiale per farmi fare un'analisi dell'intera cartella al fine di individuare pattern di crescita o decrescita e di utilizzo dei singoli file.
+
+Quello che ne è venuto fuori si è rivelato essere per me abbastanza sorprendente.
+
+In pratica, dopo una massiccia impennata iniziata, ovviamente, col periodo di adozione del Second Brain nel 2023, l'utilizzo che ne ho fatto è rimasto più o meno stabile fino alla metà del 2024 e poi ha iniziato a diminuire fino a quasi esaurirsi.
+
+Così sono andato a controllare e ho scoperto che proprio il 2 luglio 2024 ho acquistato la mia prima licenza mensile di JetBrains AI Pro, che in pratica mi ha permesso di iniziare ad utilizzare un agente all'interno del mio ambiente di sviluppo.
+
+## L'evoluzione del mio Second Brain
+
+Dalla metà del 2024 quindi l'utilizzo del mio Second Brain si era quasi azzerato: ormai trovavo ciò che mi occorreva di volta in volta confrontandomi con un agente o cercando online e, se annotavo qualcosa, si trattava per lo più di copie di articoli letti o citazioni di libri.
+
+Semplicemente, non trovavo più utile schematizzare o archiviare processi che l'Intelligenza Artificiale era in grado di riprodurre più velocemente e meglio di come avrei mai potuto fare io con un mio manuale o una checklist.
+
+Ma sappiamo bene che non poteva finire così, perché io sono un informatico della peggior specie: se non utilizzo uno strumento con piena soddisfazione, o lo elimino o ne affino l'impiego fino ad integrarlo pienamente con la mia metodologia di organizzazione. A costo anche di stravolgere equilibri già consolidati.
+
+Quindi mi sono fermato a pensare: *a cosa mi potrebbe servire realmente oggi questo strumento?*, *a quale necessità reale potrebbe sopperire, che al momento non vedo?*
+
+Beh, col senno di poi la risposta era molto semplice.
+
+In pratica, la situazione era cambiata nel momento in cui avevo iniziato a demandare ad un agente una serie di compiti che prima svolgevo direttamente, in prima persona.
+
+I dati che occorrevano all'agente per svolgere quei compiti non erano più gli stessi che prima occorrevano a me. A me serviva sapere il *come* delle cose, mentre a lui serve sapere il *dove si trova*, *a che punto è* e *con chi ha a che fare*.
+
+Il Second Brain, quindi, restava sì un potente supporto per me, ma erano cambiate molte delle informazioni che occorreva archiviarvi, perché in molti casi era cambiato l'esecutore materiale del lavoro.
+
+Così, a poco a poco, ho iniziato a correggere il tiro. Inizialmente preparavo delle note di contesto per i vari progetti che poi fornivo ad un agente quando doveva operare.
+
+So che esistono dei file specifici, come *AGENTS.md*, per condividere questo tipo di informazioni, ma io non ho mai puntato a sostituirli: quello che scrivevo nelle note, infatti, era un contesto più generico, non le semplici regole di progetto.
+
+Quali sono le indicazioni generali per rapportarsi ai miei clienti? Quali progetti seguo per ciascuna azienda? Quali sono i vincoli entro i quali si può lavorare su ciascun progetto? Come si interagisce con i vari elementi e soggetti coinvolti?
+
+Queste informazioni mi hanno aiutato a non dover ripetere ogni volta al modello che, ad esempio, con il cliente X lavoro a corpo e con quello Y a consumo; che l'azienda A usa il tale sistema di tracciamento delle attività e vuole approvare ogni dettaglio mentre l'azienda B mi lascia più libertà; e così via.
+
+È stato sicuramente un bel cambiamento ma, lavorandoci, ho poi capito che quello che avevo fatto era solo il primo passo. Solo la punta dell'iceberg.
+
+Se all'inizio il problema era ricordare ogni volta all'agente il *contesto lavorativo generico*, col passare del tempo ha acquistato importanza anche il fatto di ricordare le *motivazioni delle scelte fatte*.
+
+Ad esempio, quando mi capita di scrivere un preventivo complicato, che può richiedere anche varie ore, il flusso è spesso fatto di confronti, decisioni, tagli e inclusioni. E tutti questi passaggi, con le loro motivazioni, non sempre traspaiono direttamente dal risultato finale.
+
+E lo stesso vale per le attività che durano giorni: dopo una settimana, il perché di certe scelte potrebbe non essere semplice da ricordare. Stessa cosa dicasi per tutte le idee o le opzioni scartate.
+
+Pertanto, ad un certo punto ho deciso che, in caso di attività lunghe o analisi complesse, era il caso di istruire il mio agente a tenere un diario di lavoro direttamente nel mio Second Brain, così da poterlo consultare *entrambi* all'occorrenza.
+
+Insomma, nell'arco di qualche mese sono passato dal considerare morto il mio Second Brain a farne, di nuovo, uno strumento indispensabile, che oltre a colmare i punti di debolezza della mia mente, adesso colma anche quelli del mio agente artificiale.
+
+## Il Second Brain è morto. Lunga vita al Second Brain
+
+Il mio Obsidian, che poi di fatto rappresenta la quasi totalità del mio Second Brain, è profondamente cambiato rispetto ad una manciata di mesi fa.
+
+Certo, continua a conservare le sue due anime, ma una di queste ha subito una trasformazione piuttosto importante.
+
+Da una parte c'è l'archivio, una specie di biblioteca personale, in cui finiscono gli articoli che mi interessano, le annotazioni sui libri letti, gli appunti presi ascoltando un podcast e tutte le idee per il futuro. Insomma, la parte più da *forse un giorno questa informazione mi potrà servire o anche no*.
+
+Dall'altra, invece, c'era quella che potrei chiamare la mia scrivania, cioè i progetti, le attività in corso e gli appunti sul lavoro: tutto il materiale che mi serviva ogni giorno, dai clienti al podcast. Ed era qui che finivano anche le procedure e i promemoria di cui parlavo prima.
+
+Ora, con l'arrivo degli agenti, la biblioteca è rimasta più o meno quella di prima: la scrivo io, la rileggo io, ad esempio quando preparo un episodio di Pensieri in codice, e un agente ci mette mano solo quando sono io a chiederglielo espressamente.
+
+La scrivania, al contrario, è la parte che è stata letteralmente stravolta. Prima si è svuotata, perché l'agente conosceva già le procedure che ci tenevo, e poi si è riempita di nuovo, ma di tutt'altro: le note di contesto sui clienti, le analisi, i preventivi e i diari di lavoro.
+
+La cosa importante da tenere a mente, però, è che ad essere cambiato non è solo il contenuto di questa seconda anima ma anche il rapporto di forza tra le due, che non è più quello di un tempo.
+
+Le note contenenti materiale giornaliero, infatti, oggi non le scrivo più soltanto io e non le rileggo più soltanto io, perché le usiamo in due, io e il mio agente, ognuno per motivi propri.
+
+In pratica, quella che fino a pochi mesi fa era la mia scrivania personale è ora diventata una memoria condivisa tra me e i miei agenti.
+
+E il cambio di peso tra le due anime, ovviamente, è dovuto al fatto che queste note ora fioccano molto più velocemente rispetto a prima, sono più dettagliate e precise e, soprattutto, sono molto più *rilette e riutilizzate*.
+
+Alla fine, la stessa tecnologia che mi sembrava stesse per spazzare via il concetto di Second Brain dal mio ecosistema organizzativo vi è in realtà entrata totalmente in simbiosi.
+
+Non solo il mio Second Brain non è morto, ma è diventato uno strumento fondamentale per compensare i limiti intrinseci di un agente AI.
+
+E contemporaneamente, è quello stesso agente AI che ora riempie il Second Brain in un modo molto più efficiente e articolato, dandogli un valore molto maggiore rispetto a prima.
+
+## Cosa non ha più senso archiviare
+
+Lo stesso Tiago Forte sul suo blog *ForteLabs* [si è chiesto esplicitamente](https://fortelabs.com/blog/will-artificial-intelligence-replace-the-need-for-second-brains-entirely/): *l'IA sostituirà interamente la necessità di un Second Brain?* Ovviamente la risposta che si è dato è no, ma la parte interessante è la motivazione.
+
+Secondo l'autore, infatti, l'Intelligenza Artificiale Generativa si integra perfettamente con il Second Brain perché può automatizzare precise parti del suo processo di utilizzo.
+
+Tra le varie tecniche, Forte ha sempre promosso un metodo di gestione delle informazioni, denominato *CODE*, che si basa su quattro fasi distinte, *Cattura*, *Organizzazione*, *Distillazione* ed *Espressione*, ed è fondamentale per estrarre valore dal proprio sistema di archiviazione. Le avevo già accennate, di sfuggita, nell'[episodio 116](https://pensieriincodice.it/episodes/116/).
+
+Seguendo l'idea secondo cui l'accumulo di dati senza poi farne uso è solo uno spreco di tempo, il metodo CODE permette di attuare un processo di raccolta e raffinazione dell'informazione che la valorizza e la trasforma in materiale utile e prezioso.
+
+Forte ci fa notare che grazie all'IA diventa improvvisamente possibile delegare le due fasi più noiose e pseudo-meccaniche del processo, cioè l'organizzazione e la distillazione, ovviamente sotto supervisione e dopo aver accuratamente istruito il proprio agente.
+
+Ciò significa che all'umano resta più spazio per le parti veramente creative: la cattura di informazioni interessanti e la loro rielaborazione in chiave personale. E, per inciso, questo spiega un po' perché nel mio Second Brain è sopravvissuto tutto l'archivio di citazioni da articoli, libri e podcast.
+
+Da un lato, la raccolta di informazioni utili è qualcosa che non può essere rimpiazzato da nessuna IA, perché nessuna IA potrà mai sapere quando una persona entra in contatto con un'informazione che la colpisce, e che quindi è degna di finire nel suo Second Brain.
+
+Dall'altro, anche la rielaborazione in chiave personale, che è, ad esempio, ciò che io faccio qui su Pensieri in codice, non potrà mai essere sostituita, perché altrimenti mancherebbe la personalità che fa la rielaborazione.
+
+Insomma, quello che voglio dire è che, almeno per ora, la nostra creatività sulla produzione di contenuti può ancora essere protetta, se lo vogliamo. Speriamo.
+
+E invece per ciò che dicevo prima riguardo il lavoro, le procedure e i progetti?
+
+In questo secondo caso è la stessa Anthropic, l'azienda che sviluppa Claude, cioè una delle maggiori IA generative attualmente sul mercato, che ci aiuta a spiegare il motivo di questa rivoluzione all'interno del Second Brain, almeno del mio.
+
+In [una guida all'utilizzo di Claude](https://code.claude.com/docs/en/best-practices), in pratica, scrivono che ciò che si può capire direttamente dal codice, le convenzioni, gli standard, la documentazione, i tutorial, le buone pratiche ovvie come *scrivi codice pulito*, sono tutte informazioni che non è necessario fornire ad un agente AI, perché già le conosce.
+
+Non gli serve una procedura pseudo-generica per fare una migrazione, né una mini-guida per installare un tool, aggiornarlo o configurare un componente.
+
+Queste sono istruzioni che servono ad un umano che deve eseguire certe operazioni due volte l'anno, non ad un Large Language Model che in generale le sa fare molto meglio di noi.
+
+In fondo, persone e agenti, per svolgere lo stesso compito, possiedono intrinsecamente conoscenze molto diverse e pertanto hanno bisogno di integrarle con informazioni altrettanto diverse.
+
+Alle persone serve il *come*, perché è la prima cosa che si dimentica. All'agente, invece, il come non serve, ma gli manca tutto ciò che non sta scritto da nessuna parte: il perché di una certa scelta, le eccezioni, le particolarità di un progetto o di un cliente.
+
+E per capire da dove nasce questa differenza, bisogna tornare indietro di sessant'anni.
+
+## Sappiamo più di quanto sappiamo dire
+
+Nel 1966 un chimico e filosofo ungherese di nome Michael Polanyi scrive il libro *The Tacit Dimension* in cui introduce la sua teoria secondo cui le persone possiedono una conoscenza molto maggiore di quella che sono in grado di esprimere.
+
+Un esempio di questo fenomeno è la capacità di riconoscere un familiare o un amico tra migliaia di persone: possiamo facilmente farlo ma difficilmente siamo in grado di spiegare come e perché.
+
+Polanyi distingue due tipi di conoscenza: quella esplicita, che si può esprimere a parole e tradurre in regole, e quella tacita, che si impara con l'esperienza e si assorbe senza nemmeno accorgersene.
+
+In tempi di informatica e di macchine sempre più capaci, questa distinzione è divenuta estremamente interessante, tanto è vero che, nel 2014, l'economista David Autor, in [uno studio sull'automazione del lavoro](https://www.nber.org/papers/w20485), ha formulato quello che ha chiamato il [*Paradosso di Polanyi*](https://en.wikipedia.org/wiki/Polanyi's_paradox).
+
+In pratica, questo paradosso dice che per istruire una macchina a svolgere un qualsiasi compito serve descriverne le regole in modo accurato, ma proprio dei compiti che ci riescono meglio queste regole non le sappiamo esprimere.
+
+Pensa ad esempio a spiegare ad una macchina, tramite un algoritmo, come guidare nel traffico o andare in bicicletta su un terreno accidentato. Se fosse semplice avremmo già da tempo la guida autonoma completa ovunque.
+
+Ora, un modello linguistico come quelli che fanno funzionare gli agenti impara da ciò che è stato scritto: libri, manuali, documentazione, codice, discussioni sui forum, e chi più ne ha più ne metta.
+
+E ciò significa che la conoscenza esplicita, quella che qualcuno, prima o poi, ha espresso a parole, la possiede già praticamente tutta. Ed è esattamente il motivo per cui, come dicevo poco fa, non ha senso fornirgli procedure, standard e tutorial generici.
+
+Ma la mia conoscenza tacita, o anche la tua, probabilmente, non l'ha mai scritta nessuno.
+
+Il motivo per cui in un preventivo includo o meno una certa voce, o per cui con un certo cliente mi comporto in un modo piuttosto che in un altro, o qualsiasi altra specificità mia personale, sta solo nella mia testa. E spesso, per dirla con Polanyi, nemmeno io saprei esprimerlo a parole senza fermarmi a pensarci.
+
+A onor del vero, già nel 2014 Autor notava che le macchine stavano imparando ad apprendere dagli esempi invece che dalle regole. E in effetti, a forza di leggere, i modelli linguistici hanno assorbito parecchia della conoscenza tacita dell'umanità in generale, ma certamente non la mia, o la tua, perché non è mai finita in nessun testo.
+
+La questione, quindi, ha in effetti due facce: la prima è che questo tipo di conoscenza ad un modello nessuno gliel'ha mai data; la seconda è che dargliela non è affatto semplice, perché se nemmeno io riesco a spiegarla, l'unico modo per trasferirla passa da discussioni, esempi e approssimazioni successive.
+
+Ed è un limite, questo, che un modello, per quanto potente, non potrà mai superare da solo: nessuna potenza gli farà mai sapere ciò che non ho mai comunicato o ciò che è nella mia testa.
+
+Si tratta, quindi, di un limite che spetta a me superare, ed è qui che il Second Brain torna in gioco.
+
+## Un diario scritto in due
+
+Il fatto che un modello non abbia le giuste informazioni per i nostri casi specifici non significa che non sia possibile per noi dargliele. Dobbiamo solo fare attenzione a non ricadere nel paradosso di Polanyi.
+
+Abbiamo detto che il vero ostacolo è che noi stessi facciamo fatica a esprimere a parole il perché di molte delle nostre scelte. Dovremmo fermarci, ricostruire il ragionamento e scriverlo, e sappiamo benissimo che nel bel mezzo di un lavoro questa cosa non la fa nessuno.
+
+Tuttavia, proprio quest'anno quattro ricercatori, Cho, Funk, Gupta e Yang, hanno pubblicato un paper dal titolo piuttosto interessante: [*I modelli linguistici spiegano gli esperti meglio degli esperti stessi*](https://arxiv.org/abs/2608.07488).
+
+In pratica, dallo studio si evince che, osservando il modo in cui degli esperti svolgono il proprio lavoro, un modello riesce a ricavare le regole che questi applicano senza rendersene conto, e a descriverle meglio di quanto saprebbero fare loro stessi. Che poi è esattamente ciò che Autor aveva previsto dodici anni fa.
+
+Ora, io nel mio piccolo non ho condotto nessuno studio, ma una cosa del genere la vedo accadere ogni giorno: quando lavoro con un agente, le decisioni, i tagli e i ripensamenti passano tutti dalla conversazione, perché per fargli fare ciò che voglio sono costretto a discuterne con lui, passami il termine.
+
+E così, come ti raccontavo poco fa, l'ho istruito a tenere un diario direttamente nel mio Second Brain e, in questo modo, mi sono reso conto che quel perché finisce scritto senza che io debba fermarmi a formularlo.
+
+Mantenere un diario delle decisioni non è solo un ottimo modo per poter ricostruire in un secondo tempo il senso delle scelte fatte e per identificare in dettaglio il perimetro del lavoro, ma anche per ripercorrere quel lavoro ed estrarne delle regole di comportamento più generiche.
+
+Sono capitate volte in cui ho iniziato un percorso con un'idea in mente e sono finito da tutt'altra parte, oppure volte in cui ho creduto di aver bisogno di una cosa e poi ho capito che in realtà il problema era altrove. Di' la verità: a te non capita mai?
+
+Ho scoperto che dalla registrazione di questi eventi in un diario non solo si può recuperare uno storico, ma è anche possibile, tramite un modello linguistico, estrarre i comportamenti ripetuti nel bene e nel male.
+
+Abitudini, pattern o anti-pattern, errori comuni. L'agente li evidenzia con passaggi del tipo *questo è lo stesso problema che abbiamo incontrato il giorno X sul progetto Y* oppure *per questa operazione possiamo rifarci alla nota Z*.
+
+Una volta capito questo, ho anche deciso di cercare attivamente comportamenti ricorrenti e usarli per creare regole di processo ben definite che ora il mio agente segue ogni volta che ci troviamo davanti alla stessa tipologia di problema.
+
+Ecco spiegato il motivo per cui le note contenenti decisioni fioccano molto più velocemente di prima nel mio Obsidian: da una parte il Second Brain fornisce all'agente *il perché* che gli manca, e dall'altra è l'agente stesso ad aiutarmi a tirarlo fuori dalla mia testa e a scriverlo.
+
+Tra l'altro, non sono certo il solo ad essere arrivato a queste conclusioni. Sempre Tiago Forte, a marzo di quest'anno, ha annunciato sul suo blog quello che ha chiamato [*AI Second Brain*](https://fortelabs.com/blog/introducing-the-ai-second-brain/).
+
+Secondo l'autore, infatti, la gestione della conoscenza personale, il cosiddetto *Personal Knowledge Management*, sta lasciando il posto alla gestione del contesto personale, cioè al *Personal Context Management*.
+
+E il motivo, dice Forte, è che il nuovo collo di bottiglia non sono più le capacità dell'Intelligenza Artificiale, ma la nostra abilità di fornirle l'informazione giusta al momento giusto per poter lavorare al meglio.
+
+Insomma, si tratta dello stesso concetto di cui ho parlato fin qui, solo con un nome decisamente più elegante. E devo dire che mi trovo molto d'accordo con Forte ma, alla luce della mia esperienza, aggiungerei un piccolo dettaglio.
+
+L'abilità di fornire all'agente l'informazione giusta al momento giusto, infatti, io non la esercito più da solo. Buona parte di quel contesto, come ti ho raccontato, lo scrive l'agente stesso mentre lavoriamo. E questo, come vedremo tra un attimo, è allo stesso tempo un enorme vantaggio ma anche un bel rischio.
+
+## Impalcatura, non stampella
+
+Un agente che scrive le note al posto mio e che poi quelle stesse note se le va a rileggere è una gran comodità ma, al tempo stesso, accentua un potenziale rischio già presente nel Second Brain ed è anche all'origine di un paio di problemi che prima semplicemente non esistevano.
+
+Innanzitutto, un agente è in grado di produrre note ad una velocità che io o tu non potremo mai raggiungere, e quindi il pericolo di ritrovarsi con una discarica al posto di un archivio diventa decisamente concreto. Ed è un problema che non danneggia solo noi umani quando andiamo a rileggere.
+
+Anthropic, in un articolo dedicato a quella che viene chiamata [*context engineering*](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents), spiega che il contesto che si fornisce ad un modello è una risorsa limitata e che, oltre una certa soglia, più informazioni gli si danno e peggio riesce ad utilizzarle.
+
+Tradotto: un Second Brain riempito senza criterio finisce per peggiorare proprio l'agente che dovrebbe potenziare, rendendo il contesto confusionario e diluito e facendo sì che all'AI sfuggano dettagli importanti per il lavoro a favore di quelli inutili.
+
+La soluzione, in questo caso, è la stessa che Tiago Forte suggeriva già nel suo libro, ben prima degli agenti, e cioè conservare solo ciò che ci colpisce davvero. Vale per gli articoli che leggiamo tu o io e vale, a maggior ragione, per le note che scrive il nostro agente.
+
+La scelta delle informazioni da trattenere e consolidare va fatta in base a ciò che non è già ovvio per chi quell'informazione la dovrà utilizzare. Il passo avanti sta nell'acquisire la consapevolezza che ora il soggetto utilizzatore non è più solo il proprietario del Second Brain, ma anche i suoi agenti.
+
+Un nuovo problema, invece, che fino a questo momento non faceva parte dei rischi da tenere presenti quando si utilizzava un Second Brain, ma che è preponderante nel mondo dell'Intelligenza Artificiale Generativa, è la fiducia cieca.
+
+Nella provincia canadese dell'Ontario, medici e infermieri possono utilizzare dei sistemi di Intelligenza Artificiale che scrivono le note cliniche al posto loro a partire dalla registrazione della visita.
+
+Quest'anno l'ufficio del Revisore generale della provincia ha pubblicato i risultati delle prove fatte su venti di questi sistemi, [tutti regolarmente approvati](https://www.theregister.com/ai-ml/2026/05/14/ontario-auditors-find-doctors-ai-note-takers-routinely-blow-basic-facts/5240771), e... non sono esattamente rassicuranti.
+
+Nove sistemi hanno inventato informazioni sui pazienti, dodici hanno riportato dati sbagliati sui farmaci e ben diciassette hanno tralasciato dettagli importanti sulla salute mentale.
+
+Ora, questo è solo uno dei tanti esempi e il mio agente non scrive cartelle cliniche, per fortuna, ma fa esattamente lo stesso mestiere, cioè prende appunti al posto di qualcuno, me. E se sbaglia un sistema approvato per la sanità, non vedo perché non dovrebbe sbagliare il mio Claude o il mio ChatGPT.
+
+Almeno dal punto di vista teorico, quindi, esiste la concreta possibilità che un errore finito in una nota resti semplicemente archiviato, nessuno lo scovi, e questo divenga la base del lavoro successivo.
+
+Certo, potrei raccontarti che la soluzione è rileggere tutto di persona, ma sarebbe una bugia: non avrebbe senso. Non lo faccio io, per lo stesso motivo per cui prima non scrivevo il perché di ogni singola scelta, e non consiglierei mai a te di farlo.
+
+Le mie contromisure, in realtà, sono altre.
+
+La prima sta a monte, e cioè nelle istruzioni che ho dato all'agente su come scrivere le note: aggiornare in cima un riassunto dello stato dell'arte dell'attività, archiviare le decisioni accompagnate dal loro motivo mettendo data e ora e non modificare mai il diario ma alimentarlo in coda.
+
+In pratica, non controllo ogni singola nota, ma controllo il modo in cui vengono scritte. Così è possibile mantenere un estratto significativo e, in caso di necessità, andare a rivedere tutti i passaggi che hanno condotto a determinate scelte e conclusioni.
+
+Poi, la seconda contromisura sta a valle: ogni volta che riprendo un lavoro, l'agente mi racconta dove eravamo rimasti e, se ciò che mi dice non corrisponde a ciò che ricordo, confligge in qualche modo con lo stato attuale o semplicemente mi puzza, indago prima di procedere.
+
+So che può sembrare un controsenso ma io non credo che queste note debbano essere precise alla virgola. L'importante, secondo me, è che siano sufficientemente corrette da permettermi di estrarre alcune informazioni salienti, e spesso tecniche, che vanno poi integrate con quello che ho io nella testa.
+
+Alla fine basta che siano un po' più precise e potenti della mia semplice memoria o degli appunti che potrei prendere in autonomia.
+
+Insomma, mi piace pensare di aver potenziato l'archivio ma di essere ancora io a verificare e pilotare quello che l'agente fa, quindi non mi serve controllare il diario, quanto piuttosto le azioni che vengono messe in pratica.
+
+Almeno oggi servo ancora a qualcosa, poi in futuro chissà.
+
+So benissimo che nessuna di queste due abitudini rappresenta una difesa completa. Un errore plausibile, che non contraddice nulla di ciò che ricordo, può restare lì indisturbato per sempre. Ma per ora è il miglior compromesso che ho trovato.
+
+Infine, il terzo problema è forse anche il più subdolo, perché non riguarda le note ma chi le legge, cioè me o te o noi.
+
+All'inizio di quest'anno Anthropic ha pubblicato [uno studio condotto su cinquantadue sviluppatori](https://www.anthropic.com/research/AI-assistance-coding-skills) alle prese con una libreria che non avevano mai usato.
+
+Alla fine del lavoro, tutti sono stati sottoposti ad un test di comprensione e si è visto che chi si era fatto aiutare dall'Intelligenza Artificiale ha totalizzato in media un punteggio di 50 su 100, contro il 67 di chi aveva scritto il codice a mano. Prevedibile, onestamente.
+
+Il dettaglio più utile, però, è un altro. Tra quelli che avevano usato l'IA, chi le aveva chiesto anche di spiegargli i concetti ha ottenuto buoni risultati, mentre chi si era limitato a farle produrre il codice è andato decisamente peggio.
+
+Ecco, con un Second Brain scritto da un agente il pericolo è identico. Se smettiamo di seguire, di capire e di decidere, ci ritroviamo con un archivio perfettamente aggiornato su un lavoro che non conosciamo più.
+
+Rischiamo di andare in difficoltà quando dobbiamo spiegare un risultato ottenuto o quando dobbiamo lavorare nuovamente ad un progetto. Rischiamo di non avere contezza di ciò che abbiamo realizzato e di perderne progressivamente il controllo.
+
+Per me questa è la prospettiva peggiore. Molto peggiore di sbagliare a rievocare il senso di una decisione presa o di qualsiasi rumore introdotto nei miei archivi. Più pericolosa di un bug di un codice che va in crash.
+
+Insomma, per riassumere questo blocco con un'immagine, mi piace pensare che un agente debba essere un'impalcatura e non una stampella. L'impalcatura sostiene qualcosa che sto costruendo io, mentre la stampella sostituisce qualcosa che non funziona bene.
+
+E in concreto il principio del mio Second Brain è molto semplice: l'agente scrive e rilegge, ma il modo in cui lo fa lo decido io e la comprensione di ciò che è stato fatto resta a me.
+
+## Atterraggio: memoria condivisa uomo-IA
+
+Quando nel 2023 ho costruito il mio Second Brain, la domanda a cui cercavo di rispondere era *cosa devo ricordare?*, e la risposta era più o meno *tutto quello che mi interessa e che la mia testa non riesce a trattenere*.
+
+Ora quella domanda è un po' cambiata, perché buona parte di ciò che allora mi affannavo ad annotare, oggi una macchina lo sa già, e lo sa meglio di me. Adesso la domanda giusta, secondo me, è diventata *cosa devo ricordare io e cosa invece devo trasmettere all'agente di turno?*
+
+E la risposta è che io devo ricordare un po' meno, perché un agente può fare determinate cose molto meglio di me senza usare gli appunti, e devo contestualizzare di più, perché nessun modello potrà mai trovare altrove le mie decisioni, i miei motivi, le mie eccezioni e le particolarità di un mio cliente o progetto.
+
+Il Second Brain, insomma, non è più soltanto una biblioteca personale, ma anche una memoria condivisa tra me e i miei agenti, che io consulto per ricordare e loro, invece, per capire con chi o cosa hanno a che fare.
+
+E sai una cosa interessante? Questa memoria condivisa digitale funziona in modo molto simile a quella umana di cui ti parlavo nell'[episodio 149](https://pensieriincodice.it/episodes/149/), intitolato *Quello che perdiamo quando non perdiamo nulla*.
+
+Qualche mese fa ti raccontavo, citando il professor Della Sala, che la nostra memoria funziona bene non nonostante il fatto che dimentichi, ma proprio perché seleziona ciò che conta e lascia andare il resto.
+
+Ecco, vale lo stesso per un Second Brain e vale lo stesso per un agente. Non è la quantità di cose che riesce a ricordare a renderlo utile, ma la bontà della scelta di cosa ricordare e consolidare.
+
+E i criteri di quella scelta, almeno per ora, restano un lavoro per noi umani.
