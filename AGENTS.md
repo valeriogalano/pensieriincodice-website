@@ -59,6 +59,7 @@ copiane la struttura del frontmatter, campo per campo.
 | `equipment` | L'attrezzatura usata per registrare, voce per voce con `title` e `url` (link affiliato). Copiala dall'episodio precedente e chiedi se è cambiata |
 | `tags` | Scegli tra i tag già usati in `content/podcast/`, non inventarne di nuovi senza chiedere |
 | `url` | `/episodes/NNN-` seguito dallo slug del titolo |
+| Soundbite | Non nel frontmatter: vanno in `assets/soundbites/NNN.txt`, una riga per soundbite con inizio, fine e titolo separati da tab (l'export `startEnd` di AudioPills). Il feed li legge da lì |
 
 > [!warning] Mai stimare durata e dimensione
 > Vanno misurate sul file. Si misurano sul file servito dal CDN e non su una copia locale,
