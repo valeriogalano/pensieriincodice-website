@@ -1,7 +1,7 @@
 {{/*
   Determina l'immagine social in base al tipo di pagina:
   - Episodio podcast: locandina del singolo episodio (da CDN)
-  - Articolo blog: featureImage
+  - Articolo blog: featureImage, o la cover dell'episodio se è l'articolo di un episodio
   - Homepage / tutto il resto: locandina principale del podcast
 */}}
 {{- $image := .Site.Params.podcast.image | absURL -}}
@@ -24,6 +24,8 @@
   {{- else if eq .Type "blog" -}}
     {{- with .Params.featureImage -}}
       {{- $image = . | absURL -}}
+    {{- else with partial "episode-cover.html" . -}}
+      {{- $image = . -}}
     {{- end -}}
     {{- $imageAlt = .Title -}}
     {{- $type = "article" -}}

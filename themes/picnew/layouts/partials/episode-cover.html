@@ -1,0 +1,13 @@
+{{- /*
+  URL della cover dell'episodio a cui si riferisce un articolo (parametro `episode`).
+  Vuoto se l'articolo non è legato a un episodio o l'episodio non ha la cover.
+*/ -}}
+{{- $url := "" -}}
+{{- with .Params.episode -}}
+  {{- with site.GetPage (printf "/podcast/%d" .) -}}
+    {{- with .Params.image -}}
+      {{- $url = printf "%s%s" site.Params.podcast.cdn_base_url . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $url -}}
