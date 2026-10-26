@@ -61,7 +61,7 @@
     {{ end }}
 
     <!-- Content -->
-    <div class="prose prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-pre:bg-pod-card prose-pre:border prose-pre:border-white/10 mb-12">
+    <div class="prose max-w-none mb-12">
         {{ .Content }}
     </div>
 
@@ -167,7 +167,7 @@
         </button>
         <div id="episode-script-content" class="hidden">
             <p class="text-sm text-pod-gray mb-4 italic">Quello che segue è lo script originale dell'episodio.</p>
-            <div class="prose prose-invert prose-sm max-w-none">
+            <div class="prose max-w-none">
                 {{ replace .text "\n" "\n\n" | markdownify }}
             </div>
         </div>

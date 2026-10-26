@@ -44,7 +44,14 @@
         {{ end }}
     </header>
 
-    <div class="prose prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-pre:bg-pod-card prose-pre:border prose-pre:border-white/10 mb-12">
+    {{ if and .Params.episode (gt (len .Fragments.Identifiers) 1) }}
+    <div class="toc mb-12 bg-pod-card border border-white/5 rounded-2xl p-5">
+        <span id="toc-title" class="block text-xs font-mono text-pod-orange mb-2">In questo articolo</span>
+        <div class="text-pod-gray">{{ .TableOfContents | replaceRE `<nav ` `<nav aria-labelledby="toc-title" ` | safeHTML }}</div>
+    </div>
+    {{ end }}
+
+    <div class="prose max-w-none mb-12">
         {{ .Content }}
     </div>
 

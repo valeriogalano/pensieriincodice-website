@@ -5,7 +5,7 @@
         <h2><a href="#show-text">Mostra testo dell'episodio</a></h2>
         <div>
             <a href="#">Nascondi</a>
-            <div class="prose prose-invert max-w-none mt-4">
+            <div class="prose max-w-none mt-4">
                 {{ with $data }}
                     <p class="text-sm text-pod-gray italic mb-6">Quello che segue è lo script originale dell'episodio.</p>
                     {{ replace .text "\n" "\n\n" | markdownify }}
