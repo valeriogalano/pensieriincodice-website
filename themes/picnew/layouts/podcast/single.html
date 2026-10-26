@@ -162,15 +162,11 @@
         <button class="text-2xl font-bold mb-4 cursor-pointer flex items-center text-left w-full"
             aria-expanded="false" aria-controls="episode-script-content"
             onclick="var c=document.getElementById('episode-script-content');var open=c.classList.toggle('hidden');this.setAttribute('aria-expanded', open?'false':'true');this.querySelector('.script-chevron').style.transform=open?'':'rotate(180deg)'">
-            {{ if .segments }}Trascrizione dell'episodio{{ else }}Script dell'episodio{{ end }}
+            Script dell'episodio
             <span class="text-pod-orange text-sm font-mono ml-2 script-chevron" style="transition:transform 0.2s" aria-hidden="true">▼</span>
         </button>
         <div id="episode-script-content" class="hidden">
-            {{ if .segments }}
-            <p class="text-sm text-pod-gray mb-4 italic">Quella che segue è una trascrizione automatica dell'episodio.</p>
-            {{ else }}
             <p class="text-sm text-pod-gray mb-4 italic">Quello che segue è lo script originale dell'episodio.</p>
-            {{ end }}
             <div class="prose prose-invert prose-sm max-w-none">
                 {{ replace .text "\n" "\n\n" | markdownify }}
             </div>
