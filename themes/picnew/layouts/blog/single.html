@@ -18,6 +18,18 @@
         {{ with partial "ai-disclosure.html" . }}
         <p class="-mt-4 mb-8 text-sm text-pod-gray italic">{{ . }}</p>
         {{ end }}
+        {{ with .Params.episode }}{{ with site.GetPage (printf "/podcast/%d" .) }}
+        <a href="{{ .RelPermalink }}" class="flex items-center gap-4 max-w-xl mx-auto mb-8 bg-pod-card border border-white/5 rounded-xl p-3 text-left hover:border-pod-orange/30 transition-all group">
+            {{ with partial "episode-cover.html" $ }}
+            <img src="{{ partial "thumb.html" . }}" alt="" width="96" height="96" class="w-24 h-24 rounded-lg object-cover flex-shrink-0">
+            {{ end }}
+            <span>
+                <span class="block text-xs font-mono text-pod-orange mb-1">Dall'episodio {{ .Params.number }}</span>
+                <span class="block font-bold group-hover:text-pod-orange transition-colors">{{ .Title }}</span>
+                <span class="block text-sm text-pod-gray mt-1">Ascolta →</span>
+            </span>
+        </a>
+        {{ end }}{{ end }}
         {{ with .Params.featureImage }}
         <div class="aspect-video mb-8 rounded-2xl overflow-hidden max-w-3xl mx-auto">
             <img fetchpriority="high" src="{{ partial "thumb.html" . }}" alt="{{ $.Title }}" class="object-contain w-full h-full">

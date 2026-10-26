@@ -69,6 +69,11 @@ copiane la struttura del frontmatter, campo per campo.
 Lo script dell'episodio sta in `data/scripts/PICNNN.yml`; se manca, chiedilo invece di
 lavorare senza.
 
+L'articolo dell'episodio (`content/blog/episodio-NNN.md`, con `episode: NNN` nel frontmatter)
+non si scrive qui: lo genera dispatch dallo script e arriva in una PR. Quando esiste, la pagina
+episodio mostra la card «Leggi l'articolo» al posto dell'accordion con lo script; quando manca,
+resta l'accordion.
+
 La descrizione è un paragrafo di 2-4 frasi in seconda persona singolare. Subito dopo il paragrafo
 va la riga `[Pensieri in codice](https://pensieriincodice.it/NNN)`, che deve restare il primo link
 della descrizione: i link dell'ospite vanno sotto. Fonti, sostenitori, attrezzatura e canali del
