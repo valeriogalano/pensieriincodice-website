@@ -7,22 +7,8 @@
             <a href="#">Nascondi</a>
             <div class="prose prose-invert max-w-none mt-4">
                 {{ with $data }}
-                    {{- if .segments }}
-                        <p class="text-sm text-pod-gray italic mb-6">Quella che segue è una trascrizione automatica dell'episodio. Clicca sui paragrafi per saltare al minuto corrispondente.</p>
-                        <div class="space-y-4">
-                        {{ range .segments }}
-                            <p class="cursor-pointer hover:text-pod-orange transition-colors" 
-                               data-start="{{ .start }}"
-                               onclick="const ap = document.getElementById('audio-player'); if(ap) { ap.currentTime = this.dataset.start; ap.play(); }">
-                                <span class="font-mono text-xs text-pod-orange mr-2">[{{ (div (int .start) 60) }}:{{ printf "%02d" (int (mod .start 60)) }}]</span>
-                                {{ .text }}
-                            </p>
-                        {{ end }}
-                        </div>
-                    {{ else }}
-                        <p class="text-sm text-pod-gray italic mb-6">Quello che segue è lo script originale dell'episodio.</p>
-                        {{ replace .text "\n" "\n\n" | markdownify }}
-                    {{ end }}
+                    <p class="text-sm text-pod-gray italic mb-6">Quello che segue è lo script originale dell'episodio.</p>
+                    {{ replace .text "\n" "\n\n" | markdownify }}
                 {{ end }}
             </div>
             <a href="#" class="inline-block mt-8">Nascondi</a>
