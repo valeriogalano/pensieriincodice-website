@@ -70,7 +70,10 @@ Lo script dell'episodio sta in `data/scripts/PICNNN.yml`; se manca, chiedilo inv
 lavorare senza.
 
 L'articolo dell'episodio (`content/blog/episodio-NNN.md`, con `episode: NNN` nel frontmatter)
-non si scrive qui: lo genera dispatch dallo script e arriva in una PR. Quando esiste, la pagina
+non si scrive qui: si scrive dopo il montaggio, quando lo script è definitivo, in una sessione
+con dispatch (repo `valeriogalano/dispatch`), e arriva sul sito in una PR aperta dal suo workflow
+`generate-article.yml` con `publish=N`. Non parte da solo quando lo script arriva su `main`.
+Quando esiste, la pagina
 episodio mostra la card «Leggi l'articolo» al posto dell'accordion con lo script; quando manca,
 resta l'accordion.
 
