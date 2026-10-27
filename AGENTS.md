@@ -82,6 +82,9 @@ della descrizione: i link dell'ospite vanno sotto. Fonti, sostenitori, attrezzat
 podcast **non si scrivono nel corpo**: le fonti vanno in `sources` (con `title`), i sostenitori in
 `supporters`, l'attrezzatura in `equipment`, e i canali li aggiunge il partial `follow.html`. Pagina e feed li generano da lì.
 
+L'ultima riga del corpo, dopo gli eventuali link dell'ospite, è sempre
+`Post-produzione e montaggio realizzati con Claude Opus.` Vale dall'episodio 151.
+
 Il corpo si scrive in **Markdown vero**: elenchi con `- ` preceduti da una riga vuota, link
 `[testo](url)` o `<url>`. Mai pallini `•`, `<br />`, HTML incollato, spazi non separabili o altri
 residui di Word e degli editor: un testo che arriva da lì va ripulito prima del commit. Controlla
