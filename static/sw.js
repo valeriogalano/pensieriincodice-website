@@ -1,4 +1,6 @@
-const CACHE_NAME = 'pic-v1';
+// v2: pic-v1 holds pages and search index served cache-first forever; the
+// activate handler below deletes it on the first visit with this version.
+const CACHE_NAME = 'pic-v2';
 const AUDIO_CACHE = 'pic-audio-v1';
 
 const STATIC_ASSETS = [
@@ -51,11 +53,23 @@ self.addEventListener('fetch', function(e) {
     return;
   }
 
-  // Navigation requests: Network-First
-  if (e.request.mode === 'navigate') {
+  // Pages and data: Network-First. Not only mode === 'navigate': Turbo loads
+  // pages with fetch() (mode 'cors'), which used to fall through to the
+  // cache-first branch and kept serving the HTML of the first visit after
+  // every deploy. Same for /index.json (search) and the XML feeds.
+  var accept = e.request.headers.get('Accept') || '';
+  var isPage = e.request.mode === 'navigate' || accept.indexOf('text/html') !== -1;
+  var isData = /\.(json|xml)(\?|$)/i.test(url);
+  if (isPage || isData) {
     e.respondWith(
-      fetch(e.request).catch(function() {
-        return caches.match(e.request).then(function(r) { return r || caches.match('/'); });
+      fetch(e.request).then(function(response) {
+        if (response.ok && e.request.method === 'GET') {
+          var clone = response.clone();
+          caches.open(CACHE_NAME).then(function(cache) { cache.put(e.request, clone); });
+        }
+        return response;
+      }).catch(function() {
+        return caches.match(e.request).then(function(r) { return r || (isPage ? caches.match('/') : r); });
       })
     );
     return;
