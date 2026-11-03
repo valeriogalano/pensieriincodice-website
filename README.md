@@ -63,4 +63,4 @@ Se noti qualche problema o hai suggerimenti, sentiti libero di aprire una **Issu
 
 ## Importante
 
-Vorremmo mantenere questo repository aperto e gratuito per tutti, ma lo scraping del contenuto di questo repository **NON È CONSENTITO**. Se ritieni che questo lavoro ti sia utile e vuoi utilizzare qualche risorsa, ti preghiamo di citare come fonte il podcast e/o questo repository.
+Vorrei mantenere questo repository aperto e gratuito per tutti, ma lo scraping del contenuto di questo repository **NON È CONSENTITO**. Se ritieni che questo lavoro ti sia utile e vuoi utilizzare qualche risorsa, ti chiedo di citare come fonte il podcast e/o questo repository.
