@@ -11,7 +11,7 @@
         <div class="relative z-10 h-full flex items-center gap-10 min-h-[300px] hero-latest-content">
             {{ if $latest.Params.image }}
             <div class="flex-shrink-0 w-56 h-56 rounded-2xl overflow-hidden shadow-2xl shadow-pod-orange/20 hero-latest-image">
-                <img fetchpriority="high" src="{{ partial "thumb.html" (printf "%s%s" site.Params.podcast.cdn_base_url $latest.Params.image) }}" alt="{{ $latest.Title }}" class="object-cover w-full h-full">
+                <img fetchpriority="high" src="{{ partialCached "thumb.html" (printf "%s%s" site.Params.podcast.cdn_base_url $latest.Params.image) (printf "%s%s" site.Params.podcast.cdn_base_url $latest.Params.image) }}" alt="{{ $latest.Title }}" class="object-cover w-full h-full">
             </div>
             {{ end }}
             <div class="flex flex-col items-start justify-center flex-1">
@@ -29,7 +29,7 @@
                 <p class="text-pod-gray max-w-2xl text-lg">{{ $latest.Summary }}</p>
                 <div class="flex items-center space-x-6 mt-10">
                     {{ with $latest.Params.audio_file }}
-                    <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $latest.Title | jsonify }}, '{{ if $latest.Params.image }}{{ partial "thumb.html" (printf "%s%s" site.Params.podcast.cdn_base_url $latest.Params.image) }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $latest.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.chapters }}{{ end }}', '{{ if $latest.Params.transcript }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.transcript }}{{ end }}', '{{ $latest.RelPermalink }}')"
+                    <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $latest.Title | jsonify }}, '{{ if $latest.Params.image }}{{ partialCached "thumb.html" (printf "%s%s" site.Params.podcast.cdn_base_url $latest.Params.image) (printf "%s%s" site.Params.podcast.cdn_base_url $latest.Params.image) }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $latest.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.chapters }}{{ end }}', '{{ if $latest.Params.transcript }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $latest.Params.transcript }}{{ end }}', '{{ $latest.RelPermalink }}')"
                         aria-label="Ascolta: {{ $latest.Title }}"
                         class="bg-pod-orange hover:bg-orange-500 text-white px-8 py-3 rounded-full font-bold transition-all transform hover:scale-105 flex items-center space-x-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -61,10 +61,10 @@
         <div class="bg-pod-card border border-white/5 rounded-2xl p-6 hover:border-pod-orange/30 transition-all group overflow-hidden flex flex-col relative" data-audio="{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ .Params.audio_file }}">
             {{ if .Params.image }}
             <div class="aspect-square mb-4 rounded-xl overflow-hidden relative">
-                <img loading="lazy" src="{{ partial "thumb.html" (printf "%s%s" site.Params.podcast.cdn_base_url .Params.image) }}" alt="{{ .Title }}" class="object-cover w-full h-full">
+                <img loading="lazy" src="{{ partialCached "thumb.html" (printf "%s%s" site.Params.podcast.cdn_base_url .Params.image) (printf "%s%s" site.Params.podcast.cdn_base_url .Params.image) }}" alt="{{ .Title }}" class="object-cover w-full h-full">
                 <div class="absolute inset-0 bg-gradient-to-t from-pod-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     {{ with .Params.audio_file }}
-                    <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $episode.Title | jsonify }}, '{{ if $episode.Params.image }}{{ partial "thumb.html" (printf "%s%s" site.Params.podcast.cdn_base_url $episode.Params.image) }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $episode.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.chapters }}{{ end }}', '{{ if $episode.Params.transcript }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.transcript }}{{ end }}', '{{ $episode.RelPermalink }}')"
+                    <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $episode.Title | jsonify }}, '{{ if $episode.Params.image }}{{ partialCached "thumb.html" (printf "%s%s" site.Params.podcast.cdn_base_url $episode.Params.image) (printf "%s%s" site.Params.podcast.cdn_base_url $episode.Params.image) }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $episode.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.chapters }}{{ end }}', '{{ if $episode.Params.transcript }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.transcript }}{{ end }}', '{{ $episode.RelPermalink }}')"
                         aria-label="Riproduci: {{ $episode.Title }}"
                         class="w-12 h-12 rounded-full bg-pod-orange text-white flex items-center justify-center transform translate-y-4 group-hover:translate-y-0 transition-all">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -90,7 +90,7 @@
                     {{ end }}
                 </div>
                 {{ with .Params.audio_file }}
-                <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $episode.Title | jsonify }}, '{{ if $episode.Params.image }}{{ partial "thumb.html" (printf "%s%s" site.Params.podcast.cdn_base_url $episode.Params.image) }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $episode.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.chapters }}{{ end }}', '{{ if $episode.Params.transcript }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.transcript }}{{ end }}', '{{ $episode.RelPermalink }}')"
+                <button onclick="playEpisode('{{ $.Site.Params.podcast.cdn_tracked_base_url }}{{ . }}', {{ $episode.Title | jsonify }}, '{{ if $episode.Params.image }}{{ partialCached "thumb.html" (printf "%s%s" site.Params.podcast.cdn_base_url $episode.Params.image) (printf "%s%s" site.Params.podcast.cdn_base_url $episode.Params.image) }}{{ else }}{{ $.Site.Params.podcast.image | absURL }}{{ end }}', '{{ if $episode.Params.chapters }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.chapters }}{{ end }}', '{{ if $episode.Params.transcript }}{{ $.Site.Params.podcast.cdn_base_url }}{{ $episode.Params.transcript }}{{ end }}', '{{ $episode.RelPermalink }}')"
                     aria-label="Riproduci: {{ $episode.Title }}"
                     class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pod-orange transition-all">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -151,7 +151,7 @@
         <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
             class="bg-pod-card border border-white/5 rounded-2xl overflow-hidden hover:border-pod-orange/50 transition-all group flex flex-col">
             <div class="aspect-square overflow-hidden">
-                <img loading="lazy" src="{{ partial "thumb.html" .image }}" alt="{{ .name }}" class="w-full h-full object-cover">
+                <img loading="lazy" src="{{ partialCached "thumb.html" .image .image }}" alt="{{ .name }}" class="w-full h-full object-cover">
             </div>
             <div class="p-6 flex flex-col flex-1">
                 <div class="flex items-center gap-2 mb-2">

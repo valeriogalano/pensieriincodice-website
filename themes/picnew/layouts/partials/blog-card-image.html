@@ -6,11 +6,11 @@
 {{- $page := .page -}}
 {{- if $page.Params.featureImage }}
 <div class="aspect-video mb-4 rounded-xl overflow-hidden">
-    <img loading="lazy" src="{{ partial "thumb.html" $page.Params.featureImage }}" alt="{{ $page.Title }}" class="{{ .fit }} w-full h-full">
+    <img loading="lazy" src="{{ partialCached "thumb.html" $page.Params.featureImage $page.Params.featureImage }}" alt="{{ $page.Title }}" class="{{ .fit }} w-full h-full">
 </div>
 {{- else }}
 {{- with partial "episode-cover.html" $page }}
-{{- $src := partial "thumb.html" . }}
+{{- $src := partialCached "thumb.html" . . }}
 <div class="aspect-video mb-4 rounded-xl overflow-hidden relative">
     <img loading="lazy" src="{{ $src }}" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover blur-xl scale-110 opacity-60">
     <img loading="lazy" src="{{ $src }}" alt="{{ $page.Title }}" class="relative object-contain w-full h-full">

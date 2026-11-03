@@ -3,6 +3,9 @@
   Gli originali sul CDN restano intatti: il feed e le app continuano a usare quelli.
   Se il download fallisce torna l'URL originale, così la build non si rompe.
   I percorsi relativi (immagini in static/) passano così come sono.
+  Va chiamato con partialCached e l'URL come chiave (partialCached "thumb.html" $u $u):
+  il risultato dipende solo dall'URL, e un download fallito non viene memorizzato
+  da Hugo, quindi con partial ogni pagina riproverebbe tutti i 151 episodi.
 */ -}}
 {{- $url := . -}}
 {{- if hasPrefix $url "http" -}}
