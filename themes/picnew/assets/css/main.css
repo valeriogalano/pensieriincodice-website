@@ -223,6 +223,18 @@ html.light .prose blockquote {
     }
     #sidebar-container { display: none; }
 
+    /* px-12 (48px per lato) è un margine da desktop: sotto i 1024px lascia al
+       testo tre quarti dello schermo. Come per l'header, 1rem. */
+    .page-content {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    /* i titoli grandi non devono uscire dalle card con le parole lunghe */
+    .page-content h1, .page-content h2, .page-content h3 {
+        overflow-wrap: anywhere;
+        hyphens: auto;
+    }
+
     header {
         padding-left: 1rem !important;
         padding-right: 1rem !important;
