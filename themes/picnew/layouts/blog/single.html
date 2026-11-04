@@ -4,7 +4,7 @@
         <div class="flex items-center justify-center space-x-4 mb-6 font-mono text-pod-orange">
             <span>Blog</span>
             <span>•</span>
-            <time>{{ .Date.Format "02 Jan 2006" }}</time>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format site.Params.dateFormat }}</time>
             <span>•</span>
             {{ $author := .Params.author | default "Valerio Galano" }}
             <span class="inline-flex items-center gap-2">

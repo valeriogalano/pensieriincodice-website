@@ -15,7 +15,7 @@
             </div>
             {{ end }}
             <div class="flex flex-col items-start justify-center flex-1">
-                <span class="font-mono text-pod-orange text-sm mb-4">#{{ $latest.Params.number }} • {{ $latest.Date.Format "02 Jan 2006" }}</span>
+                <span class="font-mono text-pod-orange text-sm mb-4">#{{ $latest.Params.number }} • <time datetime="{{ $latest.Date.Format "2006-01-02" }}">{{ $latest.Date | time.Format site.Params.dateFormat }}</time></span>
                 <h1 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight leading-tight max-w-4xl">
                     <a href="{{ $latest.Permalink }}" class="hover:text-pod-orange transition-colors">{{ $latest.Title }}</a>
                 </h1>
