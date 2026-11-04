@@ -60,12 +60,15 @@
         <item>
             <title>{{ .Params.title }}{{ with .Params.subtitle }} ({{ . }}){{ end }}</title>
             {{ $audio_name_arr := split .Params.audio_file "." }}
-            {{ $audio_type := index $audio_name_arr (sub (len $audio_name_arr) 1) }}
+            {{ $audio_ext := lower (index $audio_name_arr (sub (len $audio_name_arr) 1)) }}
+            {{- /* Il tipo registrato, non quello ricavato dall'estensione: per l'MP3 è
+                   audio/mpeg (Apple Podcasts, Podcasting 2.0), non audio/mp3. */ -}}
+            {{ $audio_type := index (dict "mp3" "audio/mpeg" "m4a" "audio/x-m4a" "aac" "audio/aac" "ogg" "audio/ogg" "opus" "audio/opus" "wav" "audio/wav") $audio_ext | default (printf "audio/%s" $audio_ext) }}
             {{ $audio_size := 1 }}
             {{- if .Params.audio_size }}{{ $audio_size = int .Params.audio_size }} {{ end -}}
             <enclosure url="{{ .Site.Params.Podcast.cdn_tracked_base_url }}{{ .Params.audio_file }}"
                        length="{{ $audio_size }}"
-                       type="audio/{{ $audio_type }}"/>
+                       type="{{ $audio_type }}"/>
             <guid>{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.audio_file }}</guid>
             {{- partial "podcast/soundbites.html" . -}}
             <link>{{ .Permalink }}</link>
