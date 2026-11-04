@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
-    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    {{- /* Come og:description (social-meta.html): la descrizione della pagina,
+           poi il riassunto delle pagine di contenuto, poi quella del sito. */}}
+    {{- $metaDescription := .Site.Params.description -}}
+    {{- with .Description }}{{ $metaDescription = . }}{{ else }}{{ if and .IsPage .Summary }}{{ $metaDescription = .Summary | plainify | htmlUnescape | truncate 160 }}{{ end }}{{ end }}
+    <meta name="description" content="{{ $metaDescription }}">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ .Permalink }}">
     {{ partial "social-meta.html" . }}
