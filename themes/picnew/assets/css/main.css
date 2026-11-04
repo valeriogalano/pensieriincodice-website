@@ -183,6 +183,17 @@ html.light .prose blockquote {
     to   { opacity: 1; transform: translateY(0); }
 }
 
+/* Chi chiede meno movimento al sistema non vede l'ingresso animato delle
+   pagine, i glow e le transizioni: restano gli stati finali. */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 /* ===== MOBILE SEE ALL ===== */
 .mobile-see-all { display: none; }
 
