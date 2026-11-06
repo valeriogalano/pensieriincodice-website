@@ -26,7 +26,10 @@
     {{- $css := resources.Get "css/main.css" | css.PostCSS | minify | fingerprint -}}
     <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
     <script src="/js/fuse.min.js"></script>
-    <script src="/js/turbo.es2017-umd.js"></script>
+    {{- /* defer: 157 KB che bloccavano il parsing di ogni pagina. Gli script inline
+           registrano solo listener di turbo:load, che Turbo emette comunque al
+           primo caricamento. */}}
+    <script defer src="/js/turbo.es2017-umd.js"></script>
     {{ block "head" . }}{{ end }}
     {{- $episodes := where .Site.RegularPages "Type" "podcast" -}}
     {{- $playlist := slice -}}
