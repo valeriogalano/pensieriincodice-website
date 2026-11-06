@@ -434,6 +434,8 @@
     }
 
     let currentPermalink = '';
+    // l'episodio mostrato nel player senza averne ancora caricato l'audio
+    let shownAudio = '';
 
     function buildShareUrl(permalink, seconds) {
         try {
@@ -1394,26 +1396,37 @@
             }
 
             currentPermalink = ep.permalink || window.location.href;
-            audio.src = ep.audio;
-            audio.load();
-
             activeChaptersUrl = ep.chapters || null;
             activeTranscriptUrl = ep.transcript || null;
 
-            if (ep.chapters) {
-                fetch(ep.chapters)
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data && data.chapters) renderChapters(data.chapters);
-                    })
-                    .catch(() => {});
-            }
-            if (ep.transcript) {
-                fetch(ep.transcript)
-                    .then(response => response.text())
-                    .then(text => renderTranscript(parseSRT(text)))
-                    .catch(() => {});
-            }
+            // Nessun download prima del play: impostare src e chiamare load() faceva
+            // partire per ogni nuovo visitatore una richiesta dell'MP3 attraverso OP3
+            // (Range: bytes=0-, che OP3 conta come download), più capitoli e
+            // trascrizione. Si mostrano titolo e copertina; audio, capitoli e
+            // trascrizione si caricano al primo play, da qualunque comando arrivi.
+            shownAudio = ep.audio;
+            const playLatest = audio.play.bind(audio);
+            audio.play = function() {
+                audio.play = playLatest;
+                if (!audio.getAttribute('src')) {
+                    audio.src = ep.audio;
+                    if (ep.chapters) {
+                        fetch(ep.chapters)
+                            .then(response => response.json())
+                            .then(data => {
+                                if (data && data.chapters) renderChapters(data.chapters);
+                            })
+                            .catch(() => {});
+                    }
+                    if (ep.transcript) {
+                        fetch(ep.transcript)
+                            .then(response => response.text())
+                            .then(text => renderTranscript(parseSRT(text)))
+                            .catch(() => {});
+                    }
+                }
+                return playLatest();
+            };
 
             updateEpisodeButtons();
         }
@@ -1702,7 +1715,9 @@
 
     function currentPlaylistIndex() {
         const playlist = window.__playlist || [];
-        return playlist.findIndex(ep => audio.src && audio.src.includes(ep.audio));
+        // prima del primo play l'audio non ha src: conta l'episodio mostrato
+        const src = audio.getAttribute('src') ? audio.src : shownAudio;
+        return playlist.findIndex(ep => src && src.includes(ep.audio));
     }
 
     function updateEpisodeButtons() {

@@ -104,7 +104,7 @@ email = "valerio@pensieriincodice.it"
 image = "images/pensieriincodice-locandina.png"
 cdn_base_url = "https://cdn.pensieriincodice.it/"
 cdn_tracked_base_url = "https://op3.dev/e/cdn.pensieriincodice.it/"
-copyright = "Copyright"
+copyright = "© Valerio Galano"
 category = "Technology"
 sub_category = ""
 default_keywords = "Tecnologia, Informatica"
@@ -112,8 +112,10 @@ explicit = "false"
 itunesID = 12345677
 itunes_type = "episodic"  # accepted values are: "episodic" or "serial"
 updateFrequency = "monthly"
-funding_url = "https://pensieriincodice.it/#support-card"
+funding_url = "https://pensieriincodice.it/sostieni/"
 funding_text = "Sostieni il podcast"
+# GUID Podcasting 2.0 del canale: non cambiarlo, le app ci riconoscono il podcast
+guid = "7b5d2ff7-d9f8-572a-8ec5-e872cc46ba4c"
 
 # Piattaforme podcast (mostrate nell'header, in ordine)
 [[params.platforms]]

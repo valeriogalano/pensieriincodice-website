@@ -6,12 +6,23 @@
     {{- /* La home ha già il nome del podcast nel titolo (content/_index.md): senza
            questo ramo diventava "Pensieri in codice - … | Pensieri in codice". */}}
     <title>{{ block "title" . }}{{ if .IsHome }}{{ .Title | default .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}{{ end }}</title>
-    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    {{- /* Come og:description (social-meta.html): la descrizione della pagina,
+           poi il riassunto delle pagine di contenuto, poi quella del sito. */}}
+    {{- $metaDescription := .Site.Params.description -}}
+    {{- with .Description }}{{ $metaDescription = . }}{{ else }}{{ if and .IsPage .Summary }}{{ $metaDescription = .Summary | plainify | htmlUnescape | truncate 160 }}{{ end }}{{ end }}
+    <meta name="description" content="{{ $metaDescription }}">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ .Permalink }}">
     {{ partial "social-meta.html" . }}
+    {{- /* Il feed del podcast per primo, su ogni pagina e con un titolo suo: un
+           lettore che prende il primo rel=alternate si iscrive al podcast. Restano
+           fuori l'indice di ricerca (JSON, non è un feed) e il feed della sezione
+           podcast su /episodes/index.xml, una variante diversa da quella pubblicata. */}}
+    <link rel="alternate" type="application/rss+xml" href="{{ "podcast/index.xml" | absURL }}" title="{{ .Site.Title }} — podcast">
     {{ range .AlternativeOutputFormats -}}
-    <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}">
+    {{- if and (ne .MediaType.SubType "json") (ne (lower .Name) "podcast") (not (and (eq $.Kind "section") (eq $.Section "podcast"))) }}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" title="{{ with $.Title }}{{ if not $.IsHome }}{{ . }} | {{ end }}{{ end }}{{ $.Site.Title }}">
+    {{- end }}
     {{ end -}}
     <link rel="stylesheet" href="/fonts/fonts.css">
     {{- $css := resources.Get "css/main.css" | css.PostCSS | minify | fingerprint -}}

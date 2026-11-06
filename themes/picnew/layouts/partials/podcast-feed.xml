@@ -46,11 +46,10 @@
         </itunes:category>
         <itunes:block>no</itunes:block>
         <itunes:explicit>{{ .Site.Params.Podcast.explicit }}</itunes:explicit>
-        <podcast:funding url="{{ .Site.Params.Podcast.funding_url }}">{{ .Site.Params.Podcast.funding_text }}
-        </podcast:funding>
-        <podcast:guid>
-            7b5d2ff7-d9f8-572a-8ec5-e872cc46ba4c
-        </podcast:guid>
+        {{- /* Valori su una riga sola: il GUID si confronta come stringa esatta, e
+               un a capo dentro il tag ne fa un altro GUID per chi non fa trim. */}}
+        <podcast:funding url="{{ .Site.Params.Podcast.funding_url }}">{{ .Site.Params.Podcast.funding_text }}</podcast:funding>
+        <podcast:guid>{{ .Site.Params.Podcast.guid }}</podcast:guid>
         {{- $pages := where .Site.RegularPages "Params.layout" "episode" -}}
         {{- $limit := .Site.Config.Services.RSS.Limit -}}
         {{- if ge $limit 1 -}}
@@ -60,12 +59,15 @@
         <item>
             <title>{{ .Params.title }}{{ with .Params.subtitle }} ({{ . }}){{ end }}</title>
             {{ $audio_name_arr := split .Params.audio_file "." }}
-            {{ $audio_type := index $audio_name_arr (sub (len $audio_name_arr) 1) }}
+            {{ $audio_ext := lower (index $audio_name_arr (sub (len $audio_name_arr) 1)) }}
+            {{- /* Il tipo registrato, non quello ricavato dall'estensione: per l'MP3 è
+                   audio/mpeg (Apple Podcasts, Podcasting 2.0), non audio/mp3. */ -}}
+            {{ $audio_type := index (dict "mp3" "audio/mpeg" "m4a" "audio/x-m4a" "aac" "audio/aac" "ogg" "audio/ogg" "opus" "audio/opus" "wav" "audio/wav") $audio_ext | default (printf "audio/%s" $audio_ext) }}
             {{ $audio_size := 1 }}
             {{- if .Params.audio_size }}{{ $audio_size = int .Params.audio_size }} {{ end -}}
             <enclosure url="{{ .Site.Params.Podcast.cdn_tracked_base_url }}{{ .Params.audio_file }}"
                        length="{{ $audio_size }}"
-                       type="audio/{{ $audio_type }}"/>
+                       type="{{ $audio_type }}"/>
             <guid>{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.audio_file }}</guid>
             {{- partial "podcast/soundbites.html" . -}}
             <link>{{ .Permalink }}</link>
@@ -125,18 +127,24 @@
             {{- if .Params.image -}}
             <itunes:image href="{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.image }}"/>
             {{- else -}}
-            <itunes:image href="{{ .Site.Params.Podcast.image }}"/>
+            <itunes:image href="{{ .Site.Params.Podcast.cdn_base_url }}{{ .Site.Params.Podcast.image }}"/>
             {{- end -}}
-            {{ $transcript_name_arr := split .Params.transcript "." }}
+            {{- /* Senza file, niente tag: un URL che punta alla radice del CDN fa
+                   fallire le app che provano a scaricarlo (come nel modulo). */ -}}
+            {{ with .Params.transcript }}
+            {{ $transcript_name_arr := split . "." }}
             {{ $transcript_ext := index $transcript_name_arr (sub (len $transcript_name_arr) 1) }}
             {{ $transcript_type := "text/plain" }}
             {{ if eq $transcript_ext "srt" }}{{ $transcript_type = "application/x-subrip" }}{{ end }}
             {{ if eq $transcript_ext "vtt" }}{{ $transcript_type = "text/vtt" }}{{ end }}
             {{ if eq $transcript_ext "json" }}{{ $transcript_type = "application/json" }}{{ end }}
-            <podcast:transcript url="{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.transcript }}"
+            <podcast:transcript url="{{ $.Site.Params.Podcast.cdn_base_url }}{{ . }}"
                                 type="{{ $transcript_type }}" language="it" rel="captions"/>
-            <podcast:chapters url="{{ .Site.Params.Podcast.cdn_base_url }}{{ .Params.chapters }}"
+            {{ end }}
+            {{ with .Params.chapters }}
+            <podcast:chapters url="{{ $.Site.Params.Podcast.cdn_base_url }}{{ . }}"
                               type="application/json+chapters"/>
+            {{ end }}
         </item>
         {{ end }}
     </channel>
