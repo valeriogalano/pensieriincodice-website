@@ -38,6 +38,10 @@
 │   ├── credits/             # Crediti per stagione (season1.json, season2.json)
 │   ├── partners/            # Progetti partner
 │   └── projects.json        # Altri progetti del podcaster
+├── layouts/                 # Template del progetto: hanno la precedenza su quelli del tema
+│   ├── index.podcast.xml    # Feed del podcast (/podcast/index.xml)
+│   ├── page/linkbio.html    # Pagina link-in-bio (/bio)
+│   └── podcast/episode.html
 ├── static/                  # Asset statici non processati
 │   ├── fonts/               # Font custom
 │   ├── js/                  # fuse.min.js, turbo.es2017-umd.js
@@ -51,7 +55,6 @@
         ├── podcast/         # Template episodi
         ├── blog/            # Template articoli
         ├── index.html       # Homepage
-        ├── index.podcast.xml
         ├── index.rss.xml
         └── ...
 ```
@@ -113,7 +116,7 @@ Gli elementi `data-turbo-permanent` non vengono smontati durante le navigazioni 
 | Piattaforme | `piattaforme/list.html` | Link a tutte le piattaforme podcast |
 | Contatti | `contatti/list.html` | Form / link email |
 | Fonti | `fonti/list.html` | Archivio fonti per episodio |
-| Linkbio | `page/linkbio.html` | Pagina link-in-bio (Instagram) |
+| Linkbio | `layouts/page/linkbio.html` (radice del progetto) | Pagina link-in-bio (Instagram) |
 
 ---
 
