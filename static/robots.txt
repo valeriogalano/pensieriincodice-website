@@ -1,12 +1,20 @@
 User-Agent: Google-Extended
 Disallow: /
 
+# Googlebot follows only its own group and ignores the rules under "*":
+# what must stay out of Google is repeated here.
 User-agent: Googlebot
 Allow: /podcast/index.xml
+Allow: /sitemap.xml
+Disallow: /tags/
 
 User-agent: *
+Allow: /sitemap.xml
+Allow: /podcast/index.xml
 Disallow: /*.xml$
 Disallow: /*.srt$
 Disallow: /*.cgi$
 Disallow: /tags/
 Disallow: /transcriptions/
+
+Sitemap: https://pensieriincodice.it/sitemap.xml

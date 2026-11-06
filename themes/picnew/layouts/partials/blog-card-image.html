@@ -1,3 +1,5 @@
+{{- /* Copertina decorativa: il titolo della card è subito sotto, alt="" evita
+       che uno screen reader lo legga due volte. */ -}}
 {{- /*
   Immagine di una card del blog, nel riquadro 16:9. Parametri: page, fit (object-cover | object-contain).
   Con la featureImage la usa; altrimenti, per gli articoli di un episodio, mostra la cover quadrata
@@ -6,14 +8,14 @@
 {{- $page := .page -}}
 {{- if $page.Params.featureImage }}
 <div class="aspect-video mb-4 rounded-xl overflow-hidden">
-    <img loading="lazy" src="{{ partial "thumb.html" $page.Params.featureImage }}" alt="{{ $page.Title }}" class="{{ .fit }} w-full h-full">
+    <img loading="lazy" src="{{ partial "thumb.html" $page.Params.featureImage }}" alt="" class="{{ .fit }} w-full h-full">
 </div>
 {{- else }}
 {{- with partial "episode-cover.html" $page }}
 {{- $src := partial "thumb.html" . }}
 <div class="aspect-video mb-4 rounded-xl overflow-hidden relative">
     <img loading="lazy" src="{{ $src }}" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover blur-xl scale-110 opacity-60">
-    <img loading="lazy" src="{{ $src }}" alt="{{ $page.Title }}" class="relative object-contain w-full h-full">
+    <img loading="lazy" src="{{ $src }}" alt="" class="relative object-contain w-full h-full">
 </div>
 {{- end }}
 {{- end }}
