@@ -34,7 +34,7 @@
         <div class="flex items-center justify-center space-x-4 mb-6 font-mono text-pod-orange">
             <span>#{{ .Params.number }}</span>
             <span>•</span>
-            <time>{{ .Date.Format "02 Jan 2006" }}</time>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format site.Params.dateFormat }}</time>
             {{ with .Params.season }}<span>•</span><span>Stagione {{ . }}</span>{{ end }}
         </div>
         <h1 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight leading-tight">{{ .Title }}</h1>

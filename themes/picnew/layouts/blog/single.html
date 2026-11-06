@@ -4,11 +4,11 @@
         <div class="flex items-center justify-center space-x-4 mb-6 font-mono text-pod-orange">
             <span>Blog</span>
             <span>•</span>
-            <time>{{ .Date.Format "02 Jan 2006" }}</time>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format site.Params.dateFormat }}</time>
             <span>•</span>
             {{ $author := .Params.author | default "Valerio Galano" }}
             <span class="inline-flex items-center gap-2">
-                {{ with index site.Data.authors $author }}
+                {{ with index hugo.Data.authors $author }}
                 <img src="{{ .image | relURL }}" alt="" width="28" height="28" class="w-7 h-7 rounded-full object-cover">
                 {{ end }}
                 <span>{{ $author }}</span>
@@ -55,7 +55,7 @@
         {{ .Content }}
     </div>
 
-    {{ with index site.Data.authors (.Params.author | default "Valerio Galano") }}
+    {{ with index hugo.Data.authors (.Params.author | default "Valerio Galano") }}
     <div class="not-prose mb-12 flex items-center gap-4 bg-pod-card border border-white/5 rounded-2xl p-5">
         <img src="{{ .image | relURL }}" alt="" width="40" height="40" class="w-10 h-10 rounded-full object-cover flex-shrink-0">
         <div>
