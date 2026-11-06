@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+    {{- /* La home ha già il nome del podcast nel titolo (content/_index.md): senza
+           questo ramo diventava "Pensieri in codice - … | Pensieri in codice". */}}
+    <title>{{ block "title" . }}{{ if .IsHome }}{{ .Title | default .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}{{ end }}</title>
     {{- /* Come og:description (social-meta.html): la descrizione della pagina,
            poi il riassunto delle pagine di contenuto, poi quella del sito. */}}
     {{- $metaDescription := .Site.Params.description -}}
