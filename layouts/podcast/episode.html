@@ -1,26 +1,30 @@
 {{ define "head" }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "PodcastEpisode",
-  "url": {{ .Permalink | jsonify }},
-  "name": {{ .Title | jsonify }},
-  "datePublished": "{{ .Date.Format "2006-01-02" }}",
-  "description": {{ with .Description }}{{ . | jsonify }}{{ else }}{{ .Summary | plainify | jsonify }}{{ end }},
-  "timeRequired": "PT{{ .Params.audio_duration }}S",
-  "associatedMedia": {
-    "@type": "MediaObject",
-    "contentUrl": {{ printf "%s%s" .Site.Params.podcast.cdn_tracked_base_url .Params.audio_file | jsonify }},
-    "encodingFormat": "audio/mpeg"
-  },
-  "image": {{ if .Params.image }}{{ printf "%s%s" .Site.Params.podcast.cdn_base_url .Params.image | jsonify }}{{ else }}{{ .Site.Params.podcast.image | absURL | jsonify }}{{ end }},
-  "partOfSeries": {
-    "@type": "PodcastSeries",
-    "name": {{ .Site.Params.podcast.title | jsonify }},
-    "url": {{ .Site.Home.Permalink | jsonify }}
-  }
-}
-</script>
+{{- /* Dentro <script type="application/ld+json"> html/template codifica già
+       ogni valore come JSON: un `| jsonify` in più metteva le virgolette dentro
+       le stringhe ("\"https://…\""). Si costruisce l'oggetto e lo si stampa una
+       volta sola. */ -}}
+{{- $description := .Description | default (.Summary | plainify) -}}
+{{- $image := .Site.Params.podcast.image | absURL -}}
+{{- with .Params.image }}{{ $image = printf "%s%s" site.Params.podcast.cdn_base_url . }}{{ end -}}
+{{- $ld := dict
+  "@context" "https://schema.org"
+  "@type" "PodcastEpisode"
+  "url" .Permalink
+  "name" .Title
+  "datePublished" (.Date.Format "2006-01-02")
+  "description" $description
+  "timeRequired" (printf "PT%vS" .Params.audio_duration)
+  "associatedMedia" (dict
+    "@type" "MediaObject"
+    "contentUrl" (printf "%s%s" .Site.Params.podcast.cdn_tracked_base_url .Params.audio_file)
+    "encodingFormat" "audio/mpeg")
+  "image" $image
+  "partOfSeries" (dict
+    "@type" "PodcastSeries"
+    "name" .Site.Params.podcast.title
+    "url" .Site.Home.Permalink)
+-}}
+<script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
 {{ end }}
 
 {{ define "main" }}
@@ -30,7 +34,7 @@
         <div class="flex items-center justify-center space-x-4 mb-6 font-mono text-pod-orange">
             <span>#{{ .Params.number }}</span>
             <span>•</span>
-            <time>{{ .Date.Format "02 Jan 2006" }}</time>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format site.Params.dateFormat }}</time>
             {{ with .Params.season }}<span>•</span><span>Stagione {{ . }}</span>{{ end }}
         </div>
         <h1 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight leading-tight">{{ .Title }}</h1>

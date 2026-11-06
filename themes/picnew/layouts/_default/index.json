@@ -6,6 +6,6 @@
     {{- else if .Params.featureImage -}}
         {{- $image = partial "thumb.html" .Params.featureImage -}}
     {{- end -}}
-    {{- $.Scratch.Add "index" (dict "title" .Title "summary" .Summary "permalink" .Permalink "section" .Section "date" (.Date.Format "02 Jan 2006") "image" $image) -}}
+    {{- $.Scratch.Add "index" (dict "title" .Title "summary" .Summary "permalink" .Permalink "section" .Section "date" (.Date | time.Format site.Params.dateFormat) "image" $image) -}}
 {{- end -}}
 {{- $.Scratch.Get "index" | jsonify -}}
