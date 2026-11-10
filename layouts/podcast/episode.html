@@ -124,16 +124,6 @@
         </p>
     </div>
 
-    <!-- Glossary -->
-    {{ with .Params.glossary }}
-    <div id="miniglossario" class="mt-12 pt-8 border-t border-white/5 scroll-mt-24">
-        <h3 class="text-2xl font-bold mb-6">Miniglossario</h3>
-        <div class="prose prose-invert max-w-none">
-            {{ . | markdownify }}
-        </div>
-    </div>
-    {{ end }}
-
     <!-- Sources -->
     {{ if .Params.sources }}
     <div class="mt-12 pt-8 border-t border-white/5">
