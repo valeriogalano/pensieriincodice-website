@@ -55,8 +55,10 @@ jobs:
       - name: Install npm dependencies
         run: npm install
 
+      # --minify: smaller HTML, CSS, JS and XML (the home goes from 238 to 177 KB);
+      # --gc: drop unused cached resources. -D (drafts) is a separate question.
       - name: Build
-        run: hugo -D
+        run: hugo -D --gc --minify
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
 
