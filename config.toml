@@ -13,6 +13,10 @@ defaultContentLanguage = "it"
 [caches.getresource]
 maxAge = "168h"
 
+# HEAD serve al controllo del CDN in partials/cdn-up.html: verifica che risponda senza scaricare nulla.
+[security.http]
+methods = ['(?i)GET|POST|HEAD']
+
 [languages.it]
   contentDir = 'content/'
   label = 'Italiano'
