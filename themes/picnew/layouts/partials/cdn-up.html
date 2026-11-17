@@ -1,0 +1,18 @@
+{{- /*
+  Il CDN risponde? Una sola richiesta HEAD per build: va chiamato con
+  partialCached "cdn-up.html" . "cdn". Con il CDN in errore Hugo ritenta ogni
+  download fino al timeout, e farlo per ognuna delle cover blocca la build per ore.
+  La chiave con now.Unix evita che la risposta arrivi dalla cache dei download.
+*/ -}}
+{{- $up := false -}}
+{{- $probe := printf "%s%s" site.Params.podcast.cdn_base_url site.Params.podcast.image -}}
+{{- with try (resources.GetRemote $probe (dict "method" "HEAD" "key" (printf "cdn-probe-%d" now.Unix))) -}}
+  {{- with .Err -}}
+    {{- warnf "cdn: %s, miniature saltate in questa build" . -}}
+  {{- else with .Value -}}
+    {{- $up = true -}}
+  {{- else -}}
+    {{- warnf "cdn: %s non trovato, miniature saltate in questa build" $probe -}}
+  {{- end -}}
+{{- end -}}
+{{- return $up -}}

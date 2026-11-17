@@ -135,6 +135,15 @@ Icona volume: tre stati SVG (alto, basso, muto). Al muto, il volume precedente �
 
 Comportamento: imposta `audio.playbackRate`. Il valore è salvato in `pic_player_state`.
 
+`setPlaybackRate` valida ogni cambio e sincronizza entrambi i selettori. Le
+velocità intermedie del gesto verticale (per esempio 1.1x) vengono aggiunte alle
+opzioni: assegnare un valore assente svuotava il select e al successivo avvio
+causava un TypeError su `playbackRate`. Uno stato salvato con velocità non finita
+o fuori dall’intervallo 0.5–3 torna a 1x. Da una velocità intermedia, `+` e `-`
+selezionano il preset rispettivamente superiore e inferiore.
+
+Verifica della logica senza dipendenze: `node --test tests/player-speed.test.cjs`.
+
 ### Navigazione episodi
 
 - Button `#player-episode-prev` / `#player-episode-next`

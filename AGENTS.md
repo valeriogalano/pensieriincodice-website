@@ -109,6 +109,6 @@ riproduzione costa pochi secondi e chiude la questione.
 
 ## Igiene del repo
 
-`.gitignore` non copre `.DS_Store` e il working tree ne accumula parecchi, insieme ad appunti
-sciolti nella root (`*.txt`, bozze `.md`). Non aggiungerli ai commit; se ti servono file di
-lavoro, tienili fuori dal repo.
+Il working tree accumula `.DS_Store` (ora in `.gitignore`) e appunti sciolti nella root
+(`*.txt`, bozze `.md`). Non aggiungerli ai commit; se ti servono file di lavoro, tienili fuori
+dal repo.

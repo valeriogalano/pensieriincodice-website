@@ -66,8 +66,22 @@
         if (e.key === 'Escape') closeSearch();
     });
 
+    // Fuse serve solo alla ricerca: si scarica alla prima apertura, non in
+    // ogni pagina dentro l'<head>.
+    function loadFuse() {
+        if (window.Fuse) return Promise.resolve();
+        return new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = '/js/fuse.min.js';
+            script.onload = resolve;
+            script.onerror = reject;
+            document.head.appendChild(script);
+        });
+    }
+
     async function loadSearch() {
         try {
+            await loadFuse();
             const response = await fetch('/index.json');
             const data = await response.json();
             const options = {

@@ -1,0 +1,25 @@
+{{- /* Pagina d'errore: Hugo la genera come /404.html, .htaccess la serve con
+       ErrorDocument. Il sito ha molti alias e URL cambiati negli anni: chi arriva
+       da un link vecchio trova navigazione, player e gli ultimi episodi. */ -}}
+{{ define "title" }}{{ i18n "errorTitle" }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+<article class="max-w-4xl mx-auto">
+    <header class="mb-12">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight leading-tight">{{ i18n "errorTitle" }}</h1>
+        <p class="text-xl text-pod-gray">{{ i18n "errorText" }}</p>
+    </header>
+    <p class="mb-12">
+        Puoi tornare alla <a href="{{ "/" | relURL }}" class="text-pod-orange hover:underline">home</a>,
+        sfogliare l'<a href="{{ "episodes/" | relURL }}" class="text-pod-orange hover:underline">archivio degli episodi</a>
+        o cercare nel sito con <kbd>Ctrl</kbd>+<kbd>K</kbd>.
+    </p>
+    <section>
+        <h2 class="text-2xl font-bold mb-6">Gli ultimi episodi</h2>
+        <ul class="space-y-3">
+            {{ range first 5 (where .Site.RegularPages "Params.layout" "episode").ByDate.Reverse }}
+            <li><a href="{{ .RelPermalink }}" class="hover:text-pod-orange">{{ with .Params.number }}#{{ . }} · {{ end }}{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+    </section>
+</article>
+{{ end }}

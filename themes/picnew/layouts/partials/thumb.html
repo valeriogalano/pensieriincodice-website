@@ -3,9 +3,11 @@
   Gli originali sul CDN restano intatti: il feed e le app continuano a usare quelli.
   Se il download fallisce torna l'URL originale, così la build non si rompe.
   I percorsi relativi (immagini in static/) passano così come sono.
+  Se il CDN non risponde (cdn-up.html), le sue immagini passano così come sono.
 */ -}}
 {{- $url := . -}}
-{{- if hasPrefix $url "http" -}}
+{{- $cdnDown := and (hasPrefix $url site.Params.podcast.cdn_base_url) (not (partialCached "cdn-up.html" . "cdn")) -}}
+{{- if and (hasPrefix $url "http") (not $cdnDown) -}}
 {{- with try (resources.GetRemote $url) -}}
   {{- with .Err -}}
     {{- warnf "thumb: %s" . -}}
