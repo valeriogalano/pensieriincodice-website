@@ -11,7 +11,6 @@
         <link>{{ .Site.BaseURL }}</link>
         <language>{{ .Site.Language.Locale }}</language>
         <category>{{ .Site.Params.Podcast.category }}</category>
-        <lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</lastBuildDate>
         <copyright>{{ .Site.Params.Podcast.copyright | plainify }}</copyright>
         <image>
             <url>{{ .Site.Params.Podcast.cdn_base_url }}{{ .Site.Params.Podcast.image }}</url>

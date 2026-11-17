@@ -133,6 +133,24 @@ home = ["HTML", "RSS", "JSON", "podcast"]
 - `JSON` → `/index.json` (indice JSON per Fuse.js)
 - `podcast` → `/podcast/index.xml` (feed podcast RSS 2.0 con tag iTunes)
 
+Il feed podcast è generato dal fork `themes/picnew/layouts/partials/podcast-feed.xml`.
+Il campo RSS facoltativo `lastBuildDate` è omesso: usare l'ora di compilazione
+faceva cambiare il feed anche senza modifiche ai contenuti. Le date `pubDate`
+dei singoli episodi restano presenti.
+Anche `/episodes/index.xml` usa lo stesso partial, tramite
+`layouts/podcast/list.rss.xml`, al posto del template del modulo.
+
+## Pubblicazione automatica
+
+Il workflow `.github/workflows/qadisha.yml` parte a ogni push su `main`, su avvio
+manuale e ogni ora al minuto `07` UTC. GitHub può ritardare i tentativi schedulati:
+non è garantita la pubblicazione nell'ora prevista.
+
+La build usa `npm ci`, con cache npm basata su `package-lock.json`, e la cache
+delle risorse Hugo. Il trasferimento FTPS esistente confronta i contenuti e salta
+i file invariati. Due build senza modifiche producono gli stessi file; quando
+arriva la data di un contenuto futuro, la prima build successiva lo include.
+
 ---
 
 ## Configurazione chiave (`config.toml`)
