@@ -158,7 +158,7 @@
                         class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
                             <path d="M16 4 A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <polyline points="12,1 16,5 12,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="20,1 16,4 20,8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <text x="16" y="20" text-anchor="middle" font-size="9" font-weight="bold" fill="currentColor" font-family="monospace">15</text>
                         </svg>
                     </button>
@@ -174,7 +174,7 @@
                         class="text-pod-gray hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
                             <path d="M16 4 A12 12 0 1 1 4 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <polyline points="20,1 16,5 20,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="12,1 16,4 12,8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <text x="16" y="20" text-anchor="middle" font-size="9" font-weight="bold" fill="currentColor" font-family="monospace">30</text>
                         </svg>
                     </button>
@@ -658,6 +658,20 @@
         return m + ':' + (sec < 10 ? '0' : '') + sec;
     }
 
+    function setPlaybackRate(value) {
+        const rate = Number(value);
+        audio.playbackRate = Number.isFinite(rate) && rate >= 0.5 && rate <= 3 ? rate : 1;
+        // Swipe gestures also select rates between the preset options.
+        [speedSelect, expandedSpeedSelect].forEach(select => {
+            if (!select) return;
+            const value = String(audio.playbackRate);
+            if (!Array.from(select.options).some(option => option.value === value)) {
+                select.add(new Option(value + 'x', value));
+            }
+            select.value = value;
+        });
+    }
+
     window.playEpisode = function(url, title, image, chaptersUrl, transcriptUrl, permalink) {
         if (window.stopSoundbite) window.stopSoundbite();
         // Remove quotes from jsonify if present
@@ -692,7 +706,7 @@
 
         // Apply current playback rate if selected
         if (speedSelect) {
-            audio.playbackRate = parseFloat(speedSelect.value);
+            setPlaybackRate(speedSelect.value);
         }
 
         // Use a promise to handle play() and ensure it starts
@@ -1096,8 +1110,7 @@
 
     if (expandedSpeedSelect) {
         expandedSpeedSelect.addEventListener('change', function() {
-            audio.playbackRate = parseFloat(this.value);
-            if (speedSelect) speedSelect.value = this.value;
+            setPlaybackRate(this.value);
         });
     }
 
@@ -1192,9 +1205,7 @@
                     if (Math.abs(dy) > 10) {
                         var step = dy > 0 ? 0.1 : -0.1;
                         var newRate = Math.round(Math.min(3, Math.max(0.5, audio.playbackRate + step)) * 10) / 10;
-                        audio.playbackRate = newRate;
-                        if (speedSelect) speedSelect.value = newRate;
-                        speedBadge.value = newRate;
+                        setPlaybackRate(newRate);
                         speedPointerY = e.clientY;
                     }
                 }, { passive: true });
@@ -1277,14 +1288,14 @@
             case '+':
             case '=': {
                 const rates = [0.5, 0.8, 1, 1.2, 1.5, 2, 2.5, 3];
-                const idx = rates.indexOf(audio.playbackRate);
-                if (idx < rates.length - 1) { audio.playbackRate = rates[idx + 1]; if (speedSelect) speedSelect.value = audio.playbackRate; }
+                const nextRate = rates.find(rate => rate > audio.playbackRate);
+                if (nextRate !== undefined) setPlaybackRate(nextRate);
                 break;
             }
             case '-': {
                 const rates = [0.5, 0.8, 1, 1.2, 1.5, 2, 2.5, 3];
-                const idx = rates.indexOf(audio.playbackRate);
-                if (idx > 0) { audio.playbackRate = rates[idx - 1]; if (speedSelect) speedSelect.value = audio.playbackRate; }
+                const prevRate = rates.findLast(rate => rate < audio.playbackRate);
+                if (prevRate !== undefined) setPlaybackRate(prevRate);
                 break;
             }
             case '0':
@@ -1334,10 +1345,7 @@
                 audio.currentTime = state.currentTime || 0;
             }
 
-            if (state.playbackRate) {
-                speedSelect.value = state.playbackRate;
-                audio.playbackRate = state.playbackRate;
-            }
+            setPlaybackRate(state.playbackRate);
 
             // Fall back to playlist data if saved state is missing chapter/transcript URLs
             const playlist = window.__playlist || [];
@@ -1520,7 +1528,7 @@
     }, 5000);
 
     speedSelect.addEventListener('change', function() {
-        audio.playbackRate = parseFloat(this.value);
+        setPlaybackRate(this.value);
     });
 
     // ===== MEDIA SESSION API =====
