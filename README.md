@@ -21,12 +21,15 @@ Il sito è generato staticamente tramite [Hugo](https://gohugo.io/). I contenuti
 ## Requisiti
 
 - [Hugo](https://gohugo.io/installation/) (versione extended consigliata)
+- Node.js 24 per compilare gli stili con Tailwind CSS
 
 ---
 
 ## Installazione e avvio
 
 ```bash
+npm ci
+
 # Avvia il server locale con hot reload
 hugo server
 

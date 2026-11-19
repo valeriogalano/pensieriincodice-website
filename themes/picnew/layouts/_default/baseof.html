@@ -25,7 +25,7 @@
     {{- end }}
     {{ end -}}
     <link rel="stylesheet" href="/fonts/fonts.css">
-    {{- $css := resources.Get "css/main.css" | css.PostCSS | minify | fingerprint -}}
+    {{- $css := resources.Get "css/main.css" | css.TailwindCSS (dict "disableInlineImports" true "minify" true) | fingerprint -}}
     <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
     {{- /* defer: 157 KB che bloccavano il parsing di ogni pagina. Gli script inline
            registrano solo listener di turbo:load, che Turbo emette comunque al
