@@ -13,6 +13,9 @@ defaultContentLanguage = "it"
 [caches.getresource]
 maxAge = "168h"
 
+[security.exec]
+allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
+
 # HEAD serve al controllo del CDN in partials/cdn-up.html: verifica che risponda senza scaricare nulla.
 [security.http]
 methods = ['(?i)GET|POST|HEAD']

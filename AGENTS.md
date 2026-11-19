@@ -14,7 +14,7 @@ Usare sempre la seconda persona singolare ("tu", "segui", "sostieni") — mai il
 
 ## Stack tecnico
 - **Hugo** (SSG) con tema custom `picnew`
-- **Tailwind CSS 3** + PostCSS per gli stili
+- **Tailwind CSS 4** con `css.TailwindCSS` e `@tailwindcss/cli` per gli stili. I percorsi da scansionare sono dichiarati con `@source` in `main.css`.
 - Contenuti in `content/` (Markdown + frontmatter YAML)
 - Dati strutturati in `data/` (JSON / YAML)
 - Configurazione principale: `config.toml`

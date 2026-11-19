@@ -1,10 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './themes/picnew/layouts/**/*.html',
-    './layouts/**/*.html',
-    './content/**/*.md',
-  ],
   theme: {
     extend: {
       colors: {
