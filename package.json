@@ -2,7 +2,7 @@
   "name": "pensieriincodice-website",
   "version": "1.0.0",
   "devDependencies": {
-    "tailwindcss": "^3.4.0",
+    "tailwindcss": "^4.3.5",
     "postcss": "^8.5.33",
     "postcss-cli": "^12.0.0",
     "autoprefixer": "^10.6.2"
