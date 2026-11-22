@@ -288,8 +288,16 @@ IsPlainText = true
 noUgly = true
 Rel = "alternate"
 
+# Only tags: the categories in the front matter are leftovers that no template
+# shows, and Hugo's default taxonomy turned them into pages nobody links.
+[taxonomies]
+tag = "tags"
+
 [outputs]
 home = ["HTML", "RSS", "JSON", "podcast"]
+# No RSS for tag pages: nobody subscribes to them and they are noindex anyway.
+taxonomy = ["HTML"]
+term = ["HTML"]
 
 [permalinks]
   [permalinks.page]

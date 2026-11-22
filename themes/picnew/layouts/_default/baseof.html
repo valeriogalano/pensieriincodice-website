@@ -11,7 +11,9 @@
     {{- $metaDescription := .Site.Params.description -}}
     {{- with .Description }}{{ $metaDescription = . }}{{ else }}{{ if and .IsPage .Summary }}{{ $metaDescription = .Summary | plainify | htmlUnescape | truncate 160 }}{{ end }}{{ end }}
     <meta name="description" content="{{ $metaDescription }}">
-    <meta name="robots" content="index, follow">
+    {{- /* Le pagine dei tag restano fuori dai risultati, ma i loro link si
+           seguono: da lì i crawler arrivano comunque agli episodi. */}}
+    <meta name="robots" content="{{ if in (slice "taxonomy" "term") .Kind }}noindex{{ else }}index{{ end }}, follow">
     <link rel="canonical" href="{{ .Permalink }}">
     {{ partial "social-meta.html" . }}
     {{- /* Il feed del podcast per primo, su ogni pagina e con un titolo suo: un
