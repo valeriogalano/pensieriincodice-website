@@ -35,7 +35,9 @@
     {{- $episodes := where .Site.RegularPages "Type" "podcast" -}}
     {{- $playlist := slice -}}
     {{- range $episodes -}}
-        {{- $img := partial "thumb.html" (printf "%s%s" $.Site.Params.podcast.cdn_base_url .Params.image) -}}
+        {{- /* Cached per URL: this runs for every episode on every page, and Hugo retries a failed download each time */ -}}
+        {{- $cover := printf "%s%s" $.Site.Params.podcast.cdn_base_url .Params.image -}}
+        {{- $img := partialCached "thumb.html" $cover $cover -}}
         {{- $audio := printf "%s%s" $.Site.Params.podcast.cdn_tracked_base_url .Params.audio_file -}}
         {{- $chapters := "" -}}
         {{- if .Params.chapters -}}{{- $chapters = printf "%s%s" $.Site.Params.podcast.cdn_base_url .Params.chapters -}}{{- end -}}
