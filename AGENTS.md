@@ -57,6 +57,7 @@ copiane la struttura del frontmatter, campo per campo.
 | `supporters`, `sources` | Il blocco YAML `# Sostenitori e fonti` della nota dell'episodio in Obsidian, copiato così com'è |
 | Titolo, descrizione | La sezione `# Descrizione` della nota dell'episodio, se c'è. Altrimenti una bozza dallo script |
 | `equipment` | L'attrezzatura usata per registrare, voce per voce con `title` e `url` (link affiliato). Copiala dall'episodio precedente e chiedi se è cambiata |
+| `credits` | Copiali dall'episodio precedente (lista di stringhe, HTML ammesso) e chiedi se sono cambiati. Valgono solo per quella puntata: pagina e feed leggono da qui |
 | `tags` | Scegli tra i tag già usati in `content/podcast/`, non inventarne di nuovi senza chiedere |
 | `url` | `/episodes/NNN-` seguito dallo slug del titolo |
 | Soundbite | Non nel frontmatter: vanno in `assets/soundbites/NNN.txt`, una riga per soundbite con inizio, fine e titolo separati da tab (l'export `startEnd` di AudioPills). Il feed li legge da lì |

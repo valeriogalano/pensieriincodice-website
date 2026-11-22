@@ -143,8 +143,7 @@
     {{ end }}
 
     <!-- Credits -->
-    {{ $season := .Params.season | printf "season%d" }}
-    {{ with index hugo.Data.credits $season }}
+    {{ with .Params.credits }}
     <div class="mt-12 pt-8 border-t border-white/5">
         <h3 class="text-2xl font-bold mb-6">Crediti</h3>
         <ul class="space-y-3">

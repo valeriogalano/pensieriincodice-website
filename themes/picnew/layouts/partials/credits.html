@@ -1,6 +1,5 @@
 <h2>Crediti</h2>
-{{ $season := .Page.Params.season | printf "season%d" }}
-{{ with index hugo.Data.credits $season }}
+{{ with .Page.Params.credits }}
 {{ range . }}
 {{ . | safeHTML }}<br/>
 {{ end }}
