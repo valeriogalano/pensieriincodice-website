@@ -1,0 +1,84 @@
+---
+title: "Espresso - 4 libri (non sull'informatica)"
+date: Sun, 13 Feb 2022 11:30:03 +0000
+tags: ["lettura", "consigli"]
+type: blog
+author: Valerio Galano
+episode: 87
+curated_by: Engram
+generated_with: gpt-6.2-sol
+---
+
+Ti parlerò di libri perché, tra le tante cose che sperimento ogni giorno, trovo che i libri siano uno strumento fondamentale per migliorarsi.
+
+Non sono certo di quelli che snobbano gli articoli sul Web, i video o i podcast, ci mancherebbe. E apprezzo anche guardare la TV, un film, una bella serie. Anche il trash, perché no?
+
+Ma in tutto questo trovo che la lettura del classico libro (di carta o ebook che sia, poco importa) sia un momento del tutto diverso.
+
+Che lo si faccia per imparare qualcosa, o per intrattenimento, o per qualsiasi altro motivo, il libro, secondo me, ha il potere di catturare totalmente la concentrazione (ovviamente se si tratta di un bel libro, che ci piace o che è scritto bene). Allena l'attenzione, spinge alla riflessione e ci concede un po' di tempo soli con noi stessi. Può sembrare banale, ma in effetti si tratta di momenti divenuti molto rari, almeno per me.
+
+Quindi ti parlerò di 4 libri che hanno poco o niente a che fare con l'informatica, ma che ho trovato molto interessanti e ho letto con estremo piacere.
+
+Giusto per trasparenza, voglio chiarire che li ho selezionati in base ad un semplice criterio: sono 4 di quei libri che, quando ero intento a fare altro (lavorare, guardare la TV o fare le commissioni), mi tornavano in mente e nella mia testa pensavo a completare più in fretta possibile quello che stavo facendo per concedermi qualche minuto di lettura.
+
+## Due romanzi di Stuart Turton
+
+Partiamo dai più leggeri.
+
+Si tratta di due romanzi dello stesso autore, Stuart Turton, il quale, per quanto ne so, ha scritto solo questi due libri, ma io li ho adorati entrambi.
+
+Il primo si intitola [Le sette morti di Evelyn Hardcastle](https://amzn.to/3Lqm1UK) ed è una specie di thriller con elementi sovrannaturali, la cui storia si svolge in una villa isolata e ruota intorno all'indagine, ad opera del protagonista, sull'assassino di questa Evelyn.
+
+Il secondo, invece, si intitola [Il diavolo e l'acqua scura](https://amzn.to/3slV0sT) e racconta la storia di un omicidio durante una traversata in alto mare a bordo di una nave mercantile della prima metà del Seicento.
+
+Purtroppo, entrambi i libri mi sono piaciuti proprio per il mistero che aleggia per quasi tutto lo svolgimento della storia, quindi qualsiasi cosa mi venga in mente di raccontarti potrebbe anche rovinarti la lettura.
+
+Quindi provo ad invogliarti a leggerli proprio non dicendoti nulla della storia.
+
+Per me si è trattato di libri pieni di colpi di scena che vengono fuori pagina dopo pagina. Un ritmo narrativo veloce e avvincente che non ristagna mai. Un continuo oscillare tra eventi mistici e terreni. Due finali che o si amano o si odiano.
+
+Seriamente, se quest'anno hai intenzione di leggere un solo romanzo, scegli uno di questi due e non te ne pentirai.
+
+## Lo zen e l'arte della manutenzione della motocicletta
+
+Detto questo, passiamo ad un altro libro che è sempre un romanzo, ma di tutt'altra natura.
+
+Si tratta di un libro molto vecchio di cui forse avrai già sentito parlare o che avrai addirittura già letto, ma per me resta sempre stupendo: si intitola [Lo zen e l'arte della manutenzione della motocicletta](https://amzn.to/3owRF90) ed è di Robert Pirsig.
+
+È un romanzo che parla di un tema forse ormai superato, ma quello che lo rende, secondo me, un capolavoro da leggere almeno una volta nella vita è il modo in cui è scritto.
+
+Non tratta di grandi avvenimenti, avventure al limite dell'impossibile o cose simili. Semplicemente, racconta il viaggio di un uomo e di suo figlio preadolescente attraverso gli Stati Uniti degli anni '70 a bordo di una motocicletta.
+
+Durante il viaggio, padre e figlio affrontano tematiche spesso anche molto alte, esplorando il proprio rapporto e, nel caso del padre/autore/narratore, il proprio passato.
+
+Oltre ad essere una storia molto toccante (alla fine si scoprono tante cose che fanno tanto riflettere), il libro in sé è scritto in maniera assolutamente magistrale.
+
+Quando Pirsig descrive i momenti del viaggio, è letteralmente in grado di trasmettere sensazioni e panorami come se il lettore fosse lì a bordo di una moto.
+
+Quando invece riflette sulla propria vita e sul rapporto con la famiglia, sui problemi comuni e meno comuni che ha dovuto affrontare, suscita un'empatia che ti spinge a voler sapere cosa sia accaduto di volta in volta, flashback dopo flashback, fino alla fine del libro.
+
+La cosa che più mi ha colpito di questo romanzo è stata la sua capacità di trasmettermi *letteralmente* tranquillità, di rilassarmi. Al mattino, appena sveglio, ne leggevo qualche pagina e dopo mezz'ora mi sentivo sereno e pronto ad affrontare la giornata.
+
+Davvero fantastico.
+
+## Elogio dell'idiozia
+
+Infine, l'ultimo libro che ti voglio consigliare è di Riccardo Dal Ferro, anche conosciuto come Rick Dufer, e si intitola [Elogio dell'idiozia](https://amzn.to/3otYuZ7).
+
+Da poco è uscita la nuova edizione. L'ho anche nella libreria, ma per ora ho letto la prima e quindi le mie parole faranno riferimento ad essa.
+
+Si tratta di un saggio nel quale Rick esplora il concetto di Idiota e la sua accezione *relativa*.
+
+L'idiozia è tale perché va contro il pensiero comune, e molto spesso resta tale proprio perché il pensiero comune è quello corretto.
+
+Ma a volte può capitare che qualche idiota non sia poi così idiota.
+
+Magari perché in futuro la storia lo redimerà (è già successo tante volte in passato), oppure perché semplicemente noi e l'idiota di turno partiamo da due presupposti completamente diversi, ma non per forza uno totalmente corretto e l'altro totalmente sbagliato.
+
+Questo libro offre una serie di ragionamenti e spunti che aiutano a calarsi nei panni dell'idiota che abbiamo di fronte e a provare a capire se, magari, in fin dei conti, tanto idiota poi non sia.
+
+Personalmente, le riflessioni all'interno dell'Elogio dell'idiozia mi hanno spinto a guardare con occhi diversi le altre persone, soprattutto quelle con le quali interagisco solo digitalmente, magari attraverso i commenti sui social, i tweet, le email, ecc.
+
+Insomma, se ti interessa un punto di vista diverso sugli idioti, che non faccia fare a te la figura dell'idiota agli occhi degli altri, questo è il libro da cui partire.
+
+Bene, spero di averti incuriosito con questi libri, anche se ti ho parlato di argomenti completamente estranei all'informatica. Ma sai che c'è? Io sono convinto che a volte faccia bene dedicarsi a qualcosa di diverso dal solito. Aiuta ad aprire la mente, a rilassarsi e a divagare un po'.

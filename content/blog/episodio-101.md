@@ -1,0 +1,46 @@
+---
+title: "Snippet - Il computer ad acqua (Water Integrator)"
+date: Sun, 22 May 2022 04:00:02 +0000
+tags: ["storia dell'informatica"]
+type: blog
+author: Valerio Galano
+episode: 101
+curated_by: Engram
+generated_with: gpt-6.2-sol
+---
+
+Al giorno d'oggi siamo abituati a pensare ai computer in termini di schede elettroniche e microprocessori, componenti miniaturizzati in grado di svolgere complicatissimi compiti in millesimi di secondo. Ma a volte tendiamo a dimenticare che lo stato attuale della moderna tecnologia è una conquista veramente recente.
+
+Fino a poche decadi fa esistevano computer, o calcolatori, che riuscivano ad espletare i loro compiti non per mezzo di componenti elettronici fatti di silicio, ma grazie ad elementi meccanici in movimento, i quali, partendo da una certa configurazione di input, interagendo fra loro e posizionandosi in altre configurazioni, producevano i risultati di output desiderati.
+
+Nel 1936 un ingegnere russo di nome Vladimir Lukyanov costruì un computer di questo genere che, a sua volta, non si basava su ingranaggi e leve, bensì sul movimento dell'acqua.
+
+Il [Water Integrator](https://www-nkj-ru.translate.goog/archive/articles/7033/?_x_tr_sl=ru&_x_tr_tl=en&_x_tr_hl=es), così fu chiamato questo calcolatore, aveva circa le dimensioni di un armadio ed era composto da diversi tubi e pompe interconnessi fra loro. Il livello dell'acqua all'interno di una serie di contenitori rappresentava numeri immagazzinati, come all'interno di variabili, e il trasferimento tra un contenitore e l'altro rappresentava invece operazioni matematiche. Il risultato dei calcoli veniva poi tracciato su un grafico.
+
+## Le variazioni di temperatura nel calcestruzzo
+
+Lukyanov era un ingegnere che lavorò alla costruzione di alcune importanti ferrovie in Russia alla fine degli anni '20.
+
+Questo tipo di opere in cemento risente pesantemente degli sbalzi di temperatura, che chiaramente sono frequenti in paesi come la Russia, dove in inverno la temperatura arriva facilmente sotto lo zero.
+
+Lukyanov era convinto che ciò potesse essere evitato analizzando attentamente le variazioni di temperatura nella massa del calcestruzzo, tenendo conto di composizione, cemento utilizzato, tecnologie impiegate e condizioni esterne.
+
+L'ingegnere iniziò quindi a lavorare a questa analisi, ma i metodi di calcolo esistenti non erano sufficienti per fornire una soluzione rapida e accurata alle complesse equazioni differenziali che descrivono l'andamento della temperatura. E nella sua ricerca di nuovi approcci alla risoluzione del problema, Lukyanov scoprì che il flusso d'acqua, per molti aspetti, è simile alla distribuzione del calore.
+
+La conclusione a cui giunse fu che, costruendo un computer in cui il componente principale era l'acqua, avrebbe potuto visualizzare il processo termico che stava cercando di analizzare. Nel 1936, quindi, Lukyanov costruì il primo modello del suo *Water Integrator* presso l'Institute of Way and Construction (ora Central Research Institute of Transport Construction). A quel tempo era l'unico computer che poteva risolvere equazioni differenziali parziali.
+
+## I primi modelli e la diffusione
+
+I primi modelli erano veramente grezzi, realizzati in ferro, lamiera e tubi di vetro, e venivano utilizzati solo per i calcoli nel campo dell'ingegneria del calore. I modelli successivi furono invece in grado di risolvere problemi più complicati e ciò ne ampliò significativamente l'applicazione, nonché la diffusione.
+
+Negli anni '50 fu costruito un integratore le cui parti potevano essere rimosse e combinate in diverse configurazioni a seconda della natura e della complessità del problema da risolvere.
+
+Il Water Integrator divenne così versatile che si iniziò a produrlo in serie per impiegarlo in laboratori e università in tutta l'Unione Sovietica.
+
+Fu impiegato per una vasta gamma di applicazioni, come la risoluzione dei problemi di costruzione sulla sabbia e sul permafrost, lo studio della calotta glaciale antartica e persino la scienza missilistica.
+
+Questo computer ad acqua rimase operativo per un tempo sorprendentemente lungo, nonostante la disponibilità dei più moderni computer elettronici.
+
+Fu solo negli anni '80, con lo sviluppo di computer più piccoli e ad alta velocità, che le capacità del Water Integrator iniziarono a sembrare datate.
+
+Attualmente esistono solo due computer ad acqua di Lukyanov al mondo ed entrambi sono conservati nel Museo Politecnico di Mosca.
